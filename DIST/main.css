@@ -19,8 +19,8 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/weave.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/weave.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("./img/weave.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("./img/weave.jpg") center top;
   background-size: cover;
 }
 
@@ -242,8 +242,8 @@ a {
 .about__bio-image {
   width: 100%;
   padding-top: 15vh;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/model-1.png") center center;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.png") center center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("./img/model-1.png") center center;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("./img/model-1.png") center center;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -299,8 +299,8 @@ a {
   height: 30vh;
   width: 100%;
   padding-top: 48vh;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.42)), to(rgba(39, 39, 39, 0))), url("../img/profile.jpg") center center;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.42), rgba(39, 39, 39, 0)), url("../img/profile.jpg") center center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.42)), to(rgba(39, 39, 39, 0))), url("./img/profile.jpg") center center;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.42), rgba(39, 39, 39, 0)), url("./img/profile.jpg") center center;
   background-size: contain;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -321,8 +321,8 @@ a {
 @media only screen and (min-width: 768px) {
   .about .jobs__bio-image {
     height: 20vh;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0)), to(rgba(39, 39, 39, 0))), url("../img/profile.jpg") center center;
-    background: linear-gradient(to right, rgba(39, 39, 39, 0), rgba(39, 39, 39, 0)), url("../img/profile.jpg") center center;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0)), to(rgba(39, 39, 39, 0))), url("./img/profile.jpg") center center;
+    background: linear-gradient(to right, rgba(39, 39, 39, 0), rgba(39, 39, 39, 0)), url("./img/profile.jpg") center center;
     background-size: contain;
     background-repeat: no-repeat;
     padding-top: 0;
@@ -334,7 +334,7 @@ a {
   width: 100%;
   color: #f0ebea;
   font-size: 0.81rem;
-  padding: 0.4rem;
+  padding: 0.38rem;
   background: #74306b;
 }
 
@@ -397,8 +397,8 @@ a {
   height: 30vh;
   width: 100%;
   padding-top: 48vh;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/hacking.jpg") center center;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/hacking.jpg") center center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("./img/hacking.jpg") center center;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("./img/hacking.jpg") center center;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -543,8 +543,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/foggy.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/foggy.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("./img/foggy.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("./img/foggy.jpg") center top;
   background-size: cover;
 }
 
