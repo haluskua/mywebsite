@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "node-sass -w scss/ -o DIST/css/ --recursive",
     "prefix": "postcss DIST/css/main.css --use=autoprefixer --map=false --output=DIST/css/main.css",
-    "minify": "cleancss --level=1 --source-map --source-map-inline-sources --output DIST/css/main.min.css DIST/main.css",
-    "build": "npm run prefix && npm run minify",
-    "deploy": "gh-pages -d DIST"
+    "deploy": "gh-pages -d DIST",
+    "build": "npm run prefix && npm run deploy"
+
   },
   "browserslist": [
     "last 2 versions"
