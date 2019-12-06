@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "node-sass --output-style=expanded --source-map=true scss/main.scss DIST/main.css",
-    "prefix": "postcss DIST/main.css --use=autoprefixer --map=false --output=DIST/main.css",
-    "minify": "cleancss --level=1 --source-map --source-map-inline-sources --output DIST/main.min.css DIST/main.css",
-    "dev": "npm run compile -- --watch",
-    "build": "npm run compile && npm run prefix && npm run minify",
+    "dev": "node-sass -w scss/ -o DIST/css/ --recursive",
+    "prefix": "postcss DIST/css/main.css --use=autoprefixer --map=false --output=DIST/css/main.css",
+    "minify": "cleancss --level=1 --source-map --source-map-inline-sources --output DIST/css/main.min.css DIST/main.css",
+    "build": "npm run prefix && npm run minify",
     "deploy": "gh-pages -d DIST"
   },
   "browserslist": [
@@ -19,11 +18,13 @@
   "license": "ISC",
   "homepage": "https://haluskua.github.io/mywebsite",
   "dependencies": {
-    "gh-pages": "^2.1.1"
+    "gh-pages": "^2.1.1",
+    "npm-run-all": "^4.1.5"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.3",
     "clean-css-cli": "^4.3.0",
+    "concurrently": "^5.0.0",
     "node-sass": "^4.13.0",
     "postcss-cli": "^6.1.3"
   }
