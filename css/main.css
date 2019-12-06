@@ -201,8 +201,7 @@ a {
         color: #f0ebea;
         font-size: 0.81rem;
         padding: 0.4rem;
-        background: #74306b;
-        background: orange; }
+        background: #74306b; }
     .about .jobs__job {
       display: flex;
       flex-direction: column;
