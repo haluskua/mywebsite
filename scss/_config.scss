@@ -1,0 +1,52 @@
+$primary-color: #272727;
+$secondary-color: #e97442;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+@mixin transition-ease {
+  transition: all 0.42s ease-in-out;
+}
+
+// function
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40%) {
+    @return #000;
+  } @else {
+    @return #ffffff;
+  }
+}
+
+@mixin SMALL-LANDSCAPE {
+  @media only screen and ( min-width: 768px) {
+    @content;
+  }
+}
+@mixin MEDIUM-DEVICE-WIDTH {
+  @media only screen and ( min-width: 768px) {
+    @content;
+  }
+}
+@mixin LARGE-DEVICE-WIDTH  {
+  @media only screen and ( min-width: 1024px) {
+    @content;
+  }
+}
+@mixin XLARGE-DEVICE-WIDTH {
+  @media only screen and ( min-width: 1600px) {
+    @content;
+  }
+}
+@mixin XXLARGE-DEVICE-WIDTH {
+  @media only screen and ( min-width: 2200px) {
+    @content;
+  }
+}

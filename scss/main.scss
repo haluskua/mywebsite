@@ -1,0 +1,144 @@
+/*----------- partials imports -----------*/
+
+@import "./config";
+@import "./variables";
+@import "./home";
+@import "./menu";
+@import "./about";
+@import "./projects";
+@import "./contact";
+
+
+/*-----X------ partials imports ------X-----*/
+
+/*----------- @Mixins -----------*/
+
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: content;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin theme($light-theme: true) {
+  @if $light-theme {
+    background: lighten($primary-bcg-color, 100%);
+    color: darken($primary-txt-color, 100%);
+  }
+}
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+/*----------- Light & Dark Theme -----------*/
+
+.light {
+  @include theme($light-theme: false);
+}
+
+/*----------- @Mixins -----------*/
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
+body {
+  background: $primary-bcg-color;
+  color: set-text-color($primary-color);
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+a {
+  color: set-text-color($primary-color);
+  text-decoration: none;
+}
+
+.text-secondary {
+    color: $secondary-color;
+    font-size: 1.5rem;
+    @include MEDIUM-DEVICE-WIDTH {
+      line-height: 2.3rem;
+      font-size: 1.3rem;
+    }
+}
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  .social-icons {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+
+    a {
+      @include transition-ease;
+      padding: 0.4rem;
+
+      &:hover {
+        color: $secondary-color;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+footer {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0.54rem;
+  right: 1rem;
+  text-align: right;
+  padding: 1rem;
+  color: set-text-color($primary-color);
+}
+
+// body {
+//     @include flexCenter(column);
+//     display: flex;
+//     justify-content: center;
+//     background-color: $primary-bcg-color;
+//     color: $pimary-txt-color;
+// }
+
+// .main {
+//     @include flexCenter(row);
+//     width: 80%-40%;
+//     margin: 0 auto;
+
+//     #{&}__paragraph1 {
+//         color: $primary-bcg-color;
+//         font-weight: weight(bold);
+
+//         &:hover{
+//             color: rgb(36, 151, 56);
+//             cursor: pointer;
+//         }
+//     }
+//     #{&}__paragraph2 {
+//         @extend .main__paragraph1;
+
+//         &:hover {
+//             color: $accent-color;
+//         }
+//     }
+
+//     @include mobile {
+//         flex-direction: column;
+//     }
+// }

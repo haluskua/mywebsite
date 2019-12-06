@@ -1,0 +1,122 @@
+.about {
+    padding-bottom: 2rem;
+  
+    &__bio-image {
+      width: 100%;
+      padding-top: 15vh;
+      background: linear-gradient(
+          to right,
+          rgba($primary-color, 0.9),
+          rgba($primary-color, 0.3)
+        ),
+        url("../img/model-1.png") center center;
+      background-size: cover;
+  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+  
+      p {
+        margin-bottom: 2rem;
+        line-height: 1.45rem;
+        padding-top: 0.5rem;
+        @include MEDIUM-DEVICE-WIDTH {
+          line-height: 1.56rem;
+          letter-spacing: 0.031rem;
+        }
+      }
+    }
+  
+    &__bio {
+      width: 80%;
+      text-align: center;
+      @include MEDIUM-DEVICE-WIDTH {
+        font-size: 1.5rem;
+      }
+    }
+  
+    .jobs {
+      display: flex;
+      width: 70vw;
+      margin: 2rem auto 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+  
+      &__bio-image {
+        height: 30vh;
+        width: 100%;
+        padding-top: 48vh;
+        background: linear-gradient(
+            to right,
+            rgba($primary-color, 0.42),
+            rgba($primary-color, 0.0)
+          ),
+          url("../img/profile.jpg") center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        @include MEDIUM-DEVICE-WIDTH {
+          height: 20vh;
+          background: linear-gradient(
+              to right,
+              rgba($primary-color, 0),
+              rgba($primary-color, 0)
+            ),
+            url("../img/profile.jpg") center center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          padding-top: 0;
+          background-position: left;
+        }
+        .text-secondary {
+          width: 100%;
+          color: rgb(240, 235, 234);
+          font-size: 0.84rem;
+          padding: 0.34rem;
+          background: rgb(116, 48, 107);
+        }
+      }
+  
+      &__job {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background: ligthen($primary-color, 10%);
+        padding: 0.4rem;
+        border-bottom: 7px solid $secondary-color;
+  
+        h2,
+        h3 {
+          margin: 0.4rem 0;
+          line-height: 1.35rem;
+        }
+        h5{
+          font-size: 0.9rem;
+          letter-spacing: 0.02rem;
+          color: $accent-color;
+          font-weight: normal;
+          font-style: italic;
+          padding: 0.2rem 0;
+          padding-top: 0.045rem;
+        }
+        h6 {
+          margin: 0.3rem 0;
+        }
+      }
+    }
+  
+    .social-icons {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    footer {
+      transform: rotate(90deg) translate(-3rem, -5rem);
+    }
+  }
+  
