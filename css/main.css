@@ -121,7 +121,8 @@ a {
     transition: all 0.42s ease-in-out;
     background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.83))), url("../img/project-0.jpg") center center;
     background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.83)), url("../img/project-0.jpg") center center;
-    background-size: cover; }
+    background-size: cover;
+    opacity: 0.087; }
     @media only screen and (min-width: 768px) {
       .nav .menu-nav {
         display: block;
@@ -185,8 +186,8 @@ a {
   .about__bio-image {
     width: 100%;
     padding-top: 15vh;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/model-1.png") center center;
-    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.png") center center;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.98)), to(rgba(39, 39, 39, 0.53))), url("../img/model-1.png") center center;
+    background: linear-gradient(to right, rgba(39, 39, 39, 0.98), rgba(39, 39, 39, 0.53)), url("../img/model-1.png") center center;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -204,7 +205,8 @@ a {
     .about__bio-image p {
       margin-bottom: 2rem;
       line-height: 1.45rem;
-      padding-top: 0.5rem; }
+      padding-top: 0.5rem;
+      text-align: left; }
       @media only screen and (min-width: 768px) {
         .about__bio-image p {
           line-height: 1.56rem;
@@ -228,8 +230,8 @@ a {
       height: 30vh;
       width: 100%;
       padding-top: 48vh;
-      background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.42)), to(rgba(39, 39, 39, 0))), url("../img/profile.jpg") center center;
-      background: linear-gradient(to right, rgba(39, 39, 39, 0.42), rgba(39, 39, 39, 0)), url("../img/profile.jpg") center center;
+      background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.12)), to(rgba(39, 39, 39, 0))), url("../img/profile.jpg") center center;
+      background: linear-gradient(to right, rgba(39, 39, 39, 0.12), rgba(39, 39, 39, 0)), url("../img/profile.jpg") center center;
       background-size: contain;
       background-repeat: no-repeat;
       display: -webkit-box;
