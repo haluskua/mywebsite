@@ -6,8 +6,8 @@
       padding-top: 15vh;
       background: linear-gradient(
           to right,
-          rgba($primary-color, 0.98),
-          rgba($primary-color, 0.53)
+          rgba($primary-color, 0.95),
+          rgba($primary-color, 0.973)
         ),
         url("../img/model-1.png") center center;
       background-size: cover;
@@ -46,12 +46,13 @@
       grid-gap: 2rem;
   
       &__bio-image {
-        height: 30vh;
+        height: 7vh;
         width: 100%;
+        border-radius: 1.5rem;
         padding-top: 48vh;
         background: linear-gradient(
             to right,
-            rgba($primary-color, 0.12),
+            rgba($primary-color, 0.02),
             rgba($primary-color, 0.0)
           ),
           url("../img/profile.jpg") center center;
@@ -79,7 +80,8 @@
           color: rgb(240, 235, 234);
           font-size: 0.81rem;
           padding: 0.4rem;
-          background: rgb(116, 48, 107);
+          background: rgba(51, 51, 51, 0.7);
+          margin-bottom: -1.8rem;
           // background: orange;
         }
       }
@@ -91,6 +93,7 @@
         background: ligthen($primary-color, 10%);
         padding: 0.4rem;
         border-bottom: 7px solid $secondary-color;
+        margin-top: 1rem;
   
         h2,
         h3 {

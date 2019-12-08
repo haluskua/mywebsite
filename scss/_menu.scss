@@ -89,7 +89,6 @@
         ),
         url("../img/project-0.jpg") center center;
       background-size: cover;
-      opacity: 0.087;
     @include MEDIUM-DEVICE-WIDTH {
       display: block;
       transform: translateY(0);
@@ -122,16 +121,18 @@
     &__link {
       display: inline-block;
       font-size: 1.1rem;
+      width: 240px;
       text-transform: uppercase;
-      padding: 1rem 0;
+      padding: 0.8rem 0;
       font-weight: 300;
       color: white;
+      text-shadow: 1.4px -1.36px #1d1e1f;
       @include transition-ease;
       @include MEDIUM-DEVICE-WIDTH {
         font-size: 1.45rem;
         letter-spacing: 0.09rem;
       }
-      
+
       &:hover {
         cursor: pointer;
         color: $secondary-color;
