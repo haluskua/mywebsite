@@ -6,8 +6,8 @@
       padding-top: 15vh;
       background: linear-gradient(
           to right,
-          rgba($primary-color, 0.9),
-          rgba($primary-color, 0.3)
+          rgba($primary-color, 0.98),
+          rgba($primary-color, 0.53)
         ),
         url("../img/model-1.png") center center;
       background-size: cover;
@@ -21,6 +21,7 @@
         margin-bottom: 2rem;
         line-height: 1.45rem;
         padding-top: 0.5rem;
+        text-align: left;
         @include MEDIUM-DEVICE-WIDTH {
           line-height: 1.56rem;
           letter-spacing: 0.031rem;
@@ -50,7 +51,7 @@
         padding-top: 48vh;
         background: linear-gradient(
             to right,
-            rgba($primary-color, 0.42),
+            rgba($primary-color, 0.12),
             rgba($primary-color, 0.0)
           ),
           url("../img/profile.jpg") center center;

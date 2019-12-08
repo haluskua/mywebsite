@@ -89,6 +89,7 @@
         ),
         url("../img/project-0.jpg") center center;
       background-size: cover;
+      opacity: 0.087;
     @include MEDIUM-DEVICE-WIDTH {
       display: block;
       transform: translateY(0);
@@ -130,7 +131,7 @@
         font-size: 1.45rem;
         letter-spacing: 0.09rem;
       }
-
+      
       &:hover {
         cursor: pointer;
         color: $secondary-color;
