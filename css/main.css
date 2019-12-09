@@ -9,6 +9,20 @@ a {
   text-decoration: none;
   list-style: none; }
 
+.showIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  bottom: 1rem;
+  left: 0.66rem;
+  padding: 0.09rem;
+  background: #2d2d2d; }
+
 .home {
   height: 100vh;
   padding-top: 40vh;
@@ -31,6 +45,8 @@ a {
     .home__name--last {
       font-weight: 700;
       color: #e97442; }
+  .home .social-icons {
+    margin-top: 6rem; }
 
 .menu-btn {
   position: absolute;
@@ -155,7 +171,7 @@ a {
       padding: 0.8rem 0;
       font-weight: 300;
       color: white;
-      text-shadow: 1.4px -1.36px #1d1e1f;
+      text-shadow: 1.4px -2.36px #1d1e1f;
       -webkit-transition: all 0.42s ease-in-out;
       transition: all 0.42s ease-in-out; }
       @media only screen and (min-width: 768px) {
@@ -294,14 +310,6 @@ a {
         padding-top: 0.045rem; }
       .about .jobs__job h6 {
         margin: 0.3rem 0; }
-  .about .social-icons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
   .about footer {
     -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
             transform: rotate(90deg) translate(-3rem, -5rem); }
@@ -398,14 +406,6 @@ a {
     .projects__btn:hover {
       color: #ffffff;
       font-size: 1.3rem; }
-  .projects .social-icons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
   .projects footer {
     -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
             transform: rotate(90deg) translate(-3rem, -5rem); }
@@ -467,7 +467,7 @@ a {
 
 .text-secondary {
   color: #e97442;
-  font-size: 1.5rem; }
+  font-size: 1.18rem; }
   @media only screen and (min-width: 768px) {
     .text-secondary {
       line-height: 2.3rem;
@@ -482,17 +482,13 @@ header {
 main {
   height: 100%;
   width: 100%; }
-  main .social-icons {
-    position: fixed;
-    bottom: 1rem;
-    left: 1rem; }
-    main .social-icons a {
-      -webkit-transition: all 0.42s ease-in-out;
-      transition: all 0.42s ease-in-out;
-      padding: 0.4rem; }
-      main .social-icons a:hover {
-        color: #e97442;
-        cursor: pointer; }
+  main a {
+    -webkit-transition: all 0.42s ease-in-out;
+    transition: all 0.42s ease-in-out;
+    padding: 0.4rem; }
+    main a:hover {
+      color: #e97442;
+      cursor: pointer; }
 
 footer {
   font-size: 1rem;
