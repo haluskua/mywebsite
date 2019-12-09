@@ -8,7 +8,6 @@
 @import "./projects";
 @import "./contact";
 
-
 /*-----X------ partials imports ------X-----*/
 
 /*----------- @Mixins -----------*/
@@ -64,12 +63,12 @@ a {
 }
 
 .text-secondary {
-    color: $secondary-color;
-    font-size: 1.5rem;
-    @include MEDIUM-DEVICE-WIDTH {
-      line-height: 2.3rem;
-      font-size: 1.3rem;
-    }
+  color: $secondary-color;
+  font-size: 1.18rem;
+  @include MEDIUM-DEVICE-WIDTH {
+    line-height: 2.3rem;
+    font-size: 1.3rem;
+  }
 }
 header {
   position: fixed;
@@ -81,19 +80,13 @@ header {
 main {
   height: 100%;
   width: 100%;
-  .social-icons {
-    position: fixed;
-    bottom: 1rem;
-    left: 1rem;
+  a {
+    @include transition-ease;
+    padding: 0.4rem;
 
-    a {
-      @include transition-ease;
-      padding: 0.4rem;
-
-      &:hover {
-        color: $secondary-color;
-        cursor: pointer;
-      }
+    &:hover {
+      color: $secondary-color;
+      cursor: pointer;
     }
   }
 }
