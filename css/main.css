@@ -220,7 +220,6 @@ a {
         -ms-flex-pack: end;
             justify-content: flex-end; }
     .about__bio-image .text-secondary {
-      font-weight: bold;
       font-size: 1.4rem; }
     .about__bio-image p {
       margin-bottom: 2rem;
@@ -298,18 +297,19 @@ a {
       background: ligthen(#272727, 10%);
       padding: 0.4rem;
       border-bottom: 7px solid #e97442;
-      margin-top: 1rem; }
+      margin-top: 0.57rem; }
       .about .jobs__job h2,
       .about .jobs__job h3 {
         margin: 0.4rem 0;
-        line-height: 1.35rem; }
+        line-height: 1.55rem;
+        font-size: 1.36rem; }
       .about .jobs__job h5 {
         font-size: 0.9rem;
         letter-spacing: 0.02rem;
-        color: #ffedbc;
+        color: #1b92d8;
         font-weight: normal;
-        font-style: italic;
-        padding: 0.2rem 0;
+        font-style: normal;
+        padding: 0.15rem 0;
         padding-top: 0.045rem; }
       .about .jobs__job h6 {
         margin: 0.3rem 0; }
