@@ -17,7 +17,6 @@
     align-items: center;
     justify-content: flex-end;
     .text-secondary {
-      font-weight: bold;
       font-size: 1.4rem;
     }
 
@@ -40,7 +39,6 @@
       font-size: 1.5rem;
     }
   }
-  
 
   .jobs {
     display: flex;
@@ -97,20 +95,21 @@
       background: ligthen($primary-color, 10%);
       padding: 0.4rem;
       border-bottom: 7px solid $secondary-color;
-      margin-top: 1rem;
+      margin-top: 0.57rem;
 
       h2,
       h3 {
         margin: 0.4rem 0;
-        line-height: 1.35rem;
+        line-height: 1.55rem;
+        font-size: 1.36rem;
       }
       h5 {
         font-size: 0.9rem;
         letter-spacing: 0.02rem;
         color: $accent-color;
         font-weight: normal;
-        font-style: italic;
-        padding: 0.2rem 0;
+        font-style: normal;
+        padding: 0.15rem 0;
         padding-top: 0.045rem;
       }
       h6 {
