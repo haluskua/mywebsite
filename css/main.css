@@ -544,6 +544,21 @@ a {
   }
 }
 
+.projects__item .project__title {
+  position: absolute;
+  top: 50%;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(121, 130, 109, 0.9);
+  padding: 0.4rem;
+  text-align: center;
+}
+
 .projects__item img {
   width: 100%;
 }
