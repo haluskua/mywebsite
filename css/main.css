@@ -514,6 +514,13 @@ a {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .projects__items {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .projects__item {
   max-height: 60vh;
   width: 100%;
