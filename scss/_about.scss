@@ -3,7 +3,7 @@
 
   &__bio-image {
     width: 100%;
-    padding-top: 15vh;
+    padding-top: 9.5vh;
     background: linear-gradient(
         to right,
         rgba($primary-color, 0.95),
@@ -45,7 +45,7 @@
   .jobs {
     display: flex;
     width: 70vw;
-    margin: 2rem auto 0 auto;
+    margin: 0.2rem auto 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2rem;
@@ -53,8 +53,9 @@
     &__bio-image {
       height: 7vh;
       width: 46%;
-      border-radius: 1.5rem;
-      padding-top: 20vh;
+      border: 0.5rem solid #333838;
+      border-radius: 0.4rem;
+      padding-top: 21vh;
       background: linear-gradient(to right, rgba(39, 39, 39, 0.02), rgba(39, 39, 39, 0)), url(../img/profile.jpg) center center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -80,7 +81,6 @@
         width: 100%;
         color: rgb(240, 235, 234);
         font-size: 0.81rem;
-        padding: 0.4rem;
         background: rgba(51, 51, 51, 0.7);
         margin-bottom: -1.8rem;
       }
@@ -96,7 +96,7 @@
 
       h2,
       h3 {
-        margin: 0.4rem 0;
+        margin: 0.22rem 0;
         line-height: 1.55rem;
         font-size: 1.33rem;
       }

@@ -29,17 +29,13 @@ function toggleMenu() {
 //jQuery
 
 $(document).ready(function() {
-
-
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 410) {
+    if (scroll >= 440) {
       $(".socialIcons").addClass("showIcons");
     } else {
       $(".socialIcons").removeClass("showIcons");
-    };
+    }
   });
-
-  
 });
