@@ -12,6 +12,9 @@
         ),
         url('../img/weave.jpg') center top;
     background-size: cover;
+    @include MEDIUM-DEVICE-WIDTH {
+        padding-top: 68vh;
+    }
 
     h2 {
         text-transform: capitalize;

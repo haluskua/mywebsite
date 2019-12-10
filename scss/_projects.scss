@@ -22,7 +22,7 @@
 
     .text-secondary {
       font-size: 2rem;
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.62rem;
     }
   }
 
@@ -33,6 +33,7 @@
     grid-gap: 2rem;
     @include MEDIUM-DEVICE-WIDTH {
       grid-template-columns: repeat(2, 1fr);
+      padding: 1rem;
     }
   }
 

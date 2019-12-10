@@ -28,8 +28,9 @@
       padding-top: 0.5rem;
       text-align: left;
       @include MEDIUM-DEVICE-WIDTH {
-        line-height: 1.56rem;
+        line-height: 1.7rem;
         letter-spacing: 0.031rem;
+        font-size: 1rem;
       }
     }
   }
@@ -53,9 +54,8 @@
     &__bio-image {
       height: 7vh;
       width: 46%;
-      border: 0.5rem solid #333838;
-      border-radius: 0.4rem;
-      padding-top: 21vh;
+      border-radius: 0.3rem;
+      padding-top: 24vh;
       background: linear-gradient(to right, rgba(39, 39, 39, 0.02), rgba(39, 39, 39, 0)), url(../img/profile.jpg) center center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -79,10 +79,14 @@
       }
       .text-secondary {
         width: 100%;
-        color: rgb(240, 235, 234);
+        color: #c3b59f;
         font-size: 0.81rem;
         background: rgba(51, 51, 51, 0.7);
-        margin-bottom: -1.8rem;
+        margin-bottom: -1.34rem;
+        @include MEDIUM-DEVICE-WIDTH {
+          background: none;
+          margin-bottom: -1.86rem;
+        }
       }
     }
 
