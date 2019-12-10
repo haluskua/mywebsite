@@ -7,10 +7,10 @@
     background: 
         linear-gradient(
             to right,
-            rgba($primary-color, 0.9),
+            rgba($primary-color, 0.29),
             rgba($primary-color, 0.3)
         ),
-        url('../img/weave.jpg') center top;
+        url('../img/background-man.png') center top;
     background-size: cover;
     @include MEDIUM-DEVICE-WIDTH {
         padding-top: 68vh;
@@ -18,8 +18,9 @@
 
     h2 {
         text-transform: capitalize;
-        font-size: 1.34rem;
+        font-size: 1.25rem;
         line-height: 1.5rem;
+        padding: 0 10%;
     }
 
     &__name {

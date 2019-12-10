@@ -65,6 +65,7 @@ a {
 .text-secondary {
   color: #e0d2b9;
   font-size: 1rem;
+  line-height: 1.5rem;
   @include MEDIUM-DEVICE-WIDTH {
     line-height: 2.3rem;
     font-size: 1.3rem;
