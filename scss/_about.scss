@@ -40,6 +40,7 @@
     text-align: center;
     @include MEDIUM-DEVICE-WIDTH {
       font-size: 1.5rem;
+      width: 67%;
     }
   }
 
@@ -51,7 +52,7 @@
     grid-template-columns: 1fr;
     grid-gap: 2rem;
     @include MEDIUM-DEVICE-WIDTH {
-      width: 83vw;
+      width: 67vw;
     }
 
     &__bio-image {

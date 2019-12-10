@@ -63,6 +63,7 @@ a {
   margin-bottom: 1rem;
   line-height: 3.75rem;
   border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #5a4a2b;
 }
 
 .home__name--last {
@@ -184,8 +185,8 @@ a {
           transform: translateY(-100%);
   -webkit-transition: all 0.42s ease-in-out;
   transition: all 0.42s ease-in-out;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.83))), url("../img/project-0.jpg") center center;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.83)), url("../img/project-0.jpg") center center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.93))), url("../img/project-0.jpg") center center;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.93)), url("../img/project-0.jpg") center center;
   background-size: cover;
 }
 
@@ -227,7 +228,7 @@ a {
 }
 
 .nav .menu-nav__item.active > a {
-  color: #fff9cf;
+  color: #e6d3b0;
 }
 
 .nav .menu-nav__link {
@@ -237,7 +238,7 @@ a {
   text-transform: uppercase;
   padding: 0.8rem 0;
   font-weight: 300;
-  color: white;
+  color: #e3efd5;
   text-shadow: 1.8px 2.36px #1d1b18;
   -webkit-transition: all 0.42s ease-in-out;
   transition: all 0.42s ease-in-out;
@@ -330,6 +331,7 @@ a {
 @media only screen and (min-width: 768px) {
   .about__bio {
     font-size: 1.5rem;
+    width: 67%;
   }
 }
 
@@ -348,7 +350,7 @@ a {
 
 @media only screen and (min-width: 768px) {
   .about .jobs {
-    width: 83vw;
+    width: 67vw;
   }
 }
 
