@@ -50,13 +50,21 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2rem;
+    @include MEDIUM-DEVICE-WIDTH {
+      width: 83vw;
+    }
 
     &__bio-image {
       height: 7vh;
       width: 46%;
       border-radius: 0.3rem;
       padding-top: 24vh;
-      background: linear-gradient(to right, rgba(39, 39, 39, 0.02), rgba(39, 39, 39, 0)), url(../img/profile.jpg) center center;
+      background: linear-gradient(
+          to right,
+          rgba(39, 39, 39, 0.02),
+          rgba(39, 39, 39, 0)
+        ),
+        url(../img/profile.jpg) center center;
       background-size: contain;
       background-repeat: no-repeat;
       display: flex;
@@ -116,6 +124,15 @@
       h6 {
         margin: 0.3rem 0;
       }
+    }
+  }
+  .socialIcons {
+    @include MEDIUM-DEVICE-WIDTH {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      bottom: 2rem;
+      padding: 0 0.52rem;
     }
   }
 

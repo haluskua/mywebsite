@@ -93,9 +93,10 @@
       display: block;
       transform: translateY(0);
       height: 100%;
-      background: rgba(121, 130, 109, 0.67);
+      background: rgba(121, 130, 109, 0.77);
       text-align: center;
       padding-right: 0;
+      padding: 0.52rem 0;
     }
 
     &.open {
@@ -130,8 +131,7 @@
       text-shadow: 1.8px 2.36px #1d1b18;
       @include transition-ease;
       @include MEDIUM-DEVICE-WIDTH {
-        font-size: 1.45rem;
-        letter-spacing: 0.09rem;
+        font-size: 1.4rem;
         width: 163px;
         text-shadow: 1.8px 2.36px #3e473a;
       }
