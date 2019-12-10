@@ -171,7 +171,7 @@ a {
       padding: 0.8rem 0;
       font-weight: 300;
       color: white;
-      text-shadow: 1.4px -2.36px #1d1e1f;
+      text-shadow: 1.8px 2.36px #1d1b18;
       -webkit-transition: all 0.42s ease-in-out;
       transition: all 0.42s ease-in-out; }
       @media only screen and (min-width: 768px) {
@@ -203,8 +203,8 @@ a {
   .about__bio-image {
     width: 100%;
     padding-top: 15vh;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.95)), to(rgba(39, 39, 39, 0.973))), url("../img/model-1.png") center center;
-    background: linear-gradient(to right, rgba(39, 39, 39, 0.95), rgba(39, 39, 39, 0.973)), url("../img/model-1.png") center center;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.95)), to(rgba(39, 39, 39, 0.99))), url("../img/model-1.png") center center;
+    background: linear-gradient(to right, rgba(39, 39, 39, 0.95), rgba(39, 39, 39, 0.99)), url("../img/model-1.png") center center;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -220,7 +220,9 @@ a {
         -ms-flex-pack: end;
             justify-content: flex-end; }
     .about__bio-image .text-secondary {
-      font-size: 1.4rem; }
+      font-size: 1.05rem;
+      text-align: left;
+      color: #e97442; }
     .about__bio-image p {
       margin-bottom: 2rem;
       line-height: 1.45rem;
@@ -247,11 +249,11 @@ a {
     grid-gap: 2rem; }
     .about .jobs__bio-image {
       height: 7vh;
-      width: 100%;
+      width: 46%;
       border-radius: 1.5rem;
-      padding-top: 48vh;
-      background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.02)), to(rgba(39, 39, 39, 0))), url("../img/profile.jpg") center center;
-      background: linear-gradient(to right, rgba(39, 39, 39, 0.02), rgba(39, 39, 39, 0)), url("../img/profile.jpg") center center;
+      padding-top: 20vh;
+      background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.02)), to(rgba(39, 39, 39, 0))), url(../img/profile.jpg) center center;
+      background: linear-gradient(to right, rgba(39, 39, 39, 0.02), rgba(39, 39, 39, 0)), url(../img/profile.jpg) center center;
       background-size: contain;
       background-repeat: no-repeat;
       display: -webkit-box;
@@ -266,7 +268,8 @@ a {
               align-items: center;
       -webkit-box-pack: end;
           -ms-flex-pack: end;
-              justify-content: flex-end; }
+              justify-content: flex-end;
+      margin-bottom: 1rem; }
       @media only screen and (min-width: 768px) {
         .about .jobs__bio-image {
           height: 20vh;
@@ -296,17 +299,16 @@ a {
               align-items: flex-start;
       background: ligthen(#272727, 10%);
       padding: 0.4rem;
-      border-bottom: 7px solid #e97442;
-      margin-top: 0.57rem; }
+      border-bottom: 7px solid #e97442; }
       .about .jobs__job h2,
       .about .jobs__job h3 {
         margin: 0.4rem 0;
         line-height: 1.55rem;
-        font-size: 1.36rem; }
+        font-size: 1.33rem; }
       .about .jobs__job h5 {
         font-size: 0.9rem;
         letter-spacing: 0.02rem;
-        color: #1b92d8;
+        color: #c3b59f;
         font-weight: normal;
         font-style: normal;
         padding: 0.15rem 0;
@@ -431,7 +433,7 @@ a {
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/foggy.jpg") center top;
   background-size: cover; }
   .contact h2 {
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin-bottom: 2rem; }
     @media only screen and (min-width: 768px) {
       .contact h2 {
@@ -469,7 +471,7 @@ a {
   text-decoration: none; }
 
 .text-secondary {
-  color: #e97442;
+  color: #e0d2b9;
   font-size: 1.19rem; }
   @media only screen and (min-width: 768px) {
     .text-secondary {
@@ -494,12 +496,12 @@ main {
       cursor: pointer; }
 
 footer {
-  font-size: 1rem;
+  font-size: 0.75rem;
   position: fixed;
   bottom: 0.54rem;
-  right: 1rem;
+  right: 1.75rem;
   text-align: right;
   padding: 1rem;
-  color: #ffffff; }
+  color: #646262; }
 
 /*# sourceMappingURL=main.css.map */

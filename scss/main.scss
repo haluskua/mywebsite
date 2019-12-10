@@ -63,7 +63,7 @@ a {
 }
 
 .text-secondary {
-  color: $secondary-color;
+  color: #e0d2b9;
   font-size: 1.19rem;
   @include MEDIUM-DEVICE-WIDTH {
     line-height: 2.3rem;
@@ -92,13 +92,13 @@ main {
 }
 
 footer {
-  font-size: 1rem;
+  font-size: 0.75rem;
   position: fixed;
   bottom: 0.54rem;
-  right: 1rem;
+  right: 1.75rem;
   text-align: right;
   padding: 1rem;
-  color: set-text-color($primary-color);
+  color: #646262;
 }
 
 // body {

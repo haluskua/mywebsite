@@ -7,7 +7,7 @@
     background: linear-gradient(
         to right,
         rgba($primary-color, 0.95),
-        rgba($primary-color, 0.973)
+        rgba($primary-color, 0.99)
       ),
       url("../img/model-1.png") center center;
     background-size: cover;
@@ -17,7 +17,9 @@
     align-items: center;
     justify-content: flex-end;
     .text-secondary {
-      font-size: 1.4rem;
+      font-size: 1.05rem;
+      text-align: left;
+      color: $secondary-color;
     }
 
     p {
@@ -50,21 +52,17 @@
 
     &__bio-image {
       height: 7vh;
-      width: 100%;
+      width: 46%;
       border-radius: 1.5rem;
-      padding-top: 48vh;
-      background: linear-gradient(
-          to right,
-          rgba($primary-color, 0.02),
-          rgba($primary-color, 0)
-        ),
-        url("../img/profile.jpg") center center;
+      padding-top: 20vh;
+      background: linear-gradient(to right, rgba(39, 39, 39, 0.02), rgba(39, 39, 39, 0)), url(../img/profile.jpg) center center;
       background-size: contain;
       background-repeat: no-repeat;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-end;
+      margin-bottom: 1rem;
       @include MEDIUM-DEVICE-WIDTH {
         height: 20vh;
         background: linear-gradient(
@@ -95,13 +93,12 @@
       background: ligthen($primary-color, 10%);
       padding: 0.4rem;
       border-bottom: 7px solid $secondary-color;
-      margin-top: 0.57rem;
 
       h2,
       h3 {
         margin: 0.4rem 0;
         line-height: 1.55rem;
-        font-size: 1.36rem;
+        font-size: 1.33rem;
       }
       h5 {
         font-size: 0.9rem;
