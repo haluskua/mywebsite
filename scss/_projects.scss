@@ -35,7 +35,7 @@
       grid-template-columns: repeat(2, 1fr);
       padding: 1rem;
     }
-    @include LARGE-DEVICE-WIDTH{
+    @include LARGE-DEVICE-WIDTH {
       grid-template-columns: repeat(3, 1fr);
     }
   }
@@ -51,6 +51,16 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+    .project__title {
+      position: absolute;
+      top: 50%;
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      background: rgba(121, 130, 109, 0.9);
+      padding: 0.4rem;
+      text-align: center;
     }
 
     img {
