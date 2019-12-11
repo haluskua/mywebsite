@@ -500,8 +500,11 @@ a {
 }
 
 .projects__bio-image .text-secondary {
-  font-size: 2rem;
+  font-size: 1.15rem;
   margin-bottom: 0.62rem;
+  color: #548d9e;
+  top: 30%;
+  position: absolute;
 }
 
 .projects__items {
