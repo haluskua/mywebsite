@@ -1,3 +1,4 @@
+/*--------------Google fonts impors--------------*/
 /*----------- partials imports -----------*/
 * {
   -webkit-box-sizing: border-box;
@@ -22,21 +23,21 @@ a {
           flex-direction: column;
   bottom: 2rem;
   font-size: 0.7rem;
-  left: 0.41rem;
+  right: 0.41rem;
   padding: 0.09rem;
   background: #100f0f;
 }
 
 .home {
   height: 100vh;
-  padding-top: 40vh;
+  padding-top: 35vh;
   overflow: hidden;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(13, 14, 9, 0.63)), to(rgba(6, 15, 21, 0.3))), url(../img/background-man.png) center top;
-  background: linear-gradient(to right, rgba(13, 14, 9, 0.63), rgba(6, 15, 21, 0.3)), url(../img/background-man.png) center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(13, 14, 9, 0.2)), to(rgba(6, 15, 21, 0.3))), url(../img/background-man.png) center top;
+  background: linear-gradient(to right, rgba(13, 14, 9, 0.2), rgba(6, 15, 21, 0.3)), url(../img/background-man.png) center top;
   background-size: cover;
   /* Medium break point*/
 }
@@ -199,7 +200,7 @@ a {
     -webkit-transform: translateY(0);
             transform: translateY(0);
     height: 100%;
-    background: rgba(121, 130, 109, 0.77);
+    background: #484843;
     text-align: center;
     padding-right: 0;
     padding: 0.52rem 0;
@@ -240,7 +241,7 @@ a {
   width: 240px;
   letter-spacing: 0.03rem;
   text-transform: uppercase;
-  padding: 0.8rem 0;
+  padding: 0.99rem 0;
   font-weight: 400;
   color: #d9efff;
   text-shadow: 1.8px 2.36px #1d1b18;
@@ -253,6 +254,12 @@ a {
     font-size: 1.4rem;
     width: 163px;
     text-shadow: 1.8px 2.36px #3e473a;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .nav .menu-nav__link {
+    font-size: 1.2rem;
   }
 }
 
@@ -289,8 +296,9 @@ a {
 .about__bio-image {
   width: 100%;
   padding-top: 9.5vh;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(4, 9, 14, 0.95)), to(rgba(9, 13, 19, 0.99))), url(../img/model-1.png) center center;
-  background: linear-gradient(to right, rgba(4, 9, 14, 0.95), rgba(9, 13, 19, 0.99)), url(../img/model-1.png) center center;
+  background: -webkit-gradient(linear, left top, right top, from(#0c0c0a), to(#040403)), url(../img/model-1.png) center center;
+  background: linear-gradient(to right, #0c0c0a, #040403), url(../img/model-1.png) center center;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,8 +320,14 @@ a {
   color: #e97442;
 }
 
+@media only screen and (min-width: 1024px) {
+  .about__bio-image .text-secondary {
+    font-size: 1.27rem;
+  }
+}
+
 .about__bio-image p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 2rem;
   line-height: 1.45rem;
   padding-top: 0.5rem;
@@ -409,6 +423,13 @@ a {
   .about .jobs__bio-image .text-secondary {
     background: none;
     margin-bottom: -1.86rem;
+    font-size: 1.56rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about .jobs__bio-image .text-secondary {
+    font-size: 1.67rem;
   }
 }
 
@@ -428,11 +449,24 @@ a {
   border-bottom: 7px solid #e97442;
 }
 
+@media only screen and (min-width: 768px) {
+  .about .jobs__job {
+    border-bottom: 2px solid #e97442;
+  }
+}
+
 .about .jobs__job h2,
 .about .jobs__job h3 {
   margin: 0.22rem 0;
   line-height: 1.55rem;
   font-size: 1.33rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .about .jobs__job h2,
+  .about .jobs__job h3 {
+    font-size: 1.7rem;
+  }
 }
 
 .about .jobs__job h5 {
@@ -443,6 +477,12 @@ a {
   font-style: normal;
   padding: 0.15rem 0;
   padding-top: 0.045rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .about .jobs__job h5 {
+    font-size: 1.1rem;
+  }
 }
 
 .about .jobs__job h6 {
@@ -503,9 +543,10 @@ a {
 
 .projects__bio-image .text-secondary {
   font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
   font-size: 1.15rem;
   margin-bottom: 0.62rem;
-  color: #548d9e;
+  color: #fffdfa;
   top: 30%;
   position: absolute;
 }
@@ -538,7 +579,7 @@ a {
   max-height: 60vh;
   width: 100%;
   position: relative;
-  border-bottom: 5px solid #e97442;
+  border-bottom: 2px solid #e97442;
   overflow: hidden;
   cursor: pointer;
 }
@@ -688,6 +729,24 @@ a {
 .contact .social-icons .fa-2x {
   font-size: 1.53rem;
   padding: 0.2rem 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .contact .social-icons .fa-2x {
+    font-size: 2.2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contact .social-icons {
+    margin-top: 7rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .contact .social-icons {
+    margin-top: 11rem;
+  }
 }
 
 /*-----X------ partials imports ------X-----*/
