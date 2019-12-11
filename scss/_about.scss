@@ -4,12 +4,9 @@
   &__bio-image {
     width: 100%;
     padding-top: 9.5vh;
-    background: linear-gradient(
-        to right,
-        rgba(4, 9, 14, 0.95),
-        rgba(9, 13, 19, 0.99)
-      ),
+    background: linear-gradient(to right, rgb(12, 12, 10), rgb(4, 4, 3)),
       url(../img/model-1.png) center center;
+      background-size: cover;
 
     display: flex;
     flex-direction: column;
@@ -19,10 +16,13 @@
       font-size: 1.05rem;
       text-align: left;
       color: $secondary-color;
+      @include LARGE-DEVICE-WIDTH {
+        font-size: 1.27rem;
+      }
     }
 
     p {
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       margin-bottom: 2rem;
       line-height: 1.45rem;
       padding-top: 0.5rem;
@@ -96,6 +96,10 @@
         @include MEDIUM-DEVICE-WIDTH {
           background: none;
           margin-bottom: -1.86rem;
+          font-size: 1.56rem;
+        }
+        @include LARGE-DEVICE-WIDTH {
+          font-size: 1.67rem;
         }
       }
     }
@@ -107,12 +111,20 @@
       background: ligthen($primary-color, 10%);
       padding: 0.4rem;
       border-bottom: 7px solid $secondary-color;
+      @include MEDIUM-DEVICE-WIDTH {
+        border-bottom: 2px solid $secondary-color;
+      }
 
       h2,
       h3 {
         margin: 0.22rem 0;
         line-height: 1.55rem;
         font-size: 1.33rem;
+        @include MEDIUM-DEVICE-WIDTH {
+        }
+        @include LARGE-DEVICE-WIDTH {
+          font-size: 1.7rem;
+        }
       }
       h5 {
         font-size: 0.9rem;
@@ -122,6 +134,9 @@
         font-style: normal;
         padding: 0.15rem 0;
         padding-top: 0.045rem;
+        @include LARGE-DEVICE-WIDTH {
+          font-size: 1.1rem;
+        }
       }
       h6 {
         margin: 0.3rem 0;

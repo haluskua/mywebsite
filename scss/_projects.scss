@@ -22,9 +22,10 @@
 
     .text-secondary {
       font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
       font-size: 1.15rem;
       margin-bottom: 0.62rem;
-      color: #548d9e;
+      color: #fffdfa;
       top: 30%;
       position: absolute;
     }
@@ -48,7 +49,7 @@
     max-height: 60vh;
     width: 100%;
     position: relative;
-    border-bottom: 5px solid $secondary-color;
+    border-bottom: 2px solid $secondary-color;
     overflow: hidden;
     cursor: pointer;
     @include MEDIUM-DEVICE-WIDTH {
