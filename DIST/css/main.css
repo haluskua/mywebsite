@@ -313,17 +313,19 @@ a {
 }
 
 .about__bio-image p {
+  font-family: 'Montserrat', sans-serif;
   margin-bottom: 2rem;
   line-height: 1.45rem;
   padding-top: 0.5rem;
   text-align: left;
+  font-size: 0.8rem;
 }
 
 @media only screen and (min-width: 768px) {
   .about__bio-image p {
     line-height: 1.7rem;
     letter-spacing: 0.031rem;
-    font-size: 1rem;
+    font-size: 1.03rem;
   }
 }
 
@@ -500,6 +502,7 @@ a {
 }
 
 .projects__bio-image .text-secondary {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.15rem;
   margin-bottom: 0.62rem;
   color: #548d9e;
@@ -568,6 +571,7 @@ a {
   position: absolute;
   width: 55%;
   text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .projects__item img {

@@ -22,14 +22,16 @@
     }
 
     p {
+      font-family: 'Montserrat', sans-serif;
       margin-bottom: 2rem;
       line-height: 1.45rem;
       padding-top: 0.5rem;
       text-align: left;
+      font-size: 0.8rem;
       @include MEDIUM-DEVICE-WIDTH {
         line-height: 1.7rem;
         letter-spacing: 0.031rem;
-        font-size: 1rem;
+        font-size: 1.03rem;
       }
     }
   }
