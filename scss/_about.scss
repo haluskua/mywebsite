@@ -4,9 +4,9 @@
   &__bio-image {
     width: 100%;
     padding-top: 9.5vh;
-    background: linear-gradient(to right, rgb(12, 12, 10), rgb(4, 4, 3)),
+    background: linear-gradient(to right, #1b1b19, #1f1f1b),
       url(../img/model-1.png) center center;
-      background-size: cover;
+    background-size: cover;
 
     display: flex;
     flex-direction: column;
@@ -22,16 +22,16 @@
     }
 
     p {
-      font-family: "Montserrat", sans-serif;
       margin-bottom: 2rem;
       line-height: 1.45rem;
       padding-top: 0.5rem;
       text-align: left;
-      font-size: 0.8rem;
+      font-size: 0.97rem;
       @include MEDIUM-DEVICE-WIDTH {
         line-height: 1.7rem;
         letter-spacing: 0.031rem;
         font-size: 1.03rem;
+        padding: 0.5rem 9rem;
       }
     }
   }
@@ -95,11 +95,11 @@
         margin-bottom: -1.34rem;
         @include MEDIUM-DEVICE-WIDTH {
           background: none;
-          margin-bottom: -1.86rem;
+          margin-bottom: -2rem;
           font-size: 1.56rem;
         }
         @include LARGE-DEVICE-WIDTH {
-          font-size: 1.67rem;
+          font-size: 1.65rem;
         }
       }
     }
@@ -110,7 +110,7 @@
       align-items: flex-start;
       background: ligthen($primary-color, 10%);
       padding: 0.4rem;
-      border-bottom: 7px solid $secondary-color;
+      border-bottom: 2px solid #69542b;
       @include MEDIUM-DEVICE-WIDTH {
         border-bottom: 2px solid $secondary-color;
       }

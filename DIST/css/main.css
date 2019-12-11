@@ -236,6 +236,7 @@ a {
 }
 
 .nav .menu-nav__link {
+  font-family: 'Montserrat', sans-serif;
   display: inline-block;
   font-size: 1rem;
   width: 240px;
@@ -251,7 +252,7 @@ a {
 
 @media only screen and (min-width: 768px) {
   .nav .menu-nav__link {
-    font-size: 1.4rem;
+    font-size: 1.24rem;
     width: 163px;
     text-shadow: 1.8px 2.36px #3e473a;
   }
@@ -259,7 +260,7 @@ a {
 
 @media only screen and (min-width: 1024px) {
   .nav .menu-nav__link {
-    font-size: 1.2rem;
+    font-size: 1.12rem;
   }
 }
 
@@ -296,8 +297,8 @@ a {
 .about__bio-image {
   width: 100%;
   padding-top: 9.5vh;
-  background: -webkit-gradient(linear, left top, right top, from(#0c0c0a), to(#040403)), url(../img/model-1.png) center center;
-  background: linear-gradient(to right, #0c0c0a, #040403), url(../img/model-1.png) center center;
+  background: -webkit-gradient(linear, left top, right top, from(#1b1b19), to(#1f1f1b)), url(../img/model-1.png) center center;
+  background: linear-gradient(to right, #1b1b19, #1f1f1b), url(../img/model-1.png) center center;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -327,12 +328,11 @@ a {
 }
 
 .about__bio-image p {
-  font-family: "Montserrat", sans-serif;
   margin-bottom: 2rem;
   line-height: 1.45rem;
   padding-top: 0.5rem;
   text-align: left;
-  font-size: 0.8rem;
+  font-size: 0.97rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -340,6 +340,7 @@ a {
     line-height: 1.7rem;
     letter-spacing: 0.031rem;
     font-size: 1.03rem;
+    padding: 0.5rem 9rem;
   }
 }
 
@@ -422,14 +423,14 @@ a {
 @media only screen and (min-width: 768px) {
   .about .jobs__bio-image .text-secondary {
     background: none;
-    margin-bottom: -1.86rem;
+    margin-bottom: -2rem;
     font-size: 1.56rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .about .jobs__bio-image .text-secondary {
-    font-size: 1.67rem;
+    font-size: 1.65rem;
   }
 }
 
@@ -446,7 +447,7 @@ a {
           align-items: flex-start;
   background: ligthen(#272727, 10%);
   padding: 0.4rem;
-  border-bottom: 7px solid #e97442;
+  border-bottom: 2px solid #69542b;
 }
 
 @media only screen and (min-width: 768px) {
@@ -579,7 +580,7 @@ a {
   max-height: 60vh;
   width: 100%;
   position: relative;
-  border-bottom: 2px solid #e97442;
+  border: 1.5px solid #69542b;
   overflow: hidden;
   cursor: pointer;
 }
