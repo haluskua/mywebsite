@@ -12,22 +12,24 @@
         ),
         url('../img/background-man.png') center top;
     background-size: cover;
+    /* Medium break point*/
     @include MEDIUM-DEVICE-WIDTH {
         padding-top: 68vh;
     }
 
     h2 {
-        text-transform: capitalize;
-        font-size: 1.25rem;
+        text-transform: normal;
+        font-size: 1.2rem;
         line-height: 1.5rem;
         padding: 0 10%;
+        color: #7d7056;
     }
 
     &__name {
-        font-size: 2.8rem;
-        padding-bottom: 1rem;
+        font-size: 2.1rem;
+        padding-bottom: 0.5rem;
         margin-bottom: 1rem;
-        line-height: 3.75rem;
+        line-height: 3rem;
         border-bottom: 2px solid set-text-color($primary-color);
         border-bottom: 2px solid #5a4a2b;
 
@@ -39,6 +41,10 @@
     }
     .social-icons {
         margin-top: 6rem;
+        .fa-2x {
+            font-size: 1.53rem;
+            padding: 0.2rem 0;
+          }
     }
 }
 

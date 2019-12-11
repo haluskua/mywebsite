@@ -6,11 +6,10 @@
     padding-top: 9.5vh;
     background: linear-gradient(
         to right,
-        rgba($primary-color, 0.95),
-        rgba($primary-color, 0.99)
+        rgba(4, 9, 14, 0.95),
+        rgba(9, 13, 19, 0.99)
       ),
-      url("../img/model-1.png") center center;
-    background-size: cover;
+      url(../img/model-1.png) center center;
 
     display: flex;
     flex-direction: column;

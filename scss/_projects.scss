@@ -53,15 +53,14 @@
       align-items: center;
     }
     .project__title {
-      position: absolute;
-      top: 20%;
-      width: 55%;
       display: flex;
       justify-content: center;
-      background: rgba(121, 130, 109, 0.9);
-      padding: 0.4rem;
+      background: rgba(94, 75, 40, 0.19);
+      padding: 0.34rem;
       text-align: center;
-      font-size: 1.3rem;
+      font-size: 1rem;
+      position: absolute;
+      width: 55%;
     }
 
     img {
