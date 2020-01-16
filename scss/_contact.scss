@@ -7,16 +7,20 @@
   align-items: center;
   background: linear-gradient(
       to right,
-      rgba(15, 24, 33, 0.9),
-      rgba(44, 92, 97, 0.3)
+      rgba(15, 24, 33, 0.29),
+      rgba(44, 92, 97, 0.23)
     ),
-    url(../img/foggy.jpg) center top;
+    url(../img/rooster-b-w.png) center top no-repeat;
   background-size: cover;
+  background-position: center;
+  @include MEDIUM-DEVICE-WIDTH {
+    background-size: cover;
+  }
 
   h2 {
     font-size: 2.26rem;
     margin-bottom: 2rem;
-    color: lightgray;
+    color: white;
     @include MEDIUM-DEVICE-WIDTH {
       margin-bottom: 3.2rem;
     }
@@ -35,17 +39,20 @@
     position: initial;
     margin-top: 1.2rem;
     .fa-2x {
-        font-size: 1.53rem;
-        padding: 0.2rem 0;
-        @include LARGE-DEVICE-WIDTH {
-          font-size: 2.2rem;
-        }
+      font-size: 1.53rem;
+      padding: 0.2rem 0;
+      @include LARGE-DEVICE-WIDTH {
+        font-size: 2.2rem;
       }
+    }
     @include MEDIUM-DEVICE-WIDTH {
       margin-top: 7rem;
     }
     @include LARGE-DEVICE-WIDTH {
       margin-top: 11rem;
     }
+  }
+  .text-secondary {
+    color: #fffaf2;
   }
 }
