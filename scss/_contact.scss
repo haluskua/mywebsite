@@ -16,6 +16,15 @@
   @include MEDIUM-DEVICE-WIDTH {
     background-size: cover;
   }
+  @include LARGE-DEVICE-WIDTH {
+    background: linear-gradient(
+      to right,
+      rgba(15, 24, 33, 0.29),
+      rgba(44, 92, 97, 0.23)
+    );
+    background-size: contain;
+    background-repeat: repeat;
+  }
 
   h2 {
     font-size: 2.26rem;

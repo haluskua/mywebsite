@@ -4,9 +4,7 @@
   &__bio-image {
     width: 100%;
     padding-top: 9.5vh;
-    background: linear-gradient(to right, #1b1b19, #1f1f1b),
-      url(../img/model-1.png) center center;
-    background-size: cover;
+    background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23));
 
     display: flex;
     flex-direction: column;
@@ -31,7 +29,7 @@
         line-height: 1.7rem;
         letter-spacing: 0.031rem;
         font-size: 1.03rem;
-        padding: 0.5rem 9rem;
+        padding: 0;
       }
     }
   }

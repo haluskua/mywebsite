@@ -33,8 +33,8 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(13, 14, 9, 0.2)), to(rgba(6, 15, 21, 0.3))), url(../img/background-man.png) center top;
-  background: linear-gradient(to right, rgba(13, 14, 9, 0.2), rgba(6, 15, 21, 0.3)), url(../img/background-man.png) center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url(../img/background-man.png) center top;
+  background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url(../img/background-man.png) center top;
   background-size: cover;
   /* Medium break point*/ }
   @media only screen and (min-width: 768px) {
@@ -226,9 +226,8 @@ a {
   .about__bio-image {
     width: 100%;
     padding-top: 9.5vh;
-    background: -webkit-gradient(linear, left top, right top, from(#1b1b19), to(#1f1f1b)), url(../img/model-1.png) center center;
-    background: linear-gradient(to right, #1b1b19, #1f1f1b), url(../img/model-1.png) center center;
-    background-size: cover;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23)));
+    background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23));
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -260,7 +259,7 @@ a {
           line-height: 1.7rem;
           letter-spacing: 0.031rem;
           font-size: 1.03rem;
-          padding: 0.5rem 9rem; } }
+          padding: 0; } }
   .about__bio {
     width: 80%;
     text-align: center; }
@@ -387,8 +386,8 @@ a {
     height: 30vh;
     width: 100%;
     padding-top: 48vh;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/hacking.jpg") center center;
-    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/hacking.jpg") center center;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url("../img/hacking.jpg") center center;
+    background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url("../img/hacking.jpg") center center;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -407,7 +406,7 @@ a {
       .projects__bio-image {
         height: 40vh; } }
     .projects__bio-image .text-secondary {
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       text-transform: uppercase;
       font-size: 1.15rem;
       margin-bottom: 0.62rem;
@@ -458,7 +457,7 @@ a {
       position: absolute;
       width: 55%;
       text-transform: uppercase;
-      font-family: 'Montserrat', sans-serif; }
+      font-family: "Montserrat", sans-serif; }
     .projects__item img {
       width: 100%; }
     .projects__item::after {
@@ -522,6 +521,12 @@ a {
   @media only screen and (min-width: 768px) {
     .contact {
       background-size: cover; } }
+  @media only screen and (min-width: 1024px) {
+    .contact {
+      background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23)));
+      background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23));
+      background-size: contain;
+      background-repeat: repeat; } }
   .contact h2 {
     font-size: 2.26rem;
     margin-bottom: 2rem;
@@ -609,4 +614,5 @@ footer {
   text-align: right;
   padding: 1rem;
   color: #646262; }
+
 /*# sourceMappingURL=main.css.map */

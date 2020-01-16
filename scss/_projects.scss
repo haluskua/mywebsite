@@ -7,8 +7,8 @@
     padding-top: 48vh;
     background: linear-gradient(
         to right,
-        rgba($primary-color, 0.9),
-        rgba($primary-color, 0.3)
+        rgba(15, 24, 33, 0.29),
+        rgba(44, 92, 97, 0.23)
       ),
       url("../img/hacking.jpg") center center;
     background-size: cover;
@@ -19,9 +19,9 @@
     @include MEDIUM-DEVICE-WIDTH {
       height: 40vh;
     }
-
+    
     .text-secondary {
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       text-transform: uppercase;
       font-size: 1.15rem;
       margin-bottom: 0.62rem;
@@ -67,7 +67,7 @@
       position: absolute;
       width: 55%;
       text-transform: uppercase;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
     }
 
     img {
