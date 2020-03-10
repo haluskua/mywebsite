@@ -27,7 +27,7 @@ a {
 
 .home {
   height: 100vh;
-  padding-top: 30vh;
+  padding-top: 16vh;
   overflow: hidden;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -49,17 +49,26 @@ a {
     line-height: 1.5rem;
     padding: 0 10%;
     margin-top: 0.4rem;
-    color: #6adfb6; }
+    color: #4cd3eb;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Girassol', cursive;
+    font-family: 'Cinzel Decorative', cursive;
+    letter-spacing: 0; }
     @media only screen and (min-width: 768px) {
       .home h2 {
         font-size: 1.3rem; } }
     @media only screen and (min-width: 1024px) {
       .home h2 {
-        font-size: 1rem; } }
+        font-size: 1.1rem;
+        letter-spacing: 0; } }
   .home__name {
     font-size: 2.1rem;
     padding-bottom: 0.5rem;
     line-height: 3rem;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Turret Road', cursive;
+    letter-spacing: 0.13rem;
     border-bottom: 2px solid #ffffff;
     border-bottom: 0.5px solid #332b28; }
     @media only screen and (min-width: 768px) {
@@ -76,14 +85,41 @@ a {
     .home .social-icons .fa-2x {
       font-size: 1.53rem;
       padding: 0.2rem 0; }
+  @media only screen and (min-width: 1024px) {
+    .home .home .social-icons .fa-2x {
+      font-size: 0.8rem; } }
   .home .cta__button {
-    background-color: #f4f9f7;
+    background: none;
     padding: 0.5rem;
     border-radius: 0.42rem;
-    margin: 1.2rem 0; }
-  @media only screen and (min-width: 768px) {
-    .home {
-      border-radius: 0.44rem; } }
+    margin: 1.2rem 0;
+    -webkit-box-shadow: #16191b 1px 1px 4px, #63737e -1px -1px 4px;
+            box-shadow: #16191b 1px 1px 4px, #63737e -1px -1px 4px; }
+    @media only screen and (min-width: 768px) {
+      .home .cta__button {
+        border-radius: 0.44rem; } }
+    @media only screen and (min-width: 1024px) {
+      .home .cta__button {
+        width: auto;
+        padding: 0; } }
+    .home .cta__button #cta__link {
+      text-shadow: 0.08px 0.05px #333333;
+      font-size: 0.9rem;
+      color: #e2f3fb;
+      width: 100%;
+      height: 100%;
+      margin: 1rem; }
+      @media only screen and (min-width: 768px) {
+        .home .cta__button #cta__link {
+          line-height: 2.2rem; } }
+      .home .cta__button #cta__link:hover {
+        cursor: pointer;
+        color: #4cd3eb;
+        font-weight: bolder;
+        font-size: 1.06rem; }
+        @media only screen and (min-width: 768px) {
+          .home .cta__button #cta__link:hover {
+            line-height: 2.2rem; } }
 
 .menu-btn {
   position: absolute;
@@ -198,9 +234,11 @@ a {
         -webkit-transform: translate(0);
                 transform: translate(0); }
       .nav .menu-nav__item.active > a {
-        color: #6adfb6; }
+        color: #4cd3eb; }
     .nav .menu-nav__link {
       font-family: 'Montserrat', sans-serif;
+      font-family: 'Bebas Neue', cursive;
+      font-family: 'Turret Road', cursive;
       display: inline-block;
       font-size: 1rem;
       width: 240px;
@@ -215,7 +253,6 @@ a {
               box-shadow: #16191b 1px 1px 4px, #63737e -1px -1px 4px;
       border-radius: 0.28rem;
       color: #d9efff;
-      text-shadow: 1.8px 2.36px #1d1b18;
       -webkit-transition: all 0.42s ease-in-out;
       transition: all 0.42s ease-in-out; }
       @media only screen and (min-width: 768px) {
@@ -226,10 +263,11 @@ a {
           text-shadow: 1.8px 2.36px #3e473a; } }
       @media only screen and (min-width: 1024px) {
         .nav .menu-nav__link {
-          font-size: 1.032rem; } }
+          font-size: 1.032rem;
+          letter-spacing: 0.1rem; } }
       .nav .menu-nav__link:hover {
         cursor: pointer;
-        color: #6adfb6;
+        color: #4cd3eb;
         font-weight: bold; }
 
 .menu-nav__item:nth-child(1) {
@@ -271,7 +309,7 @@ a {
     .about__bio-image .text-secondary {
       font-size: 1.05rem;
       text-align: left;
-      color: #6adfb6; }
+      color: #4cd3eb; }
       @media only screen and (min-width: 1024px) {
         .about__bio-image .text-secondary {
           font-size: 1.27rem; } }
@@ -344,7 +382,7 @@ a {
           width: 22%; } }
       .about .jobs__bio-image .text-secondary {
         width: 100%;
-        color: #6adfb6;
+        color: #4cd3eb;
         text-transform: uppercase;
         font-size: 0.81rem;
         background: rgba(51, 51, 51, 0.7);
@@ -373,7 +411,7 @@ a {
       border-bottom: 2px solid #69542b; }
       @media only screen and (min-width: 768px) {
         .about .jobs__job {
-          border-bottom: 2px solid #6adfb6; } }
+          border-bottom: 2px solid #4cd3eb; } }
       .about .jobs__job h2,
       .about .jobs__job h3 {
         margin: 0.22rem 0;
@@ -490,7 +528,7 @@ a {
       .projects__items {
         grid-template-columns: repeat(2, 1fr);
         padding: 2rem;
-        grid-gap: 3rem; } }
+        grid-gap: 1rem; } }
     @media only screen and (min-width: 1024px) {
       .projects__items {
         grid-template-columns: repeat(3, 1fr);
@@ -500,7 +538,7 @@ a {
     width: 100%;
     border-radius: 0.24rem;
     position: relative;
-    border: 0.5px solid #6adfb6;
+    border: 0.5px solid #4cd3eb;
     overflow: hidden;
     cursor: pointer;
     background-color: #061c2b;
@@ -541,7 +579,7 @@ a {
       left: 0;
       height: 100%;
       width: 100%;
-      background: #6adfb6;
+      background: #4cd3eb;
       opacity: 0;
       -webkit-transition: all 0.42s ease-in-out;
       transition: all 0.42s ease-in-out; }
@@ -607,7 +645,7 @@ a {
   .contact h2 {
     font-size: 2.26rem;
     margin-bottom: 2rem;
-    color: #6adfb6;
+    color: #4cd3eb;
     text-transform: uppercase; }
     @media only screen and (min-width: 768px) {
       .contact h2 {
@@ -662,15 +700,6 @@ a {
   color: #ffffff;
   text-decoration: none; }
 
-.text-secondary {
-  color: #e0d2b9;
-  font-size: 1rem;
-  line-height: 1.5rem; }
-  @media only screen and (min-width: 768px) {
-    .text-secondary {
-      line-height: 2.3rem;
-      font-size: 1.3rem; } }
-
 header {
   position: fixed;
   z-index: 2;
@@ -683,7 +712,7 @@ main {
     -webkit-transition: all 0.42s ease-in-out;
     transition: all 0.42s ease-in-out;
     padding: 0.4rem;
-    color: #6adfb6; }
+    color: #4cd3eb; }
     main a:hover {
       color: white;
       cursor: pointer; }

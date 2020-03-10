@@ -121,6 +121,8 @@
 
     &__link{
       font-family: 'Montserrat', sans-serif;
+      font-family: 'Bebas Neue', cursive;
+      font-family: 'Turret Road', cursive;
       display: inline-block;
       font-size: 1rem;
       width: 240px;
@@ -134,7 +136,7 @@
       box-shadow: #16191b 1px 1px 4px, #63737e -1px -1px 4px;
       border-radius: 0.28rem;
       color: #d9efff;
-      text-shadow: 1.8px 2.36px #1d1b18;
+      // text-shadow: 1.8px 2.36px #1d1b18;
       @include transition-ease;
       @include MEDIUM-DEVICE-WIDTH {
         padding: 0.88rem 0;
@@ -144,6 +146,7 @@
       }
       @include LARGE-DEVICE-WIDTH {
         font-size: 1.032rem;
+        letter-spacing: 0.1rem;
       }
 
       &:hover {

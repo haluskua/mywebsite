@@ -70,7 +70,7 @@
     @include MEDIUM-DEVICE-WIDTH {
       grid-template-columns: repeat(2, 1fr);
       padding: 2rem;
-      grid-gap: 3rem;
+      grid-gap: 1rem;
     }  
     @include LARGE-DEVICE-WIDTH {
       grid-template-columns: repeat(3, 1fr);
