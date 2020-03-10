@@ -100,15 +100,20 @@
     .project__title {
       display: flex;
       justify-content: center;
-      // background: rgba(94, 75, 40, 0.19);
       padding: 0.34rem;
       text-align: center;
+      font-weight: bold;
       font-size: 1rem;
+      letter-spacing: 0.1rem;
       position: absolute;
-      color: $accent-color;
+      color: $secondary-color;
       width: 55%;
       text-transform: uppercase;
       font-family: "Montserrat", sans-serif;
+      font-family: 'Turret Road', 'cursive';
+      @include LARGE-DEVICE-WIDTH {
+        font-size: 1.3rem;
+      }
     }
 
     img {
