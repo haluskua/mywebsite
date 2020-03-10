@@ -502,11 +502,12 @@ a {
       .projects__bio-image {
         height: 33vh; } }
     .projects__bio-image .text-secondary {
-      font-family: 'Times New Roman', Times, serif, sans-serif;
+      font-family: 'Turret Road', 'cursive';
       text-transform: uppercase;
       font-size: 1.15rem;
       margin-bottom: 0.62rem;
-      color: #fffdfa;
+      color: #4cd3eb;
+      font-weight: bold;
       top: 30%;
       position: absolute; }
       @media only screen and (min-width: 768px) {
@@ -521,8 +522,8 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2rem;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url("../img/model-1.png") center center;
-    background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url("../img/model-1.png") center center;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23)));
+    background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23));
     background-size: cover; }
     @media only screen and (min-width: 768px) {
       .projects__items {
@@ -635,8 +636,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url(../img/sunrise.jpg) center top no-repeat;
-  background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url(../img/sunrise.jpg) center top no-repeat;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url(../img/foggy.jpg) center top no-repeat;
+  background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url(../img/foggy.jpg) center top no-repeat;
   background-size: cover;
   background-position: center; }
   @media only screen and (min-width: 768px) {
@@ -645,7 +646,9 @@ a {
   .contact h2 {
     font-size: 2.26rem;
     margin-bottom: 2rem;
+    font-family: 'Turret Road', cursive;
     color: #4cd3eb;
+    color: red;
     text-transform: uppercase; }
     @media only screen and (min-width: 768px) {
       .contact h2 {
@@ -725,4 +728,5 @@ footer {
   text-align: right;
   padding: 1rem;
   color: #646262; }
+
 /*# sourceMappingURL=main.css.map */
