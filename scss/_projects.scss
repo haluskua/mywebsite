@@ -11,6 +11,7 @@
   @include LARGE-DEVICE-WIDTH {
     height: 100%;
     padding-bottom: 2rem;
+    display: block;
   }
 
   &__bio-image {
@@ -154,6 +155,13 @@
     &:hover {
       color: set-text-color(set-text-color($secondary-color));
       font-size: 1.3rem;
+    }
+  }
+  .socialIcons {
+    @include LARGE-DEVICE-WIDTH {
+      display: flex;
+      justify-content: center;
+      width: 100%; 
     }
   }
 
