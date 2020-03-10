@@ -59,4 +59,17 @@
       padding: 0.2rem 0;
     }
   }
+  .cta__button {
+    background-color: #f4f9f7;
+    padding: 0.5rem;
+    border-radius: 0.42rem;
+    margin: 1.2rem 0; 
+  }
+  @include MEDIUM-DEVICE-WIDTH {
+    border-radius: 0.44rem;
+  }
+  @include LARGE-DEVICE-WIDTH {
+    
+  }
+
 }
