@@ -9,10 +9,10 @@
       to right,
       rgba(15, 24, 33, 0.29),
       rgba(44, 92, 97, 0.23)
-    ),
-    url(../img/foggy.jpg) center top no-repeat;
-  background-size: cover;
-  background-position: center;
+    ),;
+  //   url(../img/foggy.jpg) center top no-repeat;
+  // background-size: cover;
+  // background-position: center;
   @include MEDIUM-DEVICE-WIDTH {
     background-size: cover;
   }
