@@ -48,10 +48,14 @@
   &__item {
     max-height: 60vh;
     width: 100%;
+    border-radius: 0.34rem;
     position: relative;
-    border: 1.5px solid #69542b;
+    border: 1.3px solid #3c7280;
     overflow: hidden;
     cursor: pointer;
+    background-color: #061c2b;
+    box-shadow: #102835 4px 4px 8px, #3a4548 -4px -4px 8px;
+      
     @include MEDIUM-DEVICE-WIDTH {
       display: flex;
       justify-content: center;
@@ -60,11 +64,12 @@
     .project__title {
       display: flex;
       justify-content: center;
-      background: rgba(94, 75, 40, 0.19);
+      // background: rgba(94, 75, 40, 0.19);
       padding: 0.34rem;
       text-align: center;
       font-size: 1rem;
       position: absolute;
+      color: $accent-color;
       width: 55%;
       text-transform: uppercase;
       font-family: "Montserrat", sans-serif;

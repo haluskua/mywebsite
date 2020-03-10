@@ -1,6 +1,6 @@
 .home {
   height: 100vh;
-  padding-top: 35vh;
+  padding-top: 30vh;
   overflow: hidden;
   align-items: center;
   text-align: center;
@@ -9,11 +9,14 @@
       rgba(15, 24, 33, 0.29),
       rgba(44, 92, 97, 0.23)
     ),
-    url(../img/background-man.png) center top;
+    url(../img/project-0.jpg) center top;
   background-size: cover;
   /* Medium break point*/
   @include MEDIUM-DEVICE-WIDTH {
-    padding-top: 68vh;
+    padding-top: 18vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   h2 {
@@ -21,24 +24,36 @@
     font-size: 1.2rem;
     line-height: 1.5rem;
     padding: 0 10%;
-    color: #7d7056;
+    margin-top: 0.4rem;
+    color: $secondary-color;
+    @include MEDIUM-DEVICE-WIDTH {
+      font-size: 1.3rem;
+    }
+    @include LARGE-DEVICE-WIDTH {
+      font-size: 1rem;
+    }
   }
 
   &__name {
     font-size: 2.1rem;
     padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
     line-height: 3rem;
     border-bottom: 2px solid set-text-color($primary-color);
-    border-bottom: 2px solid #5a4a2b;
+    border-bottom: 0.5px solid #332b28;
+    @include MEDIUM-DEVICE-WIDTH {
+      font-size: 3rem;
+    }
+    @include LARGE-DEVICE-WIDTH {
+      font-size: 2.6rem;
+    }
 
     &--last {
       font-weight: 700;
-      color: $secondary-color;
+      color: #e5fff6;
     }
   }
   .social-icons {
-    margin-top: 6rem;
+    margin-top: 6.6rem;
     .fa-2x {
       font-size: 1.53rem;
       padding: 0.2rem 0;

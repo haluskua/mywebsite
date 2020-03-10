@@ -10,28 +10,27 @@
       rgba(15, 24, 33, 0.29),
       rgba(44, 92, 97, 0.23)
     ),
-    url(../img/rooster-b-w.png) center top no-repeat;
+    url(../img/sunrise.jpg) center top no-repeat;
   background-size: cover;
   background-position: center;
   @include MEDIUM-DEVICE-WIDTH {
     background-size: cover;
   }
   @include LARGE-DEVICE-WIDTH {
-    background: linear-gradient(
-      to right,
-      rgba(15, 24, 33, 0.29),
-      rgba(44, 92, 97, 0.23)
-    );
-    background-size: contain;
-    background-repeat: repeat;
+
   }
 
   h2 {
     font-size: 2.26rem;
     margin-bottom: 2rem;
-    color: white;
+    color: $secondary-color;
+    text-transform: uppercase;
     @include MEDIUM-DEVICE-WIDTH {
       margin-bottom: 3.2rem;
+    }
+    @include LARGE-DEVICE-WIDTH {
+      font-weight: bold;
+      letter-spacing: 0.05rem;
     }
   }
 

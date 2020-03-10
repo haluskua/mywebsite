@@ -86,9 +86,10 @@ main {
   a {
     @include transition-ease;
     padding: 0.4rem;
+    color: $secondary-color;
 
     &:hover {
-      color: $secondary-color;
+      color: white;
       cursor: pointer;
     }
   }

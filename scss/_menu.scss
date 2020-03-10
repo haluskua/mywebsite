@@ -76,7 +76,6 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: $primary-color;
     list-style-type: none;
     padding: 1.2rem 0;
     padding-right: 1rem;
@@ -93,7 +92,6 @@
       display: block;
       transform: translateY(0);
       height: 100%;
-      background: rgb(72, 72, 67);
       text-align: center;
       padding-right: 0;
       padding: 0.52rem 0;
@@ -116,7 +114,7 @@
       }
 
       &.active > a {
-        color: #e6d3b0;
+        color: $secondary-color;
       }
     }
 
