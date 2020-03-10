@@ -38,11 +38,12 @@
     }
     
     .text-secondary {
-      font-family: 'Times New Roman', Times, serif, sans-serif;
+      font-family: 'Turret Road', 'cursive';
       text-transform: uppercase;
       font-size: 1.15rem;
       margin-bottom: 0.62rem;
-      color: #fffdfa;
+      color: $secondary-color;
+      font-weight: bold;
       top: 30%;
       position: absolute;
       @include  MEDIUM-DEVICE-WIDTH {
@@ -64,8 +65,8 @@
         to right,
         rgba(15, 24, 33, 0.29),
         rgba(44, 92, 97, 0.23)
-      ),
-      url("../img/model-1.png") center center;
+      ),;
+      // url("../img/model-1.png") center center;
     background-size: cover;
     @include MEDIUM-DEVICE-WIDTH {
       grid-template-columns: repeat(2, 1fr);
