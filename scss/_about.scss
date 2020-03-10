@@ -1,11 +1,21 @@
 .about {
   padding-bottom: 0rem;
+  .breadCrumbs {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    @include MEDIUM-DEVICE-WIDTH {
+      top: 9%;
+    }
+    @include LARGE-DEVICE-WIDTH {
+      top: 15%;
+    }
+  }
 
   &__bio-image {
     width: 100%;
     padding-top: 9.5vh;
     background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23));
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,6 +23,8 @@
     .text-secondary {
       font-size: 1.05rem;
       text-align: left;
+      padding: 7px 0;
+      font-family: 'Turret Road', 'cursive';
       color: $secondary-color;
       @include LARGE-DEVICE-WIDTH {
         font-size: 1.27rem;
@@ -113,10 +125,7 @@
       align-items: flex-start;
       background: ligthen($primary-color, 10%);
       padding: 0.4rem;
-      border-bottom: 2px solid #69542b;
-      @include MEDIUM-DEVICE-WIDTH {
-        border-bottom: 2px solid $secondary-color;
-      }
+      border-bottom: 2px solid $secondary-color;
 
       h2,
       h3 {

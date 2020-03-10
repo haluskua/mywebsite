@@ -49,12 +49,12 @@
     letter-spacing: 0.13rem;
     border-bottom: 2px solid set-text-color($primary-color);
     border-bottom: 0.5px solid #332b28;
+    text-shadow: 1.8px 2.36px #3e473a;
     @include MEDIUM-DEVICE-WIDTH {
       font-size: 3rem;
     }
     @include LARGE-DEVICE-WIDTH {
       font-size: 2.6rem;
-
     }
 
     &--last {
