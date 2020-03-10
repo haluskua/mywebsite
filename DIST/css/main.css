@@ -1,7 +1,8 @@
 /*--------------Google fonts impors--------------*/
 /*----------- partials imports -----------*/
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
@@ -10,9 +11,14 @@ a {
   list-style: none; }
 
 .showIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: fixed;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   bottom: 2rem;
   font-size: 0.7rem;
   right: 0.41rem;
@@ -23,8 +29,11 @@ a {
   height: 100vh;
   padding-top: 30vh;
   overflow: hidden;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url(../img/project-0.jpg) center top;
   background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url(../img/project-0.jpg) center top;
   background-size: cover;
   /* Medium break point*/ }
@@ -76,6 +85,7 @@ a {
   height: 20px;
   width: 28px;
   cursor: pointer;
+  -webkit-transition: all 0.42s ease-in-out;
   transition: all 0.42s ease-in-out; }
   @media only screen and (min-width: 768px) {
     .menu-btn {
@@ -87,6 +97,7 @@ a {
     width: 28px;
     height: 3px;
     background: #ffffff;
+    -webkit-transition: all 0.42s ease-in-out;
     transition: all 0.42s ease-in-out; }
     .menu-btn__burger::before {
       content: "";
@@ -95,6 +106,7 @@ a {
       width: 28px;
       height: 3px;
       background: #ffffff;
+      -webkit-transition: all 0.42s ease-in-out;
       transition: all 0.42s ease-in-out; }
     .menu-btn__burger::after {
       content: "";
@@ -103,15 +115,19 @@ a {
       width: 20px;
       height: 3px;
       background: #ffffff;
+      -webkit-transition: all 0.42s ease-in-out;
       transition: all 0.42s ease-in-out; }
     .menu-btn__burger.open {
-      transform: rotate(720deg);
+      -webkit-transform: rotate(720deg);
+              transform: rotate(720deg);
       background: transparent; }
       .menu-btn__burger.open::before {
-        transform: rotate(45deg) translate(5px, 8px); }
+        -webkit-transform: rotate(45deg) translate(5px, 8px);
+                transform: rotate(45deg) translate(5px, 8px); }
       .menu-btn__burger.open::after {
         width: 28px;
-        transform: rotate(-45deg) translate(3px, -7px); }
+        -webkit-transform: rotate(-45deg) translate(3px, -7px);
+                transform: rotate(-45deg) translate(3px, -7px); }
 
 .nav {
   position: fixed;
@@ -126,37 +142,54 @@ a {
   .nav.open {
     visibility: visible; }
   .nav .menu-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     overflow: hidden;
     list-style-type: none;
     padding: 1.2rem 0;
     padding-right: 1rem;
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: all 0.42s ease-in-out;
     transition: all 0.42s ease-in-out;
+    background: -webkit-gradient(linear, left top, right top, from(#100f0f), to(rgba(5, 27, 43, 0.73))), url(../img/project-0.jpg) center center;
     background: linear-gradient(to right, #100f0f, rgba(5, 27, 43, 0.73)), url(../img/project-0.jpg) center center;
     background-size: cover; }
     @media only screen and (min-width: 768px) {
       .nav .menu-nav {
         display: block;
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
         height: 100%;
         text-align: center;
         padding-right: 0;
         padding: 0.52rem 0; } }
     .nav .menu-nav.open {
-      transform: translateY(0); }
+      -webkit-transform: translateY(0);
+              transform: translateY(0); }
     .nav .menu-nav__item {
-      transform: translateX(100vw);
+      -webkit-transform: translateX(100vw);
+              transform: translateX(100vw);
+      -webkit-transition: all 0.42s ease-in-out;
       transition: all 0.42s ease-in-out; }
       @media only screen and (min-width: 768px) {
         .nav .menu-nav__item {
           display: inline;
           padding-right: 1.5rem; } }
       .nav .menu-nav__item.open {
-        transform: translate(0); }
+        -webkit-transform: translate(0);
+                transform: translate(0); }
       .nav .menu-nav__item.active > a {
         color: #6adfb6; }
     .nav .menu-nav__link {
@@ -170,6 +203,7 @@ a {
       font-weight: 400;
       color: #d9efff;
       text-shadow: 1.8px 2.36px #1d1b18;
+      -webkit-transition: all 0.42s ease-in-out;
       transition: all 0.42s ease-in-out; }
       @media only screen and (min-width: 768px) {
         .nav .menu-nav__link {
@@ -185,27 +219,41 @@ a {
         font-weight: bold; }
 
 .menu-nav__item:nth-child(1) {
-  transition-delay: 0.21s; }
+  -webkit-transition-delay: 0.21s;
+          transition-delay: 0.21s; }
 
 .menu-nav__item:nth-child(2) {
-  transition-delay: 0.3s; }
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s; }
 
 .menu-nav__item:nth-child(3) {
-  transition-delay: 0.39s; }
+  -webkit-transition-delay: 0.39s;
+          transition-delay: 0.39s; }
 
 .menu-nav__item:nth-child(4) {
-  transition-delay: 0.48s; }
+  -webkit-transition-delay: 0.48s;
+          transition-delay: 0.48s; }
 
 .about {
   padding-bottom: 0rem; }
   .about__bio-image {
     width: 100%;
     padding-top: 9.5vh;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23)));
     background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23));
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
     .about__bio-image .text-secondary {
       font-size: 1.05rem;
       text-align: left;
@@ -233,6 +281,8 @@ a {
         font-size: 1.5rem;
         width: 67%; } }
   .about .jobs {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 70vw;
     margin: 0.2rem auto 0 auto;
@@ -247,18 +297,29 @@ a {
       width: 46%;
       border-radius: 0.3rem;
       padding-top: 24vh;
+      background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.02)), to(rgba(39, 39, 39, 0))), url(../img/profile.jpg) center center;
       background: linear-gradient(to right, rgba(39, 39, 39, 0.02), rgba(39, 39, 39, 0)), url(../img/profile.jpg) center center;
       background-size: contain;
       background-repeat: no-repeat;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
       margin-bottom: 1rem; }
       @media only screen and (min-width: 768px) {
         .about .jobs__bio-image {
           width: 19%;
           height: 20vh;
+          background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0)), to(rgba(39, 39, 39, 0))), url("../img/profile.jpg") center center;
           background: linear-gradient(to right, rgba(39, 39, 39, 0), rgba(39, 39, 39, 0)), url("../img/profile.jpg") center center;
           background-size: contain;
           background-repeat: no-repeat;
@@ -283,9 +344,16 @@ a {
           .about .jobs__bio-image .text-secondary {
             font-size: 0.7rem; } }
     .about .jobs__job {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
       background: ligthen(#272727, 10%);
       padding: 0.4rem;
       border-bottom: 2px solid #69542b; }
@@ -316,13 +384,19 @@ a {
         margin: 0.3rem 0; }
   @media only screen and (min-width: 768px) {
     .about .socialIcons {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       position: fixed;
       bottom: 2rem;
       padding: 0 0.52rem; } }
   .about footer {
-    transform: rotate(90deg) translate(-3rem, -5rem); }
+    -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
+            transform: rotate(90deg) translate(-3rem, -5rem); }
 
 .projects {
   padding-bottom: 2rem; }
@@ -330,12 +404,22 @@ a {
     height: 30vh;
     width: 100%;
     padding-top: 48vh;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url("../img/hacking.jpg") center center;
     background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url("../img/hacking.jpg") center center;
     background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
     @media only screen and (min-width: 768px) {
       .projects__bio-image {
         height: 40vh; } }
@@ -368,15 +452,26 @@ a {
     overflow: hidden;
     cursor: pointer;
     background-color: #061c2b;
-    box-shadow: #102835 4px 4px 8px, #3a4548 -4px -4px 8px; }
+    -webkit-box-shadow: #102835 4px 4px 8px, #3a4548 -4px -4px 8px;
+            box-shadow: #102835 4px 4px 8px, #3a4548 -4px -4px 8px; }
     @media only screen and (min-width: 768px) {
       .projects__item {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center; } }
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
     .projects__item .project__title {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       padding: 0.34rem;
       text-align: center;
       font-size: 1rem;
@@ -396,6 +491,7 @@ a {
       width: 100%;
       background: #6adfb6;
       opacity: 0;
+      -webkit-transition: all 0.42s ease-in-out;
       transition: all 0.42s ease-in-out; }
     .projects__item:hover::after {
       top: 0;
@@ -410,25 +506,37 @@ a {
     z-index: 1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center; }
   .projects__btn {
     opacity: 0;
     color: #000;
+    -webkit-transition: all 0.42s ease-in-out;
     transition: all 0.42s ease-in-out; }
     .projects__btn:hover {
       color: #ffffff;
       font-size: 1.3rem; }
   .projects footer {
-    transform: rotate(90deg) translate(-3rem, -5rem); }
+    -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
+            transform: rotate(90deg) translate(-3rem, -5rem); }
 
 .contact {
   height: 100vh;
   padding-top: 28vh;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url(../img/sunrise.jpg) center top no-repeat;
   background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url(../img/sunrise.jpg) center top no-repeat;
   background-size: cover;
   background-position: center; }
@@ -512,6 +620,7 @@ main {
   height: 100%;
   width: 100%; }
   main a {
+    -webkit-transition: all 0.42s ease-in-out;
     transition: all 0.42s ease-in-out;
     padding: 0.4rem;
     color: #6adfb6; }
@@ -527,3 +636,5 @@ footer {
   text-align: right;
   padding: 1rem;
   color: #646262; }
+
+/*# sourceMappingURL=main.css.map */
