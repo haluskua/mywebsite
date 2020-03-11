@@ -15,7 +15,11 @@
   &__bio-image {
     width: 100%;
     padding-top: 9.5vh;
-    background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23));
+    background: linear-gradient(
+      to right,
+      rgba(15, 24, 33, 0.29),
+      rgba(44, 92, 97, 0.23)
+    );
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +29,7 @@
       font-size: 1.05rem;
       text-align: left;
       padding: 7px 0;
-      font-family: 'Turret Road', 'cursive';
+      font-family: "Turret Road", "cursive";
       color: $secondary-color;
       @include LARGE-DEVICE-WIDTH {
         font-size: 1.27rem;
@@ -37,11 +41,10 @@
       margin-top: 1.5rem;
       border-radius: 0.76rem;
       line-height: 1.45rem;
-      padding-top: 0.5rem;
       text-align: left;
       font-size: 0.97rem;
-      box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.06), 6px 6px 11px rgba(52, 170, 160, 0.06);
-      padding: 1.4rem;
+      // box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.06), 6px 6px 11px rgba(52, 170, 160, 0.06);
+      padding: 1.2rem;
       @include MEDIUM-DEVICE-WIDTH {
         border-radius: 0.05rem;
         line-height: 1.7rem;
@@ -72,21 +75,18 @@
     width: 96%;
     border-radius: 6px;
     height: auto;
-    box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 
-    6px 6px 11px rgba(52, 170, 160, 0.16),;
+    // box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16),
+    // 6px 6px 11px rgba(52, 170, 160, 0.16),;
 
     @include MEDIUM-DEVICE-WIDTH {
       width: 100%;
-  
     }
     @include LARGE-DEVICE-WIDTH {
       border: none;
       // box-shadow: none;
       width: 77%;
     }
-
   }
-
 
   .jobs {
     display: flex;
@@ -99,7 +99,7 @@
     }
 
     &__bio-image {
-      width: 100%;
+      width: 75%;
       border-radius: 0.3rem;
       padding-top: 41vh;
       background: linear-gradient(
@@ -107,7 +107,7 @@
           rgba(39, 39, 39, 0.02),
           rgba(39, 39, 39, 0)
         ),
-        url(../img/profile.jpg) center center;
+        url(../img/logo_2.png) center center;
       background-size: cover;
       background-repeat: no-repeat;
       display: flex;
@@ -116,12 +116,13 @@
       justify-content: flex-end;
       margin-bottom: 1rem;
       @include MEDIUM-DEVICE-WIDTH {
-        width: 99%;
+        width: 50%;
         height: 27vh;
         background-size: cover;
       }
       @include LARGE-DEVICE-WIDTH {
-        height: 38vh;
+        height: 50vh;
+        width: 18%;
       }
       .text-secondary {
         width: 100%;
@@ -168,7 +169,7 @@
         font-size: 0.9rem;
         letter-spacing: 0.02rem;
         color: $accent-color;
-        font-family: 'Turret Road', 'cursive';
+        font-family: "Turret Road", "cursive";
         font-weight: normal;
         font-style: normal;
         padding: 0.15rem 0;

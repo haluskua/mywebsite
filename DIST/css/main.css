@@ -27,7 +27,7 @@ a {
 
 .home {
   height: 100vh;
-  padding-top: 16vh;
+  padding-top: 15vh;
   overflow: hidden;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -39,10 +39,19 @@ a {
   /* Medium break point*/ }
   @media only screen and (min-width: 768px) {
     .home {
-      padding-top: 18vh;
+      padding-top: 16vh;
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat; } }
+  @media only screen and (min-width: 1024px) {
+    .home {
+      padding-top: 12vh; } }
+  .home .fit-picture {
+    width: 59%; }
+    @media only screen and (min-width: 1024px) {
+      .home .fit-picture {
+        width: 20%;
+        height: auto; } }
   .home h2 {
     text-transform: normal;
     font-size: 1.2rem;
@@ -54,8 +63,10 @@ a {
     font-family: 'Julius Sans One', sans-serif;
     font-family: 'Girassol', cursive;
     font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Turret Road', 'cursive';
+    letter-spacing: 0.03em;
     letter-spacing: 0;
-    text-shadow: 1.8px 2.36px #3e473a; }
+    text-shadow: 1.8px 2.36px #202d33; }
     @media only screen and (min-width: 768px) {
       .home h2 {
         font-size: 1.3rem; } }
@@ -72,7 +83,8 @@ a {
     letter-spacing: 0.13rem;
     border-bottom: 2px solid #ffffff;
     border-bottom: 0.5px solid #332b28;
-    text-shadow: 1.8px 2.36px #3e473a; }
+    text-shadow: 1.8px 2.36px #3e473a;
+    text-shadow: 1.8px 2.36px #202d33; }
     @media only screen and (min-width: 768px) {
       .home__name {
         font-size: 3rem; } }
@@ -95,8 +107,9 @@ a {
     padding: 0.5rem;
     border-radius: 0.42rem;
     margin: 1.2rem 0;
-    -webkit-box-shadow: #324e55 1px 1px 4px, #63737e -1px -1px 4px;
-            box-shadow: #324e55 1px 1px 4px, #63737e -1px -1px 4px; }
+    border: 2px solid #9abcda;
+    -webkit-box-shadow: #324e55 1px 1px 4px, #77a1bd -1px -1px 4px;
+            box-shadow: #324e55 1px 1px 4px, #77a1bd -1px -1px 4px; }
     @media only screen and (min-width: 768px) {
       .home .cta__button {
         border-radius: 0.44rem; } }
@@ -105,9 +118,10 @@ a {
         width: auto;
         padding: 0; } }
     .home .cta__button #cta__link {
-      text-shadow: 0.08px 0.05px #333333;
+      text-shadow: 1.08px 1.36px #202d33;
       font-size: 1.06rem;
       font-weight: bold;
+      font-family: 'Turret Road', 'cursive';
       color: #e2f3fb;
       width: 100%;
       height: 100%;
@@ -119,7 +133,7 @@ a {
         cursor: pointer;
         color: #4cd3eb;
         font-weight: bolder;
-        color: #50b694;
+        color: #4cd3eb;
         font-size: 1.06rem;
         font-style: italic; }
         @media only screen and (min-width: 768px) {
@@ -325,7 +339,7 @@ a {
       font-size: 1.05rem;
       text-align: left;
       padding: 7px 0;
-      font-family: 'Turret Road', 'cursive';
+      font-family: "Turret Road", "cursive";
       color: #4cd3eb; }
       @media only screen and (min-width: 1024px) {
         .about__bio-image .text-secondary {
@@ -335,12 +349,9 @@ a {
       margin-top: 1.5rem;
       border-radius: 0.76rem;
       line-height: 1.45rem;
-      padding-top: 0.5rem;
       text-align: left;
       font-size: 0.97rem;
-      -webkit-box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.06), 6px 6px 11px rgba(52, 170, 160, 0.06);
-              box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.06), 6px 6px 11px rgba(52, 170, 160, 0.06);
-      padding: 1.4rem; }
+      padding: 1.2rem; }
       @media only screen and (min-width: 768px) {
         .about__bio-image p {
           border-radius: 0.05rem;
@@ -375,9 +386,7 @@ a {
             justify-content: center;
     width: 96%;
     border-radius: 6px;
-    height: auto;
-    -webkit-box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(52, 170, 160, 0.16);
-            box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(52, 170, 160, 0.16); }
+    height: auto; }
     @media only screen and (min-width: 768px) {
       .about .img-container {
         width: 100%; } }
@@ -397,11 +406,11 @@ a {
       .about .jobs {
         width: 90%; } }
     .about .jobs__bio-image {
-      width: 100%;
+      width: 75%;
       border-radius: 0.3rem;
       padding-top: 41vh;
-      background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.02)), to(rgba(39, 39, 39, 0))), url(../img/profile.jpg) center center;
-      background: linear-gradient(to right, rgba(39, 39, 39, 0.02), rgba(39, 39, 39, 0)), url(../img/profile.jpg) center center;
+      background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.02)), to(rgba(39, 39, 39, 0))), url(../img/logo_2.png) center center;
+      background: linear-gradient(to right, rgba(39, 39, 39, 0.02), rgba(39, 39, 39, 0)), url(../img/logo_2.png) center center;
       background-size: cover;
       background-repeat: no-repeat;
       display: -webkit-box;
@@ -420,12 +429,13 @@ a {
       margin-bottom: 1rem; }
       @media only screen and (min-width: 768px) {
         .about .jobs__bio-image {
-          width: 99%;
+          width: 50%;
           height: 27vh;
           background-size: cover; } }
       @media only screen and (min-width: 1024px) {
         .about .jobs__bio-image {
-          height: 38vh; } }
+          height: 50vh;
+          width: 18%; } }
       .about .jobs__bio-image .text-secondary {
         width: 100%;
         color: #4cd3eb;
@@ -474,7 +484,7 @@ a {
         font-size: 0.9rem;
         letter-spacing: 0.02rem;
         color: #50b694;
-        font-family: 'Turret Road', 'cursive';
+        font-family: "Turret Road", "cursive";
         font-weight: normal;
         font-style: normal;
         padding: 0.15rem 0;
@@ -552,7 +562,7 @@ a {
       .projects__bio-image {
         height: 33vh; } }
     .projects__bio-image .text-secondary {
-      font-family: 'Turret Road', 'cursive';
+      font-family: "Turret Road", "cursive";
       text-transform: uppercase;
       font-size: 1.15rem;
       margin-bottom: 0.62rem;
@@ -624,7 +634,7 @@ a {
       width: 55%;
       text-transform: uppercase;
       font-family: "Montserrat", sans-serif;
-      font-family: 'Turret Road', 'cursive'; }
+      font-family: "Turret Road", "cursive"; }
       @media only screen and (min-width: 1024px) {
         .projects__item .project__title {
           font-size: 1.3rem; } }
@@ -693,15 +703,13 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23)));
-  background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)); }
-  @media only screen and (min-width: 768px) {
-    .contact {
-      background-size: cover; } }
+  background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url(../img/profile.jpg) center center;
+  background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url(../img/profile.jpg) center center;
+  background-size: cover; }
   .contact h2 {
     font-size: 2.26rem;
     margin-bottom: 2rem;
-    font-family: 'Turret Road', cursive;
+    font-family: "Turret Road", cursive;
     color: #4cd3eb;
     text-transform: uppercase;
     text-shadow: 1.8px 2.36px #3e473a; }
@@ -736,8 +744,11 @@ a {
       .contact .social-icons {
         margin-top: 11rem; } }
   .contact .text-secondary {
-    color: #50b694;
-    font-size: 1.2rem; }
+    color: #4cd3eb;
+    font-family: "Turret Road", "cursive";
+    margin: 3px 0;
+    font-size: 1.2rem;
+    letter-spacing: 0.04em; }
 
 /*-----X------ partials imports ------X-----*/
 /*----------- @Mixins -----------*/
