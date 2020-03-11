@@ -48,6 +48,12 @@
         letter-spacing: 0.031rem;
         font-size: 1.03rem;
       }
+      @include LARGE-DEVICE-WIDTH {
+        box-shadow: none;
+        width: 78%;
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 
@@ -63,20 +69,24 @@
     padding: 0.8rem;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 96%;
     border-radius: 6px;
     height: auto;
     box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 
-    6px 6px 11px rgba(52, 170, 160, 0.16), 
+    6px 6px 11px rgba(52, 170, 160, 0.16),;
+
+    @include MEDIUM-DEVICE-WIDTH {
+      width: 100%;
+  
+    }
+    @include LARGE-DEVICE-WIDTH {
+      border: none;
+      // box-shadow: none;
+      width: 77%;
+    }
 
   }
-  @include MEDIUM-DEVICE-WIDTH {
-    width: 100%;
 
-  }
-  @include LARGE-DEVICE-WIDTH {
-    border: none;
-  }
 
   .jobs {
     display: flex;
@@ -106,25 +116,11 @@
       justify-content: flex-end;
       margin-bottom: 1rem;
       @include MEDIUM-DEVICE-WIDTH {
-        width: 48%;
-        height: 27vh;
-        background: linear-gradient(
-            to right,
-            rgba($primary-color, 0),
-            rgba($primary-color, 0)
-          ),
-          url("../img/profile.jpg") center center;
-        background-repeat: no-repeat;
-        padding-top: 0;
-        background-position: left;
-      }
-      @include MEDIUM-DEVICE-WIDTH {
         width: 99%;
         height: 27vh;
         background-size: cover;
       }
       @include LARGE-DEVICE-WIDTH {
-        width: 40%;
         height: 38vh;
       }
       .text-secondary {
@@ -133,7 +129,7 @@
         text-transform: uppercase;
         text-align: center;
         font-size: 0.81rem;
-        margin-bottom: -1.34rem;
+        margin-bottom: -1.64rem;
         @include MEDIUM-DEVICE-WIDTH {
           background: none;
           margin-bottom: -2rem;

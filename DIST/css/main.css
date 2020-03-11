@@ -347,6 +347,17 @@ a {
           line-height: 1.7rem;
           letter-spacing: 0.031rem;
           font-size: 1.03rem; } }
+      @media only screen and (min-width: 1024px) {
+        .about__bio-image p {
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          width: 78%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; } }
   .about__bio {
     width: 95%;
     text-align: center; }
@@ -362,17 +373,18 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%;
+    width: 96%;
     border-radius: 6px;
     height: auto;
     -webkit-box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(52, 170, 160, 0.16);
             box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(52, 170, 160, 0.16); }
-  @media only screen and (min-width: 768px) {
-    .about {
-      width: 100%; } }
-  @media only screen and (min-width: 1024px) {
-    .about {
-      border: none; } }
+    @media only screen and (min-width: 768px) {
+      .about .img-container {
+        width: 100%; } }
+    @media only screen and (min-width: 1024px) {
+      .about .img-container {
+        border: none;
+        width: 77%; } }
   .about .jobs {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -408,21 +420,11 @@ a {
       margin-bottom: 1rem; }
       @media only screen and (min-width: 768px) {
         .about .jobs__bio-image {
-          width: 48%;
-          height: 27vh;
-          background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0)), to(rgba(39, 39, 39, 0))), url("../img/profile.jpg") center center;
-          background: linear-gradient(to right, rgba(39, 39, 39, 0), rgba(39, 39, 39, 0)), url("../img/profile.jpg") center center;
-          background-repeat: no-repeat;
-          padding-top: 0;
-          background-position: left; } }
-      @media only screen and (min-width: 768px) {
-        .about .jobs__bio-image {
           width: 99%;
           height: 27vh;
           background-size: cover; } }
       @media only screen and (min-width: 1024px) {
         .about .jobs__bio-image {
-          width: 40%;
           height: 38vh; } }
       .about .jobs__bio-image .text-secondary {
         width: 100%;
@@ -430,7 +432,7 @@ a {
         text-transform: uppercase;
         text-align: center;
         font-size: 0.81rem;
-        margin-bottom: -1.34rem; }
+        margin-bottom: -1.64rem; }
         @media only screen and (min-width: 768px) {
           .about .jobs__bio-image .text-secondary {
             background: none;
