@@ -40,9 +40,10 @@
       padding-top: 0.5rem;
       text-align: left;
       font-size: 0.97rem;
-      box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.26), 6px 6px 11px rgba(52, 170, 160, 0.26);
+      box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.06), 6px 6px 11px rgba(52, 170, 160, 0.06);
       padding: 1.4rem;
       @include MEDIUM-DEVICE-WIDTH {
+        border-radius: 0.05rem;
         line-height: 1.7rem;
         letter-spacing: 0.031rem;
         font-size: 1.03rem;
@@ -62,16 +63,19 @@
     padding: 0.8rem;
     display: flex;
     justify-content: center;
-    width: 94%;
+    width: 100%;
     border-radius: 6px;
     height: auto;
-    border: 3px solid  white;
-    box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.76), 
-    6px 6px 11px rgba(52, 170, 160, 0.6), 
+    box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 
+    6px 6px 11px rgba(52, 170, 160, 0.16), 
 
   }
   @include MEDIUM-DEVICE-WIDTH {
-    width: 71%;
+    width: 100%;
+
+  }
+  @include LARGE-DEVICE-WIDTH {
+    border: none;
   }
 
   .jobs {
@@ -94,15 +98,13 @@
           rgba(39, 39, 39, 0)
         ),
         url(../img/profile.jpg) center center;
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-end;
       margin-bottom: 1rem;
-      border: 1.5px solid green;
-
       @include MEDIUM-DEVICE-WIDTH {
         width: 48%;
         height: 27vh;
@@ -112,7 +114,6 @@
             rgba($primary-color, 0)
           ),
           url("../img/profile.jpg") center center;
-        background-size: contain;
         background-repeat: no-repeat;
         padding-top: 0;
         background-position: left;
@@ -132,7 +133,6 @@
         text-transform: uppercase;
         text-align: center;
         font-size: 0.81rem;
-        background: rgba(51, 51, 51, 0.7);
         margin-bottom: -1.34rem;
         @include MEDIUM-DEVICE-WIDTH {
           background: none;
