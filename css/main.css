@@ -54,7 +54,8 @@ a {
     font-family: 'Julius Sans One', sans-serif;
     font-family: 'Girassol', cursive;
     font-family: 'Cinzel Decorative', cursive;
-    letter-spacing: 0; }
+    letter-spacing: 0;
+    text-shadow: 1.8px 2.36px #3e473a; }
     @media only screen and (min-width: 768px) {
       .home h2 {
         font-size: 1.3rem; } }
@@ -331,35 +332,55 @@ a {
           font-size: 1.27rem; } }
     .about__bio-image p {
       margin-bottom: 2rem;
+      margin-top: 1.5rem;
+      border-radius: 0.76rem;
       line-height: 1.45rem;
       padding-top: 0.5rem;
       text-align: left;
-      font-size: 0.97rem; }
+      font-size: 0.97rem;
+      -webkit-box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.26), 6px 6px 11px rgba(52, 170, 160, 0.26);
+              box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.26), 6px 6px 11px rgba(52, 170, 160, 0.26);
+      padding: 1.4rem; }
       @media only screen and (min-width: 768px) {
         .about__bio-image p {
           line-height: 1.7rem;
           letter-spacing: 0.031rem;
-          font-size: 1.03rem;
-          padding: 0; } }
+          font-size: 1.03rem; } }
   .about__bio {
-    width: 80%;
+    width: 95%;
     text-align: center; }
     @media only screen and (min-width: 768px) {
       .about__bio {
         font-size: 1.5rem;
-        width: 67%; } }
+        width: 90%; } }
+  .about .img-container {
+    padding: 0.8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 94%;
+    border-radius: 6px;
+    height: auto;
+    border: 3px solid  white;
+    -webkit-box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.76), 6px 6px 11px rgba(52, 170, 160, 0.6);
+            box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.76), 6px 6px 11px rgba(52, 170, 160, 0.6); }
+  @media only screen and (min-width: 768px) {
+    .about {
+      width: 71%; } }
   .about .jobs {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 70vw;
     margin: 0.2rem auto 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2rem; }
     @media only screen and (min-width: 768px) {
       .about .jobs {
-        width: 67vw; } }
+        width: 90%; } }
     .about .jobs__bio-image {
       width: 100%;
       border-radius: 0.3rem;
@@ -381,17 +402,23 @@ a {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      border: 1.5px solid green; }
       @media only screen and (min-width: 768px) {
         .about .jobs__bio-image {
-          width: 50%;
-          height: 29vh;
+          width: 48%;
+          height: 27vh;
           background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0)), to(rgba(39, 39, 39, 0))), url("../img/profile.jpg") center center;
           background: linear-gradient(to right, rgba(39, 39, 39, 0), rgba(39, 39, 39, 0)), url("../img/profile.jpg") center center;
           background-size: contain;
           background-repeat: no-repeat;
           padding-top: 0;
           background-position: left; } }
+      @media only screen and (min-width: 768px) {
+        .about .jobs__bio-image {
+          width: 99%;
+          height: 27vh;
+          background-size: cover; } }
       @media only screen and (min-width: 1024px) {
         .about .jobs__bio-image {
           width: 40%;
