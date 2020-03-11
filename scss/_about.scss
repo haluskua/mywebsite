@@ -20,6 +20,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+
     .text-secondary {
       font-size: 1.05rem;
       text-align: left;
@@ -33,37 +34,54 @@
 
     p {
       margin-bottom: 2rem;
+      margin-top: 1.5rem;
+      border-radius: 0.76rem;
       line-height: 1.45rem;
       padding-top: 0.5rem;
       text-align: left;
       font-size: 0.97rem;
+      box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.26), 6px 6px 11px rgba(52, 170, 160, 0.26);
+      padding: 1.4rem;
       @include MEDIUM-DEVICE-WIDTH {
         line-height: 1.7rem;
         letter-spacing: 0.031rem;
         font-size: 1.03rem;
-        padding: 0;
       }
     }
   }
 
   &__bio {
-    width: 80%;
+    width: 95%;
     text-align: center;
     @include MEDIUM-DEVICE-WIDTH {
       font-size: 1.5rem;
-      width: 67%;
+      width: 90%;
     }
+  }
+  .img-container {
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    width: 94%;
+    border-radius: 6px;
+    height: auto;
+    border: 3px solid  white;
+    box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.76), 
+    6px 6px 11px rgba(52, 170, 160, 0.6), 
+
+  }
+  @include MEDIUM-DEVICE-WIDTH {
+    width: 71%;
   }
 
   .jobs {
     display: flex;
-    width: 70vw;
     margin: 0.2rem auto 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2rem;
     @include MEDIUM-DEVICE-WIDTH {
-      width: 67vw;
+      width: 90%;
     }
 
     &__bio-image {
@@ -83,9 +101,11 @@
       align-items: center;
       justify-content: flex-end;
       margin-bottom: 1rem;
+      border: 1.5px solid green;
+
       @include MEDIUM-DEVICE-WIDTH {
-        width: 50%;
-        height: 29vh;
+        width: 48%;
+        height: 27vh;
         background: linear-gradient(
             to right,
             rgba($primary-color, 0),
@@ -96,6 +116,11 @@
         background-repeat: no-repeat;
         padding-top: 0;
         background-position: left;
+      }
+      @include MEDIUM-DEVICE-WIDTH {
+        width: 99%;
+        height: 27vh;
+        background-size: cover;
       }
       @include LARGE-DEVICE-WIDTH {
         width: 40%;
@@ -119,7 +144,6 @@
         }
       }
     }
-
     &__job {
       display: flex;
       flex-direction: column;
@@ -133,8 +157,6 @@
       @include LARGE-DEVICE-WIDTH {
         border-bottom: 0.5px solid $secondary-color;
       }
-
-
       h2,
       h3 {
         margin: 0.22rem 0;
