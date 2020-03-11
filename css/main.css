@@ -338,11 +338,12 @@ a {
       padding-top: 0.5rem;
       text-align: left;
       font-size: 0.97rem;
-      -webkit-box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.26), 6px 6px 11px rgba(52, 170, 160, 0.26);
-              box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.26), 6px 6px 11px rgba(52, 170, 160, 0.26);
+      -webkit-box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.06), 6px 6px 11px rgba(52, 170, 160, 0.06);
+              box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.06), 6px 6px 11px rgba(52, 170, 160, 0.06);
       padding: 1.4rem; }
       @media only screen and (min-width: 768px) {
         .about__bio-image p {
+          border-radius: 0.05rem;
           line-height: 1.7rem;
           letter-spacing: 0.031rem;
           font-size: 1.03rem; } }
@@ -361,15 +362,17 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 94%;
+    width: 100%;
     border-radius: 6px;
     height: auto;
-    border: 3px solid  white;
-    -webkit-box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.76), 6px 6px 11px rgba(52, 170, 160, 0.6);
-            box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.76), 6px 6px 11px rgba(52, 170, 160, 0.6); }
+    -webkit-box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(52, 170, 160, 0.16);
+            box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(52, 170, 160, 0.16); }
   @media only screen and (min-width: 768px) {
     .about {
-      width: 71%; } }
+      width: 100%; } }
+  @media only screen and (min-width: 1024px) {
+    .about {
+      border: none; } }
   .about .jobs {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -387,7 +390,7 @@ a {
       padding-top: 41vh;
       background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.02)), to(rgba(39, 39, 39, 0))), url(../img/profile.jpg) center center;
       background: linear-gradient(to right, rgba(39, 39, 39, 0.02), rgba(39, 39, 39, 0)), url(../img/profile.jpg) center center;
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -402,15 +405,13 @@ a {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end;
-      margin-bottom: 1rem;
-      border: 1.5px solid green; }
+      margin-bottom: 1rem; }
       @media only screen and (min-width: 768px) {
         .about .jobs__bio-image {
           width: 48%;
           height: 27vh;
           background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0)), to(rgba(39, 39, 39, 0))), url("../img/profile.jpg") center center;
           background: linear-gradient(to right, rgba(39, 39, 39, 0), rgba(39, 39, 39, 0)), url("../img/profile.jpg") center center;
-          background-size: contain;
           background-repeat: no-repeat;
           padding-top: 0;
           background-position: left; } }
@@ -429,7 +430,6 @@ a {
         text-transform: uppercase;
         text-align: center;
         font-size: 0.81rem;
-        background: rgba(51, 51, 51, 0.7);
         margin-bottom: -1.34rem; }
         @media only screen and (min-width: 768px) {
           .about .jobs__bio-image .text-secondary {
