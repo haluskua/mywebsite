@@ -60,13 +60,15 @@ a {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
+    .home .svg-container.open {
+      visibility: visible; }
     .home .svg-container #WEB {
       width: 100%;
       height: 100%;
       color: green; }
     .home .svg-container #ring2 {
-      -webkit-animation: ring2 8s infinite linear;
-              animation: ring2 8s infinite linear;
+      -webkit-animation: ring2 8.5s infinite linear alternate;
+              animation: ring2 8.5s infinite linear alternate;
       -webkit-transform-origin: center;
               transform-origin: center;
       transform-box: fill-box; }
@@ -76,6 +78,28 @@ a {
       -webkit-transform-origin: center;
               transform-origin: center;
       transform-box: fill-box; }
+    .home .svg-container #icon {
+      -webkit-animation: logo 4.3s ease-in-out infinite alternate;
+              animation: logo 4.3s ease-in-out infinite alternate;
+      -webkit-transform-origin: center;
+              transform-origin: center;
+      transform-box: fill-box; }
+
+@-webkit-keyframes logo {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg); }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg); } }
+
+@keyframes logo {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg); }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg); } }
 
 @-webkit-keyframes ring2 {
   from {
@@ -546,7 +570,7 @@ a {
       .about .jobs__job h5 {
         font-size: 0.9rem;
         letter-spacing: 0.02rem;
-        color: #50b694;
+        color: #ffb240;
         font-family: "Turret Road", "cursive";
         font-weight: normal;
         font-style: normal;

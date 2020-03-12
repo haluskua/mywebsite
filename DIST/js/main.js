@@ -1,17 +1,29 @@
 const menuBtn = document.querySelector(".menu-btn");
+const logoBtn = document.querySelector("#ring1");
 const hamburger = document.querySelector(".menu-btn__burger");
 const nav = document.querySelector(".nav");
 const menuNav = document.querySelector(".menu-nav");
 const navItems = document.querySelectorAll(".menu-nav__item");
 
+const projects = document.querySelectorAll("#projectsButton");
+
 //JAVASCRIPT DEMONSTRATION
 
 let showMenu = false;
+let logoItems = false;
 
 menuBtn.addEventListener("click", toggleMenu);
+logoBtn.addEventListener("click", toggleMenu);
+
+function toggleMenu(){
+  if (!logoItems) {
+    projects.classList.add("open");
+  }
+}
 
 function toggleMenu() {
   if (!showMenu) {
+  
     hamburger.classList.add("open");
     nav.classList.add("open");
     menuNav.classList.add("open");
