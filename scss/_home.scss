@@ -21,6 +21,68 @@
   @include LARGE-DEVICE-WIDTH {
     padding-top: 12vh;
   }
+  svg {
+    height: 63vh;
+    @include LARGE-DEVICE-WIDTH {
+      height: 66vh;
+    }
+  }
+  .svg-container {
+    width: 100%;
+    height: 60vh;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    
+
+    // #ring1 {
+    //   animation: pulse 1s ease-in-out ininite linear;
+    //   transform-box: fill-box;
+    //   transform-origin: center;
+    // }
+    // @keyframes pusle {
+    //   from {
+    //     traransform: rotateZ(0deg);
+    //     transform: translayeY(0%);
+    //   }
+    //   to {
+    //     transfrom: rotateZ(360deg);
+    //     transfrom: translateY(5%);
+
+    //   }
+    // }
+
+
+    #ring2 {
+      animation: ring2 10s infinite linear;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+    #ring1 {
+      animation: ring1 5.5s ease-in-out infinite alternate;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+
+
+    @keyframes ring2 {
+      from {
+        transform: rotateZ(0deg);
+      }
+      to {
+        transform: rotateZ(360deg);
+      }
+    }
+    @keyframes ring1 {
+      from {
+        transform: rotateZ(0deg) translate(0%) translateX(0%);
+      }
+      to {
+        transform: rotateZ(360deg) translateY(2%) translateX(-2%);
+      }
+    }
+  }
+
   .fit-picture {
     // background: url(../img/svg_logo.svg) no-repeat center center;
     width: 59%;
