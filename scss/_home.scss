@@ -33,7 +33,6 @@
     text-align: center;
     display: flex;
     justify-content: space-around;
-    
 
     // #ring1 {
     //   animation: pulse 1s ease-in-out ininite linear;
@@ -52,9 +51,8 @@
     //   }
     // }
 
-
     #ring2 {
-      animation: ring2 10s infinite linear;
+      animation: ring2 5s infinite linear;
       transform-origin: center;
       transform-box: fill-box;
     }
@@ -63,7 +61,6 @@
       transform-origin: center;
       transform-box: fill-box;
     }
-
 
     @keyframes ring2 {
       from {
@@ -91,6 +88,10 @@
       height: 300px;
       opacity: 0.6;
     }
+  }
+
+  #icon {
+    background-color: red;
   }
   h2 {
     text-transform: normal;
