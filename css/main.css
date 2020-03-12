@@ -61,8 +61,8 @@ a {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
     .home .svg-container #ring2 {
-      -webkit-animation: ring2 10s infinite linear;
-              animation: ring2 10s infinite linear;
+      -webkit-animation: ring2 5s infinite linear;
+              animation: ring2 5s infinite linear;
       -webkit-transform-origin: center;
               transform-origin: center;
       transform-box: fill-box; }
@@ -111,6 +111,8 @@ a {
         width: 20%;
         height: 300px;
         opacity: 0.6; } }
+  .home #icon {
+    background-color: red; }
   .home h2 {
     text-transform: normal;
     font-size: 1.2rem;
@@ -854,4 +856,5 @@ footer {
   text-align: right;
   padding: 1rem;
   color: #646262; }
+
 /*# sourceMappingURL=main.css.map */
