@@ -111,8 +111,6 @@ a {
         width: 20%;
         height: 300px;
         opacity: 0.6; } }
-  .home #icon {
-    background-color: red; }
   .home h2 {
     text-transform: normal;
     font-size: 1.2rem;
