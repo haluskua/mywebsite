@@ -67,8 +67,8 @@ a {
               transform-origin: center;
       transform-box: fill-box; }
     .home .svg-container #ring1 {
-      -webkit-animation: ring1 5.5s ease-in-out infinite alternate;
-              animation: ring1 5.5s ease-in-out infinite alternate;
+      -webkit-animation: ring1 8s ease-in-out infinite alternate;
+              animation: ring1 8s ease-in-out infinite alternate;
       -webkit-transform-origin: center;
               transform-origin: center;
       transform-box: fill-box; }
@@ -854,5 +854,4 @@ footer {
   text-align: right;
   padding: 1rem;
   color: #646262; }
-
 /*# sourceMappingURL=main.css.map */
