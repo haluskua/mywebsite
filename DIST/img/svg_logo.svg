@@ -94,16 +94,20 @@
 </text>
 </g>
 <g>
-	<path id="SVGID_x5F_3_x5F_" class="st26" d="M61,372.73v171.32"/>
+<path id="SVGID_x5F_3_x5F_" class="st26" d="M61,372.73v171.32"/>
 	<text>	<textPath  xlink:href="#SVGID_x5F_3_x5F_" startOffset="0%">
 <tspan  class="st20 st21" style="font-size:35.1936px; letter-spacing:25.42;">Developer</tspan>	</textPath>
 </text>
 </g>
 <g>
-	<path id="SVGID_x5F_4_x5F_" class="st26" d="M72.67,572.16l148.54,85.35"/>
-	<text>	<textPath  xlink:href="#SVGID_x5F_4_x5F_" startOffset="0%">
-<tspan  class="st20 st21" style="font-size:35.1937px; letter-spacing:25.42;">Web</tspan>	</textPath>
-</text>
+<path id="SVGID_x5F_4_x5F_" class="st26" d="M72.67,572.16l148.54,85.35"/>
+	<a class="svg" xlink:href="about.html">
+		<text>
+			<textPath xlink:href="#SVGID_x5F_4_x5F_" startOffset="0%">
+				<tspan  class="st20 st21" style="font-size:35.1937px; letter-spacing:25.42;">Web</tspan>	
+			</textPath>
+		</text>
+	</a>
 </g>
 <g>
 	<text transform="matrix(1 0 0 1 215.9512 274.7686)" class="st20 st21 st27"> &amp; </text>
