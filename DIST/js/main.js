@@ -4,8 +4,18 @@ const hamburger = document.querySelector(".menu-btn__burger");
 const nav = document.querySelector(".nav");
 const menuNav = document.querySelector(".menu-nav");
 const navItems = document.querySelectorAll(".menu-nav__item");
+// const showWeb = document.querySelector("#WEB");
 
-const showWeb = document.querySelector("#WEB");
+
+const projects = document.querySelector("#projectsButton");
+const contact = document.querySelector("#contactButton");
+const about = document.querySelector("#aboutButton");
+const life = document.querySelector("#lifeButton");
+const FOUR = document.querySelector("#CONNECT");
+const ONE = document.querySelector("#LIFE");
+const TWO = document.querySelector("#PRO");
+const THREE = document.querySelector("#ABOUT");
+
 
 //JAVASCRIPT DEMONSTRATION
 
@@ -15,16 +25,35 @@ let logoItems = false;
 menuBtn.addEventListener("click", toggleMenu);
 logoBtn.addEventListener("click", webTest);
 
+
+
+
 function webTest() {
   if (!logoItems) {
   
-    showWeb.classList.add("open");
+    // showWeb.classList.add("open");
+    projects.classList.add("open");
+    contact.classList.add("open");
+    about.classList.add("open");
+    life.classList.add("open");
+    ONE.classList.add("open");
+    TWO.classList.add("open");
+    THREE.classList.add("open");
+    FOUR.classList.add("open");
 
     logoItems = true;
-    
+
   } else {
-    showWeb.classList.remove("open");
-   
+    // showWeb.classList.remove("open");
+    projects.classList.remove("open");
+    contact.classList.remove("open");
+    about.classList.remove("open");
+    life.classList.remove("open");
+    ONE.classList.remove("open");
+    TWO.classList.remove("open");
+    THREE.classList.remove("open");
+    FOUR.classList.remove("open");
+    
     logoItems = false;
   }
 }

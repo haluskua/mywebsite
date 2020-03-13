@@ -51,18 +51,24 @@
     //   }
     // }
 
-
-    #WEB {
-      width: 100%;
-      height: 100%;
-      color: green;
+    #ABOUT,
+    #PRO,
+    #LIFE,
+    #CONNECT {
       visibility: hidden;
       &.open {
         visibility: visible;
       }
-
     }
-
+    #projectsButton,
+    #contactButton,
+    #aboutButton,
+    #lifeButton {
+      visibility: hidden;
+      &.open {
+        visibility: visible;
+      }
+    }
 
     #ring2 {
       animation: ring2 8.5s infinite linear alternate;
