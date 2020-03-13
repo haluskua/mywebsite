@@ -1,11 +1,11 @@
 const menuBtn = document.querySelector(".menu-btn");
-const logoBtn = document.querySelector("#ring1");
+const logoBtn = document.querySelector("#icon");
 const hamburger = document.querySelector(".menu-btn__burger");
 const nav = document.querySelector(".nav");
 const menuNav = document.querySelector(".menu-nav");
 const navItems = document.querySelectorAll(".menu-nav__item");
 
-const projects = document.querySelectorAll("#projectsButton");
+const showWeb = document.querySelector("#WEB");
 
 //JAVASCRIPT DEMONSTRATION
 
@@ -13,11 +13,19 @@ let showMenu = false;
 let logoItems = false;
 
 menuBtn.addEventListener("click", toggleMenu);
-logoBtn.addEventListener("click", toggleMenu);
+logoBtn.addEventListener("click", webTest);
 
-function toggleMenu(){
+function webTest() {
   if (!logoItems) {
-    projects.classList.add("open");
+  
+    showWeb.classList.add("open");
+
+    logoItems = true;
+    
+  } else {
+    showWeb.classList.remove("open");
+   
+    logoItems = false;
   }
 }
 

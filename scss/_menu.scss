@@ -88,7 +88,7 @@
       ),
       url(../img/project-0.jpg) center center;
     background-size: cover;
-  
+
     @include MEDIUM-DEVICE-WIDTH {
       display: block;
       transform: translateY(0);
@@ -119,10 +119,10 @@
       }
     }
 
-    &__link{
-      font-family: 'Montserrat', sans-serif;
-      font-family: 'Bebas Neue', cursive;
-      font-family: 'Turret Road', cursive;
+    &__link {
+      font-family: "Montserrat", sans-serif;
+      font-family: "Bebas Neue", cursive;
+      font-family: "Turret Road", cursive;
       display: inline-block;
       font-size: 1rem;
       width: 240px;
@@ -157,9 +157,14 @@
     }
   }
 }
-
+//the speed or motion rate each item gets pushed out to show
 @for $i from 1 through 4 {
   .menu-nav__item:nth-child(#{$i}) {
-    transition-delay: ($i * 0.09s) + 0.12s;
+    transition-delay: ($i * 0.07s) + 0.105s;
   }
+
+
+
+
+  
 }
