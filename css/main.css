@@ -60,12 +60,25 @@ a {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
-    .home .svg-container #WEB {
-      width: 100%;
-      height: 100%;
-      color: green;
+    .home .svg-container #ABOUT,
+    .home .svg-container #PRO,
+    .home .svg-container #LIFE,
+    .home .svg-container #CONNECT {
       visibility: hidden; }
-      .home .svg-container #WEB.open {
+      .home .svg-container #ABOUT.open,
+      .home .svg-container #PRO.open,
+      .home .svg-container #LIFE.open,
+      .home .svg-container #CONNECT.open {
+        visibility: visible; }
+    .home .svg-container #projectsButton,
+    .home .svg-container #contactButton,
+    .home .svg-container #aboutButton,
+    .home .svg-container #lifeButton {
+      visibility: hidden; }
+      .home .svg-container #projectsButton.open,
+      .home .svg-container #contactButton.open,
+      .home .svg-container #aboutButton.open,
+      .home .svg-container #lifeButton.open {
         visibility: visible; }
     .home .svg-container #ring2 {
       -webkit-animation: ring2 8.5s infinite linear alternate;
