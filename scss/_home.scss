@@ -26,6 +26,9 @@
     @include LARGE-DEVICE-WIDTH {
       height: 66vh;
     }
+    @include LARGE-DEVICE-WIDTH {
+      width: 74vh;
+    }
   }
   .svg-container {
     width: 100%;
@@ -33,6 +36,9 @@
     text-align: center;
     display: flex;
     justify-content: space-around;
+    @include LARGE-DEVICE-WIDTH {
+      height: 64vh;
+    }
 
     // #ring1 {
     //   animation: pulse 1s ease-in-out ininite linear;
@@ -224,4 +230,44 @@
       }
     }
   }
+
+  //Button click transition delay
+
+  @for $i from 1 through 4 {
+    .menu-nav__item:nth-child(#{$i}) {
+      transition-delay: ($i * 0.07s) + 0.105s;
+    }
+  }
+
+  // transition deday for panels
+
+  // #lifeButton,
+  // #LIFE {
+  //   transition-delay: 0.12s;
+  //   transition-timing-function: ease-in-out;
+  // }
+  // #projectsButton,
+  // #PRO {
+  //   transition-delay: 0.24s;
+  //   transition-timing-function: ease-in-out;
+  // }
+  // #aboutButton,
+  // #ABOUT {
+  //   transition-delay: 0.36s;
+  //   transition-timing-function: ease-in-out;
+  // }
+
+  // #contactButton,
+  // #CONNECT {
+  //   transition-delay: 0.45s;
+  //   transition-timing-function: ease-in-out;
+  // }
+
+  // #contactButton {
+  //   transform: translateX(20px);
+  //   transition-timing-function: ease-in-out;
+
+  //   background-color: rgb(68, 109, 15);
+  // }
+
 }

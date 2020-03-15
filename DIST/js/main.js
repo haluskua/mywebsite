@@ -11,10 +11,11 @@ const projects = document.querySelector("#projectsButton");
 const contact = document.querySelector("#contactButton");
 const about = document.querySelector("#aboutButton");
 const life = document.querySelector("#lifeButton");
-const FOUR = document.querySelector("#CONNECT");
 const ONE = document.querySelector("#LIFE");
 const TWO = document.querySelector("#PRO");
 const THREE = document.querySelector("#ABOUT");
+const FOUR = document.querySelector("#CONNECT");
+
 
 
 //JAVASCRIPT DEMONSTRATION
@@ -40,6 +41,8 @@ function webTest() {
     TWO.classList.add("open");
     THREE.classList.add("open");
     FOUR.classList.add("open");
+    navItems.forEach(item => item.classList.add("open"));
+
 
     logoItems = true;
 
@@ -53,6 +56,8 @@ function webTest() {
     TWO.classList.remove("open");
     THREE.classList.remove("open");
     FOUR.classList.remove("open");
+    navItems.forEach(item => item.classList.remove("open"));
+
     
     logoItems = false;
   }
