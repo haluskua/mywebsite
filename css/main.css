@@ -240,6 +240,48 @@ a {
         @media only screen and (min-width: 768px) {
           .home .cta__button #cta__link:hover {
             line-height: 2.2rem; } }
+  .home .menu-nav__item:nth-child(1) {
+    -webkit-transition-delay: 0.175s;
+            transition-delay: 0.175s; }
+  .home .menu-nav__item:nth-child(2) {
+    -webkit-transition-delay: 0.245s;
+            transition-delay: 0.245s; }
+  .home .menu-nav__item:nth-child(3) {
+    -webkit-transition-delay: 0.315s;
+            transition-delay: 0.315s; }
+  .home .menu-nav__item:nth-child(4) {
+    -webkit-transition-delay: 0.385s;
+            transition-delay: 0.385s; }
+  .home #lifeButton,
+  .home #LIFE {
+    -webkit-transition-delay: 0.12s;
+            transition-delay: 0.12s;
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out; }
+  .home #projectsButton,
+  .home #PRO {
+    -webkit-transition-delay: 0.24s;
+            transition-delay: 0.24s;
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out; }
+  .home #aboutButton,
+  .home #ABOUT {
+    -webkit-transition-delay: 0.36s;
+            transition-delay: 0.36s;
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out; }
+  .home #contactButton,
+  .home #CONNECT {
+    -webkit-transition-delay: 0.45s;
+            transition-delay: 0.45s;
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out; }
+  .home #contactButton {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+    background-color: #446d0f; }
 
 .menu-btn {
   position: absolute;
