@@ -438,7 +438,6 @@ a {
         top: 15%; } }
   .about__bio-image {
     width: 100%;
-    padding-top: 9.5vh;
     background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23)));
     background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23));
     display: -webkit-box;
@@ -454,6 +453,9 @@ a {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
+    @media only screen and (min-width: 1024px) {
+      .about__bio-image {
+        padding: 0 5%; } }
     .about__bio-image .text-secondary {
       font-size: 1.05rem;
       text-align: left;
@@ -464,9 +466,13 @@ a {
         .about__bio-image .text-secondary {
           font-size: 1.27rem; } }
     .about__bio-image p {
+      background: #f6fbe4;
+      color: black;
+      padding: 4%;
+      width: 100%;
       margin-bottom: 2rem;
       margin-top: 1.5rem;
-      border-radius: 0.76rem;
+      border-radius: 0.176rem;
       line-height: 1.45rem;
       text-align: left;
       font-size: 0.97rem;
@@ -481,13 +487,13 @@ a {
         .about__bio-image p {
           -webkit-box-shadow: none;
                   box-shadow: none;
-          width: 78%;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
           -webkit-box-pack: center;
               -ms-flex-pack: center;
-                  justify-content: center; } }
+                  justify-content: center;
+          padding: 2.5% 6%; } }
   .about__bio {
     width: 95%;
     text-align: center; }
@@ -517,19 +523,20 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 1% 4%;
     margin: 0.2rem auto 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2rem; }
     @media only screen and (min-width: 768px) {
       .about .jobs {
-        width: 90%; } }
+        width: 100%; } }
     .about .jobs__bio-image {
       width: 75%;
       border-radius: 0.3rem;
-      padding-top: 41vh;
-      background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.02)), to(rgba(39, 39, 39, 0))), url(../img/logo_2.png) center center;
-      background: linear-gradient(to right, rgba(39, 39, 39, 0.02), rgba(39, 39, 39, 0)), url(../img/logo_2.png) center center;
+      padding-top: 38vh;
+      background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.02)), to(rgba(39, 39, 39, 0))), url(../img/profile.jpg) center center;
+      background: linear-gradient(to right, rgba(39, 39, 39, 0.02), rgba(39, 39, 39, 0)), url(../img/profile.jpg) center center;
       background-size: cover;
       background-repeat: no-repeat;
       display: -webkit-box;
@@ -549,27 +556,29 @@ a {
       @media only screen and (min-width: 768px) {
         .about .jobs__bio-image {
           width: 50%;
-          height: 27vh;
-          background-size: cover; } }
+          height: 35vh;
+          background-size: cover;
+          padding: 4% 6%; } }
       @media only screen and (min-width: 1024px) {
         .about .jobs__bio-image {
-          height: 50vh;
-          width: 18%; } }
+          height: 55vh; } }
       .about .jobs__bio-image .text-secondary {
         width: 100%;
         color: gold;
         text-transform: uppercase;
-        text-align: center;
+        text-align: justify;
         font-size: 0.81rem;
         margin-bottom: -1.64rem; }
         @media only screen and (min-width: 768px) {
           .about .jobs__bio-image .text-secondary {
             background: none;
             margin-bottom: -2rem;
-            font-size: 1rem; } }
+            font-size: 1rem;
+            text-align: right; } }
         @media only screen and (min-width: 1024px) {
           .about .jobs__bio-image .text-secondary {
-            font-size: 0.7rem; } }
+            font-size: 0.7rem;
+            padding: 0 6%; } }
     .about .jobs__job {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -822,14 +831,15 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url(../img/profile.jpg) center center;
-  background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url(../img/profile.jpg) center center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url(../img/sunrise.jpg) center center;
+  background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url(../img/sunrise.jpg) center center;
   background-size: cover; }
   .contact h2 {
     font-size: 2.26rem;
     margin-bottom: 2rem;
     font-family: "Turret Road", cursive;
     color: gold;
+    color: #cddc39;
     text-transform: uppercase;
     text-shadow: 1.8px 2.36px #3e473a; }
     @media only screen and (min-width: 768px) {
@@ -864,6 +874,7 @@ a {
         margin-top: 11rem; } }
   .contact .text-secondary {
     color: gold;
+    color: #cddc39;
     font-family: "Turret Road", "cursive";
     margin: 3px 0;
     font-size: 1.2rem;

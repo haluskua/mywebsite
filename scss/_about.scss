@@ -14,7 +14,6 @@
 
   &__bio-image {
     width: 100%;
-    padding-top: 9.5vh;
     background: linear-gradient(
       to right,
       rgba(15, 24, 33, 0.29),
@@ -24,6 +23,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    @include LARGE-DEVICE-WIDTH {
+      padding: 0 5%;
+    }
 
     .text-secondary {
       font-size: 1.05rem;
@@ -36,12 +38,17 @@
       }
     }
     p {
+      background: #f6fbe4;
+      color: black;
+      padding: 4%;
+      width: 100%;
       margin-bottom: 2rem;
       margin-top: 1.5rem;
-      border-radius: 0.76rem;
+      border-radius: 0.176rem;
       line-height: 1.45rem;
       text-align: left;
       font-size: 0.97rem;
+
       // box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.06), 6px 6px 11px rgba(52, 170, 160, 0.06);
       padding: 1.2rem;
       @include MEDIUM-DEVICE-WIDTH {
@@ -52,9 +59,9 @@
       }
       @include LARGE-DEVICE-WIDTH {
         box-shadow: none;
-        width: 78%;
         display: flex;
         justify-content: center;
+        padding: 2.5% 6%;
       }
     }
   }
@@ -89,24 +96,25 @@
 
   .jobs {
     display: flex;
+    padding: 1% 4%;
     margin: 0.2rem auto 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2rem;
     @include MEDIUM-DEVICE-WIDTH {
-      width: 90%;
+      width: 100%;
     }
 
     &__bio-image {
       width: 75%;
       border-radius: 0.3rem;
-      padding-top: 41vh;
+      padding-top: 38vh;
       background: linear-gradient(
           to right,
           rgba(39, 39, 39, 0.02),
           rgba(39, 39, 39, 0)
         ),
-        url(../img/logo_2.png) center center;
+        url(../img/profile.jpg) center center;
       background-size: cover;
       background-repeat: no-repeat;
       display: flex;
@@ -116,27 +124,29 @@
       margin-bottom: 1rem;
       @include MEDIUM-DEVICE-WIDTH {
         width: 50%;
-        height: 27vh;
+        height: 35vh;
         background-size: cover;
+        padding: 4% 6%
       }
       @include LARGE-DEVICE-WIDTH {
-        height: 50vh;
-        width: 18%;
+        height: 55vh;
       }
       .text-secondary {
         width: 100%;
         color: $secondary-color;
         text-transform: uppercase;
-        text-align: center;
+        text-align: justify;
         font-size: 0.81rem;
         margin-bottom: -1.64rem;
         @include MEDIUM-DEVICE-WIDTH {
           background: none;
           margin-bottom: -2rem;
           font-size: 1rem;
+          text-align: right;
         }
         @include LARGE-DEVICE-WIDTH {
           font-size: 0.7rem;
+          padding: 0 6%;
         }
       }
     }
