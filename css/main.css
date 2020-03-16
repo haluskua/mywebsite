@@ -372,8 +372,7 @@ a {
         -webkit-transform: translate(0);
                 transform: translate(0); }
       .nav .menu-nav__item.active > a {
-        color: #fcd506;
-        text-shadow: none; }
+        color: #fcd506; }
     .nav .menu-nav__link {
       font-family: "Montserrat", sans-serif;
       font-family: "Bebas Neue", cursive;
@@ -582,7 +581,7 @@ a {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        font-family: "Monserrat", "cursive";
+        font-family: "Montserrat", "cursive";
         width: 100%;
         display: flex;
         color: #cfe3ef;
@@ -996,4 +995,5 @@ footer {
   text-align: right;
   padding: 1rem;
   color: #646262; }
+
 /*# sourceMappingURL=main.css.map */
