@@ -141,7 +141,7 @@
         width: 50%;
         height: 35vh;
         background-size: cover;
-        padding: 4% 6%
+        padding: 4% 6%;
       }
       @include LARGE-DEVICE-WIDTH {
         height: 55vh;
@@ -149,7 +149,7 @@
       .text-secondary {
         display: flex;
         justify-content: center;
-        font-family: "Monserrat", "cursive";
+        font-family: "Montserrat", "cursive";
         width: 100%;
         display: flex;
         color: $secondary-color;
