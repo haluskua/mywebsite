@@ -27,12 +27,13 @@
         rgba(15, 24, 33, 0.29),
         rgba(44, 92, 97, 0.23)
       ),
-      url("../img/background-man.png") center center;
+      url("../img/sunrise.jpg") center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    border-bottom: 1px solid #8b9497;
     @include MEDIUM-DEVICE-WIDTH {
       height: 100%;
       padding-top: 0;
@@ -40,7 +41,6 @@
     @include LARGE-DEVICE-WIDTH {
       height: 33vh;
     }
-
     .text-secondary {
       font-family: "Turret Road", "cursive";
       text-transform: uppercase;
@@ -217,7 +217,12 @@
       width: 50%;
     }
     @include LARGE-DEVICE-WIDTH {
-      width: 38%;
+      width: 22%;
+    }
+  }
+  .fa-2x {
+    @include LARGE-DEVICE-WIDTH {
+      font-size: 1em;
     }
   }
 }

@@ -1,5 +1,14 @@
+
+
 .about {
   padding-bottom: 0rem;
+  background: linear-gradient(
+      to right,
+      rgba(15, 24, 33, 0.29),
+      rgba(44, 92, 97, 0.23)
+    ),
+    url(../img/cloth.jpg) center center;
+  background-size: cover;
   .breadCrumbs {
     position: absolute;
     top: 3%;
@@ -23,23 +32,29 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    @include MEDIUM-DEVICE-WIDTH {
+      padding: 71px 5%;
+    }
     @include LARGE-DEVICE-WIDTH {
-      padding: 0 5%;
     }
 
     .text-secondary {
       font-size: 1.05rem;
+      font-weight: bolder;
       text-align: left;
       padding: 7px 0;
       font-family: "Turret Road", "cursive";
-      color: $secondary-color;
+      font-family: "Montserrat", "cursive";
+      color: #e6dfaa;
+      display: flex;
+      margin-bottom: 0;
       @include LARGE-DEVICE-WIDTH {
         font-size: 1.27rem;
       }
     }
     p {
-      background: #f6fbe4;
-      color: black;
+      background: #eff9fb;
+      color: #4d555a;
       padding: 4%;
       width: 100%;
       margin-bottom: 2rem;
@@ -48,8 +63,7 @@
       line-height: 1.45rem;
       text-align: left;
       font-size: 0.97rem;
-
-      // box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.06), 6px 6px 11px rgba(52, 170, 160, 0.06);
+      box-shadow: 0px 4px 4px rgb(239, 249, 251), 4px 4px 8px rgba(36, 68, 66, 0.53);
       padding: 1.2rem;
       @include MEDIUM-DEVICE-WIDTH {
         border-radius: 0.05rem;
@@ -62,6 +76,7 @@
         display: flex;
         justify-content: center;
         padding: 2.5% 6%;
+        letter-spacing: 0;
       }
     }
   }
@@ -78,7 +93,7 @@
     padding: 0.8rem;
     display: flex;
     justify-content: center;
-    width: 96%;
+    width: 100%;
     border-radius: 6px;
     height: auto;
     // box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16),
@@ -106,7 +121,7 @@
     }
 
     &__bio-image {
-      width: 75%;
+      width: 100%;
       border-radius: 0.3rem;
       padding-top: 38vh;
       background: linear-gradient(
@@ -132,15 +147,19 @@
         height: 55vh;
       }
       .text-secondary {
+        font-family: "Monserrat", "cursive";
         width: 100%;
+        display: flex;
         color: $secondary-color;
         text-transform: uppercase;
         text-align: justify;
         font-size: 0.81rem;
-        margin-bottom: -1.64rem;
+        margin: 0;
+        position: absolute;
+        left: 46%;
         @include MEDIUM-DEVICE-WIDTH {
           background: none;
-          margin-bottom: -2rem;
+          margin-bottom: 0rem;
           font-size: 1rem;
           text-align: right;
         }
@@ -177,7 +196,7 @@
       h5 {
         font-size: 0.9rem;
         letter-spacing: 0.02rem;
-        color: $accent-color;
+        color: #f1d2a6;
         font-family: "Turret Road", "cursive";
         font-weight: normal;
         font-style: normal;
@@ -193,6 +212,8 @@
     }
   }
   .socialIcons {
+    display: flex;
+    justify-content: center;
     @include MEDIUM-DEVICE-WIDTH {
       display: flex;
       flex-direction: column;

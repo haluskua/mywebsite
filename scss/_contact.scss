@@ -1,10 +1,12 @@
 .contact {
-  height: 100vh;
-  padding-top: 28vh;
+  height: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  color: #3f5261;
+  padding: 18vh 0;
   background: linear-gradient(
       to right,
       rgba(15, 24, 33, 0.29),
@@ -12,15 +14,22 @@
     ),
     url(../img/cloth.jpg) center center;
   background-size: cover;
+  @include MEDIUM-DEVICE-WIDTH {
+    padding: 25vh 0;
+  }
+  @include LARGE-DEVICE-WIDTH {
+    padding-top: 33vh;
+  }
 
   h2 {
     font-size: 2.26rem;
     margin-bottom: 2rem;
-    font-family: "Turret Road", cursive;
+    font-family: "Bebas", cursive;
     color: $secondary-color;
-    color: #FF9800;
+    color: #f4f9ff;
+    font-weight: bolder;
     text-transform: uppercase;
-    text-shadow: 1.8px 2.36px #3e473a;
+    text-shadow: 1.8px 2.36px #78858c;
     @include MEDIUM-DEVICE-WIDTH {
       margin-bottom: 3.2rem;
     }
@@ -57,9 +66,8 @@
     }
   }
   .text-secondary {
-    color: $secondary-color;
-    color: #757e82;
-    font-family: "Turret Road", "cursive";
+    color: #fbfcfd;
+    font-family: "Montserrat", "cursive";
     margin: 3px 0;
     font-size: 1.2rem;
     letter-spacing: 0.04em;
