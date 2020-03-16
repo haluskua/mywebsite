@@ -147,6 +147,8 @@
         height: 55vh;
       }
       .text-secondary {
+        display: flex;
+        justify-content: center;
         font-family: "Monserrat", "cursive";
         width: 100%;
         display: flex;
@@ -155,8 +157,7 @@
         text-align: justify;
         font-size: 0.81rem;
         margin: 0;
-        position: absolute;
-        left: 46%;
+
         @include MEDIUM-DEVICE-WIDTH {
           background: none;
           margin-bottom: 0rem;

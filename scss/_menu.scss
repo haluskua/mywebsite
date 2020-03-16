@@ -1,13 +1,12 @@
 .menu-btn {
   position: absolute;
-  z-index: 3;
-  left: 1rem;
-  top: 1rem;
-  height: 20px;
+  left: 2%;
+  top: 0.5rem;
   width: 28px;
-  cursor: pointer;
+  height: 3px;
+  background: #ffffff;
   transition: all 0.42s ease-in-out;
-  border-bottom: 1px solid #483c2a;
+  z-index: 999;
   @include MEDIUM-DEVICE-WIDTH {
     visibility: hidden;
   }
