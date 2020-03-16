@@ -24,7 +24,7 @@
   h2 {
     font-size: 2.26rem;
     margin-bottom: 2rem;
-    font-family: "Bebas", cursive;
+    font-family: "Montserrat", cursive;
     color: $secondary-color;
     color: #f4f9ff;
     font-weight: bolder;
@@ -55,7 +55,7 @@
       font-size: 1.53rem;
       padding: 0.2rem 0;
       @include LARGE-DEVICE-WIDTH {
-        font-size: 2.2rem;
+        font-size: 1.2rem;
       }
     }
     @include MEDIUM-DEVICE-WIDTH {
