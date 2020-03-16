@@ -260,14 +260,15 @@ a {
 
 .menu-btn {
   position: absolute;
-  z-index: 1;
-  right: 1rem;
+  z-index: 3;
+  left: 1rem;
   top: 1rem;
   height: 20px;
   width: 28px;
   cursor: pointer;
   -webkit-transition: all 0.42s ease-in-out;
-  transition: all 0.42s ease-in-out; }
+  transition: all 0.42s ease-in-out;
+  border-bottom: 1px solid #483c2a; }
   @media only screen and (min-width: 768px) {
     .menu-btn {
       visibility: hidden; } }
@@ -345,7 +346,8 @@ a {
     transition: all 0.42s ease-in-out;
     background: -webkit-gradient(linear, left top, right top, from(#8b9cad), to(#96b7ce)), url(../img/project-0.jpg), url(../img/project-0.jpg) center center;
     background: linear-gradient(to right, #8b9cad, #96b7ce), url(../img/project-0.jpg), url(../img/project-0.jpg) center center;
-    background-size: cover; }
+    background-size: cover;
+    background: #8ea2b5; }
     @media only screen and (min-width: 768px) {
       .nav .menu-nav {
         display: block;
@@ -371,7 +373,8 @@ a {
         -webkit-transform: translate(0);
                 transform: translate(0); }
       .nav .menu-nav__item.active > a {
-        color: black; }
+        color: #fcd506;
+        text-shadow: none; }
     .nav .menu-nav__link {
       font-family: "Montserrat", sans-serif;
       font-family: "Bebas Neue", cursive;
@@ -424,7 +427,10 @@ a {
           transition-delay: 0.385s; }
 
 .about {
-  padding-bottom: 0rem; }
+  padding-bottom: 0rem;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url(../img/cloth.jpg) center center;
+  background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url(../img/cloth.jpg) center center;
+  background-size: cover; }
   .about .breadCrumbs {
     position: absolute;
     top: 3%;
@@ -452,21 +458,27 @@ a {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 768px) {
       .about__bio-image {
-        padding: 0 5%; } }
+        padding: 71px 5%; } }
     .about__bio-image .text-secondary {
       font-size: 1.05rem;
+      font-weight: bolder;
       text-align: left;
       padding: 7px 0;
       font-family: "Turret Road", "cursive";
-      color: #cfe3ef; }
+      font-family: "Montserrat", "cursive";
+      color: #e6dfaa;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 0; }
       @media only screen and (min-width: 1024px) {
         .about__bio-image .text-secondary {
           font-size: 1.27rem; } }
     .about__bio-image p {
-      background: #f6fbe4;
-      color: black;
+      background: #eff9fb;
+      color: #4d555a;
       padding: 4%;
       width: 100%;
       margin-bottom: 2rem;
@@ -475,6 +487,8 @@ a {
       line-height: 1.45rem;
       text-align: left;
       font-size: 0.97rem;
+      -webkit-box-shadow: 0px 4px 4px #eff9fb, 4px 4px 8px rgba(36, 68, 66, 0.53);
+              box-shadow: 0px 4px 4px #eff9fb, 4px 4px 8px rgba(36, 68, 66, 0.53);
       padding: 1.2rem; }
       @media only screen and (min-width: 768px) {
         .about__bio-image p {
@@ -492,7 +506,8 @@ a {
           -webkit-box-pack: center;
               -ms-flex-pack: center;
                   justify-content: center;
-          padding: 2.5% 6%; } }
+          padding: 2.5% 6%;
+          letter-spacing: 0; } }
   .about__bio {
     width: 95%;
     text-align: center; }
@@ -508,7 +523,7 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 96%;
+    width: 100%;
     border-radius: 6px;
     height: auto; }
     @media only screen and (min-width: 768px) {
@@ -531,7 +546,7 @@ a {
       .about .jobs {
         width: 100%; } }
     .about .jobs__bio-image {
-      width: 75%;
+      width: 100%;
       border-radius: 0.3rem;
       padding-top: 38vh;
       background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.02)), to(rgba(39, 39, 39, 0))), url(../img/profile.jpg) center center;
@@ -562,16 +577,22 @@ a {
         .about .jobs__bio-image {
           height: 55vh; } }
       .about .jobs__bio-image .text-secondary {
+        font-family: "Monserrat", "cursive";
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         color: #cfe3ef;
         text-transform: uppercase;
         text-align: justify;
         font-size: 0.81rem;
-        margin-bottom: -1.64rem; }
+        margin: 0;
+        position: absolute;
+        left: 46%; }
         @media only screen and (min-width: 768px) {
           .about .jobs__bio-image .text-secondary {
             background: none;
-            margin-bottom: -2rem;
+            margin-bottom: 0rem;
             font-size: 1rem;
             text-align: right; } }
         @media only screen and (min-width: 1024px) {
@@ -610,7 +631,7 @@ a {
       .about .jobs__job h5 {
         font-size: 0.9rem;
         letter-spacing: 0.02rem;
-        color: #ffb240;
+        color: #f1d2a6;
         font-family: "Turret Road", "cursive";
         font-weight: normal;
         font-style: normal;
@@ -621,18 +642,25 @@ a {
             font-size: 1.1rem; } }
       .about .jobs__job h6 {
         margin: 0.3rem 0; }
-  @media only screen and (min-width: 768px) {
-    .about .socialIcons {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      position: fixed;
-      bottom: 2rem;
-      padding: 0 0.52rem; } }
+  .about .socialIcons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media only screen and (min-width: 768px) {
+      .about .socialIcons {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        position: fixed;
+        bottom: 2rem;
+        padding: 0 0.52rem; } }
   .about footer {
     -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
             transform: rotate(90deg) translate(-3rem, -5rem); }
@@ -665,8 +693,8 @@ a {
   .projects__bio-image {
     width: 100%;
     padding-top: 10vh;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url("../img/background-man.png") center center;
-    background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url("../img/background-man.png") center center;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url("../img/sunrise.jpg") center center;
+    background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url("../img/sunrise.jpg") center center;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -680,7 +708,8 @@ a {
             align-items: center;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: flex-end; }
+            justify-content: flex-end;
+    border-bottom: 1px solid #8b9497; }
     @media only screen and (min-width: 768px) {
       .projects__bio-image {
         height: 100%;
@@ -844,11 +873,13 @@ a {
         width: 50%; } }
     @media only screen and (min-width: 1024px) {
       .projects .block {
-        width: 38%; } }
+        width: 22%; } }
+  @media only screen and (min-width: 1024px) {
+    .projects .fa-2x {
+      font-size: 1em; } }
 
 .contact {
-  height: 100vh;
-  padding-top: 28vh;
+  height: 100%;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -857,20 +888,31 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #3f5261;
+  padding: 18vh 0;
   background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url(../img/cloth.jpg) center center;
   background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url(../img/cloth.jpg) center center;
   background-size: cover; }
+  @media only screen and (min-width: 768px) {
+    .contact {
+      padding: 25vh 0; } }
+  @media only screen and (min-width: 1024px) {
+    .contact {
+      padding-top: 33vh; } }
   .contact h2 {
     font-size: 2.26rem;
     margin-bottom: 2rem;
-    font-family: "Turret Road", cursive;
+    font-family: "Bebas", cursive;
     color: #cfe3ef;
-    color: #FF9800;
+    color: #f4f9ff;
+    font-weight: bolder;
     text-transform: uppercase;
-    text-shadow: 1.8px 2.36px #3e473a; }
+    text-shadow: 1.8px 2.36px #78858c; }
     @media only screen and (min-width: 768px) {
       .contact h2 {
         margin-bottom: 3.2rem; } }
@@ -902,9 +944,8 @@ a {
       .contact .social-icons {
         margin-top: 11rem; } }
   .contact .text-secondary {
-    color: #cfe3ef;
-    color: #757e82;
-    font-family: "Turret Road", "cursive";
+    color: #fbfcfd;
+    font-family: "Montserrat", "cursive";
     margin: 3px 0;
     font-size: 1.2rem;
     letter-spacing: 0.04em; }
