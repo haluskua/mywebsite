@@ -80,12 +80,19 @@
     }
   }
 
-  &__item {
-    max-height: 60vh;
+  &__item1,
+  &__item2,
+  &__item3,
+  &__item4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-height: 40vh;
     width: 100%;
-    border-radius: 0.24rem;
+    border-radius: 0.2rem;
     position: relative;
-    border: 0.5px solid $secondary-color;
+    border: 0.5px solid #F44336;
     overflow: hidden;
     cursor: pointer;
     background-color: #061c2b;
@@ -97,6 +104,24 @@
       justify-content: center;
       align-items: center;
     }
+    // &__item1 {
+    //   &::after {
+    //     content: "";
+    //     position: absolute;
+    //     top: 100%;
+    //     left: 0;
+    //     height: 100%;
+    //     width: 100%;
+    //     background: $secondary-color;
+    //     background: url("../img/pecxer@2x.png");
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     background-position: center;
+    //     opacity: 0;
+    //     @include transition-ease;
+    //   }
+    // }
+
     .project__title {
       display: flex;
       justify-content: center;
@@ -106,7 +131,7 @@
       font-size: 1rem;
       letter-spacing: 0.1rem;
       position: absolute;
-      color: $secondary-color;
+      color: wheat;
       width: 55%;
       text-transform: uppercase;
       font-family: "Montserrat", sans-serif;
@@ -119,6 +144,7 @@
     img {
       width: 100%;
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -127,6 +153,9 @@
       height: 100%;
       width: 100%;
       background: $secondary-color;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
       opacity: 0;
       @include transition-ease;
     }
