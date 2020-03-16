@@ -33,14 +33,13 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url(../img/project-0.jpg) center top;
-  background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url(../img/project-0.jpg) center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url(../img/cloth.jpg) center top;
+  background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url(../img/cloth.jpg) center top;
   background-size: cover;
   /* Medium break point*/ }
   @media only screen and (min-width: 768px) {
     .home {
       padding-top: 16vh;
-      background-size: contain;
       background-position: center;
       background-repeat: no-repeat; } }
   @media only screen and (min-width: 1024px) {
@@ -165,7 +164,7 @@ a {
     line-height: 1.5rem;
     padding: 0 10%;
     margin-top: 0.4rem;
-    color: gold;
+    color: #cfe3ef;
     font-family: "EB Garamond", serif;
     font-family: "Julius Sans One", sans-serif;
     font-family: "Girassol", cursive;
@@ -215,8 +214,8 @@ a {
     border-radius: 0.42rem;
     margin: 1.2rem 0;
     border: 2px solid #9abcda;
-    -webkit-box-shadow: #324e55 1px 1px 4px, #77a1bd -1px -1px 4px;
-            box-shadow: #324e55 1px 1px 4px, #77a1bd -1px -1px 4px; }
+    -webkit-box-shadow: #a8bacc 1px 1px 4px, #b9cfd4 -1px -1px 4px;
+            box-shadow: #a8bacc 1px 1px 4px, #b9cfd4 -1px -1px 4px; }
     @media only screen and (min-width: 768px) {
       .home .cta__button {
         border-radius: 0.44rem; } }
@@ -238,9 +237,9 @@ a {
           line-height: 2.2rem; } }
       .home .cta__button #cta__link:hover {
         cursor: pointer;
-        color: gold;
+        color: #cfe3ef;
         font-weight: bolder;
-        color: gold;
+        color: #cfe3ef;
         font-size: 1.06rem;
         font-style: italic; }
         @media only screen and (min-width: 768px) {
@@ -344,8 +343,8 @@ a {
             transform: translateY(-100%);
     -webkit-transition: all 0.42s ease-in-out;
     transition: all 0.42s ease-in-out;
-    background: -webkit-gradient(linear, left top, right top, from(#100f0f), to(rgba(5, 27, 43, 0.73))), url(../img/project-0.jpg) center center;
-    background: linear-gradient(to right, #100f0f, rgba(5, 27, 43, 0.73)), url(../img/project-0.jpg) center center;
+    background: -webkit-gradient(linear, left top, right top, from(#8b9cad), to(#96b7ce)), url(../img/project-0.jpg), url(../img/project-0.jpg) center center;
+    background: linear-gradient(to right, #8b9cad, #96b7ce), url(../img/project-0.jpg), url(../img/project-0.jpg) center center;
     background-size: cover; }
     @media only screen and (min-width: 768px) {
       .nav .menu-nav {
@@ -355,7 +354,7 @@ a {
         height: 100%;
         text-align: center;
         padding-right: 0;
-        padding: 0.52rem 0; } }
+        padding: 0.32rem 0; } }
     .nav .menu-nav.open {
       -webkit-transform: translateY(0);
               transform: translateY(0); }
@@ -372,7 +371,7 @@ a {
         -webkit-transform: translate(0);
                 transform: translate(0); }
       .nav .menu-nav__item.active > a {
-        color: gold; }
+        color: black; }
     .nav .menu-nav__link {
       font-family: "Montserrat", sans-serif;
       font-family: "Bebas Neue", cursive;
@@ -383,29 +382,29 @@ a {
       letter-spacing: 0.03rem;
       text-transform: uppercase;
       text-align: center;
-      padding: 0.69rem 0;
+      padding: 0.9rem 0;
       border-bottom: 0.5px solid #3f473f;
       margin: 6px 0;
       font-weight: 400;
-      -webkit-box-shadow: #16191b 1px 1px 4px, #63737e -1px -1px 4px;
-              box-shadow: #16191b 1px 1px 4px, #63737e -1px -1px 4px;
+      -webkit-box-shadow: #8ea2b5 1px 1px 4px, #b9cfd4 -1px -1px 4px;
+              box-shadow: #8ea2b5 1px 1px 4px, #b9cfd4 -1px -1px 4px;
       border-radius: 0.28rem;
       color: #d9efff;
+      text-shadow: 1.8px 2.36px #697e8f;
       -webkit-transition: all 0.42s ease-in-out;
       transition: all 0.42s ease-in-out; }
       @media only screen and (min-width: 768px) {
         .nav .menu-nav__link {
           padding: 0.88rem 0;
           font-size: 1.24rem;
-          width: 163px;
-          text-shadow: 1.8px 2.36px #3e473a; } }
+          width: 163px; } }
       @media only screen and (min-width: 1024px) {
         .nav .menu-nav__link {
           font-size: 1.032rem;
           letter-spacing: 0.1rem; } }
       .nav .menu-nav__link:hover {
         cursor: pointer;
-        color: gold;
+        color: #cfe3ef;
         font-weight: bold; }
 
 .menu-nav__item:nth-child(1) {
@@ -461,7 +460,7 @@ a {
       text-align: left;
       padding: 7px 0;
       font-family: "Turret Road", "cursive";
-      color: gold; }
+      color: #cfe3ef; }
       @media only screen and (min-width: 1024px) {
         .about__bio-image .text-secondary {
           font-size: 1.27rem; } }
@@ -564,7 +563,7 @@ a {
           height: 55vh; } }
       .about .jobs__bio-image .text-secondary {
         width: 100%;
-        color: gold;
+        color: #cfe3ef;
         text-transform: uppercase;
         text-align: justify;
         font-size: 0.81rem;
@@ -592,13 +591,13 @@ a {
               align-items: flex-start;
       background: ligthen(#272727, 10%);
       padding: 0.4rem;
-      border-bottom: 2px solid gold; }
+      border-bottom: 2px solid #cfe3ef; }
       @media only screen and (min-width: 768px) {
         .about .jobs__job {
-          border-bottom: 1px solid gold; } }
+          border-bottom: 1px solid #cfe3ef; } }
       @media only screen and (min-width: 1024px) {
         .about .jobs__job {
-          border-bottom: 0.5px solid gold; } }
+          border-bottom: 0.5px solid #cfe3ef; } }
       .about .jobs__job h2,
       .about .jobs__job h3 {
         margin: 0.22rem 0;
@@ -652,20 +651,20 @@ a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 100vh;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url("../img/cloth.jpg") center center;
+  background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url("../img/cloth.jpg") center center;
+  background-size: cover; }
   @media only screen and (min-width: 768px) {
     .projects {
-      padding-bottom: 0; } }
+      padding-bottom: 0;
+      height: 100%; } }
   @media only screen and (min-width: 1024px) {
     .projects {
-      height: 100%;
-      padding-bottom: 2rem;
-      display: block; } }
+      padding-bottom: 2rem; } }
   .projects__bio-image {
-    height: 30vh;
     width: 100%;
-    padding-top: 18vh;
+    padding-top: 10vh;
     background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url("../img/background-man.png") center center;
     background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url("../img/background-man.png") center center;
     background-size: cover;
@@ -694,7 +693,7 @@ a {
       text-transform: uppercase;
       font-size: 1.15rem;
       margin-bottom: 0.62rem;
-      color: gold;
+      color: #cfe3ef;
       font-weight: bold;
       top: 30%;
       position: relative; }
@@ -711,8 +710,6 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2rem;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23)));
-    background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23));
     background-size: cover; }
     @media only screen and (min-width: 768px) {
       .projects__items {
@@ -741,10 +738,9 @@ a {
     width: 100%;
     border-radius: 0.2rem;
     position: relative;
-    border: 0.5px solid #F44336;
+    border: 0.5px solid #d2dde6;
     overflow: hidden;
     cursor: pointer;
-    background-color: #061c2b;
     -webkit-box-shadow: rgba(16, 40, 53, 0.25) 2px 2px 11px, rgba(58, 69, 72, 0.21) -2px -2px 10px;
             box-shadow: rgba(16, 40, 53, 0.25) 2px 2px 11px, rgba(58, 69, 72, 0.21) -2px -2px 10px; }
     @media only screen and (min-width: 768px) {
@@ -768,10 +764,11 @@ a {
       padding: 0.34rem;
       text-align: center;
       font-weight: bold;
-      font-size: 1rem;
+      font-size: 1.65rem;
       letter-spacing: 0.1rem;
       position: absolute;
-      color: wheat;
+      bottom: 9px;
+      color: #4f575a;
       width: 55%;
       text-transform: uppercase;
       font-family: "Montserrat", sans-serif;
@@ -788,7 +785,7 @@ a {
       left: 0;
       height: 100%;
       width: 100%;
-      background: gold;
+      background: #cfe3ef;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -820,18 +817,34 @@ a {
     .projects__btn:hover {
       color: #ffffff;
       font-size: 1.3rem; }
-  @media only screen and (min-width: 1024px) {
-    .projects .socialIcons {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      width: 100%; } }
+  .projects .socialIcons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%; }
+    @media only screen and (min-width: 1024px) {
+      .projects .socialIcons {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 100%; } }
   .projects footer {
     -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
             transform: rotate(90deg) translate(-3rem, -5rem); }
+  .projects .block {
+    width: 35%; }
+    @media only screen and (min-width: 768px) {
+      .projects .block {
+        width: 50%; } }
+    @media only screen and (min-width: 1024px) {
+      .projects .block {
+        width: 38%; } }
 
 .contact {
   height: 100vh;
@@ -847,15 +860,15 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url(../img/sunrise.jpg) center center;
-  background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url(../img/sunrise.jpg) center center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url(../img/cloth.jpg) center center;
+  background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url(../img/cloth.jpg) center center;
   background-size: cover; }
   .contact h2 {
     font-size: 2.26rem;
     margin-bottom: 2rem;
     font-family: "Turret Road", cursive;
-    color: gold;
-    color: #cddc39;
+    color: #cfe3ef;
+    color: #FF9800;
     text-transform: uppercase;
     text-shadow: 1.8px 2.36px #3e473a; }
     @media only screen and (min-width: 768px) {
@@ -889,8 +902,8 @@ a {
       .contact .social-icons {
         margin-top: 11rem; } }
   .contact .text-secondary {
-    color: gold;
-    color: #cddc39;
+    color: #cfe3ef;
+    color: #757e82;
     font-family: "Turret Road", "cursive";
     margin: 3px 0;
     font-size: 1.2rem;
@@ -928,7 +941,7 @@ main {
     -webkit-transition: all 0.42s ease-in-out;
     transition: all 0.42s ease-in-out;
     padding: 0.4rem;
-    color: gold; }
+    color: #cfe3ef; }
     main a:hover {
       color: white;
       cursor: pointer; }
