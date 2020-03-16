@@ -9,12 +9,11 @@
       rgba(15, 24, 33, 0.29),
       rgba(44, 92, 97, 0.23)
     ),
-    url(../img/project-0.jpg) center top;
+    url(../img/cloth.jpg) center top;
   background-size: cover;
   /* Medium break point*/
   @include MEDIUM-DEVICE-WIDTH {
     padding-top: 16vh;
-    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -196,11 +195,12 @@
     border-radius: 0.42rem;
     margin: 1.2rem 0;
     border: 2px solid rgb(154, 188, 218);
-    box-shadow: #324e55 1px 1px 4px, #77a1bd -1px -1px 4px;
+    box-shadow: #a8bacc 1px 1px 4px, #b9cfd4 -1px -1px 4px;
 
     @include MEDIUM-DEVICE-WIDTH {
       border-radius: 0.44rem;
     }
+    
     @include LARGE-DEVICE-WIDTH {
       width: auto;
       padding: 0;
