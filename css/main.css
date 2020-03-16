@@ -263,7 +263,7 @@ a {
   left: 2%;
   top: 0.5rem;
   width: 28px;
-  height: 3px;
+  height: 0px;
   background: #ffffff;
   -webkit-transition: all 0.42s ease-in-out;
   transition: all 0.42s ease-in-out;
@@ -908,7 +908,7 @@ a {
   .contact h2 {
     font-size: 2.26rem;
     margin-bottom: 2rem;
-    font-family: "Bebas", cursive;
+    font-family: "Montserrat", cursive;
     color: #cfe3ef;
     color: #f4f9ff;
     font-weight: bolder;
@@ -937,7 +937,7 @@ a {
       padding: 0.2rem 0; }
       @media only screen and (min-width: 1024px) {
         .contact .social-icons .fa-2x {
-          font-size: 2.2rem; } }
+          font-size: 1.2rem; } }
     @media only screen and (min-width: 768px) {
       .contact .social-icons {
         margin-top: 7rem; } }
