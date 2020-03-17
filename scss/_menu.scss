@@ -175,7 +175,7 @@
 //the speed or motion rate each item gets pushed out to show
 
 //the speed or motion rate each item gets pushed out to show
-@for $i from 1 through 4 {
+@for $i from 1 through 5 {
   .menu-nav__item:nth-child(#{$i}) {
     transition-delay: ($i * 0.07s) + 0.105s;
   }

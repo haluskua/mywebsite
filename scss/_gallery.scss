@@ -28,7 +28,6 @@
   justify-content: space-around;
   max-width: 760px;
   margin: auto;
-  height: 80%;
   overflow: scroll;
   border: #eef9ff solid 2px;
   box-shadow: 0px 10px 5px rgb(170, 183, 189), 0px -10px 5px rgb(181, 198, 206);
@@ -67,7 +66,7 @@
 }
 .main-img img,
 .imgs img {
-  width: 82%;
+  width: 100%;
 }
 
 .max-height {
