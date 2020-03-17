@@ -442,6 +442,10 @@ a {
   -webkit-transition-delay: 0.385s;
           transition-delay: 0.385s; }
 
+.menu-nav__item:nth-child(5) {
+  -webkit-transition-delay: 0.455s;
+          transition-delay: 0.455s; }
+
 .about {
   padding-bottom: 0rem;
   background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url(../img/cloth.jpg) center center;
@@ -647,7 +651,7 @@ a {
           .about .jobs__job h3 {
             font-size: 1.7rem; } }
       .about .jobs__job h5 {
-        font-size: 0.9rem;
+        font-size: 1rem;
         letter-spacing: 0.02rem;
         color: #f1d2a6;
         font-family: "Turret Road", "cursive";
@@ -1008,7 +1012,6 @@ a {
       justify-content: space-around;
   max-width: 760px;
   margin: auto;
-  height: 80%;
   overflow: scroll;
   border: #eef9ff solid 2px;
   -webkit-box-shadow: 0px 10px 5px #aab7bd, 0px -10px 5px #b5c6ce;
@@ -1054,7 +1057,7 @@ a {
 
 .main-img img,
 .imgs img {
-  width: 82%; }
+  width: 100%; }
 
 @media only screen and (min-width: 1024px) {
   .main-img img {
