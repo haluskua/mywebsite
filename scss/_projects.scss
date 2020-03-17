@@ -160,10 +160,17 @@
       height: 100%;
       width: 100%;
       background: $secondary-color;
+      background: linear-gradient(
+          to right,
+          rgba(15, 24, 33, 0.29),
+          rgba(44, 92, 97, 0.23)
+        ),
+        url(../img/sunrise.jpg) center center;
+      background-size: cover;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      opacity: 0;
+      opacity: 1;
       @include transition-ease;
     }
 

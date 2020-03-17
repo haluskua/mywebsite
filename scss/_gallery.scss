@@ -48,6 +48,8 @@
   }
   @include LARGE-DEVICE-WIDTH {
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     max-width: 100%;
     height: auto;
