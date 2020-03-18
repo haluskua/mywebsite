@@ -1107,8 +1107,7 @@ a {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 11px; }
+          justify-content: center; }
   @media only screen and (min-width: 768px) {
     .main-img {
       padding: 0; } }
