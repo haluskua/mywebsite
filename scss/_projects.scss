@@ -210,13 +210,24 @@
   .socialIcons {
     display: flex;
     justify-content: center;
-    width: 100%;
-    @include LARGE-DEVICE-WIDTH {
-      display: flex;
-      justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0.52rem;
+    right: 1px;
+    bottom: 0;
+    background: rgba(85, 96, 105, 0.35);
+
+    @include MEDIUM-DEVICE-WIDTH {
+      flex-direction: row;
+      padding: 0 0.52rem;
+      right: 0;
+      text-align: center;
+      margin: 0 auto;
       width: 100%;
+      bottom: 0;
     }
   }
+
 
   footer {
     transform: rotate(90deg) translate(-3rem, -5rem);

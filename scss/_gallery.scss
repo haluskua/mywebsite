@@ -109,6 +109,34 @@
   animation: fadeIn var(--fade-time) ease-in 1 forwards;
 }
 
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  margin: 0 auto;
+  @include MEDIUM-DEVICE-WIDTH {
+    padding: 0 0.52rem;
+    right: 0;
+  }
+  @include LARGE-DEVICE-WIDTH {
+    flex-direction: column;
+  }
+}
+// .showIcons {
+//   display: flex;
+//   position: fixed;
+//   flex-direction: column;
+//   bottom: 2rem;
+//   font-size: 0.7rem;
+//   right: 0.41rem;
+//   padding: 0.09rem;
+//   background: #323d46;
+// }
+
+footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
 /* Media Queries */
 // @media (max-width: 600px) {
 //   .imgs {
