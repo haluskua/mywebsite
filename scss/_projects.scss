@@ -42,7 +42,6 @@
     @include LARGE-DEVICE-WIDTH {
       height: 42vh;
       margin: 0 auto;
-      margin-top: 6.5%;
     }
     .text-secondary {
       font-family: "Turret Road", "cursive";
@@ -109,6 +108,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+    @include LARGE-DEVICE-WIDTH {
     }
     // &__item1 {
     //   &::after {
@@ -225,6 +226,9 @@
       margin: 0 auto;
       width: 100%;
       bottom: 0;
+    }
+    @include LARGE-DEVICE-WIDTH {
+      background: none;
     }
   }
 
