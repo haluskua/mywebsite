@@ -13,6 +13,7 @@
     ),
     url("../img/cloth.jpg") center center;
   background-size: cover;
+  background: white;
   @include MEDIUM-DEVICE-WIDTH {
     height: auto;
     margin-top: 10%;
@@ -45,6 +46,7 @@
     ),
     url("../img/cloth.jpg") center center;
   background-size: cover;
+  background: white;
   @include MEDIUM-DEVICE-WIDTH {
     height: 100%;
   }

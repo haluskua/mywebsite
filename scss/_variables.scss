@@ -1,17 +1,14 @@
 //DARK THEME
 
 $primary-bcg-color: #1b2429;
-$pimary-txt-color: rgb(32, 32, 32);
-$accent-color: #ffb240;
-$secondary-color: #eb3333;
-$secondary-color: #cfe3ef;
-// $secondary-color: gold;
-// $secondary-color: #50b694;
+$dark-text: #1f2429;
+$accent-color: #daa520;
+$secondary-color: #93a7a9;
+$slim-grey: 0px 14px 14px rgba(245, 245, 245, 0.7), 4px 4px 8px rgba(36, 68, 66, 0.17);
 $font-weights: (
-    "regular": 400,
-    "medium": 600,
-    "bold": 900
+  "regular": 400,
+  "medium": 600,
+  "bold": 900
 );
 
 $mobile: 800px;
-

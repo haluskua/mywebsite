@@ -4,13 +4,14 @@
   justify-content: space-between;
   align-items: flex-end;
   padding-bottom: 2rem;
-  background: linear-gradient(
-      to right,
-      rgba(15, 24, 33, 0.29),
-      rgba(44, 92, 97, 0.23)
-    ),
-    url("../img/cloth.jpg") center center;
-  background-size: cover;
+  // background: linear-gradient(
+  //     to right,
+  //     rgba(15, 24, 33, 0.29),
+  //     rgba(44, 92, 97, 0.23)
+  //   ),
+  //   url("../img/cloth.jpg") center center;
+  // background-size: cover;
+  background: white;
   @include MEDIUM-DEVICE-WIDTH {
     padding-bottom: 0;
     height: 100%;
@@ -22,13 +23,7 @@
   &__bio-image {
     width: 100%;
     padding-top: 10vh;
-    background: linear-gradient(
-        to right,
-        rgba(15, 24, 33, 0.29),
-        rgba(44, 92, 97, 0.23)
-      ),
-      url("../img/sunrise.jpg") center center;
-    background-size: cover;
+    background: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,9 +41,9 @@
     .text-secondary {
       font-family: "Turret Road", "cursive";
       text-transform: uppercase;
-      font-size: 1.15rem;
+      font-size: 2rem;
       margin-bottom: 0.62rem;
-      color: $secondary-color;
+      color: #4a4d50;
       font-weight: bold;
       top: 30%;
       position: relative;
@@ -231,7 +226,6 @@
       background: none;
     }
   }
-
 
   footer {
     transform: rotate(90deg) translate(-3rem, -5rem);

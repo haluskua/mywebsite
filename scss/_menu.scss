@@ -7,17 +7,20 @@
   background: #ffffff;
   transition: all 0.42s ease-in-out;
   z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   @include MEDIUM-DEVICE-WIDTH {
     visibility: hidden;
   }
 
   &__burger {
     position: absolute;
-    right: 0;
+    right: 2em;
     top: 0.5rem;
     width: 28px;
     height: 3px;
-    background: set-text-color($primary-color);
+    background: ($primary-color);
     @include transition-ease;
 
     &::before {
@@ -26,7 +29,7 @@
       top: -8px;
       width: 28px;
       height: 3px;
-      background: set-text-color($primary-color);
+      background: ($primary-color);
       @include transition-ease;
     }
 
@@ -36,7 +39,7 @@
       top: 8px;
       width: 20px;
       height: 3px;
-      background: set-text-color($primary-color);
+      background: ($primary-color);
       @include transition-ease;
     }
     &.open {
@@ -53,19 +56,30 @@
       }
     }
   }
+  &__logo {
+    color: $accent-color;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "Audiowide", "Montserrat", "cursive";
+  }
+  .dezines {
+    color: $dark-text;
+  }
 }
 
 .nav {
   position: fixed;
   top: 0;
-  // left: 0;
+  z-index: 4;
   width: 100vw;
+  height: 35px;
+  background-color: #f7fdff;
   opacity: 0.98;
-  visibility: hidden;
-  box-shadow: 0px 8px 5px rgba(89, 116, 121, 0.54),
-    0px -7px 8px rgba(33, 52, 59, 0.4);
+  box-shadow: 0px 2px 13px rgba(89, 116, 121, 0.54),
+    0px -3px 4px rgba(33, 52, 59, 0.4);
   @include MEDIUM-DEVICE-WIDTH {
     visibility: visible;
+    height: auto;
   }
 
   &.open {
@@ -79,16 +93,10 @@
     justify-content: center;
     overflow: hidden;
     list-style-type: none;
-    padding: 1.2rem 0;
-    padding-right: 1rem;
+    padding: 2rem;
     transform: translateY(-100%);
     @include transition-ease;
-    background: linear-gradient(to right, #8b9cad36, #96b7ce5c),
-      url(../img/cloth.jpg), center center;
-    background-size: cover;
-    box-shadow: 0px 10px 5px rgba(89, 116, 121, 0.57),
-      0px -10px 5px rgba(115, 130, 136, 0.67);
-
+    background: white;
     @include MEDIUM-DEVICE-WIDTH {
       display: block;
       transform: translateY(0);
@@ -115,44 +123,36 @@
       }
 
       &.active > a {
-        color: #7c858e;
-        background: #e7ebef;
-        text-shadow: 1.28px 0.736px #dde0e2;
-        box-shadow: 0px 1px 1px #8ca3b3, 0px -1px 1px #d0d8e0;
-
+        color: $accent-color;
+        border-bottom: 2px solid #fcd603;
+        font-family: "Roboto", "sans-serif", "Montserrat", "Cursive";
         @include MEDIUM-DEVICE-WIDTH {
-          box-shadow: 0px 2px 2px #67818e, 0px -2px 2px #67818e;
-
+          font-size: 1em;
         }
       }
       &.active > a:hover {
-        text-shadow: 1.8px 2.36px #404b50;
-        box-shadow: 2px 1px #adaaa0, 0px -2px 3px #ece8d1;
+        // text-shadow: 1.8px 2.36px #404b50;
       }
     }
 
     &__link {
-      font-family: "Montserrat", sans-serif;
-      font-family: "Bebas Neue", cursive;
-      font-family: "Turret Road", cursive;
       display: inline-block;
       font-size: 1.25rem;
-      width: 240px;
-      letter-spacing: 0.03rem;
+      font-weight: bold;
+      width: auto;
       text-transform: uppercase;
       text-align: center;
-      padding: 0.7em 0;
-      border-bottom: 0.5px solid #80939e;
-      margin: 6px 0;
-      font-weight: 400;
-      box-shadow: #f0f7ff 1px 1px 4px, #ffffff -1px -1px 4px;
+      padding: 0.47em 0;
+      margin: 3px 0;
       border-radius: 0.28rem;
-      color: #67818e;
-      background: #cdd7df;
-      text-shadow: 1.8px 2.36px #fbfbfb;
+      letter-spacing: 0.084em;
+      color: $dark-text;
+      font-family: "Roboto", "sans-serif", "Montserrat", "Cursive";
 
       @include transition-ease;
       @include MEDIUM-DEVICE-WIDTH {
+        text-shadow: 1.28px 0.736px #dde0e2;
+
         padding: 0.8rem 0;
         font-size: 1.24rem;
         width: 121px;
@@ -165,17 +165,14 @@
 
       &:hover {
         cursor: pointer;
-        color: #5e6b77;
+        color: #414c57;
         font-weight: bold;
-        background-color: #cdd7df;
-        box-shadow: 0px 2px 2px #67818e, 0px -2px 2px #67818e;
+        box-shadow: 0px 2px 2px #fcd603, 0px -2px 2px #f4f7f9;
       }
     }
   }
 }
-.nav .menu-nav__link {
-  background-color: #cdd7df;
-}
+
 //the speed or motion rate each item gets pushed out to show
 
 //the speed or motion rate each item gets pushed out to show
