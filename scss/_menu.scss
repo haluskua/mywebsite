@@ -82,8 +82,8 @@
   height: 35px;
   background-color: #f3f0d8;
   opacity: 0.98;
-  box-shadow: 0px 2px 13px rgba(89, 116, 121, 0.54),
-    0px -3px 4px rgba(33, 52, 59, 0.4);
+  box-shadow: 0px 2px 13px rgba(179, 173, 112, 0.54),
+    0px -3px 4px rgba(228, 204, 94, 0.71);
   @include MEDIUM-DEVICE-WIDTH {
     visibility: visible;
     height: auto;
@@ -120,6 +120,7 @@
     &__item {
       transform: translateX(100vw);
       @include transition-ease;
+      width: 75%;
       @include MEDIUM-DEVICE-WIDTH {
         display: inline;
         padding: 0.5rem;
@@ -137,8 +138,25 @@
           font-size: 1em;
         }
       }
+      a {
+        font-family: "Cormorant Unicase", serif;
+        width: 100%;
+        padding: 10px;
+        text-shadow: none;
+        margin: 0.5rem 0;
+        padding: 1.2rem;
+        letter-spacing: 0.2rem;
+        color: #846409;
+        @include MEDIUM-DEVICE-WIDTH {
+          width: auto;
+          padding: 8px;
+          margin: 0 auto;
+        }
+      }
       &.active > a:hover {
-        // text-shadow: 1.8px 2.36px #404b50;
+        &:active {
+          font-family: "Cormorant Unicase", serif;
+        }
       }
     }
 
@@ -154,7 +172,10 @@
       border-radius: 0.28rem;
       letter-spacing: 0.084em;
       color: $dark-text;
-      font-family: "Roboto", "sans-serif", "Montserrat", "Cursive";
+      font-family: "Cormorant Unicase", serif;
+      &:active {
+        font-family: "Cormorant Unicase", serif;
+      }
 
       @include transition-ease;
       @include MEDIUM-DEVICE-WIDTH {
@@ -175,6 +196,9 @@
         color: #414c57;
         font-weight: bold;
         box-shadow: 0px 2px 2px #fcd603, 0px -2px 2px #f4f7f9;
+      }
+      &:active {
+        font-family: "Cormorant Unicase", serif;
       }
     }
   }
