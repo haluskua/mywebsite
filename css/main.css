@@ -26,7 +26,17 @@ a {
   background: #323d46; }
 
 .home {
-  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
   padding-top: 7vh;
   width: 100%;
   -webkit-box-align: center;
@@ -34,16 +44,13 @@ a {
           align-items: center;
   text-align: center;
   overflow: hidden;
-  background: white;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.96)), to(rgba(230, 244, 255, 0.68))), url(../img/head.jpg) center left;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.96), rgba(230, 244, 255, 0.68)), url(../img/head.jpg) center left;
+  background-size: cover;
   /* Medium break point*/ }
   @media only screen and (min-width: 768px) {
     .home {
       padding-top: 0; } }
-  @media only screen and (min-width: 1024px) {
-    .home {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; } }
   .home svg {
     height: 100%; }
     @media only screen and (min-width: 768px) {
@@ -56,7 +63,7 @@ a {
         height: 107%;
         padding-top: 0; } }
   .home .svg-container {
-    width: 100%;
+    width: 80%;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -68,30 +75,41 @@ a {
     @media only screen and (min-width: 1024px) {
       .home .svg-container {
         height: 100vh;
+        width: 28%;
         padding-top: 7em; } }
-    .home .svg-container #ABOUT,
     .home .svg-container #PRO,
     .home .svg-container #LIFE,
     .home .svg-container #CONNECT {
       visibility: hidden; }
-      .home .svg-container #ABOUT.open,
       .home .svg-container #PRO.open,
       .home .svg-container #LIFE.open,
       .home .svg-container #CONNECT.open {
         visibility: visible; }
-    .home .svg-container #projectsButton,
-    .home .svg-container #contactButton,
-    .home .svg-container #aboutButton,
-    .home .svg-container #lifeButton {
-      visibility: hidden; }
-      .home .svg-container #projectsButton.open,
-      .home .svg-container #contactButton.open,
-      .home .svg-container #aboutButton.open,
-      .home .svg-container #lifeButton.open {
-        visibility: visible; }
-    .home .svg-container #ring2 {
-      -webkit-animation: ring2 8.5s infinite linear alternate;
-              animation: ring2 8.5s infinite linear alternate;
+    .home .svg-container #leters {
+      -webkit-animation: yellow_ring 7s infinite linear alternate;
+              animation: yellow_ring 7s infinite linear alternate;
+      -webkit-transform-origin: center;
+              transform-origin: center;
+      transform-box: fill-box; }
+
+@-webkit-keyframes yellow_ring {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg); }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg); } }
+
+@keyframes yellow_ring {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg); }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg); } }
+    .home .svg-container #semi_red {
+      -webkit-animation: ring2 10.5s infinite linear alternate;
+              animation: ring2 10.5s infinite linear alternate;
       -webkit-transform-origin: center;
               transform-origin: center;
       transform-box: fill-box; }
@@ -270,7 +288,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
+  position: fixed;
+  bottom: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -283,6 +302,7 @@ a {
           -ms-flex-direction: column;
               flex-direction: column;
       width: auto;
+      left: 0;
       height: 100%;
       padding: 1rem 0.5rem;
       height: 100%; } }
@@ -361,7 +381,7 @@ a {
   z-index: 4;
   width: 100vw;
   height: 35px;
-  background-color: #f7fdff;
+  background-color: #e4e4e4;
   opacity: 0.98;
   -webkit-box-shadow: 0px 2px 13px rgba(89, 116, 121, 0.54), 0px -3px 4px rgba(33, 52, 59, 0.4);
           box-shadow: 0px 2px 13px rgba(89, 116, 121, 0.54), 0px -3px 4px rgba(33, 52, 59, 0.4); }
