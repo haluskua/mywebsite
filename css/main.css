@@ -411,8 +411,8 @@ a {
   height: 35px;
   background-color: #f3f0d8;
   opacity: 0.98;
-  -webkit-box-shadow: 0px 2px 13px rgba(89, 116, 121, 0.54), 0px -3px 4px rgba(33, 52, 59, 0.4);
-          box-shadow: 0px 2px 13px rgba(89, 116, 121, 0.54), 0px -3px 4px rgba(33, 52, 59, 0.4); }
+  -webkit-box-shadow: 0px 2px 13px rgba(179, 173, 112, 0.54), 0px -3px 4px rgba(228, 204, 94, 0.71);
+          box-shadow: 0px 2px 13px rgba(179, 173, 112, 0.54), 0px -3px 4px rgba(228, 204, 94, 0.71); }
   @media only screen and (min-width: 768px) {
     .nav {
       visibility: visible;
@@ -457,7 +457,8 @@ a {
       -webkit-transform: translateX(100vw);
               transform: translateX(100vw);
       -webkit-transition: all 0.42s ease-in-out;
-      transition: all 0.42s ease-in-out; }
+      transition: all 0.42s ease-in-out;
+      width: 75%; }
       @media only screen and (min-width: 768px) {
         .nav .menu-nav__item {
           display: inline;
@@ -472,6 +473,22 @@ a {
         @media only screen and (min-width: 768px) {
           .nav .menu-nav__item.active > a {
             font-size: 1em; } }
+      .nav .menu-nav__item a {
+        font-family: "Cormorant Unicase", serif;
+        width: 100%;
+        padding: 10px;
+        text-shadow: none;
+        margin: 0.5rem 0;
+        padding: 1.2rem;
+        letter-spacing: 0.2rem;
+        color: #846409; }
+        @media only screen and (min-width: 768px) {
+          .nav .menu-nav__item a {
+            width: auto;
+            padding: 8px;
+            margin: 0 auto; } }
+      .nav .menu-nav__item.active > a:hover:active {
+        font-family: "Cormorant Unicase", serif; }
     .nav .menu-nav__link {
       display: inline-block;
       font-size: 1.25rem;
@@ -484,9 +501,11 @@ a {
       border-radius: 0.28rem;
       letter-spacing: 0.084em;
       color: #1f2429;
-      font-family: "Roboto", "sans-serif", "Montserrat", "Cursive";
+      font-family: "Cormorant Unicase", serif;
       -webkit-transition: all 0.42s ease-in-out;
       transition: all 0.42s ease-in-out; }
+      .nav .menu-nav__link:active {
+        font-family: "Cormorant Unicase", serif; }
       @media only screen and (min-width: 768px) {
         .nav .menu-nav__link {
           text-shadow: 1.28px 0.736px #dde0e2;
@@ -504,6 +523,8 @@ a {
         font-weight: bold;
         -webkit-box-shadow: 0px 2px 2px #fcd603, 0px -2px 2px #f4f7f9;
                 box-shadow: 0px 2px 2px #fcd603, 0px -2px 2px #f4f7f9; }
+      .nav .menu-nav__link:active {
+        font-family: "Cormorant Unicase", serif; }
 
 .menu-nav__item:nth-child(1) {
   -webkit-transition-delay: 0.175s;
@@ -1280,6 +1301,9 @@ a:focus {
           box-shadow: 0 0 1px 1px #3f3530;
   background-color: #bfb083; }
 
+a:active {
+  font-family: "Cormorant Unicase", serif; }
+
 header {
   position: fixed;
   z-index: 2;
@@ -1305,4 +1329,5 @@ footer {
   text-align: right;
   padding: 1rem;
   color: #646262; }
+
 /*# sourceMappingURL=main.css.map */
