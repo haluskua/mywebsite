@@ -1,3 +1,10 @@
+// header {
+//   display: none;
+//   @include MEDIUM-DEVICE-WIDTH {
+//     display: block;
+//   }
+// }
+
 .menu-btn {
   position: absolute;
   left: 2%;
@@ -73,7 +80,7 @@
   z-index: 4;
   width: 100vw;
   height: 35px;
-  background-color: #e4e4e4;
+  background-color: #f3ecb7;
   opacity: 0.98;
   box-shadow: 0px 2px 13px rgba(89, 116, 121, 0.54),
     0px -3px 4px rgba(33, 52, 59, 0.4);

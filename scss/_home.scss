@@ -3,20 +3,13 @@
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  padding-top: 7vh;
   width: 100%;
   align-items: center;
   text-align: center;
   overflow: hidden;
-  background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.96),
-      rgba(230, 244, 255, 0.68)
-    ),
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(236, 225, 141)),
     url(../img/head.jpg) center center;
   background-size: cover;
-  // background: black;
-  /* Medium break point*/
 
   @include MEDIUM-DEVICE-WIDTH {
     padding-top: 0;
@@ -43,13 +36,32 @@
     font-family: "Audiowide", cursive;
     font-family: "Roboto Condensed", sans-serif;
     font-family: "Cormorant Unicase", serif;
-    font-weight: bold;
-    font-size: 2.5rem;
-    line-height: 0.78em;
-    color: #151607;
+    text-shadow: none;
+    font-size: 3.1rem;
+    line-height: 0.88em;
+    color: #967e3a;
     text-align: right;
     text-transform: none;
     font-weight: bold;
+    text-align: center;
+    padding: 0 1rem;
+    text-transform: uppercase;
+  }
+  .title_txt_container {
+    .title_text {
+      width: 100%;
+      letter-spacing: 0.04rem;
+      font-size: 1.75rem;
+      font-family: "Poiret One", cursive;
+      font-family: "Audiowide", cursive;
+      font-family: "Roboto Condensed", sans-serif;
+      font-family: "Cormorant Unicase", serif;
+      // font-family: "Libre Barcode 39 Text", cursive;
+      font-weight: bolder;
+      color: #967e3a;
+      text-shadow: none;
+      padding: 0;
+    }
   }
   .svg-container {
     width: 80%;
@@ -80,7 +92,7 @@
 
     //   }
     // }
-
+    .social-icons,
     #bottomBTN,
     #leftBTN,
     #rightBTN,
@@ -92,21 +104,21 @@
     }
 
     #leters {
-      animation: yellow_ring 7s infinite linear alternate;
+      animation: yellow_ring 4.5s infinite linear alternate-reverse;
       transform-origin: center;
       transform-box: fill-box;
     }
     @keyframes yellow_ring {
       from {
-        transform: rotateZ(0deg);
+        transform: rotateZ(-50deg);
       }
       to {
-        transform: rotateZ(360deg);
+        transform: rotateZ(25deg);
       }
     }
 
     #semi_red {
-      animation: ring2 10.5s infinite linear alternate;
+      animation: ring2 8.5s infinite linear alternate-reverse;
       transform-origin: center;
       transform-box: fill-box;
     }
@@ -133,15 +145,6 @@
         transform: rotateZ(360deg) translateY(2%) translateX(-2%);
       }
     }
-  }
-  .title_text {
-    width: 100%;
-    font-size: 2rem;
-    font-family: "Libre Barcode 39 Text", cursive;
-    font-weight: normal;
-    color: #151607;
-    font-weight: bold;
-    padding: 0;
   }
 
   //spinning Logo
