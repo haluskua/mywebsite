@@ -68,24 +68,16 @@
     //   }
     // }
 
-    #PRO,
-    #LIFE,
-    #CONNECT {
+  
+    #bottomBTN,
+    #leftBTN,
+    #rightBTN,
+    #topBTN {
       visibility: hidden;
       &.open {
         visibility: visible;
       }
     }
-    // #bottomBTN,
-    // #leftBTN,
-    // #rightBTN,
-    // #navy_bcg,
-    // #topBTN {
-    //   visibility: hidden;
-    //   &.open {
-    //     visibility: visible;
-    //   }
-    // }
 
     #leters {
       animation: yellow_ring 7s infinite linear alternate;

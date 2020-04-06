@@ -77,13 +77,15 @@ a {
         height: 100vh;
         width: 28%;
         padding-top: 7em; } }
-    .home .svg-container #PRO,
-    .home .svg-container #LIFE,
-    .home .svg-container #CONNECT {
+    .home .svg-container #bottomBTN,
+    .home .svg-container #leftBTN,
+    .home .svg-container #rightBTN,
+    .home .svg-container #topBTN {
       visibility: hidden; }
-      .home .svg-container #PRO.open,
-      .home .svg-container #LIFE.open,
-      .home .svg-container #CONNECT.open {
+      .home .svg-container #bottomBTN.open,
+      .home .svg-container #leftBTN.open,
+      .home .svg-container #rightBTN.open,
+      .home .svg-container #topBTN.open {
         visibility: visible; }
     .home .svg-container #leters {
       -webkit-animation: yellow_ring 7s infinite linear alternate;
