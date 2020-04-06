@@ -6,11 +6,11 @@
       }
 
       .cls-2 {
-        fill: rgba(7,22,18,0.68);
+        fill: rgba(229,187,49,0.74);
       }
 
       .cls-2, .cls-3 {
-        stroke: #789df5;
+        stroke: #c7f578;
         stroke-width: 4px;
       }
 
@@ -35,7 +35,7 @@
       }
 
       .cls-5 {
-        fill: #051001;
+        fill: #e21717;
         stroke: #0a313d;
       }
 
@@ -46,7 +46,7 @@
 
       .cls-7 {
         fill: #ffe017;
-        stroke: red;
+        stroke: #0f3;
       }
 
       .cls-9 {
@@ -83,7 +83,7 @@
     <g id="Lowest_ring" transform="translate(816.243 390.52)">
       <path id="Vector_2" class="cls-5" d="M299.782,647.414A139.072,139.072,0,1,0,160.71,508.342,139.073,139.073,0,0,0,299.782,647.414Z" transform="translate(-160.71 -369.27)"/>
     </g>
-    <g id="right_group">
+    <g id="right_group" transform="translate(0 -2)">
       <path id="right_panel" class="cls-3" d="M317.627,486.934c5.166-4.424,258.694-161.684,258.694-161.684l10.963,424.421C495.2,693.248,312.7,589.945,307.108,585.154,329.464,554.015,319.794,493.692,317.627,486.934Z" transform="translate(743.872 -5.025)"/>
       <text id="Gallery" class="cls-4" transform="translate(1109.166 530.981)"><tspan x="0" y="0">GALLERY</tspan></text>
     </g>

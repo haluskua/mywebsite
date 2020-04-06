@@ -10,10 +10,10 @@
   overflow: hidden;
   background: linear-gradient(
       to right,
-      rgba(220, 254, 255, 0.52),
-      rgba(16, 1, 1, 0)
+      rgba(255, 255, 255, 0.96),
+      rgba(230, 244, 255, 0.68)
     ),
-    url(../img/profile.jpg) center left;
+    url(../img/head.jpg) center left;
   background-size: cover;
   // background: black;
   /* Medium break point*/
@@ -22,13 +22,6 @@
     padding-top: 0;
   }
   @include LARGE-DEVICE-WIDTH {
-    background: linear-gradient(
-        to right,
-        rgba(96, 125, 139, 0),
-        rgba(16, 1, 1, 0)
-      ),
-      url(../img/head.jpg) center right;
-    background-size: cover;
   }
 
   //svg box styling
@@ -75,7 +68,6 @@
     //   }
     // }
 
-    #ABOUT,
     #PRO,
     #LIFE,
     #CONNECT {
@@ -84,18 +76,33 @@
         visibility: visible;
       }
     }
-    #projectsButton,
-    #contactButton,
-    #aboutButton,
-    #lifeButton {
-      visibility: hidden;
-      &.open {
-        visibility: visible;
+    // #bottomBTN,
+    // #leftBTN,
+    // #rightBTN,
+    // #navy_bcg,
+    // #topBTN {
+    //   visibility: hidden;
+    //   &.open {
+    //     visibility: visible;
+    //   }
+    // }
+
+    #leters {
+      animation: yellow_ring 7s infinite linear alternate;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+    @keyframes yellow_ring {
+      from {
+        transform: rotateZ(0deg);
+      }
+      to {
+        transform: rotateZ(360deg);
       }
     }
 
-    #ring2 {
-      animation: ring2 8.5s infinite linear alternate;
+    #semi_red {
+      animation: ring2 10.5s infinite linear alternate;
       transform-origin: center;
       transform-box: fill-box;
     }
