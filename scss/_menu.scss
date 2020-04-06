@@ -91,6 +91,7 @@
 
   &.open {
     visibility: visible;
+    padding: 45px 0px;
   }
 
   .menu-nav {
@@ -115,12 +116,17 @@
 
     &.open {
       transform: translateY(0);
+      background-color: #f3f0d8;
+      align-items: flex-end;
+      justify-content: space-around;
+      padding: 35px;
+      flex-direction: row;
     }
 
     &__item {
       transform: translateX(100vw);
       @include transition-ease;
-      width: 75%;
+      width: auto;
       @include MEDIUM-DEVICE-WIDTH {
         display: inline;
         padding: 0.5rem;
@@ -131,22 +137,25 @@
       }
 
       &.active > a {
-        color: $accent-color;
+        color: rgb(95, 80, 80);
         border-bottom: 2px solid #fcd603;
         font-family: "Roboto", "sans-serif", "Montserrat", "Cursive";
+        font-family: "Cormorant Unicase", serif;
+        border: none;
+        background: none;
+        box-shadow: none;
+        font-size: 1.42rem;
         @include MEDIUM-DEVICE-WIDTH {
           font-size: 1em;
         }
       }
       a {
-        font-family: "Cormorant Unicase", serif;
         width: 100%;
+        font-family: "Cormorant Unicase", serif;
         padding: 10px;
-        text-shadow: none;
         margin: 0.5rem 0;
         padding: 1.2rem;
         letter-spacing: 0.2rem;
-        color: #846409;
         @include MEDIUM-DEVICE-WIDTH {
           width: auto;
           padding: 8px;
@@ -161,29 +170,41 @@
     }
 
     &__link {
+      width: 100%;
       display: inline-block;
       font-size: 1.25rem;
       font-weight: bold;
-      width: auto;
+      text-shadow: none;
       text-transform: uppercase;
       text-align: center;
-      padding: 0.47em 0;
+      padding: 0.47em 0.5em;
+      padding-left: 0;
       margin: 3px 0;
       border-radius: 0.28rem;
       letter-spacing: 0.084em;
       color: $dark-text;
+      color: #637d8b;
+      border: 1px solid #a9bdc0;
+      width: 100%;
+      background-color: #f3f0d8;
       font-family: "Cormorant Unicase", serif;
       &:active {
         font-family: "Cormorant Unicase", serif;
+        border: none;
+        background-color: none;
+        box-shadow: none;
+      }
+      &:focus {
+        box-shadow: 0 0 1px 1px rgb(63, 53, 48);
+        background-color: #bfb083;
       }
 
       @include transition-ease;
       @include MEDIUM-DEVICE-WIDTH {
-        text-shadow: 1.28px 0.736px #dde0e2;
-
         padding: 0.8rem 0;
         font-size: 1.24rem;
         width: 121px;
+        margin: auto;
       }
       @include LARGE-DEVICE-WIDTH {
         font-size: 1.032rem;
@@ -196,9 +217,6 @@
         color: #414c57;
         font-weight: bold;
         box-shadow: 0px 2px 2px #fcd603, 0px -2px 2px #f4f7f9;
-      }
-      &:active {
-        font-family: "Cormorant Unicase", serif;
       }
     }
   }
