@@ -10,6 +10,8 @@
   background: linear-gradient(to right, white, #fffffa),
     url(../img/head.jpg) center center;
   background-size: cover;
+  justify-content: space-between;
+  padding: 86px 0 0 0;
 
   @include MEDIUM-DEVICE-WIDTH {
     padding-top: 0;
@@ -70,6 +72,7 @@
     width: 80%;
     text-align: center;
     display: flex;
+    margin-top: -1rem;
     justify-content: space-around;
     transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear,
       -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
@@ -324,7 +327,7 @@
 }
 .social-icons {
   display: flex;
-  position: fixed;
+  position: relative;
   bottom: 0;
   justify-content: center;
   width: 100%;
