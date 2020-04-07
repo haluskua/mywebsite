@@ -60,20 +60,21 @@ a {
         width: 100%;
         height: 107%;
         padding-top: 0; } }
+  .home .animated_text {
+    margin-bottom: -2.5rem; }
   .home .my_name {
     font-family: "Poiret One", cursive;
     font-family: "Audiowide", cursive;
     font-family: "Roboto Condensed", sans-serif;
     font-family: "Cormorant Unicase", serif;
     text-shadow: none;
-    font-size: 2.5rem;
+    font-size: 2.33rem;
     line-height: 0.98em;
     color: #967e3a;
     text-align: right;
     text-transform: none;
     font-weight: bold;
     text-align: center;
-    margin-top: -2rem;
     padding: 0 1rem;
     text-transform: uppercase; }
   .home .title_txt_container .title_text {
@@ -1356,5 +1357,6 @@ footer {
   right: 1.75rem;
   text-align: right;
   padding: 1rem;
-  color: #646262; }
+  color: #b9ae98; }
+
 /*# sourceMappingURL=main.css.map */
