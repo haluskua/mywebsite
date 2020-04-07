@@ -45,7 +45,11 @@ a {
   overflow: hidden;
   background: -webkit-gradient(linear, left top, right top, from(white), to(#fffffa)), url(../img/head.jpg) center center;
   background: linear-gradient(to right, white, #fffffa), url(../img/head.jpg) center center;
-  background-size: cover; }
+  background-size: cover;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 86px 0 0 0; }
   @media only screen and (min-width: 768px) {
     .home {
       padding-top: 0; } }
@@ -95,6 +99,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: -1rem;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear, -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
@@ -317,7 +322,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
+  position: relative;
   bottom: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
