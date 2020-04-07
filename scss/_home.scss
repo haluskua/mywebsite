@@ -1,4 +1,4 @@
-.home {
+.home, .homeMain {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -82,32 +82,19 @@
       padding-top: 7em;
     }
 
-    // #ring1 {
-    //   animation: pulse 1s ease-in-out ininite linear;
-    //   transform-box: fill-box;
-    //   transform-origin: center;
-    // }
-    // @keyframes pusle {
-    //   from {
-    //     traransform: rotateZ(0deg);
-    //     transform: translayeY(0%);
-    //   }
-    //   to {
-    //     transfrom: rotateZ(360deg);
-    //     transfrom: translateY(5%);
 
+    // .social-icons,
+    // #bottomBTN,
+    // #leftBTN,
+    // #rightBTN,
+    // #topBTN {
+    //   visibility: hidden;
+    //   &.open {
+    //     visibility: visible;
     //   }
     // }
-    .social-icons,
-    #bottomBTN,
-    #leftBTN,
-    #rightBTN,
-    #topBTN {
-      visibility: hidden;
-      &.open {
-        visibility: visible;
-      }
-    }
+
+
 
     #leters {
       animation: yellow_ring 4.5s infinite linear alternate-reverse;
