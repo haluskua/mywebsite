@@ -10,11 +10,31 @@ const leftShield = document.querySelector("#leftBTN");
 const bottomShield = document.querySelector("#bottomBTN");
 const rightShield = document.querySelector("#rightBTN");
 
+const shieldMenuButton = document.querySelector(".show");
+const mainMenu = document.querySelector(".landing_menu");
+
 //JAVASCRIPT DEMONSTRATION
 
 let showMenu = false;
 
 let shield = false;
+
+let toggleShieldMenu = false;
+
+document.addEventListener("DOMContentLoaded", function () {
+  shieldMenuButton.addEventListener("click", changePage);
+  function changePage(e) {
+    if (!toggleShieldMenu) {
+      mainMenu.classList.add("open");
+
+      toggleShieldMenu = true;
+    } else {
+      mainMenu.classList.remove("open");
+
+      toggleShieldMenu = false;
+    }
+  }
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   shieldCircle.addEventListener("click", toggleShield);
@@ -38,27 +58,51 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+//toggle New menu
 document.addEventListener("DOMContentLoaded", function () {
   menuBtn.addEventListener("click", toggleMenu);
 
   function toggleMenu(e) {
-    if (!showMenu) {
-      hamburger.classList.add("open");
-      nav.classList.add("open");
-      menuNav.classList.add("open");
-      navItems.forEach((item) => item.classList.add("open"));
+    if (!toggleShieldMenu) {
+      mainMenu.classList.add("open");
 
-      showMenu = true;
+      toggleShieldMenu = true;
     } else {
-      hamburger.classList.remove("open");
-      nav.classList.remove("open");
-      menuNav.classList.remove("open");
-      navItems.forEach((item) => item.classList.remove("open"));
+      mainMenu.classList.remove("open");
 
-      showMenu = false;
+      toggleShieldMenu = false;
     }
   }
 });
+
+//////////////////////////////////
+// toggleMenu
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   menuBtn.addEventListener("click", toggleMenu);
+
+//   function toggleMenu(e) {
+//     if (!showMenu) {
+//       hamburger.classList.add("open");
+//       nav.classList.add("open");
+//       menuNav.classList.add("open");
+//       navItems.forEach((item) => item.classList.add("open"));
+
+//       showMenu = true;
+//     } else {
+//       hamburger.classList.remove("open");
+//       nav.classList.remove("open");
+//       menuNav.classList.remove("open");
+//       navItems.forEach((item) => item.classList.remove("open"));
+
+//       showMenu = false;
+//     }
+//   }
+// });
+
+
+///////////////////////////////////
 
 // image gallery function
 
@@ -137,3 +181,5 @@ function myFunction() {
     moreText.style.display = "inline";
   }
 }
+
+// ---------------------------*****************-------------------------
