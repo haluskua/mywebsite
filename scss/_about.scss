@@ -102,7 +102,8 @@
       color: yellowgreen;
       font-size: 3em;
       padding-top: 15px;
-      font-family: "Bebas Neue", "Juslius Sans", "cursive";
+      text-align: left;
+      font-family: "Turret Road", "Bebas Niue", "cursive";
       font-weight: normal;
     }
     h5 {
@@ -110,6 +111,7 @@
       font-size: 1em;
       padding: 3%;
       font-weight: normal;
+      text-align: left;
     }
   }
   .img-container {
@@ -222,6 +224,8 @@
         font-style: normal;
         padding-left: 4%;
         padding-top: 0.045rem;
+        line-height: 0.69em;
+
         @include LARGE-DEVICE-WIDTH {
           font-size: 1.1rem;
         }
@@ -229,6 +233,8 @@
       h3 {
         padding-left: 4%;
         color: #88866d;
+        font-size: 1.5em;
+        font-family: "Turret Road", "Bebas Niue", "cursive";
       }
       h6 {
         margin: 0.3rem 0;
