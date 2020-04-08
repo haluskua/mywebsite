@@ -218,6 +218,7 @@
       }
     }
   }
+
   .my_name {
     font-family: "Poiret One", cursive;
     font-family: "Audiowide", cursive;
@@ -268,7 +269,37 @@
       text-shadow: none;
       padding: 0;
     }
-    
+  }
+
+  //spinnning logo wheel
+
+  #leters {
+    animation: yellow_ring 4.5s infinite linear alternate-reverse;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes yellow_ring {
+    from {
+      transform: rotateZ(-50deg);
+    }
+    to {
+      transform: rotateZ(25deg);
+    }
+  }
+
+  #semi_red {
+    animation: ring2 8.5s infinite linear alternate-reverse;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  @keyframes ring2 {
+    from {
+      transform: rotateZ(0deg);
+    }
+    to {
+      transform: rotateZ(360deg);
+    }
   }
 
   //the speed or motion rate each item gets pushed out to show

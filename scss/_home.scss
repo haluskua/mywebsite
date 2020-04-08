@@ -124,37 +124,8 @@
         transform: rotateZ(360deg);
       }
     }
-
-    #ring1 {
-      animation: ring1 6.5s ease-in-out infinite alternate;
-      transform-origin: center;
-      transform-box: fill-box;
-    }
-    @keyframes ring1 {
-      from {
-        transform: rotateZ(0deg) translate(0%) translateX(0%);
-      }
-      to {
-        transform: rotateZ(360deg) translateY(2%) translateX(-2%);
-      }
-    }
   }
-
-  //spinning Logo
-  #icon {
-    animation: logo 4.3s ease-in-out infinite alternate;
-    transform-origin: center;
-    transform-box: fill-box;
-  }
-
-  @keyframes logo {
-    from {
-      transform: rotateZ(0deg);
-    }
-    to {
-      transform: rotateZ(360deg);
-    }
-  }
+  
 
   .fit-picture {
     // background: url(../img/svg_logo.svg) no-repeat center center;

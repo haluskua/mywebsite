@@ -1,7 +1,8 @@
 .about {
   padding-bottom: 0rem;
-  background: white;
-  padding-top: 4rem;
+  background: #cac0a6;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   .breadCrumbs {
     position: absolute;
     top: 3%;
@@ -16,7 +17,7 @@
 
   &__bio-image {
     width: 100%;
-    background: white;
+    background: #cac0a6;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,31 +29,30 @@
     }
 
     .text-secondary {
-      font-size: 1.05rem;
+      font-size: 1.3rem;
+      letter-spacing: 0.03em;
       font-weight: bolder;
       text-align: left;
-      padding: 7px 0;
-      font-family: "Turret Road", "cursive";
-      font-family: "Montserrat", "cursive";
+      padding: 8px;
       color: $accent-color;
       display: flex;
       margin-bottom: 0;
+      font-family: 'Audiowide','Julius Sans','Script';
       @include LARGE-DEVICE-WIDTH {
         font-size: 1.27rem;
       }
     }
     p {
-      color: $dark-text;
+      color: #1f2429;
       padding: 4%;
       width: 100%;
-      margin-bottom: 2rem;
       margin-top: 1.5rem;
       border-radius: 0.176rem;
       line-height: 1.45rem;
       text-align: left;
       font-size: 0.97rem;
-      box-shadow: $slim-grey;
-      padding: 0.8rem;
+      box-shadow: -1px 1px 15px rgba(162, 158, 142, 0),
+        7px 2px 7px rgba(183, 182, 169, 0.14);
       @include MEDIUM-DEVICE-WIDTH {
         border-radius: 0.05rem;
         line-height: 1.7rem;
@@ -88,7 +88,9 @@
   }
 
   &__bio {
+    background-color: #fffae7;
     width: 95%;
+    padding: 3%;
     text-align: center;
     @include MEDIUM-DEVICE-WIDTH {
       font-size: 1.5rem;
@@ -116,8 +118,10 @@
   }
 
   .jobs {
+    width: 95%;
+    background-color: #fffae7;
     display: flex;
-    padding: 1% 4%;
+    padding: 3%;
     margin: 0.2rem auto 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -142,7 +146,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: flex-end;
-      box-shadow: 2px 6px 7px #67818e, 2px -4px 10px #67818e;
+      box-shadow: 2px 6px 7px #d6d1c1, 2px -4px 10px #ecead6;
       @include MEDIUM-DEVICE-WIDTH {
         height: 35vh;
         background-size: cover;
@@ -179,7 +183,9 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      border-bottom: 0.5px solid $dark-text;
+      border-bottom: 0.5px solid #4a4842;
+      box-shadow: 1px 15px rgba(162, 158, 142, 0.24),
+        7px 2px 7px rgba(183, 182, 169, 0.14);
       h2,
       h3 {
         margin: 0.22rem 0;
@@ -195,15 +201,19 @@
       h5 {
         font-size: 1rem;
         letter-spacing: 0.02rem;
-        color: $secondary-color;
+        color: #988755;
         font-family: "Turret Road", "cursive";
         font-weight: normal;
         font-style: normal;
-        padding: 0.15rem 0;
+        padding-left: 4%;
         padding-top: 0.045rem;
         @include LARGE-DEVICE-WIDTH {
           font-size: 1.1rem;
         }
+      }
+      h3 {
+        padding-left: 4%;
+        color: #88866d;
       }
       h6 {
         margin: 0.3rem 0;
