@@ -29,19 +29,18 @@
     }
 
     .text-secondary {
-      font-size: 1.7rem;
+      font-size: 2rem;
       letter-spacing: 0.03em;
       font-weight: bolder;
       text-align: left;
       padding: 8px;
       padding-bottom: 1px;
-      color: #74796e;
       color: yellowgreen;
       display: flex;
       margin-bottom: 0;
       font-family: "Audiowide", "Julius Sans", "Script";
       font-family: "Bebas Neue", "Juslius Sans", "cursive";
-
+      font-family: "Cormorant Unicase", serif;
       @include LARGE-DEVICE-WIDTH {
         font-size: 1.27rem;
       }
@@ -80,7 +79,7 @@
         margin-top: 5px;
         font-size: 1rem;
         background: none;
-        color: #8aa3ac;
+        color: yellowgreen;
         font-style: italic;
         border: none;
         @include MEDIUM-DEVICE-WIDTH {
@@ -102,13 +101,16 @@
     }
     h3 {
       color: yellowgreen;
-      font-size: 3.55em;
+      font-size: 3em;
       padding-top: 15px;
       font-family: "Bebas Neue", "Juslius Sans", "cursive";
+      font-family: "Audiowide", "cursive";
+      font-weight: bold;
+      font-family: "Cormorant Unicase", serif;
     }
     h5 {
       color: #716f51;
-      font-size: 1.15em;
+      font-size: 1em;
       padding: 3%;
       font-weight: normal;
     }
