@@ -623,17 +623,20 @@ a {
       .about__bio-image {
         padding: 71px 5%; } }
     .about__bio-image .text-secondary {
-      font-size: 1.3rem;
+      font-size: 1.7rem;
       letter-spacing: 0.03em;
       font-weight: bolder;
       text-align: left;
       padding: 8px;
-      color: #daa520;
+      padding-bottom: 1px;
+      color: #74796e;
+      color: yellowgreen;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       margin-bottom: 0;
-      font-family: 'Audiowide','Julius Sans','Script'; }
+      font-family: "Audiowide", "Julius Sans", "Script";
+      font-family: "Bebas Neue", "Juslius Sans", "cursive"; }
       @media only screen and (min-width: 1024px) {
         .about__bio-image .text-secondary {
           font-size: 1.27rem; } }
@@ -698,6 +701,16 @@ a {
       .about__bio {
         font-size: 1.5rem;
         width: 90%; } }
+    .about__bio h3 {
+      color: yellowgreen;
+      font-size: 3.55em;
+      padding-top: 15px;
+      font-family: "Bebas Neue", "Juslius Sans", "cursive"; }
+    .about__bio h5 {
+      color: #716f51;
+      font-size: 1.15em;
+      padding: 3%;
+      font-weight: normal; }
   .about .img-container {
     padding: 0.8rem;
     display: -webkit-box;
@@ -797,15 +810,16 @@ a {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
-      border-bottom: 0.5px solid #4a4842;
-      -webkit-box-shadow: 1px 15px rgba(162, 158, 142, 0.24), 7px 2px 7px rgba(183, 182, 169, 0.14);
-              box-shadow: 1px 15px rgba(162, 158, 142, 0.24), 7px 2px 7px rgba(183, 182, 169, 0.14); }
+      border-bottom: 0.5px solid #9a8f6e;
+      -webkit-box-shadow: 1px 11px 7px rgba(162, 158, 142, 0), -25px 10px 9px rgba(152, 152, 129, 0.14);
+              box-shadow: 1px 11px 7px rgba(162, 158, 142, 0), -25px 10px 9px rgba(152, 152, 129, 0.14); }
       .about .jobs__job h2,
       .about .jobs__job h3 {
         margin: 0.22rem 0;
         line-height: 1.55rem;
         font-size: 1.33rem;
-        color: #1f2429; }
+        color: #1f2429;
+        font-family: "Turret", "Cursive"; }
         @media only screen and (min-width: 1024px) {
           .about .jobs__job h2,
           .about .jobs__job h3 {
@@ -813,8 +827,7 @@ a {
       .about .jobs__job h5 {
         font-size: 1rem;
         letter-spacing: 0.02rem;
-        color: #988755;
-        font-family: "Turret Road", "cursive";
+        color: #5f6558;
         font-weight: normal;
         font-style: normal;
         padding-left: 4%;
