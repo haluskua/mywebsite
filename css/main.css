@@ -623,20 +623,20 @@ a {
       .about__bio-image {
         padding: 71px 5%; } }
     .about__bio-image .text-secondary {
-      font-size: 1.7rem;
+      font-size: 2rem;
       letter-spacing: 0.03em;
       font-weight: bolder;
       text-align: left;
       padding: 8px;
       padding-bottom: 1px;
-      color: #74796e;
       color: yellowgreen;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       margin-bottom: 0;
       font-family: "Audiowide", "Julius Sans", "Script";
-      font-family: "Bebas Neue", "Juslius Sans", "cursive"; }
+      font-family: "Bebas Neue", "Juslius Sans", "cursive";
+      font-family: "Cormorant Unicase", serif; }
       @media only screen and (min-width: 1024px) {
         .about__bio-image .text-secondary {
           font-size: 1.27rem; } }
@@ -681,7 +681,7 @@ a {
         margin-top: 5px;
         font-size: 1rem;
         background: none;
-        color: #8aa3ac;
+        color: yellowgreen;
         font-style: italic;
         border: none; }
         @media only screen and (min-width: 768px) {
@@ -703,12 +703,15 @@ a {
         width: 90%; } }
     .about__bio h3 {
       color: yellowgreen;
-      font-size: 3.55em;
+      font-size: 3em;
       padding-top: 15px;
-      font-family: "Bebas Neue", "Juslius Sans", "cursive"; }
+      font-family: "Bebas Neue", "Juslius Sans", "cursive";
+      font-family: 'Audiowide','cursive';
+      font-weight: bold;
+      font-family: "Cormorant Unicase", serif; }
     .about__bio h5 {
       color: #716f51;
-      font-size: 1.15em;
+      font-size: 1em;
       padding: 3%;
       font-weight: normal; }
   .about .img-container {
