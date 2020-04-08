@@ -151,50 +151,6 @@ a {
   to {
     -webkit-transform: rotateZ(360deg);
             transform: rotateZ(360deg); } }
-    .home .svg-container #ring1, .homeMain .svg-container #ring1 {
-      -webkit-animation: ring1 6.5s ease-in-out infinite alternate;
-              animation: ring1 6.5s ease-in-out infinite alternate;
-      -webkit-transform-origin: center;
-              transform-origin: center;
-      transform-box: fill-box; }
-
-@-webkit-keyframes ring1 {
-  from {
-    -webkit-transform: rotateZ(0deg) translate(0%) translateX(0%);
-            transform: rotateZ(0deg) translate(0%) translateX(0%); }
-  to {
-    -webkit-transform: rotateZ(360deg) translateY(2%) translateX(-2%);
-            transform: rotateZ(360deg) translateY(2%) translateX(-2%); } }
-
-@keyframes ring1 {
-  from {
-    -webkit-transform: rotateZ(0deg) translate(0%) translateX(0%);
-            transform: rotateZ(0deg) translate(0%) translateX(0%); }
-  to {
-    -webkit-transform: rotateZ(360deg) translateY(2%) translateX(-2%);
-            transform: rotateZ(360deg) translateY(2%) translateX(-2%); } }
-  .home #icon, .homeMain #icon {
-    -webkit-animation: logo 4.3s ease-in-out infinite alternate;
-            animation: logo 4.3s ease-in-out infinite alternate;
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    transform-box: fill-box; }
-
-@-webkit-keyframes logo {
-  from {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg); }
-  to {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg); } }
-
-@keyframes logo {
-  from {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg); }
-  to {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg); } }
   .home .fit-picture, .homeMain .fit-picture {
     width: 59%; }
     @media only screen and (min-width: 1024px) {
@@ -590,6 +546,32 @@ a {
     color: #967e3a;
     text-shadow: none;
     padding: 0; }
+  .nav #leters {
+    animation: yellow_ring 4.5s infinite linear alternate-reverse;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    transform-box: fill-box; }
+
+@keyframes yellow_ring {
+  from {
+    -webkit-transform: rotateZ(-50deg);
+            transform: rotateZ(-50deg); }
+  to {
+    -webkit-transform: rotateZ(25deg);
+            transform: rotateZ(25deg); } }
+  .nav #semi_red {
+    animation: ring2 8.5s infinite linear alternate-reverse;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    transform-box: fill-box; }
+
+@keyframes ring2 {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg); }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg); } }
   .nav .menu-nav__item:nth-child(1) {
     -webkit-transition-delay: 0.175s;
             transition-delay: 0.175s; }
@@ -608,8 +590,9 @@ a {
 
 .about {
   padding-bottom: 0rem;
-  background: white;
-  padding-top: 4rem; }
+  background: #cac0a6;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
   .about .breadCrumbs {
     position: absolute;
     top: 3%;
@@ -622,7 +605,7 @@ a {
         top: 15%; } }
   .about__bio-image {
     width: 100%;
-    background: white;
+    background: #cac0a6;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -640,17 +623,17 @@ a {
       .about__bio-image {
         padding: 71px 5%; } }
     .about__bio-image .text-secondary {
-      font-size: 1.05rem;
+      font-size: 1.3rem;
+      letter-spacing: 0.03em;
       font-weight: bolder;
       text-align: left;
-      padding: 7px 0;
-      font-family: "Turret Road", "cursive";
-      font-family: "Montserrat", "cursive";
+      padding: 8px;
       color: #daa520;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      font-family: 'Audiowide','Julius Sans','Script'; }
       @media only screen and (min-width: 1024px) {
         .about__bio-image .text-secondary {
           font-size: 1.27rem; } }
@@ -658,15 +641,13 @@ a {
       color: #1f2429;
       padding: 4%;
       width: 100%;
-      margin-bottom: 2rem;
       margin-top: 1.5rem;
       border-radius: 0.176rem;
       line-height: 1.45rem;
       text-align: left;
       font-size: 0.97rem;
-      -webkit-box-shadow: 0px 14px 14px rgba(245, 245, 245, 0.7), 4px 4px 8px rgba(36, 68, 66, 0.17);
-              box-shadow: 0px 14px 14px rgba(245, 245, 245, 0.7), 4px 4px 8px rgba(36, 68, 66, 0.17);
-      padding: 0.8rem; }
+      -webkit-box-shadow: -1px 1px 15px rgba(162, 158, 142, 0), 7px 2px 7px rgba(183, 182, 169, 0.14);
+              box-shadow: -1px 1px 15px rgba(162, 158, 142, 0), 7px 2px 7px rgba(183, 182, 169, 0.14); }
       @media only screen and (min-width: 768px) {
         .about__bio-image p {
           border-radius: 0.05rem;
@@ -709,7 +690,9 @@ a {
                 -ms-flex-pack: start;
                     justify-content: flex-start; } }
   .about__bio {
+    background-color: #fffae7;
     width: 95%;
+    padding: 3%;
     text-align: center; }
     @media only screen and (min-width: 768px) {
       .about__bio {
@@ -734,10 +717,12 @@ a {
         border: none;
         width: 77%; } }
   .about .jobs {
+    width: 95%;
+    background-color: #fffae7;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 1% 4%;
+    padding: 3%;
     margin: 0.2rem auto 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -766,8 +751,8 @@ a {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end;
-      -webkit-box-shadow: 2px 6px 7px #67818e, 2px -4px 10px #67818e;
-              box-shadow: 2px 6px 7px #67818e, 2px -4px 10px #67818e; }
+      -webkit-box-shadow: 2px 6px 7px #d6d1c1, 2px -4px 10px #ecead6;
+              box-shadow: 2px 6px 7px #d6d1c1, 2px -4px 10px #ecead6; }
       @media only screen and (min-width: 768px) {
         .about .jobs__bio-image {
           height: 35vh;
@@ -812,7 +797,9 @@ a {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
-      border-bottom: 0.5px solid #1f2429; }
+      border-bottom: 0.5px solid #4a4842;
+      -webkit-box-shadow: 1px 15px rgba(162, 158, 142, 0.24), 7px 2px 7px rgba(183, 182, 169, 0.14);
+              box-shadow: 1px 15px rgba(162, 158, 142, 0.24), 7px 2px 7px rgba(183, 182, 169, 0.14); }
       .about .jobs__job h2,
       .about .jobs__job h3 {
         margin: 0.22rem 0;
@@ -826,15 +813,18 @@ a {
       .about .jobs__job h5 {
         font-size: 1rem;
         letter-spacing: 0.02rem;
-        color: #93a7a9;
+        color: #988755;
         font-family: "Turret Road", "cursive";
         font-weight: normal;
         font-style: normal;
-        padding: 0.15rem 0;
+        padding-left: 4%;
         padding-top: 0.045rem; }
         @media only screen and (min-width: 1024px) {
           .about .jobs__job h5 {
             font-size: 1.1rem; } }
+      .about .jobs__job h3 {
+        padding-left: 4%;
+        color: #88866d; }
       .about .jobs__job h6 {
         margin: 0.3rem 0; }
   .about .socialIcons {
