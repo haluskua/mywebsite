@@ -40,7 +40,6 @@
       margin-bottom: 0;
       font-family: "Audiowide", "Julius Sans", "Script";
       font-family: "Bebas Neue", "Juslius Sans", "cursive";
-      font-family: "Cormorant Unicase", serif;
       @include LARGE-DEVICE-WIDTH {
         font-size: 1.27rem;
       }
@@ -104,9 +103,7 @@
       font-size: 3em;
       padding-top: 15px;
       font-family: "Bebas Neue", "Juslius Sans", "cursive";
-      font-family: "Audiowide", "cursive";
-      font-weight: bold;
-      font-family: "Cormorant Unicase", serif;
+      font-weight: normal;
     }
     h5 {
       color: #716f51;

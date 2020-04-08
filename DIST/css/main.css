@@ -635,8 +635,7 @@ a {
       display: flex;
       margin-bottom: 0;
       font-family: "Audiowide", "Julius Sans", "Script";
-      font-family: "Bebas Neue", "Juslius Sans", "cursive";
-      font-family: "Cormorant Unicase", serif; }
+      font-family: "Bebas Neue", "Juslius Sans", "cursive"; }
       @media only screen and (min-width: 1024px) {
         .about__bio-image .text-secondary {
           font-size: 1.27rem; } }
@@ -706,9 +705,7 @@ a {
       font-size: 3em;
       padding-top: 15px;
       font-family: "Bebas Neue", "Juslius Sans", "cursive";
-      font-family: 'Audiowide','cursive';
-      font-weight: bold;
-      font-family: "Cormorant Unicase", serif; }
+      font-weight: normal; }
     .about__bio h5 {
       color: #716f51;
       font-size: 1em;
