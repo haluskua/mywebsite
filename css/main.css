@@ -596,7 +596,7 @@ a {
 
 .about {
   padding-bottom: 0rem;
-  background: #0027b5;
+  background-color: rgba(189, 218, 255, 0.7);
   padding-top: 2rem;
   padding-bottom: 2rem; }
   .about .breadCrumbs {
@@ -611,7 +611,7 @@ a {
         top: 15%; } }
   .about__bio-image {
     width: 100%;
-    background: rgba(103, 117, 75, 0.28);
+    background: rgba(228, 222, 30, 0.54);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -629,26 +629,25 @@ a {
       .about__bio-image {
         padding: 71px 5%; } }
     .about__bio-image .text-secondary {
-      font-size: 1.7rem;
+      font-size: 1.8rem;
       letter-spacing: 0.03em;
       font-weight: bolder;
       text-align: left;
       padding-bottom: 1px;
-      color: #b1b927;
+      color: #80b727;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       margin-bottom: 0;
-      font-family: "Audiowide", "Julius Sans", "Script";
       font-family: "Bebas Neue", "Juslius Sans", "cursive";
-      font-family: "Audiowide", "Montserrat", "cursive"; }
+      font-family: "Audiowide", "Julius Sans", "Script"; }
       @media only screen and (min-width: 1024px) {
         .about__bio-image .text-secondary {
           font-size: 1.27rem; } }
     .about__bio-image p {
-      color: #292822;
-      color: #c3c3be;
+      color: #27251a;
       padding: 1%;
+      padding-bottom: 18px;
       width: 100%;
       margin-top: 1.1rem;
       border-radius: 0.176rem;
@@ -697,8 +696,8 @@ a {
                 -ms-flex-pack: start;
                     justify-content: flex-start; } }
   .about__bio {
-    background-color: #15191a87;
-    width: 95%;
+    background-color: #fffae7;
+    width: 98%;
     padding: 3%;
     text-align: center; }
     @media only screen and (min-width: 768px) {
@@ -706,17 +705,17 @@ a {
         font-size: 1.5rem;
         width: 90%; } }
     .about__bio h3 {
-      color: #b1b927;
-      font-size: 2.3em;
+      color: #80b727;
+      font-size: 2.13em;
       padding-top: 15px;
       text-align: left;
       line-height: 1.052em;
-      font-family: "Turret Road", "Bebas Niue", "cursive";
-      font-family: "Audiowide", "Montserrat", "cursive";
+      font-family: "Bebas Neue", "cursive";
+      font-family: "Audiowide", "cursive";
       font-weight: bold;
       text-transform: uppercase; }
     .about__bio h5 {
-      color: #c4d2d1;
+      color: #716f51;
       font-size: 1em;
       padding: 3%;
       font-weight: normal;
@@ -740,12 +739,12 @@ a {
         border: none;
         width: 77%; } }
   .about .jobs {
-    width: 95%;
-    background-color: rgba(27, 35, 27, 0.34);
+    width: 98%;
+    background-color: #fffae7;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 1%;
+    padding: 2%;
     margin: 0.2rem auto 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -774,8 +773,8 @@ a {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end;
-      -webkit-box-shadow: 2px 6px 7px #4d7bb7, 2px -4px 10px #52639680;
-              box-shadow: 2px 6px 7px #4d7bb7, 2px -4px 10px #52639680; }
+      -webkit-box-shadow: 2px 6px 7px #a2956b, 2px -4px 10px #ccc5a9;
+              box-shadow: 2px 6px 7px #a2956b, 2px -4px 10px #ccc5a9; }
       @media only screen and (min-width: 768px) {
         .about .jobs__bio-image {
           height: 35vh;
@@ -821,28 +820,25 @@ a {
           -ms-flex-align: start;
               align-items: flex-start;
       padding: 10px;
-      border-bottom: 0.5px solid #9a8f6e; }
+      border-bottom: 0.5px solid #9a8f6e;
+      -webkit-box-shadow: 1px 11px 7px rgba(162, 158, 142, 0), -25px 10px 9px rgba(152, 152, 129, 0.14);
+              box-shadow: 1px 11px 7px rgba(162, 158, 142, 0), -25px 10px 9px rgba(152, 152, 129, 0.14); }
       .about .jobs__job h2,
       .about .jobs__job h3 {
         margin: 0.22rem 0;
         line-height: 1.55rem;
-        font-size: 1.3rem;
-        color: #dfe2aa;
+        font-size: 1.4rem;
         padding-left: 1%;
-        font-weight: bold;
-        padding: 2% 0;
-        font-family: "Audiowide", "Montserrat", "cursive";
-        font-family: "Montserrat", "cursive";
-        margin-bottom: 0;
-        padding-bottom: 0; }
+        color: #485004;
+        font-family: "Montserrat", "cursive"; }
         @media only screen and (min-width: 1024px) {
           .about .jobs__job h2,
           .about .jobs__job h3 {
             font-size: 1.7rem; } }
       .about .jobs__job h5 {
-        font-size: 1.1rem;
+        font-size: 1rem;
         letter-spacing: 0.02rem;
-        color: #c4d2d1;
+        color: #5f6558;
         font-weight: normal;
         line-height: 1.1em;
         font-style: normal;
