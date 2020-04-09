@@ -8,7 +8,7 @@
   align-items: center;
   text-align: center;
   overflow: hidden;
-  background: linear-gradient(to right, #4f87bb80, #35637778),
+  background: linear-gradient(to right, #caccb2, #e2e4c4),
     url(../img/room12-small.jpg) center center;
   background-size: cover;
   justify-content: space-between;
@@ -45,13 +45,15 @@
     text-shadow: none;
     font-size: 2.4em;
     line-height: 1.1em;
-    color: #ffffff;
+    color: #333a33;
     text-align: right;
     text-transform: none;
     font-weight: bold;
     text-align: center;
     padding: 0 1rem;
     text-transform: uppercase;
+    text-shadow: -4.92px 3.36px #c7caad;
+
   }
   .title_txt_container {
     .title_text {
@@ -61,7 +63,7 @@
       font-family: "Poiret One", cursive;
       font-family: "Audiowide", cursive;
       font-family: "Cormorant Unicase", serif;
-      color: #f3f0d8;
+      color: #fffed2;
       text-shadow: none;
       padding: 0;
     }
@@ -154,29 +156,29 @@
     }
   }
 
-  &__name {
-    font-size: 2.1rem;
-    padding-bottom: 0.5rem;
-    line-height: 3rem;
-    font-family: "Bebas Neue", cursive;
-    font-family: "Turret Road", cursive;
-    letter-spacing: 0.13rem;
-    border-bottom: 2px solid set-text-color($primary-color);
-    border-bottom: 0.5px solid #332b28;
-    text-shadow: 1.8px 2.36px #3e473a;
-    text-shadow: 1.8px 2.36px #202d33;
-    @include MEDIUM-DEVICE-WIDTH {
-      font-size: 3rem;
-    }
-    @include LARGE-DEVICE-WIDTH {
-      font-size: 2.6rem;
-    }
+  // &__name {
+  //   font-size: 2.1rem;
+  //   padding-bottom: 0.5rem;
+  //   line-height: 3rem;
+  //   font-family: "Bebas Neue", cursive;
+  //   font-family: "Turret Road", cursive;
+  //   letter-spacing: 0.13rem;
+  //   border-bottom: 2px solid set-text-color($primary-color);
+  //   border-bottom: 0.5px solid #332b28;
+  //   text-shadow: 1.8px 2.36px #3e473a;
+  //   text-shadow: 1.8px 2.36px #202d33;
+  //   text-shadow: -4.92px 3.36px #c7caad;
+  //   font-size: 3rem;
+  //   }
+  //   @include LARGE-DEVICE-WIDTH {
+  //     font-size: 2.6rem;
+  //   }
 
-    &--last {
-      font-weight: 700;
-      color: #e5fff6;
-    }
-  }
+  //   &--last {
+  //     font-weight: 700;
+  //     color: #e5fff6;
+  //   }
+  // }
   .cta__button {
     background: none;
     padding: 0.5rem;

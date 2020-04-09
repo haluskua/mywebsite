@@ -113,11 +113,7 @@
       padding: 35px;
       flex-direction: row;
       height: 100vh;
-      background: linear-gradient(
-          to right,
-          rgba(0, 126, 255, 0.34),
-          rgba(6, 6, 0, 0.33)
-        ),
+      background: linear-gradient(to right, #caccb2, #e2e4c4),
         url(../img/room12-small.jpg) center center;
       background-size: cover;
     }
@@ -234,14 +230,14 @@
     text-shadow: none;
     font-size: 2.33rem;
     line-height: 0.98em;
-    color: #967e3a;
-    color: #f3f0d8;
+    color: #333a22;
     text-align: right;
     text-transform: none;
     font-weight: bold;
     text-align: center;
     padding: 0 1rem;
     text-transform: uppercase;
+    text-shadow: -4.92px 3.36px #c7caad;
   }
 
   .svg-container {
@@ -274,7 +270,7 @@
       font-family: "Cormorant Unicase", serif;
       // font-family: "Libre Barcode 39 Text", cursive;
       font-weight: bolder;
-      color: #f3f0d8;
+      color: #fffed2;
       text-shadow: none;
       padding: 0;
     }
