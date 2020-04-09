@@ -1,6 +1,6 @@
 .about {
   padding-bottom: 0rem;
-  background: #a8a6ca;
+  background: #0027b5;
   padding-top: 2rem;
   padding-bottom: 2rem;
   .breadCrumbs {
@@ -17,7 +17,7 @@
 
   &__bio-image {
     width: 100%;
-    background: rgba(158, 115, 18, 0.34);
+    background: rgba(103, 117, 75, 0.28);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,23 +29,24 @@
     }
 
     .text-secondary {
-      font-size: 2rem;
+      font-size: 1.7rem;
       letter-spacing: 0.03em;
       font-weight: bolder;
       text-align: left;
-      padding: 8px;
       padding-bottom: 1px;
-      color: #878a4f;
+      color: #b1b927;
       display: flex;
       margin-bottom: 0;
       font-family: "Audiowide", "Julius Sans", "Script";
       font-family: "Bebas Neue", "Juslius Sans", "cursive";
+      font-family: "Audiowide", "Montserrat", "cursive";
       @include LARGE-DEVICE-WIDTH {
         font-size: 1.27rem;
       }
     }
     p {
       color: #292822;
+      color: #c3c3be;
       padding: 1%;
       width: 100%;
       margin-top: 1.1rem;
@@ -53,8 +54,8 @@
       line-height: 1.45rem;
       text-align: left;
       font-size: 0.97rem;
-      box-shadow: -1px 1px 15px rgba(162, 158, 142, 0),
-        7px 2px 7px rgba(183, 182, 169, 0.14);
+      // box-shadow: -1px 1px 15px rgba(162, 158, 142, 0),
+      //   7px 2px 7px rgba(183, 182, 169, 0.14);
       @include MEDIUM-DEVICE-WIDTH {
         border-radius: 0.05rem;
         line-height: 1.7rem;
@@ -90,7 +91,7 @@
   }
 
   &__bio {
-    background-color: #fffae7;
+    background-color: #15191a87;
     width: 95%;
     padding: 3%;
     text-align: center;
@@ -99,19 +100,19 @@
       width: 90%;
     }
     h3 {
-      color: #7f8606;
+      color: #b1b927;
       font-size: 2.3em;
       padding-top: 15px;
       text-align: left;
       line-height: 1.052em;
       font-family: "Turret Road", "Bebas Niue", "cursive";
       font-family: "Audiowide", "Montserrat", "cursive";
-      font-family: "Cormorant Unicase", "serif";
+      // font-family: "Cormorant Unicase", "serif";
       font-weight: bold;
       text-transform: uppercase;
     }
     h5 {
-      color: #716f51;
+      color: #c4d2d1;
       font-size: 1em;
       padding: 3%;
       font-weight: normal;
@@ -140,9 +141,9 @@
 
   .jobs {
     width: 95%;
-    background-color: #fffae7;
+    background-color: rgba(27, 35, 27, 0.34);
     display: flex;
-    padding: 2%;
+    padding: 1%;
     margin: 0.2rem auto 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -167,7 +168,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: flex-end;
-      box-shadow: 2px 6px 7px #a2956b, 2px -4px 10px #ccc5a9;
+      box-shadow: 2px 6px 7px #4d7bb7, 2px -4px 10px #52639680;
       @include MEDIUM-DEVICE-WIDTH {
         height: 35vh;
         background-size: cover;
@@ -206,16 +207,21 @@
       align-items: flex-start;
       padding: 10px;
       border-bottom: 0.5px solid #9a8f6e;
-      box-shadow: 1px 11px 7px rgba(162, 158, 142, 0),
-        -25px 10px 9px rgba(152, 152, 129, 0.14);
+      // box-shadow: 1px 11px 7px rgba(162, 158, 142, 0),
+      //   -25px 10px 9px rgba(152, 152, 129, 0.14);
       h2,
       h3 {
         margin: 0.22rem 0;
         line-height: 1.55rem;
-        font-size: 1.33rem;
-        color: #485004;
+        font-size: 1.3rem;
+        color: #dfe2aa;
+        padding-left: 1%;
+        font-weight: bold;
+        padding: 2% 0;
         font-family: "Audiowide", "Montserrat", "cursive";
-        font-family: "Cormorant Unicase", "serif";
+        font-family: "Montserrat", "cursive";
+        margin-bottom: 0;
+        padding-bottom: 0;
 
         @include MEDIUM-DEVICE-WIDTH {
         }
@@ -224,9 +230,9 @@
         }
       }
       h5 {
-        font-size: 1rem;
+        font-size: 1.1rem;
         letter-spacing: 0.02rem;
-        color: #5f6558;
+        color: #c4d2d1;
         font-weight: normal;
         line-height: 1.1em;
         font-style: normal;
@@ -237,15 +243,6 @@
         @include LARGE-DEVICE-WIDTH {
           font-size: 1.1rem;
         }
-      }
-      h3 {
-        padding-left: 1%;
-        color: #485004;
-        font-size: 1.5em;
-        font-family: "Turret Road", "Bebas Niue", "cursive";
-        font-family: "Montserrat", "cursive";
-        font-family: "Cormorant Unicase", "serif";
-        font-weight: bold;
       }
       h6 {
         margin: 0.3rem 0;
