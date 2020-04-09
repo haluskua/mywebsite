@@ -41,8 +41,8 @@ a {
           align-items: center;
   text-align: center;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(#c5e4f9cf), to(#fffff6)), url(../img/room12-small.jpg) center center;
-  background: linear-gradient(to right, #c5e4f9cf, #fffff6), url(../img/room12-small.jpg) center center;
+  background: -webkit-gradient(linear, left top, right top, from(#c5e4f9cf), to(#fffff6)), url(../img/rooster-b-w.jpg) center center;
+  background: linear-gradient(to right, #c5e4f9cf, #fffff6), url(../img/rooster-b-w.jpg) center center;
   background-size: cover;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -71,15 +71,13 @@ a {
   .home .my_name,
   .homeMain .my_name {
     font-family: "Cinzel Decorative", cursive;
-    font-size: 3.4em;
-    line-height: 0.84em;
-    color: #307f8c;
-    text-align: right;
+    font-size: 2.52em;
+    line-height: 1.123em;
+    color: #496467;
     text-transform: none;
     font-weight: bold;
     text-align: left;
-    padding: 0 1rem;
-    text-shadow: 3.28px 3.36px #eaffc1; }
+    padding: 0 1rem; }
   .home .title_txt_container,
   .homeMain .title_txt_container {
     display: -webkit-box;
@@ -88,11 +86,11 @@ a {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    width: 100%; }
+    width: 100%;
+    padding-right: 10px; }
     .home .title_txt_container .title_text,
     .homeMain .title_txt_container .title_text {
-      font-size: 1.2rem;
-      padding-right: 8px;
+      font-size: 1rem;
       font-family: "Poiret One", cursive;
       font-family: "Audiowide", cursive;
       font-family: "Cormorant Unicase", serif;
