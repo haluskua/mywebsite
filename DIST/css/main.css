@@ -826,11 +826,11 @@ a {
       .about .jobs__job h2,
       .about .jobs__job h3 {
         margin: 0.22rem 0;
-        line-height: 1.85rem;
-        font-size: 1.47rem;
-        padding: 2% 0 0 0;
+        line-height: 2rem;
+        font-size: 1.55rem;
+        padding: 12px 0 0 0;
         color: #485004;
-        letter-spacing: -1px;
+        font-weight: bold;
         font-family: "Montserrat", "cursive"; }
         @media only screen and (min-width: 1024px) {
           .about .jobs__job h2,
