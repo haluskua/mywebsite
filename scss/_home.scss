@@ -8,7 +8,7 @@
   align-items: center;
   text-align: center;
   overflow: hidden;
-  background: linear-gradient(to right, #16202900, #507c9682),
+  background: linear-gradient(to right, #183d5f80, #335f79b8),
     url(../img/head.jpg) center center;
   background-size: cover;
   justify-content: space-between;
@@ -43,8 +43,8 @@
     font-family: "Roboto Condensed", sans-serif;
     font-family: "Cormorant Unicase", serif;
     text-shadow: none;
-    font-size: 2.33rem;
-    line-height: 0.98em;
+    font-size: 2.5rem;
+    line-height: 1.1em;
     color: #ffffff;
     text-align: right;
     text-transform: none;
@@ -57,13 +57,10 @@
     .title_text {
       width: 100%;
       letter-spacing: 0.024rem;
-      font-size: 1.35rem;
+      font-size: 1.56rem;
       font-family: "Poiret One", cursive;
       font-family: "Audiowide", cursive;
       font-family: "Roboto Condensed", sans-serif;
-      font-family: "Cormorant Unicase", serif;
-      // font-family: "Libre Barcode 39 Text", cursive;
-      font-weight: bolder;
       color: #ffffff;
       text-shadow: none;
       padding: 0;
@@ -87,7 +84,7 @@
     // #bottomBTN,
     // #leftBTN,
     // #rightBTN,
-    // #topBTN {
+    // #topBTN{
     //   visibility: hidden;
     //   &.open {
     //     visibility: visible;
@@ -233,24 +230,20 @@
 
   // transition deday for panels
 
-  // #lifeButton,
-  // #LIFE {
+  // #topBTN{
   //   transition-delay: 0.12s;
   //   transition-timing-function: ease-in-out;
   // }
-  // #projectsButton,
-  // #PRO {
+  // #leftBTN{
   //   transition-delay: 0.24s;
   //   transition-timing-function: ease-in-out;
   // }
-  // #aboutButton,
-  // #ABOUT {
+  // #rightBTN {
   //   transition-delay: 0.36s;
   //   transition-timing-function: ease-in-out;
   // }
 
-  // #contactButton,
-  // #CONNECT {
+  // #bottomBTN {
   //   transition-delay: 0.45s;
   //   transition-timing-function: ease-in-out;
   // }
@@ -261,6 +254,7 @@
 
   //   background-color: rgb(68, 109, 15);
   // }
+
   .projects__item3 {
     width: auto;
     overflow: hidden;
@@ -300,4 +294,3 @@
     font-size: 1.4em;
   }
 }
-
