@@ -99,11 +99,11 @@
       width: 90%;
     }
     h3 {
-      color: #29ce00;
-      font-size: 2.2em;
+      color: #7f8606;
+      font-size: 2.25em;
       padding-top: 15px;
       text-align: left;
-      line-height: 1.2em;
+      line-height: 1.052em;
       font-family: "Turret Road", "Bebas Niue", "cursive";
       font-family: "Audiowide", "Montserrat", "cursive";
       // font-family: "Montserrat","Garamond", "Girasol", 'cursive';
@@ -203,6 +203,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      padding: 10px;
       border-bottom: 0.5px solid #9a8f6e;
       box-shadow: 1px 11px 7px rgba(162, 158, 142, 0),
         -25px 10px 9px rgba(152, 152, 129, 0.14);
@@ -229,7 +230,7 @@
         font-style: normal;
         padding-left: 4%;
         padding-top: 0.045rem;
-        line-height: 0.69em;
+        line-height: 1.4em;
 
         @include LARGE-DEVICE-WIDTH {
           font-size: 1.1rem;

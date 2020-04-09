@@ -701,11 +701,11 @@ a {
         font-size: 1.5rem;
         width: 90%; } }
     .about__bio h3 {
-      color: #29ce00;
-      font-size: 2.2em;
+      color: #7f8606;
+      font-size: 2.25em;
       padding-top: 15px;
       text-align: left;
-      line-height: 1.2em;
+      line-height: 1.052em;
       font-family: "Turret Road", "Bebas Niue", "cursive";
       font-family: "Audiowide", "Montserrat", "cursive";
       font-weight: bold; }
@@ -814,6 +814,7 @@ a {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
+      padding: 10px;
       border-bottom: 0.5px solid #9a8f6e;
       -webkit-box-shadow: 1px 11px 7px rgba(162, 158, 142, 0), -25px 10px 9px rgba(152, 152, 129, 0.14);
               box-shadow: 1px 11px 7px rgba(162, 158, 142, 0), -25px 10px 9px rgba(152, 152, 129, 0.14); }
@@ -837,7 +838,7 @@ a {
         font-style: normal;
         padding-left: 4%;
         padding-top: 0.045rem;
-        line-height: 0.69em; }
+        line-height: 1.4em; }
         @media only screen and (min-width: 1024px) {
           .about .jobs__job h5 {
             font-size: 1.1rem; } }
