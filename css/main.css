@@ -44,8 +44,8 @@ a {
           align-items: center;
   text-align: center;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(#1e578c80), to(#cff0ffbf)), url(../img/room12-small.jpg) center center;
-  background: linear-gradient(to right, #1e578c80, #cff0ffbf), url(../img/room12-small.jpg) center center;
+  background: -webkit-gradient(linear, left top, right top, from(#4f87bb80), to(#35637778)), url(../img/room12-small.jpg) center center;
+  background: linear-gradient(to right, #4f87bb80, #35637778), url(../img/room12-small.jpg) center center;
   background-size: cover;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
