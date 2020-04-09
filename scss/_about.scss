@@ -29,8 +29,7 @@
     }
 
     .text-secondary {
-      font-size: 1.8rem;
-      letter-spacing: 0.163em;
+      font-size: 1.58rem;
       font-weight: bolder;
       text-align: left;
       padding-bottom: 1px;
@@ -208,14 +207,12 @@
         -25px 10px 9px rgba(152, 152, 129, 0.14);
       h2,
       h3 {
-        margin: 0.22rem 0;
-        line-height: 2rem;
+        line-height: 1.62rem;
         font-size: 1.35rem;
-        padding: 12px 0 0 0;
+        padding: 6px 0 0 0;
         color: #485004;
-        font-weight: bold;
         font-family: "Montserrat", "cursive";
-        // font-family: "Cormorant Unicase", "Monserrat";
+        font-family: "Roboto", "Monserrat";
 
         @include MEDIUM-DEVICE-WIDTH {
         }
