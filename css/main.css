@@ -25,7 +25,8 @@ a {
   padding: 0.09rem;
   background: #323d46; }
 
-.home, .homeMain {
+.home,
+.homeMain {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,30 +44,36 @@ a {
           align-items: center;
   text-align: center;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(white), to(#fffffa)), url(../img/head.jpg) center center;
-  background: linear-gradient(to right, white, #fffffa), url(../img/head.jpg) center center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 126, 255, 0.34)), to(rgba(6, 6, 0, 0.33))), url(../img/room12-small.jpg) center center;
+  background: linear-gradient(to right, rgba(0, 126, 255, 0.34), rgba(6, 6, 0, 0.33)), url(../img/room12-small.jpg) center center;
   background-size: cover;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 86px 0 0 0; }
   @media only screen and (min-width: 768px) {
-    .home, .homeMain {
+    .home,
+    .homeMain {
       padding-top: 0; } }
-  .home svg, .homeMain svg {
+  .home svg,
+  .homeMain svg {
     height: 100%; }
     @media only screen and (min-width: 768px) {
-      .home svg, .homeMain svg {
+      .home svg,
+      .homeMain svg {
         padding-top: 6em;
         height: 100%; } }
     @media only screen and (min-width: 1024px) {
-      .home svg, .homeMain svg {
+      .home svg,
+      .homeMain svg {
         width: 100%;
         height: 107%;
         padding-top: 0; } }
-  .home .animated_text, .homeMain .animated_text {
+  .home .animated_text,
+  .homeMain .animated_text {
     margin-bottom: -2.5rem; }
-  .home .my_name, .homeMain .my_name {
+  .home .my_name,
+  .homeMain .my_name {
     font-family: "Poiret One", cursive;
     font-family: "Audiowide", cursive;
     font-family: "Roboto Condensed", sans-serif;
@@ -74,14 +81,15 @@ a {
     text-shadow: none;
     font-size: 2.33rem;
     line-height: 0.98em;
-    color: #967e3a;
+    color: #ffffff;
     text-align: right;
     text-transform: none;
     font-weight: bold;
     text-align: center;
     padding: 0 1rem;
     text-transform: uppercase; }
-  .home .title_txt_container .title_text, .homeMain .title_txt_container .title_text {
+  .home .title_txt_container .title_text,
+  .homeMain .title_txt_container .title_text {
     width: 100%;
     letter-spacing: 0.024rem;
     font-size: 1.35rem;
@@ -90,10 +98,11 @@ a {
     font-family: "Roboto Condensed", sans-serif;
     font-family: "Cormorant Unicase", serif;
     font-weight: bolder;
-    color: #967e3a;
+    color: #ffffff;
     text-shadow: none;
     padding: 0; }
-  .home .svg-container, .homeMain .svg-container {
+  .home .svg-container,
+  .homeMain .svg-container {
     width: 80%;
     text-align: center;
     display: -webkit-box;
@@ -105,11 +114,13 @@ a {
     -webkit-transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear, -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
             transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear, -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1); }
     @media only screen and (min-width: 1024px) {
-      .home .svg-container, .homeMain .svg-container {
+      .home .svg-container,
+      .homeMain .svg-container {
         height: 100vh;
         width: 28%;
         padding-top: 7em; } }
-    .home .svg-container #leters, .homeMain .svg-container #leters {
+    .home .svg-container #leters,
+    .homeMain .svg-container #leters {
       animation: yellow_ring 4.5s infinite linear alternate-reverse;
       -webkit-transform-origin: center;
               transform-origin: center;
@@ -130,7 +141,8 @@ a {
   to {
     -webkit-transform: rotateZ(25deg);
             transform: rotateZ(25deg); } }
-    .home .svg-container #semi_red, .homeMain .svg-container #semi_red {
+    .home .svg-container #semi_red,
+    .homeMain .svg-container #semi_red {
       animation: ring2 8.5s infinite linear alternate-reverse;
       -webkit-transform-origin: center;
               transform-origin: center;
@@ -151,14 +163,17 @@ a {
   to {
     -webkit-transform: rotateZ(360deg);
             transform: rotateZ(360deg); } }
-  .home .fit-picture, .homeMain .fit-picture {
+  .home .fit-picture,
+  .homeMain .fit-picture {
     width: 59%; }
     @media only screen and (min-width: 1024px) {
-      .home .fit-picture, .homeMain .fit-picture {
+      .home .fit-picture,
+      .homeMain .fit-picture {
         width: 20%;
         height: 300px;
         opacity: 0.6; } }
-  .home h2, .homeMain h2 {
+  .home h2,
+  .homeMain h2 {
     text-transform: normal;
     font-size: 1.2rem;
     line-height: 1.5rem;
@@ -174,13 +189,16 @@ a {
     letter-spacing: 0;
     text-shadow: 0.5px 1.36px #54849a; }
     @media only screen and (min-width: 768px) {
-      .home h2, .homeMain h2 {
+      .home h2,
+      .homeMain h2 {
         font-size: 1.3rem; } }
     @media only screen and (min-width: 1024px) {
-      .home h2, .homeMain h2 {
+      .home h2,
+      .homeMain h2 {
         font-size: 1.1rem;
         letter-spacing: 0; } }
-  .home__name, .homeMain__name {
+  .home__name,
+  .homeMain__name {
     font-size: 2.1rem;
     padding-bottom: 0.5rem;
     line-height: 3rem;
@@ -192,15 +210,19 @@ a {
     text-shadow: 1.8px 2.36px #3e473a;
     text-shadow: 1.8px 2.36px #202d33; }
     @media only screen and (min-width: 768px) {
-      .home__name, .homeMain__name {
+      .home__name,
+      .homeMain__name {
         font-size: 3rem; } }
     @media only screen and (min-width: 1024px) {
-      .home__name, .homeMain__name {
+      .home__name,
+      .homeMain__name {
         font-size: 2.6rem; } }
-    .home__name--last, .homeMain__name--last {
+    .home__name--last,
+    .homeMain__name--last {
       font-weight: 700;
       color: #e5fff6; }
-  .home .cta__button, .homeMain .cta__button {
+  .home .cta__button,
+  .homeMain .cta__button {
     background: none;
     padding: 0.5rem;
     border-radius: 0.42rem;
@@ -209,13 +231,16 @@ a {
     -webkit-box-shadow: #a8bacc 1px 1px 4px, #b9cfd4 -1px -1px 4px;
             box-shadow: #a8bacc 1px 1px 4px, #b9cfd4 -1px -1px 4px; }
     @media only screen and (min-width: 768px) {
-      .home .cta__button, .homeMain .cta__button {
+      .home .cta__button,
+      .homeMain .cta__button {
         border-radius: 0.44rem; } }
     @media only screen and (min-width: 1024px) {
-      .home .cta__button, .homeMain .cta__button {
+      .home .cta__button,
+      .homeMain .cta__button {
         width: auto;
         padding: 0; } }
-    .home .cta__button #cta__link, .homeMain .cta__button #cta__link {
+    .home .cta__button #cta__link,
+    .homeMain .cta__button #cta__link {
       text-shadow: 1.08px 1.36px #202d33;
       font-size: 1.06rem;
       font-weight: bold;
@@ -225,9 +250,11 @@ a {
       height: 100%;
       margin: 1rem; }
       @media only screen and (min-width: 768px) {
-        .home .cta__button #cta__link, .homeMain .cta__button #cta__link {
+        .home .cta__button #cta__link,
+        .homeMain .cta__button #cta__link {
           line-height: 2.2rem; } }
-      .home .cta__button #cta__link:hover, .homeMain .cta__button #cta__link:hover {
+      .home .cta__button #cta__link:hover,
+      .homeMain .cta__button #cta__link:hover {
         cursor: pointer;
         color: #93a7a9;
         font-weight: bolder;
@@ -235,30 +262,39 @@ a {
         font-size: 1.06rem;
         font-style: italic; }
         @media only screen and (min-width: 768px) {
-          .home .cta__button #cta__link:hover, .homeMain .cta__button #cta__link:hover {
+          .home .cta__button #cta__link:hover,
+          .homeMain .cta__button #cta__link:hover {
             line-height: 2.2rem; } }
-  .home .menu-nav__item:nth-child(1), .homeMain .menu-nav__item:nth-child(1) {
+  .home .menu-nav__item:nth-child(1),
+  .homeMain .menu-nav__item:nth-child(1) {
     -webkit-transition-delay: 0.175s;
             transition-delay: 0.175s; }
-  .home .menu-nav__item:nth-child(2), .homeMain .menu-nav__item:nth-child(2) {
+  .home .menu-nav__item:nth-child(2),
+  .homeMain .menu-nav__item:nth-child(2) {
     -webkit-transition-delay: 0.245s;
             transition-delay: 0.245s; }
-  .home .menu-nav__item:nth-child(3), .homeMain .menu-nav__item:nth-child(3) {
+  .home .menu-nav__item:nth-child(3),
+  .homeMain .menu-nav__item:nth-child(3) {
     -webkit-transition-delay: 0.315s;
             transition-delay: 0.315s; }
-  .home .menu-nav__item:nth-child(4), .homeMain .menu-nav__item:nth-child(4) {
+  .home .menu-nav__item:nth-child(4),
+  .homeMain .menu-nav__item:nth-child(4) {
     -webkit-transition-delay: 0.385s;
             transition-delay: 0.385s; }
-  .home .projects__item3, .homeMain .projects__item3 {
+  .home .projects__item3,
+  .homeMain .projects__item3 {
     width: auto;
     overflow: hidden;
     max-height: none; }
     @media only screen and (min-width: 1024px) {
-      .home .projects__item3, .homeMain .projects__item3 {
+      .home .projects__item3,
+      .homeMain .projects__item3 {
         width: 42%; } }
-    .home .projects__item3 .project__title, .homeMain .projects__item3 .project__title {
+    .home .projects__item3 .project__title,
+    .homeMain .projects__item3 .project__title {
       color: #22333a; }
-  .home .block, .homeMain .block {
+  .home .block,
+  .homeMain .block {
     background: -webkit-gradient(linear, left top, right top, from(rgba(241, 248, 255, 0.29)), to(rgba(184, 248, 255, 0.23)));
     background: linear-gradient(to right, rgba(241, 248, 255, 0.29), rgba(184, 248, 255, 0.23)); }
 
@@ -410,8 +446,8 @@ a {
           -ms-flex-direction: row;
               flex-direction: row;
       height: 100vh;
-      background: -webkit-gradient(linear, left top, right top, from(rgba(57, 106, 245, 0.6)), to(rgba(6, 6, 0, 0.62))), url(../img/room12-small.jpg) center center;
-      background: linear-gradient(to right, rgba(57, 106, 245, 0.6), rgba(6, 6, 0, 0.62)), url(../img/room12-small.jpg) center center;
+      background: -webkit-gradient(linear, left top, right top, from(rgba(0, 126, 255, 0.34)), to(rgba(6, 6, 0, 0.33))), url(../img/room12-small.jpg) center center;
+      background: linear-gradient(to right, rgba(0, 126, 255, 0.34), rgba(6, 6, 0, 0.33)), url(../img/room12-small.jpg) center center;
       background-size: cover; }
     .nav .menu-nav__item {
       -webkit-transform: translateX(100vw);
@@ -1388,8 +1424,7 @@ header {
           flex-direction: column;
   position: fixed;
   z-index: 0;
-  width: 100%;
-  height: 80px; }
+  width: 100%; }
 
 .landing_menu {
   visibility: hidden;
