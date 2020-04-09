@@ -8,15 +8,11 @@
   align-items: center;
   text-align: center;
   overflow: hidden;
-  background: linear-gradient(
-      to right,
-      rgba(0, 126, 255, 0.34),
-      rgba(6, 6, 0, 0.33)
-    ),
-    url(../img/room12-small.jpg) center center;
+  background: linear-gradient(to right, #16202900, #507c9682),
+    url(../img/head.jpg) center center;
   background-size: cover;
   justify-content: space-between;
-  padding: 86px 0 0 0;
+  padding: 32px 0 0 0;
 
   @include MEDIUM-DEVICE-WIDTH {
     padding-top: 0;
@@ -305,9 +301,3 @@
   }
 }
 
-// svg classes
-
-#bottom_flap,
-#top_flap {
-  // display: none;
-}

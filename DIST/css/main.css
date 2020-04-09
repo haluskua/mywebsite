@@ -44,13 +44,13 @@ a {
           align-items: center;
   text-align: center;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 126, 255, 0.34)), to(rgba(6, 6, 0, 0.33))), url(../img/room12-small.jpg) center center;
-  background: linear-gradient(to right, rgba(0, 126, 255, 0.34), rgba(6, 6, 0, 0.33)), url(../img/room12-small.jpg) center center;
+  background: -webkit-gradient(linear, left top, right top, from(#16202900), to(#507c9682)), url(../img/head.jpg) center center;
+  background: linear-gradient(to right, #16202900, #507c9682), url(../img/head.jpg) center center;
   background-size: cover;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 86px 0 0 0; }
+  padding: 32px 0 0 0; }
   @media only screen and (min-width: 768px) {
     .home,
     .homeMain {
@@ -1403,6 +1403,7 @@ a {
 a:link {
   color: purple;
   background-color: #f3f0d8;
+  background-color: #233a42;
   width: 100%; }
 
 a:focus {
