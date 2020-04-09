@@ -35,7 +35,7 @@
       text-align: left;
       padding: 8px;
       padding-bottom: 1px;
-      color: yellowgreen;
+      color: #878a4f;
       display: flex;
       margin-bottom: 0;
       font-family: "Audiowide", "Julius Sans", "Script";
@@ -45,7 +45,7 @@
       }
     }
     p {
-      color: #1f2429;
+      color: #292822;
       padding: 4%;
       width: 100%;
       margin-top: 1.5rem;
@@ -99,12 +99,15 @@
       width: 90%;
     }
     h3 {
-      color: yellowgreen;
-      font-size: 3em;
+      color: #29ce00;
+      font-size: 2.2em;
       padding-top: 15px;
       text-align: left;
+      line-height: 1.2em;
       font-family: "Turret Road", "Bebas Niue", "cursive";
-      font-weight: normal;
+      font-family: "Audiowide", "Montserrat", "cursive";
+      // font-family: "Montserrat","Garamond", "Girasol", 'cursive';
+      font-weight: bold;
     }
     h5 {
       color: #716f51;
@@ -209,7 +212,8 @@
         line-height: 1.55rem;
         font-size: 1.33rem;
         color: $dark-text;
-        font-family: "Turret", "Cursive";
+        font-family: "Audiowide", "Montserrat", "cursive";
+
         @include MEDIUM-DEVICE-WIDTH {
         }
         @include LARGE-DEVICE-WIDTH {
@@ -221,6 +225,7 @@
         letter-spacing: 0.02rem;
         color: #5f6558;
         font-weight: normal;
+        line-height: 1.1em;
         font-style: normal;
         padding-left: 4%;
         padding-top: 0.045rem;
@@ -235,6 +240,8 @@
         color: #88866d;
         font-size: 1.5em;
         font-family: "Turret Road", "Bebas Niue", "cursive";
+        font-family: "Montserrat", "cursive";
+
       }
       h6 {
         margin: 0.3rem 0;
