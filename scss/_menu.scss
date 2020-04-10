@@ -2,7 +2,7 @@
   position: absolute;
   left: 2%;
   top: 0.5rem;
-  width: 40%;
+  width: 50%;
   height: 0px;
   background: #ffffff;
   transition: all 0.42s ease-in-out;
@@ -59,7 +59,7 @@
     color: $accent-color;
     font-size: 1.5em;
     font-weight: bold;
-    font-family: "Audiowide", "Montserrat", "cursive";
+    font-family: "Cinzel Decorative", cursive;
   }
   .dezines {
     color: $dark-text;
@@ -113,8 +113,8 @@
       padding: 35px;
       flex-direction: row;
       height: 100vh;
-      background: linear-gradient(to right, #caccb2, #e2e4c4),
-        url(../img/room12-small.jpg) center center;
+      background: linear-gradient(to right, #c5e4f9cf, #fffff6),
+        url(../img/rooster-b-w.jpg) center center;
       background-size: cover;
     }
 
@@ -224,15 +224,12 @@
 
   .my_name {
     font-family: "Cinzel Decorative", cursive;
-    font-size: 3.4em;
-    line-height: 0.84em;
-    color: #658000;
-    text-align: right;
-    text-transform: none;
-    font-weight: bold;
+    font-size: 2.1em;
+    line-height: 1em;
+    color: #515658;
+    letter-spacing: 0;
     text-align: left;
-    padding: 0 1rem;
-    text-shadow: 3.28px 3.36px #eaffc1;
+    text-shadow: none;
   }
 
   .svg-container {
@@ -254,18 +251,19 @@
     }
   }
   .title_txt_container {
-    margin-top: -2%;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 10px;
+
     .title_text {
-      width: 100%;
-      letter-spacing: 0.024rem;
-      font-size: 1.35rem;
+      font-size: 1rem;
       font-family: "Poiret One", cursive;
       font-family: "Audiowide", cursive;
-      font-family: "Roboto Condensed", sans-serif;
       font-family: "Cormorant Unicase", serif;
-      // font-family: "Libre Barcode 39 Text", cursive;
-      font-weight: bolder;
-      color: #fffed2;
+      font-family: "Cinzel Decorative", cursive;
+      text-shadow: 3.28px 3.36px #e7ffc7;
+      color: #1f1e11;
       text-shadow: none;
       padding: 0;
     }

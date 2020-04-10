@@ -1,6 +1,6 @@
 .about {
   padding-bottom: 0rem;
-  background-color: rgba(189, 218, 255, 0.7);
+  background-color: rgb(35, 58, 66);
   padding-top: 2rem;
   padding-bottom: 2rem;
   .breadCrumbs {
@@ -17,7 +17,11 @@
 
   &__bio-image {
     width: 100%;
-    background: rgba(228, 222, 30, 0.54);
+    background: linear-gradient(
+      to right,
+      rgba(255, 250, 230, 0.8117647058823529),
+      #fffff6
+    );
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,7 +92,9 @@
   }
 
   &__bio {
-    background-color: #fffae7;
+    background: linear-gradient(to right, #fffef8, #fffff6),
+      url(../img/rooster-b-w.jpg) center center;
+    background-size: cover;
     width: 98%;
     padding: 3%;
     text-align: center;
@@ -97,15 +103,13 @@
       width: 90%;
     }
     h3 {
-      color: #80b727;
-      font-size: 2em;
+      color: #515658;
+      font-size: 1.5em;
       padding-top: 15px;
       text-align: left;
-      line-height: 1.052em;
-      font-family: "Bebas Neue", "cursive";
-      font-family: "Audiowide", "cursive";
       font-weight: bold;
-      text-transform: uppercase;
+      line-height: 1.052em;
+      font-family: "Cinzel Decorative", cursive;
     }
     h5 {
       color: #716f51;
@@ -137,7 +141,7 @@
 
   .jobs {
     width: 98%;
-    background-color: #fffae7;
+    background-color: #ffffff;
     display: flex;
     padding: 2%;
     margin: 0.2rem auto 0 auto;
@@ -164,7 +168,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: flex-end;
-      box-shadow: 2px 6px 7px #a2956b, 2px -4px 10px #ccc5a9;
+      box-shadow: 2px 6px 7px #fff89ea1, 2px -4px 10px #ccc5a900;
       @include MEDIUM-DEVICE-WIDTH {
         height: 35vh;
         background-size: cover;
