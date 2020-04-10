@@ -41,8 +41,8 @@ a {
           align-items: center;
   text-align: center;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(#c5e4f9cf), to(#fffff6)), url(../img/rooster-b-w.jpg) center center;
-  background: linear-gradient(to right, #c5e4f9cf, #fffff6), url(../img/rooster-b-w.jpg) center center;
+  background: -webkit-gradient(linear, left top, right top, from(#efac81d1), to(#ffffc9)), url(../img/rooster-b-w.jpg) center center;
+  background: linear-gradient(to right, #efac81d1, #ffffc9), url(../img/rooster-b-w.jpg) center center;
   background-size: cover;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -364,7 +364,7 @@ a {
   z-index: 4;
   width: 100vw;
   height: 35px;
-  background-color: #f5eeba;
+  background-color: #d99f70;
   opacity: 0.98;
   -webkit-box-shadow: 0px 2px 13px rgba(179, 173, 112, 0.54), 0px -3px 4px rgba(228, 204, 94, 0.71);
           box-shadow: 0px 2px 13px rgba(179, 173, 112, 0.54), 0px -3px 4px rgba(228, 204, 94, 0.71); }
@@ -825,8 +825,8 @@ a {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
-      padding: 10px;
-      border-bottom: 0.5px solid #9a8f6e;
+      padding: 20px 5px;
+      border-bottom: 0.5px solid #b89d55;
       -webkit-box-shadow: 1px 11px 7px rgba(162, 158, 142, 0), -25px 10px 9px rgba(152, 152, 129, 0.14);
               box-shadow: 1px 11px 7px rgba(162, 158, 142, 0), -25px 10px 9px rgba(152, 152, 129, 0.14);
       background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#fff6ed)), url(../img/rooster-b-w.jpg) center center;
@@ -834,8 +834,8 @@ a {
       background-size: cover; }
       .about .jobs__job h2,
       .about .jobs__job h3 {
-        line-height: 1.62rem;
-        font-size: 1.42rem;
+        line-height: 1.5rem;
+        font-size: 1.4rem;
         padding: 6px 0 0 0;
         letter-spacing: 0.01em;
         color: #bd7e40;
@@ -857,7 +857,6 @@ a {
         line-height: 1.1em;
         font-style: normal;
         padding-left: 1%;
-        padding-top: 0.045rem;
         line-height: 1.4em; }
         @media only screen and (min-width: 1024px) {
           .about .jobs__job h5 {
