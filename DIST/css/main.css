@@ -349,12 +349,12 @@ a {
         -webkit-transform: rotate(-45deg) translate(3px, -7px);
                 transform: rotate(-45deg) translate(3px, -7px); }
   .menu-btn__logo {
-    color: #daa520;
+    color: #693d05;
     font-size: 1.5em;
     font-weight: bold;
     font-family: "Cinzel Decorative", cursive; }
   .menu-btn .dezines {
-    color: #1f2429; }
+    color: #202328; }
 
 .nav {
   position: fixed;
@@ -362,7 +362,7 @@ a {
   z-index: 4;
   width: 100vw;
   height: 35px;
-  background-color: #f3f0d8;
+  background-color: #f5eeba;
   opacity: 0.98;
   -webkit-box-shadow: 0px 2px 13px rgba(179, 173, 112, 0.54), 0px -3px 4px rgba(228, 204, 94, 0.71);
           box-shadow: 0px 2px 13px rgba(179, 173, 112, 0.54), 0px -3px 4px rgba(228, 204, 94, 0.71); }
@@ -418,8 +418,8 @@ a {
           -ms-flex-direction: row;
               flex-direction: row;
       height: 100vh;
-      background: -webkit-gradient(linear, left top, right top, from(#c5e4f9cf), to(#fffff6)), url(../img/rooster-b-w.jpg) center center;
-      background: linear-gradient(to right, #c5e4f9cf, #fffff6), url(../img/rooster-b-w.jpg) center center;
+      background: -webkit-gradient(linear, left top, right top, from(#efac81d1), to(#ffffc9)), url(../img/rooster-b-w.jpg) center center;
+      background: linear-gradient(to right, #efac81d1, #ffffc9), url(../img/rooster-b-w.jpg) center center;
       background-size: cover; }
     .nav .menu-nav__item {
       -webkit-transform: translateX(100vw);
@@ -515,7 +515,7 @@ a {
     font-family: "Cinzel Decorative", cursive;
     font-size: 2.1em;
     line-height: 1em;
-    color: #515658;
+    color: #252419;
     letter-spacing: 0;
     text-align: left;
     text-shadow: none; }
@@ -601,7 +601,7 @@ a {
 
 .about {
   padding-bottom: 0rem;
-  background-color: #233a42;
+  background-color: #f8f3b0;
   padding-top: 2rem;
   padding-bottom: 2rem; }
   .about .breadCrumbs {
@@ -616,8 +616,8 @@ a {
         top: 15%; } }
   .about__bio-image {
     width: 100%;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 250, 230, 0.811765)), to(#fffff6));
-    background: linear-gradient(to right, rgba(255, 250, 230, 0.811765), #fffff6);
+    background: -webkit-gradient(linear, left top, right top, from(#e6e8a9c7), to(#fdf5e4d6));
+    background: linear-gradient(to right, #e6e8a9c7, #fdf5e4d6);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -636,7 +636,6 @@ a {
         padding: 71px 5%; } }
     .about__bio-image .text-secondary {
       font-size: 1.58rem;
-      font-weight: bolder;
       text-align: left;
       padding-bottom: 1px;
       color: #80b727;
@@ -645,7 +644,7 @@ a {
       display: flex;
       margin-bottom: 0;
       font-family: "Bebas Neue", "Juslius Sans", "cursive";
-      font-family: "Audiowide", "Julius Sans", "Script"; }
+      font-family: "Cinzel Decorative", cursive; }
       @media only screen and (min-width: 1024px) {
         .about__bio-image .text-secondary {
           font-size: 1.27rem; } }
@@ -656,7 +655,7 @@ a {
       width: 100%;
       margin-top: 1.1rem;
       border-radius: 0.176rem;
-      line-height: 1.4rem;
+      line-height: 1.5rem;
       text-align: left;
       font-size: 1rem; }
       @media only screen and (min-width: 768px) {
@@ -712,13 +711,14 @@ a {
         font-size: 1.5rem;
         width: 90%; } }
     .about__bio h3 {
-      color: #515658;
+      color: #87c567;
       font-size: 1.5em;
       padding-top: 15px;
       text-align: left;
       font-weight: bold;
       line-height: 1.052em;
-      font-family: "Cinzel Decorative", cursive; }
+      font-family: "Cinzel Decorative", cursive;
+      font-family: "Roboto", "Monserrat", cursive; }
     .about__bio h5 {
       color: #716f51;
       font-size: 1em;
@@ -832,8 +832,10 @@ a {
       .about .jobs__job h3 {
         line-height: 1.62rem;
         font-size: 1.35rem;
+        font-weight: bold;
         padding: 6px 0 0 0;
-        color: #04504c;
+        letter-spacing: 0.01em;
+        color: #87c567;
         font-family: "Montserrat", "cursive";
         font-family: "Roboto", "Monserrat"; }
         @media only screen and (min-width: 1024px) {
@@ -841,9 +843,9 @@ a {
           .about .jobs__job h3 {
             font-size: 1.7rem; } }
       .about .jobs__job h5 {
-        font-size: 0.89rem;
+        font-size: 1rem;
         letter-spacing: 0.02rem;
-        color: #5f6558;
+        color: #69865a;
         font-weight: normal;
         line-height: 1.1em;
         font-style: normal;

@@ -1,6 +1,6 @@
 .about {
   padding-bottom: 0rem;
-  background-color: rgb(35, 58, 66);
+  background-color: #f8f3b0;
   padding-top: 2rem;
   padding-bottom: 2rem;
   .breadCrumbs {
@@ -17,11 +17,7 @@
 
   &__bio-image {
     width: 100%;
-    background: linear-gradient(
-      to right,
-      rgba(255, 250, 230, 0.8117647058823529),
-      #fffff6
-    );
+    background: linear-gradient(to right, #e6e8a9c7, #fdf5e4d6);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,14 +30,13 @@
 
     .text-secondary {
       font-size: 1.58rem;
-      font-weight: bolder;
       text-align: left;
       padding-bottom: 1px;
       color: #80b727;
       display: flex;
       margin-bottom: 0;
       font-family: "Bebas Neue", "Juslius Sans", "cursive";
-      font-family: "Audiowide", "Julius Sans", "Script";
+      font-family: "Cinzel Decorative", cursive;
       @include LARGE-DEVICE-WIDTH {
         font-size: 1.27rem;
       }
@@ -53,7 +48,7 @@
       width: 100%;
       margin-top: 1.1rem;
       border-radius: 0.176rem;
-      line-height: 1.4rem;
+      line-height: 1.5rem;
       text-align: left;
       font-size: 1rem;
 
@@ -103,13 +98,14 @@
       width: 90%;
     }
     h3 {
-      color: #515658;
+      color: #87c567;
       font-size: 1.5em;
       padding-top: 15px;
       text-align: left;
       font-weight: bold;
       line-height: 1.052em;
       font-family: "Cinzel Decorative", cursive;
+      font-family: "Roboto", "Monserrat", cursive;
     }
     h5 {
       color: #716f51;
@@ -213,8 +209,10 @@
       h3 {
         line-height: 1.62rem;
         font-size: 1.35rem;
+        font-weight: bold;
         padding: 6px 0 0 0;
-        color: #04504c;
+        letter-spacing: 0.01em;
+        color: #87c567;
         font-family: "Montserrat", "cursive";
         font-family: "Roboto", "Monserrat";
 
@@ -225,15 +223,16 @@
         }
       }
       h5 {
-        font-size: 0.89rem;
+        font-size: 1rem;
         letter-spacing: 0.02rem;
-        color: #5f6558;
+        color: #69865a;
         font-weight: normal;
         line-height: 1.1em;
         font-style: normal;
         padding-left: 1%;
         padding-top: 0.045rem;
         line-height: 1.4em;
+        // font-family: "Cinzel Decorative", cursive;
 
         @include LARGE-DEVICE-WIDTH {
           font-size: 1.1rem;
