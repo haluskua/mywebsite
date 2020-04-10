@@ -89,14 +89,29 @@
     //   }
     // }
 
+    #navy_theme {
+      animation: flower 10s infinite linear alternate;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+
+    @keyframes flower {
+      from {
+        transform: rotateZ(-4deg);
+      }
+      to {
+        transform: rotateZ(4deg);
+      }
+    }
+
     #leters {
-      animation: yellow_ring 4.5s infinite linear alternate-reverse;
+      animation: yellow_ring 8.5s infinite linear alternate-reverse;
       transform-origin: center;
       transform-box: fill-box;
     }
     @keyframes yellow_ring {
       from {
-        transform: rotateZ(-50deg);
+        transform: rotateZ(-30deg);
       }
       to {
         transform: rotateZ(25deg);
@@ -104,7 +119,7 @@
     }
 
     #semi_red {
-      animation: ring2 8.5s infinite linear alternate-reverse;
+      animation: ring2 24s infinite linear alternate-reverse;
       transform-origin: center;
       transform-box: fill-box;
     }
@@ -114,7 +129,7 @@
         transform: rotateZ(0deg);
       }
       to {
-        transform: rotateZ(360deg);
+        transform: rotateZ(94deg);
       }
     }
   }

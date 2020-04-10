@@ -116,31 +116,54 @@ a {
         height: 100vh;
         width: 28%;
         padding-top: 7em; } }
+    .home .svg-container #navy_theme,
+    .homeMain .svg-container #navy_theme {
+      -webkit-animation: flower 10s infinite linear alternate;
+              animation: flower 10s infinite linear alternate;
+      -webkit-transform-origin: center;
+              transform-origin: center;
+      transform-box: fill-box; }
+
+@-webkit-keyframes flower {
+  from {
+    -webkit-transform: rotateZ(-4deg);
+            transform: rotateZ(-4deg); }
+  to {
+    -webkit-transform: rotateZ(4deg);
+            transform: rotateZ(4deg); } }
+
+@keyframes flower {
+  from {
+    -webkit-transform: rotateZ(-4deg);
+            transform: rotateZ(-4deg); }
+  to {
+    -webkit-transform: rotateZ(4deg);
+            transform: rotateZ(4deg); } }
     .home .svg-container #leters,
     .homeMain .svg-container #leters {
-      animation: yellow_ring 4.5s infinite linear alternate-reverse;
+      animation: yellow_ring 8.5s infinite linear alternate-reverse;
       -webkit-transform-origin: center;
               transform-origin: center;
       transform-box: fill-box; }
 
 @-webkit-keyframes yellow_ring {
   from {
-    -webkit-transform: rotateZ(-50deg);
-            transform: rotateZ(-50deg); }
+    -webkit-transform: rotateZ(-30deg);
+            transform: rotateZ(-30deg); }
   to {
     -webkit-transform: rotateZ(25deg);
             transform: rotateZ(25deg); } }
 
 @keyframes yellow_ring {
   from {
-    -webkit-transform: rotateZ(-50deg);
-            transform: rotateZ(-50deg); }
+    -webkit-transform: rotateZ(-30deg);
+            transform: rotateZ(-30deg); }
   to {
     -webkit-transform: rotateZ(25deg);
             transform: rotateZ(25deg); } }
     .home .svg-container #semi_red,
     .homeMain .svg-container #semi_red {
-      animation: ring2 8.5s infinite linear alternate-reverse;
+      animation: ring2 24s infinite linear alternate-reverse;
       -webkit-transform-origin: center;
               transform-origin: center;
       transform-box: fill-box; }
@@ -150,16 +173,16 @@ a {
     -webkit-transform: rotateZ(0deg);
             transform: rotateZ(0deg); }
   to {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg); } }
+    -webkit-transform: rotateZ(94deg);
+            transform: rotateZ(94deg); } }
 
 @keyframes ring2 {
   from {
     -webkit-transform: rotateZ(0deg);
             transform: rotateZ(0deg); }
   to {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg); } }
+    -webkit-transform: rotateZ(94deg);
+            transform: rotateZ(94deg); } }
   .home .fit-picture,
   .homeMain .fit-picture {
     width: 59%; }
