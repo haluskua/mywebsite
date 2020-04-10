@@ -705,8 +705,8 @@ a {
     width: 98%;
     padding: 3%;
     text-align: center;
-    background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffff94)), url(../img/rooster-b-w.jpg) center center;
-    background: linear-gradient(to right, #ffffff, #ffff94), url(../img/rooster-b-w.jpg) center center;
+    background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffcd9a)), url(../img/rooster-b-w.jpg) center center;
+    background: linear-gradient(to right, #ffffff, #ffcd9a), url(../img/rooster-b-w.jpg) center center;
     background-size: cover; }
     @media only screen and (min-width: 768px) {
       .about__bio {
@@ -830,8 +830,8 @@ a {
       border-bottom: 0.5px solid #9a8f6e;
       -webkit-box-shadow: 1px 11px 7px rgba(162, 158, 142, 0), -25px 10px 9px rgba(152, 152, 129, 0.14);
               box-shadow: 1px 11px 7px rgba(162, 158, 142, 0), -25px 10px 9px rgba(152, 152, 129, 0.14);
-      background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffff94)), url(../img/rooster-b-w.jpg) center center;
-      background: linear-gradient(to right, #ffffff, #ffff94), url(../img/rooster-b-w.jpg) center center;
+      background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffcd9a)), url(../img/rooster-b-w.jpg) center center;
+      background: linear-gradient(to right, #ffffff, #ffcd9a), url(../img/rooster-b-w.jpg) center center;
       background-size: cover; }
       .about .jobs__job h2,
       .about .jobs__job h3 {
