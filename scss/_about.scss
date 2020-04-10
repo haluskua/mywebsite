@@ -3,6 +3,7 @@
   background-color: #f8f3b0;
   padding-top: 2rem;
   padding-bottom: 2rem;
+
   .breadCrumbs {
     position: absolute;
     top: 3%;
@@ -17,7 +18,7 @@
 
   &__bio-image {
     width: 100%;
-    background: linear-gradient(to right, #e6e8a9c7, #fdf5e4d6);
+    background: linear-gradient(to right, #c3614094, #ffe9bbd6);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,7 +76,7 @@
         margin-top: 5px;
         font-size: 1rem;
         background: none;
-        color: yellowgreen;
+        color: #d09667;
         font-style: italic;
         border: none;
         @include MEDIUM-DEVICE-WIDTH {
@@ -87,18 +88,18 @@
   }
 
   &__bio {
-    background: linear-gradient(to right, #fffef8, #fffff6),
-      url(../img/rooster-b-w.jpg) center center;
-    background-size: cover;
     width: 98%;
     padding: 3%;
     text-align: center;
+    background: linear-gradient(to right, #ffffff, #ffff94),
+      url(../img/rooster-b-w.jpg) center center;
+    background-size: cover;
     @include MEDIUM-DEVICE-WIDTH {
       font-size: 1.5rem;
       width: 90%;
     }
     h3 {
-      color: #87c567;
+      color: #bd7e40;
       font-size: 1.5em;
       padding-top: 15px;
       text-align: left;
@@ -205,6 +206,9 @@
       border-bottom: 0.5px solid #9a8f6e;
       box-shadow: 1px 11px 7px rgba(162, 158, 142, 0),
         -25px 10px 9px rgba(152, 152, 129, 0.14);
+      background: linear-gradient(to right, #ffffff, #ffff94),
+        url(../img/rooster-b-w.jpg) center center;
+      background-size: cover;
       h2,
       h3 {
         line-height: 1.62rem;
@@ -212,7 +216,7 @@
         font-weight: bold;
         padding: 6px 0 0 0;
         letter-spacing: 0.01em;
-        color: #87c567;
+        color: #bd7e40;
         font-family: "Montserrat", "cursive";
         font-family: "Roboto", "Monserrat";
 
@@ -222,10 +226,15 @@
           font-size: 1.7rem;
         }
       }
+      .text-secondary {
+        color: #63451a;
+        font-size: 1.5em;
+        font-weight: normal;
+      }
       h5 {
         font-size: 1rem;
         letter-spacing: 0.02rem;
-        color: #69865a;
+        color: #b19445;
         font-weight: normal;
         line-height: 1.1em;
         font-style: normal;

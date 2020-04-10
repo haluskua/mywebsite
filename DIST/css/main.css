@@ -352,7 +352,9 @@ a {
     color: #693d05;
     font-size: 1.5em;
     font-weight: bold;
-    font-family: "Cinzel Decorative", cursive; }
+    font-family: "Cinzel Decorative", cursive;
+    background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffff94));
+    background: linear-gradient(to right, #ffffff, #ffff94); }
   .menu-btn .dezines {
     color: #202328; }
 
@@ -616,8 +618,8 @@ a {
         top: 15%; } }
   .about__bio-image {
     width: 100%;
-    background: -webkit-gradient(linear, left top, right top, from(#e6e8a9c7), to(#fdf5e4d6));
-    background: linear-gradient(to right, #e6e8a9c7, #fdf5e4d6);
+    background: -webkit-gradient(linear, left top, right top, from(#c3614094), to(#ffe9bbd6));
+    background: linear-gradient(to right, #c3614094, #ffe9bbd6);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -688,7 +690,7 @@ a {
         margin-top: 5px;
         font-size: 1rem;
         background: none;
-        color: yellowgreen;
+        color: #d09667;
         font-style: italic;
         border: none; }
         @media only screen and (min-width: 768px) {
@@ -700,18 +702,18 @@ a {
                 -ms-flex-pack: start;
                     justify-content: flex-start; } }
   .about__bio {
-    background: -webkit-gradient(linear, left top, right top, from(#fffef8), to(#fffff6)), url(../img/rooster-b-w.jpg) center center;
-    background: linear-gradient(to right, #fffef8, #fffff6), url(../img/rooster-b-w.jpg) center center;
-    background-size: cover;
     width: 98%;
     padding: 3%;
-    text-align: center; }
+    text-align: center;
+    background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffff94)), url(../img/rooster-b-w.jpg) center center;
+    background: linear-gradient(to right, #ffffff, #ffff94), url(../img/rooster-b-w.jpg) center center;
+    background-size: cover; }
     @media only screen and (min-width: 768px) {
       .about__bio {
         font-size: 1.5rem;
         width: 90%; } }
     .about__bio h3 {
-      color: #87c567;
+      color: #bd7e40;
       font-size: 1.5em;
       padding-top: 15px;
       text-align: left;
@@ -827,7 +829,10 @@ a {
       padding: 10px;
       border-bottom: 0.5px solid #9a8f6e;
       -webkit-box-shadow: 1px 11px 7px rgba(162, 158, 142, 0), -25px 10px 9px rgba(152, 152, 129, 0.14);
-              box-shadow: 1px 11px 7px rgba(162, 158, 142, 0), -25px 10px 9px rgba(152, 152, 129, 0.14); }
+              box-shadow: 1px 11px 7px rgba(162, 158, 142, 0), -25px 10px 9px rgba(152, 152, 129, 0.14);
+      background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffff94)), url(../img/rooster-b-w.jpg) center center;
+      background: linear-gradient(to right, #ffffff, #ffff94), url(../img/rooster-b-w.jpg) center center;
+      background-size: cover; }
       .about .jobs__job h2,
       .about .jobs__job h3 {
         line-height: 1.62rem;
@@ -835,17 +840,21 @@ a {
         font-weight: bold;
         padding: 6px 0 0 0;
         letter-spacing: 0.01em;
-        color: #87c567;
+        color: #bd7e40;
         font-family: "Montserrat", "cursive";
         font-family: "Roboto", "Monserrat"; }
         @media only screen and (min-width: 1024px) {
           .about .jobs__job h2,
           .about .jobs__job h3 {
             font-size: 1.7rem; } }
+      .about .jobs__job .text-secondary {
+        color: #63451a;
+        font-size: 1.5em;
+        font-weight: normal; }
       .about .jobs__job h5 {
         font-size: 1rem;
         letter-spacing: 0.02rem;
-        color: #69865a;
+        color: #b19445;
         font-weight: normal;
         line-height: 1.1em;
         font-style: normal;
