@@ -674,15 +674,16 @@ a {
         .about__bio-image .text-secondary {
           font-size: 1.27rem; } }
     .about__bio-image p {
-      color: #5f6558;
+      font-family: "Cormorant", serif;
+      color: #77560b;
       padding: 1%;
       padding-bottom: 1.4rem;
       width: 100%;
       margin-top: 1.1rem;
       border-radius: 0.176rem;
-      line-height: 1.5rem;
+      line-height: 1.63rem;
       text-align: left;
-      font-size: 1rem; }
+      font-size: 1.3rem; }
       @media only screen and (min-width: 768px) {
         .about__bio-image p {
           border-radius: 0.05rem;
@@ -728,8 +729,8 @@ a {
     width: 98%;
     padding: 3%;
     text-align: center;
-    background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#fff6ed)), url(../img/rooster-b-w.jpg) center center;
-    background: linear-gradient(to right, #ffffff, #fff6ed), url(../img/rooster-b-w.jpg) center center;
+    background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffffcf)), url(../img/rooster-b-w.jpg) center center;
+    background: linear-gradient(to right, #ffffff, #ffffcf), url(../img/rooster-b-w.jpg) center center;
     background-size: cover; }
     @media only screen and (min-width: 768px) {
       .about__bio {
@@ -742,8 +743,7 @@ a {
       text-align: left;
       font-weight: bold;
       line-height: 1.052em;
-      font-family: "Cinzel Decorative", cursive;
-      font-family: "Roboto", "Monserrat", cursive; }
+      font-family: "Cinzel Decorative", cursive; }
     .about__bio h5 {
       color: #716f51;
       font-size: 1em;
@@ -812,31 +812,6 @@ a {
       @media only screen and (min-width: 1024px) {
         .about .jobs__bio-image {
           height: 55vh; } }
-      .about .jobs__bio-image .text-secondary {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        font-family: "Montserrat", "cursive";
-        width: 100%;
-        display: flex;
-        color: #93a7a9;
-        text-transform: uppercase;
-        text-align: justify;
-        font-size: 0.81rem;
-        margin: 0; }
-        @media only screen and (min-width: 768px) {
-          .about .jobs__bio-image .text-secondary {
-            background: none;
-            margin-bottom: 0rem;
-            font-size: 1rem;
-            text-align: right; } }
-        @media only screen and (min-width: 1024px) {
-          .about .jobs__bio-image .text-secondary {
-            font-size: 0.7rem;
-            padding: 0 6%; } }
     .about .jobs__job {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -861,15 +836,25 @@ a {
         font-size: 1.4rem;
         padding: 6px 0 0 0;
         letter-spacing: 0.01em;
-        color: #bd7e40;
+        font-family: "Comorant", serif;
+        color: #463510;
         font-family: "Montserrat", "cursive";
-        font-family: "Roboto", "Monserrat"; }
+        font-family: "Roboto", "Monserrat";
+        font-family: "Cormorant", serif;
+        font-weight: bold; }
         @media only screen and (min-width: 1024px) {
           .about .jobs__job h2,
           .about .jobs__job h3 {
             font-size: 1.7rem; } }
       .about .jobs__job .text-secondary {
-        color: #63451a;
+        text-align: left;
+        padding-bottom: 1px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 0;
+        font-family: "Cinzel Decorative", cursive;
+        color: #77560b;
         font-size: 1.5em;
         font-weight: normal; }
       .about .jobs__job h5 {
