@@ -84,6 +84,12 @@ header {
   position: fixed;
   z-index: 1;
   width: 100%;
+  .O {
+    color: red;
+  }
+  .H {
+    color: yellow;
+  }
 }
 
 // togle menu visibility set

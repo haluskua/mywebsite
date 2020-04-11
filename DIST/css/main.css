@@ -378,8 +378,6 @@ a {
     font-family: "Cinzel Decorative", cursive;
     background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffff94));
     background: linear-gradient(to right, #ffffff, #ffff94); }
-  .menu-btn .dezines {
-    color: #202328; }
 
 .nav {
   position: fixed;
@@ -967,7 +965,7 @@ a {
         height: 42vh;
         margin: 0 auto; } }
     .projects__bio-image .text-secondary {
-      font-family: "Turret Road", "cursive";
+      font-family: "Cinzel Decorative", cursive;
       text-transform: uppercase;
       font-size: 2rem;
       margin-bottom: 0.62rem;
@@ -1426,6 +1424,10 @@ header {
   position: fixed;
   z-index: 1;
   width: 100%; }
+  header .O {
+    color: red; }
+  header .H {
+    color: yellow; }
 
 .landing_menu {
   visibility: hidden;
