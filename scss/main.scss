@@ -76,6 +76,9 @@ h5 {
   text-align: left;
 
 }
+.bottom-padding {
+  padding: 1rem;
+}
 
 a {
   color: set-text-color($primary-color);
@@ -152,7 +155,7 @@ p {
 }
 
 .main-title {
-  font-family: "Roboto", "Monserrat", cursive;
+  font-family: "Roboto", "Montserrat", cursive;
   text-transform: uppercase;
   font-size: 1.43rem;
   margin-bottom: 0.862rem;

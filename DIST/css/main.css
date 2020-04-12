@@ -442,8 +442,8 @@ a {
               flex-direction: row;
       height: 100vh;
       z-index: 10;
-      background: -webkit-gradient(linear, left top, right top, from(#270505f0), to(#1f0b038c)), url(../img/sunrise.jpg) center center;
-      background: linear-gradient(to right, #270505f0, #1f0b038c), url(../img/sunrise.jpg) center center;
+      background: -webkit-gradient(linear, left top, right top, from(#f5f5f500), to(#eafafd57)), url(../img/sunrise.jpg) center center;
+      background: linear-gradient(to right, #f5f5f500, #eafafd57), url(../img/sunrise.jpg) center center;
       background-size: cover; }
     .nav .menu-nav__item {
       -webkit-transform: translateX(100vw);
@@ -724,7 +724,7 @@ a {
                 -ms-flex-pack: start;
                     justify-content: flex-start; } }
   .about__bio {
-    width: 98%;
+    width: 100%;
     padding: 3%;
     text-align: center;
     background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#fff6ed)), url(../img/rooster-b-w.jpg) center center;
@@ -847,7 +847,7 @@ a {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
-      padding: 20px 5px;
+      padding: 20px 10px;
       border-bottom: 0.5px solid #b89d55;
       -webkit-box-shadow: 1px 11px 7px rgba(162, 158, 142, 0), -25px 10px 9px rgba(152, 152, 129, 0.14);
               box-shadow: 1px 11px 7px rgba(162, 158, 142, 0), -25px 10px 9px rgba(152, 152, 129, 0.14);
@@ -1018,6 +1018,7 @@ a {
     max-height: 40vh;
     width: 100%;
     padding: 0;
+    padding-top: 1rem;
     border-radius: 0.2rem;
     position: relative;
     border: 0.5px solid #d2dde6;
@@ -1066,12 +1067,7 @@ a {
       height: 100%;
       width: 100%;
       background: #93a7a9;
-      background: -webkit-gradient(linear, left top, right top, from(rgba(254, 255, 219, 0.9)), to(rgba(255, 241, 21, 0.5))), url(../img/model-1.png) center center;
-      background: linear-gradient(to right, rgba(254, 255, 219, 0.9), rgba(255, 241, 21, 0.5)), url(../img/model-1.png) center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
+      background: rgba(24, 29, 42, 0.8);
       opacity: 1;
       -webkit-transition: all 0.42s ease-in-out;
       transition: all 0.42s ease-in-out; }
@@ -1087,11 +1083,18 @@ a {
     height: 20px;
     z-index: 1;
     display: grid;
+    grid-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     text-align: center; }
+  .projects a:link {
+    background-color: #f25c2e;
+    width: 100%;
+    border: none;
+    padding: 9px;
+    border-radius: 3px; }
   .projects__btn {
     opacity: 0;
     color: #000;
@@ -1100,6 +1103,10 @@ a {
     .projects__btn:hover {
       color: #ffffff;
       font-size: 1.3rem; }
+    .projects__btn .fas {
+      color: #e6f6f9; }
+    .projects__btn .fab {
+      color: whitesmoke; }
   .projects .socialIcons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1416,6 +1423,9 @@ h5 {
   font-weight: normal;
   text-align: left; }
 
+.bottom-padding {
+  padding: 1rem; }
+
 a {
   color: #ffffff;
   text-decoration: none; }
@@ -1488,7 +1498,7 @@ p {
   text-align: center; }
 
 .main-title {
-  font-family: "Roboto", "Monserrat", cursive;
+  font-family: "Roboto", "Montserrat", cursive;
   text-transform: uppercase;
   font-size: 1.43rem;
   margin-bottom: 0.862rem;

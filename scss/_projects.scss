@@ -97,6 +97,7 @@
     max-height: 40vh;
     width: 100%;
     padding: 0;
+    padding-top: 1rem;
     border-radius: 0.2rem;
     position: relative;
     border: 0.5px solid #d2dde6;
@@ -109,26 +110,6 @@
       justify-content: center;
       align-items: center;
     }
-    @include LARGE-DEVICE-WIDTH {
-    }
-    // &__item1 {
-    //   &::after {
-    //     content: "";
-    //     position: absolute;
-    //     top: 100%;
-    //     left: 0;
-    //     height: 100%;
-    //     width: 100%;
-    //     background: $secondary-color;
-    //     background: url("../img/pecxer@2x.png");
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //     background-position: center;
-    //     opacity: 0;
-    //     @include transition-ease;
-    //   }
-    // }
-
     .project__title {
       display: flex;
       justify-content: center;
@@ -151,6 +132,7 @@
       width: 100%;
     }
 
+
     &::after {
       content: "";
       position: absolute;
@@ -159,16 +141,7 @@
       height: 100%;
       width: 100%;
       background: $secondary-color;
-      background: linear-gradient(
-          to right,
-          rgba(254, 255, 219, 0.9),
-          rgba(255, 241, 21, 0.5)
-        ),
-        url(../img/model-1.png) center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
+      background: rgba(24, 29, 42, 0.8);
       opacity: 1;
       @include transition-ease;
     }
@@ -183,6 +156,7 @@
       }
     }
   }
+
   &__item1 {
   }
 
@@ -193,19 +167,34 @@
     height: 20px;
     z-index: 1;
     display: grid;
+    grid-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: center;
   }
+  a:link {
+    background-color: #f25c2e;
+    width: 100%;
+    border: none;
+    padding: 9px;
+    border-radius: 3px;
+  }
 
   &__btn {
     opacity: 0;
-    color: set-text-color($secondary-color);
+    color: set-text-color(white);
+
     @include transition-ease;
 
     &:hover {
-      color: set-text-color(set-text-color($secondary-color));
+      color: set-text-color(set-text-color(#d2dde6));
       font-size: 1.3rem;
+    }
+    .fas {
+      color: #e6f6f9;
+    }
+    .fab {
+      color: whitesmoke;
     }
   }
   .socialIcons {
