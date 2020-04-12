@@ -47,7 +47,7 @@
       padding: 1%;
       padding-bottom: 1.4rem;
       width: 100%;
-      margin-top: 1.1rem;
+      margin: 0;
       border-radius: 0.176rem;
       line-height: 1.5rem;
       text-align: left;
@@ -212,13 +212,9 @@
       h2,
       h3 {
         line-height: 1.5rem;
-        font-size: 1.4rem;
         padding: 6px 0 0 0;
         letter-spacing: 0.01em;
         color: #bd7e40;
-        font-family: "Montserrat", "cursive";
-        font-family: "Roboto", "Monserrat";
-
         @include MEDIUM-DEVICE-WIDTH {
         }
         @include LARGE-DEVICE-WIDTH {
@@ -237,7 +233,7 @@
         font-weight: normal;
         line-height: 1.1em;
         font-style: normal;
-        padding-left: 1%;
+        padding: 0;
         line-height: 1.4em;
         // font-family: "Cinzel Decorative", cursive;
 

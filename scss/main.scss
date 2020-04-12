@@ -59,6 +59,23 @@ h2,
 h3 {
   font-weight: 400;
 }
+h3 {
+  color: #bd7e40;
+  font-size: 1.23em;
+  text-align: left;
+  font-weight: bold;
+  line-height: 1.052em;
+  text-transform: lowercase;
+  font-family: "Cinzel Decorative", cursive;
+}
+h5 {
+  color: #716f51;
+  font-size: 1em;
+  padding: 2%;
+  font-weight: normal;
+  text-align: left;
+
+}
 
 a {
   color: set-text-color($primary-color);
@@ -94,8 +111,8 @@ header {
 
 // togle menu visibility set
 
-.landing_menu{
-  visibility:hidden;
+.landing_menu {
+  visibility: hidden;
   display: none;
   height: 0;
   padding: 0;
@@ -121,7 +138,31 @@ main {
     }
   }
 }
+p {
+  color: #5f6558;
+  padding: 1%;
+  padding-bottom: 1.4rem;
+  width: 100%;
+  margin-top: 1.1rem;
+  border-radius: 0.176rem;
+  line-height: 1.5rem;
+  text-align: left;
+  font-size: 1rem;
+  text-align: center;
+}
 
+.main-title {
+  font-family: "Roboto", "Monserrat", cursive;
+  text-transform: uppercase;
+  font-size: 1.43rem;
+  margin-bottom: 0.862rem;
+  color: #4a4d50;
+  font-weight: bold;
+  width: 100%;
+  top: 30%;
+  position: relative;
+  text-align: left;
+}
 footer {
   font-size: 0.75rem;
   position: fixed;

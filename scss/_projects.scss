@@ -21,8 +21,10 @@
     padding-top: 10vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-end;
+    padding-left: 1rem;
+
     @include MEDIUM-DEVICE-WIDTH {
       height: 100%;
       padding-top: 0;
@@ -33,15 +35,16 @@
       margin: 0 auto;
     }
     .text-secondary {
-      font-family: "Cinzel Decorative", cursive;
-      font-family: "Charmonman", serif;
+      font-family: "Roboto", "Monserrat", cursive;
       text-transform: uppercase;
-      font-size: 2rem;
-      margin-bottom: 0.62rem;
+      font-size: 1.43rem;
+      margin-bottom: 0.862rem;
       color: #4a4d50;
       font-weight: bold;
+      width: 100%;
       top: 30%;
       position: relative;
+
       @include MEDIUM-DEVICE-WIDTH {
         font-size: 1.7rem;
         position: initial;
@@ -50,6 +53,13 @@
         font-size: 2rem;
         top: 18%;
       }
+    }
+    h5 {
+      padding: 2px 0;
+      line-height: 1.3em;
+    }
+    p {
+      text-align: left;
     }
   }
 
