@@ -4,11 +4,7 @@
   justify-content: space-between;
   align-items: flex-end;
   padding-bottom: 2rem;
-  background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.9),
-      rgba(255, 254, 237, 0.5)
-    ),
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 254, 236)),
     url(../img/cloth.jpg) center center;
   background-size: cover;
 
@@ -38,6 +34,7 @@
     }
     .text-secondary {
       font-family: "Cinzel Decorative", cursive;
+      font-family: "Charmonman", serif;
       text-transform: uppercase;
       font-size: 2rem;
       margin-bottom: 0.62rem;
@@ -95,7 +92,7 @@
     border: 0.5px solid #d2dde6;
     overflow: hidden;
     cursor: pointer;
-    box-shadow: #daa17673 0px 1px 8px, #ffff8773 -1px -1px 2px;
+    box-shadow: #e2e1dfe0 6px 6px 8px, #f3f3cf70 -1px -1px 2px;
 
     @include MEDIUM-DEVICE-WIDTH {
       display: flex;
