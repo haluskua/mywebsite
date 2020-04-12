@@ -303,7 +303,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  background: #ffffff; }
+  background: #283546; }
   @media only screen and (min-width: 1024px) {
     .social-icons {
       -webkit-box-orient: vertical;
@@ -442,8 +442,8 @@ a {
               flex-direction: row;
       height: 100vh;
       z-index: 10;
-      background: -webkit-gradient(linear, left top, right top, from(#f5f5f500), to(#eafafd57)), url(../img/sunrise.jpg) center center;
-      background: linear-gradient(to right, #f5f5f500, #eafafd57), url(../img/sunrise.jpg) center center;
+      background: -webkit-gradient(linear, left top, right top, from(#293748), to(#293748)), url(../img/sunrise.jpg) center center;
+      background: linear-gradient(to right, #293748, #293748), url(../img/sunrise.jpg) center center;
       background-size: cover; }
     .nav .menu-nav__item {
       -webkit-transform: translateX(100vw);
@@ -679,6 +679,8 @@ a {
       width: 100%;
       margin: 0;
       border-radius: 0.176rem;
+      font-size: 0.92em;
+      line-height: 1.43em;
       text-align: left; }
       @media only screen and (min-width: 768px) {
         .about__bio-image p {
@@ -725,8 +727,8 @@ a {
     width: 100%;
     padding: 3%;
     text-align: center;
-    background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#fff6ed)), url(../img/rooster-b-w.jpg) center center;
-    background: linear-gradient(to right, #ffffff, #fff6ed), url(../img/rooster-b-w.jpg) center center;
+    background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffffff)), url(../img/rooster-b-w.jpg) center center;
+    background: linear-gradient(to right, #ffffff, #ffffff), url(../img/rooster-b-w.jpg) center center;
     background-size: cover; }
     @media only screen and (min-width: 768px) {
       .about__bio {
@@ -849,27 +851,30 @@ a {
       border-bottom: 0.5px solid #b89d55;
       -webkit-box-shadow: 1px 11px 7px rgba(162, 158, 142, 0), -25px 10px 9px rgba(152, 152, 129, 0.14);
               box-shadow: 1px 11px 7px rgba(162, 158, 142, 0), -25px 10px 9px rgba(152, 152, 129, 0.14);
-      background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#fff6ed)), url(../img/rooster-b-w.jpg) center center;
-      background: linear-gradient(to right, #ffffff, #fff6ed), url(../img/rooster-b-w.jpg) center center;
+      background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffffff)), url(../img/rooster-b-w.jpg) center center;
+      background: linear-gradient(to right, #ffffff, #ffffff), url(../img/rooster-b-w.jpg) center center;
       background-size: cover; }
       .about .jobs__job h2,
       .about .jobs__job h3 {
-        line-height: 1.5rem;
-        padding: 6px 0 0 0;
-        letter-spacing: 0.01em;
-        color: #bd7e40; }
+        color: #4a4d50;
+        font-size: 1.13em;
+        line-height: 1.15em;
+        text-transform: lowercase;
+        padding-top: 5px;
+        letter-spacing: 0.03em; }
         @media only screen and (min-width: 1024px) {
           .about .jobs__job h2,
           .about .jobs__job h3 {
             font-size: 1.7rem; } }
       .about .jobs__job .text-secondary {
-        color: #63451a;
-        font-size: 1.5em;
-        font-weight: normal; }
+        color: #bfab6e;
+        font-size: 1.33em;
+        font-weight: normal;
+        font-family: "Bebas Neue", "Juslius Sans", "cursive"; }
       .about .jobs__job h5 {
-        font-size: 1rem;
+        font-size: 1.3rem;
         letter-spacing: 0.02rem;
-        color: #b19445;
+        color: #c38223;
         font-weight: normal;
         line-height: 1.1em;
         font-style: normal;
@@ -980,8 +985,9 @@ a {
           font-size: 2rem;
           top: 18%; } }
     .projects__bio-image h5 {
-      padding: 2px 0;
-      line-height: 1.3em; }
+      font-size: 1em;
+      line-height: 1.43em;
+      font-family: "roboto"; }
     .projects__bio-image p {
       text-align: left; }
   .projects__items {
@@ -1106,6 +1112,7 @@ a {
     .projects__btn .fab {
       color: whitesmoke; }
   .projects .socialIcons {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1166,7 +1173,8 @@ a {
   color: #93a7a9;
   padding: 18vh 0;
   width: 100%;
-  background: white; }
+  background: white;
+  padding: 0; }
   @media only screen and (min-width: 768px) {
     .contact {
       padding: 25vh 0; } }
@@ -1227,6 +1235,8 @@ a {
     margin: 3px 0;
     font-size: 1.2rem;
     letter-spacing: 0.04em; }
+  .contact .nav .menu-nav__item:nth-child(4) {
+    width: 100%; }
 
 :root {
   /* Set fade in duration */
@@ -1407,19 +1417,21 @@ h3 {
 
 h3 {
   color: #bd7e40;
-  font-size: 1.23em;
+  font-size: 1.3em;
   text-align: left;
   font-weight: bold;
-  line-height: 1.052em;
-  text-transform: lowercase;
+  line-height: 1.2em;
   font-family: "Cinzel Decorative", cursive; }
 
 h5 {
-  color: #716f51;
+  color: #42423f;
   font-size: 1em;
   padding: 2%;
   font-weight: normal;
-  text-align: left; }
+  text-align: left;
+  font-family: "Linden Hill", serif;
+  font-family: "Markazi Text", serif;
+  width: 100%; }
 
 .bottom-padding {
   padding: 1rem; }
@@ -1496,8 +1508,6 @@ p {
   text-align: center; }
 
 .main-title {
-  font-family: "Roboto", "Montserrat", cursive;
-  text-transform: uppercase;
   font-size: 1.43rem;
   margin-bottom: 0.862rem;
   color: #4a4d50;
@@ -1505,7 +1515,8 @@ p {
   width: 100%;
   top: 30%;
   position: relative;
-  text-align: left; }
+  text-align: left;
+  font-family: "Cinzel Decorative", cursive; }
 
 footer {
   font-size: 0.75rem;
