@@ -73,9 +73,8 @@ a {
     font-family: "Cinzel Decorative", cursive;
     font-size: 2.36em;
     line-height: 1em;
-    font-weight: bold;
-    color: #f3c97e;
-    letter-spacing: 0.025em;
+    color: #fff2d4;
+    letter-spacing: 0em;
     text-shadow: none;
     text-align: center; }
   .home .title_txt_container,
@@ -388,7 +387,6 @@ a {
   width: 100vw;
   height: 48px;
   background-color: #293748;
-  opacity: 0.98;
   -webkit-box-shadow: 0px 2px 13px rgba(179, 173, 112, 0.54), 0px -3px 4px rgba(228, 204, 94, 0.71);
           box-shadow: 0px 2px 13px rgba(179, 173, 112, 0.54), 0px -3px 4px rgba(228, 204, 94, 0.71); }
   @media only screen and (min-width: 768px) {
@@ -444,8 +442,8 @@ a {
               flex-direction: row;
       height: 100vh;
       z-index: 10;
-      background: -webkit-gradient(linear, left top, right top, from(#f5f5f500), to(#eafafd00)), url(../img/sunrise.jpg) center center;
-      background: linear-gradient(to right, #f5f5f500, #eafafd00), url(../img/sunrise.jpg) center center;
+      background: -webkit-gradient(linear, left top, right top, from(#270505f0), to(#1f0b038c)), url(../img/sunrise.jpg) center center;
+      background: linear-gradient(to right, #270505f0, #1f0b038c), url(../img/sunrise.jpg) center center;
       background-size: cover; }
     .nav .menu-nav__item {
       -webkit-transform: translateX(100vw);
@@ -541,9 +539,8 @@ a {
     font-family: "Cinzel Decorative", cursive;
     font-size: 2.36em;
     line-height: 1em;
-    font-weight: bold;
-    color: #f3c97e;
-    letter-spacing: 0.025em;
+    color: #fff2d4;
+    letter-spacing: 0em;
     text-shadow: none;
     text-align: center; }
   .nav .svg-container {
@@ -680,7 +677,7 @@ a {
       padding: 1%;
       padding-bottom: 1.4rem;
       width: 100%;
-      margin-top: 1.1rem;
+      margin: 0;
       border-radius: 0.176rem;
       line-height: 1.5rem;
       text-align: left;
@@ -860,12 +857,9 @@ a {
       .about .jobs__job h2,
       .about .jobs__job h3 {
         line-height: 1.5rem;
-        font-size: 1.4rem;
         padding: 6px 0 0 0;
         letter-spacing: 0.01em;
-        color: #bd7e40;
-        font-family: "Montserrat", "cursive";
-        font-family: "Roboto", "Monserrat"; }
+        color: #bd7e40; }
         @media only screen and (min-width: 1024px) {
           .about .jobs__job h2,
           .about .jobs__job h3 {
@@ -881,7 +875,7 @@ a {
         font-weight: normal;
         line-height: 1.1em;
         font-style: normal;
-        padding-left: 1%;
+        padding: 0;
         line-height: 1.4em; }
         @media only screen and (min-width: 1024px) {
           .about .jobs__job h5 {
@@ -953,12 +947,13 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: flex-end; }
+            justify-content: flex-end;
+    padding-left: 1rem; }
     @media only screen and (min-width: 768px) {
       .projects__bio-image {
         height: 100%;
@@ -969,13 +964,13 @@ a {
         height: 42vh;
         margin: 0 auto; } }
     .projects__bio-image .text-secondary {
-      font-family: "Cinzel Decorative", cursive;
-      font-family: "Charmonman", serif;
+      font-family: "Roboto", "Monserrat", cursive;
       text-transform: uppercase;
-      font-size: 2rem;
-      margin-bottom: 0.62rem;
+      font-size: 1.43rem;
+      margin-bottom: 0.862rem;
       color: #4a4d50;
       font-weight: bold;
+      width: 100%;
       top: 30%;
       position: relative; }
       @media only screen and (min-width: 768px) {
@@ -986,6 +981,11 @@ a {
         .projects__bio-image .text-secondary {
           font-size: 2rem;
           top: 18%; } }
+    .projects__bio-image h5 {
+      padding: 2px 0;
+      line-height: 1.3em; }
+    .projects__bio-image p {
+      text-align: left; }
   .projects__items {
     padding: 1rem;
     display: grid;
@@ -1400,6 +1400,22 @@ h2,
 h3 {
   font-weight: 400; }
 
+h3 {
+  color: #bd7e40;
+  font-size: 1.23em;
+  text-align: left;
+  font-weight: bold;
+  line-height: 1.052em;
+  text-transform: lowercase;
+  font-family: "Cinzel Decorative", cursive; }
+
+h5 {
+  color: #716f51;
+  font-size: 1em;
+  padding: 2%;
+  font-weight: normal;
+  text-align: left; }
+
 a {
   color: #ffffff;
   text-decoration: none; }
@@ -1458,6 +1474,30 @@ main {
     main a:hover {
       color: white;
       cursor: pointer; }
+
+p {
+  color: #5f6558;
+  padding: 1%;
+  padding-bottom: 1.4rem;
+  width: 100%;
+  margin-top: 1.1rem;
+  border-radius: 0.176rem;
+  line-height: 1.5rem;
+  text-align: left;
+  font-size: 1rem;
+  text-align: center; }
+
+.main-title {
+  font-family: "Roboto", "Monserrat", cursive;
+  text-transform: uppercase;
+  font-size: 1.43rem;
+  margin-bottom: 0.862rem;
+  color: #4a4d50;
+  font-weight: bold;
+  width: 100%;
+  top: 30%;
+  position: relative;
+  text-align: left; }
 
 footer {
   font-size: 0.75rem;
