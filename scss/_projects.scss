@@ -55,8 +55,9 @@
       }
     }
     h5 {
-      padding: 2px 0;
-      line-height: 1.3em;
+      font-size: 1em;
+      line-height: 1.43em;
+      font-family: "roboto";
     }
     p {
       text-align: left;
@@ -132,7 +133,6 @@
       width: 100%;
     }
 
-
     &::after {
       content: "";
       position: absolute;
@@ -198,6 +198,7 @@
     }
   }
   .socialIcons {
+    width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;

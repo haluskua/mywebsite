@@ -49,6 +49,8 @@
       width: 100%;
       margin: 0;
       border-radius: 0.176rem;
+      font-size: 0.92em;
+      line-height: 1.43em;
       text-align: left;
 
       @include MEDIUM-DEVICE-WIDTH {
@@ -84,13 +86,12 @@
       }
     }
   }
-  
 
   &__bio {
     width: 100%;
     padding: 3%;
     text-align: center;
-    background: linear-gradient(to right, #ffffff, #fff6ed),
+    background: linear-gradient(to right, #ffffff, #ffffff),
       url(../img/rooster-b-w.jpg) center center;
     background-size: cover;
     @include MEDIUM-DEVICE-WIDTH {
@@ -204,15 +205,17 @@
       border-bottom: 0.5px solid #b89d55;
       box-shadow: 1px 11px 7px rgba(162, 158, 142, 0),
         -25px 10px 9px rgba(152, 152, 129, 0.14);
-      background: linear-gradient(to right, #ffffff, #fff6ed),
+      background: linear-gradient(to right, #ffffff, #ffffff),
         url(../img/rooster-b-w.jpg) center center;
       background-size: cover;
       h2,
       h3 {
-        line-height: 1.5rem;
-        padding: 6px 0 0 0;
-        letter-spacing: 0.01em;
-        color: #bd7e40;
+        color: #4a4d50;
+        font-size: 1.13em;
+        line-height: 1.15em;
+        text-transform: lowercase;
+        padding-top: 5px;
+        letter-spacing: 0.03em;
         @include MEDIUM-DEVICE-WIDTH {
         }
         @include LARGE-DEVICE-WIDTH {
@@ -220,14 +223,16 @@
         }
       }
       .text-secondary {
-        color: #63451a;
-        font-size: 1.5em;
+        color: #bfab6e;
+        font-size: 1.33em;
         font-weight: normal;
+
+        font-family: "Bebas Neue", "Juslius Sans", "cursive";
       }
       h5 {
-        font-size: 1rem;
+        font-size: 1.3rem;
         letter-spacing: 0.02rem;
-        color: #b19445;
+        color: #c38223;
         font-weight: normal;
         line-height: 1.1em;
         font-style: normal;
