@@ -7,7 +7,7 @@
   align-items: center;
   text-align: center;
   overflow: hidden;
-  background: linear-gradient(to right, #f5f5f500, #eafafd57),
+  background: linear-gradient(to right, #27291e, #444438),
     url(../img/sunrise.jpg) center center;
   background-size: cover;
   justify-content: space-around;
@@ -41,14 +41,14 @@
     font-family: "Cinzel Decorative", cursive;
     font-size: 1.8em;
     line-height: 1em;
-    color: #ddffd4;
+    color: #01d9fc;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
   }
   .title_txt_container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
     padding-right: 10px;
 
@@ -59,7 +59,7 @@
       font-family: "Cormorant Unicase", serif;
       font-family: "Cinzel Decorative", cursive;
       text-shadow: 3.28px 3.36px #e7ffc7;
-      color: #fff8ec;
+      color: #01d9fc;
       text-shadow: none;
       padding: 0;
     }

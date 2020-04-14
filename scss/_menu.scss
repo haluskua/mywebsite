@@ -50,6 +50,7 @@
       }
 
       &::after {
+        color: #138d1b;
         width: 28px;
         transform: rotate(-45deg) translate(3px, -7px);
       }
@@ -71,7 +72,7 @@
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background-color: #293748;
+  background-color: #ad9939;
   box-shadow: 0px 2px 13px rgba(179, 173, 112, 0.54),
     0px -3px 4px rgba(228, 204, 94, 0.71);
   @include MEDIUM-DEVICE-WIDTH {
@@ -112,7 +113,7 @@
       flex-direction: row;
       height: 100vh;
       z-index: 10;
-      background: linear-gradient(to right, #293748, #293748),
+      background: linear-gradient(to right, #27291e, #444438),
         url(../img/sunrise.jpg) center center;
       background-size: cover;
     }
@@ -161,7 +162,6 @@
           font-family: "Cormorant Unicase", serif;
         }
       }
-
       #topLink:hover {
         &:active {
           background-color: red;
@@ -223,9 +223,10 @@
 
   .my_name {
     font-family: "Cinzel Decorative", cursive;
-    font-size: 1.8em;
+    font-size: 1.85em;
+    font-weight: bold;
     line-height: 1em;
-    color: #ddffd4;
+    color: #01d9fc;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
@@ -262,7 +263,7 @@
       font-family: "Cormorant Unicase", serif;
       font-family: "Cinzel Decorative", cursive;
       text-shadow: 3.28px 3.36px #e7ffc7;
-      color: #fff8ec;
+      color: #01d9fc;
       text-shadow: none;
       padding: 0;
     }
