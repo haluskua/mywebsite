@@ -1038,6 +1038,7 @@ a {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    background: #292b20;
     -webkit-box-shadow: #3b3c30 6px 6px 8px, #3f4034 -1px -1px 2px;
             box-shadow: #3b3c30 6px 6px 8px, #3f4034 -1px -1px 2px;
     z-index: 3; }
@@ -1434,7 +1435,7 @@ h3 {
   font-weight: 400; }
 
 h3 {
-  color: #5bd429;
+  color: #4cbf9a;
   font-size: 1.3em;
   text-align: left;
   font-weight: bold;
