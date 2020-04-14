@@ -9,7 +9,9 @@
   padding: 18vh 0;
   width: 100%;
   background: white;
-  padding: 0;
+  padding: 3rem 0 0 0;
+  border: 5px solid #559d1a;
+  background: linear-gradient(to right, #27291e, #444438), url(../img/sunrise.jpg) center center;
   @include MEDIUM-DEVICE-WIDTH {
     padding: 25vh 0;
   }
@@ -21,7 +23,7 @@
     font-size: 2.26rem;
     margin-bottom: 2rem;
     font-family: "Audiowide","Montserrat", cursive;
-    color: $accent-color;
+    color: #fff0c7;
     font-weight: bolder;
     text-transform: uppercase;
     @include MEDIUM-DEVICE-WIDTH {
@@ -43,8 +45,13 @@
       grid-template-columns: repeat(1, 1fr);
     }
   }
+  .contact__email, .contact__phone, .contact__address {
+    font-family: "Cinzel Decorative", cursive;
+    color: #9d201a;
+    font-weight: bold;
+  }
   .social-icons {
-    position: initial;
+    position: absolute;
     @include MEDIUM-DEVICE-WIDTH {
       display: flex;
       flex-direction: row;
@@ -66,7 +73,7 @@
     }
   }
   .text-secondary {
-    color: $accent-color;
+    color: #fff0c7;
     font-family: "Montserrat", "cursive";
     margin: 3px 0;
     font-size: 1.2rem;
