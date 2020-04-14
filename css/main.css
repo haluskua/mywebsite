@@ -41,8 +41,8 @@ a {
           align-items: center;
   text-align: center;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(#f5f5f500), to(#eafafd57)), url(../img/sunrise.jpg) center center;
-  background: linear-gradient(to right, #f5f5f500, #eafafd57), url(../img/sunrise.jpg) center center;
+  background: -webkit-gradient(linear, left top, right top, from(#27291e), to(#444438)), url(../img/sunrise.jpg) center center;
+  background: linear-gradient(to right, #27291e, #444438), url(../img/sunrise.jpg) center center;
   background-size: cover;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -73,7 +73,7 @@ a {
     font-family: "Cinzel Decorative", cursive;
     font-size: 1.8em;
     line-height: 1em;
-    color: #ddffd4;
+    color: #01d9fc;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center; }
@@ -82,9 +82,9 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     padding-right: 10px; }
     .home .title_txt_container .title_text,
@@ -95,7 +95,7 @@ a {
       font-family: "Cormorant Unicase", serif;
       font-family: "Cinzel Decorative", cursive;
       text-shadow: 3.28px 3.36px #e7ffc7;
-      color: #fff8ec;
+      color: #01d9fc;
       text-shadow: none;
       padding: 0; }
   .home .svg-container,
@@ -368,6 +368,7 @@ a {
         -webkit-transform: rotate(45deg) translate(5px, 8px);
                 transform: rotate(45deg) translate(5px, 8px); }
       .menu-btn__burger.open::after {
+        color: #138d1b;
         width: 28px;
         -webkit-transform: rotate(-45deg) translate(3px, -7px);
                 transform: rotate(-45deg) translate(3px, -7px); }
@@ -386,7 +387,7 @@ a {
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background-color: #293748;
+  background-color: #ad9939;
   -webkit-box-shadow: 0px 2px 13px rgba(179, 173, 112, 0.54), 0px -3px 4px rgba(228, 204, 94, 0.71);
           box-shadow: 0px 2px 13px rgba(179, 173, 112, 0.54), 0px -3px 4px rgba(228, 204, 94, 0.71); }
   @media only screen and (min-width: 768px) {
@@ -442,8 +443,8 @@ a {
               flex-direction: row;
       height: 100vh;
       z-index: 10;
-      background: -webkit-gradient(linear, left top, right top, from(#293748), to(#293748)), url(../img/sunrise.jpg) center center;
-      background: linear-gradient(to right, #293748, #293748), url(../img/sunrise.jpg) center center;
+      background: -webkit-gradient(linear, left top, right top, from(#27291e), to(#444438)), url(../img/sunrise.jpg) center center;
+      background: linear-gradient(to right, #27291e, #444438), url(../img/sunrise.jpg) center center;
       background-size: cover; }
     .nav .menu-nav__item {
       -webkit-transform: translateX(100vw);
@@ -537,9 +538,10 @@ a {
                 box-shadow: 0px 2px 2px #fcd603, 0px -2px 2px #f4f7f9; }
   .nav .my_name {
     font-family: "Cinzel Decorative", cursive;
-    font-size: 1.8em;
+    font-size: 1.85em;
+    font-weight: bold;
     line-height: 1em;
-    color: #ddffd4;
+    color: #01d9fc;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center; }
@@ -578,7 +580,7 @@ a {
       font-family: "Cormorant Unicase", serif;
       font-family: "Cinzel Decorative", cursive;
       text-shadow: 3.28px 3.36px #e7ffc7;
-      color: #fff8ec;
+      color: #01d9fc;
       text-shadow: none;
       padding: 0; }
   .nav #leters {
