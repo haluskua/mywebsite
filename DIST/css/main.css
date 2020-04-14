@@ -47,7 +47,7 @@ a {
   background-size: cover;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 32px 0 0 0; }
+  padding: 4rem 0; }
   @media only screen and (min-width: 768px) {
     .home,
     .homeMain {
@@ -66,19 +66,18 @@ a {
         width: 100%;
         height: 107%;
         padding-top: 0; } }
-  .home .animated_text,
-  .homeMain .animated_text {
-    margin-bottom: -2.5rem; }
   .home .my_name,
   .homeMain .my_name {
     font-family: "Cinzel Decorative", cursive;
-    font-size: 1.85em;
+    font-size: 1.9em;
     font-weight: bold;
     line-height: 1em;
     color: #fff0c7;
     letter-spacing: 0em;
     text-shadow: none;
-    text-align: center; }
+    text-align: center;
+    padding: 0;
+    margin-top: -3.3rem; }
   .home .title_txt_container,
   .homeMain .title_txt_container {
     display: -webkit-box;
@@ -87,17 +86,15 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%;
-    margin-top: -2rem; }
+    width: 100%; }
     .home .title_txt_container .title_text,
     .homeMain .title_txt_container .title_text {
-      font-size: 1rem;
+      font-size: 1.5rem;
       font-family: "Poiret One", cursive;
       font-family: "Audiowide", cursive;
       font-family: "Cormorant Unicase", serif;
       text-shadow: 3.28px 3.36px #e7ffc7;
       color: #ffefc5;
-      margin-top: -2.2rem;
       text-shadow: none;
       padding: 0; }
   .home .svg-container,
@@ -545,13 +542,14 @@ a {
                 box-shadow: 0px 2px 2px #fcd603, 0px -2px 2px #f4f7f9; }
   .nav .my_name {
     font-family: "Cinzel Decorative", cursive;
-    font-size: 1.85em;
+    font-size: 1.9em;
     font-weight: bold;
     line-height: 1em;
     color: #fff0c7;
     letter-spacing: 0em;
     text-shadow: none;
-    text-align: center; }
+    text-align: center;
+    padding: 0; }
   .nav .svg-container {
     width: 100%;
     text-align: center;
@@ -586,7 +584,7 @@ a {
       font-family: "Cormorant Unicase", serif;
       text-shadow: 3.28px 3.36px #e7ffc7;
       color: #ffefc5;
-      margin-top: -2.2rem;
+      margin-top: -3.3rem;
       text-shadow: none;
       padding: 0; }
   .nav #leters {
@@ -939,7 +937,8 @@ a {
   padding-bottom: 2rem;
   background: -webkit-gradient(linear, left top, right top, from(#27291e), to(#444438)), url(../img/sunrise.jpg) center center;
   background: linear-gradient(to right, #27291e, #444438), url(../img/sunrise.jpg) center center;
-  background-size: cover; }
+  background-size: cover;
+  border: 4px solid #461a19; }
   @media only screen and (min-width: 768px) {
     .projects {
       padding-bottom: 0;
@@ -952,6 +951,7 @@ a {
   .projects__bio-image {
     width: 100%;
     padding-top: 10vh;
+    padding-bottom: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1038,6 +1038,7 @@ a {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    background: #292b20;
     -webkit-box-shadow: #3b3c30 6px 6px 8px, #3f4034 -1px -1px 2px;
             box-shadow: #3b3c30 6px 6px 8px, #3f4034 -1px -1px 2px;
     z-index: 3; }
@@ -1186,7 +1187,7 @@ a {
   width: 100%;
   background: white;
   padding: 3rem 0 0 0;
-  border: 5px solid #559d1a;
+  border: 4px solid #461a19;
   background: -webkit-gradient(linear, left top, right top, from(#27291e), to(#444438)), url(../img/sunrise.jpg) center center;
   background: linear-gradient(to right, #27291e, #444438), url(../img/sunrise.jpg) center center; }
   @media only screen and (min-width: 768px) {
@@ -1434,12 +1435,12 @@ h3 {
   font-weight: 400; }
 
 h3 {
-  color: #5bd429;
-  font-size: 1.3em;
+  color: #83b326;
+  font-size: 1.05em;
   text-align: left;
   font-weight: bold;
   line-height: 1.2em;
-  font-family: "Cinzel Decorative", cursive; }
+  font-family: "Roboto", cursive; }
 
 h5 {
   color: #fff0c7;
