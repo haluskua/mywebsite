@@ -40,9 +40,10 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  border: 4px solid #27090796;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(#27291e), to(#444438)), url(../img/sunrise.jpg) center center;
-  background: linear-gradient(to right, #27291e, #444438), url(../img/sunrise.jpg) center center;
+  background: -webkit-gradient(linear, left top, right top, from(#27291e), to(#444438)), url(../img/pan_portrait.png) center center;
+  background: linear-gradient(to right, #27291e, #444438), url(../img/pan_portrait.png) center center;
   background-size: cover;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -71,9 +72,10 @@ a {
   .home .my_name,
   .homeMain .my_name {
     font-family: "Cinzel Decorative", cursive;
-    font-size: 1.8em;
+    font-size: 1.85em;
+    font-weight: bold;
     line-height: 1em;
-    color: #01d9fc;
+    color: #fff0c7;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center; }
@@ -85,17 +87,16 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%;
-    padding-right: 10px; }
+    width: 100%; }
     .home .title_txt_container .title_text,
     .homeMain .title_txt_container .title_text {
       font-size: 1rem;
       font-family: "Poiret One", cursive;
       font-family: "Audiowide", cursive;
       font-family: "Cormorant Unicase", serif;
-      font-family: "Cinzel Decorative", cursive;
       text-shadow: 3.28px 3.36px #e7ffc7;
-      color: #01d9fc;
+      color: #ffefc5;
+      margin-top: -2.2rem;
       text-shadow: none;
       padding: 0; }
   .home .svg-container,
@@ -437,7 +438,7 @@ a {
               align-items: flex-end;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-      border: 8px solid #3f4034;
+      border: 4px solid #27090796;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
