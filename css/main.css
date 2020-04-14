@@ -42,8 +42,8 @@ a {
   text-align: center;
   border: 4px solid #27090796;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(#27291e), to(#444438)), url(../img/pan_portrait.png) center center;
-  background: linear-gradient(to right, #27291e, #444438), url(../img/pan_portrait.png) center center;
+  background: -webkit-gradient(linear, left top, right top, from(#27291e), to(#444438)), url(../img/bw_portrait.png) center center;
+  background: linear-gradient(to right, #27291e, #444438), url(../img/bw_portrait.png) center center;
   background-size: cover;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -87,7 +87,8 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%; }
+    width: 100%;
+    margin-top: -2rem; }
     .home .title_txt_container .title_text,
     .homeMain .title_txt_container .title_text {
       font-size: 1rem;
@@ -390,8 +391,8 @@ a {
   width: 100vw;
   height: 48px;
   background-color: #292b20;
-  -webkit-box-shadow: 0px 2px 13px rgba(179, 173, 112, 0.54), 0px -3px 4px rgba(228, 204, 94, 0.71);
-          box-shadow: 0px 2px 13px rgba(179, 173, 112, 0.54), 0px -3px 4px rgba(228, 204, 94, 0.71); }
+  -webkit-box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127), 0px -3px 1px rgba(99, 11, 6, 0.244);
+          box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127), 0px -3px 1px rgba(99, 11, 6, 0.244); }
   @media only screen and (min-width: 768px) {
     .nav {
       visibility: visible;
@@ -936,8 +937,8 @@ a {
       -ms-flex-align: end;
           align-items: flex-end;
   padding-bottom: 2rem;
-  background: -webkit-gradient(linear, left top, right top, from(white), to(#fffeec)), url(../img/cloth.jpg) center center;
-  background: linear-gradient(to right, white, #fffeec), url(../img/cloth.jpg) center center;
+  background: -webkit-gradient(linear, left top, right top, from(#27291e), to(#444438)), url(../img/sunrise.jpg) center center;
+  background: linear-gradient(to right, #27291e, #444438), url(../img/sunrise.jpg) center center;
   background-size: cover; }
   @media only screen and (min-width: 768px) {
     .projects {
@@ -946,6 +947,8 @@ a {
   @media only screen and (min-width: 1024px) {
     .projects {
       padding-bottom: 2rem; } }
+  .projects .block {
+    padding-top: 13px; }
   .projects__bio-image {
     width: 100%;
     padding-top: 10vh;
@@ -996,6 +999,8 @@ a {
       font-family: "roboto"; }
     .projects__bio-image p {
       text-align: left; }
+    .projects__bio-image .main-title {
+      color: white; }
   .projects__items {
     padding: 1rem;
     display: grid;
@@ -1026,17 +1031,15 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-height: 40vh;
     width: 100%;
     padding: 0;
     padding-top: 1rem;
     border-radius: 0.2rem;
     position: relative;
-    border: 0.5px solid #d2dde6;
     overflow: hidden;
     cursor: pointer;
-    -webkit-box-shadow: #e2e1dfe0 6px 6px 8px, #f3f3cf70 -1px -1px 2px;
-            box-shadow: #e2e1dfe0 6px 6px 8px, #f3f3cf70 -1px -1px 2px;
+    -webkit-box-shadow: #3b3c30 6px 6px 8px, #3f4034 -1px -1px 2px;
+            box-shadow: #3b3c30 6px 6px 8px, #3f4034 -1px -1px 2px;
     z-index: 3; }
     @media only screen and (min-width: 768px) {
       .projects__item1, .projects__item2, .projects__item3, .projects__item4 {
@@ -1182,7 +1185,10 @@ a {
   padding: 18vh 0;
   width: 100%;
   background: white;
-  padding: 0; }
+  padding: 3rem 0 0 0;
+  border: 5px solid #559d1a;
+  background: -webkit-gradient(linear, left top, right top, from(#27291e), to(#444438)), url(../img/sunrise.jpg) center center;
+  background: linear-gradient(to right, #27291e, #444438), url(../img/sunrise.jpg) center center; }
   @media only screen and (min-width: 768px) {
     .contact {
       padding: 25vh 0; } }
@@ -1193,7 +1199,7 @@ a {
     font-size: 2.26rem;
     margin-bottom: 2rem;
     font-family: "Audiowide","Montserrat", cursive;
-    color: #daa520;
+    color: #fff0c7;
     font-weight: bolder;
     text-transform: uppercase; }
     @media only screen and (min-width: 768px) {
@@ -1212,8 +1218,12 @@ a {
     @media only screen and (min-width: 768px) {
       .contact__list {
         grid-template-columns: repeat(1, 1fr); } }
+  .contact .contact__email, .contact .contact__phone, .contact .contact__address {
+    font-family: "Cinzel Decorative", cursive;
+    color: #9d201a;
+    font-weight: bold; }
   .contact .social-icons {
-    position: initial; }
+    position: absolute; }
     @media only screen and (min-width: 768px) {
       .contact .social-icons {
         display: -webkit-box;
@@ -1238,7 +1248,7 @@ a {
       .contact .social-icons {
         margin-top: 11rem; } }
   .contact .text-secondary {
-    color: #daa520;
+    color: #fff0c7;
     font-family: "Montserrat", "cursive";
     margin: 3px 0;
     font-size: 1.2rem;
@@ -1424,7 +1434,7 @@ h3 {
   font-weight: 400; }
 
 h3 {
-  color: #bd7e40;
+  color: #5bd429;
   font-size: 1.3em;
   text-align: left;
   font-weight: bold;
@@ -1432,7 +1442,7 @@ h3 {
   font-family: "Cinzel Decorative", cursive; }
 
 h5 {
-  color: #42423f;
+  color: #fff0c7;
   font-size: 1em;
   padding: 2%;
   font-weight: normal;
