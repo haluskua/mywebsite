@@ -4,10 +4,10 @@
   justify-content: space-between;
   align-items: flex-end;
   padding-bottom: 2rem;
-  background: linear-gradient(to right, #27291e, #444438),
+  background: linear-gradient(to right, #ccd0bd, #f9f9f9),
     url(../img/sunrise.jpg) center center;
   background-size: cover;
-  border: 4px solid #461a19;
+  border: 4px solid #d0d4c2;
 
   @include MEDIUM-DEVICE-WIDTH {
     padding-bottom: 0;
@@ -69,7 +69,7 @@
     }
 
     .main-title {
-      color: white;
+      color: #ad0a07;
     }
   }
 
@@ -112,8 +112,8 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    background: #292b20;
-    box-shadow: #3b3c30 6px 6px 8px, #3f4034 -1px -1px 2px;
+    background: #d5d9c9;
+    box-shadow: #3b3c3033 6px 6px 8px, #3f403408 -1px -1px 2px;
     z-index: 3;
 
     @include MEDIUM-DEVICE-WIDTH {
@@ -121,7 +121,7 @@
       justify-content: center;
       align-items: center;
     }
-    
+
     .project__title {
       display: flex;
       justify-content: center;

@@ -60,15 +60,16 @@ h3 {
   font-weight: 400;
 }
 h3 {
-  color: #83b326;
+  color: #3c360e;
   font-size: 1.05em;
   text-align: left;
   font-weight: bold;
   line-height: 1.2em;
   font-family: "Roboto", cursive;
+  text-transform: uppercase;
 }
 h5 {
-  color: #fff0c7;
+  color: #292b20;
   font-size: 1em;
   padding: 2%;
   font-weight: normal;
@@ -156,15 +157,14 @@ p {
 }
 
 .main-title {
-  font-size: 1.43rem;
+  font-size: 1.6rem;
   margin-bottom: 0.862rem;
-  color: #4a4d50;
   font-weight: bold;
+  font-family: "roboto";
   width: 100%;
   top: 30%;
   position: relative;
   text-align: left;
-  font-family: "Cinzel Decorative", cursive;
 }
 footer {
   font-size: 0.75rem;
