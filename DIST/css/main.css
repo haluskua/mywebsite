@@ -42,8 +42,8 @@ a {
   text-align: center;
   border: 4px solid #27090796;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(#ccd0bd), to(#f9f9f9)), url(../img/sunrise.jpg) center center;
-  background: linear-gradient(to right, #ccd0bd, #f9f9f9), url(../img/sunrise.jpg) center center;
+  background: -webkit-gradient(linear, left top, right top, from(#3d6eb154), to(#efad8e38)), url(../img/bw_portrait.png) center right;
+  background: linear-gradient(to right, #3d6eb154, #efad8e38), url(../img/bw_portrait.png) center right;
   background-size: cover;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -72,7 +72,7 @@ a {
     font-size: 1.9em;
     font-weight: bold;
     line-height: 1em;
-    color: #191910;
+    color: #3e0d18;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
@@ -633,7 +633,10 @@ a {
   padding-bottom: 0rem;
   background-color: #f8f3b0;
   padding-top: 2.2rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  border: 4px solid #09868c;
+  background: -webkit-gradient(linear, left top, right top, from(#f2f5e9), to(#f9f9f9)), url(../img/sunrise.jpg) center center;
+  background: linear-gradient(to right, #f2f5e9, #f9f9f9), url(../img/sunrise.jpg) center center; }
   .about .breadCrumbs {
     position: absolute;
     top: 3%;
@@ -646,8 +649,6 @@ a {
         top: 15%; } }
   .about__bio-image {
     width: 100%;
-    background: -webkit-gradient(linear, left top, right top, from(#2a3848), to(#2d3b4a));
-    background: linear-gradient(to right, #2a3848, #2d3b4a);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -754,6 +755,8 @@ a {
       padding: 3%;
       font-weight: normal;
       text-align: left; }
+    .about__bio .main-title {
+      color: #ad0a07; }
   .about .img-container {
     padding: 0.8rem;
     display: -webkit-box;
@@ -781,7 +784,8 @@ a {
     padding: 1%;
     margin: 0.2rem auto 0 auto;
     display: grid;
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    grid-gap: 2rem; }
     @media only screen and (min-width: 768px) {
       .about .jobs {
         width: 100%; } }
@@ -789,8 +793,8 @@ a {
       width: 100%;
       border-radius: 0.3rem;
       padding-top: 38vh;
-      background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.02)), to(rgba(39, 39, 39, 0))), url(../img/profile.jpg) center center;
-      background: linear-gradient(to right, rgba(39, 39, 39, 0.02), rgba(39, 39, 39, 0)), url(../img/profile.jpg) center center;
+      background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.02)), to(rgba(39, 39, 39, 0))), url(../img/bw_portrait.png) center center;
+      background: linear-gradient(to right, rgba(39, 39, 39, 0.02), rgba(39, 39, 39, 0)), url(../img/bw_portrait.png) center center;
       background-size: cover;
       background-repeat: no-repeat;
       display: -webkit-box;
@@ -806,8 +810,8 @@ a {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end;
-      -webkit-box-shadow: 2px 6px 7px #1c2b3c, 2px -4px 10px #2e455d;
-              box-shadow: 2px 6px 7px #1c2b3c, 2px -4px 10px #2e455d; }
+      -webkit-box-shadow: #3b3c3033 6px 6px 8px, #3f403408 -1px -1px 2px;
+              box-shadow: #3b3c3033 6px 6px 8px, #3f403408 -1px -1px 2px; }
       @media only screen and (min-width: 768px) {
         .about .jobs__bio-image {
           height: 35vh;
@@ -861,30 +865,29 @@ a {
       background-size: cover; }
       .about .jobs__job h2,
       .about .jobs__job h3 {
-        color: #4a4d50;
+        color: #292b20;
         font-size: 1.13em;
         line-height: 1.15em;
-        text-transform: lowercase;
-        padding-top: 5px;
-        letter-spacing: 0.03em; }
+        text-transform: uppercase;
+        padding-top: 5px; }
         @media only screen and (min-width: 1024px) {
           .about .jobs__job h2,
           .about .jobs__job h3 {
             font-size: 1.7rem; } }
       .about .jobs__job .text-secondary {
-        color: #bfab6e;
+        color: #ad0a07;
         font-size: 1.33em;
         font-weight: normal;
         font-family: "Bebas Neue", "Juslius Sans", "cursive"; }
       .about .jobs__job h5 {
-        font-size: 1.3rem;
-        letter-spacing: 0.02rem;
-        color: #c38223;
+        font-size: 1.1rem;
+        color: #09868c;
         font-weight: normal;
         line-height: 1.1em;
         font-style: normal;
         padding: 0;
-        line-height: 1.4em; }
+        line-height: 1.4em;
+        font-family: "Roboto", cursive; }
         @media only screen and (min-width: 1024px) {
           .about .jobs__job h5 {
             font-size: 1.1rem; } }
@@ -935,8 +938,8 @@ a {
       -ms-flex-align: end;
           align-items: flex-end;
   padding-bottom: 2rem;
-  background: -webkit-gradient(linear, left top, right top, from(#ccd0bd), to(#f9f9f9)), url(../img/sunrise.jpg) center center;
-  background: linear-gradient(to right, #ccd0bd, #f9f9f9), url(../img/sunrise.jpg) center center;
+  background: -webkit-gradient(linear, left top, right top, from(#f2f5e9), to(#f9f9f9)), url(../img/sunrise.jpg) center center;
+  background: linear-gradient(to right, #f2f5e9, #f9f9f9), url(../img/sunrise.jpg) center center;
   background-size: cover;
   border: 4px solid #d0d4c2; }
   @media only screen and (min-width: 768px) {
@@ -947,6 +950,7 @@ a {
     .projects {
       padding-bottom: 2rem; } }
   .projects .block {
+    padding: 0.5rem;
     padding-top: 13px; }
   .projects__bio-image {
     width: 100%;
@@ -1038,7 +1042,7 @@ a {
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    background: #d5d9c9;
+    background: #ffffff;
     -webkit-box-shadow: #3b3c3033 6px 6px 8px, #3f403408 -1px -1px 2px;
             box-shadow: #3b3c3033 6px 6px 8px, #3f403408 -1px -1px 2px;
     z-index: 3; }
@@ -1106,7 +1110,7 @@ a {
             align-items: center;
     text-align: center; }
   .projects a:link {
-    background-color: #f25c2e;
+    background-color: #d5d9c9;
     width: 100%;
     border: none;
     padding: 9px;
@@ -1510,7 +1514,7 @@ main {
     -webkit-transition: all 0.42s ease-in-out;
     transition: all 0.42s ease-in-out;
     padding: 0.4rem;
-    color: #93a7a9; }
+    color: #292b20; }
     main a:hover {
       color: white;
       cursor: pointer; }
@@ -1528,10 +1532,10 @@ p {
   text-align: center; }
 
 .main-title {
-  font-size: 1.6rem;
-  margin-bottom: 0.862rem;
+  font-size: 2rem;
+  letter-spacing: 0.02em;
   font-weight: bold;
-  font-family: "roboto";
+  font-family: "Bebas Neue", "Julius Sans", cursive;
   width: 100%;
   top: 30%;
   position: relative;

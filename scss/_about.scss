@@ -3,6 +3,9 @@
   background-color: #f8f3b0;
   padding-top: 2.2rem;
   padding-bottom: 2rem;
+  border: 4px solid #09868c;
+  background: linear-gradient(to right, #f2f5e9, #f9f9f9),
+    url(../img/sunrise.jpg) center center;
 
   .breadCrumbs {
     position: absolute;
@@ -18,7 +21,6 @@
 
   &__bio-image {
     width: 100%;
-    background: linear-gradient(to right, #2a3848, #2d3b4a);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,6 +116,9 @@
       font-weight: normal;
       text-align: left;
     }
+    .main-title {
+      color: #ad0a07;
+    }
   }
   .img-container {
     padding: 0.8rem;
@@ -143,6 +148,7 @@
     margin: 0.2rem auto 0 auto;
     display: grid;
     grid-template-columns: 1fr;
+    grid-gap: 2rem;
     @include MEDIUM-DEVICE-WIDTH {
       width: 100%;
     }
@@ -156,14 +162,14 @@
           rgba(39, 39, 39, 0.02),
           rgba(39, 39, 39, 0)
         ),
-        url(../img/profile.jpg) center center;
+        url(../img/bw_portrait.png) center center;
       background-size: cover;
       background-repeat: no-repeat;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-end;
-      box-shadow: 2px 6px 7px #1c2b3c, 2px -4px 10px #2e455d;
+      box-shadow: #3b3c3033 6px 6px 8px, #3f403408 -1px -1px 2px;
       @include MEDIUM-DEVICE-WIDTH {
         height: 35vh;
         background-size: cover;
@@ -209,12 +215,11 @@
       background-size: cover;
       h2,
       h3 {
-        color: #4a4d50;
+        color: #292b20;
         font-size: 1.13em;
         line-height: 1.15em;
-        text-transform: lowercase;
+        text-transform: uppercase;
         padding-top: 5px;
-        letter-spacing: 0.03em;
         @include MEDIUM-DEVICE-WIDTH {
         }
         @include LARGE-DEVICE-WIDTH {
@@ -222,22 +227,21 @@
         }
       }
       .text-secondary {
-        color: #bfab6e;
+        color: #ad0a07;
         font-size: 1.33em;
         font-weight: normal;
 
         font-family: "Bebas Neue", "Juslius Sans", "cursive";
       }
       h5 {
-        font-size: 1.3rem;
-        letter-spacing: 0.02rem;
-        color: #c38223;
+        font-size: 1.1rem;
+        color: #09868c;
         font-weight: normal;
         line-height: 1.1em;
         font-style: normal;
         padding: 0;
         line-height: 1.4em;
-        // font-family: "Cinzel Decorative", cursive;
+        font-family: "Roboto", cursive;
 
         @include LARGE-DEVICE-WIDTH {
           font-size: 1.1rem;

@@ -135,7 +135,7 @@ main {
   a {
     @include transition-ease;
     padding: 0.4rem;
-    color: $secondary-color;
+    color: #292b20;
 
     &:hover {
       color: white;
@@ -157,10 +157,10 @@ p {
 }
 
 .main-title {
-  font-size: 1.6rem;
-  margin-bottom: 0.862rem;
+  font-size: 2rem;
+  letter-spacing: 0.02em;
   font-weight: bold;
-  font-family: "roboto";
+  font-family: "Bebas Neue", "Julius Sans", cursive;
   width: 100%;
   top: 30%;
   position: relative;
