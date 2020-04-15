@@ -42,8 +42,8 @@ a {
   text-align: center;
   border: 4px solid #27090796;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(#27291e), to(#444438)), url(../img/bw_portrait.png) center center;
-  background: linear-gradient(to right, #27291e, #444438), url(../img/bw_portrait.png) center center;
+  background: -webkit-gradient(linear, left top, right top, from(#ccd0bd), to(#f9f9f9)), url(../img/sunrise.jpg) center center;
+  background: linear-gradient(to right, #ccd0bd, #f9f9f9), url(../img/sunrise.jpg) center center;
   background-size: cover;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -72,7 +72,7 @@ a {
     font-size: 1.9em;
     font-weight: bold;
     line-height: 1em;
-    color: #fff0c7;
+    color: #191910;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
@@ -94,7 +94,7 @@ a {
       font-family: "Audiowide", cursive;
       font-family: "Cormorant Unicase", serif;
       text-shadow: 3.28px 3.36px #e7ffc7;
-      color: #ffefc5;
+      color: #331503;
       text-shadow: none;
       padding: 0; }
   .home .svg-container,
@@ -436,7 +436,7 @@ a {
               align-items: flex-end;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-      border: 4px solid #27090796;
+      border: 4px solid #ffd9d7;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -447,8 +447,8 @@ a {
       padding: 36px;
       height: 100vh;
       z-index: 10;
-      background: -webkit-gradient(linear, left top, right top, from(#27291e), to(#444438)), url(../img/sunrise.jpg) center center;
-      background: linear-gradient(to right, #27291e, #444438), url(../img/sunrise.jpg) center center;
+      background: -webkit-gradient(linear, left top, right top, from(#ccd0bd), to(#f9f9f9)), url(../img/sunrise.jpg) center center;
+      background: linear-gradient(to right, #ccd0bd, #f9f9f9), url(../img/sunrise.jpg) center center;
       background-size: cover; }
     .nav .menu-nav__item {
       -webkit-transform: translateX(100vw);
@@ -545,7 +545,7 @@ a {
     font-size: 1.9em;
     font-weight: bold;
     line-height: 1em;
-    color: #fff0c7;
+    color: #423010;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
@@ -578,12 +578,12 @@ a {
             justify-content: flex-end;
     width: 100%; }
     .nav .title_txt_container .title_text {
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-family: "Poiret One", cursive;
       font-family: "Audiowide", cursive;
       font-family: "Cormorant Unicase", serif;
       text-shadow: 3.28px 3.36px #e7ffc7;
-      color: #ffefc5;
+      color: #2d210a;
       margin-top: -3.3rem;
       text-shadow: none;
       padding: 0; }
@@ -935,10 +935,10 @@ a {
       -ms-flex-align: end;
           align-items: flex-end;
   padding-bottom: 2rem;
-  background: -webkit-gradient(linear, left top, right top, from(#27291e), to(#444438)), url(../img/sunrise.jpg) center center;
-  background: linear-gradient(to right, #27291e, #444438), url(../img/sunrise.jpg) center center;
+  background: -webkit-gradient(linear, left top, right top, from(#ccd0bd), to(#f9f9f9)), url(../img/sunrise.jpg) center center;
+  background: linear-gradient(to right, #ccd0bd, #f9f9f9), url(../img/sunrise.jpg) center center;
   background-size: cover;
-  border: 4px solid #461a19; }
+  border: 4px solid #d0d4c2; }
   @media only screen and (min-width: 768px) {
     .projects {
       padding-bottom: 0;
@@ -1000,7 +1000,7 @@ a {
     .projects__bio-image p {
       text-align: left; }
     .projects__bio-image .main-title {
-      color: white; }
+      color: #ad0a07; }
   .projects__items {
     padding: 1rem;
     display: grid;
@@ -1038,9 +1038,9 @@ a {
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    background: #292b20;
-    -webkit-box-shadow: #3b3c30 6px 6px 8px, #3f4034 -1px -1px 2px;
-            box-shadow: #3b3c30 6px 6px 8px, #3f4034 -1px -1px 2px;
+    background: #d5d9c9;
+    -webkit-box-shadow: #3b3c3033 6px 6px 8px, #3f403408 -1px -1px 2px;
+            box-shadow: #3b3c3033 6px 6px 8px, #3f403408 -1px -1px 2px;
     z-index: 3; }
     @media only screen and (min-width: 768px) {
       .projects__item1, .projects__item2, .projects__item3, .projects__item4 {
@@ -1435,15 +1435,16 @@ h3 {
   font-weight: 400; }
 
 h3 {
-  color: #83b326;
+  color: #3c360e;
   font-size: 1.05em;
   text-align: left;
   font-weight: bold;
   line-height: 1.2em;
-  font-family: "Roboto", cursive; }
+  font-family: "Roboto", cursive;
+  text-transform: uppercase; }
 
 h5 {
-  color: #fff0c7;
+  color: #292b20;
   font-size: 1em;
   padding: 2%;
   font-weight: normal;
@@ -1527,15 +1528,14 @@ p {
   text-align: center; }
 
 .main-title {
-  font-size: 1.43rem;
+  font-size: 1.6rem;
   margin-bottom: 0.862rem;
-  color: #4a4d50;
   font-weight: bold;
+  font-family: "roboto";
   width: 100%;
   top: 30%;
   position: relative;
-  text-align: left;
-  font-family: "Cinzel Decorative", cursive; }
+  text-align: left; }
 
 footer {
   font-size: 0.75rem;
