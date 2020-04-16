@@ -75,8 +75,7 @@ a {
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
-    padding: 0;
-    margin-top: -6rem; }
+    padding: 0; }
   .home .title_txt_container,
   .homeMain .title_txt_container {
     display: -webkit-box;
@@ -85,7 +84,8 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%; }
+    width: 100%;
+    margin-top: -3rem; }
     .home .title_txt_container .title_text,
     .homeMain .title_txt_container .title_text {
       font-size: 1.5rem;
@@ -316,8 +316,31 @@ a {
   .social-icons .fa-2x {
     font-size: 1.4em; }
 
+#project-index {
+  -webkit-animation: breadCrumb 8s infinite linear alternate;
+          animation: breadCrumb 8s infinite linear alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box; }
+
+@-webkit-keyframes breadCrumb {
+  from {
+    -webkit-transform: rotateZ(-6deg);
+            transform: rotateZ(-6deg); }
+  to {
+    -webkit-transform: rotateZ(6deg);
+            transform: rotateZ(6deg); } }
+
+@keyframes breadCrumb {
+  from {
+    -webkit-transform: rotateZ(-6deg);
+            transform: rotateZ(-6deg); }
+  to {
+    -webkit-transform: rotateZ(6deg);
+            transform: rotateZ(6deg); } }
+
 .menu-btn {
-  position: absolute;
+  position: fixed;
   left: 2%;
   top: 17px;
   width: 50%;
@@ -758,7 +781,6 @@ a {
     .about__bio .main-title {
       color: #3e0d18; }
   .about .img-container {
-    padding: 0.8rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -793,8 +815,8 @@ a {
       width: 100%;
       border-radius: 0.3rem;
       padding-top: 38vh;
-      background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.02)), to(rgba(39, 39, 39, 0))), url(../img/bw_portrait.png) center center;
-      background: linear-gradient(to right, rgba(39, 39, 39, 0.02), rgba(39, 39, 39, 0)), url(../img/bw_portrait.png) center center;
+      background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.02)), to(rgba(39, 39, 39, 0))), url(../img/pan_portrait.png) center center;
+      background: linear-gradient(to right, rgba(39, 39, 39, 0.02), rgba(39, 39, 39, 0)), url(../img/pan_portrait.png) center center;
       background-size: cover;
       background-repeat: no-repeat;
       display: -webkit-box;
@@ -866,8 +888,8 @@ a {
       .about .jobs__job h2,
       .about .jobs__job h3 {
         color: #292b20;
-        font-size: 1.13em;
-        line-height: 1.15em;
+        font-size: 1.16em;
+        line-height: 1.3em;
         text-transform: capitalize;
         padding-top: 5px; }
         @media only screen and (min-width: 1024px) {
@@ -882,7 +904,6 @@ a {
       .about .jobs__job h5 {
         font-size: 1rem;
         color: #09868c;
-        font-weight: bold;
         font-style: normal;
         padding: 0;
         line-height: 1.24em;
@@ -1177,7 +1198,7 @@ a {
       font-size: 1em; } }
 
 .contact {
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1525,7 +1546,7 @@ header {
     display: flex; }
 
 main {
-  height: 100vh;
+  height: auto;
   width: 100%; }
   main a {
     -webkit-transition: all 0.42s ease-in-out;
@@ -1560,7 +1581,7 @@ p {
 
 footer {
   font-size: 0.75rem;
-  position: absolute;
+  position: fixed;
   bottom: 0.54rem;
   right: 1.75rem;
   text-align: right;
