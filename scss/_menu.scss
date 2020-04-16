@@ -73,7 +73,7 @@
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background-color: #292b20;
+  background-color: #3e0d18;
   box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127),
     0px -3px 1px rgba(99, 11, 6, 0.244);
   @include MEDIUM-DEVICE-WIDTH {
@@ -114,10 +114,11 @@
       flex-direction: column;
       align-items: center;
       padding: 36px;
+      padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: linear-gradient(to right, #ccd0bd, #f9f9f9),
-        url(../img/sunrise.jpg) center center;
+      background: linear-gradient(to right, #dff19b0d, #56343400),
+        url(../img/jetty.jpg) center center;
       background-size: cover;
     }
 
@@ -254,6 +255,7 @@
       height: 100%;
     }
   }
+
   .title_txt_container {
     display: flex;
     justify-content: flex-end;

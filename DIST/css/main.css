@@ -386,7 +386,7 @@ a {
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background-color: #292b20;
+  background-color: #3e0d18;
   -webkit-box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127), 0px -3px 1px rgba(99, 11, 6, 0.244);
           box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127), 0px -3px 1px rgba(99, 11, 6, 0.244); }
   @media only screen and (min-width: 768px) {
@@ -444,10 +444,11 @@ a {
           -ms-flex-align: center;
               align-items: center;
       padding: 36px;
+      padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: -webkit-gradient(linear, left top, right top, from(#ccd0bd), to(#f9f9f9)), url(../img/sunrise.jpg) center center;
-      background: linear-gradient(to right, #ccd0bd, #f9f9f9), url(../img/sunrise.jpg) center center;
+      background: -webkit-gradient(linear, left top, right top, from(#dff19b0d), to(#56343400)), url(../img/jetty.jpg) center center;
+      background: linear-gradient(to right, #dff19b0d, #56343400), url(../img/jetty.jpg) center center;
       background-size: cover; }
     .nav .menu-nav__item {
       -webkit-transform: translateX(100vw);
@@ -1559,11 +1560,18 @@ p {
 
 footer {
   font-size: 0.75rem;
-  position: fixed;
+  position: absolute;
   bottom: 0.54rem;
   right: 1.75rem;
   text-align: right;
   padding: 1rem;
   color: #b9ae98; }
+
+#project-index {
+  height: auto;
+  width: 31%;
+  z-index: 99999699999;
+  position: fixed;
+  left: 8rem; }
 
 /*# sourceMappingURL=main.css.map */
