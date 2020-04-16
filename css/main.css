@@ -22,8 +22,7 @@ a {
   bottom: 2rem;
   font-size: 0.7rem;
   right: 0.41rem;
-  padding: 0.09rem;
-  background: #323d46; }
+  padding: 0.09rem; }
 
 .home,
 .homeMain {
@@ -42,8 +41,8 @@ a {
   text-align: center;
   border: 4px solid #27090796;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(#3d6eb154), to(#efad8e38)), url(../img/bw_portrait.png) center right;
-  background: linear-gradient(to right, #3d6eb154, #efad8e38), url(../img/bw_portrait.png) center right;
+  background: -webkit-gradient(linear, left top, right top, from(#3d6eb154), to(#efad8e38)), url(../img/jetty.jpg) center center;
+  background: linear-gradient(to right, #3d6eb154, #efad8e38), url(../img/jetty.jpg) center center;
   background-size: cover;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -897,16 +896,20 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
     margin: 0 auto;
-    padding: 0 0.52rem;
+    padding: 2.5px 0.52rem;
     right: 1px;
     width: 100%;
     bottom: 0;
-    background: rgba(85, 96, 105, 0.35); }
+    background: #dfe8e8; }
     @media only screen and (min-width: 768px) {
       .about .socialIcons {
         -webkit-box-orient: horizontal;
@@ -1129,18 +1132,23 @@ a {
     .projects__btn .fab {
       color: whitesmoke; }
   .projects .socialIcons {
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
     margin: 0 auto;
+    padding: 2.5px 0.52rem;
     right: 1px;
+    width: 100%;
     bottom: 0;
-    background: rgba(85, 96, 105, 0.35); }
+    background: #dfe8e8; }
     @media only screen and (min-width: 768px) {
       .projects .socialIcons {
         -webkit-box-orient: horizontal;
@@ -1153,9 +1161,6 @@ a {
         margin: 0 auto;
         width: 100%;
         bottom: 0; } }
-    @media only screen and (min-width: 1024px) {
-      .projects .socialIcons {
-        background: none; } }
   .projects footer {
     -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
             transform: rotate(90deg) translate(-3rem, -5rem); }
@@ -1202,11 +1207,12 @@ a {
       padding-top: 33vh; } }
   .contact h2 {
     font-size: 2.26rem;
-    margin-bottom: 2rem;
-    font-family: "Audiowide","Montserrat", cursive;
+    margin-bottom: -15rem;
+    font-family: "Bebas", "Neue", cursive;
     color: #fff0c7;
     font-weight: bolder;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin: 0; }
     @media only screen and (min-width: 768px) {
       .contact h2 {
         margin-bottom: 3.2rem;
@@ -1228,7 +1234,8 @@ a {
     color: #9d201a;
     font-weight: bold; }
   .contact .social-icons {
-    position: absolute; }
+    position: absolute;
+    background-color: #404034; }
     @media only screen and (min-width: 768px) {
       .contact .social-icons {
         display: -webkit-box;
@@ -1240,6 +1247,8 @@ a {
                 flex-direction: row;
         width: 100%;
         padding: 1em 0.5em; } }
+    .contact .social-icons a {
+      background: #3f3f33; }
     .contact .social-icons .fa-2x {
       font-size: 1.53rem;
       padding: 0.2rem 0; }
@@ -1256,8 +1265,7 @@ a {
     color: #fff0c7;
     font-family: "Montserrat", "cursive";
     margin: 3px 0;
-    font-size: 1.2rem;
-    letter-spacing: 0.04em; }
+    font-size: 1rem; }
   .contact .nav .menu-nav__item:nth-child(4) {
     width: 100%; }
 
@@ -1397,25 +1405,32 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 2.5px 0.52rem;
+  right: 1px;
+  width: 100%;
+  bottom: 0;
+  background: #dfe8e8; }
   @media only screen and (min-width: 768px) {
     .socialIcons {
-      padding: 0 0.52rem;
-      margin-right: 25px; } }
-  @media only screen and (min-width: 1024px) {
-    .socialIcons {
-      -webkit-box-orient: vertical;
+      -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; } }
+          -ms-flex-direction: row;
+              flex-direction: row;
+      padding: 0 0.52rem;
+      right: 0;
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+      bottom: 0; } }
 
 footer {
   -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
@@ -1465,9 +1480,7 @@ a {
   text-decoration: none; }
 
 a:link {
-  background-color: #f3f0d8;
-  background-color: #233a42;
-  width: 100%; }
+  width: auto; }
 
 a:focus {
   -webkit-box-shadow: 0 0 1px 1px #3f3530;
@@ -1477,6 +1490,9 @@ a:focus {
 a:active {
   font-family: "Cormorant Unicase", serif;
   background-color: red; }
+
+.socialIcons {
+  padding: 0.19px; }
 
 header {
   display: -webkit-box;
