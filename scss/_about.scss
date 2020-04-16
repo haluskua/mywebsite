@@ -255,14 +255,15 @@
 
   .socialIcons {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
     margin: 0 auto;
-    padding: 0 0.52rem;
+    padding: 2.5px 0.52rem;
     right: 1px;
     width: 100%;
     bottom: 0;
-    background: rgba(85, 96, 105, 0.35);
+    background: #dfe8e8;
 
     @include MEDIUM-DEVICE-WIDTH {
       flex-direction: row;

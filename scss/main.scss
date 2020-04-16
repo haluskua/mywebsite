@@ -87,9 +87,7 @@ a {
   text-decoration: none;
 }
 a:link {
-  background-color: #f3f0d8;
-  background-color: #233a42;
-  width: 100%;
+  width: auto;
 }
 a:focus {
   box-shadow: 0 0 1px 1px rgb(63, 53, 48);
@@ -99,7 +97,9 @@ a:active {
   font-family: "Cormorant Unicase", serif;
   background-color: red;
 }
-
+.socialIcons {
+  padding: 0.19px;
+}
 header {
   display: flex;
   flex-direction: column;

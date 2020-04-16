@@ -19,7 +19,6 @@
   .block {
     padding: 0.5rem;
     padding-top: 13px;
-  
   }
 
   &__bio-image {
@@ -186,7 +185,7 @@
     text-align: center;
   }
   a:link {
-  background-color: #d5d9c9;
+    background-color: #d5d9c9;
     width: 100%;
     border: none;
     padding: 9px;
@@ -212,14 +211,16 @@
     }
   }
   .socialIcons {
-    width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
     margin: 0 auto;
+    padding: 2.5px 0.52rem;
     right: 1px;
+    width: 100%;
     bottom: 0;
-    background: rgba(85, 96, 105, 0.35);
+    background: #dfe8e8;
 
     @include MEDIUM-DEVICE-WIDTH {
       flex-direction: row;
@@ -229,9 +230,6 @@
       margin: 0 auto;
       width: 100%;
       bottom: 0;
-    }
-    @include LARGE-DEVICE-WIDTH {
-      background: none;
     }
   }
 

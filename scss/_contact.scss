@@ -21,11 +21,12 @@
 
   h2 {
     font-size: 2.26rem;
-    margin-bottom: 2rem;
-    font-family: "Audiowide","Montserrat", cursive;
+    margin-bottom: -15rem;
+    font-family: "Bebas", "Neue", cursive;
     color: #fff0c7;
     font-weight: bolder;
     text-transform: uppercase;
+    margin: 0;
     @include MEDIUM-DEVICE-WIDTH {
       margin-bottom: 3.2rem;
       font-size: 3em;
@@ -52,11 +53,16 @@
   }
   .social-icons {
     position: absolute;
+    background-color: #404034;
+
     @include MEDIUM-DEVICE-WIDTH {
       display: flex;
       flex-direction: row;
       width: 100%;
       padding: 1em 0.5em;
+    }
+    a {
+      background: #3f3f33;
     }
     .fa-2x {
       font-size: 1.53rem;
@@ -76,8 +82,7 @@
     color: #fff0c7;
     font-family: "Montserrat", "cursive";
     margin: 3px 0;
-    font-size: 1.2rem;
-    letter-spacing: 0.04em;
+    font-size: 1rem;
   }
   .nav .menu-nav__item:nth-child(4){
     width: 100%;
