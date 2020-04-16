@@ -75,8 +75,7 @@ a {
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
-    padding: 0;
-    margin-top: -6rem; }
+    padding: 0; }
   .home .title_txt_container,
   .homeMain .title_txt_container {
     display: -webkit-box;
@@ -85,7 +84,8 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%; }
+    width: 100%;
+    margin-top: -3rem; }
     .home .title_txt_container .title_text,
     .homeMain .title_txt_container .title_text {
       font-size: 1.5rem;
@@ -161,7 +161,7 @@ a {
             transform: rotateZ(25deg); } }
     .home .svg-container #semi_red,
     .homeMain .svg-container #semi_red {
-      animation: ring2 24s infinite linear alternate-reverse;
+      animation: ring2 33s infinite linear alternate-reverse;
       -webkit-transform-origin: center;
               transform-origin: center;
       transform-box: fill-box; }
@@ -214,50 +214,6 @@ a {
       .homeMain h2 {
         font-size: 1.1rem;
         letter-spacing: 0; } }
-  .home .cta__button,
-  .homeMain .cta__button {
-    background: none;
-    padding: 0.5rem;
-    border-radius: 0.42rem;
-    margin: 1.2rem 0;
-    border: 2px solid #9abcda;
-    -webkit-box-shadow: #a8bacc 1px 1px 4px, #b9cfd4 -1px -1px 4px;
-            box-shadow: #a8bacc 1px 1px 4px, #b9cfd4 -1px -1px 4px; }
-    @media only screen and (min-width: 768px) {
-      .home .cta__button,
-      .homeMain .cta__button {
-        border-radius: 0.44rem; } }
-    @media only screen and (min-width: 1024px) {
-      .home .cta__button,
-      .homeMain .cta__button {
-        width: auto;
-        padding: 0; } }
-    .home .cta__button #cta__link,
-    .homeMain .cta__button #cta__link {
-      text-shadow: 1.08px 1.36px #202d33;
-      font-size: 1.06rem;
-      font-weight: bold;
-      font-family: "Turret Road", "cursive";
-      color: #e2f3fb;
-      width: 100%;
-      height: 100%;
-      margin: 1rem; }
-      @media only screen and (min-width: 768px) {
-        .home .cta__button #cta__link,
-        .homeMain .cta__button #cta__link {
-          line-height: 2.2rem; } }
-      .home .cta__button #cta__link:hover,
-      .homeMain .cta__button #cta__link:hover {
-        cursor: pointer;
-        color: #93a7a9;
-        font-weight: bolder;
-        color: #93a7a9;
-        font-size: 1.06rem;
-        font-style: italic; }
-        @media only screen and (min-width: 768px) {
-          .home .cta__button #cta__link:hover,
-          .homeMain .cta__button #cta__link:hover {
-            line-height: 2.2rem; } }
   .home .menu-nav__item:nth-child(1),
   .homeMain .menu-nav__item:nth-child(1) {
     -webkit-transition-delay: 0.175s;
@@ -316,8 +272,31 @@ a {
   .social-icons .fa-2x {
     font-size: 1.4em; }
 
+#project-index {
+  -webkit-animation: breadCrumb 8s infinite linear alternate;
+          animation: breadCrumb 8s infinite linear alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box; }
+
+@-webkit-keyframes breadCrumb {
+  from {
+    -webkit-transform: rotateZ(-6deg);
+            transform: rotateZ(-6deg); }
+  to {
+    -webkit-transform: rotateZ(6deg);
+            transform: rotateZ(6deg); } }
+
+@keyframes breadCrumb {
+  from {
+    -webkit-transform: rotateZ(-6deg);
+            transform: rotateZ(-6deg); }
+  to {
+    -webkit-transform: rotateZ(6deg);
+            transform: rotateZ(6deg); } }
+
 .menu-btn {
-  position: absolute;
+  position: fixed;
   left: 2%;
   top: 17px;
   width: 50%;
@@ -633,7 +612,6 @@ a {
   padding-bottom: 0rem;
   background-color: #f8f3b0;
   padding-top: 2.2rem;
-  padding-bottom: 2rem;
   border: 4px solid #09868c;
   background: -webkit-gradient(linear, left top, right top, from(#f2f5e9), to(#f9f9f9)), url(../img/sunrise.jpg) center center;
   background: linear-gradient(to right, #f2f5e9, #f9f9f9), url(../img/sunrise.jpg) center center; }
@@ -758,7 +736,6 @@ a {
     .about__bio .main-title {
       color: #3e0d18; }
   .about .img-container {
-    padding: 0.8rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -793,8 +770,8 @@ a {
       width: 100%;
       border-radius: 0.3rem;
       padding-top: 38vh;
-      background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.02)), to(rgba(39, 39, 39, 0))), url(../img/bw_portrait.png) center center;
-      background: linear-gradient(to right, rgba(39, 39, 39, 0.02), rgba(39, 39, 39, 0)), url(../img/bw_portrait.png) center center;
+      background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.02)), to(rgba(39, 39, 39, 0))), url(../img/pan_portrait.png) center center;
+      background: linear-gradient(to right, rgba(39, 39, 39, 0.02), rgba(39, 39, 39, 0)), url(../img/pan_portrait.png) center center;
       background-size: cover;
       background-repeat: no-repeat;
       display: -webkit-box;
@@ -866,8 +843,8 @@ a {
       .about .jobs__job h2,
       .about .jobs__job h3 {
         color: #292b20;
-        font-size: 1.13em;
-        line-height: 1.15em;
+        font-size: 1.16em;
+        line-height: 1.3em;
         text-transform: capitalize;
         padding-top: 5px; }
         @media only screen and (min-width: 1024px) {
@@ -882,7 +859,6 @@ a {
       .about .jobs__job h5 {
         font-size: 1rem;
         color: #09868c;
-        font-weight: bold;
         font-style: normal;
         padding: 0;
         line-height: 1.24em;
@@ -892,36 +868,28 @@ a {
             font-size: 1.1rem; } }
       .about .jobs__job h6 {
         margin: 0.3rem 0; }
-  .about .socialIcons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    padding: 2.5px 0.52rem;
-    right: 1px;
-    width: 100%;
-    bottom: 0;
-    background: #dfe8e8; }
+  .about .social-icons {
+    position: fixed;
+    background-color: #404034; }
     @media only screen and (min-width: 768px) {
-      .about .socialIcons {
+      .about .social-icons {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
                 flex-direction: row;
-        padding: 0 0.52rem;
-        right: 0;
-        text-align: center;
-        margin: 0 auto;
         width: 100%;
-        bottom: 0; } }
+        padding: 1em 0.5em; } }
+    .about .social-icons a {
+      background: #3f3f33; }
+    .about .social-icons .fa-2x {
+      font-size: 1.53rem;
+      padding: 0.2rem 0; }
+      @media only screen and (min-width: 1024px) {
+        .about .social-icons .fa-2x {
+          font-size: 1.2rem; } }
   .about footer {
     -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
             transform: rotate(90deg) translate(-3rem, -5rem); }
@@ -940,7 +908,6 @@ a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-bottom: 2rem;
   background: -webkit-gradient(linear, left top, right top, from(#f2f5e9), to(#f9f9f9)), url(../img/sunrise.jpg) center center;
   background: linear-gradient(to right, #f2f5e9, #f9f9f9), url(../img/sunrise.jpg) center center;
   background-size: cover;
@@ -1131,39 +1098,6 @@ a {
       color: #e6f6f9; }
     .projects__btn .fab {
       color: whitesmoke; }
-  .projects .socialIcons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    padding: 2.5px 0.52rem;
-    right: 1px;
-    width: 100%;
-    bottom: 0;
-    background: #dfe8e8; }
-    @media only screen and (min-width: 768px) {
-      .projects .socialIcons {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        padding: 0 0.52rem;
-        right: 0;
-        text-align: center;
-        margin: 0 auto;
-        width: 100%;
-        bottom: 0; } }
-  .projects footer {
-    -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
-            transform: rotate(90deg) translate(-3rem, -5rem); }
   .projects .block {
     width: 100%; }
     @media only screen and (min-width: 768px) {
@@ -1172,12 +1106,34 @@ a {
     @media only screen and (min-width: 1024px) {
       .projects .block {
         width: 22%; } }
-  @media only screen and (min-width: 1024px) {
-    .projects .fa-2x {
-      font-size: 1em; } }
+  .projects .social-icons {
+    position: fixed;
+    background-color: #404034; }
+    @media only screen and (min-width: 768px) {
+      .projects .social-icons {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        width: 100%;
+        padding: 1em 0.5em; } }
+    .projects .social-icons a {
+      background: #3f3f33; }
+    .projects .social-icons .fa-2x {
+      font-size: 1.53rem;
+      padding: 0.2rem 0; }
+      @media only screen and (min-width: 1024px) {
+        .projects .social-icons .fa-2x {
+          font-size: 1.2rem; } }
+  .projects footer {
+    -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
+            transform: rotate(90deg) translate(-3rem, -5rem); }
 
 .contact {
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1257,12 +1213,6 @@ a {
       @media only screen and (min-width: 1024px) {
         .contact .social-icons .fa-2x {
           font-size: 1.2rem; } }
-    @media only screen and (min-width: 768px) {
-      .contact .social-icons {
-        margin-top: 7rem; } }
-    @media only screen and (min-width: 1024px) {
-      .contact .social-icons {
-        margin-top: 11rem; } }
   .contact .text-secondary {
     color: #fff0c7;
     font-family: "Montserrat", "cursive";
@@ -1492,9 +1442,6 @@ a:active {
   font-family: "Cormorant Unicase", serif;
   background-color: red; }
 
-.socialIcons {
-  padding: 0.19px; }
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1511,21 +1458,8 @@ header {
   header .H {
     color: white; }
 
-.landing_menu {
-  visibility: hidden;
-  display: none;
-  height: 0;
-  padding: 0; }
-  .landing_menu.open {
-    visibility: visible;
-    height: 100%;
-    z-index: 9999;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-
 main {
-  height: 100vh;
+  height: auto;
   width: 100%; }
   main a {
     -webkit-transition: all 0.42s ease-in-out;
@@ -1560,7 +1494,7 @@ p {
 
 footer {
   font-size: 0.75rem;
-  position: absolute;
+  position: fixed;
   bottom: 0.54rem;
   right: 1.75rem;
   text-align: right;
@@ -1573,5 +1507,42 @@ footer {
   z-index: 99999699999;
   position: fixed;
   left: 8rem; }
+
+.social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2.5px 0.52rem;
+  right: 1px;
+  width: 100%;
+  bottom: 0; }
+  @media only screen and (min-width: 768px) {
+    .social-icons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      width: 100%;
+      padding: 1em 0.5em; } }
+  .social-icons a {
+    background: #3f3f33; }
+  .social-icons .fa-2x {
+    font-size: 1.53rem;
+    padding: 0.2rem 0; }
+    @media only screen and (min-width: 1024px) {
+      .social-icons .fa-2x {
+        font-size: 1.2rem; } }
 
 /*# sourceMappingURL=main.css.map */

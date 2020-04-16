@@ -96,9 +96,7 @@ a:active {
   font-family: "Cormorant Unicase", serif;
   background-color: red;
 }
-.socialIcons {
-  padding: 0.19px;
-}
+
 header {
   display: flex;
   flex-direction: column;
@@ -113,23 +111,8 @@ header {
   }
 }
 
-// togle menu visibility set
-
-.landing_menu {
-  visibility: hidden;
-  display: none;
-  height: 0;
-  padding: 0;
-  &.open {
-    visibility: visible;
-    height: 100%;
-    z-index: 9999;
-    display: flex;
-  }
-}
-
 main {
-  height: 100vh;
+  height: auto;
   width: 100%;
   a {
     @include transition-ease;
@@ -167,7 +150,7 @@ p {
 }
 footer {
   font-size: 0.75rem;
-  position: absolute;
+  position: fixed;
   bottom: 0.54rem;
   right: 1.75rem;
   text-align: right;
@@ -182,38 +165,31 @@ footer {
   position: fixed;
   left: 8rem;
 }
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2.5px 0.52rem;
+  right: 1px;
+  width: 100%;
+  bottom: 0;
 
-// body {
-//     @include flexCenter(column);
-//     display: flex;
-//     justify-content: center;
-//     background-color: $primary-bcg-color;
-//     color: $pimary-txt-color;
-// }
-
-// .main {
-//     @include flexCenter(row);
-//     width: 80%-40%;
-//     margin: 0 auto;
-
-//     #{&}__paragraph1 {
-//         color: $primary-bcg-color;
-//         font-weight: weight(bold);
-
-//         &:hover{
-//             color: rgb(36, 151, 56);
-//             cursor: pointer;
-//         }
-//     }
-//     #{&}__paragraph2 {
-//         @extend .main__paragraph1;
-
-//         &:hover {
-//             color: $accent-color;
-//         }
-//     }
-
-//     @include mobile {
-//         flex-direction: column;
-//     }
-// }
+  @include MEDIUM-DEVICE-WIDTH {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1em 0.5em;
+  }
+  a {
+    background: #3f3f33;
+  }
+  .fa-2x {
+    font-size: 1.53rem;
+    padding: 0.2rem 0;
+    @include LARGE-DEVICE-WIDTH {
+      font-size: 1.2rem;
+    }
+  }
+}

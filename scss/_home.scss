@@ -47,12 +47,12 @@
     text-shadow: none;
     text-align: center;
     padding: 0;
-    margin-top: -6rem;
   }
   .title_txt_container {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: -3rem;
 
     .title_text {
       font-size: 1.5rem;
@@ -79,7 +79,6 @@
       padding-top: 7em;
     }
 
-    // .social-icons,
     // #bottomBTN,
     // #leftBTN,
     // #rightBTN,
@@ -120,7 +119,7 @@
     }
 
     #semi_red {
-      animation: ring2 24s infinite linear alternate-reverse;
+      animation: ring2 33s infinite linear alternate-reverse;
       transform-origin: center;
       transform-box: fill-box;
     }
@@ -165,71 +164,6 @@
     @include LARGE-DEVICE-WIDTH {
       font-size: 1.1rem;
       letter-spacing: 0;
-    }
-  }
-
-  // &__name {
-  //   font-size: 2.1rem;
-  //   padding-bottom: 0.5rem;
-  //   line-height: 3rem;
-  //   font-family: "Bebas Neue", cursive;
-  //   font-family: "Turret Road", cursive;
-  //   letter-spacing: 0.13rem;
-  //   border-bottom: 2px solid set-text-color($primary-color);
-  //   border-bottom: 0.5px solid #332b28;
-  //   text-shadow: 1.8px 2.36px #3e473a;
-  //   text-shadow: 1.8px 2.36px #202d33;
-  //   text-shadow: -4.92px 3.36px #c7caad;
-  //   font-size: 3rem;
-  //   }
-  //   @include LARGE-DEVICE-WIDTH {
-  //     font-size: 2.6rem;
-  //   }
-
-  //   &--last {
-  //     font-weight: 700;
-  //     color: #e5fff6;
-  //   }
-  // }
-  .cta__button {
-    background: none;
-    padding: 0.5rem;
-    border-radius: 0.42rem;
-    margin: 1.2rem 0;
-    border: 2px solid rgb(154, 188, 218);
-    box-shadow: #a8bacc 1px 1px 4px, #b9cfd4 -1px -1px 4px;
-
-    @include MEDIUM-DEVICE-WIDTH {
-      border-radius: 0.44rem;
-    }
-
-    @include LARGE-DEVICE-WIDTH {
-      width: auto;
-      padding: 0;
-    }
-    #cta__link {
-      text-shadow: 1.08px 1.36px #202d33;
-      font-size: 1.06rem;
-      font-weight: bold;
-      font-family: "Turret Road", "cursive";
-      color: #e2f3fb;
-      width: 100%;
-      height: 100%;
-      margin: 1rem;
-      @include MEDIUM-DEVICE-WIDTH {
-        line-height: 2.2rem;
-      }
-      &:hover {
-        cursor: pointer;
-        color: $secondary-color;
-        font-weight: bolder;
-        color: $secondary-color;
-        font-size: 1.06rem;
-        font-style: italic;
-        @include MEDIUM-DEVICE-WIDTH {
-          line-height: 2.2rem;
-        }
-      }
     }
   }
 

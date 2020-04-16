@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  padding-bottom: 2rem;
   background: linear-gradient(to right, #f2f5e9, #f9f9f9),
     url(../img/sunrise.jpg) center center;
   background-size: cover;
@@ -210,32 +209,7 @@
       color: whitesmoke;
     }
   }
-  .socialIcons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    padding: 2.5px 0.52rem;
-    right: 1px;
-    width: 100%;
-    bottom: 0;
-    background: #dfe8e8;
 
-    @include MEDIUM-DEVICE-WIDTH {
-      flex-direction: row;
-      padding: 0 0.52rem;
-      right: 0;
-      text-align: center;
-      margin: 0 auto;
-      width: 100%;
-      bottom: 0;
-    }
-  }
-
-  footer {
-    transform: rotate(90deg) translate(-3rem, -5rem);
-  }
   .block {
     width: 100%;
     @include MEDIUM-DEVICE-WIDTH {
@@ -245,9 +219,28 @@
       width: 22%;
     }
   }
-  .fa-2x {
-    @include LARGE-DEVICE-WIDTH {
-      font-size: 1em;
+  .social-icons {
+    position: fixed;
+    background-color: #404034;
+
+    @include MEDIUM-DEVICE-WIDTH {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      padding: 1em 0.5em;
     }
+    a {
+      background: #3f3f33;
+    }
+    .fa-2x {
+      font-size: 1.53rem;
+      padding: 0.2rem 0;
+      @include LARGE-DEVICE-WIDTH {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  footer {
+    transform: rotate(90deg) translate(-3rem, -5rem);
   }
 }

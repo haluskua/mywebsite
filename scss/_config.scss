@@ -61,3 +61,39 @@ a {
     @content;
   }
 }
+
+
+// body {
+//     @include flexCenter(column);
+//     display: flex;
+//     justify-content: center;
+//     background-color: $primary-bcg-color;
+//     color: $pimary-txt-color;
+// }
+
+// .main {
+//     @include flexCenter(row);
+//     width: 80%-40%;
+//     margin: 0 auto;
+
+//     #{&}__paragraph1 {
+//         color: $primary-bcg-color;
+//         font-weight: weight(bold);
+
+//         &:hover{
+//             color: rgb(36, 151, 56);
+//             cursor: pointer;
+//         }
+//     }
+//     #{&}__paragraph2 {
+//         @extend .main__paragraph1;
+
+//         &:hover {
+//             color: $accent-color;
+//         }
+//     }
+
+//     @include mobile {
+//         flex-direction: column;
+//     }
+// }

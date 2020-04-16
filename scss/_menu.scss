@@ -1,5 +1,25 @@
+
+
+// Bread-crumb animation
+
+#project-index{
+      animation: breadCrumb 8s infinite linear alternate;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+
+    @keyframes breadCrumb {
+      from {
+        transform: rotateZ(-6deg);
+      }
+      to {
+        transform: rotateZ(6deg);
+      }
+    }
+
+
 .menu-btn {
-  position: absolute;
+  position: fixed;
   left: 2%;
   top: 17px;
   width: 50%;
