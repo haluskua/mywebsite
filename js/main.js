@@ -10,74 +10,41 @@ const leftShield = document.querySelector("#leftBTN");
 const bottomShield = document.querySelector("#bottomBTN");
 const rightShield = document.querySelector("#rightBTN");
 
-const shieldMenuButton = document.querySelector(".show");
-const mainMenu = document.querySelector(".landing_menu");
-
-//JAVASCRIPT DEMONSTRATION
-
-let showMenu = false;
 
 let shield = false;
 
-let toggleShieldMenu = false;
+let showMenu = false;
 
-document.addEventListener("DOMContentLoaded", function () {
-  shieldMenuButton.addEventListener("click", changePage);
-  function changePage(e) {
-    if (!toggleShieldMenu) {
-      mainMenu.classList.add("open");
 
-      toggleShieldMenu = true;
-    } else {
-      mainMenu.classList.remove("open");
+// togle for shield on landing page
 
-      toggleShieldMenu = false;
-    }
-  }
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   shieldCircle.addEventListener("click", toggleShield);
 
-document.addEventListener("DOMContentLoaded", function () {
-  shieldCircle.addEventListener("click", toggleShield);
+//   function toggleShield(e) {
+//     if (!shield) {
+//       topShield.classList.add("open");
+//       leftShield.classList.add("open");
+//       rightShield.classList.add("open");
+//       bottomShield.classList.add("open");
 
-  function toggleShield(e) {
-    if (!shield) {
-      topShield.classList.add("open");
-      leftShield.classList.add("open");
-      rightShield.classList.add("open");
-      bottomShield.classList.add("open");
+//       shield = true;
+//     } else {
+//       topShield.classList.remove("open");
+//       leftShield.classList.remove("open");
+//       rightShield.classList.remove("open");
+//       bottomShield.classList.remove("open");
 
-      shield = true;
-    } else {
-      topShield.classList.remove("open");
-      leftShield.classList.remove("open");
-      rightShield.classList.remove("open");
-      bottomShield.classList.remove("open");
+//       shield = false;
+//     }
+//   }
+// });
 
-      shield = false;
-    }
-  }
-});
-
-//toggle New menu
-document.addEventListener("DOMContentLoaded", function () {
-  menuBtn.addEventListener("click", toggleMenu);
-
-  function toggleMenu(e) {
-    if (!toggleShieldMenu) {
-      mainMenu.classList.add("open");
-
-      toggleShieldMenu = true;
-    } else {
-      mainMenu.classList.remove("open");
-
-      toggleShieldMenu = false;
-    }
-  }
-});
 
 //////////////////////////////////
-// toggleMenu
 
+
+// toggleMenu Hamburger menu
 
 document.addEventListener("DOMContentLoaded", function () {
   menuBtn.addEventListener("click", toggleMenu);
@@ -123,24 +90,10 @@ function imageGallery() {
 
 imageGallery();
 
-//jQuery for social icons
-
-$(document).ready(function () {
-  $(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-
-    if (scroll >= 440) {
-      $(".socialIcons").addClass("showIcons");
-    } else {
-      $(".socialIcons").removeClass("showIcons");
-    }
-  });
-});
-
 const current = document.querySelector("#current");
 const imgs = document.querySelector(".imgs");
 const img = document.querySelectorAll(".imgs img");
-const opacity = 0.6;
+const opacity = 1;
 
 // Set first img opacity
 img[0].style.opacity = opacity;
@@ -164,6 +117,10 @@ function imgClick(e) {
   e.target.style.opacity = opacity;
 }
 
+
+// ---------------------------*****************-------------------------
+
+
 // READMORE script
 
 function myFunction() {
@@ -183,3 +140,16 @@ function myFunction() {
 }
 
 // ---------------------------*****************-------------------------
+//jQuery for social icons
+
+$(document).ready(function () {
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 440) {
+      $(".socialIcons").addClass("showIcons");
+    } else {
+      $(".socialIcons").removeClass("showIcons");
+    }
+  });
+});
