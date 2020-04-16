@@ -11,7 +11,8 @@
   background: white;
   padding: 3rem 0 0 0;
   border: 4px solid #461a19;
-  background: linear-gradient(to right, #27291e, #444438), url(../img/sunrise.jpg) center center;
+  background: linear-gradient(to right, #070c0c, #230505a3),
+    url(../img/jetty.jpg) center center;
   @include MEDIUM-DEVICE-WIDTH {
     padding: 25vh 0;
   }
@@ -46,13 +47,15 @@
       grid-template-columns: repeat(1, 1fr);
     }
   }
-  .contact__email, .contact__phone, .contact__address {
+  .contact__email,
+  .contact__phone,
+  .contact__address {
     font-family: "Cinzel Decorative", cursive;
     color: #9d201a;
     font-weight: bold;
   }
   .social-icons {
-    position: absolute;
+    position: fixed;
     background-color: #404034;
 
     @include MEDIUM-DEVICE-WIDTH {
@@ -84,7 +87,7 @@
     margin: 3px 0;
     font-size: 1rem;
   }
-  .nav .menu-nav__item:nth-child(4){
+  .nav .menu-nav__item:nth-child(4) {
     width: 100%;
   }
 }

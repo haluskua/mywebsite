@@ -117,7 +117,7 @@
       text-align: left;
     }
     .main-title {
-      color: #ad0a07;
+      color: #3e0d18;
     }
   }
   .img-container {
@@ -218,7 +218,7 @@
         color: #292b20;
         font-size: 1.13em;
         line-height: 1.15em;
-        text-transform: uppercase;
+        text-transform: capitalize;
         padding-top: 5px;
         @include MEDIUM-DEVICE-WIDTH {
         }
@@ -227,20 +227,19 @@
         }
       }
       .text-secondary {
-        color: #ad0a07;
+        color: #3e0d18;
         font-size: 1.33em;
-        font-weight: normal;
+        font-weight: bold;
 
         font-family: "Bebas Neue", "Juslius Sans", "cursive";
       }
       h5 {
-        font-size: 1.1rem;
+        font-size: 1rem;
         color: #09868c;
-        font-weight: normal;
-        line-height: 1.1em;
+        font-weight: bold;
         font-style: normal;
         padding: 0;
-        line-height: 1.4em;
+        line-height: 1.24em;
         font-family: "Roboto", cursive;
 
         @include LARGE-DEVICE-WIDTH {

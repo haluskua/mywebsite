@@ -68,7 +68,7 @@ a {
   .home .my_name,
   .homeMain .my_name {
     font-family: "Cinzel Decorative", cursive;
-    font-size: 1.9em;
+    font-size: 1.69em;
     font-weight: bold;
     line-height: 1em;
     color: #3e0d18;
@@ -76,7 +76,7 @@ a {
     text-shadow: none;
     text-align: center;
     padding: 0;
-    margin-top: -3.3rem; }
+    margin-top: -6rem; }
   .home .title_txt_container,
   .homeMain .title_txt_container {
     display: -webkit-box;
@@ -756,7 +756,7 @@ a {
       font-weight: normal;
       text-align: left; }
     .about__bio .main-title {
-      color: #ad0a07; }
+      color: #3e0d18; }
   .about .img-container {
     padding: 0.8rem;
     display: -webkit-box;
@@ -868,25 +868,24 @@ a {
         color: #292b20;
         font-size: 1.13em;
         line-height: 1.15em;
-        text-transform: uppercase;
+        text-transform: capitalize;
         padding-top: 5px; }
         @media only screen and (min-width: 1024px) {
           .about .jobs__job h2,
           .about .jobs__job h3 {
             font-size: 1.7rem; } }
       .about .jobs__job .text-secondary {
-        color: #ad0a07;
+        color: #3e0d18;
         font-size: 1.33em;
-        font-weight: normal;
+        font-weight: bold;
         font-family: "Bebas Neue", "Juslius Sans", "cursive"; }
       .about .jobs__job h5 {
-        font-size: 1.1rem;
+        font-size: 1rem;
         color: #09868c;
-        font-weight: normal;
-        line-height: 1.1em;
+        font-weight: bold;
         font-style: normal;
         padding: 0;
-        line-height: 1.4em;
+        line-height: 1.24em;
         font-family: "Roboto", cursive; }
         @media only screen and (min-width: 1024px) {
           .about .jobs__job h5 {
@@ -1008,7 +1007,7 @@ a {
     .projects__bio-image p {
       text-align: left; }
     .projects__bio-image .main-title {
-      color: #ad0a07; }
+      color: #3e0d18; }
   .projects__items {
     padding: 1rem;
     display: grid;
@@ -1198,8 +1197,8 @@ a {
   background: white;
   padding: 3rem 0 0 0;
   border: 4px solid #461a19;
-  background: -webkit-gradient(linear, left top, right top, from(#27291e), to(#444438)), url(../img/sunrise.jpg) center center;
-  background: linear-gradient(to right, #27291e, #444438), url(../img/sunrise.jpg) center center; }
+  background: -webkit-gradient(linear, left top, right top, from(#070c0c), to(#230505a3)), url(../img/jetty.jpg) center center;
+  background: linear-gradient(to right, #070c0c, #230505a3), url(../img/jetty.jpg) center center; }
   @media only screen and (min-width: 768px) {
     .contact {
       padding: 25vh 0; } }
@@ -1230,12 +1229,14 @@ a {
     @media only screen and (min-width: 768px) {
       .contact__list {
         grid-template-columns: repeat(1, 1fr); } }
-  .contact .contact__email, .contact .contact__phone, .contact .contact__address {
+  .contact .contact__email,
+  .contact .contact__phone,
+  .contact .contact__address {
     font-family: "Cinzel Decorative", cursive;
     color: #9d201a;
     font-weight: bold; }
   .contact .social-icons {
-    position: absolute;
+    position: fixed;
     background-color: #404034; }
     @media only screen and (min-width: 768px) {
       .contact .social-icons {
@@ -1460,7 +1461,6 @@ h3 {
   text-align: left;
   font-weight: bold;
   line-height: 1.2em;
-  font-family: "Roboto", cursive;
   text-transform: uppercase; }
 
 h5 {
