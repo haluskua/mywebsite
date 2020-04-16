@@ -1566,4 +1566,15 @@ footer {
   padding: 1rem;
   color: #b9ae98; }
 
+#bread_crumbId {
+  width: 31%;
+  height: auto;
+  z-index: 1999;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  left: 8rem; }
+
 /*# sourceMappingURL=main.css.map */
