@@ -1,22 +1,19 @@
-
-
 // Bread-crumb animation
 
-#project-index{
-      animation: breadCrumb 8s infinite linear alternate;
-      transform-origin: center;
-      transform-box: fill-box;
-    }
+#project-index {
+  animation: breadCrumb 8s infinite linear alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
 
-    @keyframes breadCrumb {
-      from {
-        transform: rotateZ(-6deg);
-      }
-      to {
-        transform: rotateZ(6deg);
-      }
-    }
-
+@keyframes breadCrumb {
+  from {
+    transform: rotateZ(-6deg);
+  }
+  to {
+    transform: rotateZ(6deg);
+  }
+}
 
 .menu-btn {
   position: fixed;
@@ -97,8 +94,7 @@
   box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127),
     0px -3px 1px rgba(99, 11, 6, 0.244);
   @include MEDIUM-DEVICE-WIDTH {
-    visibility: visible;
-    height: auto;
+    height: 65px;
   }
 
   &.open {
@@ -115,6 +111,7 @@
     list-style-type: none;
     padding: 2rem;
     transform: translateY(-100%);
+    background-color: #3e0d18;
     @include transition-ease;
     background: white;
     @include MEDIUM-DEVICE-WIDTH {
@@ -123,7 +120,8 @@
       height: 100%;
       text-align: center;
       padding-right: 0;
-      padding: 0.32rem 0;
+      padding: 2rem 0;
+      background: #3e0d18;
     }
 
     &.open {
@@ -140,7 +138,18 @@
       background: linear-gradient(to right, #dff19b0d, #56343400),
         url(../img/jetty.jpg) center center;
       background-size: cover;
+      @include MEDIUM-DEVICE-WIDTH {
+        display: flex;
+        width: 70%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 8rem 0;
+        box-shadow: 1rem 0px 50px #aaada0;
+      }
     }
+    .nav .menu-nav__item:nth-child(3) {
+      margin-top: -13rem;
+  }
 
     &__item {
       transform: translateX(100vw);
@@ -206,12 +215,12 @@
       margin: 3px 0;
       border-radius: 0.28rem;
       letter-spacing: 0.084em;
-      color: $dark-text;
       color: #637d8b;
       border: 1px solid #a9bdc0;
       width: 100%;
       background-color: #f3f0d8;
       font-family: "Cormorant Unicase", serif;
+
       &:active {
         font-family: "Cormorant Unicase", serif;
         border: none;
@@ -255,6 +264,9 @@
     text-shadow: none;
     text-align: center;
     padding: 0;
+    @include MEDIUM-DEVICE-WIDTH {
+      font-size: 2.9em;
+    }
   }
 
   .svg-container {
@@ -265,14 +277,21 @@
     justify-content: space-around;
     transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear,
       -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
+    @include MEDIUM-DEVICE-WIDTH {
+      width: 100%;
+      padding-top: 0;
+      height: 92vh;
+    }
     @include LARGE-DEVICE-WIDTH {
       height: 100vh;
-      width: 28%;
-      padding-top: 7em;
     }
     svg {
       width: 100%;
       height: 100%;
+      @include MEDIUM-DEVICE-WIDTH {
+        width: 74%;
+        height: 71vh;
+      }
     }
   }
 
@@ -291,6 +310,10 @@
       margin-top: -3.3rem;
       text-shadow: none;
       padding: 0;
+      @include MEDIUM-DEVICE-WIDTH {
+        font-size: 2rem;
+        margin: 0;
+      }
     }
   }
 

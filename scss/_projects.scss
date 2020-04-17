@@ -10,7 +10,7 @@
 
   @include MEDIUM-DEVICE-WIDTH {
     padding-bottom: 0;
-    height: 100%;
+    height: 100vh;
   }
   @include LARGE-DEVICE-WIDTH {
     padding-bottom: 2rem;
@@ -31,9 +31,10 @@
     padding-left: 1rem;
 
     @include MEDIUM-DEVICE-WIDTH {
-      height: 100%;
       padding-top: 0;
-      margin-top: 12%;
+      margin-top: 4rem;
+      height: 24%;
+      justify-content: space-evenly;
     }
     @include LARGE-DEVICE-WIDTH {
       height: 42vh;
@@ -70,6 +71,9 @@
 
     .main-title {
       color: #3e0d18;
+      @include MEDIUM-DEVICE-WIDTH {
+        top: 1rem;
+      }
     }
   }
 
@@ -88,7 +92,6 @@
     background-size: cover;
     @include MEDIUM-DEVICE-WIDTH {
       grid-template-columns: repeat(2, 1fr);
-      padding: 2rem;
       grid-gap: 1rem;
     }
     @include LARGE-DEVICE-WIDTH {
@@ -213,10 +216,9 @@
   .block {
     width: 100%;
     @include MEDIUM-DEVICE-WIDTH {
-      width: 50%;
     }
     @include LARGE-DEVICE-WIDTH {
-      width: 22%;
+      width: 66%;
     }
   }
   .social-icons {
@@ -224,10 +226,7 @@
     background-color: #404034;
 
     @include MEDIUM-DEVICE-WIDTH {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      padding: 1em 0.5em;
+      z-index: 0;
     }
     a {
       background: #3f3f33;

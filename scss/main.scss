@@ -114,6 +114,9 @@ header {
 main {
   height: auto;
   width: 100%;
+  @include MEDIUM-DEVICE-WIDTH {
+    height: auto;
+  }
   a {
     @include transition-ease;
     padding: 0.4rem;
@@ -164,7 +167,18 @@ footer {
   z-index: 99999699999;
   position: fixed;
   left: 8rem;
+  @include MEDIUM-DEVICE-WIDTH {
+    left: 34rem;
+  }
+  @include LARGE-DEVICE-WIDTH {
+    left: 80%;
+    width: 9%;
+  }
 }
+
+
+//social icons links
+
 .social-icons {
   display: flex;
   flex-direction: row;
@@ -177,10 +191,7 @@ footer {
   bottom: 0;
 
   @include MEDIUM-DEVICE-WIDTH {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 1em 0.5em;
+    z-index: 0;
   }
   a {
     background: #3f3f33;
