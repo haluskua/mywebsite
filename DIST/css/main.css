@@ -41,8 +41,8 @@ a {
   text-align: center;
   border: 4px solid #27090796;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(#3d6eb154), to(#efad8e38)), url(../img/jetty.jpg) center center;
-  background: linear-gradient(to right, #3d6eb154, #efad8e38), url(../img/jetty.jpg) center center;
+  background: -webkit-gradient(linear, left top, right top, from(#12162933), to(#29201b00)), url(../img/3.jpg) center center;
+  background: linear-gradient(to right, #12162933, #29201b00), url(../img/3.jpg) center center;
   background-size: cover;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -71,7 +71,7 @@ a {
     font-size: 1.69em;
     font-weight: bold;
     line-height: 1em;
-    color: #3e0d18;
+    color: #fbf9d2;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
@@ -101,7 +101,7 @@ a {
       font-family: "Audiowide", cursive;
       font-family: "Cormorant Unicase", serif;
       text-shadow: 3.28px 3.36px #e7ffc7;
-      color: #331503;
+      color: #fbf9d2;
       text-shadow: none;
       padding: 0; }
       @media only screen and (min-width: 768px) {
@@ -110,7 +110,7 @@ a {
           font-size: 2.5em; } }
   .home .svg-container,
   .homeMain .svg-container {
-    width: 80%;
+    width: 73%;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -439,8 +439,8 @@ a {
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: -webkit-gradient(linear, left top, right top, from(#dff19b0d), to(#56343400)), url(../img/jetty.jpg) center center;
-      background: linear-gradient(to right, #dff19b0d, #56343400), url(../img/jetty.jpg) center center;
+      background: -webkit-gradient(linear, left top, right top, from(#3e0d18), to(#3e0d18)), url(../img/jetty.jpg) center center;
+      background: linear-gradient(to right, #3e0d18, #3e0d18), url(../img/jetty.jpg) center center;
       background-size: cover; }
       @media only screen and (min-width: 768px) {
         .nav .menu-nav.open {
@@ -550,9 +550,9 @@ a {
   .nav .my_name {
     font-family: "Cinzel Decorative", cursive;
     font-size: 1.9em;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1em;
-    color: #423010;
+    color: #fff982;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
@@ -600,7 +600,7 @@ a {
       font-family: "Audiowide", cursive;
       font-family: "Cormorant Unicase", serif;
       text-shadow: 3.28px 3.36px #e7ffc7;
-      color: #2d210a;
+      color: #fff982;
       margin-top: -3.3rem;
       text-shadow: none;
       padding: 0; }

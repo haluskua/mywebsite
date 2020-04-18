@@ -135,7 +135,7 @@
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: linear-gradient(to right, #dff19b0d, #56343400),
+      background: linear-gradient(to right, #3e0d18, #3e0d18),
         url(../img/jetty.jpg) center center;
       background-size: cover;
       @include MEDIUM-DEVICE-WIDTH {
@@ -149,7 +149,7 @@
     }
     .nav .menu-nav__item:nth-child(3) {
       margin-top: -13rem;
-  }
+    }
 
     &__item {
       transform: translateX(100vw);
@@ -257,9 +257,9 @@
   .my_name {
     font-family: "Cinzel Decorative", cursive;
     font-size: 1.9em;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1em;
-    color: #423010;
+    color: #fff982;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
@@ -306,7 +306,7 @@
       font-family: "Audiowide", cursive;
       font-family: "Cormorant Unicase", serif;
       text-shadow: 3.28px 3.36px #e7ffc7;
-      color: #2d210a;
+      color: #fff982;
       margin-top: -3.3rem;
       text-shadow: none;
       padding: 0;
