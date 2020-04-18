@@ -44,6 +44,7 @@ a {
   background: -webkit-gradient(linear, left top, right top, from(#12162933), to(#29201b00)), url(../img/3.jpg) center center;
   background: linear-gradient(to right, #12162933, #29201b00), url(../img/3.jpg) center center;
   background-size: cover;
+  background-repeat: no-repeat;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 4rem 0; }
