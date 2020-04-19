@@ -94,7 +94,8 @@ a {
       font-weight: normal;
       letter-spacing: 0.02rem;
       color: #c4c4c4;
-      font-family: "Robot","Montserrat", cursive; }
+      font-family: "Robot","Montserrat", cursive;
+      font-family: "Cinzel Decorative", cursive; }
   .home svg,
   .homeMain svg {
     height: 100%; }
