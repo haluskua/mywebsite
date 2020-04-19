@@ -3,7 +3,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   color: $secondary-color;
   padding: 18vh 0;
@@ -11,13 +11,19 @@
   background: white;
   padding: 3rem 0 0 0;
   border: 4px solid #461a19;
-  background: linear-gradient(to right, #070c0c, #230505a3),
-    url(../img/jetty.jpg) center center;
+  background: linear-gradient(to right, #070c0c12, #230505a3),
+    url(../img/project-3.jpg) center center;
   @include MEDIUM-DEVICE-WIDTH {
     padding: 25vh 0;
   }
   @include LARGE-DEVICE-WIDTH {
     padding-top: 33vh;
+  }
+
+  .grid-container {
+    height: auto;
+    padding: 2rem;
+    background: #bc2241;
   }
 
   h2 {
@@ -51,8 +57,13 @@
   .contact__phone,
   .contact__address {
     font-family: "Cinzel Decorative", cursive;
-    color: #9d201a;
+    color: #49211e;
     font-weight: bold;
+    width: 100vw;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.17);
   }
   .social-icons {
     position: fixed;
