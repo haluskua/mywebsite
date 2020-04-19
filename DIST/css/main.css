@@ -73,12 +73,28 @@ a {
     padding: 1rem;
     height: 14%;
     margin-top: 2rem;
-    background: #141517; }
+    background: #141517;
+    position: fixed;
+    margin: 0;
+    top: 0; }
     @media only screen and (min-width: 768px) {
       .home .wrap,
       .homeMain .wrap {
         height: 12%;
         margin-top: 6rem; } }
+  .home h1,
+  .homeMain h1 {
+    position: relative;
+    margin-top: 9rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #610a18; }
+    .home h1 span,
+    .homeMain h1 span {
+      font-weight: normal;
+      letter-spacing: 0.02rem;
+      color: #c4c4c4;
+      font-family: "Robot","Montserrat", cursive; }
   .home svg,
   .homeMain svg {
     height: 100%; }
