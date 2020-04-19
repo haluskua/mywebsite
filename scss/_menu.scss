@@ -90,7 +90,7 @@
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background-color: #3e0d18;
+  background-color: #bc2241;
   box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127),
     0px -3px 1px rgba(99, 11, 6, 0.244);
   @include MEDIUM-DEVICE-WIDTH {
@@ -135,9 +135,7 @@
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: linear-gradient(to right, #3e0d18, #3e0d18),
-        url(../img/jetty.jpg) center center;
-      background-size: cover;
+      background: #bc2241;
       @include MEDIUM-DEVICE-WIDTH {
         display: flex;
         width: 70%;
@@ -259,7 +257,7 @@
     font-size: 1.9em;
     font-weight: normal;
     line-height: 1em;
-    color: #e2e2a7;
+    color: lavenderblush;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
@@ -306,8 +304,7 @@
       font-family: "Audiowide", cursive;
       font-family: "Cormorant Unicase", serif;
       text-shadow: 3.28px 3.36px #e7ffc7;
-      color: #e2e2a7;
-      margin-top: -3.3rem;
+      color: lavenderblush;
       text-shadow: none;
       padding: 0;
       @include MEDIUM-DEVICE-WIDTH {
