@@ -146,7 +146,8 @@ a {
       .home .svg-container,
       .homeMain .svg-container {
         height: 47vh;
-        width: 100%; } }
+        width: 100%;
+        margin-top: 6rem; } }
     .home .svg-container #navy_theme,
     .homeMain .svg-container #navy_theme {
       -webkit-animation: flower 10s infinite linear alternate;
