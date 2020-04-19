@@ -425,7 +425,7 @@ a {
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background-color: #3e0d18;
+  background-color: #bc2241;
   -webkit-box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127), 0px -3px 1px rgba(99, 11, 6, 0.244);
           box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127), 0px -3px 1px rgba(99, 11, 6, 0.244); }
   @media only screen and (min-width: 768px) {
@@ -487,9 +487,7 @@ a {
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: -webkit-gradient(linear, left top, right top, from(#3e0d18), to(#3e0d18)), url(../img/jetty.jpg) center center;
-      background: linear-gradient(to right, #3e0d18, #3e0d18), url(../img/jetty.jpg) center center;
-      background-size: cover; }
+      background: #bc2241; }
       @media only screen and (min-width: 768px) {
         .nav .menu-nav.open {
           display: -webkit-box;
@@ -600,7 +598,7 @@ a {
     font-size: 1.9em;
     font-weight: normal;
     line-height: 1em;
-    color: #e2e2a7;
+    color: lavenderblush;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
@@ -648,8 +646,7 @@ a {
       font-family: "Audiowide", cursive;
       font-family: "Cormorant Unicase", serif;
       text-shadow: 3.28px 3.36px #e7ffc7;
-      color: #e2e2a7;
-      margin-top: -3.3rem;
+      color: lavenderblush;
       text-shadow: none;
       padding: 0; }
       @media only screen and (min-width: 768px) {
@@ -702,7 +699,7 @@ a {
   padding-bottom: 0rem;
   background-color: #f8f3b0;
   padding-top: 2.2rem;
-  border: 4px solid #09868c;
+  border: 4px solid rgba(188, 34, 65, 0.1);
   background: -webkit-gradient(linear, left top, right top, from(#f2f5e9), to(#f9f9f9)), url(../img/sunrise.jpg) center center;
   background: linear-gradient(to right, #f2f5e9, #f9f9f9), url(../img/sunrise.jpg) center center; }
   .about .breadCrumbs {
@@ -1001,7 +998,7 @@ a {
   background: -webkit-gradient(linear, left top, right top, from(#f2f5e9), to(#f9f9f9)), url(../img/sunrise.jpg) center center;
   background: linear-gradient(to right, #f2f5e9, #f9f9f9), url(../img/sunrise.jpg) center center;
   background-size: cover;
-  border: 4px solid #d0d4c2; }
+  border: 4px solid rgba(188, 34, 65, 0.1); }
   @media only screen and (min-width: 768px) {
     .projects {
       padding-bottom: 0;
@@ -1355,7 +1352,7 @@ a {
   max-width: 760px;
   margin: auto;
   overflow: scroll;
-  border: #eef9ff solid 2px;
+  border: 4px solid rgba(188, 34, 65, 0.1);
   -webkit-box-shadow: 0px 10px 5px #aab7bd, 0px -10px 5px #b5c6ce;
           box-shadow: 0px 10px 5px #aab7bd, 0px -10px 5px #b5c6ce;
   background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url("../img/cloth.jpg") center center;
