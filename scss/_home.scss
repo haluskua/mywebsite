@@ -9,7 +9,7 @@
   border: 4px solid #bc2241;
   overflow: hidden;
   background: linear-gradient(to right, #7b6a8a12, #1e272f24),
-    url(../img/tie_red.png) center center;
+    url(../img/heart_matrix.png) center bottom;
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: space-around;
@@ -18,10 +18,11 @@
   @include MEDIUM-DEVICE-WIDTH {
     justify-content: flex-start;
     padding-top: -4rem;
+    border: none;
   }
   @include LARGE-DEVICE-WIDTH {
+    border: 0;
   }
-  
 
   .wrap {
     flex-direction: column;
@@ -30,53 +31,61 @@
     align-items: center;
     width: 100%;
     padding: 1rem;
+    padding-top: 2rem;
     height: 14%;
     margin-top: 2rem;
-    background: #bc2241;
     position: fixed;
     margin: 0;
     top: 0;
     @include MEDIUM-DEVICE-WIDTH {
-      height: 12%;
-      margin-top: 6rem;
+      height: 13%;
+      margin-top: 2rem;
     }
-    
+    @include LARGE-DEVICE-WIDTH {
+      top: 2.5rem;
+    }
   }
   h1 {
     position: relative;
-    margin-top: 9rem;
+    margin-top: 23rem;
     font-weight: bold;
     font-size: 2.6rem;
     color: #610a18;
+
+    @include MEDIUM-DEVICE-WIDTH {
+    }
+    @include LARGE-DEVICE-WIDTH {
+      margin-top: 10rem;
+    }
     span {
       font-weight: normal;
       letter-spacing: 0.02rem;
-      color: #fff0f5;
-      text-shadow: 2px 3px 4px dimgrey;
-      font-family: "Robot","Montserrat", cursive;
+      font-size: 2.8rem;
+      text-shadow: 2px 3px 1px #c70d25;
+      font-family: "Robot", "Montserrat", cursive;
       font-family: "Cinzel Decorative", cursive;
+      font-family: "Girassol", cursive;
+      @include MEDIUM-DEVICE-WIDTH {
+        text-shadow: 2px 3px 4px #2b1b1b;
+        font-size: 4.4rem;
+      }
+      @include LARGE-DEVICE-WIDTH {
+        font-size: 2.6rem;
+      }
     }
   }
   .creativity {
     font-size: 1.2rem;
-    color: #c56d00;
+    color: #d8bd71;
     text-shadow: none;
-  }
-
-  //svg box styling
-
-  svg {
-    height: 100%;
+    margin-bottom: 1rem;
     @include MEDIUM-DEVICE-WIDTH {
-      height: 66vh;
-      width: 50%;
-    }
-    @include LARGE-DEVICE-WIDTH {
-      width: 100%;
-      height: 100%;
-      padding-top: 0;
+      padding: 1rem;
+      font-size: 1.8rem;
+      margin-top: -2rem;
     }
   }
+
   .animated_text {
     @include MEDIUM-DEVICE-WIDTH {
     }
@@ -92,7 +101,10 @@
     text-align: center;
     padding: 0;
     @include MEDIUM-DEVICE-WIDTH {
-      font-size: 2.6em;
+      font-size: 2.6rem;
+    }
+    @include LARGE-DEVICE-WIDTH {
+      font-size: 1.6rem;
     }
   }
   .title_txt_container {
@@ -100,8 +112,6 @@
     justify-content: center;
     width: 100%;
     margin: 0;
-    @include MEDIUM-DEVICE-WIDTH {
-    }
 
     .title_text {
       font-size: 1.25rem;
@@ -113,23 +123,45 @@
       text-shadow: none;
       padding: 0;
       @include MEDIUM-DEVICE-WIDTH {
-        font-size: 2.5em;
+        font-size: 2.2em;
       }
+      @include LARGE-DEVICE-WIDTH {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  //svg box styling
+  svg {
+    height: 100%;
+    @include MEDIUM-DEVICE-WIDTH {
+      height: 53vh;
+      width: 50%;
+    }
+    @include LARGE-DEVICE-WIDTH {
+      width: 100%;
+      height: 50vh;
+      padding-top: 0;
+      margin-top: 0rem;
     }
   }
   .svg-container {
     width: 68%;
     text-align: center;
     display: flex;
-    margin-top: 0rem;
+    margin-top: 3rem;
     justify-content: space-around;
     transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear,
       -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
 
     @include MEDIUM-DEVICE-WIDTH {
-      height: 47vh;
       width: 100%;
-      margin-top: 6rem;
+      height: 100%;
+      margin-top: 0;
+    }
+    @include LARGE-DEVICE-WIDTH {
+      height: 100%;
+      margin-top: 3.4rem;
     }
 
     // #bottomBTN,
@@ -205,9 +237,9 @@
     color: $secondary-color;
     font-family: "EB Garamond", serif;
     font-family: "Julius Sans One", sans-serif;
-    font-family: "Girassol", cursive;
     font-family: "Cinzel Decorative", cursive;
     font-family: "Turret Road", "cursive";
+    font-family: "Girassol", cursive;
     letter-spacing: 0.03em;
     letter-spacing: 0;
     text-shadow: 0.5px 1.36px #54849a;

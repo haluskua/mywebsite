@@ -41,8 +41,8 @@ a {
   text-align: center;
   border: 4px solid #bc2241;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(#7b6a8a12), to(#1e272f24)), url(../img/tie_red.png) center center;
-  background: linear-gradient(to right, #7b6a8a12, #1e272f24), url(../img/tie_red.png) center center;
+  background: -webkit-gradient(linear, left top, right top, from(#7b6a8a12), to(#1e272f24)), url(../img/heart_matrix.png) center bottom;
+  background: linear-gradient(to right, #7b6a8a12, #1e272f24), url(../img/heart_matrix.png) center bottom;
   background-size: cover;
   background-repeat: no-repeat;
   -ms-flex-pack: distribute;
@@ -54,7 +54,12 @@ a {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start;
-      padding-top: -4rem; } }
+      padding-top: -4rem;
+      border: none; } }
+  @media only screen and (min-width: 1024px) {
+    .home,
+    .homeMain {
+      border: 0; } }
   .home .wrap,
   .homeMain .wrap {
     -webkit-box-orient: vertical;
@@ -71,51 +76,62 @@ a {
             align-items: center;
     width: 100%;
     padding: 1rem;
+    padding-top: 2rem;
     height: 14%;
     margin-top: 2rem;
-    background: #bc2241;
     position: fixed;
     margin: 0;
     top: 0; }
     @media only screen and (min-width: 768px) {
       .home .wrap,
       .homeMain .wrap {
-        height: 12%;
-        margin-top: 6rem; } }
+        height: 13%;
+        margin-top: 2rem; } }
+    @media only screen and (min-width: 1024px) {
+      .home .wrap,
+      .homeMain .wrap {
+        top: 2.5rem; } }
   .home h1,
   .homeMain h1 {
     position: relative;
-    margin-top: 9rem;
+    margin-top: 23rem;
     font-weight: bold;
     font-size: 2.6rem;
     color: #610a18; }
+    @media only screen and (min-width: 1024px) {
+      .home h1,
+      .homeMain h1 {
+        margin-top: 10rem; } }
     .home h1 span,
     .homeMain h1 span {
       font-weight: normal;
       letter-spacing: 0.02rem;
-      color: #fff0f5;
-      text-shadow: 2px 3px 4px dimgrey;
-      font-family: "Robot","Montserrat", cursive;
-      font-family: "Cinzel Decorative", cursive; }
+      font-size: 2.8rem;
+      text-shadow: 2px 3px 1px #c70d25;
+      font-family: "Robot", "Montserrat", cursive;
+      font-family: "Cinzel Decorative", cursive;
+      font-family: "Girassol", cursive; }
+      @media only screen and (min-width: 768px) {
+        .home h1 span,
+        .homeMain h1 span {
+          text-shadow: 2px 3px 4px #2b1b1b;
+          font-size: 4.4rem; } }
+      @media only screen and (min-width: 1024px) {
+        .home h1 span,
+        .homeMain h1 span {
+          font-size: 2.6rem; } }
   .home .creativity,
   .homeMain .creativity {
     font-size: 1.2rem;
-    color: #c56d00;
-    text-shadow: none; }
-  .home svg,
-  .homeMain svg {
-    height: 100%; }
+    color: #d8bd71;
+    text-shadow: none;
+    margin-bottom: 1rem; }
     @media only screen and (min-width: 768px) {
-      .home svg,
-      .homeMain svg {
-        height: 66vh;
-        width: 50%; } }
-    @media only screen and (min-width: 1024px) {
-      .home svg,
-      .homeMain svg {
-        width: 100%;
-        height: 100%;
-        padding-top: 0; } }
+      .home .creativity,
+      .homeMain .creativity {
+        padding: 1rem;
+        font-size: 1.8rem;
+        margin-top: -2rem; } }
   .home .my_name,
   .homeMain .my_name {
     font-family: "Cinzel Decorative", cursive;
@@ -130,7 +146,11 @@ a {
     @media only screen and (min-width: 768px) {
       .home .my_name,
       .homeMain .my_name {
-        font-size: 2.6em; } }
+        font-size: 2.6rem; } }
+    @media only screen and (min-width: 1024px) {
+      .home .my_name,
+      .homeMain .my_name {
+        font-size: 1.6rem; } }
   .home .title_txt_container,
   .homeMain .title_txt_container {
     display: -webkit-box;
@@ -154,7 +174,26 @@ a {
       @media only screen and (min-width: 768px) {
         .home .title_txt_container .title_text,
         .homeMain .title_txt_container .title_text {
-          font-size: 2.5em; } }
+          font-size: 2.2em; } }
+      @media only screen and (min-width: 1024px) {
+        .home .title_txt_container .title_text,
+        .homeMain .title_txt_container .title_text {
+          font-size: 1.2rem; } }
+  .home svg,
+  .homeMain svg {
+    height: 100%; }
+    @media only screen and (min-width: 768px) {
+      .home svg,
+      .homeMain svg {
+        height: 53vh;
+        width: 50%; } }
+    @media only screen and (min-width: 1024px) {
+      .home svg,
+      .homeMain svg {
+        width: 100%;
+        height: 50vh;
+        padding-top: 0;
+        margin-top: 0rem; } }
   .home .svg-container,
   .homeMain .svg-container {
     width: 68%;
@@ -162,7 +201,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 0rem;
+    margin-top: 3rem;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear, -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
@@ -170,9 +209,14 @@ a {
     @media only screen and (min-width: 768px) {
       .home .svg-container,
       .homeMain .svg-container {
-        height: 47vh;
         width: 100%;
-        margin-top: 6rem; } }
+        height: 100%;
+        margin-top: 0; } }
+    @media only screen and (min-width: 1024px) {
+      .home .svg-container,
+      .homeMain .svg-container {
+        height: 100%;
+        margin-top: 3.4rem; } }
     .home .svg-container #navy_theme,
     .homeMain .svg-container #navy_theme {
       -webkit-animation: flower 10s infinite linear alternate;
@@ -259,9 +303,9 @@ a {
     color: #93a7a9;
     font-family: "EB Garamond", serif;
     font-family: "Julius Sans One", sans-serif;
-    font-family: "Girassol", cursive;
     font-family: "Cinzel Decorative", cursive;
     font-family: "Turret Road", "cursive";
+    font-family: "Girassol", cursive;
     letter-spacing: 0.03em;
     letter-spacing: 0;
     text-shadow: 0.5px 1.36px #54849a; }
