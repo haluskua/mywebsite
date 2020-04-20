@@ -33,45 +33,15 @@
     padding: 1rem;
     padding-top: 2rem;
     height: 14%;
-    margin-top: 2rem;
-    position: fixed;
-    margin: 0;
-    top: 0;
-    @include MEDIUM-DEVICE-WIDTH {
-      height: 13%;
-      margin-top: 2rem;
-    }
-    @include LARGE-DEVICE-WIDTH {
-      top: 2.5rem;
-    }
-  }
-  h1 {
+    margin-top: 12rem;
     position: relative;
-    margin-top: 23rem;
-    font-weight: bold;
-    font-size: 2.6rem;
-    color: #610a18;
-
     @include MEDIUM-DEVICE-WIDTH {
+      height: 19%;
+      margin-top: 14rem;
     }
     @include LARGE-DEVICE-WIDTH {
-      margin-top: 10rem;
-    }
-    span {
-      font-weight: normal;
-      letter-spacing: 0.02rem;
-      font-size: 2.8rem;
-      text-shadow: 2px 3px 1px #c70d25;
-      font-family: "Robot", "Montserrat", cursive;
-      font-family: "Cinzel Decorative", cursive;
-      font-family: "Girassol", cursive;
-      @include MEDIUM-DEVICE-WIDTH {
-        text-shadow: 2px 3px 4px #2b1b1b;
-        font-size: 4.4rem;
-      }
-      @include LARGE-DEVICE-WIDTH {
-        font-size: 2.6rem;
-      }
+      height: 19%;
+      margin-top: 3rem;
     }
   }
   .creativity {
@@ -92,7 +62,7 @@
   }
   .my_name {
     font-family: "Cinzel Decorative", cursive;
-    font-size: 1.39em;
+    font-size: 1.59em;
     font-weight: bold;
     line-height: 1em;
     color: #f7dea7;
@@ -140,16 +110,15 @@
     }
     @include LARGE-DEVICE-WIDTH {
       width: 100%;
-      height: 50vh;
+      height: 64vh;
       padding-top: 0;
-      margin-top: 0rem;
+      margin-top: -3rem;
     }
   }
   .svg-container {
     width: 68%;
     text-align: center;
     display: flex;
-    margin-top: 3rem;
     justify-content: space-around;
     transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear,
       -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
