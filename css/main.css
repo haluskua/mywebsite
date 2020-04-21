@@ -47,6 +47,10 @@ a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-bottom: 5rem; }
+  @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+    .home,
+    .homeMain {
+      padding: 0; } }
   @media only screen and (min-width: 768px) {
     .home,
     .homeMain {
@@ -82,7 +86,7 @@ a {
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .home .wrap,
       .homeMain .wrap {
-        margin-top: 2rem; } }
+        margin-top: 6rem; } }
     @media only screen and (min-width: 768px) {
       .home .wrap,
       .homeMain .wrap {
@@ -114,12 +118,12 @@ a {
   .home .my_name,
   .homeMain .my_name {
     font-size: 2.05em;
-    font-weight: bold;
     line-height: 1em;
     color: #5a491a;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
+    text-transform: uppercase;
     padding: 0;
     font-family: "EB Garamond", serif; }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
