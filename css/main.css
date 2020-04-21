@@ -528,7 +528,15 @@ footer {
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: #bc2241; }
+      background: #e1e4e6; }
+      @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+        .nav .menu-nav.open {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap; } }
       @media only screen and (min-width: 768px) {
         .nav .menu-nav.open {
           display: -webkit-box;
@@ -543,8 +551,17 @@ footer {
           padding: 8rem 0;
           -webkit-box-shadow: 1rem 0px 50px #aaada0;
                   box-shadow: 1rem 0px 50px #aaada0; } }
+    .nav .menu-nav .nav .manu.menu.menu-nav__item:nth-child(1) {
+      width: 50%; }
+    @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+      .nav .menu-nav .nav .menu-nav__item:nth-child(2) {
+        width: 40%;
+        padding: 0 2rem; } }
     .nav .menu-nav .nav .menu-nav__item:nth-child(3) {
       margin-top: -13rem; }
+      @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+        .nav .menu-nav .nav .menu-nav__item:nth-child(3) {
+          width: 100%; } }
     .nav .menu-nav__item {
       -webkit-transform: translateX(100vw);
               transform: translateX(100vw);
@@ -639,7 +656,7 @@ footer {
     font-size: 1.9em;
     font-weight: normal;
     line-height: 1em;
-    color: lavenderblush;
+    color: #353535;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
@@ -658,6 +675,9 @@ footer {
         justify-content: space-around;
     -webkit-transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear, -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
             transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear, -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1); }
+    @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+      .nav .svg-container {
+        width: 85%; } }
     @media only screen and (min-width: 768px) {
       .nav .svg-container {
         width: 100%;
@@ -687,7 +707,7 @@ footer {
       font-family: "Audiowide", cursive;
       font-family: "Cormorant Unicase", serif;
       text-shadow: 3.28px 3.36px #e7ffc7;
-      color: lavenderblush;
+      color: #353535;
       text-shadow: none;
       padding: 0; }
       @media only screen and (min-width: 768px) {
@@ -862,7 +882,8 @@ footer {
       font-weight: normal;
       text-align: left; }
     .about__bio .main-title {
-      color: #3e0d18; }
+      color: #3e0d18;
+      display: none; }
   .about .img-container {
     display: -webkit-box;
     display: -ms-flexbox;
