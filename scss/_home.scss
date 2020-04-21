@@ -9,7 +9,7 @@
   // border: 4px solid #143643;
   overflow: hidden;
   background: linear-gradient(to right, #7b6a8a12, #1e272f24),
-    url(../img/heart_matrix_blue.png) center bottom;
+    url(../img/heart_matrix_gold.png) center bottom;
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: space-around;
@@ -61,11 +61,10 @@
     }
   }
   .my_name {
-    font-family: "Cinzel Decorative", cursive;
-    font-size: 1.59em;
+    font-size: 2.5em;
     font-weight: bold;
     line-height: 1em;
-    color: #f7dea7;
+    color: #5a491a;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
@@ -84,12 +83,12 @@
     margin: 0;
 
     .title_text {
-      font-size: 1.25rem;
+      font-size: 1.3rem;
       font-family: "Poiret One", cursive;
       font-family: "Audiowide", cursive;
-      font-family: "Cormorant Unicase", serif;
+      // font-family: "Cormorant Unicase", serif;
       text-shadow: 3.28px 3.36px #e7ffc7;
-      color: #f7dea7;
+      color: #5a491a;
       text-shadow: none;
       padding: 0;
       @include MEDIUM-DEVICE-WIDTH {

@@ -40,8 +40,8 @@ a {
           align-items: center;
   text-align: center;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(#7b6a8a12), to(#1e272f24)), url(../img/heart_matrix_blue.png) center bottom;
-  background: linear-gradient(to right, #7b6a8a12, #1e272f24), url(../img/heart_matrix_blue.png) center bottom;
+  background: -webkit-gradient(linear, left top, right top, from(#7b6a8a12), to(#1e272f24)), url(../img/heart_matrix_gold.png) center bottom;
+  background: linear-gradient(to right, #7b6a8a12, #1e272f24), url(../img/heart_matrix_gold.png) center bottom;
   background-size: cover;
   background-repeat: no-repeat;
   -ms-flex-pack: distribute;
@@ -103,11 +103,10 @@ a {
         margin-top: -2rem; } }
   .home .my_name,
   .homeMain .my_name {
-    font-family: "Cinzel Decorative", cursive;
-    font-size: 1.59em;
+    font-size: 2.5em;
     font-weight: bold;
     line-height: 1em;
-    color: #f7dea7;
+    color: #5a491a;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
@@ -132,12 +131,11 @@ a {
     margin: 0; }
     .home .title_txt_container .title_text,
     .homeMain .title_txt_container .title_text {
-      font-size: 1.25rem;
+      font-size: 1.3rem;
       font-family: "Poiret One", cursive;
       font-family: "Audiowide", cursive;
-      font-family: "Cormorant Unicase", serif;
       text-shadow: 3.28px 3.36px #e7ffc7;
-      color: #f7dea7;
+      color: #5a491a;
       text-shadow: none;
       padding: 0; }
       @media only screen and (min-width: 768px) {
@@ -437,7 +435,7 @@ a {
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background-color: #bc2241;
+  background-color: #2d5e6d;
   -webkit-box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127), 0px -3px 1px rgba(99, 11, 6, 0.244);
           box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127), 0px -3px 1px rgba(99, 11, 6, 0.244); }
   @media only screen and (min-width: 768px) {
@@ -1652,4 +1650,5 @@ footer {
     @media only screen and (min-width: 1024px) {
       .social-icons .fa-2x {
         font-size: 1.2rem; } }
+
 /*# sourceMappingURL=main.css.map */
