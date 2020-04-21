@@ -50,7 +50,11 @@ a {
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .home,
     .homeMain {
-      padding: 0; } }
+      padding: 0;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
   @media only screen and (min-width: 768px) {
     .home,
     .homeMain {
@@ -86,7 +90,8 @@ a {
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .home .wrap,
       .homeMain .wrap {
-        margin-top: 3rem; } }
+        margin-top: -13rem;
+        width: 48%; } }
     @media only screen and (min-width: 768px) {
       .home .wrap,
       .homeMain .wrap {
@@ -106,7 +111,7 @@ a {
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .home .creativity,
       .homeMain .creativity {
-        margin-top: -1.2rem;
+        margin-top: 4.8rem;
         font-size: 0.8rem; } }
     @media only screen and (min-width: 768px) {
       .home .creativity,
@@ -127,7 +132,7 @@ a {
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .home .my_name,
       .homeMain .my_name {
-        font-size: 1.34em; } }
+        font-size: 1.54em; } }
     @media only screen and (min-width: 768px) {
       .home .my_name,
       .homeMain .my_name {
@@ -156,7 +161,7 @@ a {
       @media only screen and (device-width: 1em), screen and (orientation: landscape) {
         .home .title_txt_container .title_text,
         .homeMain .title_txt_container .title_text {
-          font-size: 0.8em; } }
+          font-size: 1em; } }
       @media only screen and (min-width: 768px) {
         .home .title_txt_container .title_text,
         .homeMain .title_txt_container .title_text {
