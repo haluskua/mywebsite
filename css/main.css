@@ -82,7 +82,7 @@ a {
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .home .wrap,
       .homeMain .wrap {
-        margin-top: 11rem; } }
+        margin-top: 6rem; } }
     @media only screen and (min-width: 768px) {
       .home .wrap,
       .homeMain .wrap {
