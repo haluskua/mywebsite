@@ -42,7 +42,7 @@ a {
   overflow: hidden;
   background: -webkit-gradient(linear, left top, right top, from(#0631408c), to(#103050a6)), url(../img/heart_matrix_blue.png) center bottom;
   background: linear-gradient(to right, #0631408c, #103050a6), url(../img/heart_matrix_blue.png) center bottom;
-  background: repeating-linear-gradient(45deg, #c4c4c4, #fff0f5 100px), url(../img/heart_matrix_blue.png) center bottom;
+  background: repeating-linear-gradient(45deg, #e2dbdb, #fff0f5 100px), url(../img/heart_matrix_blue.png) center bottom;
   background-size: cover;
   background-repeat: no-repeat;
   -ms-flex-pack: distribute;
@@ -84,7 +84,7 @@ a {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    height: 9.5%;
+    height: 10%;
     margin-top: 5rem;
     position: relative; }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
@@ -104,7 +104,7 @@ a {
         margin-top: 3rem; } }
   .home .creativity,
   .homeMain .creativity {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #8c8989;
     text-shadow: none;
     margin-bottom: 1rem; }
@@ -121,13 +121,13 @@ a {
         margin-top: -2rem; } }
   .home .my_name,
   .homeMain .my_name {
-    font-size: 2.38em;
+    font-size: 2.4em;
     line-height: 1em;
     color: #8c8989;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: unset;
     font-family: "Roboto", "Bebas", Cursive;
     font-family: "Girassol", cursive;
     padding: 0; }
@@ -159,6 +159,7 @@ a {
       text-shadow: 3.28px 3.36px #e7ffc7;
       color: #8c8989;
       font-family: "Roboto", "Bebas", Cursive;
+      text-transform: uppercase;
       text-shadow: none;
       padding: 0; }
       @media only screen and (device-width: 1em), screen and (orientation: landscape) {
@@ -420,7 +421,7 @@ footer {
     top: 0.5rem;
     width: 28px;
     height: 3px;
-    background: white;
+    background: #776f6f;
     -webkit-transition: all 0.42s ease-in-out;
     transition: all 0.42s ease-in-out; }
     .menu-btn__burger::before {
@@ -429,7 +430,7 @@ footer {
       top: -8px;
       width: 28px;
       height: 3px;
-      background: white;
+      background: #776f6f;
       -webkit-transition: all 0.42s ease-in-out;
       transition: all 0.42s ease-in-out; }
     .menu-btn__burger::after {
@@ -438,7 +439,7 @@ footer {
       top: 8px;
       width: 20px;
       height: 3px;
-      background: white;
+      background: #776f6f;
       -webkit-transition: all 0.42s ease-in-out;
       transition: all 0.42s ease-in-out; }
     .menu-btn__burger.open {
@@ -469,7 +470,7 @@ footer {
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background-color: #2d5e6d;
+  background: repeating-linear-gradient(45deg, #e2dbdb, #f3f4ea 100px);
   -webkit-box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127), 0px -3px 1px rgba(99, 11, 6, 0.244);
           box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127), 0px -3px 1px rgba(99, 11, 6, 0.244); }
   @media only screen and (min-width: 768px) {
@@ -1300,7 +1301,8 @@ footer {
   .contact .grid-container {
     height: auto;
     padding: 2rem;
-    background: #bc2241; }
+    background: #bc2241;
+    background: repeating-linear-gradient(45deg, #e2dbdb, #fff0f5 100px), url(../img/heart_matrix_blue.png) center bottom; }
   .contact h2 {
     font-size: 2.26rem;
     margin-bottom: -15rem;
@@ -1360,7 +1362,7 @@ footer {
         .contact .social-icons .fa-2x {
           font-size: 1.2rem; } }
   .contact .text-secondary {
-    color: #fff0c7;
+    color: #796266;
     font-family: "Montserrat", "cursive";
     margin: 3px 0;
     font-size: 1rem;
