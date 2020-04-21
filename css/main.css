@@ -40,8 +40,8 @@ a {
           align-items: center;
   text-align: center;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(#7b6a8a12), to(#1e272f24)), url(../img/heart_matrix_blue.png) center bottom;
-  background: linear-gradient(to right, #7b6a8a12, #1e272f24), url(../img/heart_matrix_blue.png) center bottom;
+  background: -webkit-gradient(linear, left top, right top, from(#063140e3), to(#103050d6)), url(../img/heart_matrix_blue.png) center bottom;
+  background: linear-gradient(to right, #063140e3, #103050d6), url(../img/heart_matrix_blue.png) center bottom;
   background-size: cover;
   background-repeat: no-repeat;
   -ms-flex-pack: distribute;
@@ -551,17 +551,6 @@ footer {
           padding: 8rem 0;
           -webkit-box-shadow: 1rem 0px 50px #aaada0;
                   box-shadow: 1rem 0px 50px #aaada0; } }
-    .nav .menu-nav .nav .manu.menu.menu-nav__item:nth-child(1) {
-      width: 50%; }
-    @media only screen and (device-width: 1em), screen and (orientation: landscape) {
-      .nav .menu-nav .nav .menu-nav__item:nth-child(2) {
-        width: 40%;
-        padding: 0 2rem; } }
-    .nav .menu-nav .nav .menu-nav__item:nth-child(3) {
-      margin-top: -13rem; }
-      @media only screen and (device-width: 1em), screen and (orientation: landscape) {
-        .nav .menu-nav .nav .menu-nav__item:nth-child(3) {
-          width: 100%; } }
     .nav .menu-nav__item {
       -webkit-transform: translateX(100vw);
               transform: translateX(100vw);
