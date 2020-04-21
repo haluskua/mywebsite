@@ -40,8 +40,9 @@ a {
           align-items: center;
   text-align: center;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(#063140e3), to(#103050d6)), url(../img/heart_matrix_blue.png) center bottom;
-  background: linear-gradient(to right, #063140e3, #103050d6), url(../img/heart_matrix_blue.png) center bottom;
+  background: -webkit-gradient(linear, left top, right top, from(#0631408c), to(#103050a6)), url(../img/heart_matrix_blue.png) center bottom;
+  background: linear-gradient(to right, #0631408c, #103050a6), url(../img/heart_matrix_blue.png) center bottom;
+  background: repeating-linear-gradient(45deg, #030a21, transparent 100px), url(../img/heart_matrix_blue.png) center bottom;
   background-size: cover;
   background-repeat: no-repeat;
   -ms-flex-pack: distribute;
