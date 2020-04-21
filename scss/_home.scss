@@ -35,6 +35,9 @@
     height: 14%;
     margin-top: 12rem;
     position: relative;
+    @include SMALL-LANDSCAPE {
+      margin-top: 11rem;
+    }
     @include MEDIUM-DEVICE-WIDTH {
       height: 19%;
       margin-top: 14rem;
@@ -49,6 +52,10 @@
     color: #d8bd71;
     text-shadow: none;
     margin-bottom: 1rem;
+    @include SMALL-LANDSCAPE {
+      margin-top: -1.2rem;
+      font-size: 0.8rem;
+    }
     @include MEDIUM-DEVICE-WIDTH {
       padding: 1rem;
       font-size: 1.8rem;
@@ -61,7 +68,7 @@
     }
   }
   .my_name {
-    font-size: 2.5em;
+    font-size: 2.6em;
     font-weight: bold;
     line-height: 1em;
     color: #5a491a;
@@ -69,6 +76,9 @@
     text-shadow: none;
     text-align: center;
     padding: 0;
+    @include SMALL-LANDSCAPE {
+      font-size: 1.34em;
+    }
     @include MEDIUM-DEVICE-WIDTH {
       font-size: 2.6rem;
     }
@@ -83,7 +93,7 @@
     margin: 0;
 
     .title_text {
-      font-size: 1.3rem;
+      font-size: 1.25rem;
       font-family: "Poiret One", cursive;
       font-family: "Audiowide", cursive;
       // font-family: "Cormorant Unicase", serif;
@@ -91,6 +101,9 @@
       color: #5a491a;
       text-shadow: none;
       padding: 0;
+      @include SMALL-LANDSCAPE   {
+        font-size: 0.8em;
+      }
       @include MEDIUM-DEVICE-WIDTH {
         font-size: 2.2em;
       }
@@ -121,6 +134,10 @@
     justify-content: space-around;
     transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear,
       -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
+
+    @include SMALL-LANDSCAPE {
+      width: 25%;
+    }
 
     @include MEDIUM-DEVICE-WIDTH {
       width: 100%;

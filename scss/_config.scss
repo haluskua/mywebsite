@@ -36,9 +36,14 @@ a {
   }
 }
 
+
+// @mixin phone-landscape
+//   @media only (device-width: 1em), screen and (orientation: landscape)
+//     @content
+
 @mixin SMALL-LANDSCAPE {
-  @media only screen and (min-width: 768px) {
-    @content;
+  @media only screen and (device-width: 1em), screen and (orientation: landscape){
+      @content;
   }
 }
 @mixin MEDIUM-DEVICE-WIDTH {

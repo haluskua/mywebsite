@@ -79,6 +79,10 @@ a {
     height: 14%;
     margin-top: 12rem;
     position: relative; }
+    @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+      .home .wrap,
+      .homeMain .wrap {
+        margin-top: 11rem; } }
     @media only screen and (min-width: 768px) {
       .home .wrap,
       .homeMain .wrap {
@@ -95,6 +99,11 @@ a {
     color: #d8bd71;
     text-shadow: none;
     margin-bottom: 1rem; }
+    @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+      .home .creativity,
+      .homeMain .creativity {
+        margin-top: -1.2rem;
+        font-size: 0.8rem; } }
     @media only screen and (min-width: 768px) {
       .home .creativity,
       .homeMain .creativity {
@@ -103,7 +112,7 @@ a {
         margin-top: -2rem; } }
   .home .my_name,
   .homeMain .my_name {
-    font-size: 2.5em;
+    font-size: 2.6em;
     font-weight: bold;
     line-height: 1em;
     color: #5a491a;
@@ -111,6 +120,10 @@ a {
     text-shadow: none;
     text-align: center;
     padding: 0; }
+    @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+      .home .my_name,
+      .homeMain .my_name {
+        font-size: 1.34em; } }
     @media only screen and (min-width: 768px) {
       .home .my_name,
       .homeMain .my_name {
@@ -131,13 +144,17 @@ a {
     margin: 0; }
     .home .title_txt_container .title_text,
     .homeMain .title_txt_container .title_text {
-      font-size: 1.3rem;
+      font-size: 1.25rem;
       font-family: "Poiret One", cursive;
       font-family: "Audiowide", cursive;
       text-shadow: 3.28px 3.36px #e7ffc7;
       color: #5a491a;
       text-shadow: none;
       padding: 0; }
+      @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+        .home .title_txt_container .title_text,
+        .homeMain .title_txt_container .title_text {
+          font-size: 0.8em; } }
       @media only screen and (min-width: 768px) {
         .home .title_txt_container .title_text,
         .homeMain .title_txt_container .title_text {
@@ -172,6 +189,10 @@ a {
         justify-content: space-around;
     -webkit-transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear, -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
             transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear, -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1); }
+    @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+      .home .svg-container,
+      .homeMain .svg-container {
+        width: 25%; } }
     @media only screen and (min-width: 768px) {
       .home .svg-container,
       .homeMain .svg-container {
