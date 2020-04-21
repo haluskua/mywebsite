@@ -40,13 +40,21 @@ a {
           align-items: center;
   text-align: center;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(#7b6a8a12), to(#1e272f24)), url(../img/heart_matrix_gold.png) center bottom;
-  background: linear-gradient(to right, #7b6a8a12, #1e272f24), url(../img/heart_matrix_gold.png) center bottom;
+  background: -webkit-gradient(linear, left top, right top, from(#063140e3), to(#103050d6)), url(../img/heart_matrix_blue.png) center bottom;
+  background: linear-gradient(to right, #063140e3, #103050d6), url(../img/heart_matrix_blue.png) center bottom;
   background-size: cover;
   background-repeat: no-repeat;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-bottom: 5rem; }
+  @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+    .home,
+    .homeMain {
+      padding: 0;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
   @media only screen and (min-width: 768px) {
     .home,
     .homeMain {
@@ -82,7 +90,8 @@ a {
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .home .wrap,
       .homeMain .wrap {
-        margin-top: 11rem; } }
+        margin-top: -13rem;
+        width: 35%; } }
     @media only screen and (min-width: 768px) {
       .home .wrap,
       .homeMain .wrap {
@@ -96,13 +105,13 @@ a {
   .home .creativity,
   .homeMain .creativity {
     font-size: 1.2rem;
-    color: #d8bd71;
+    color: #7a9a9a;
     text-shadow: none;
     margin-bottom: 1rem; }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .home .creativity,
       .homeMain .creativity {
-        margin-top: -1.2rem;
+        margin-top: 4.8rem;
         font-size: 0.8rem; } }
     @media only screen and (min-width: 768px) {
       .home .creativity,
@@ -112,18 +121,18 @@ a {
         margin-top: -2rem; } }
   .home .my_name,
   .homeMain .my_name {
-    font-size: 2.6em;
-    font-weight: bold;
+    font-size: 2.3em;
     line-height: 1em;
-    color: #5a491a;
+    color: #fff0f5;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
+    text-transform: lowercase;
     padding: 0; }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .home .my_name,
       .homeMain .my_name {
-        font-size: 1.34em; } }
+        font-size: 1.54em; } }
     @media only screen and (min-width: 768px) {
       .home .my_name,
       .homeMain .my_name {
@@ -144,17 +153,15 @@ a {
     margin: 0; }
     .home .title_txt_container .title_text,
     .homeMain .title_txt_container .title_text {
-      font-size: 1.25rem;
-      font-family: "Poiret One", cursive;
-      font-family: "Audiowide", cursive;
+      font-size: 1.5rem;
       text-shadow: 3.28px 3.36px #e7ffc7;
-      color: #5a491a;
+      color: #fff0f5;
       text-shadow: none;
       padding: 0; }
       @media only screen and (device-width: 1em), screen and (orientation: landscape) {
         .home .title_txt_container .title_text,
         .homeMain .title_txt_container .title_text {
-          font-size: 0.8em; } }
+          font-size: 1em; } }
       @media only screen and (min-width: 768px) {
         .home .title_txt_container .title_text,
         .homeMain .title_txt_container .title_text {
@@ -288,10 +295,6 @@ a {
     line-height: 1.5rem;
     padding: 0 10%;
     color: #93a7a9;
-    font-family: "EB Garamond", serif;
-    font-family: "Julius Sans One", sans-serif;
-    font-family: "Cinzel Decorative", cursive;
-    font-family: "Turret Road", "cursive";
     font-family: "Girassol", cursive;
     letter-spacing: 0.03em;
     letter-spacing: 0;
@@ -362,6 +365,13 @@ a {
       height: 100%; } }
   .social-icons .fa-2x {
     font-size: 1.4em; }
+
+footer {
+  font-size: 0.6rem !important;
+  color: #6c7377 !important; }
+  @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+    footer {
+      right: 2rem !important; } }
 
 #project-index {
   -webkit-animation: breadCrumb 8s infinite linear alternate;
@@ -518,7 +528,15 @@ a {
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: #bc2241; }
+      background: #e1e4e6; }
+      @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+        .nav .menu-nav.open {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap; } }
       @media only screen and (min-width: 768px) {
         .nav .menu-nav.open {
           display: -webkit-box;
@@ -533,8 +551,6 @@ a {
           padding: 8rem 0;
           -webkit-box-shadow: 1rem 0px 50px #aaada0;
                   box-shadow: 1rem 0px 50px #aaada0; } }
-    .nav .menu-nav .nav .menu-nav__item:nth-child(3) {
-      margin-top: -13rem; }
     .nav .menu-nav__item {
       -webkit-transform: translateX(100vw);
               transform: translateX(100vw);
@@ -629,7 +645,7 @@ a {
     font-size: 1.9em;
     font-weight: normal;
     line-height: 1em;
-    color: lavenderblush;
+    color: #353535;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
@@ -648,6 +664,9 @@ a {
         justify-content: space-around;
     -webkit-transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear, -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
             transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear, -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1); }
+    @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+      .nav .svg-container {
+        width: 85%; } }
     @media only screen and (min-width: 768px) {
       .nav .svg-container {
         width: 100%;
@@ -677,7 +696,7 @@ a {
       font-family: "Audiowide", cursive;
       font-family: "Cormorant Unicase", serif;
       text-shadow: 3.28px 3.36px #e7ffc7;
-      color: lavenderblush;
+      color: #353535;
       text-shadow: none;
       padding: 0; }
       @media only screen and (min-width: 768px) {
@@ -852,7 +871,8 @@ a {
       font-weight: normal;
       text-align: left; }
     .about__bio .main-title {
-      color: #3e0d18; }
+      color: #3e0d18;
+      display: none; }
   .about .img-container {
     display: -webkit-box;
     display: -ms-flexbox;
