@@ -86,7 +86,7 @@ a {
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .home .wrap,
       .homeMain .wrap {
-        margin-top: 6rem; } }
+        margin-top: 3rem; } }
     @media only screen and (min-width: 768px) {
       .home .wrap,
       .homeMain .wrap {
@@ -100,10 +100,9 @@ a {
   .home .creativity,
   .homeMain .creativity {
     font-size: 1.2rem;
-    color: #1dc2d8;
+    color: #7a9a9a;
     text-shadow: none;
-    margin-bottom: 1rem;
-    font-family: "EB Garamond", serif; }
+    margin-bottom: 1rem; }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .home .creativity,
       .homeMain .creativity {
@@ -361,14 +360,13 @@ a {
       height: 100%; } }
   .social-icons .fa-2x {
     font-size: 1.4em; }
-  .social-icons footer {
-    font-size: 0.65rem;
-    position: fixed;
-    bottom: 0.54rem;
-    right: 2.75rem;
-    text-align: right;
-    padding: 1rem;
-    color: #8d939c; }
+
+footer {
+  font-size: 0.6rem !important;
+  color: #6c7377 !important; }
+  @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+    footer {
+      right: 2rem !important; } }
 
 #project-index {
   -webkit-animation: breadCrumb 8s infinite linear alternate;
