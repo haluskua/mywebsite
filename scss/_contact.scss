@@ -25,6 +25,8 @@
     height: auto;
     padding: 2rem;
     background: #bc2241;
+    background: repeating-linear-gradient(45deg, #e2dbdb, #fff0f5 100px),
+    url(../img/heart_matrix_blue.png) center bottom;
   }
 
   h2 {
@@ -89,7 +91,7 @@
     }
   }
   .text-secondary {
-    color: #fff0c7;
+    color: #796266;
     font-family: "Montserrat", "cursive";
     margin: 3px 0;
     font-size: 1rem;
