@@ -1010,28 +1010,6 @@ footer {
             font-size: 1.1rem; } }
       .about .jobs__job h6 {
         margin: 0.3rem 0; }
-  .about .social-icons {
-    position: fixed;
-    background-color: #404034; }
-    @media only screen and (min-width: 768px) {
-      .about .social-icons {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        width: 100%;
-        padding: 1em 0.5em; } }
-    .about .social-icons a {
-      background: #3f3f33; }
-    .about .social-icons .fa-2x {
-      font-size: 1.53rem;
-      padding: 0.2rem 0; }
-      @media only screen and (min-width: 1024px) {
-        .about .social-icons .fa-2x {
-          font-size: 1.2rem; } }
   .about footer {
     -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
             transform: rotate(90deg) translate(-3rem, -5rem); }
@@ -1250,20 +1228,6 @@ footer {
     @media only screen and (min-width: 1024px) {
       .projects .block {
         width: 66%; } }
-  .projects .social-icons {
-    position: fixed;
-    background-color: #404034; }
-    @media only screen and (min-width: 768px) {
-      .projects .social-icons {
-        z-index: 0; } }
-    .projects .social-icons a {
-      background: #3f3f33; }
-    .projects .social-icons .fa-2x {
-      font-size: 1.53rem;
-      padding: 0.2rem 0; }
-      @media only screen and (min-width: 1024px) {
-        .projects .social-icons .fa-2x {
-          font-size: 1.2rem; } }
   .projects footer {
     -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
             transform: rotate(90deg) translate(-3rem, -5rem); }
@@ -1288,10 +1252,10 @@ footer {
   padding: 18vh 0;
   width: 100%;
   background: white;
-  padding: 3rem 0  18px 0;
+  padding: 3rem 0 18px 0;
   border: 4px solid #461a19;
-  background: -webkit-gradient(linear, left top, right top, from(#070c0c12), to(#230505a3)), url(../img/project-3.jpg) center center;
-  background: linear-gradient(to right, #070c0c12, #230505a3), url(../img/project-3.jpg) center center; }
+  background: repeating-linear-gradient(45deg, #e2dbdb00, #0e060954 100px), url(../img/foggy.jpg) center center;
+  background-size: cover; }
   @media only screen and (min-width: 768px) {
     .contact {
       padding: 25vh 0; } }
@@ -1299,19 +1263,19 @@ footer {
     .contact {
       padding-top: 33vh; } }
   .contact .grid-container {
-    height: auto;
+    height: 62%;
     padding: 2rem;
     background: #bc2241;
     background: repeating-linear-gradient(45deg, #e2dbdb, #fff0f5 100px), url(../img/heart_matrix_blue.png) center bottom; }
   .contact h2 {
     font-size: 2.26rem;
     margin-bottom: -15rem;
-    font-family: "Bebas", "Neue", cursive;
     color: #fff0c7;
     font-weight: bolder;
     text-transform: uppercase;
     margin: 0;
-    margin-top: 8rem; }
+    margin-top: 6rem;
+    font-family: "Montserrat", "cursive"; }
     @media only screen and (min-width: 768px) {
       .contact h2 {
         margin-bottom: 3.2rem;
@@ -1340,28 +1304,6 @@ footer {
     letter-spacing: 0.04em;
     padding: 12px;
     background: rgba(255, 255, 255, 0.17); }
-  .contact .social-icons {
-    position: fixed;
-    background-color: #404034; }
-    @media only screen and (min-width: 768px) {
-      .contact .social-icons {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        width: 100%;
-        padding: 1em 0.5em; } }
-    .contact .social-icons a {
-      background: #3f3f33; }
-    .contact .social-icons .fa-2x {
-      font-size: 1.53rem;
-      padding: 0.2rem 0; }
-      @media only screen and (min-width: 1024px) {
-        .contact .social-icons .fa-2x {
-          font-size: 1.2rem; } }
   .contact .text-secondary {
     color: #796266;
     font-family: "Montserrat", "cursive";
@@ -1503,38 +1445,6 @@ footer {
   -webkit-animation: fadeIn var(--fade-time) ease-in 1 forwards;
           animation: fadeIn var(--fade-time) ease-in 1 forwards; }
 
-.socialIcons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  margin: 0 auto;
-  padding: 2.5px 0.52rem;
-  right: 1px;
-  width: 100%;
-  bottom: 0;
-  background: #dfe8e8; }
-  @media only screen and (min-width: 768px) {
-    .socialIcons {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      padding: 0 0.52rem;
-      right: 0;
-      text-align: center;
-      margin: 0 auto;
-      width: 100%;
-      bottom: 0;
-      z-index: 0; } }
-
 footer {
   -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
           transform: rotate(90deg) translate(-3rem, -5rem); }
@@ -1670,27 +1580,22 @@ footer {
       width: 9%; } }
 
 .social-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  margin: 0 auto;
-  padding: 2.5px 0.52rem;
-  right: 1px;
+  position: fixed;
   width: 100%;
-  bottom: 0; }
+  background: repeating-linear-gradient(45deg, #e2dbdb, #f3f4ea 100px); }
   @media only screen and (min-width: 768px) {
     .social-icons {
-      z-index: 0; } }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      width: 100%;
+      padding: 1em 0.5em; } }
   .social-icons a {
-    background: #3f3f33; }
+    background: rgba(63, 63, 51, 0); }
   .social-icons .fa-2x {
     font-size: 1.53rem;
     padding: 0.2rem 0; }
