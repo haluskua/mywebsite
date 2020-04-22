@@ -1310,7 +1310,8 @@ footer {
     color: #fff0c7;
     font-weight: bolder;
     text-transform: uppercase;
-    margin: 0; }
+    margin: 0;
+    margin-top: 8rem; }
     @media only screen and (min-width: 768px) {
       .contact h2 {
         margin-bottom: 3.2rem;
