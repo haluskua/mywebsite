@@ -176,6 +176,12 @@ footer {
   }
 }
 
+#project-index {
+  @include SMALL-LANDSCAPE {
+    margin-top: -1rem;
+  }
+}
+
 //social icons links
 .social-icons {
   position: relative;
