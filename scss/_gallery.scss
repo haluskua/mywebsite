@@ -6,14 +6,8 @@
 .main-container {
   height: 100%;
   display: flex;
-  background: linear-gradient(
-      to right,
-      rgba(15, 24, 33, 0.29),
-      rgba(44, 92, 97, 0.23)
-    ),
-    url("../img/cloth.jpg") center center;
-  background-size: cover;
-  background: white;
+  background: repeating-linear-gradient(45deg, #e2dbdb, #f3f4ea 100px);
+
   @include MEDIUM-DEVICE-WIDTH {
     height: auto;
     margin-top: 10%;
@@ -38,15 +32,9 @@
   overflow: scroll;
   border: 4px solid rgba(188, 34, 65, 0.1);
   box-shadow: 0px 10px 5px rgb(170, 183, 189), 0px -10px 5px rgb(181, 198, 206);
-
-  background: linear-gradient(
-      to right,
-      rgba(15, 24, 33, 0.29),
-      rgba(44, 92, 97, 0.23)
-    ),
-    url("../img/cloth.jpg") center center;
-  background-size: cover;
-  background: white;
+  @include SMALL-LANDSCAPE {
+    box-shadow: none;;
+  }
   @include MEDIUM-DEVICE-WIDTH {
     height: 100%;
   }
@@ -84,6 +72,9 @@
   }
 }
 .main-img img {
+  @include SMALL-LANDSCAPE {
+    width: 79%;
+  }
   @include LARGE-DEVICE-WIDTH {
     padding: 2%;
   }

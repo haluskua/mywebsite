@@ -26,6 +26,9 @@
   z-index: 999;
   display: flex;
   justify-content: space-around;
+  @include SMALL-LANDSCAPE {
+    width: 22%;
+  }
   @include MEDIUM-DEVICE-WIDTH {
     // visibility: hidden;
   }
@@ -81,6 +84,13 @@
     font-family: "Cinzel Decorative", cursive;
     font-family: "Charmonman", serif;
     background: linear-gradient(to right, #ffffff, #ffff94);
+  }
+}
+
+.menu-index {
+  @include SMALL-LANDSCAPE {
+    width: 25%;
+    margin-top: -2rem;
   }
 }
 
