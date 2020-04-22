@@ -415,6 +415,9 @@ footer {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
+  @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+    .menu-btn {
+      width: 22%; } }
   .menu-btn__burger {
     position: absolute;
     left: 1em;
@@ -463,6 +466,11 @@ footer {
     font-family: "Charmonman", serif;
     background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffff94));
     background: linear-gradient(to right, #ffffff, #ffff94); }
+
+@media only screen and (device-width: 1em), screen and (orientation: landscape) {
+  .menu-index {
+    width: 25%;
+    margin-top: -2rem; } }
 
 .nav {
   position: fixed;
@@ -754,8 +762,10 @@ footer {
   background-color: #f8f3b0;
   padding-top: 2.2rem;
   border: 4px solid rgba(188, 34, 65, 0.1);
-  background: -webkit-gradient(linear, left top, right top, from(#f2f5e9), to(#f9f9f9)), url(../img/sunrise.jpg) center center;
-  background: linear-gradient(to right, #f2f5e9, #f9f9f9), url(../img/sunrise.jpg) center center; }
+  background: repeating-linear-gradient(45deg, #e2dbdb, #f3f4ea 100px); }
+  @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+    .about {
+      padding: 0 12%; } }
   .about .breadCrumbs {
     position: absolute;
     top: 3%;
@@ -931,6 +941,10 @@ footer {
               justify-content: flex-end;
       -webkit-box-shadow: #3b3c3033 6px 6px 8px, #3f403408 -1px -1px 2px;
               box-shadow: #3b3c3033 6px 6px 8px, #3f403408 -1px -1px 2px; }
+      @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+        .about .jobs__bio-image {
+          padding-top: 73vh;
+          margin-top: 3rem; } }
       @media only screen and (min-width: 768px) {
         .about .jobs__bio-image {
           height: 35vh;
@@ -1028,10 +1042,11 @@ footer {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  background: -webkit-gradient(linear, left top, right top, from(#f2f5e9), to(#f9f9f9)), url(../img/sunrise.jpg) center center;
-  background: linear-gradient(to right, #f2f5e9, #f9f9f9), url(../img/sunrise.jpg) center center;
-  background-size: cover;
+  background: repeating-linear-gradient(45deg, #e2dbdb, #f3f4ea 100px);
   border: 4px solid rgba(188, 34, 65, 0.1); }
+  @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+    .projects {
+      padding: 1rem 3rem 0 2rem; } }
   @media only screen and (min-width: 768px) {
     .projects {
       padding-bottom: 0;
@@ -1266,13 +1281,17 @@ footer {
     background: #bc2241;
     background: repeating-linear-gradient(45deg, #e2dbdb, #fff0f5bf 100px), url(../img/merm.png) center bottom; }
   .contact h2 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: #fff0c7;
     font-weight: bolder;
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 7rem;
     font-family: "Montserrat", "cursive"; }
+    @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+      .contact h2 {
+        margin: 0;
+        line-height: 12rem; } }
     @media only screen and (min-width: 768px) {
       .contact h2 {
         margin-bottom: 3.2rem;
@@ -1319,10 +1338,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url("../img/cloth.jpg") center center;
-  background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url("../img/cloth.jpg") center center;
-  background-size: cover;
-  background: white; }
+  background: repeating-linear-gradient(45deg, #e2dbdb, #f3f4ea 100px); }
   @media only screen and (min-width: 768px) {
     .main-container {
       height: auto;
@@ -1362,11 +1378,11 @@ footer {
   overflow: scroll;
   border: 4px solid rgba(188, 34, 65, 0.1);
   -webkit-box-shadow: 0px 10px 5px #aab7bd, 0px -10px 5px #b5c6ce;
-          box-shadow: 0px 10px 5px #aab7bd, 0px -10px 5px #b5c6ce;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(15, 24, 33, 0.29)), to(rgba(44, 92, 97, 0.23))), url("../img/cloth.jpg") center center;
-  background: linear-gradient(to right, rgba(15, 24, 33, 0.29), rgba(44, 92, 97, 0.23)), url("../img/cloth.jpg") center center;
-  background-size: cover;
-  background: white; }
+          box-shadow: 0px 10px 5px #aab7bd, 0px -10px 5px #b5c6ce; }
+  @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+    .container {
+      -webkit-box-shadow: none;
+              box-shadow: none; } }
   @media only screen and (min-width: 768px) {
     .container {
       height: 100%; } }
@@ -1407,6 +1423,10 @@ footer {
 .main-img img,
 .imgs img {
   width: 100%; }
+
+@media only screen and (device-width: 1em), screen and (orientation: landscape) {
+  .main-img img {
+    width: 79%; } }
 
 @media only screen and (min-width: 1024px) {
   .main-img img {
