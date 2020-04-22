@@ -47,17 +47,17 @@ a {
   }
 }
 @mixin MEDIUM-DEVICE-WIDTH {
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) and (orientation: portrait) {
     @content;
   }
 }
 @mixin LARGE-DEVICE-WIDTH {
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 769px) and (orientation: landscape) {
     @content;
   }
 }
 @mixin XLARGE-DEVICE-WIDTH {
-  @media only screen and (min-width: 1600px) {
+  @media only screen and (min-width: 1020px) and (orientation: landscape) {
     @content;
   }
 }
@@ -66,6 +66,11 @@ a {
     @content;
   }
 }
+
+
+
+
+
 
 
 // body {

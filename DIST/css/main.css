@@ -56,7 +56,7 @@ a {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) and (orientation: portrait) {
     .home,
     .homeMain {
       -webkit-box-pack: start;
@@ -64,10 +64,15 @@ a {
               justify-content: flex-start;
       padding-top: -4rem;
       border: none; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 769px) and (orientation: landscape) {
     .home,
     .homeMain {
-      border: 0; } }
+      border: 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 2rem 0 5rem 0; } }
   .home .wrap,
   .homeMain .wrap {
     -webkit-box-orient: vertical;
@@ -92,12 +97,12 @@ a {
       .homeMain .wrap {
         margin-top: -13rem;
         width: 35%; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
       .home .wrap,
       .homeMain .wrap {
         height: 19%;
         margin-top: 14rem; } }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 769px) and (orientation: landscape) {
       .home .wrap,
       .homeMain .wrap {
         height: 19%;
@@ -113,12 +118,16 @@ a {
       .homeMain .creativity {
         margin-top: 4.8rem;
         font-size: 0.8rem; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
       .home .creativity,
       .homeMain .creativity {
         padding: 1rem;
         font-size: 1.8rem;
         margin-top: -2rem; } }
+    @media only screen and (min-width: 769px) and (orientation: landscape) {
+      .home .creativity,
+      .homeMain .creativity {
+        font-size: 1.4rem; } }
   .home .my_name,
   .homeMain .my_name {
     font-size: 2.4em;
@@ -135,14 +144,14 @@ a {
       .home .my_name,
       .homeMain .my_name {
         font-size: 1.54em; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
       .home .my_name,
       .homeMain .my_name {
         font-size: 2.6rem; } }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 769px) and (orientation: landscape) {
       .home .my_name,
       .homeMain .my_name {
-        font-size: 1.6rem; } }
+        font-size: 3rem; } }
   .home .title_txt_container,
   .homeMain .title_txt_container {
     display: -webkit-box;
@@ -166,23 +175,23 @@ a {
         .home .title_txt_container .title_text,
         .homeMain .title_txt_container .title_text {
           font-size: 0.8em; } }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 481px) and (orientation: portrait) {
         .home .title_txt_container .title_text,
         .homeMain .title_txt_container .title_text {
           font-size: 2.2em; } }
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: 769px) and (orientation: landscape) {
         .home .title_txt_container .title_text,
         .homeMain .title_txt_container .title_text {
           font-size: 1.2rem; } }
   .home svg,
   .homeMain svg {
     height: 100%; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
       .home svg,
       .homeMain svg {
         height: 53vh;
         width: 50%; } }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 769px) and (orientation: landscape) {
       .home svg,
       .homeMain svg {
         width: 100%;
@@ -204,13 +213,13 @@ a {
       .home .svg-container,
       .homeMain .svg-container {
         width: 25%; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
       .home .svg-container,
       .homeMain .svg-container {
         width: 100%;
         height: 100%;
         margin-top: 0; } }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 769px) and (orientation: landscape) {
       .home .svg-container,
       .homeMain .svg-container {
         height: 100%;
@@ -286,7 +295,7 @@ a {
   .home .fit-picture,
   .homeMain .fit-picture {
     width: 59%; }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 769px) and (orientation: landscape) {
       .home .fit-picture,
       .homeMain .fit-picture {
         width: 20%;
@@ -303,11 +312,11 @@ a {
     letter-spacing: 0.03em;
     letter-spacing: 0;
     text-shadow: 0.5px 1.36px #54849a; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
       .home h2,
       .homeMain h2 {
         font-size: 1.3rem; } }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 769px) and (orientation: landscape) {
       .home h2,
       .homeMain h2 {
         font-size: 1.1rem;
@@ -333,7 +342,7 @@ a {
     width: auto;
     overflow: hidden;
     max-height: none; }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 769px) and (orientation: landscape) {
       .home .projects__item3,
       .homeMain .projects__item3 {
         width: 42%; } }
@@ -356,7 +365,7 @@ a {
           justify-content: center;
   width: 100%;
   background: #283546; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 769px) and (orientation: landscape) {
     .social-icons {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -487,7 +496,7 @@ footer {
   background: repeating-linear-gradient(45deg, #e2dbdb, #f3f4ea 100px);
   -webkit-box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127), 0px -3px 1px rgba(99, 11, 6, 0.244);
           box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127), 0px -3px 1px rgba(99, 11, 6, 0.244); }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) and (orientation: portrait) {
     .nav {
       height: 65px;
       background: repeating-linear-gradient(45deg, #e2dbdb, #f3f4ea 100px);
@@ -529,7 +538,7 @@ footer {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 481px) and (orientation: portrait) {
         .nav .menu-nav__item:nth-child(3) {
           height: 80%; } }
     .nav .menu-nav.open {
@@ -559,7 +568,7 @@ footer {
           -webkit-box-direction: normal;
               -ms-flex-direction: row;
                   flex-direction: row; } }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 481px) and (orientation: portrait) {
         .nav .menu-nav.open {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -586,7 +595,7 @@ footer {
       -webkit-transition: all 0.42s ease-in-out;
       transition: all 0.42s ease-in-out;
       width: auto; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 481px) and (orientation: portrait) {
         .nav .menu-nav__item {
           display: inline;
           padding: 0.5rem; } }
@@ -603,7 +612,7 @@ footer {
         -webkit-box-shadow: none;
                 box-shadow: none;
         font-size: 1.42rem; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 481px) and (orientation: portrait) {
           .nav .menu-nav__item.active > a {
             font-size: 1em; } }
       .nav .menu-nav__item a {
@@ -613,7 +622,7 @@ footer {
         margin: 0.5rem 0;
         padding: 1.2rem;
         letter-spacing: 0.2rem; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 481px) and (orientation: portrait) {
           .nav .menu-nav__item a {
             width: auto;
             padding: 8px;
@@ -652,13 +661,13 @@ footer {
         -webkit-box-shadow: 0 0 1px 1px #3f3530;
                 box-shadow: 0 0 1px 1px #3f3530;
         background-color: #bfb083; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 481px) and (orientation: portrait) {
         .nav .menu-nav__link {
           padding: 0.8rem 0;
           font-size: 1.24rem;
           width: 121px;
           margin: auto; } }
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: 769px) and (orientation: landscape) {
         .nav .menu-nav__link {
           font-size: 1.032rem;
           letter-spacing: 0.1rem;
@@ -682,7 +691,7 @@ footer {
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .nav .my_name {
         font-size: 1em; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
       .nav .my_name {
         font-size: 2.9em; } }
   .nav .svg-container {
@@ -699,7 +708,7 @@ footer {
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .nav .svg-container {
         width: 45%; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
       .nav .svg-container {
         width: 100%;
         padding-top: 0;
@@ -707,7 +716,7 @@ footer {
     .nav .svg-container svg {
       width: 100%;
       height: 100%; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 481px) and (orientation: portrait) {
         .nav .svg-container svg {
           width: 95%;
           height: auto; } }
@@ -731,7 +740,7 @@ footer {
       @media only screen and (device-width: 1em), screen and (orientation: landscape) {
         .nav .title_txt_container .title_text {
           font-size: 0.8em; } }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 481px) and (orientation: portrait) {
         .nav .title_txt_container .title_text {
           font-size: 2rem;
           margin: 0; } }
@@ -790,10 +799,10 @@ footer {
     position: absolute;
     top: 3%;
     left: 3%; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
       .about .breadCrumbs {
         top: 9%; } }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 769px) and (orientation: landscape) {
       .about .breadCrumbs {
         top: 15%; } }
   .about__bio-image {
@@ -811,7 +820,7 @@ footer {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
       .about__bio-image {
         padding: 35px 5%; } }
     .about__bio-image .text-secondary {
@@ -825,7 +834,7 @@ footer {
       margin-bottom: 0;
       font-family: "Bebas Neue", "Juslius Sans", "cursive";
       font-family: "Cinzel Decorative", cursive; }
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: 769px) and (orientation: landscape) {
         .about__bio-image .text-secondary {
           font-size: 1.27rem; } }
     .about__bio-image p {
@@ -837,13 +846,13 @@ footer {
       font-size: 0.92em;
       line-height: 1.43em;
       text-align: left; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 481px) and (orientation: portrait) {
         .about__bio-image p {
           border-radius: 0.05rem;
           line-height: 1.7rem;
           letter-spacing: 0.031rem;
           font-size: 1.03rem; } }
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: 769px) and (orientation: landscape) {
         .about__bio-image p {
           -webkit-box-shadow: none;
                   box-shadow: none;
@@ -870,7 +879,7 @@ footer {
         color: #d09667;
         font-style: italic;
         border: none; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 481px) and (orientation: portrait) {
           .about__bio-image p #myBtn {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -885,7 +894,7 @@ footer {
     background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffffff)), url(../img/rooster-b-w.jpg) center center;
     background: linear-gradient(to right, #ffffff, #ffffff), url(../img/rooster-b-w.jpg) center center;
     background-size: cover; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
       .about__bio {
         font-size: 1.5rem;
         width: 100%; } }
@@ -917,10 +926,10 @@ footer {
     width: 100%;
     border-radius: 6px;
     height: auto; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
       .about .img-container {
         width: 100%; } }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 769px) and (orientation: landscape) {
       .about .img-container {
         border: none;
         width: 77%; } }
@@ -935,7 +944,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2rem; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
       .about .jobs {
         width: 100%; } }
     .about .jobs__bio-image {
@@ -965,12 +974,12 @@ footer {
         .about .jobs__bio-image {
           padding-top: 73vh;
           margin-top: 3rem; } }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 481px) and (orientation: portrait) {
         .about .jobs__bio-image {
           height: 35vh;
           background-size: cover;
           padding: 4% 6%; } }
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: 769px) and (orientation: landscape) {
         .about .jobs__bio-image {
           height: 55vh; } }
       .about .jobs__bio-image .text-secondary {
@@ -988,13 +997,13 @@ footer {
         text-align: justify;
         font-size: 0.81rem;
         margin: 0; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 481px) and (orientation: portrait) {
           .about .jobs__bio-image .text-secondary {
             background: none;
             margin-bottom: 0rem;
             font-size: 1rem;
             text-align: right; } }
-        @media only screen and (min-width: 1024px) {
+        @media only screen and (min-width: 769px) and (orientation: landscape) {
           .about .jobs__bio-image .text-secondary {
             font-size: 0.7rem;
             padding: 0 6%; } }
@@ -1023,7 +1032,7 @@ footer {
         line-height: 1.3em;
         text-transform: capitalize;
         padding-top: 5px; }
-        @media only screen and (min-width: 1024px) {
+        @media only screen and (min-width: 769px) and (orientation: landscape) {
           .about .jobs__job h2,
           .about .jobs__job h3 {
             font-size: 1.7rem; } }
@@ -1039,7 +1048,7 @@ footer {
         padding: 0;
         line-height: 1.24em;
         font-family: "Roboto", cursive; }
-        @media only screen and (min-width: 1024px) {
+        @media only screen and (min-width: 769px) and (orientation: landscape) {
           .about .jobs__job h5 {
             font-size: 1.1rem; } }
       .about .jobs__job h6 {
@@ -1067,11 +1076,11 @@ footer {
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .projects {
       padding: 1rem 12% 0 12%; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) and (orientation: portrait) {
     .projects {
       padding-bottom: 0;
       height: 100vh; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 769px) and (orientation: landscape) {
     .projects {
       padding-bottom: 2rem; } }
   .projects .block {
@@ -1095,7 +1104,7 @@ footer {
         -ms-flex-pack: end;
             justify-content: flex-end;
     padding-left: 1rem; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
       .projects__bio-image {
         padding-top: 0;
         margin-top: 4rem;
@@ -1103,7 +1112,7 @@ footer {
         -webkit-box-pack: space-evenly;
             -ms-flex-pack: space-evenly;
                 justify-content: space-evenly; } }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 769px) and (orientation: landscape) {
       .projects__bio-image {
         height: 42vh;
         margin: 0 auto; } }
@@ -1117,11 +1126,11 @@ footer {
       width: 100%;
       top: 30%;
       position: relative; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 481px) and (orientation: portrait) {
         .projects__bio-image .text-secondary {
           font-size: 1.7rem;
           position: initial; } }
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: 769px) and (orientation: landscape) {
         .projects__bio-image .text-secondary {
           font-size: 2rem;
           top: 18%; } }
@@ -1133,7 +1142,7 @@ footer {
       text-align: left; }
     .projects__bio-image .main-title {
       color: #3e0d18; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 481px) and (orientation: portrait) {
         .projects__bio-image .main-title {
           top: 1rem; } }
   .projects__items {
@@ -1143,11 +1152,11 @@ footer {
     grid-gap: 2rem;
     z-index: 0;
     background-size: cover; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
       .projects__items {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1rem; } }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 769px) and (orientation: landscape) {
       .projects__items {
         grid-template-columns: repeat(3, 1fr);
         height: auto; } }
@@ -1176,7 +1185,7 @@ footer {
     -webkit-box-shadow: #3b3c3033 6px 6px 8px, #3f403408 -1px -1px 2px;
             box-shadow: #3b3c3033 6px 6px 8px, #3f403408 -1px -1px 2px;
     z-index: 3; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
       .projects__item1, .projects__item2, .projects__item3, .projects__item4 {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1204,7 +1213,7 @@ footer {
       text-transform: uppercase;
       font-family: "Montserrat", sans-serif;
       font-family: "Turret Road", "cursive"; }
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: 769px) and (orientation: landscape) {
         .projects__item1 .project__title, .projects__item2 .project__title, .projects__item3 .project__title, .projects__item4 .project__title {
           font-size: 1.3rem; } }
     .projects__item1 img, .projects__item2 img, .projects__item3 img, .projects__item4 img {
@@ -1258,7 +1267,7 @@ footer {
       color: whitesmoke; }
   .projects .block {
     width: 100%; }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 769px) and (orientation: landscape) {
       .projects .block {
         width: 66%; } }
   .projects footer {
@@ -1290,10 +1299,10 @@ footer {
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .contact {
       height: auto; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) and (orientation: portrait) {
     .contact {
       padding: 0; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 769px) and (orientation: landscape) {
     .contact {
       padding-top: 33vh; } }
   .contact .grid-container {
@@ -1312,11 +1321,11 @@ footer {
       .contact h2 {
         margin: 0;
         line-height: 12rem; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
       .contact h2 {
         margin-bottom: 3.2rem;
         font-size: 3em; } }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 769px) and (orientation: landscape) {
       .contact h2 {
         font-weight: bold;
         letter-spacing: 0.05rem; } }
@@ -1325,7 +1334,7 @@ footer {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
     font-size: 1.35rem; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
       .contact__list {
         grid-template-columns: repeat(1, 1fr); } }
   .contact .contact__email,
@@ -1364,12 +1373,12 @@ footer {
               box-shadow: none;
       padding: 1rem 12% 0 12%;
       border: none; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) and (orientation: portrait) {
     .main-container {
       height: auto;
       margin-top: 21%;
       padding: 0 5%; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 769px) and (orientation: landscape) {
     .main-container {
       margin: 0 auto;
       height: 100%;
@@ -1410,10 +1419,10 @@ footer {
       border: none;
       -webkit-box-shadow: none;
               box-shadow: none; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) and (orientation: portrait) {
     .container {
       height: 100%; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 769px) and (orientation: landscape) {
     .container {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -1440,10 +1449,10 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 44px; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) and (orientation: portrait) {
     .main-img {
       padding: 0; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 769px) and (orientation: landscape) {
     .main-img {
       width: 60%; } }
 
@@ -1455,7 +1464,7 @@ footer {
   .main-img img {
     width: 79%; } }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 769px) and (orientation: landscape) {
   .main-img img {
     padding: 2%; } }
 
@@ -1465,12 +1474,12 @@ footer {
   grid-gap: 5px;
   padding-bottom: 12px;
   padding-top: 16px; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 769px) and (orientation: landscape) {
     .imgs {
       width: 40%;
       margin: 5%; } }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 481px) and (orientation: portrait) {
   margin: 0px 24%; }
 
 .imgs img {
@@ -1566,7 +1575,7 @@ header {
 main {
   height: auto;
   width: 100%; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) and (orientation: portrait) {
     main {
       height: auto; } }
   main a {
@@ -1615,10 +1624,10 @@ footer {
   z-index: 99999699999;
   position: fixed;
   left: 8rem; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) and (orientation: portrait) {
     #project-index {
       left: 34rem; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 769px) and (orientation: landscape) {
     #project-index {
       left: 80%;
       width: 9%; } }
@@ -1627,7 +1636,7 @@ footer {
   #project-index {
     margin-top: -1rem; } }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 481px) and (orientation: portrait) {
   #project-index {
     left: 28rem;
     top: -2rem; } }
@@ -1636,7 +1645,7 @@ footer {
   position: relative;
   width: 100%;
   background: repeating-linear-gradient(45deg, #e2dbdb, #f3f4ea 100px); }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) and (orientation: portrait) {
     .social-icons {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1652,7 +1661,7 @@ footer {
   .social-icons .fa-2x {
     font-size: 1.53rem;
     padding: 0.2rem 0; }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 769px) and (orientation: landscape) {
       .social-icons .fa-2x {
         font-size: 1.2rem; } }
 

@@ -26,6 +26,8 @@
   }
   @include LARGE-DEVICE-WIDTH {
     border: 0;
+    flex-direction: column;
+    padding: 2rem 0 5rem 0;
   }
 
   .wrap {
@@ -64,6 +66,9 @@
       font-size: 1.8rem;
       margin-top: -2rem;
     }
+    @include LARGE-DEVICE-WIDTH {
+      font-size: 1.4rem;
+    }
   }
 
   .animated_text {
@@ -88,7 +93,7 @@
       font-size: 2.6rem;
     }
     @include LARGE-DEVICE-WIDTH {
-      font-size: 1.6rem;
+      font-size: 3rem;
     }
   }
   .title_txt_container {
