@@ -1205,8 +1205,6 @@ footer {
             align-items: center;
     text-align: center; }
   .projects a:link {
-    background-color: #d5d9c9;
-    width: 100%;
     border: none;
     padding: 9px;
     border-radius: 3px;
@@ -1242,19 +1240,17 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   color: #93a7a9;
-  padding: 18vh 0;
   width: 100%;
   background: white;
-  padding: 3rem 0 18px 0;
   border: 4px solid #461a19;
-  background: repeating-linear-gradient(45deg, #e2dbdb00, #0e060954 100px), url(../img/foggy.jpg) center center;
+  background: repeating-linear-gradient(45deg, #e2dbdb00, #8bc6caf7 100px), url(../img/room7-small.jpg) center center;
   background-size: cover; }
   @media only screen and (min-width: 768px) {
     .contact {
@@ -1263,18 +1259,16 @@ footer {
     .contact {
       padding-top: 33vh; } }
   .contact .grid-container {
-    height: 62%;
     padding: 2rem;
     background: #bc2241;
-    background: repeating-linear-gradient(45deg, #e2dbdb, #fff0f5 100px), url(../img/heart_matrix_blue.png) center bottom; }
+    background: repeating-linear-gradient(45deg, #e2dbdb, #fff0f5bf 100px), url(../img/merm.png) center bottom; }
   .contact h2 {
     font-size: 2.26rem;
-    margin-bottom: -15rem;
     color: #fff0c7;
     font-weight: bolder;
     text-transform: uppercase;
     margin: 0;
-    margin-top: 6rem;
+    margin-bottom: 7rem;
     font-family: "Montserrat", "cursive"; }
     @media only screen and (min-width: 768px) {
       .contact h2 {
@@ -1580,7 +1574,7 @@ footer {
       width: 9%; } }
 
 .social-icons {
-  position: fixed;
+  position: relative;
   width: 100%;
   background: repeating-linear-gradient(45deg, #e2dbdb, #f3f4ea 100px); }
   @media only screen and (min-width: 768px) {

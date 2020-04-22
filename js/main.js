@@ -147,9 +147,9 @@ $(document).ready(function () {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 440) {
-      $(".socialIcons").addClass("showIcons");
+      $(".social-icons").addClass("show-icons");
     } else {
-      $(".socialIcons").removeClass("showIcons");
+      $(".social-icons").removeClass("show-icons");
     }
   });
 });
