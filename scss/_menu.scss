@@ -90,7 +90,13 @@
 .menu-index {
   @include SMALL-LANDSCAPE {
     width: 25%;
-    margin-top: -2rem;
+    margin-top: -1rem;
+  }
+  #ps, #pt {
+    font-size: 45px;
+    @include SMALL-LANDSCAPE {
+      font-size: 40px;
+    }
   }
 }
 
@@ -108,7 +114,7 @@
     background: repeating-linear-gradient(45deg, #e2dbdb, #f3f4ea 100px);
     box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127),
       0px -3px 1px rgba(99, 11, 6, 0.244);
-    
+
     background: #e2dbdb;
   }
 
@@ -281,6 +287,9 @@
     text-shadow: none;
     text-align: center;
     padding: 0;
+    @include SMALL-LANDSCAPE {
+      font-size: 1em;
+    }
     @include MEDIUM-DEVICE-WIDTH {
       font-size: 2.9em;
     }
@@ -295,7 +304,7 @@
     transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear,
       -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
     @include SMALL-LANDSCAPE {
-      width: 50%;
+      width: 45%;
     }
     @include MEDIUM-DEVICE-WIDTH {
       width: 100%;
@@ -327,6 +336,9 @@
       color: #353535;
       text-shadow: none;
       padding: 0;
+      @include SMALL-LANDSCAPE {
+        font-size: 0.8em;
+      }
       @include MEDIUM-DEVICE-WIDTH {
         font-size: 2rem;
         margin: 0;
