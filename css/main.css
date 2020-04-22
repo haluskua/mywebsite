@@ -673,6 +673,9 @@ footer {
     text-shadow: none;
     text-align: center;
     padding: 0; }
+    @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+      .nav .my_name {
+        font-size: 1em; } }
     @media only screen and (min-width: 768px) {
       .nav .my_name {
         font-size: 2.9em; } }
@@ -689,7 +692,7 @@ footer {
             transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear, -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1); }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .nav .svg-container {
-        width: 50%; } }
+        width: 45%; } }
     @media only screen and (min-width: 768px) {
       .nav .svg-container {
         width: 100%;
@@ -719,6 +722,9 @@ footer {
       color: #353535;
       text-shadow: none;
       padding: 0; }
+      @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+        .nav .title_txt_container .title_text {
+          font-size: 0.8em; } }
       @media only screen and (min-width: 768px) {
         .nav .title_txt_container .title_text {
           font-size: 2rem;
