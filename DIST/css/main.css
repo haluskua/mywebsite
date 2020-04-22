@@ -155,7 +155,7 @@ a {
     margin: 0; }
     .home .title_txt_container .title_text,
     .homeMain .title_txt_container .title_text {
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       text-shadow: 3.28px 3.36px #e7ffc7;
       color: #8c8989;
       font-family: "Roboto", "Bebas", Cursive;
@@ -1310,7 +1310,8 @@ footer {
     color: #fff0c7;
     font-weight: bolder;
     text-transform: uppercase;
-    margin: 0; }
+    margin: 0;
+    margin-top: 8rem; }
     @media only screen and (min-width: 768px) {
       .contact h2 {
         margin-bottom: 3.2rem;

@@ -37,6 +37,7 @@
     font-weight: bolder;
     text-transform: uppercase;
     margin: 0;
+    margin-top: 8rem;
     @include MEDIUM-DEVICE-WIDTH {
       margin-bottom: 3.2rem;
       font-size: 3em;

@@ -98,12 +98,11 @@
     margin: 0;
 
     .title_text {
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       text-shadow: 3.28px 3.36px #e7ffc7;
       color: #8c8989;
       font-family: "Roboto", "Bebas", Cursive;
       text-transform: uppercase;
-
       text-shadow: none;
       padding: 0;
       @include SMALL-LANDSCAPE {
