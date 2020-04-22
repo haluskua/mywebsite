@@ -172,9 +172,6 @@
     }
   }
 
-  &__item1 {
-  }
-
   &__btns {
     position: absolute;
     top: 50%;
@@ -219,24 +216,6 @@
     }
     @include LARGE-DEVICE-WIDTH {
       width: 66%;
-    }
-  }
-  .social-icons {
-    position: fixed;
-    background-color: #404034;
-
-    @include MEDIUM-DEVICE-WIDTH {
-      z-index: 0;
-    }
-    a {
-      background: #3f3f33;
-    }
-    .fa-2x {
-      font-size: 1.53rem;
-      padding: 0.2rem 0;
-      @include LARGE-DEVICE-WIDTH {
-        font-size: 1.2rem;
-      }
     }
   }
   footer {

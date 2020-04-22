@@ -9,11 +9,13 @@
   padding: 18vh 0;
   width: 100%;
   background: white;
-  padding: 3rem 0  18px 0;
+  padding: 3rem 0 18px 0;
 
   border: 4px solid #461a19;
-  background: linear-gradient(to right, #070c0c12, #230505a3),
-    url(../img/project-3.jpg) center center;
+  background: repeating-linear-gradient(45deg, #e2dbdb00, #0e060954 100px),
+    url(../img/foggy.jpg) center center;
+  background-size: cover;
+
   @include MEDIUM-DEVICE-WIDTH {
     padding: 25vh 0;
   }
@@ -22,22 +24,22 @@
   }
 
   .grid-container {
-    height: auto;
+    height: 62%;
     padding: 2rem;
     background: #bc2241;
     background: repeating-linear-gradient(45deg, #e2dbdb, #fff0f5 100px),
-    url(../img/heart_matrix_blue.png) center bottom;
+      url(../img/heart_matrix_blue.png) center bottom;
   }
 
   h2 {
     font-size: 2.26rem;
     margin-bottom: -15rem;
-    font-family: "Bebas", "Neue", cursive;
     color: #fff0c7;
     font-weight: bolder;
     text-transform: uppercase;
     margin: 0;
-    margin-top: 8rem;
+    margin-top: 6rem;
+    font-family: "Montserrat", "cursive";
     @include MEDIUM-DEVICE-WIDTH {
       margin-bottom: 3.2rem;
       font-size: 3em;
@@ -69,27 +71,6 @@
     letter-spacing: 0.04em;
     padding: 12px;
     background: rgba(255, 255, 255, 0.17);
-  }
-  .social-icons {
-    position: fixed;
-    background-color: #404034;
-
-    @include MEDIUM-DEVICE-WIDTH {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      padding: 1em 0.5em;
-    }
-    a {
-      background: #3f3f33;
-    }
-    .fa-2x {
-      font-size: 1.53rem;
-      padding: 0.2rem 0;
-      @include LARGE-DEVICE-WIDTH {
-        font-size: 1.2rem;
-      }
-    }
   }
   .text-secondary {
     color: #796266;

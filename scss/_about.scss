@@ -249,27 +249,6 @@
       }
     }
   }
-  .social-icons {
-    position: fixed;
-    background-color: #404034;
-
-    @include MEDIUM-DEVICE-WIDTH {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      padding: 1em 0.5em;
-    }
-    a {
-      background: #3f3f33;
-    }
-    .fa-2x {
-      font-size: 1.53rem;
-      padding: 0.2rem 0;
-      @include LARGE-DEVICE-WIDTH {
-        font-size: 1.2rem;
-      }
-    }
-  }
 
   footer {
     transform: rotate(90deg) translate(-3rem, -5rem);
