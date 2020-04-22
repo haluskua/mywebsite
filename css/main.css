@@ -470,7 +470,13 @@ footer {
 @media only screen and (device-width: 1em), screen and (orientation: landscape) {
   .menu-index {
     width: 25%;
-    margin-top: -2rem; } }
+    margin-top: -1rem; } }
+
+.menu-index #ps, .menu-index #pt {
+  font-size: 45px; }
+  @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+    .menu-index #ps, .menu-index #pt {
+      font-size: 40px; } }
 
 .nav {
   position: fixed;
@@ -1555,7 +1561,7 @@ header {
   header .O {
     color: red; }
   header .H {
-    color: white; }
+    color: #f37a58; }
 
 main {
   height: auto;
