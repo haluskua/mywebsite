@@ -27,7 +27,7 @@
     align-items: center;
     justify-content: flex-end;
     @include MEDIUM-DEVICE-WIDTH {
-      padding: 71px 5%;
+      padding: 35px 5%;
     }
     @include LARGE-DEVICE-WIDTH {
     }
@@ -98,7 +98,7 @@
     background-size: cover;
     @include MEDIUM-DEVICE-WIDTH {
       font-size: 1.5rem;
-      width: 90%;
+      width: 100%;
     }
     h3 {
       color: #bd7e40;

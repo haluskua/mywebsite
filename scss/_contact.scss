@@ -14,10 +14,11 @@
   background-size: cover;
   @include SMALL-LANDSCAPE {
     height: auto;
+    
   }
 
   @include MEDIUM-DEVICE-WIDTH {
-    padding: 25vh 0;
+    padding: 0;
   }
   @include LARGE-DEVICE-WIDTH {
     padding-top: 33vh;
@@ -72,7 +73,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     padding: 12px;
-    background: rgba(255, 255, 255, 0.17);
+    // background: rgba(255, 255, 255, 0.17);
   }
   .text-secondary {
     color: #796266;

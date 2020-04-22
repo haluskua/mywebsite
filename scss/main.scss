@@ -180,6 +180,10 @@ footer {
   @include SMALL-LANDSCAPE {
     margin-top: -1rem;
   }
+  @include MEDIUM-DEVICE-WIDTH {
+    left: 28rem;
+    top: -2rem;
+  }
 }
 
 //social icons links
