@@ -155,7 +155,7 @@ a {
     margin: 0; }
     .home .title_txt_container .title_text,
     .homeMain .title_txt_container .title_text {
-      font-size: 1.35rem;
+      font-size: 1.25rem;
       text-shadow: 3.28px 3.36px #e7ffc7;
       color: #8c8989;
       font-family: "Roboto", "Bebas", Cursive;
@@ -165,7 +165,7 @@ a {
       @media only screen and (device-width: 1em), screen and (orientation: landscape) {
         .home .title_txt_container .title_text,
         .homeMain .title_txt_container .title_text {
-          font-size: 1em; } }
+          font-size: 0.8em; } }
       @media only screen and (min-width: 768px) {
         .home .title_txt_container .title_text,
         .homeMain .title_txt_container .title_text {
