@@ -43,7 +43,7 @@ a {
   background: -webkit-gradient(linear, left top, right top, from(#0631408c), to(#103050a6)), url(../img/heart_matrix_blue.png) center bottom;
   background: linear-gradient(to right, #0631408c, #103050a6), url(../img/heart_matrix_blue.png) center bottom;
   background: repeating-linear-gradient(45deg, #e2dbdb, #fff0f5 100px), url(../img/heart_matrix_blue.png) center bottom;
-  background: repeating-radial-gradient(#f3f5e2b0, #ffffff91 100px);
+  background: repeating-radial-gradient(#f3f5e2, #fffffffa 100px);
   background-size: cover;
   background-repeat: no-repeat;
   -ms-flex-pack: distribute;
