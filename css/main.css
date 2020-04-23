@@ -43,7 +43,7 @@ a {
   background: -webkit-gradient(linear, left top, right top, from(#0631408c), to(#103050a6)), url(../img/heart_matrix_blue.png) center bottom;
   background: linear-gradient(to right, #0631408c, #103050a6), url(../img/heart_matrix_blue.png) center bottom;
   background: repeating-linear-gradient(45deg, #e2dbdb, #fff0f5 100px), url(../img/heart_matrix_blue.png) center bottom;
-  background: repeating-radial-gradient(#f3f5e2, #fffffffa 100px);
+  background: linear-gradient(to right, #f3f5e2, #fffffffa 100px);
   background-size: cover;
   background-repeat: no-repeat;
   -ms-flex-pack: distribute;
@@ -73,7 +73,7 @@ a {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      padding: 5rem 0 5rem 0; } }
+      padding: 2rem 0 5rem 0; } }
   .home .wrap,
   .homeMain .wrap {
     -webkit-box-orient: vertical;
@@ -91,7 +91,7 @@ a {
             align-items: center;
     width: 100%;
     height: 10%;
-    margin-top: 5rem;
+    margin-top: 3.2rem;
     position: relative; }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .home .wrap,
@@ -149,7 +149,7 @@ a {
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .home .my_name,
       .homeMain .my_name {
-        font-size: 2.6rem; } }
+        font-size: 3.8rem; } }
     @media only screen and (min-width: 769px) and (orientation: landscape) {
       .home .my_name,
       .homeMain .my_name {
@@ -180,7 +180,8 @@ a {
       @media only screen and (min-width: 481px) and (orientation: portrait) {
         .home .title_txt_container .title_text,
         .homeMain .title_txt_container .title_text {
-          font-size: 2.2em; } }
+          font-size: 2em;
+          margin-top: -2.2rem; } }
       @media only screen and (min-width: 769px) and (orientation: landscape) {
         .home .title_txt_container .title_text,
         .homeMain .title_txt_container .title_text {
@@ -369,10 +370,10 @@ a {
   background: #283546; }
   @media only screen and (min-width: 769px) and (orientation: landscape) {
     .social-icons {
-      -webkit-box-orient: vertical;
+      -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+          -ms-flex-direction: row;
+              flex-direction: row;
       width: auto;
       left: 0;
       height: 100%;
@@ -591,6 +592,15 @@ footer {
           -webkit-box-direction: normal;
               -ms-flex-direction: column;
                   flex-direction: column; } }
+      @media only screen and (min-width: 769px) and (orientation: landscape) {
+        .nav .menu-nav.open {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: reverse;
+              -ms-flex-direction: row-reverse;
+                  flex-direction: row-reverse;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; } }
     .nav .menu-nav__item {
       -webkit-transform: translateX(100vw);
               transform: translateX(100vw);
@@ -696,6 +706,9 @@ footer {
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .nav .my_name {
         font-size: 2.9em; } }
+    @media only screen and (min-width: 769px) and (orientation: landscape) {
+      .nav .my_name {
+        font-size: 2.68em; } }
   .nav .svg-container {
     width: 100%;
     text-align: center;
@@ -715,6 +728,9 @@ footer {
         width: 100%;
         padding-top: 0;
         height: 68vh; } }
+    @media only screen and (min-width: 769px) and (orientation: landscape) {
+      .nav .svg-container {
+        width: 65%; } }
     .nav .svg-container svg {
       width: 100%;
       height: 100%; }
@@ -746,6 +762,9 @@ footer {
         .nav .title_txt_container .title_text {
           font-size: 2rem;
           margin: 0; } }
+      @media only screen and (min-width: 769px) and (orientation: landscape) {
+        .nav .title_txt_container .title_text {
+          font-size: 2.3em; } }
   .nav #leters {
     animation: yellow_ring 4.5s infinite linear alternate-reverse;
     -webkit-transform-origin: center;
@@ -934,7 +953,7 @@ footer {
     @media only screen and (min-width: 769px) and (orientation: landscape) {
       .about .img-container {
         border: none;
-        width: 77%; } }
+        width: 100%; } }
   .about .jobs {
     width: 100%;
     background-color: #ffffff;
@@ -1658,6 +1677,12 @@ footer {
               flex-direction: row;
       width: 100%;
       padding: 1em 0.5em; } }
+  @media only screen and (min-width: 481px) and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+    .social-icons {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
   .social-icons a {
     background: rgba(63, 63, 51, 0); }
   .social-icons .fa-2x {
