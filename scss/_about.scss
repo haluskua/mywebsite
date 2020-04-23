@@ -22,31 +22,102 @@
   }
 
   &__bio-image {
-    // width: 100%;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: flex-end;
-    // @include MEDIUM-DEVICE-WIDTH {
-    //   padding: 35px 5%;
-    //   height: 100%;
-    // }
-    // @include LARGE-DEVICE-WIDTH {
-
-    // }
+    width: 100%;
+    border-radius: 0.3rem;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: #3b3c3033 6px 6px 8px, #3f403408 -1px -1px 2px;
+    background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px),
+      url(../img/project-1.jpg) center bottom;
+    background-size: cover;
+    @include SMALL-LANDSCAPE {
+      margin-top: 3rem;
+    }
+    @include MEDIUM-DEVICE-WIDTH {
+      height: 100%;
+      background-size: cover;
+      padding: 4% 6%;
+    }
+    @include LARGE-DEVICE-WIDTH {
+      height: auto;
+      flex-flow: row;
+      flex-wrap: wrap;
+    }
 
     .text-secondary {
-      font-size: 1.58rem;
-      text-align: left;
-      padding-bottom: 1px;
-      color: #80b727;
       display: flex;
-      margin-bottom: 0;
-      font-family: "Bebas Neue", "Juslius Sans", "cursive";
-      font-family: "Cinzel Decorative", cursive;
-      @include LARGE-DEVICE-WIDTH {
-        font-size: 1.27rem;
+      justify-content: center;
+      font-family: "Montserrat", "cursive";
+      width: 100%;
+      display: flex;
+      color: $secondary-color;
+      text-transform: uppercase;
+      text-align: justify;
+      font-size: 0.81rem;
+      margin: 0;
+
+      @include MEDIUM-DEVICE-WIDTH {
+        background: none;
+        margin-bottom: 0rem;
+        font-size: 1rem;
+        text-align: right;
       }
+      @include LARGE-DEVICE-WIDTH {
+        font-size: 0.7rem;
+        padding: 0 6%;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  // ......
+
+  .img-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 6px;
+    height: auto;
+    // box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16),
+    // 6px 6px 11px rgba(52, 170, 160, 0.16),;
+
+    @include MEDIUM-DEVICE-WIDTH {
+      width: 100%;
+    }
+    @include LARGE-DEVICE-WIDTH {
+      border: none;
+      width: 40%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .jobs__bio-image {
+      width: 100%;
+    }
+  }
+
+  // ...............
+
+  &__bio {
+    width: 100%;
+    padding: 3%;
+    text-align: center;
+    background: linear-gradient(to right, #ffffff, #ffffff),
+      url(../img/rooster-b-w.jpg) center center;
+    background-size: cover;
+    @include MEDIUM-DEVICE-WIDTH {
+      font-size: 1.5rem;
+      width: 100%;
+    }
+    @include LARGE-DEVICE-WIDTH {
+      width: 60%;
+    }
+
+    .main-title {
+      color: #3e0d18;
+      display: none;
     }
     p {
       padding: 1%;
@@ -87,48 +158,13 @@
         @include MEDIUM-DEVICE-WIDTH {
           display: flex;
           justify-content: flex-start;
-
         }
         @include LARGE-DEVICE-WIDTH {
           text-align: left;
         }
       }
     }
-  }
-  .img-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    border-radius: 6px;
-    height: auto;
-    // box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16),
-    // 6px 6px 11px rgba(52, 170, 160, 0.16),;
 
-    @include MEDIUM-DEVICE-WIDTH {
-      width: 100%;
-    }
-    @include LARGE-DEVICE-WIDTH {
-      border: none;
-      width: 40%;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  }
-
-  &__bio {
-    width: 100%;
-    padding: 3%;
-    text-align: center;
-    background: linear-gradient(to right, #ffffff, #ffffff),
-      url(../img/rooster-b-w.jpg) center center;
-    background-size: cover;
-    @include MEDIUM-DEVICE-WIDTH {
-      font-size: 1.5rem;
-      width: 100%;
-    }
-    @include LARGE-DEVICE-WIDTH {
-      width: 60%;
-    }
     h3 {
       color: #bd7e40;
       font-size: 1.5em;
@@ -136,7 +172,6 @@
       text-align: left;
       font-weight: bold;
       line-height: 1.052em;
-      font-family: "Cinzel Decorative", cursive;
       font-family: "Roboto", "Monserrat", cursive;
     }
     h5 {
@@ -146,68 +181,9 @@
       font-weight: normal;
       text-align: left;
     }
-    .main-title {
-      color: #3e0d18;
-      display: none;
-    }
   }
 
-  &__bio-image {
-    width: 100%;
-    border-radius: 0.3rem;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    box-shadow: #3b3c3033 6px 6px 8px, #3f403408 -1px -1px 2px;
-    background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px),
-      url(../img/project-1.jpg) center bottom;
-    background-size: cover;
-    @include SMALL-LANDSCAPE {
-      margin-top: 3rem;
-    }
-    @include MEDIUM-DEVICE-WIDTH {
-      height: 100%;
-      background-size: cover;
-      padding: 4% 6%;
-    }
-    @include LARGE-DEVICE-WIDTH {
-      height: auto;
-      flex-flow: row;
-      flex-wrap: wrap;
-    }
-    img {
-      width: 100%;
-      @include LARGE-DEVICE-WIDTH {
-        align-self: flex-end;
-      }
-    }
-    .text-secondary {
-      display: flex;
-      justify-content: center;
-      font-family: "Montserrat", "cursive";
-      width: 100%;
-      display: flex;
-      color: $secondary-color;
-      text-transform: uppercase;
-      text-align: justify;
-      font-size: 0.81rem;
-      margin: 0;
-
-      @include MEDIUM-DEVICE-WIDTH {
-        background: none;
-        margin-bottom: 0rem;
-        font-size: 1rem;
-        text-align: right;
-      }
-      @include LARGE-DEVICE-WIDTH {
-        font-size: 0.7rem;
-        padding: 0 6%;
-        justify-content: flex-end;
-      }
-    }
-  }
+  // ..........
 
   .jobs {
     width: 100%;
@@ -221,6 +197,15 @@
     @include MEDIUM-DEVICE-WIDTH {
       width: 100%;
     }
+    &__bio-image {
+      img {
+        width: 100%;
+        @include LARGE-DEVICE-WIDTH {
+          align-self: flex-end;
+        }
+      }
+    }
+
     &__job {
       display: flex;
       flex-direction: column;
@@ -238,6 +223,17 @@
       @include LARGE-DEVICE-WIDTH {
         padding: 20px 30px;
       }
+
+      .text-secondary {
+        justify-content: flex-end;
+        color: #5f6157;
+        font-size: 1.03em;
+        font-family: "Roboto", "Juslius Sans", "cursive";
+        @include LARGE-DEVICE-WIDTH {
+          font-size: 1rem;
+        }
+      }
+
       h2,
       h3 {
         color: #3e4036;
@@ -252,15 +248,7 @@
           font-weight: normal;
         }
       }
-      .text-secondary {
-        justify-content: flex-end;
-        color: #5f6157;
-        font-size: 1.03em;
-        font-family: "Roboto", "Juslius Sans", "cursive";
-        @include LARGE-DEVICE-WIDTH {
-          font-size: 1rem;
-        }
-      }
+
       h5 {
         font-size: 1rem;
         color: #09868c;
@@ -273,8 +261,8 @@
           font-size: 0.88rem;
         }
       }
-      h6 {
-        margin: 0.3rem 0;
+      P {
+        text-align: left;
       }
     }
   }
