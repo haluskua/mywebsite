@@ -488,10 +488,12 @@ footer {
     width: 25%;
     margin-top: -1rem; } }
 
-.menu-index #ps, .menu-index #pt {
+.menu-index #ps,
+.menu-index #pt {
   font-size: 45px; }
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
-    .menu-index #ps, .menu-index #pt {
+    .menu-index #ps,
+    .menu-index #pt {
       font-size: 40px; } }
 
 .nav {
@@ -569,7 +571,11 @@ footer {
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: #e1e4e6; }
+      background: #e1e4e6;
+      background: repeating-linear-gradient(45deg, #e2dbdb30, #fff0f512 100px), url(../img/hillside.jpg) center bottom;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; }
       @media only screen and (device-width: 1em), screen and (orientation: landscape) {
         .nav .menu-nav.open {
           -webkit-box-orient: horizontal;
@@ -704,7 +710,8 @@ footer {
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
-    padding: 0; }
+    padding: 0;
+    color: white; }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .nav .my_name {
         font-size: 1em; } }
@@ -759,7 +766,8 @@ footer {
       text-shadow: 3.28px 3.36px #e7ffc7;
       color: #353535;
       text-shadow: none;
-      padding: 0; }
+      padding: 0;
+      color: white; }
       @media only screen and (device-width: 1em), screen and (orientation: landscape) {
         .nav .title_txt_container .title_text {
           font-size: 0.8em; } }
