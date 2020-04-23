@@ -43,6 +43,7 @@ a {
   background: -webkit-gradient(linear, left top, right top, from(#0631408c), to(#103050a6)), url(../img/heart_matrix_blue.png) center bottom;
   background: linear-gradient(to right, #0631408c, #103050a6), url(../img/heart_matrix_blue.png) center bottom;
   background: repeating-linear-gradient(45deg, #e2dbdb, #fff0f5 100px), url(../img/heart_matrix_blue.png) center bottom;
+  background: repeating-radial-gradient(#f3f5e2b0, #ffffff91 100px);
   background-size: cover;
   background-repeat: no-repeat;
   -ms-flex-pack: distribute;
@@ -72,7 +73,7 @@ a {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      padding: 2rem 0 5rem 0; } }
+      padding: 5rem 0 5rem 0; } }
   .home .wrap,
   .homeMain .wrap {
     -webkit-box-orient: vertical;
@@ -127,7 +128,8 @@ a {
     @media only screen and (min-width: 769px) and (orientation: landscape) {
       .home .creativity,
       .homeMain .creativity {
-        font-size: 1.4rem; } }
+        font-size: 1.4rem;
+        margin-top: -2rem; } }
   .home .my_name,
   .homeMain .my_name {
     font-size: 2.4em;
@@ -151,7 +153,7 @@ a {
     @media only screen and (min-width: 769px) and (orientation: landscape) {
       .home .my_name,
       .homeMain .my_name {
-        font-size: 3rem; } }
+        font-size: 2.8rem; } }
   .home .title_txt_container,
   .homeMain .title_txt_container {
     display: -webkit-box;
@@ -182,7 +184,7 @@ a {
       @media only screen and (min-width: 769px) and (orientation: landscape) {
         .home .title_txt_container .title_text,
         .homeMain .title_txt_container .title_text {
-          font-size: 1.2rem; } }
+          font-size: 1.1rem; } }
   .home svg,
   .homeMain svg {
     height: 100%; }
