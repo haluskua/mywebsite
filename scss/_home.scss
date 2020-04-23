@@ -11,10 +11,11 @@
     url(../img/heart_matrix_blue.png) center bottom;
   background: repeating-linear-gradient(45deg, #e2dbdb, #fff0f5 100px),
     url(../img/heart_matrix_blue.png) center bottom;
+  background: linear-gradient(to right, #f3f5e2, #fffffffa 100px);
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: space-around;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
   @include SMALL-LANDSCAPE {
     padding: 0;
     flex-direction: row;
@@ -28,6 +29,9 @@
     border: 0;
     flex-direction: column;
     padding: 2rem 0 5rem 0;
+    // background: repeating-linear-gradient(0deg, #e2dbdb, #fff0f5 100px),
+    //   url(../img/heart_matrix_blue.png) center bottom;
+    // background: repeating-radial-gradient(#fff0f5ad, #f1e6ea2e 100px);
   }
 
   .wrap {
@@ -37,7 +41,7 @@
     align-items: center;
     width: 100%;
     height: 10%;
-    margin-top: 5rem;
+    margin-top: 3.2rem;
     position: relative;
     @include SMALL-LANDSCAPE {
       margin-top: -13rem;
@@ -68,6 +72,7 @@
     }
     @include LARGE-DEVICE-WIDTH {
       font-size: 1.4rem;
+      margin-top: -2rem;
     }
   }
 
@@ -90,10 +95,10 @@
       font-size: 1.54em;
     }
     @include MEDIUM-DEVICE-WIDTH {
-      font-size: 2.6rem;
+      font-size: 3.8rem;
     }
     @include LARGE-DEVICE-WIDTH {
-      font-size: 3rem;
+      font-size: 2.8rem;
     }
   }
   .title_txt_container {
@@ -114,10 +119,11 @@
         font-size: 0.8em;
       }
       @include MEDIUM-DEVICE-WIDTH {
-        font-size: 2.2em;
+        font-size: 2em;
+        margin-top: -2.2rem;
       }
       @include LARGE-DEVICE-WIDTH {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
     }
   }
@@ -305,7 +311,7 @@
   background: #283546;
 
   @include LARGE-DEVICE-WIDTH {
-    flex-direction: column;
+    flex-direction: row;
     width: auto;
     left: 0;
     height: 100%;

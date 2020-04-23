@@ -43,11 +43,12 @@ a {
   background: -webkit-gradient(linear, left top, right top, from(#0631408c), to(#103050a6)), url(../img/heart_matrix_blue.png) center bottom;
   background: linear-gradient(to right, #0631408c, #103050a6), url(../img/heart_matrix_blue.png) center bottom;
   background: repeating-linear-gradient(45deg, #e2dbdb, #fff0f5 100px), url(../img/heart_matrix_blue.png) center bottom;
+  background: linear-gradient(to right, #f3f5e2, #fffffffa 100px);
   background-size: cover;
   background-repeat: no-repeat;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-bottom: 5rem; }
+  padding-bottom: 3rem; }
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .home,
     .homeMain {
@@ -90,7 +91,7 @@ a {
             align-items: center;
     width: 100%;
     height: 10%;
-    margin-top: 5rem;
+    margin-top: 3.2rem;
     position: relative; }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .home .wrap,
@@ -127,7 +128,8 @@ a {
     @media only screen and (min-width: 769px) and (orientation: landscape) {
       .home .creativity,
       .homeMain .creativity {
-        font-size: 1.4rem; } }
+        font-size: 1.4rem;
+        margin-top: -2rem; } }
   .home .my_name,
   .homeMain .my_name {
     font-size: 2.4em;
@@ -147,11 +149,11 @@ a {
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .home .my_name,
       .homeMain .my_name {
-        font-size: 2.6rem; } }
+        font-size: 3.8rem; } }
     @media only screen and (min-width: 769px) and (orientation: landscape) {
       .home .my_name,
       .homeMain .my_name {
-        font-size: 3rem; } }
+        font-size: 2.8rem; } }
   .home .title_txt_container,
   .homeMain .title_txt_container {
     display: -webkit-box;
@@ -178,11 +180,12 @@ a {
       @media only screen and (min-width: 481px) and (orientation: portrait) {
         .home .title_txt_container .title_text,
         .homeMain .title_txt_container .title_text {
-          font-size: 2.2em; } }
+          font-size: 2em;
+          margin-top: -2.2rem; } }
       @media only screen and (min-width: 769px) and (orientation: landscape) {
         .home .title_txt_container .title_text,
         .homeMain .title_txt_container .title_text {
-          font-size: 1.2rem; } }
+          font-size: 1.1rem; } }
   .home svg,
   .homeMain svg {
     height: 100%; }
@@ -367,10 +370,10 @@ a {
   background: #283546; }
   @media only screen and (min-width: 769px) and (orientation: landscape) {
     .social-icons {
-      -webkit-box-orient: vertical;
+      -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+          -ms-flex-direction: row;
+              flex-direction: row;
       width: auto;
       left: 0;
       height: 100%;
@@ -427,6 +430,10 @@ footer {
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .menu-btn {
       width: 22%; } }
+  @media only screen and (min-width: 481px) and (orientation: portrait) {
+    .menu-btn {
+      z-index: 9999;
+      cursor: pointer; } }
   .menu-btn__burger {
     position: absolute;
     left: 1em;
@@ -589,6 +596,15 @@ footer {
           -webkit-box-direction: normal;
               -ms-flex-direction: column;
                   flex-direction: column; } }
+      @media only screen and (min-width: 769px) and (orientation: landscape) {
+        .nav .menu-nav.open {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: reverse;
+              -ms-flex-direction: row-reverse;
+                  flex-direction: row-reverse;
+          -webkit-box-pack: end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end; } }
     .nav .menu-nav__item {
       -webkit-transform: translateX(100vw);
               transform: translateX(100vw);
@@ -694,6 +710,9 @@ footer {
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .nav .my_name {
         font-size: 2.9em; } }
+    @media only screen and (min-width: 769px) and (orientation: landscape) {
+      .nav .my_name {
+        font-size: 2.54em; } }
   .nav .svg-container {
     width: 100%;
     text-align: center;
@@ -707,12 +726,15 @@ footer {
             transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear, -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1); }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .nav .svg-container {
-        width: 45%; } }
+        width: 40%; } }
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .nav .svg-container {
         width: 100%;
         padding-top: 0;
         height: 68vh; } }
+    @media only screen and (min-width: 769px) and (orientation: landscape) {
+      .nav .svg-container {
+        width: 65%; } }
     .nav .svg-container svg {
       width: 100%;
       height: 100%; }
@@ -744,6 +766,9 @@ footer {
         .nav .title_txt_container .title_text {
           font-size: 2rem;
           margin: 0; } }
+      @media only screen and (min-width: 769px) and (orientation: landscape) {
+        .nav .title_txt_container .title_text {
+          font-size: 2em; } }
   .nav #leters {
     animation: yellow_ring 4.5s infinite linear alternate-reverse;
     -webkit-transform-origin: center;
@@ -932,7 +957,7 @@ footer {
     @media only screen and (min-width: 769px) and (orientation: landscape) {
       .about .img-container {
         border: none;
-        width: 77%; } }
+        width: 100%; } }
   .about .jobs {
     width: 100%;
     background-color: #ffffff;
@@ -1071,11 +1096,11 @@ footer {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  background: repeating-linear-gradient(45deg, #e2dbdb, #f3f4ea 100px);
-  border: 4px solid rgba(188, 34, 65, 0.1); }
+  background: linear-gradient(to right, #f3f5e2, #fffffffa 100px); }
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .projects {
-      padding: 1rem 12% 0 12%; } }
+      padding: 1rem 12% 0 12%;
+      background: repeating-linear-gradient(45deg, #e2dbdb, #fff0f5bf 100px), url(../img/merm.png) center bottom; } }
   @media only screen and (min-width: 481px) and (orientation: portrait) {
     .projects {
       padding-bottom: 0;
@@ -1308,7 +1333,10 @@ footer {
   .contact .grid-container {
     padding: 2rem;
     background: #bc2241;
-    background: repeating-linear-gradient(45deg, #e2dbdb, #fff0f5bf 100px), url(../img/merm.png) center bottom; }
+    background: linear-gradient(to right, #f3f5e2, #fffffffa 100px); }
+    @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+      .contact .grid-container {
+        background: repeating-linear-gradient(45deg, #e2dbdb, #fff0f5bf 100px), url(../img/merm.png) center bottom; } }
   .contact h2 {
     font-size: 1.4rem;
     color: #fff0c7;
@@ -1366,13 +1394,15 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: repeating-linear-gradient(45deg, #e2dbdb, #f3f4ea 100px); }
+  background: repeating-linear-gradient(45deg, #e2dbdb, #f3f4ea 100px);
+  background: linear-gradient(to right, #f3f5e2, #fffffffa 100px); }
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .main-container {
       -webkit-box-shadow: none;
               box-shadow: none;
       padding: 1rem 12% 0 12%;
-      border: none; } }
+      border: none;
+      background: repeating-linear-gradient(45deg, #e2dbdb, #fff0f5bf 100px), url(../img/merm.png) center bottom; } }
   @media only screen and (min-width: 481px) and (orientation: portrait) {
     .main-container {
       height: auto;
@@ -1381,7 +1411,6 @@ footer {
   @media only screen and (min-width: 769px) and (orientation: landscape) {
     .main-container {
       margin: 0 auto;
-      height: 100%;
       height: auto;
       overflow: auto;
       display: -webkit-box;
@@ -1396,7 +1425,9 @@ footer {
               justify-content: center;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; } }
+              align-items: center;
+      height: 100vh;
+      background: white; } }
 
 .container {
   display: -webkit-box;
@@ -1413,12 +1444,14 @@ footer {
   overflow: scroll;
   border: 4px solid rgba(188, 34, 65, 0.1);
   -webkit-box-shadow: 0px 10px 5px #aab7bd, 0px -10px 5px #b5c6ce;
-          box-shadow: 0px 10px 5px #aab7bd, 0px -10px 5px #b5c6ce; }
+          box-shadow: 0px 10px 5px #aab7bd, 0px -10px 5px #b5c6ce;
+  background: snow; }
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .container {
       border: none;
       -webkit-box-shadow: none;
-              box-shadow: none; } }
+              box-shadow: none;
+      padding: 1rem; } }
   @media only screen and (min-width: 481px) and (orientation: portrait) {
     .container {
       height: 100%; } }
@@ -1438,7 +1471,10 @@ footer {
       max-width: 100%;
       height: auto;
       margin: 0;
-      padding-top: 2%; } }
+      padding-top: 2%;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      overflow: hidden; } }
 
 .main-img {
   width: auto;
@@ -1454,7 +1490,7 @@ footer {
       padding: 0; } }
   @media only screen and (min-width: 769px) and (orientation: landscape) {
     .main-img {
-      width: 60%; } }
+      width: 55%; } }
 
 .main-img img,
 .imgs img {
@@ -1476,11 +1512,8 @@ footer {
   padding-top: 16px; }
   @media only screen and (min-width: 769px) and (orientation: landscape) {
     .imgs {
-      width: 40%;
+      width: 33%;
       margin: 5%; } }
-
-@media only screen and (min-width: 481px) and (orientation: portrait) {
-  margin: 0px 24%; }
 
 .imgs img {
   cursor: pointer; }
@@ -1629,7 +1662,7 @@ footer {
       left: 34rem; } }
   @media only screen and (min-width: 769px) and (orientation: landscape) {
     #project-index {
-      left: 80%;
+      left: 15%;
       width: 9%; } }
 
 @media only screen and (device-width: 1em), screen and (orientation: landscape) {
@@ -1640,6 +1673,10 @@ footer {
   #project-index {
     left: 28rem;
     top: -2rem; } }
+
+@media only screen and (min-width: 769px) and (orientation: landscape) {
+  #project-index {
+    margin: 0; } }
 
 .social-icons {
   position: relative;
@@ -1656,6 +1693,14 @@ footer {
               flex-direction: row;
       width: 100%;
       padding: 1em 0.5em; } }
+  @media only screen and (min-width: 481px) and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+    .social-icons {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      z-index: 0;
+      height: auto; } }
   .social-icons a {
     background: rgba(63, 63, 51, 0); }
   .social-icons .fa-2x {

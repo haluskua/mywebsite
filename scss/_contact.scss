@@ -14,7 +14,6 @@
   background-size: cover;
   @include SMALL-LANDSCAPE {
     height: auto;
-    
   }
 
   @include MEDIUM-DEVICE-WIDTH {
@@ -27,8 +26,11 @@
   .grid-container {
     padding: 2rem;
     background: #bc2241;
-    background: repeating-linear-gradient(45deg, #e2dbdb, #fff0f5bf 100px),
+    background: linear-gradient(to right, #f3f5e2, #fffffffa 100px);
+    @include SMALL-LANDSCAPE {
+      background: repeating-linear-gradient(45deg, #e2dbdb, #fff0f5bf 100px),
       url(../img/merm.png) center bottom;
+    }
   }
 
   h2 {

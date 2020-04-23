@@ -31,6 +31,8 @@
   }
   @include MEDIUM-DEVICE-WIDTH {
     // visibility: hidden;
+    z-index: 9999;
+    cursor: pointer;
   }
 
   &__burger {
@@ -172,6 +174,10 @@
         padding-top: 6rem;
         flex-direction: column;
       }
+      @include LARGE-DEVICE-WIDTH {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+      }
     }
 
     &__item {
@@ -293,6 +299,9 @@
     @include MEDIUM-DEVICE-WIDTH {
       font-size: 2.9em;
     }
+    @include LARGE-DEVICE-WIDTH {
+      font-size: 2.54em;
+    }
   }
 
   .svg-container {
@@ -304,12 +313,15 @@
     transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear,
       -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
     @include SMALL-LANDSCAPE {
-      width: 45%;
+      width: 40%;
     }
     @include MEDIUM-DEVICE-WIDTH {
       width: 100%;
       padding-top: 0;
       height: 68vh;
+    }
+    @include LARGE-DEVICE-WIDTH {
+      width: 65%;
     }
 
     svg {
@@ -342,6 +354,9 @@
       @include MEDIUM-DEVICE-WIDTH {
         font-size: 2rem;
         margin: 0;
+      }
+      @include LARGE-DEVICE-WIDTH {
+        font-size: 2em;
       }
     }
   }

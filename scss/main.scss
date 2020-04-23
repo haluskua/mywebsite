@@ -171,7 +171,7 @@ footer {
     left: 34rem;
   }
   @include LARGE-DEVICE-WIDTH {
-    left: 80%;
+    left: 15%;
     width: 9%;
   }
 }
@@ -183,6 +183,9 @@ footer {
   @include MEDIUM-DEVICE-WIDTH {
     left: 28rem;
     top: -2rem;
+  }
+  @include LARGE-DEVICE-WIDTH {
+    margin: 0;
   }
 }
 
@@ -197,6 +200,11 @@ footer {
     flex-direction: row;
     width: 100%;
     padding: 1em 0.5em;
+    @include LARGE-DEVICE-WIDTH {
+      flex-direction: row;
+      z-index: 0;
+      height: auto;
+    }
   }
   a {
     background: rgba(63, 63, 51, 0);
