@@ -1036,7 +1036,7 @@ footer {
     margin: 0.2rem auto 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 2rem; }
+    grid-gap: 0.5rem; }
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .about .jobs {
         width: 100%; } }
@@ -1051,7 +1051,7 @@ footer {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
-      padding: 20px 14px;
+      padding: 11px 14px;
       border-bottom: 0.5px solid #d8ccad;
       -webkit-box-shadow: 1px 11px 7px rgba(162, 158, 142, 0), -25px 10px 9px rgba(152, 152, 129, 0.14);
               box-shadow: 1px 11px 7px rgba(162, 158, 142, 0), -25px 10px 9px rgba(152, 152, 129, 0.14);
