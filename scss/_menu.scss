@@ -26,13 +26,15 @@
   z-index: 999;
   display: flex;
   justify-content: space-around;
+  cursor: pointer;
   @include SMALL-LANDSCAPE {
     width: 22%;
   }
   @include MEDIUM-DEVICE-WIDTH {
-    // visibility: hidden;
     z-index: 9999;
     cursor: pointer;
+  }
+  @include LARGE-DEVICE-WIDTH {
   }
 
   &__burger {
@@ -181,6 +183,8 @@
         padding-top: 6rem;
         flex-direction: column;
       }
+      @include MEDIUM-LANDSCAPE {
+      }
       @include LARGE-DEVICE-WIDTH {
         flex-direction: row-reverse;
         justify-content: flex-end;
@@ -305,10 +309,15 @@
       font-size: 1em;
     }
     @include MEDIUM-DEVICE-WIDTH {
-      font-size: 2.9em;
+      font-size: 3.2em;
+      color: black;
+    }
+    @include MEDIUM-LANDSCAPE {
+      font-size: 2em;
     }
     @include LARGE-DEVICE-WIDTH {
       font-size: 2.54em;
+      color: white;
     }
   }
 
@@ -321,13 +330,16 @@
     transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear,
       -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
     @include SMALL-LANDSCAPE {
-      width: 40%;
+      width: 42%;
     }
     @include MEDIUM-DEVICE-WIDTH {
-      width: 100%;
+      width: 80%;
       padding-top: 0;
       height: 68vh;
     }
+    @include MEDIUM-LANDSCAPE{
+    }
+    
     @include LARGE-DEVICE-WIDTH {
       width: 65%;
     }
@@ -361,11 +373,17 @@
         font-size: 0.8em;
       }
       @include MEDIUM-DEVICE-WIDTH {
-        font-size: 2rem;
+        font-size: 2.2rem;
+        color: black;
         margin: 0;
+      }
+      @include MEDIUM-LANDSCAPE {
+        font-size: 1.4em;
+
       }
       @include LARGE-DEVICE-WIDTH {
         font-size: 2em;
+        color: white;
       }
     }
   }
@@ -400,8 +418,6 @@
       transform: rotateZ(360deg);
     }
   }
-
-  //the speed or motion rate each item gets pushed out to show
 
   //the speed or motion rate each item gets pushed out to show
   @for $i from 1 through 5 {

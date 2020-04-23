@@ -23,7 +23,6 @@ a {
   font-size: 0.7rem;
   right: 0.41rem;
   padding: 0.09rem;
-
 }
 
 // function
@@ -36,14 +35,14 @@ a {
   }
 }
 
-
 // @mixin phone-landscape
 //   @media only (device-width: 1em), screen and (orientation: landscape)
 //     @content
 
 @mixin SMALL-LANDSCAPE {
-  @media only screen and (device-width: 1em), screen and (orientation: landscape){
-      @content;
+  @media only screen and (device-width: 1em),
+    screen and (orientation: landscape) {
+    @content;
   }
 }
 @mixin MEDIUM-DEVICE-WIDTH {
@@ -51,13 +50,19 @@ a {
     @content;
   }
 }
+@mixin MEDIUM-LANDSCAPE {
+  @media only screen and (device-width: 1024px),
+    screen and (orientation: landscape) {
+    @content;
+  }
+}
 @mixin LARGE-DEVICE-WIDTH {
-  @media only screen and (min-width: 769px) and (orientation: landscape) {
+  @media only screen and (min-width: 1025px) and (orientation: landscape) {
     @content;
   }
 }
 @mixin XLARGE-DEVICE-WIDTH {
-  @media only screen and (min-width: 1020px) and (orientation: landscape) {
+  @media only screen and (min-width: 1280px) and (orientation: landscape) {
     @content;
   }
 }
@@ -66,12 +71,6 @@ a {
     @content;
   }
 }
-
-
-
-
-
-
 
 // body {
 //     @include flexCenter(column);

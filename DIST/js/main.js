@@ -1,3 +1,4 @@
+
 const menuBtn = document.querySelector(".menu-btn");
 const hamburger = document.querySelector(".menu-btn__burger");
 const nav = document.querySelector(".nav");
@@ -9,7 +10,6 @@ const topShield = document.querySelector("#topBTN");
 const leftShield = document.querySelector("#leftBTN");
 const bottomShield = document.querySelector("#bottomBTN");
 const rightShield = document.querySelector("#rightBTN");
-
 
 let shield = false;
 
