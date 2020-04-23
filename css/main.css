@@ -1021,12 +1021,13 @@ footer {
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .about .jobs {
         width: 100%; } }
-    .about .jobs__bio-image img {
-      width: 100%; }
-      @media only screen and (min-width: 769px) and (orientation: landscape) {
-        .about .jobs__bio-image img {
-          -ms-flex-item-align: end;
-              align-self: flex-end; } }
+    .about .jobs__bio-image {
+      background: url("../DIST/img/pan_portrait-min.png") center bottom;
+      background-size: cover;
+      background-repeat: no-repeat; }
+      .about .jobs__bio-image img {
+        width: 100%;
+        padding: 0.5rem; }
     .about .jobs__job {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1712,9 +1713,10 @@ footer {
   .social-icons a {
     background: rgba(63, 63, 51, 0); }
   .social-icons .fa-2x {
-    font-size: 1.53rem;
+    font-size: 1.23rem;
     padding: 0.2rem 0; }
     @media only screen and (min-width: 769px) and (orientation: landscape) {
       .social-icons .fa-2x {
         font-size: 1.2rem; } }
+
 /*# sourceMappingURL=main.css.map */
