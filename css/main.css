@@ -43,11 +43,10 @@ a {
   background: -webkit-gradient(linear, left top, right top, from(#0631408c), to(#103050a6)), url(../img/heart_matrix_blue.png) center bottom;
   background: linear-gradient(to right, #0631408c, #103050a6), url(../img/heart_matrix_blue.png) center bottom;
   background: repeating-linear-gradient(45deg, #e2dbdb, #fff0f5 100px), url(../img/heart_matrix_blue.png) center bottom;
-  background: linear-gradient(to right, #f3f5e2, #fffffffa 100px);
+  background: url(../img/hillside.jpg) center bottom;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   padding-bottom: 3rem; }
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .home,
@@ -572,7 +571,7 @@ footer {
       height: 100vh;
       z-index: 10;
       background: #e1e4e6;
-      background: repeating-linear-gradient(45deg, #e2dbdb30, #fff0f512 100px), url(../img/hillside.jpg) center bottom;
+      background: url(../img/hillside.jpg) center bottom;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat; }
@@ -1030,7 +1029,7 @@ footer {
       .about .jobs {
         width: 100%; } }
     .about .jobs__bio-image {
-      background: repeating-linear-gradient(45deg, #e2dbdb30, #fff0f512 100px), url(../img/pan_portrait-min.png) center bottom;
+      background: url(../img/pan_portrait-min.png) center bottom;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
