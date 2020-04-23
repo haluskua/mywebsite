@@ -313,7 +313,7 @@
       color: black;
     }
     @include MEDIUM-LANDSCAPE {
-      font-size: 2em;
+      font-size: 1.7em;
     }
     @include LARGE-DEVICE-WIDTH {
       font-size: 2.54em;
@@ -322,7 +322,7 @@
   }
 
   .svg-container {
-    width: 100%;
+    width: 80%;
     text-align: center;
     display: flex;
     margin-top: -1rem;
@@ -330,16 +330,16 @@
     transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear,
       -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
     @include SMALL-LANDSCAPE {
-      width: 42%;
+      width: 38%;
     }
     @include MEDIUM-DEVICE-WIDTH {
       width: 80%;
       padding-top: 0;
       height: 68vh;
     }
-    @include MEDIUM-LANDSCAPE{
+    @include MEDIUM-LANDSCAPE {
     }
-    
+
     @include LARGE-DEVICE-WIDTH {
       width: 65%;
     }
@@ -379,7 +379,6 @@
       }
       @include MEDIUM-LANDSCAPE {
         font-size: 1.4em;
-
       }
       @include LARGE-DEVICE-WIDTH {
         font-size: 2em;
