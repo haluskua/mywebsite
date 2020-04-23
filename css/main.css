@@ -831,129 +831,6 @@ footer {
     @media only screen and (min-width: 769px) and (orientation: landscape) {
       .about .breadCrumbs {
         top: 15%; } }
-  .about__bio-image .text-secondary {
-    font-size: 1.58rem;
-    text-align: left;
-    padding-bottom: 1px;
-    color: #80b727;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 0;
-    font-family: "Bebas Neue", "Juslius Sans", "cursive";
-    font-family: "Cinzel Decorative", cursive; }
-    @media only screen and (min-width: 769px) and (orientation: landscape) {
-      .about__bio-image .text-secondary {
-        font-size: 1.27rem; } }
-  .about__bio-image p {
-    padding: 1%;
-    padding-bottom: 1.4rem;
-    width: 100%;
-    margin: 0;
-    border-radius: 0.176rem;
-    font-size: 0.92em;
-    line-height: 1.43em;
-    text-align: left; }
-    @media only screen and (min-width: 481px) and (orientation: portrait) {
-      .about__bio-image p {
-        border-radius: 0.05rem;
-        line-height: 1.7rem;
-        letter-spacing: 0.031rem;
-        font-size: 1.03rem; } }
-    @media only screen and (min-width: 769px) and (orientation: landscape) {
-      .about__bio-image p {
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        padding: 2.5% 6% 2.5% 0;
-        letter-spacing: 0;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column; } }
-    .about__bio-image p #more {
-      display: none; }
-    .about__bio-image p #myBtn {
-      padding: 0.35em;
-      border-radius: 5.4px;
-      margin-top: 5px;
-      font-size: 1rem;
-      background: none;
-      color: #d09667;
-      font-style: italic;
-      border: none; }
-      @media only screen and (min-width: 481px) and (orientation: portrait) {
-        .about__bio-image p #myBtn {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: start;
-              -ms-flex-pack: start;
-                  justify-content: flex-start; } }
-      @media only screen and (min-width: 769px) and (orientation: landscape) {
-        .about__bio-image p #myBtn {
-          text-align: left; } }
-  .about .img-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-    border-radius: 6px;
-    height: auto; }
-    @media only screen and (min-width: 481px) and (orientation: portrait) {
-      .about .img-container {
-        width: 100%; } }
-    @media only screen and (min-width: 769px) and (orientation: landscape) {
-      .about .img-container {
-        border: none;
-        width: 40%;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start; } }
-  .about__bio {
-    width: 100%;
-    padding: 3%;
-    text-align: center;
-    background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffffff)), url(../img/rooster-b-w.jpg) center center;
-    background: linear-gradient(to right, #ffffff, #ffffff), url(../img/rooster-b-w.jpg) center center;
-    background-size: cover; }
-    @media only screen and (min-width: 481px) and (orientation: portrait) {
-      .about__bio {
-        font-size: 1.5rem;
-        width: 100%; } }
-    @media only screen and (min-width: 769px) and (orientation: landscape) {
-      .about__bio {
-        width: 60%; } }
-    .about__bio h3 {
-      color: #bd7e40;
-      font-size: 1.5em;
-      padding-top: 15px;
-      text-align: left;
-      font-weight: bold;
-      line-height: 1.052em;
-      font-family: "Cinzel Decorative", cursive;
-      font-family: "Roboto", "Monserrat", cursive; }
-    .about__bio h5 {
-      color: #716f51;
-      font-size: 1em;
-      padding: 3%;
-      font-weight: normal;
-      text-align: left; }
-    .about__bio .main-title {
-      color: #3e0d18;
-      display: none; }
   .about__bio-image {
     width: 100%;
     border-radius: 0.3rem;
@@ -992,12 +869,6 @@ footer {
                 flex-flow: row;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; } }
-    .about__bio-image img {
-      width: 100%; }
-      @media only screen and (min-width: 769px) and (orientation: landscape) {
-        .about__bio-image img {
-          -ms-flex-item-align: end;
-              align-self: flex-end; } }
     .about__bio-image .text-secondary {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1026,6 +897,116 @@ footer {
           -webkit-box-pack: end;
               -ms-flex-pack: end;
                   justify-content: flex-end; } }
+  .about .img-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    border-radius: 6px;
+    height: auto; }
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
+      .about .img-container {
+        width: 100%; } }
+    @media only screen and (min-width: 769px) and (orientation: landscape) {
+      .about .img-container {
+        border: none;
+        width: 40%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; } }
+    .about .img-container .jobs__bio-image {
+      width: 100%; }
+  .about__bio {
+    width: 100%;
+    padding: 3%;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffffff)), url(../img/rooster-b-w.jpg) center center;
+    background: linear-gradient(to right, #ffffff, #ffffff), url(../img/rooster-b-w.jpg) center center;
+    background-size: cover; }
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
+      .about__bio {
+        font-size: 1.5rem;
+        width: 100%; } }
+    @media only screen and (min-width: 769px) and (orientation: landscape) {
+      .about__bio {
+        width: 60%; } }
+    .about__bio .main-title {
+      color: #3e0d18;
+      display: none; }
+    .about__bio p {
+      padding: 1%;
+      padding-bottom: 1.4rem;
+      width: 100%;
+      margin: 0;
+      border-radius: 0.176rem;
+      font-size: 0.92em;
+      line-height: 1.43em;
+      text-align: left; }
+      @media only screen and (min-width: 481px) and (orientation: portrait) {
+        .about__bio p {
+          border-radius: 0.05rem;
+          line-height: 1.7rem;
+          letter-spacing: 0.031rem;
+          font-size: 1.03rem; } }
+      @media only screen and (min-width: 769px) and (orientation: landscape) {
+        .about__bio p {
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          padding: 2.5% 6% 2.5% 0;
+          letter-spacing: 0;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; } }
+      .about__bio p #more {
+        display: none; }
+      .about__bio p #myBtn {
+        padding: 0.35em;
+        border-radius: 5.4px;
+        margin-top: 5px;
+        font-size: 1rem;
+        background: none;
+        color: #d09667;
+        font-style: italic;
+        border: none; }
+        @media only screen and (min-width: 481px) and (orientation: portrait) {
+          .about__bio p #myBtn {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start; } }
+        @media only screen and (min-width: 769px) and (orientation: landscape) {
+          .about__bio p #myBtn {
+            text-align: left; } }
+    .about__bio h3 {
+      color: #bd7e40;
+      font-size: 1.5em;
+      padding-top: 15px;
+      text-align: left;
+      font-weight: bold;
+      line-height: 1.052em;
+      font-family: "Roboto", "Monserrat", cursive; }
+    .about__bio h5 {
+      color: #716f51;
+      font-size: 1em;
+      padding: 3%;
+      font-weight: normal;
+      text-align: left; }
   .about .jobs {
     width: 100%;
     background-color: #ffffff;
@@ -1040,6 +1021,12 @@ footer {
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .about .jobs {
         width: 100%; } }
+    .about .jobs__bio-image img {
+      width: 100%; }
+      @media only screen and (min-width: 769px) and (orientation: landscape) {
+        .about .jobs__bio-image img {
+          -ms-flex-item-align: end;
+              align-self: flex-end; } }
     .about .jobs__job {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1064,6 +1051,16 @@ footer {
       @media only screen and (min-width: 769px) and (orientation: landscape) {
         .about .jobs__job {
           padding: 20px 30px; } }
+      .about .jobs__job .text-secondary {
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        color: #5f6157;
+        font-size: 1.03em;
+        font-family: "Roboto", "Juslius Sans", "cursive"; }
+        @media only screen and (min-width: 769px) and (orientation: landscape) {
+          .about .jobs__job .text-secondary {
+            font-size: 1rem; } }
       .about .jobs__job h2,
       .about .jobs__job h3 {
         color: #3e4036;
@@ -1076,16 +1073,6 @@ footer {
           .about .jobs__job h3 {
             font-size: 1.2rem;
             font-weight: normal; } }
-      .about .jobs__job .text-secondary {
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end;
-        color: #5f6157;
-        font-size: 1.03em;
-        font-family: "Roboto", "Juslius Sans", "cursive"; }
-        @media only screen and (min-width: 769px) and (orientation: landscape) {
-          .about .jobs__job .text-secondary {
-            font-size: 1rem; } }
       .about .jobs__job h5 {
         font-size: 1rem;
         color: #09868c;
@@ -1096,8 +1083,8 @@ footer {
         @media only screen and (min-width: 769px) and (orientation: landscape) {
           .about .jobs__job h5 {
             font-size: 0.88rem; } }
-      .about .jobs__job h6 {
-        margin: 0.3rem 0; }
+      .about .jobs__job P {
+        text-align: left; }
   .about footer {
     -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
             transform: rotate(90deg) translate(-3rem, -5rem); }
@@ -1730,4 +1717,5 @@ footer {
     @media only screen and (min-width: 769px) and (orientation: landscape) {
       .social-icons .fa-2x {
         font-size: 1.2rem; } }
+
 /*# sourceMappingURL=main.css.map */
