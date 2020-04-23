@@ -3,11 +3,11 @@
   background-color: #f8f3b0;
   padding-top: 2.2rem;
   border: 4px solid rgba(188, 34, 65, 0.1);
-  background: #f9f3f3;
-    
+  background: #95bdad;
+
   @include SMALL-LANDSCAPE {
-      padding: 0 12%;
-    }
+    padding: 0 20%;
+  }
 
   .breadCrumbs {
     position: absolute;
@@ -22,16 +22,18 @@
   }
 
   &__bio-image {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    @include MEDIUM-DEVICE-WIDTH {
-      padding: 35px 5%;
-    }
-    @include LARGE-DEVICE-WIDTH {
-    }
+    // width: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: flex-end;
+    // @include MEDIUM-DEVICE-WIDTH {
+    //   padding: 35px 5%;
+    //   height: 100%;
+    // }
+    // @include LARGE-DEVICE-WIDTH {
+
+    // }
 
     .text-secondary {
       font-size: 1.58rem;
@@ -66,7 +68,7 @@
         box-shadow: none;
         display: flex;
         justify-content: center;
-        padding: 2.5% 6%;
+        padding: 2.5% 6% 2.5% 0;
         letter-spacing: 0;
         flex-direction: column;
       }
@@ -85,8 +87,31 @@
         @include MEDIUM-DEVICE-WIDTH {
           display: flex;
           justify-content: flex-start;
+
+        }
+        @include LARGE-DEVICE-WIDTH {
+          text-align: left;
         }
       }
+    }
+  }
+  .img-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 6px;
+    height: auto;
+    // box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16),
+    // 6px 6px 11px rgba(52, 170, 160, 0.16),;
+
+    @include MEDIUM-DEVICE-WIDTH {
+      width: 100%;
+    }
+    @include LARGE-DEVICE-WIDTH {
+      border: none;
+      width: 40%;
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
 
@@ -100,6 +125,9 @@
     @include MEDIUM-DEVICE-WIDTH {
       font-size: 1.5rem;
       width: 100%;
+    }
+    @include LARGE-DEVICE-WIDTH {
+      width: 60%;
     }
     h3 {
       color: #bd7e40;
@@ -123,21 +151,61 @@
       display: none;
     }
   }
-  .img-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    border-radius: 6px;
-    height: auto;
-    // box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16),
-    // 6px 6px 11px rgba(52, 170, 160, 0.16),;
 
+  &__bio-image {
+    width: 100%;
+    border-radius: 0.3rem;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: #3b3c3033 6px 6px 8px, #3f403408 -1px -1px 2px;
+    background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px),
+      url(../img/project-1.jpg) center bottom;
+    background-size: cover;
+    @include SMALL-LANDSCAPE {
+      margin-top: 3rem;
+    }
     @include MEDIUM-DEVICE-WIDTH {
-      width: 100%;
+      height: 100%;
+      background-size: cover;
+      padding: 4% 6%;
     }
     @include LARGE-DEVICE-WIDTH {
-      border: none;
+      height: auto;
+      flex-flow: row;
+      flex-wrap: wrap;
+    }
+    img {
       width: 100%;
+      @include LARGE-DEVICE-WIDTH {
+        align-self: flex-end;
+      }
+    }
+    .text-secondary {
+      display: flex;
+      justify-content: center;
+      font-family: "Montserrat", "cursive";
+      width: 100%;
+      display: flex;
+      color: $secondary-color;
+      text-transform: uppercase;
+      text-align: justify;
+      font-size: 0.81rem;
+      margin: 0;
+
+      @include MEDIUM-DEVICE-WIDTH {
+        background: none;
+        margin-bottom: 0rem;
+        font-size: 1rem;
+        text-align: right;
+      }
+      @include LARGE-DEVICE-WIDTH {
+        font-size: 0.7rem;
+        padding: 0 6%;
+        justify-content: flex-end;
+      }
     }
   }
 
@@ -153,90 +221,45 @@
     @include MEDIUM-DEVICE-WIDTH {
       width: 100%;
     }
-
-    &__bio-image {
-      width: 100%;
-      border-radius: 0.3rem;
-      padding-top: 38vh;
-      background: linear-gradient(
-          to right,
-          rgba(39, 39, 39, 0.02),
-          rgba(39, 39, 39, 0)
-        ),
-        url(../img/pan_portrait.png) center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-      box-shadow: #3b3c3033 6px 6px 8px, #3f403408 -1px -1px 2px;
-      @include SMALL-LANDSCAPE {
-        padding-top: 73vh;
-        margin-top: 3rem;
-      }
-      @include MEDIUM-DEVICE-WIDTH {
-        height: 35vh;
-        background-size: cover;
-        padding: 4% 6%;
-      }
-      @include LARGE-DEVICE-WIDTH {
-        height: 55vh;
-      }
-      .text-secondary {
-        display: flex;
-        justify-content: center;
-        font-family: "Montserrat", "cursive";
-        width: 100%;
-        display: flex;
-        color: $secondary-color;
-        text-transform: uppercase;
-        text-align: justify;
-        font-size: 0.81rem;
-        margin: 0;
-
-        @include MEDIUM-DEVICE-WIDTH {
-          background: none;
-          margin-bottom: 0rem;
-          font-size: 1rem;
-          text-align: right;
-        }
-        @include LARGE-DEVICE-WIDTH {
-          font-size: 0.7rem;
-          padding: 0 6%;
-        }
-      }
-    }
     &__job {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding: 20px 10px;
-      border-bottom: 0.5px solid #b89d55;
+      padding: 20px 14px;
+      border-bottom: 0.5px solid #d8ccad;
       box-shadow: 1px 11px 7px rgba(162, 158, 142, 0),
         -25px 10px 9px rgba(152, 152, 129, 0.14);
       background: linear-gradient(to right, #ffffff, #ffffff),
         url(../img/rooster-b-w.jpg) center center;
       background-size: cover;
+      @include MEDIUM-DEVICE-WIDTH {
+        padding: 20px;
+      }
+      @include LARGE-DEVICE-WIDTH {
+        padding: 20px 30px;
+      }
       h2,
       h3 {
-        color: #292b20;
+        color: #3e4036;
         font-size: 1.16em;
         line-height: 1.3em;
-        text-transform: capitalize;
         padding-top: 5px;
+        font-weight: normal;
         @include MEDIUM-DEVICE-WIDTH {
         }
         @include LARGE-DEVICE-WIDTH {
-          font-size: 1.7rem;
+          font-size: 1.2rem;
+          font-weight: normal;
         }
       }
       .text-secondary {
-        color: #3e0d18;
-        font-size: 1.33em;
-        font-weight: bold;
-
-        font-family: "Bebas Neue", "Juslius Sans", "cursive";
+        justify-content: flex-end;
+        color: #5f6157;
+        font-size: 1.03em;
+        font-family: "Roboto", "Juslius Sans", "cursive";
+        @include LARGE-DEVICE-WIDTH {
+          font-size: 1rem;
+        }
       }
       h5 {
         font-size: 1rem;
@@ -247,7 +270,7 @@
         font-family: "Roboto", cursive;
 
         @include LARGE-DEVICE-WIDTH {
-          font-size: 1.1rem;
+          font-size: 0.88rem;
         }
       }
       h6 {
