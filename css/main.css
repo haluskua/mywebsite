@@ -722,13 +722,13 @@ footer {
         color: black; } }
     @media only screen and (device-width: 1024px), screen and (orientation: landscape) {
       .nav .my_name {
-        font-size: 2em; } }
+        font-size: 1.7em; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .nav .my_name {
         font-size: 2.54em;
         color: white; } }
   .nav .svg-container {
-    width: 100%;
+    width: 80%;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -740,7 +740,7 @@ footer {
             transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear, -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1); }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .nav .svg-container {
-        width: 42%; } }
+        width: 38%; } }
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .nav .svg-container {
         width: 80%;
