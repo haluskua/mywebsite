@@ -27,6 +27,7 @@
     padding: 2rem;
     background: #bc2241;
     background: linear-gradient(to right, #f3f5e2, #fffffffa 100px);
+    
     @include SMALL-LANDSCAPE {
       background: repeating-linear-gradient(45deg, #e2dbdb, #fff0f5bf 100px),
       url(../img/merm.png) center bottom;
