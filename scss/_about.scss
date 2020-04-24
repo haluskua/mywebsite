@@ -9,6 +9,8 @@
 
   @include SMALL-LANDSCAPE {
     padding: 0 20%;
+    background-size: contain;
+    background-repeat: repeat;
   }
 
   .breadCrumbs {

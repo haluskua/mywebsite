@@ -33,8 +33,10 @@
   @include MEDIUM-DEVICE-WIDTH {
     z-index: 9999;
     cursor: pointer;
+    width: 24%;
   }
   @include LARGE-DEVICE-WIDTH {
+    width: 11%;
   }
 
   &__burger {
