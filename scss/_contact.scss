@@ -53,8 +53,7 @@
 
   // .......
   .grid-container {
-    background: rgba(255, 255, 255, 0.45);
-    background: rgba(13, 42, 56, 0.48);
+    background: #fffcf6;
     padding: 1.5rem;
     @include SMALL-LANDSCAPE {
       width: 50%;
@@ -99,7 +98,7 @@
     grid-gap: 1.26rem;
     font-size: 1.35rem;
     padding: 1rem;
-    background: #31434687;
+    background: #3143469c;
     @include MEDIUM-DEVICE-WIDTH {
       grid-template-columns: repeat(1, 1fr);
       padding: 2rem;
@@ -112,7 +111,6 @@
     font-size: 1.3rem;
     font-family: "Roboto", "Montserrat", cursive;
     color: #ffffff;
-    font-weight: bold;
     width: 100vw;
     text-align: left;
     letter-spacing: 0.04em;
@@ -133,13 +131,14 @@
   // .....
   .download {
     cursor: pointer;
-    color: yellow;
+    color: #8fdcd5;
     z-index: 999;
+    font-family: "Roboto", "Montserrat", cursive;
   }
 
   .text-secondary {
     color: #2c7384;
-    color: #79d029;
+    color: #cfff82;
     font-family: "Montserrat", "cursive";
     margin: 3px 0;
     font-size: 1.2rem;
