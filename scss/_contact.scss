@@ -7,7 +7,7 @@
   align-items: center;
   color: $secondary-color;
   width: 100%;
-  background: repeating-linear-gradient(45deg, #e2dbdb30, #fff0f512 100px),
+  background: repeating-linear-gradient(45deg, #ffe48e4d, #c7bc9247 100px),
     url(../img/hillside.jpg) center bottom;
   background-position: center;
   background-size: cover;
@@ -22,7 +22,6 @@
   }
   @include MEDIUM-DEVICE-WIDTH {
     padding: 0;
-
   }
   @include LARGE-DEVICE-WIDTH {
     padding: 1rem 22% 0rem 22%;
@@ -53,7 +52,6 @@
 
   // .......
   .grid-container {
-    background: #fffcf6;
     @include SMALL-LANDSCAPE {
       width: 50%;
       padding: 2px;
@@ -97,7 +95,7 @@
     grid-gap: 1.26rem;
     font-size: 1.35rem;
     padding: 2rem;
-    background: #3143469c;
+    background: #3c391bc9;
     @include MEDIUM-DEVICE-WIDTH {
       grid-template-columns: repeat(1, 1fr);
       padding: 2rem;
@@ -113,12 +111,12 @@
     width: 100vw;
     text-align: left;
     letter-spacing: 0.04em;
-    padding: 3px;
+    padding: 7px;
     padding-left: 1rem;
     @include SMALL-LANDSCAPE {
       width: auto;
-      padding: 0;
       font-size: 0.88rem;
+      padding: 3px;
     }
     @include MEDIUM-DEVICE-WIDTH {
       text-align: center;
@@ -139,7 +137,7 @@
     color: #2c7384;
     color: #cfff82;
     margin: 3px 0;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     margin-top: 8px;
     @include SMALL-LANDSCAPE {
       font-size: 0.85rem;
