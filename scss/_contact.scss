@@ -1,5 +1,5 @@
 .contact {
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -8,51 +8,68 @@
   color: $secondary-color;
   width: 100%;
   background: white;
-  border: 4px solid #461a19;
+  border: 4px solid #c9cca788;
   background: repeating-linear-gradient(45deg, #e2dbdb00, #8bc6ca59 100px),
-    url(../img/merm.png) center center;
+    url(../img/polygon.png) center center;
   background-size: cover;
+  background-position: left;
   @include SMALL-LANDSCAPE {
-    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 3rem;
+    justify-content: center;
   }
-
   @include MEDIUM-DEVICE-WIDTH {
     padding: 0;
   }
+  @include MEDIUM-LANDSCAPE {
+    padding: 2rem 0 6rem 0;
+  }
   @include LARGE-DEVICE-WIDTH {
-    padding-top: 33vh;
+    padding: 1rem 3rem 10rem 3rem;
+  }
+  .img-box {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 60%;
+      height: 100%;
+      @include SMALL-LANDSCAPE {
+        width: 84%;
+      }
+      @include LARGE-DEVICE-WIDTH {
+        width: 40%;
+      }
+    }
+    @include SMALL-LANDSCAPE {
+      width: 50%;
+    }
   }
 
   .grid-container {
-    padding: 2rem;
+    height: 30%;
+    padding: 1rem;
     background: #bc2241;
     background: linear-gradient(to right, #f3f5e2, #fffffffa 100px);
-    
-    @include SMALL-LANDSCAPE {
-      background: repeating-linear-gradient(45deg, #e2dbdb, #fff0f5bf 100px),
-      url(../img/merm.png) center bottom;
-    }
-  }
 
-  h2 {
-    font-size: 1.4rem;
-    color: #fff0c7;
-    font-weight: bolder;
-    text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 7rem;
-    font-family: "Montserrat", "cursive";
     @include SMALL-LANDSCAPE {
-      margin: 0;
-      line-height: 12rem;
+      width: 50%;
     }
     @include MEDIUM-DEVICE-WIDTH {
-      margin-bottom: 3.2rem;
-      font-size: 3em;
+      height: 52vh;
     }
-    @include LARGE-DEVICE-WIDTH {
-      font-weight: bold;
-      letter-spacing: 0.05rem;
+    @include MEDIUM-LANDSCAPE {
+      padding: 3rem 0;
+    }
+  }
+  .social-icons {
+    height: 10%;
+    @include SMALL-LANDSCAPE {
+      width: 100%;
+    }
+    @include MEDIUM-LANDSCAPE {
+      width: 50%;
     }
   }
 
@@ -77,6 +94,9 @@
     letter-spacing: 0.04em;
     padding: 12px;
     // background: rgba(255, 255, 255, 0.17);
+    @include SMALL-LANDSCAPE {
+      width: auto;
+    }
   }
   .text-secondary {
     color: #796266;

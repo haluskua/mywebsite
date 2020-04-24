@@ -4,9 +4,11 @@
   justify-content: space-between;
   align-items: flex-end;
   background: linear-gradient(to right, #f3f5e2, #fffffffa 100px);
-  background: #f9f3f3;
+  background: #95bdad;
+
   @include SMALL-LANDSCAPE {
     padding: 1rem 12% 0 12%;
+    padding: 0 20%;
   }
   @include MEDIUM-DEVICE-WIDTH {
     padding-bottom: 0;
@@ -29,6 +31,7 @@
     align-items: flex-start;
     justify-content: flex-end;
     padding-left: 1rem;
+    background: snow;
 
     @include MEDIUM-DEVICE-WIDTH {
       padding-top: 0;
@@ -84,14 +87,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2rem;
-    // background: linear-gradient(
-    //   to right,
-    //   rgba(15, 24, 33, 0.29),
-    //   rgba(44, 92, 97, 0.23)
-    // );
-    // url("../img/model-1.png") center center;
+    background: snow;
     z-index: 0;
-    background-size: cover;
     @include MEDIUM-DEVICE-WIDTH {
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 1rem;

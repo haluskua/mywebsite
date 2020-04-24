@@ -14,6 +14,9 @@
   background: linear-gradient(to right, #f3f5e2, #fffffffa 100px);
   background-size: cover;
   background-repeat: no-repeat;
+  background: repeating-linear-gradient(45deg, #e2dbdb00, #8bc6ca59 100px),
+    url(../img/polygon.png) center center;
+  background-size: cover;
   justify-content: space-around;
   padding-bottom: 3rem;
   @include SMALL-LANDSCAPE {
@@ -83,7 +86,7 @@
   .my_name {
     font-size: 2.4em;
     line-height: 1em;
-    color: #8c8989;
+    color: #353535;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
@@ -110,7 +113,7 @@
     .title_text {
       font-size: 1.1rem;
       text-shadow: 3.28px 3.36px #e7ffc7;
-      color: #8c8989;
+      color: #7d7979;
       font-family: "Roboto", "Bebas", Cursive;
       text-transform: uppercase;
       text-shadow: none;
