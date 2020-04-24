@@ -1452,7 +1452,9 @@ footer {
         background: none;
         -webkit-box-pack: end;
             -ms-flex-pack: end;
-                justify-content: flex-end; } }
+                justify-content: flex-end;
+        height: 8%;
+        z-index: 0; } }
     .contact .social-icons i {
       color: #808681;
       font-size: 1rem; }
@@ -1499,6 +1501,10 @@ footer {
     .contact .contact__address .fa-download,
     .contact .contact__cv .fa-download {
       color: #eaa458 !important; }
+  .contact .download {
+    cursor: pointer;
+    color: yellow;
+    z-index: 999; }
   .contact .text-secondary {
     color: #2c7384;
     color: #79d029;
