@@ -795,7 +795,7 @@ footer {
           font-weight: normal; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .nav .title_txt_container .title_text {
-          font-size: 2em;
+          font-size: 1.6em;
           color: white;
           font-weight: normal; } }
   .nav #leters {
@@ -1364,11 +1364,10 @@ footer {
           align-items: center;
   color: #93a7a9;
   width: 100%;
-  background: white;
-  border: 4px solid #f4c48a;
-  background: repeating-linear-gradient(45deg, #e2dbdb00, #8bc6ca59 100px), url(../img/polygon.png) center center;
+  background: repeating-linear-gradient(45deg, #e2dbdb30, #fff0f512 100px), url(../img/hillside.jpg) center bottom;
+  background-position: center;
   background-size: cover;
-  background-position: left; }
+  background-repeat: no-repeat; }
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .contact {
       display: -webkit-box;
@@ -1390,7 +1389,8 @@ footer {
       padding: 0; } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .contact {
-      padding: 1rem 22% 0rem 22%; } }
+      padding: 1rem 22% 0rem 22%;
+      border: 1px solid #99a3604b; } }
   .contact .img-box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1405,7 +1405,7 @@ footer {
       .contact .img-box {
         width: 50%; } }
     .contact .img-box img {
-      width: 60%;
+      width: 39%;
       height: 100%; }
       @media only screen and (device-width: 1em), screen and (orientation: landscape) {
         .contact .img-box img {
@@ -1414,27 +1414,38 @@ footer {
         .contact .img-box img {
           width: 60%; } }
   .contact .grid-container {
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.45); }
+    background: rgba(255, 255, 255, 0.45);
+    background: rgba(13, 42, 56, 0.48);
+    padding: 1.5rem; }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .contact .grid-container {
         width: 50%;
-        padding-left: 1.1rem; } }
+        padding: 1rem; } }
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .contact .grid-container {
-        height: 52vh; } }
+        padding: 0; } }
   .contact .social-icons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    height: 10%; }
+            align-items: center; }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .contact .social-icons {
         width: 100%;
-        background: none; } }
+        background: none;
+        position: fixed;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        color: transparent; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .contact .social-icons {
         width: 100%;
@@ -1442,20 +1453,27 @@ footer {
         -webkit-box-pack: end;
             -ms-flex-pack: end;
                 justify-content: flex-end; } }
+    .contact .social-icons i {
+      color: #808681;
+      font-size: 1rem; }
   .contact__list {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 2rem;
-    font-size: 1.35rem; }
+    grid-gap: 1.26rem;
+    font-size: 1.35rem;
+    padding: 1rem;
+    background: #31434687; }
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .contact__list {
-        grid-template-columns: repeat(1, 1fr); } }
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2rem; } }
   .contact .contact__email,
   .contact .contact__phone,
-  .contact .contact__address {
-    font-size: 1.1rem;
-    font-family: "Roboto","Montserrat", cursive;
-    color: #49211e;
+  .contact .contact__address,
+  .contact .contact__cv {
+    font-size: 1.3rem;
+    font-family: "Roboto", "Montserrat", cursive;
+    color: #ffffff;
     font-weight: bold;
     width: 100vw;
     text-align: left;
@@ -1465,20 +1483,32 @@ footer {
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .contact .contact__email,
       .contact .contact__phone,
-      .contact .contact__address {
+      .contact .contact__address,
+      .contact .contact__cv {
         width: auto;
-        padding: 0; } }
+        padding: 0;
+        font-size: 0.88rem; } }
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .contact .contact__email,
       .contact .contact__phone,
-      .contact .contact__address {
+      .contact .contact__address,
+      .contact .contact__cv {
         text-align: center; } }
+    .contact .contact__email .fa-download,
+    .contact .contact__phone .fa-download,
+    .contact .contact__address .fa-download,
+    .contact .contact__cv .fa-download {
+      color: #eaa458 !important; }
   .contact .text-secondary {
-    color: #796266;
+    color: #2c7384;
+    color: #79d029;
     font-family: "Montserrat", "cursive";
     margin: 3px 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 8px; }
+    @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+      .contact .text-secondary {
+        font-size: 0.85rem; } }
   .contact .nav .menu-nav__item:nth-child(4) {
     width: 100%; }
 
