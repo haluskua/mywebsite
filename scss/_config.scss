@@ -50,12 +50,12 @@ a {
     @content;
   }
 }
-@mixin MEDIUM-LANDSCAPE {
-  @media only screen and (device-width: 1024px),
-    screen and (orientation: landscape) {
-    @content;
-  }
-}
+// @mixin MEDIUM-LANDSCAPE {
+//   @media only screen and (min-width: 667px),
+//     screen and (orientation: landscape) {
+//     @content;
+//   }
+// }
 @mixin LARGE-DEVICE-WIDTH {
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     @content;

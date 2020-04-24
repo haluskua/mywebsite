@@ -170,6 +170,7 @@
       background-repeat: no-repeat;
       @include SMALL-LANDSCAPE {
         flex-direction: row;
+        padding-top: 63px;
       }
       @include MEDIUM-DEVICE-WIDTH {
         display: flex;
@@ -183,8 +184,7 @@
         padding-top: 6rem;
         flex-direction: column;
       }
-      @include MEDIUM-LANDSCAPE {
-      }
+
       @include LARGE-DEVICE-WIDTH {
         flex-direction: row-reverse;
         justify-content: flex-end;
@@ -306,18 +306,19 @@
     padding: 0;
     color: white;
     @include SMALL-LANDSCAPE {
-      font-size: 1em;
+      font-size: 1.5rem;
+      color: #1e211c;
+      font-weight: bold;
     }
     @include MEDIUM-DEVICE-WIDTH {
       font-size: 3.2em;
       color: black;
     }
-    @include MEDIUM-LANDSCAPE {
-      font-size: 1.7em;
-    }
     @include LARGE-DEVICE-WIDTH {
-      font-size: 2.54em;
+      font-size: 2.5em;
       color: white;
+      line-height: 2.96rem;
+      letter-spacing: 0.05rem;
     }
   }
 
@@ -337,11 +338,9 @@
       padding-top: 0;
       height: 68vh;
     }
-    @include MEDIUM-LANDSCAPE {
-    }
 
     @include LARGE-DEVICE-WIDTH {
-      width: 65%;
+      width: 55%;
     }
 
     svg {
@@ -370,19 +369,20 @@
       padding: 0;
       color: white;
       @include SMALL-LANDSCAPE {
-        font-size: 0.8em;
+        font-size: 1.31em;
+        color: #1e211c;
+        font-weight: bold;
       }
       @include MEDIUM-DEVICE-WIDTH {
         font-size: 2.2rem;
         color: black;
         margin: 0;
-      }
-      @include MEDIUM-LANDSCAPE {
-        font-size: 1.4em;
+        font-weight: normal;
       }
       @include LARGE-DEVICE-WIDTH {
         font-size: 2em;
         color: white;
+        font-weight: normal;
       }
     }
   }

@@ -1,5 +1,5 @@
 .contact {
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -17,21 +17,29 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 3rem;
+    margin-top: 1rem;
     justify-content: center;
+    padding: 0;
+
   }
   @include MEDIUM-DEVICE-WIDTH {
     padding: 0;
   }
-  @include MEDIUM-LANDSCAPE {
-    padding: 2rem 0 6rem 0;
-  }
   @include LARGE-DEVICE-WIDTH {
-    padding: 1rem 3rem 10rem 3rem;
+    padding: 1rem 22% 0rem 22%;
   }
+
+  // ........
   .img-box {
     display: flex;
     justify-content: center;
+    @include SMALL-LANDSCAPE {
+      width: 30%;
+    }
+    @include LARGE-DEVICE-WIDTH {
+      width: 50%;
+      
+    }
     img {
       width: 60%;
       height: 100%;
@@ -39,37 +47,40 @@
         width: 84%;
       }
       @include LARGE-DEVICE-WIDTH {
-        width: 40%;
+        width: 60%;
       }
     }
-    @include SMALL-LANDSCAPE {
-      width: 50%;
-    }
+
   }
 
+// .......
   .grid-container {
-    height: 30%;
     padding: 1rem;
-    background: #bc2241;
-    background: linear-gradient(to right, #f3f5e2, #fffffffa 100px);
+    // background: #bc2241;
+    // background: linear-gradient(to right, #f3f5e2, #fffffffa 100px);
 
     @include SMALL-LANDSCAPE {
       width: 50%;
+      padding: 0;
     }
     @include MEDIUM-DEVICE-WIDTH {
       height: 52vh;
     }
-    @include MEDIUM-LANDSCAPE {
-      padding: 3rem 0;
-    }
   }
+
+  // ........
   .social-icons {
+    display: flex;
+    align-items: center;
     height: 10%;
     @include SMALL-LANDSCAPE {
       width: 100%;
+      background: none;
     }
-    @include MEDIUM-LANDSCAPE {
-      width: 50%;
+    @include LARGE-DEVICE-WIDTH {
+      width: 100%;
+      background: none;
+      justify-content: flex-end;
     }
   }
 
@@ -86,16 +97,21 @@
   .contact__phone,
   .contact__address {
     font-size: 1.1rem;
-    font-family: "Cinzel Decorative", cursive;
+    font-family: "Roboto","Montserrat", cursive;
     color: #49211e;
     font-weight: bold;
     width: 100vw;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0.04em;
-    padding: 12px;
-    // background: rgba(255, 255, 255, 0.17);
+    padding: 3px;
+    padding-left: 1rem;
     @include SMALL-LANDSCAPE {
       width: auto;
+      padding: 0;
+
+    }
+    @include MEDIUM-DEVICE-WIDTH {
+      text-align: center;
     }
   }
   .text-secondary {
