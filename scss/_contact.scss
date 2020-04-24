@@ -40,7 +40,7 @@
       width: 50%;
     }
     img {
-      width: 39%;
+      width: 43%;
       height: 100%;
       @include SMALL-LANDSCAPE {
         width: 84%;
@@ -56,7 +56,7 @@
     background: #fffcf6;
     @include SMALL-LANDSCAPE {
       width: 50%;
-      padding: 1rem;
+      padding: 2px;
     }
     @include MEDIUM-DEVICE-WIDTH {
       padding: 0;

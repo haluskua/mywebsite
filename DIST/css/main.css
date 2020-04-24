@@ -1405,7 +1405,7 @@ footer {
       .contact .img-box {
         width: 50%; } }
     .contact .img-box img {
-      width: 39%;
+      width: 43%;
       height: 100%; }
       @media only screen and (device-width: 1em), screen and (orientation: landscape) {
         .contact .img-box img {
@@ -1418,7 +1418,7 @@ footer {
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .contact .grid-container {
         width: 50%;
-        padding: 1rem; } }
+        padding: 2px; } }
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .contact .grid-container {
         padding: 0; } }
