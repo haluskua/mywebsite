@@ -1414,8 +1414,7 @@ footer {
         .contact .img-box img {
           width: 60%; } }
   .contact .grid-container {
-    background: #fffcf6;
-    padding: 1.5rem; }
+    background: #fffcf6; }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .contact .grid-container {
         width: 50%;
@@ -1462,7 +1461,7 @@ footer {
     grid-template-columns: 1fr;
     grid-gap: 1.26rem;
     font-size: 1.35rem;
-    padding: 1rem;
+    padding: 2rem;
     background: #3143469c; }
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .contact__list {
@@ -1472,7 +1471,7 @@ footer {
   .contact .contact__phone,
   .contact .contact__address,
   .contact .contact__cv {
-    font-size: 1.3rem;
+    font-size: 1.13rem;
     font-family: "Roboto", "Montserrat", cursive;
     color: #ffffff;
     width: 100vw;
@@ -1507,9 +1506,8 @@ footer {
   .contact .text-secondary {
     color: #2c7384;
     color: #cfff82;
-    font-family: "Montserrat", "cursive";
     margin: 3px 0;
-    font-size: 1.2rem;
+    font-size: 1.32rem;
     margin-top: 8px; }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .contact .text-secondary {
