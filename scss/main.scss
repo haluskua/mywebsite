@@ -28,6 +28,7 @@
     color: darken($primary-txt-color, 100%);
   }
 }
+
 @mixin mobile {
   @media (max-width: $mobile) {
     @content;
