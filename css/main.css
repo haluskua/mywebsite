@@ -398,6 +398,21 @@ main {
     .home__box-one h1 {
       color: #424852;
       font-size: 2.4rem;
+      text-transform: uppercase;
+      font-family: "Abril Fatface", cursive;
+      font-family: "Bahianita", cursive;
+      font-family: "Vidaloka", serif;
+      font-family: "Yeseva One", cursive;
+      font-family: "Gidugu", sans-serif;
+      font-family: 'Black And White Picture', sans-serif;
+      font-family: 'Chau Philomene One', sans-serif;
+      font-family: 'Pavanam', sans-serif;
+      font-family: 'Padauk', sans-serif;
+      font-family: "Pattaya", sans-serif;
+      font-family: 'Staatliches', cursive;
+      font-family: 'Seaweed Script', cursive;
+      font-family: 'Pompiere', cursive;
+      font-family: 'Sail', cursive;
       font-family: "Days One", sans-serif;
       text-align: left;
       width: 100%; }
