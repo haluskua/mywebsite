@@ -1,7 +1,5 @@
 
-main {
-  height: 100% !important !important !important;
-}
+
 
 .projects {
   display: flex;
@@ -15,7 +13,8 @@ main {
   background-size: contain;
   background-repeat: repeat;
   background-position: left;
-
+  height: 100%;
+  overflow: hidden;
 
   @include SMALL-LANDSCAPE {
     padding: 1rem 12% 0 12%;
