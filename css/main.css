@@ -398,9 +398,9 @@ main {
             align-items: center;
     padding-top: 7rem;
     width: 100%;
-    background: #d5d6d09c; }
+    background: #cbccc8; }
     .home__box-one h1 {
-      color: #fd3a00;
+      color: #ff5200;
       font-size: 2.35rem;
       line-height: 2.6rem;
       padding: 1rem;
@@ -442,16 +442,16 @@ main {
     padding-left: 1rem;
     padding: 1rem;
     width: 100%;
-    background: #1d1b0db3; }
+    background: #cbccc8; }
     .home__box-two h3 {
       font-size: 1.2rem;
       line-height: 1.24em;
       font-weight: normal;
-      color: floralwhite;
+      color: #ff5200;
       font-family: "Roboto", "Montserrat", cursive;
       text-transform: normal; }
     .home__box-two span {
-      color: #61ff10;
+      color: #191f16;
       font-weight: bold; }
     .home__box-two__box-three {
       background: #1c2031; }
@@ -469,10 +469,10 @@ main {
     width: 100%;
     background: #cbccc8; }
     .home__box-four h2, .home__box-five h2, .home__box-six h2 {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       width: 50%;
       padding: 0.5rem;
-      color: #227be6;
+      color: #ff5200;
       text-shadow: none;
       font-family: "Cinzel Decorative";
       font-weight: bold; }
