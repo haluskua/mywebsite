@@ -439,6 +439,8 @@ main {
       color: #565555;
       font-family: "Roboto", "Montserrat", cursive;
       text-transform: normal; }
+    .home__box-two__box-three {
+      background: #d1d2d5; }
   .home__box-four, .home__box-five, .home__box-six {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -449,7 +451,9 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 1rem; }
+    padding: 2rem 1rem;
+    background: #d1d2d5;
+    width: 100%; }
     .home__box-four h2, .home__box-five h2, .home__box-six h2 {
       font-size: 1.6rem;
       width: 50%;
