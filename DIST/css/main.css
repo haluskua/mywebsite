@@ -472,6 +472,15 @@ a {
     background: repeating-linear-gradient(45deg, #d8d2c6d1, #cabaa063 100px), url(../img/polygon.png) center bottom;
     background-position: center;
     background-size: contain; }
+    .home__box-four a, .home__box-five a, .home__box-six a {
+      padding: 0.6rem;
+      color: #0e1213;
+      -webkit-box-shadow: 2px 4px 14px #e8d1bda1;
+              box-shadow: 2px 4px 14px #e8d1bda1;
+      background: #f5f5f5b0;
+      border: 1px solid #ffffff;
+      border-radius: 3px;
+      width: 100%; }
     .home__box-four h2, .home__box-five h2, .home__box-six h2 {
       font-size: 1.5rem;
       width: 50%;
@@ -481,18 +490,14 @@ a {
       font-family: "Cinzel Decorative";
       font-weight: bold;
       text-align: left; }
-    .home__box-four a, .home__box-five a, .home__box-six a {
-      width: 100% !important;
+    .home__box-four .external-link, .home__box-five .external-link, .home__box-six .external-link {
+      width: 100%;
       font-size: 1.5rem;
-      font-family: "Seaweed Script", cursive;
-      padding: 0.6rem;
-      color: #0e1213;
-      -webkit-box-shadow: 2px 4px 14px #e8d1bda1;
-              box-shadow: 2px 4px 14px #e8d1bda1;
-      background: #f5f5f5b0;
-      border: 1px solid #ffffff;
-      border-radius: 3px; }
-    .home__box-four a:hover, .home__box-five a:hover, .home__box-six a:hover {
+      font-family: "Seaweed Script", cursive; }
+      @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+        .home__box-four .external-link, .home__box-five .external-link, .home__box-six .external-link {
+          width: 50%; } }
+    a:hover .home__box-four:active, a:hover .home__box-five:active, a:hover .home__box-six:active {
       background: yellowgreen;
       color: white;
       border: none; }
@@ -1989,5 +1994,4 @@ footer {
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .social-icons .fa-2x {
         font-size: 1.2rem; } }
-
 /*# sourceMappingURL=main.css.map */
