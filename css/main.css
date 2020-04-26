@@ -397,7 +397,7 @@ main {
     width: 100%; }
     .home__box-one h1 {
       color: #424852;
-      font-size: 2.4rem;
+      font-size: 2.3rem;
       text-transform: uppercase;
       font-family: "Abril Fatface", cursive;
       font-family: "Bahianita", cursive;
@@ -437,7 +437,7 @@ main {
       font-size: 1.2rem;
       line-height: 1.24em;
       color: #565555;
-      font-family: "Pavanam", sans-serif;
+      font-family: "Roboto", "Montserrat", cursive;
       text-transform: normal; }
   .home__box-four, .home__box-five, .home__box-six {
     display: -webkit-box;
