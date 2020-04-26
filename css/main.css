@@ -392,12 +392,14 @@ main {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding-left: 1rem;
     padding-top: 5rem;
-    width: 100%; }
+    width: 100%;
+    background: #d1d2d5; }
     .home__box-one h1 {
-      color: #424852;
-      font-size: 3.5rem;
+      color: #0e1e31;
+      font-size: 3.4rem;
+      line-height: 2.6rem;
+      padding: 1rem;
       font-family: "Abril Fatface", cursive;
       font-family: "Bahianita", cursive;
       font-family: "Vidaloka", serif;
@@ -430,13 +432,18 @@ main {
             align-items: flex-start;
     padding-left: 1rem;
     padding: 1rem;
-    width: 100%; }
+    width: 100%;
+    background: #d1d2d5; }
     .home__box-two h3 {
       font-size: 1.2rem;
       line-height: 1.24em;
+      font-weight: normal;
       color: #565555;
       font-family: "Roboto", "Montserrat", cursive;
       text-transform: normal; }
+    .home__box-two span {
+      color: #0e1e31;
+      font-weight: bold; }
     .home__box-two__box-three {
       background: #d1d2d5; }
   .home__box-four, .home__box-five, .home__box-six {
@@ -456,7 +463,7 @@ main {
       font-size: 1.6rem;
       width: 50%;
       padding: 0.5rem;
-      color: #4b808a;
+      color: #227be6;
       text-shadow: none;
       font-family: "Abril Fatface", cursive;
       font-family: "Bahianita", cursive;
@@ -473,7 +480,7 @@ main {
       width: 50%;
       font-size: 1.5rem;
       font-family: "Seaweed Script", cursive;
-      background: #f5e5e5;
+      background: florawhite;
       padding: 0.6rem; }
     .home__box-four a:hover, .home__box-five a:hover, .home__box-six a:hover {
       background: yellowgreen;
