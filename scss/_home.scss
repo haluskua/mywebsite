@@ -305,6 +305,151 @@
     );
   }
 }
+
+///////////////
+
+main {
+  height: 100vh !important;
+  overflow: hidden !important;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  background: #1c2031;
+  background: repeating-linear-gradient(45deg, #e2dbdb30, #fff0f512 100px),
+    url(../img/hillside.jpg) center bottom;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto;
+  padding-bottom: 0;
+
+  &__box-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+    width: 100%;
+    background: #cbccc8;
+    // background: #d1d2d5;
+
+    h1 {
+      color: #ff5200;
+      font-size: 2.35rem;
+      line-height: 2.6rem;
+      padding: 1rem;
+      letter-spacing: 0.07rem;
+      font-family: "Abril Fatface", cursive;
+      font-family: "Baianita", cursive;
+      font-family: "Vidaloka", serif;
+      font-family: "Yeseva One", cursive;
+      /* font-family: "Gidugu", sans-serif; */
+      /* font-family: "Black And White Picture", sans-serif; */
+      /* font-family: "Chau Philomene One", sans-serif; */
+      /* font-family: "Pavanam", sans-serif; */
+      /* font-family: "Padauk", sans-serif; */
+      /* font-family: "Pattaya", sans-serif; */
+      /* font-family: "Staatliches", cursive; */
+      /* font-family: "Seaweed Script", cursive; */
+      /* font-family: "Pompiere", cursive; */
+      /* font-family: "Sail", cursive; */
+      /* font-family: "Baianita", cursive; */
+      text-align: left;
+      width: 100%;
+      font-family: "Cinzel Decorative", cursive;
+      font-weight: bold;
+      text-transform: lowercase;
+    }
+  }
+  &__box-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 1rem;
+    padding: 1rem;
+    width: 100%;
+    background: #cbccc8;
+
+    h3 {
+      font-size: 1.2rem;
+      line-height: 1.24em;
+      font-weight: normal;
+      // letter-spacing: -0.03rem;
+      color: #ff5200;
+      font-family: "Roboto", "Montserrat", cursive;
+      // font-family: 'Mallanna', sans-serif;      // font-family: "Englebert", sans-serif;
+      // font-family: "Black And White Picture", sans-serif;
+      // font-family: "Chau Philomene One", sans-serif;
+      // font-family: "Pavanam", sans-serif;
+      // font-family: "Padauk", sans-serif;
+      // font-family: "Pattaya", sans-serif;
+      // font-family: "Staatliches", cursive;
+      // font-family: "Seaweed Script", cursive;
+      // font-family: "Pompiere", cursive;
+      // font-family: "Sail", cursive;
+
+      text-transform: normal;
+    }
+    span {
+      color: #191f16;
+      font-weight: bold;
+    }
+    &__box-three {
+      background: #1c2031;
+    }
+  }
+  &__box-four,
+  &__box-five,
+  &__box-six {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    align-items: center;
+    padding: 2rem 1rem;
+    width: 100%;
+    background: #cbccc8;
+
+    h2 {
+      font-size: 1.5rem;
+      width: 50%;
+      padding: 0.5rem;
+      color: #ff5200;
+      text-shadow: none;
+      font-family: "Cinzel Decorative";
+      font-weight: bold;
+    }
+    a {
+      width: 50%;
+      font-size: 1.5rem;
+      font-family: "Seaweed Script", cursive;
+      padding: 0.6rem;
+      color: #0e1213;
+      background: #99ab8f6e;
+    }
+    a:hover {
+      background: yellowgreen;
+      color: white;
+      border: none;
+    }
+  }
+  &__box-six {
+    flex-direction: column;
+    background: ghostwhite;
+
+    h2 {
+      font-family: "Roboto", "Montserrat", cursive;
+      width: 100%;
+    }
+    p {
+      color: #0e1213;
+      font-size: 1.15rem;
+    }
+  }
+}
 .social-icons {
   display: flex;
   position: relative;

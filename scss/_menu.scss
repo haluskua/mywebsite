@@ -17,9 +17,9 @@
 
 .menu-btn {
   position: fixed;
-  left: 2%;
+  right: 2%;
   top: 17px;
-  width: 50%;
+  width: 14%;
   height: 0px;
   background: #ffffff;
   transition: all 0.42s ease-in-out;
@@ -85,7 +85,9 @@
   &__logo {
     color: #ffb443;
     margin-top: 3px;
-    font-size: 1.15em;
+    position: fixed;
+    left: 3%;
+    font-size: 1.35em;
     font-weight: bold;
     font-family: "Cinzel Decorative", cursive;
     font-family: "Charmonman", serif;
@@ -113,10 +115,10 @@
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background: repeating-linear-gradient(45deg, #e2dbdb, #f3f4ea 100px);
-  box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127),
-    0px -3px 1px rgba(99, 11, 6, 0.244);
-  background: rgb(240, 236, 236);
+  // background: repeating-linear-gradient(45deg, #e2dbdb, #f3f4ea 100px);
+  // box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127),
+  //   0px -3px 1px rgba(99, 11, 6, 0.244);
+  background: #ffffff;
   @include MEDIUM-DEVICE-WIDTH {
     height: 65px;
     background: repeating-linear-gradient(45deg, #e2dbdb, #f3f4ea 100px);
