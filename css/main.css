@@ -400,8 +400,10 @@ main {
     width: 100%; }
     .home__box-one h1 {
       color: #2d1f09;
-      font-size: 2.25rem;
+      font-size: 2.2rem;
       line-height: 2.6rem;
+      padding-bottom: 0;
+      text-transform: capitalize;
       padding: 1rem;
       letter-spacing: 0.07rem;
       font-family: "Abril Fatface", cursive;
@@ -729,7 +731,7 @@ footer {
       height: 100vh;
       z-index: 10;
       background: #e1e4e6;
-      background: repeating-linear-gradient(45deg, #e2dbdb30, #fff0f512 100px), url(../img/hillside.jpg) center bottom;
+      background: repeating-linear-gradient(45deg, #e2dbdb30, #69595f1f 100px), url(../img/polygon.png) center bottom;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat; }
@@ -864,12 +866,11 @@ footer {
     font-size: 1.9em;
     font-weight: normal;
     line-height: 1em;
-    color: #353535;
+    color: #9e8672;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
-    padding: 0;
-    color: white; }
+    padding: 0; }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .nav .my_name {
         font-size: 1.5rem;
@@ -928,10 +929,9 @@ footer {
       font-family: "Audiowide", cursive;
       font-family: "Cormorant Unicase", serif;
       text-shadow: 3.28px 3.36px #e7ffc7;
-      color: #353535;
       text-shadow: none;
       padding: 0;
-      color: white; }
+      color: #9e8672; }
       @media only screen and (device-width: 1em), screen and (orientation: landscape) {
         .nav .title_txt_container .title_text {
           font-size: 1.31em;
