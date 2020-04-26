@@ -317,12 +317,12 @@ main {
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
-  background: #1c2031;
   background: repeating-linear-gradient(45deg, #e2dbdb30, #fff0f512 100px),
-    url(../img/hillside.jpg) center bottom;
+    url(../img/polygon.png) center bottom;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background: #f5f5f5;
   overflow: auto;
   padding-bottom: 0;
 
@@ -331,15 +331,17 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 7rem;
+    padding-top: 7.5rem;
     width: 100%;
-    background: #cbccc8;
+    // background: #cbccc8;
     // background: #d1d2d5;
 
     h1 {
-      color: #ff5200;
-      font-size: 2.25rem;
+      color: #2d1f09;
+      font-size: 2.2rem;
       line-height: 2.6rem;
+      padding-bottom: 0;
+      text-transform: capitalize;
       padding: 1rem;
       letter-spacing: 0.07rem;
       font-family: "Abril Fatface", cursive;
@@ -369,17 +371,16 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding: 8px;
     padding-left: 1rem;
-    padding: 1rem;
     width: 100%;
-    background: #cbccc8;
 
     h3 {
       font-size: 1.2rem;
       line-height: 1.24em;
       font-weight: normal;
       // letter-spacing: -0.03rem;
-      color: #ff5200;
+      color: #b54b00;
       font-family: "Roboto", "Montserrat", cursive;
       // font-family: 'Mallanna', sans-serif;      // font-family: "Englebert", sans-serif;
       // font-family: "Black And White Picture", sans-serif;
@@ -395,8 +396,9 @@ main {
       text-transform: normal;
     }
     span {
-      color: #191f16;
+      color: #362d11;
       font-weight: bold;
+      font-size: 1.05rem;
     }
     &__box-three {
       background: #1c2031;
@@ -411,24 +413,33 @@ main {
     align-items: center;
     padding: 2rem 1rem;
     width: 100%;
+    // border: 1px solid darkgrey;
     background: #cbccc8;
+    background: repeating-linear-gradient(45deg, #e2dbdb6b, #cabaa09c 100px),
+      url(../img/polygon.png) center bottom;
+    background-position: center;
+    background-size: contain;
 
     h2 {
       font-size: 1.5rem;
       width: 50%;
-      padding: 0.5rem;
+      padding: 1rem;
       color: #ff5200;
       text-shadow: none;
       font-family: "Cinzel Decorative";
       font-weight: bold;
+      text-align: left;
     }
     a {
-      width: 50%;
+      width: 100% !important;
       font-size: 1.5rem;
       font-family: "Seaweed Script", cursive;
       padding: 0.6rem;
       color: #0e1213;
-      background: #99ab8f6e;
+      box-shadow: 2px 4px 14px #8c8989a1;
+      background: #f5f5f5b0;
+      border: 1px solid #ffffff;
+      border-radius: 3px;
     }
     a:hover {
       background: yellowgreen;
@@ -438,12 +449,14 @@ main {
   }
   &__box-six {
     flex-direction: column;
-    background: ghostwhite;
+    background: #f5f5f5;
+    padding: 1rem;
 
     h2 {
       font-family: "Roboto", "Montserrat", cursive;
       width: 100%;
       font-size: 1.3rem;
+      text-align: center;
     }
     p {
       color: #0e1213;
