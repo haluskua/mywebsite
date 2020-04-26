@@ -359,10 +359,6 @@ a {
     background: -webkit-gradient(linear, left top, right top, from(rgba(241, 248, 255, 0.29)), to(rgba(184, 248, 255, 0.23)));
     background: linear-gradient(to right, rgba(241, 248, 255, 0.29), rgba(184, 248, 255, 0.23)); }
 
-main {
-  height: 100vh !important;
-  overflow: hidden !important; }
-
 .home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1292,7 +1288,9 @@ footer {
   background: repeating-linear-gradient(to right, #e2dbdb00, #8bc6ca59 100px), url(../img/polygon.png) center center;
   background-size: contain;
   background-repeat: repeat;
-  background-position: left; }
+  background-position: left;
+  height: 100%;
+  overflow: hidden; }
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .projects {
       padding: 1rem 12% 0 12%;
