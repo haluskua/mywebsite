@@ -375,7 +375,11 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: white;
+  background: #1c2031;
+  background: repeating-linear-gradient(45deg, #e2dbdb30, #fff0f512 100px), url(../img/hillside.jpg) center bottom;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   overflow: auto;
   padding-bottom: 0; }
   .home__box-one {
@@ -394,28 +398,32 @@ main {
             align-items: flex-start;
     padding-top: 5rem;
     width: 100%;
-    background: #d1d2d5; }
+    background: #d5d6d09c; }
     .home__box-one h1 {
-      color: #0e1e31;
-      font-size: 3.4rem;
-      line-height: 2.6rem;
+      color: #329600;
+      font-size: 3.6rem;
+      line-height: 2.86rem;
       padding: 1rem;
+      letter-spacing: 0.07rem;
       font-family: "Abril Fatface", cursive;
-      font-family: "Bahianita", cursive;
+      font-family: "Baianita", cursive;
       font-family: "Vidaloka", serif;
       font-family: "Yeseva One", cursive;
       font-family: "Gidugu", sans-serif;
-      font-family: 'Black And White Picture', sans-serif;
-      font-family: 'Chau Philomene One', sans-serif;
-      font-family: 'Pavanam', sans-serif;
-      font-family: 'Padauk', sans-serif;
-      font-family: "Pattaya", sans-serif;
-      font-family: 'Staatliches', cursive;
-      font-family: 'Seaweed Script', cursive;
-      font-family: 'Pompiere', cursive;
-      font-family: 'Sail', cursive;
+      font-family: "Black And White Picture", sans-serif;
+      /* font-family: "Chau Philomene One", sans-serif; */
+      /* font-family: "Pavanam", sans-serif; */
+      /* font-family: "Padauk", sans-serif; */
+      /* font-family: "Pattaya", sans-serif; */
+      /* font-family: "Staatliches", cursive; */
+      /* font-family: "Seaweed Script", cursive; */
+      /* font-family: "Pompiere", cursive; */
+      /* font-family: "Sail", cursive; */
+      /* font-family: "Baianita", cursive; */
       text-align: left;
-      width: 100%; }
+      width: 100%;
+      font-weight: bold;
+      text-transform: uppercase; }
   .home__box-two {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -433,19 +441,19 @@ main {
     padding-left: 1rem;
     padding: 1rem;
     width: 100%;
-    background: #d1d2d5; }
+    background: #1c2031; }
     .home__box-two h3 {
       font-size: 1.2rem;
       line-height: 1.24em;
       font-weight: normal;
-      color: #565555;
+      color: floralwhite;
       font-family: "Roboto", "Montserrat", cursive;
       text-transform: normal; }
     .home__box-two span {
-      color: #0e1e31;
+      color: #61ff10;
       font-weight: bold; }
     .home__box-two__box-three {
-      background: #d1d2d5; }
+      background: #1c2031; }
   .home__box-four, .home__box-five, .home__box-six {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -457,31 +465,21 @@ main {
         -ms-flex-align: center;
             align-items: center;
     padding: 2rem 1rem;
-    background: #d1d2d5;
-    width: 100%; }
+    width: 100%;
+    background: #d5d6d0; }
     .home__box-four h2, .home__box-five h2, .home__box-six h2 {
       font-size: 1.6rem;
       width: 50%;
       padding: 0.5rem;
       color: #227be6;
       text-shadow: none;
-      font-family: "Abril Fatface", cursive;
-      font-family: "Bahianita", cursive;
-      font-family: "Vidaloka", serif;
-      font-family: "Yeseva One", cursive;
-      font-family: "Gidugu", sans-serif;
-      font-family: 'Black And White Picture', sans-serif;
-      font-family: 'Chau Philomene One', sans-serif;
-      font-family: 'Pavanam', sans-serif;
-      font-family: 'Padauk', sans-serif;
-      font-family: "Pattaya", sans-serif;
-      font-family: 'Staatliches', cursive; }
+      font-family: "Staatliches", cursive; }
     .home__box-four a, .home__box-five a, .home__box-six a {
       width: 50%;
       font-size: 1.5rem;
       font-family: "Seaweed Script", cursive;
-      background: florawhite;
-      padding: 0.6rem; }
+      padding: 0.6rem;
+      color: #0e1213; }
     .home__box-four a:hover, .home__box-five a:hover, .home__box-six a:hover {
       background: yellowgreen;
       color: white;
@@ -494,6 +492,9 @@ main {
     .home__box-six h2 {
       font-family: "Roboto", "Montserrat", cursive;
       width: 100%; }
+    .home__box-six p {
+      color: #0e1213;
+      font-size: 1.15rem; }
 
 .social-icons {
   display: -webkit-box;
