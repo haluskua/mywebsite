@@ -396,7 +396,7 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 11.5rem;
+    padding-top: 7.5rem;
     width: 100%; }
     .home__box-one h1 {
       color: #2d1f09;
@@ -450,7 +450,8 @@ main {
       text-transform: normal; }
     .home__box-two span {
       color: #362d11;
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 1.05rem; }
     .home__box-two__box-three {
       background: #1c2031; }
   .home__box-four, .home__box-five, .home__box-six {
@@ -486,8 +487,8 @@ main {
       color: #0e1213;
       -webkit-box-shadow: 2px 4px 14px #8c8989a1;
               box-shadow: 2px 4px 14px #8c8989a1;
-      background: #e1ecdaa1;
-      border: 1px solid #d1e2e9;
+      background: #f5f5f5b0;
+      border: 1px solid #ffffff;
       border-radius: 3px; }
     .home__box-four a:hover, .home__box-five a:hover, .home__box-six a:hover {
       background: yellowgreen;
