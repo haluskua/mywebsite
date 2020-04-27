@@ -167,16 +167,24 @@ footer {
   z-index: 99999699999;
   position: fixed;
   left: 8rem;
+  top: -1rem;
   @include SMALL-LANDSCAPE {
-    margin-top: -3.5rem;
+    margin-top: -2rem;
+    font-size: 0.88rem;
   }
   @include MEDIUM-DEVICE-WIDTH {
     left: 16rem;
-    top: -1.8rem;
+    top: -2rem;
   }
   @include LARGE-DEVICE-WIDTH {
-    top: -5rem;
+    top: -4.2rem;
     left: 18rem;
+    
+  }
+  #ps, #pt {
+    @include LARGE-DEVICE-WIDTH {
+      font-size: 1.4rem;
+    }
   }
 }
 

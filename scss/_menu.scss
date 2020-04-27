@@ -4,15 +4,14 @@
   animation: breadCrumb 8s infinite linear alternate;
   transform-origin: center;
   transform-box: fill-box;
-
 }
 
 @keyframes breadCrumb {
   from {
-    transform: rotateZ(-6deg);
+    transform: rotateZ(-4deg);
   }
   to {
-    transform: rotateZ(6deg);
+    transform: rotateZ(4deg);
   }
 }
 
