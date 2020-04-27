@@ -1022,11 +1022,6 @@ a {
       -ms-flex-align: end;
           align-items: flex-end;
   background: linear-gradient(to right, #f3f5e2, #fffffffa 100px);
-  background: #95bdad;
-  background: repeating-linear-gradient(to right, #e2dbdb00, #8bc6ca59 100px), url(../img/polygon.png) center center;
-  background-size: contain;
-  background-repeat: repeat;
-  background-position: left;
   height: 100%;
   overflow: hidden; }
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
@@ -1680,6 +1675,9 @@ footer {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row; } }
+  @media only screen and (min-width: 1025px) and (orientation: landscape) {
+    footer {
+      padding: 1rem 10rem; } }
   footer h2 {
     font-family: "Cinzel Decorative", cursive;
     width: 100%;
@@ -1697,7 +1695,7 @@ footer {
         text-align: left; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       footer h2 {
-        font-size: 1.65rem;
+        font-size: 1.3rem;
         padding: 0.5rem; } }
   footer p {
     color: #362d11;
@@ -1706,13 +1704,16 @@ footer {
     padding: 0.28rem !important; }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       footer p {
-        text-align: left; } }
+        text-align: center; } }
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
+      footer p {
+        text-align: center; } }
 
 .social-icons {
   position: relative;
   width: 100%;
-  background: #f9f3f3;
-  z-index: 0; }
+  z-index: 0;
+  background: #f9f3f300; }
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .social-icons {
       position: fixed;
@@ -1722,7 +1723,8 @@ footer {
               flex-direction: column;
       bottom: 5rem;
       left: 1rem;
-      width: auto; } }
+      width: auto;
+      background: #f9f3f300; } }
   @media only screen and (min-width: 481px) and (orientation: portrait) {
     .social-icons {
       display: -webkit-box;
@@ -1733,12 +1735,14 @@ footer {
           -ms-flex-direction: row;
               flex-direction: row;
       width: 100%;
-      padding: 1em 0.5em; } }
+      padding: 1em 0.5em;
+      background: #f9f3f300; } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .social-icons {
       z-index: 0;
       height: 50%;
-      bottom: 13rem; } }
+      bottom: 13rem;
+      background: #f9f3f300; } }
 
 .main-title {
   font-size: 2rem;
