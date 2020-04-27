@@ -116,14 +116,9 @@
     align-items: center;
     padding: 2rem 1rem;
     width: 100%;
-    background: #cbccc8;
-    background: repeating-linear-gradient(45deg, #fff4baf2, #fff2d4e0 100px),
-      url(../img/polygon.png) center bottom;
-    background-position: center;
-    background-size: contain;
+    background: #f9f3f3;
     @include LARGE-DEVICE-WIDTH {
       justify-content: center;
-      background: #f7f8f0;
     }
     .box-link {
       padding: 0.6rem;
@@ -144,14 +139,15 @@
       padding: 1rem;
       color: #ff5200;
       text-shadow: none;
-      font-family: "Roboto", sans-serif;
+      font-family: "Montserrat", "Roboto", sans-serif;
       font-weight: bold;
       text-align: left;
+      text-transform: uppercase;
       @include MEDIUM-DEVICE-WIDTH {
         font-size: 2.2rem;
       }
       @include LARGE-DEVICE-WIDTH {
-        font-size: 2.5rem;
+        font-size: 2rem;
         width: 38%;
         margin-top: 1rem;
       }

@@ -163,16 +163,12 @@ a {
             align-items: center;
     padding: 2rem 1rem;
     width: 100%;
-    background: #cbccc8;
-    background: repeating-linear-gradient(45deg, #fff4baf2, #fff2d4e0 100px), url(../img/polygon.png) center bottom;
-    background-position: center;
-    background-size: contain; }
+    background: #f9f3f3; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .home__box-four, .home__box-five {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
-                justify-content: center;
-        background: #f7f8f0; } }
+                justify-content: center; } }
     .home__box-four .box-link, .home__box-five .box-link {
       padding: 0.6rem;
       color: #0e1213;
@@ -191,15 +187,16 @@ a {
       padding: 1rem;
       color: #ff5200;
       text-shadow: none;
-      font-family: "Roboto", sans-serif;
+      font-family: "Montserrat", "Roboto", sans-serif;
       font-weight: bold;
-      text-align: left; }
+      text-align: left;
+      text-transform: uppercase; }
       @media only screen and (min-width: 481px) and (orientation: portrait) {
         .home__box-four h2, .home__box-five h2 {
           font-size: 2.2rem; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .home__box-four h2, .home__box-five h2 {
-          font-size: 2.5rem;
+          font-size: 2rem;
           width: 38%;
           margin-top: 1rem; } }
     .home__box-four .external-link, .home__box-five .external-link {
@@ -452,7 +449,7 @@ a {
       height: 100vh;
       z-index: 10;
       background: #e1e4e6;
-      background: repeating-linear-gradient(45deg, #f5e3c96b, #ffd8a25e 100px), url(../img/polygon.png) center bottom;
+      background: repeating-linear-gradient(45deg, #f5e3c96b, #fff1de5e 100px), url(../img/polygon.png) center bottom;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat; }
@@ -1106,6 +1103,8 @@ a {
         .projects__bio-image .text-secondary {
           font-size: 2rem;
           top: 18%; } }
+    .projects__bio-image h3 {
+      font-family: "Roboto",sans-serif; }
     .projects__bio-image h5 {
       font-size: 1em;
       line-height: 1.43em;
@@ -1174,6 +1173,9 @@ a {
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .projects__item1, .projects__item2, .projects__item3, .projects__item4 {
         width: 92%; } }
+    .projects__item1 h3, .projects__item2 h3, .projects__item3 h3, .projects__item4 h3 {
+      font-family: "Roboto";
+      font-size: 1.4rem; }
     .projects__item1 .project__title, .projects__item2 .project__title, .projects__item3 .project__title, .projects__item4 .project__title {
       display: -webkit-box;
       display: -ms-flexbox;

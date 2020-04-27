@@ -77,6 +77,9 @@
         top: 18%;
       }
     }
+    h3 {
+      font-family: "Roboto",sans-serif;
+    }
     h5 {
       font-size: 1em;
       line-height: 1.43em;
@@ -139,6 +142,11 @@
     }
     @include LARGE-DEVICE-WIDTH {
       width: 92%;
+    }
+
+    h3 {
+      font-family: "Roboto";
+      font-size: 1.4rem;
     }
 
     .project__title {
