@@ -5,9 +5,9 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  color: $secondary-color;
   width: 100%;
-  background: repeating-linear-gradient(45deg, #ffe48e4d, #c7bc9247 100px),
+  margin-top: 3rem;
+  background: repeating-linear-gradient(45deg, #000000d1, #27251ef5 100px),
     url(../img/hillside.jpg) center bottom;
   background-position: center;
   background-size: cover;
@@ -39,8 +39,7 @@
       width: 50%;
     }
     img {
-      width: 43%;
-      height: 100%;
+      width: 61%;
       @include SMALL-LANDSCAPE {
         width: 84%;
       }
@@ -52,6 +51,7 @@
 
   // .......
   .grid-container {
+    padding-left: 2rem;
     @include SMALL-LANDSCAPE {
       width: 50%;
       padding: 2px;
@@ -71,8 +71,9 @@
       position: fixed;
       display: flex;
       justify-content: flex-end;
-      align-items: flex-end;
+      align-items: flex-start;
       color: transparent;
+      margin-left: 1rem;
     }
     @include LARGE-DEVICE-WIDTH {
       width: 100%;
@@ -82,8 +83,8 @@
       z-index: 0;
     }
     i {
-      color: #808681;
-      font-size: 1rem;
+      color: #c5cac6;
+      font-size: 1.4rem;
     }
   }
 
@@ -95,7 +96,6 @@
     grid-gap: 1.26rem;
     font-size: 1.35rem;
     padding: 2rem;
-    background: #3c391bc9;
     @include MEDIUM-DEVICE-WIDTH {
       grid-template-columns: repeat(1, 1fr);
       padding: 2rem;

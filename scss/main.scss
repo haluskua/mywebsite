@@ -157,6 +157,7 @@ footer {
   }
   @include MEDIUM-DEVICE-WIDTH {
     flex-direction: row;
+    // padding: 1rem 10rem;
   }
 
   h2 {
@@ -196,6 +197,7 @@ footer {
   position: relative;
   width: 100%;
   background: #f9f3f3;
+  z-index: 0;
   @include SMALL-LANDSCAPE {
     position: fixed;
     flex-direction: column;
