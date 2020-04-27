@@ -928,7 +928,7 @@ footer {
         line-height: 2.96rem;
         letter-spacing: 0.05rem; } }
   .nav .svg-container {
-    width: 80%;
+    width: 88%;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -940,7 +940,7 @@ footer {
             transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear, -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1); }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .nav .svg-container {
-        width: 88%; } }
+        width: 41%; } }
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .nav .svg-container {
         width: 80%;

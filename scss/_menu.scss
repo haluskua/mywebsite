@@ -325,7 +325,7 @@
   }
 
   .svg-container {
-    width: 80%;
+    width: 88%;
     text-align: center;
     display: flex;
     margin-top: -1rem;
@@ -333,7 +333,7 @@
     transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear,
       -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
     @include SMALL-LANDSCAPE {
-      width: 88%;
+      width: 41%;
     }
     @include MEDIUM-DEVICE-WIDTH {
       width: 80%;
