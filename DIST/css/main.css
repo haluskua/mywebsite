@@ -77,25 +77,28 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding-top: 7.5rem;
     width: 100%;
     background: repeating-linear-gradient(45deg, #f5e3c900, #ffd8a200 100px), url(../img/heart_dynamic.png) center bottom;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
+      .home__box-one {
+        padding-top: 11rem; } }
     .home__box-one h1 {
-      color: #2d1f09;
-      font-size: 2.2rem;
+      color: #af8045;
+      font-size: 2rem;
       line-height: 2.45rem;
       padding-bottom: 0;
       text-transform: capitalize;
-      padding: 1rem;
+      padding: 0 0 0 1.5rem;
       letter-spacing: 0.07rem;
       text-align: left;
-      width: 100%;
+      width: 70%;
       font-family: "Cinzel Decorative", cursive;
       font-weight: bold;
       text-transform: lowercase; }
@@ -123,8 +126,9 @@ a {
     .home__box-two h3 {
       font-size: 1rem;
       line-height: 1.24em;
-      font-weight: bold;
-      color: #ff5200;
+      text-align: left;
+      padding: 0.6rem;
+      color: #caa45f;
       font-family: "Roboto", "Montserrat", cursive;
       text-transform: uppercase; }
     .home__box-two span {
@@ -137,11 +141,17 @@ a {
     background: #1c2031; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .home__box-three {
-        background: #c5c1b96b; } }
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background: none;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .home__box-three img {
         width: 60%; } }
-  .home__box-four, .home__box-five, .home__box-six {
+  .home__box-four, .home__box-five {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -154,15 +164,16 @@ a {
     padding: 2rem 1rem;
     width: 100%;
     background: #cbccc8;
-    background: repeating-linear-gradient(45deg, #d8d2c6d1, #cabaa063 100px), url(../img/polygon.png) center bottom;
+    background: repeating-linear-gradient(45deg, #fff4baf2, #fff2d4e0 100px), url(../img/polygon.png) center bottom;
     background-position: center;
     background-size: contain; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .home__box-four, .home__box-five, .home__box-six {
+      .home__box-four, .home__box-five {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
-                justify-content: center; } }
-    .home__box-four .box-link, .home__box-five .box-link, .home__box-six .box-link {
+                justify-content: center;
+        background: #f7f8f0; } }
+    .home__box-four .box-link, .home__box-five .box-link {
       padding: 0.6rem;
       color: #0e1213;
       -webkit-box-shadow: 2px 4px 14px #e8d1bda1;
@@ -172,54 +183,38 @@ a {
       border-radius: 3px;
       width: 100%; }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
-        .home__box-four .box-link, .home__box-five .box-link, .home__box-six .box-link {
+        .home__box-four .box-link, .home__box-five .box-link {
           width: 70%; } }
-    .home__box-four h2, .home__box-five h2, .home__box-six h2 {
+    .home__box-four h2, .home__box-five h2 {
       font-size: 1.5rem;
       width: 50%;
       padding: 1rem;
       color: #ff5200;
       text-shadow: none;
-      font-family: "Cinzel Decorative";
+      font-family: "Roboto", sans-serif;
       font-weight: bold;
       text-align: left; }
       @media only screen and (min-width: 481px) and (orientation: portrait) {
-        .home__box-four h2, .home__box-five h2, .home__box-six h2 {
+        .home__box-four h2, .home__box-five h2 {
           font-size: 2.2rem; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
-        .home__box-four h2, .home__box-five h2, .home__box-six h2 {
+        .home__box-four h2, .home__box-five h2 {
           font-size: 2.5rem;
           width: 38%;
           margin-top: 1rem; } }
-    .home__box-four .external-link, .home__box-five .external-link, .home__box-six .external-link {
+    .home__box-four .external-link, .home__box-five .external-link {
       width: 50%;
       font-size: 1.5rem;
       font-family: "Seaweed Script", cursive; }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
-        .home__box-four .external-link, .home__box-five .external-link, .home__box-six .external-link {
+        .home__box-four .external-link, .home__box-five .external-link {
           width: 32%;
           font-size: 2rem;
           margin-top: 1rem; } }
-    a:hover .home__box-four:active, a:hover .home__box-five:active, a:hover .home__box-six:active {
+    a:hover .home__box-four:active, a:hover .home__box-five:active {
       background: yellowgreen;
       color: white;
       border: none; }
-  .home__box-six {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background: #f5f5f5;
-    padding: 1rem; }
-    .home__box-six h2 {
-      font-family: "Roboto", "Montserrat", cursive;
-      width: 100%;
-      font-size: 1.21rem;
-      text-align: center;
-      font-weight: normal; }
-    .home__box-six p {
-      color: #362d11;
-      font-size: 1.05rem; }
 
 .social-icons {
   display: -webkit-box;
@@ -245,13 +240,6 @@ a {
       height: 100%; } }
   .social-icons .fa-2x {
     font-size: 1.4em; }
-
-footer {
-  font-size: 0.6rem !important;
-  color: #6c7377 !important; }
-  @media only screen and (device-width: 1em), screen and (orientation: landscape) {
-    footer {
-      right: 2rem !important; } }
 
 #project-index {
   -webkit-animation: breadCrumb 8s infinite linear alternate;
@@ -1027,9 +1015,6 @@ footer {
             font-size: 0.88rem; } }
       .about .jobs__job P {
         text-align: left; }
-  .about footer {
-    -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
-            transform: rotate(90deg) translate(-3rem, -5rem); }
 
 .projects {
   display: -webkit-box;
@@ -1259,9 +1244,6 @@ footer {
       color: whitesmoke; }
   .projects .block {
     width: 100%; }
-  .projects footer {
-    -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
-            transform: rotate(90deg) translate(-3rem, -5rem); }
 
 .contact {
   height: 100vh;
@@ -1447,7 +1429,8 @@ footer {
       -webkit-box-shadow: none;
               box-shadow: none;
       padding: 1rem 12% 0 12%;
-      border: none; } }
+      border: none;
+      background: linear-gradient(to right, #f3f5e2, #fffffffa 100px); } }
   @media only screen and (min-width: 481px) and (orientation: portrait) {
     .main-container {
       height: auto;
@@ -1576,10 +1559,6 @@ footer {
   -webkit-animation: fadeIn var(--fade-time) ease-in 1 forwards;
           animation: fadeIn var(--fade-time) ease-in 1 forwards; }
 
-footer {
-  -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
-          transform: rotate(90deg) translate(-3rem, -5rem); }
-
 /* Media Queries */
 /*-----X------ partials imports ------X-----*/
 /*----------- @Mixins -----------*/
@@ -1676,29 +1655,73 @@ p {
   font-size: 0.89rem;
   text-align: center; }
 
-.main-title {
-  font-size: 2rem;
-  letter-spacing: 0.02em;
-  font-weight: bold;
-  font-family: "Bebas Neue", "Julius Sans", cursive;
-  width: 100%;
-  top: 30%;
-  position: relative;
-  text-align: left; }
-
 footer {
-  font-size: 0.75rem;
-  position: fixed;
-  bottom: 0.54rem;
-  right: 1.75rem;
-  text-align: right;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #f5f5f5;
   padding: 1rem;
-  color: #b9ae98; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+    footer {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+  @media only screen and (min-width: 481px) and (orientation: portrait) {
+    footer {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+  footer h2 {
+    font-family: "Cinzel Decorative", cursive;
+    width: 100%;
+    font-size: 1.15rem;
+    text-align: center;
+    font-weight: normal;
+    color: #a9640e;
+    padding: 0.6rem; }
+    @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+      footer h2 {
+        text-align: left;
+        font-size: 1.3rem; } }
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
+      footer h2 {
+        text-align: left; } }
+    @media only screen and (min-width: 1025px) and (orientation: landscape) {
+      footer h2 {
+        font-size: 1.65rem;
+        padding: 0.5rem; } }
+  footer p {
+    color: #362d11;
+    font-size: 1rem;
+    margin: 0.04rem;
+    padding: 0.28rem !important; }
+    @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+      footer p {
+        text-align: left; } }
 
 .social-icons {
   position: relative;
   width: 100%;
   background: #f9f3f3; }
+  @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+    .social-icons {
+      position: fixed;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      bottom: 5rem;
+      left: 1rem;
+      width: auto; } }
   @media only screen and (min-width: 481px) and (orientation: portrait) {
     .social-icons {
       display: -webkit-box;
@@ -1710,21 +1733,27 @@ footer {
               flex-direction: row;
       width: 100%;
       padding: 1em 0.5em; } }
-  @media only screen and (min-width: 481px) and (orientation: portrait) and (min-width: 1025px) and (orientation: landscape) {
+  @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .social-icons {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
       z-index: 0;
-      height: auto; } }
-  .social-icons a {
-    background: rgba(63, 63, 51, 0); }
-  .social-icons .fa-2x {
-    font-size: 1.23rem;
-    padding: 0.2rem 0; }
-    @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .social-icons .fa-2x {
-        font-size: 1.2rem; } }
+      height: 50%;
+      bottom: 13rem; } }
+
+.main-title {
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+  font-weight: bold;
+  font-family: "Bebas Neue", "Julius Sans", cursive;
+  width: 100%;
+  top: 30%;
+  position: relative;
+  text-align: left; }
+
+.fa-2x {
+  font-size: 1.23rem;
+  padding: 0.2rem 0; }
+  @media only screen and (min-width: 1025px) and (orientation: landscape) {
+    .fa-2x {
+      font-size: 1.2rem; } }
 
 /*# sourceMappingURL=main.css.map */

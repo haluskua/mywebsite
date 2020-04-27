@@ -13,6 +13,8 @@
     box-shadow: none;
     padding: 1rem 12% 0 12%;
     border: none;
+    background: linear-gradient(to right, #f3f5e2, #fffffffa 100px);
+
   }
   @include MEDIUM-DEVICE-WIDTH {
     height: auto;
@@ -123,9 +125,9 @@
   animation: fadeIn var(--fade-time) ease-in 1 forwards;
 }
 
-footer {
-  transform: rotate(90deg) translate(-3rem, -5rem);
-}
+// footer {
+//   transform: rotate(90deg) translate(-3rem, -5rem);
+// }
 /* Media Queries */
 // @media (max-width: 600px) {
 //   .imgs {
