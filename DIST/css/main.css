@@ -380,6 +380,9 @@ a {
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .home {
       padding: 0 8%; } }
+  @media only screen and (min-width: 481px) and (orientation: portrait) {
+    .home {
+      padding: 0 8%; } }
   .home__box-one {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -424,6 +427,9 @@ a {
       font-family: "Cinzel Decorative", cursive;
       font-weight: bold;
       text-transform: lowercase; }
+      @media only screen and (min-width: 481px) and (orientation: portrait) {
+        .home__box-one h1 {
+          font-weight: 2.6rem; } }
   .home__box-two {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -454,8 +460,14 @@ a {
       font-size: 1.05rem;
       text-transform: lowercase;
       font-family: "Cinzel Decorative", cursive; }
-    .home__box-two__box-three {
-      background: #1c2031; }
+  .home__box-three {
+    background: #1c2031; }
+    @media only screen and (min-width: 1025px) and (orientation: landscape) {
+      .home__box-three {
+        background: #c5c1b96b; } }
+    @media only screen and (min-width: 1025px) and (orientation: landscape) {
+      .home__box-three img {
+        width: 60%; } }
   .home__box-four, .home__box-five, .home__box-six {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -472,7 +484,12 @@ a {
     background: repeating-linear-gradient(45deg, #d8d2c6d1, #cabaa063 100px), url(../img/polygon.png) center bottom;
     background-position: center;
     background-size: contain; }
-    .home__box-four a, .home__box-five a, .home__box-six a {
+    @media only screen and (min-width: 1025px) and (orientation: landscape) {
+      .home__box-four, .home__box-five, .home__box-six {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+    .home__box-four .box-link, .home__box-five .box-link, .home__box-six .box-link {
       padding: 0.6rem;
       color: #0e1213;
       -webkit-box-shadow: 2px 4px 14px #e8d1bda1;
@@ -481,6 +498,9 @@ a {
       border: 1px solid #ffffff;
       border-radius: 3px;
       width: 100%; }
+      @media only screen and (min-width: 1025px) and (orientation: landscape) {
+        .home__box-four .box-link, .home__box-five .box-link, .home__box-six .box-link {
+          width: 70%; } }
     .home__box-four h2, .home__box-five h2, .home__box-six h2 {
       font-size: 1.5rem;
       width: 50%;
@@ -490,6 +510,14 @@ a {
       font-family: "Cinzel Decorative";
       font-weight: bold;
       text-align: left; }
+      @media only screen and (min-width: 481px) and (orientation: portrait) {
+        .home__box-four h2, .home__box-five h2, .home__box-six h2 {
+          font-size: 2.2rem; } }
+      @media only screen and (min-width: 1025px) and (orientation: landscape) {
+        .home__box-four h2, .home__box-five h2, .home__box-six h2 {
+          font-size: 2.5rem;
+          width: 38%;
+          margin-top: 1rem; } }
     .home__box-four .external-link, .home__box-five .external-link, .home__box-six .external-link {
       width: 100%;
       font-size: 1.5rem;
@@ -497,6 +525,14 @@ a {
       @media only screen and (device-width: 1em), screen and (orientation: landscape) {
         .home__box-four .external-link, .home__box-five .external-link, .home__box-six .external-link {
           width: 50%; } }
+      @media only screen and (min-width: 481px) and (orientation: portrait) {
+        .home__box-four .external-link, .home__box-five .external-link, .home__box-six .external-link {
+          width: 51%; } }
+      @media only screen and (min-width: 1025px) and (orientation: landscape) {
+        .home__box-four .external-link, .home__box-five .external-link, .home__box-six .external-link {
+          width: 32%;
+          font-size: 2rem;
+          margin-top: 1rem; } }
     a:hover .home__box-four:active, a:hover .home__box-five:active, a:hover .home__box-six:active {
       background: yellowgreen;
       color: white;
@@ -724,7 +760,7 @@ footer {
               align-items: flex-end;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-      border: 4px solid #423d3a;
+      border: 4px solid #f3e2d2;
       -webkit-box-orient: vertical;
       -webkit-box-direction: reverse;
           -ms-flex-direction: column-reverse;
@@ -775,9 +811,9 @@ footer {
           -webkit-box-direction: reverse;
               -ms-flex-direction: row-reverse;
                   flex-direction: row-reverse;
-          -webkit-box-pack: end;
-              -ms-flex-pack: end;
-                  justify-content: flex-end; } }
+          -webkit-box-pack: space-evenly;
+              -ms-flex-pack: space-evenly;
+                  justify-content: space-evenly; } }
     .nav .menu-nav__item {
       -webkit-transform: translateX(100vw);
               transform: translateX(100vw);
@@ -889,7 +925,6 @@ footer {
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .nav .my_name {
         font-size: 2.5em;
-        color: white;
         line-height: 2.96rem;
         letter-spacing: 0.05rem; } }
   .nav .svg-container {
@@ -905,7 +940,7 @@ footer {
             transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear, -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1); }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .nav .svg-container {
-        width: 38%; } }
+        width: 88%; } }
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .nav .svg-container {
         width: 80%;
@@ -913,7 +948,7 @@ footer {
         height: 68vh; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .nav .svg-container {
-        width: 55%; } }
+        width: 83%; } }
     .nav .svg-container svg {
       width: 100%;
       height: 100%; }
@@ -952,7 +987,7 @@ footer {
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .nav .title_txt_container .title_text {
           font-size: 1.6em;
-          color: white;
+          color: #965e18;
           font-weight: normal; } }
   .nav #leters {
     animation: yellow_ring 4.5s infinite linear alternate-reverse;
@@ -1994,4 +2029,5 @@ footer {
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .social-icons .fa-2x {
         font-size: 1.2rem; } }
+
 /*# sourceMappingURL=main.css.map */

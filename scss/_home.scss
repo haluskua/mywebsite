@@ -323,6 +323,9 @@
   @include SMALL-LANDSCAPE {
     padding: 0 8%;
   }
+  @include MEDIUM-DEVICE-WIDTH {
+    padding: 0 8%;
+  }
 
   &__box-one {
     display: flex;
@@ -362,6 +365,9 @@
       font-family: "Cinzel Decorative", cursive;
       font-weight: bold;
       text-transform: lowercase;
+      @include MEDIUM-DEVICE-WIDTH {
+        font-weight: 2.6rem;
+      }
     }
   }
   &__box-two {
@@ -400,11 +406,20 @@
       text-transform: lowercase;
       font-family: "Cinzel Decorative", cursive;
     }
-    &__box-three {
-      background: #1c2031;
+  }
+  // ........
+  &__box-three {
+    background: #1c2031;
+
+    @include LARGE-DEVICE-WIDTH {
+      background: #c5c1b96b;
+    }
+    img {
+      @include LARGE-DEVICE-WIDTH {
+        width: 60%;
+      }
     }
   }
-
   // ......
   &__box-four,
   &__box-five,
@@ -420,7 +435,10 @@
       url(../img/polygon.png) center bottom;
     background-position: center;
     background-size: contain;
-    a {
+    @include LARGE-DEVICE-WIDTH {
+      justify-content: center;
+    }
+    .box-link {
       padding: 0.6rem;
       color: #0e1213;
       box-shadow: 2px 4px 14px #e8d1bda1;
@@ -428,6 +446,9 @@
       border: 1px solid #ffffff;
       border-radius: 3px;
       width: 100%;
+      @include LARGE-DEVICE-WIDTH {
+        width: 70%;
+      }
     }
 
     h2 {
@@ -439,14 +460,30 @@
       font-family: "Cinzel Decorative";
       font-weight: bold;
       text-align: left;
+      @include MEDIUM-DEVICE-WIDTH {
+        font-size: 2.2rem;
+      }
+      @include LARGE-DEVICE-WIDTH {
+        font-size: 2.5rem;
+        width: 38%;
+        margin-top: 1rem;
+      }
     }
-    .external-link{
+    .external-link {
       width: 100%;
       font-size: 1.5rem;
       font-family: "Seaweed Script", cursive;
 
       @include SMALL-LANDSCAPE {
         width: 50%;
+      }
+      @include MEDIUM-DEVICE-WIDTH {
+        width: 51%;
+      }
+      @include LARGE-DEVICE-WIDTH {
+        width: 32%;
+        font-size: 2rem;
+        margin-top: 1rem;
       }
     }
     a:hover &:active {
