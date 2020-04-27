@@ -198,6 +198,8 @@
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
+      background: linear-gradient(to right, #f3f5e2, #fffffffa 100px);
+
       @include SMALL-LANDSCAPE {
         flex-direction: row;
         padding-top: 63px;
@@ -335,16 +337,16 @@
     text-align: center;
     padding: 0;
     @include SMALL-LANDSCAPE {
-      font-size: 1.5rem;
-      color: #1e211c;
+      font-size: 1.35rem;
+      color: #907544;
       font-weight: bold;
     }
     @include MEDIUM-DEVICE-WIDTH {
       font-size: 3.2em;
-      color: black;
+      color:#907544;
     }
     @include LARGE-DEVICE-WIDTH {
-      font-size: 2.5em;
+      font-size: 2.15em;
       line-height: 2.96rem;
       letter-spacing: 0.05rem;
     }
@@ -397,18 +399,18 @@
       color: #ccb085;
       @include SMALL-LANDSCAPE {
         font-size: 1.31em;
-        color: #1e211c;
+        color: #907544;
         font-weight: bold;
       }
       @include MEDIUM-DEVICE-WIDTH {
         font-size: 2.2rem;
-        color: black;
+        color:#907544;
         margin: 0;
         font-weight: normal;
       }
       @include LARGE-DEVICE-WIDTH {
         font-size: 1.6em;
-        color: #965e18;
+        color: #907544;
         font-weight: normal;
       }
     }

@@ -452,7 +452,8 @@ a {
       background: repeating-linear-gradient(45deg, #f5e3c96b, #fff1de5e 100px), url(../img/polygon.png) center bottom;
       background-position: center;
       background-size: cover;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      background: linear-gradient(to right, #f3f5e2, #fffffffa 100px); }
       @media only screen and (device-width: 1em), screen and (orientation: landscape) {
         .nav .menu-nav.open {
           -webkit-box-orient: horizontal;
@@ -591,16 +592,16 @@ a {
     padding: 0; }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .nav .my_name {
-        font-size: 1.5rem;
-        color: #1e211c;
+        font-size: 1.35rem;
+        color: #907544;
         font-weight: bold; } }
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .nav .my_name {
         font-size: 3.2em;
-        color: black; } }
+        color: #907544; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .nav .my_name {
-        font-size: 2.5em;
+        font-size: 2.15em;
         line-height: 2.96rem;
         letter-spacing: 0.05rem; } }
   .nav .svg-container {
@@ -652,18 +653,18 @@ a {
       @media only screen and (device-width: 1em), screen and (orientation: landscape) {
         .nav .title_txt_container .title_text {
           font-size: 1.31em;
-          color: #1e211c;
+          color: #907544;
           font-weight: bold; } }
       @media only screen and (min-width: 481px) and (orientation: portrait) {
         .nav .title_txt_container .title_text {
           font-size: 2.2rem;
-          color: black;
+          color: #907544;
           margin: 0;
           font-weight: normal; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .nav .title_txt_container .title_text {
           font-size: 1.6em;
-          color: #965e18;
+          color: #907544;
           font-weight: normal; } }
   .nav #leters {
     animation: yellow_ring 4.5s infinite linear alternate-reverse;
@@ -726,7 +727,6 @@ a {
 .about {
   padding-bottom: 0rem;
   padding-top: 2.2rem;
-  border: 4px solid rgba(188, 34, 65, 0.1);
   background: repeating-linear-gradient(45deg, #e2dbdb00, #8bc6ca59 100px), url(../img/polygon.png) center center;
   background-size: cover;
   background-position: left; }
