@@ -600,19 +600,19 @@ footer {
 
 @-webkit-keyframes breadCrumb {
   from {
-    -webkit-transform: rotateZ(-6deg);
-            transform: rotateZ(-6deg); }
+    -webkit-transform: rotateZ(-4deg);
+            transform: rotateZ(-4deg); }
   to {
-    -webkit-transform: rotateZ(6deg);
-            transform: rotateZ(6deg); } }
+    -webkit-transform: rotateZ(4deg);
+            transform: rotateZ(4deg); } }
 
 @keyframes breadCrumb {
   from {
-    -webkit-transform: rotateZ(-6deg);
-            transform: rotateZ(-6deg); }
+    -webkit-transform: rotateZ(-4deg);
+            transform: rotateZ(-4deg); }
   to {
-    -webkit-transform: rotateZ(6deg);
-            transform: rotateZ(6deg); } }
+    -webkit-transform: rotateZ(4deg);
+            transform: rotateZ(4deg); } }
 
 .menu-btn {
   position: fixed;
@@ -1998,18 +1998,23 @@ footer {
   width: 31%;
   z-index: 99999699999;
   position: fixed;
-  left: 8rem; }
+  left: 8rem;
+  top: -1rem; }
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     #project-index {
-      margin-top: -3.5rem; } }
+      margin-top: -2rem;
+      font-size: 0.88rem; } }
   @media only screen and (min-width: 481px) and (orientation: portrait) {
     #project-index {
       left: 16rem;
-      top: -1.8rem; } }
+      top: -2rem; } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     #project-index {
-      top: -5rem;
+      top: -4.2rem;
       left: 18rem; } }
+  @media only screen and (min-width: 1025px) and (orientation: landscape) {
+    #project-index #ps, #project-index #pt {
+      font-size: 1.4rem; } }
 
 .social-icons {
   position: relative;
