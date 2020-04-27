@@ -90,7 +90,7 @@ a {
       .home__box-one {
         padding-top: 11rem; } }
     .home__box-one h1 {
-      color: #af8045;
+      color: #caa45f;
       font-size: 2rem;
       line-height: 2.45rem;
       padding-bottom: 0;
@@ -184,7 +184,7 @@ a {
       font-size: 1.5rem;
       width: 50%;
       padding: 1rem;
-      color: #ff5200;
+      color: #caa45f;
       text-shadow: none;
       font-family: "Roboto", sans-serif;
       font-weight: bold;
@@ -349,10 +349,10 @@ a {
   z-index: 99999699999;
   position: fixed;
   left: 8rem;
-  top: -1rem; }
+  margin-top: -3.5rem; }
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .menu-index #project-index {
-      margin-top: -2rem;
+      margin-top: -3rem;
       font-size: 0.88rem; } }
   @media only screen and (min-width: 481px) and (orientation: portrait) {
     .menu-index #project-index {
@@ -447,11 +447,6 @@ a {
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: #e1e4e6;
-      background: repeating-linear-gradient(45deg, #f5e3c96b, #fff1de5e 100px), url(../img/polygon.png) center bottom;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
       background: linear-gradient(to right, #f3f5e2, #fffffffa 100px); }
       @media only screen and (device-width: 1em), screen and (orientation: landscape) {
         .nav .menu-nav.open {
@@ -465,7 +460,7 @@ a {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          width: 70%;
+          width: 83%;
           -ms-flex-wrap: nowrap;
               flex-wrap: nowrap;
           -webkit-box-pack: center;
@@ -1174,7 +1169,11 @@ a {
         width: 92%; } }
     .projects__item1 h3, .projects__item2 h3, .projects__item3 h3, .projects__item4 h3 {
       font-family: "Roboto";
-      font-size: 1.4rem; }
+      font-size: 1.4rem;
+      font-weight: normal; }
+      @media only screen and (min-width: 1025px) and (orientation: landscape) {
+        .projects__item1 h3, .projects__item2 h3, .projects__item3 h3, .projects__item4 h3 {
+          font-size: 1rem; } }
     .projects__item1 .project__title, .projects__item2 .project__title, .projects__item3 .project__title, .projects__item4 .project__title {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1262,9 +1261,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #93a7a9;
   width: 100%;
-  background: repeating-linear-gradient(45deg, #ffe48e4d, #c7bc9247 100px), url(../img/hillside.jpg) center bottom;
+  margin-top: 3rem;
+  background: repeating-linear-gradient(45deg, #000000d1, #27251ef5 100px), url(../img/hillside.jpg) center bottom;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -1305,21 +1304,22 @@ a {
       .contact .img-box {
         width: 50%; } }
     .contact .img-box img {
-      width: 43%;
-      height: 100%; }
+      width: 61%; }
       @media only screen and (device-width: 1em), screen and (orientation: landscape) {
         .contact .img-box img {
           width: 84%; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .contact .img-box img {
           width: 60%; } }
-  @media only screen and (device-width: 1em), screen and (orientation: landscape) {
-    .contact .grid-container {
-      width: 50%;
-      padding: 2px; } }
-  @media only screen and (min-width: 481px) and (orientation: portrait) {
-    .contact .grid-container {
-      padding: 0; } }
+  .contact .grid-container {
+    padding-left: 2rem; }
+    @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+      .contact .grid-container {
+        width: 50%;
+        padding: 2px; } }
+    @media only screen and (min-width: 481px) and (orientation: portrait) {
+      .contact .grid-container {
+        padding: 0; } }
   .contact .social-icons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1338,10 +1338,11 @@ a {
         -webkit-box-pack: end;
             -ms-flex-pack: end;
                 justify-content: flex-end;
-        -webkit-box-align: end;
-            -ms-flex-align: end;
-                align-items: flex-end;
-        color: transparent; } }
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        color: transparent;
+        margin-left: 1rem; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .contact .social-icons {
         width: 100%;
@@ -1352,15 +1353,14 @@ a {
         height: 8%;
         z-index: 0; } }
     .contact .social-icons i {
-      color: #808681;
-      font-size: 1rem; }
+      color: #c5cac6;
+      font-size: 1.4rem; }
   .contact__list {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1.26rem;
     font-size: 1.35rem;
-    padding: 2rem;
-    background: #3c391bc9; }
+    padding: 2rem; }
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .contact__list {
         grid-template-columns: repeat(1, 1fr);
@@ -1470,7 +1470,7 @@ a {
   max-width: 760px;
   margin: auto;
   overflow: scroll;
-  border: 4px solid rgba(188, 34, 65, 0.1);
+  border: 4px solid #e6e0e0;
   -webkit-box-shadow: 0px 10px 5px #aab7bd, 0px -10px 5px #b5c6ce;
           box-shadow: 0px 10px 5px #aab7bd, 0px -10px 5px #b5c6ce;
   background: #f0ecec; }
@@ -1560,7 +1560,6 @@ a {
   -webkit-animation: fadeIn var(--fade-time) ease-in 1 forwards;
           animation: fadeIn var(--fade-time) ease-in 1 forwards; }
 
-/* Media Queries */
 /*-----X------ partials imports ------X-----*/
 /*----------- @Mixins -----------*/
 /*----------- Light & Dark Theme -----------*/
@@ -1712,7 +1711,8 @@ footer {
 .social-icons {
   position: relative;
   width: 100%;
-  background: #f9f3f3; }
+  background: #f9f3f3;
+  z-index: 0; }
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .social-icons {
       position: fixed;
