@@ -359,7 +359,7 @@
     transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear,
       -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
     @include SMALL-LANDSCAPE {
-      width: 41%;
+      width: 37%;
     }
     @include MEDIUM-DEVICE-WIDTH {
       width: 80%;
