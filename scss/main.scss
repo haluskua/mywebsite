@@ -161,32 +161,7 @@ footer {
   color: #b9ae98;
 }
 
-#project-index {
-  height: auto;
-  width: 31%;
-  z-index: 99999699999;
-  position: fixed;
-  left: 8rem;
-  top: -1rem;
-  @include SMALL-LANDSCAPE {
-    margin-top: -2rem;
-    font-size: 0.88rem;
-  }
-  @include MEDIUM-DEVICE-WIDTH {
-    left: 16rem;
-    top: -2rem;
-  }
-  @include LARGE-DEVICE-WIDTH {
-    top: -4.2rem;
-    left: 18rem;
-    
-  }
-  #ps, #pt {
-    @include LARGE-DEVICE-WIDTH {
-      font-size: 1.4rem;
-    }
-  }
-}
+
 
 //social icons links
 .social-icons {

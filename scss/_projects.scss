@@ -1,5 +1,4 @@
-
-
+// ........
 
 .projects {
   display: flex;
@@ -33,7 +32,7 @@
   }
   @include LARGE-DEVICE-WIDTH {
     padding-bottom: 2rem;
-    background: linear-gradient(to right, #f3f5e2, #fffffffa 100px)
+    background: linear-gradient(to right, #f3f5e2, #fffffffa 100px);
   }
   .block {
     padding: 0.5rem;
