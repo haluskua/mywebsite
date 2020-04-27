@@ -398,7 +398,11 @@ a {
         -ms-flex-align: center;
             align-items: center;
     padding-top: 7.5rem;
-    width: 100%; }
+    width: 100%;
+    background: repeating-linear-gradient(45deg, #f5e3c900, #ffd8a200 100px), url(../img/heart_dynamic.png) center bottom;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
     .home__box-one h1 {
       color: #2d1f09;
       font-size: 2.2rem;
@@ -446,11 +450,12 @@ a {
             align-items: flex-start;
     padding: 8px;
     padding-left: 1rem;
-    width: 100%; }
+    width: 100%;
+    background: white; }
     .home__box-two h3 {
-      font-size: 1.2rem;
+      font-size: 1rem;
       line-height: 1.24em;
-      font-weight: normal;
+      font-weight: bold;
       color: #ff5200;
       font-family: "Roboto", "Montserrat", cursive;
       text-transform: uppercase; }
@@ -948,7 +953,7 @@ footer {
         height: 68vh; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .nav .svg-container {
-        width: 83%; } }
+        width: 65%; } }
     .nav .svg-container svg {
       width: 100%;
       height: 100%; }
@@ -1042,7 +1047,14 @@ footer {
     .about {
       padding: 0 20%;
       background-size: contain;
-      background-repeat: repeat; } }
+      background-repeat: repeat;
+      background: linear-gradient(to right, #f3f5e2, #fffffffa 100px); } }
+  @media only screen and (min-width: 481px) and (orientation: portrait) {
+    .about {
+      background: linear-gradient(to right, #f3f5e2, #fffffffa 100px); } }
+  @media only screen and (min-width: 1025px) and (orientation: landscape) {
+    .about {
+      background: linear-gradient(to right, #f3f5e2, #fffffffa 100px); } }
   .about .breadCrumbs {
     position: absolute;
     top: 3%;
@@ -1070,18 +1082,20 @@ footer {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    -webkit-box-shadow: #3b3c3033 6px 6px 8px, #3f403408 -1px -1px 2px;
-            box-shadow: #3b3c3033 6px 6px 8px, #3f403408 -1px -1px 2px;
+    -webkit-box-shadow: #b3b5a333 6px 6px 8px, #c6c7b208 -1px -1px 2px;
+            box-shadow: #b3b5a333 6px 6px 8px, #c6c7b208 -1px -1px 2px;
     background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px), url(../img/project-1.jpg) center bottom;
     background-size: cover; }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .about__bio-image {
-        margin-top: 3rem; } }
+        margin-top: 3rem;
+        background: none; } }
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .about__bio-image {
         height: 100%;
         background-size: cover;
-        padding: 4% 6%; } }
+        padding: 4% 6%;
+        background: none; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .about__bio-image {
         height: auto;
@@ -1090,7 +1104,9 @@ footer {
             -ms-flex-flow: row;
                 flex-flow: row;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap; } }
+            flex-wrap: wrap;
+        background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px), url(../img/project-1.jpg) center bottom;
+        background-size: cover; } }
     .about__bio-image .text-secondary {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1135,7 +1151,6 @@ footer {
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .about .img-container {
         border: none;
-        width: 40%;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -1244,7 +1259,7 @@ footer {
       .about .jobs {
         width: 100%; } }
     .about .jobs__bio-image {
-      background: repeating-linear-gradient(45deg, #e2dbdb30, #fff0f512 100px), url(../img/pan_portrait-min.png) center bottom;
+      background: repeating-linear-gradient(45deg, #988c6d, #75747512 100px), url(../img/pan_portrait-min.png) center bottom;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -1266,8 +1281,8 @@ footer {
               align-items: flex-start;
       padding: 11px 14px;
       border-bottom: 0.5px solid #d8ccad;
-      -webkit-box-shadow: 1px 11px 7px rgba(162, 158, 142, 0), -25px 10px 9px rgba(152, 152, 129, 0.14);
-              box-shadow: 1px 11px 7px rgba(162, 158, 142, 0), -25px 10px 9px rgba(152, 152, 129, 0.14);
+      -webkit-box-shadow: 1px 11px 7px rgba(218, 215, 206, 0), -25px 10px 9px rgba(224, 224, 213, 0.14);
+              box-shadow: 1px 11px 7px rgba(218, 215, 206, 0), -25px 10px 9px rgba(224, 224, 213, 0.14);
       background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffffff));
       background: linear-gradient(to right, #ffffff, #ffffff); }
       @media only screen and (min-width: 481px) and (orientation: portrait) {
@@ -1341,14 +1356,22 @@ footer {
       padding: 1rem 12% 0 12%;
       padding: 50px 20%;
       background-size: contain;
-      background-repeat: repeat; } }
+      background-repeat: repeat;
+      background: linear-gradient(to right, #f3f5e2, #fffffffa 100px); } }
   @media only screen and (min-width: 481px) and (orientation: portrait) {
     .projects {
       padding-bottom: 0;
-      height: 100vh; } }
+      height: 100vh;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      background: linear-gradient(to right, #f3f5e2, #fffffffa 100px);
+      padding: 4% 6%;
+      padding-top: 6rem; } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .projects {
-      padding-bottom: 2rem; } }
+      padding-bottom: 2rem;
+      background: linear-gradient(to right, #f3f5e2, #fffffffa 100px); } }
   .projects .block {
     padding: 0.5rem;
     padding-top: 13px; }
@@ -1420,8 +1443,7 @@ footer {
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .projects__items {
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1rem;
-        height: 100%; } }
+        grid-gap: 1rem; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .projects__items {
         grid-template-columns: repeat(3, 1fr);
@@ -1977,26 +1999,17 @@ footer {
   z-index: 99999699999;
   position: fixed;
   left: 8rem; }
+  @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+    #project-index {
+      margin-top: -3.5rem; } }
   @media only screen and (min-width: 481px) and (orientation: portrait) {
     #project-index {
-      left: 34rem; } }
+      left: 16rem;
+      top: -1.8rem; } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     #project-index {
-      left: 15%;
-      width: 9%; } }
-
-@media only screen and (device-width: 1em), screen and (orientation: landscape) {
-  #project-index {
-    margin-top: -1rem; } }
-
-@media only screen and (min-width: 481px) and (orientation: portrait) {
-  #project-index {
-    left: 28rem;
-    top: -2rem; } }
-
-@media only screen and (min-width: 1025px) and (orientation: landscape) {
-  #project-index {
-    margin: 0; } }
+      top: -5rem;
+      left: 18rem; } }
 
 .social-icons {
   position: relative;

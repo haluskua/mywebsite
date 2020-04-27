@@ -4,6 +4,7 @@
   animation: breadCrumb 8s infinite linear alternate;
   transform-origin: center;
   transform-box: fill-box;
+
 }
 
 @keyframes breadCrumb {
@@ -342,7 +343,7 @@
     }
 
     @include LARGE-DEVICE-WIDTH {
-      width: 83%;
+      width: 65%;
     }
 
     svg {
