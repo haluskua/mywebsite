@@ -159,6 +159,9 @@ footer {
     flex-direction: row;
     // padding: 1rem 10rem;
   }
+  @include LARGE-DEVICE-WIDTH {
+    padding: 1rem 10rem;
+  }
 
   h2 {
     font-family: "Cinzel Decorative", cursive;
@@ -176,7 +179,7 @@ footer {
       text-align: left;
     }
     @include LARGE-DEVICE-WIDTH {
-      font-size: 1.65rem;
+      font-size: 1.3rem;
       padding: 0.5rem;
     }
   }
@@ -186,7 +189,10 @@ footer {
     margin: 0.04rem;
     padding: 0.28rem !important;
     @include SMALL-LANDSCAPE {
-      text-align: left;
+      text-align: center;
+    }
+    @include MEDIUM-DEVICE-WIDTH {
+      text-align: center;
     }
   }
 }
@@ -196,25 +202,29 @@ footer {
 .social-icons {
   position: relative;
   width: 100%;
-  background: #f9f3f3;
   z-index: 0;
+  background: #f9f3f300;
   @include SMALL-LANDSCAPE {
     position: fixed;
     flex-direction: column;
     bottom: 5rem;
     left: 1rem;
     width: auto;
+    background: #f9f3f300;
   }
   @include MEDIUM-DEVICE-WIDTH {
     display: flex;
     flex-direction: row;
     width: 100%;
     padding: 1em 0.5em;
+    background: #f9f3f300;
   }
   @include LARGE-DEVICE-WIDTH {
     z-index: 0;
     height: 50%;
     bottom: 13rem;
+    background: #f9f3f300;
+
   }
 }
 
