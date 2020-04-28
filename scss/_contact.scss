@@ -6,12 +6,7 @@
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  margin-top: 3rem;
-  background: repeating-linear-gradient(45deg, #000000d1, #27251ef5 100px),
-    url(../img/hillside.jpg) center bottom;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: #f2f3eb;
   @include SMALL-LANDSCAPE {
     display: flex;
     flex-wrap: wrap;
@@ -61,33 +56,6 @@
     }
   }
 
-  // ........
-  .social-icons {
-    display: flex;
-    align-items: center;
-    @include SMALL-LANDSCAPE {
-      width: 100%;
-      background: none;
-      position: fixed;
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-start;
-      color: transparent;
-      margin-left: 1rem;
-    }
-    @include LARGE-DEVICE-WIDTH {
-      width: 100%;
-      background: none;
-      justify-content: flex-end;
-      height: 8%;
-      z-index: 0;
-    }
-    i {
-      color: #c5cac6;
-      font-size: 1.4rem;
-    }
-  }
-
   // ......
 
   &__list {
@@ -107,7 +75,7 @@
   .contact__cv {
     font-size: 1.13rem;
     font-family: "Roboto", "Montserrat", cursive;
-    color: #ffffff;
+    color: #9c802c;
     width: 100vw;
     text-align: left;
     letter-spacing: 0.04em;
@@ -122,20 +90,19 @@
       text-align: center;
     }
     .fa-download {
-      color: #eaa458 !important;
+      color: #9c802c !important;
     }
   }
   // .....
   .download {
     cursor: pointer;
-    color: #8fdcd5;
+    color: #000000;
     z-index: 999;
     font-family: "Roboto", "Montserrat", cursive;
   }
 
   .text-secondary {
-    color: #2c7384;
-    color: #cfff82;
+    color: #000000;
     margin: 3px 0;
     font-size: 0.9rem;
     margin-top: 8px;

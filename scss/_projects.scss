@@ -126,8 +126,8 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    background: #ffffff;
-    box-shadow: #3b3c3033 6px 6px 8px, #3f403408 -1px -1px 2px;
+    background: #f2f3eb;
+    box-shadow: #999a8e33 6px 6px 8px, #3f403408 -1px -1px 2px;
     z-index: 3;
     @include MEDIUM-DEVICE-WIDTH {
       display: flex;

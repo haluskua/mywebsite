@@ -101,7 +101,7 @@
 .menu-index {
   @include SMALL-LANDSCAPE {
     width: 25%;
-    margin-top: -1rem;
+    margin-top: -3rem;
   }
   #project-index {
     height: auto;
@@ -109,7 +109,6 @@
     z-index: 99999699999;
     position: fixed;
     left: 8rem;
-    margin-top: -3.5rem;
     @include SMALL-LANDSCAPE {
       margin-top: -3rem;
       font-size: 0.88rem;
@@ -127,7 +126,7 @@
   #pt {
     font-size: 45px;
     @include SMALL-LANDSCAPE {
-      font-size: 40px;
+      font-size: 32px;
     }
     @include LARGE-DEVICE-WIDTH {
       font-size: 1.4rem;
@@ -144,14 +143,13 @@
   // background: repeating-linear-gradient(45deg, #e2dbdb, #f3f4ea 100px);
   // box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127),
   //   0px -3px 1px rgba(99, 11, 6, 0.244);
-  background: #ffffff;
+  background: #fafaf8;
   @include MEDIUM-DEVICE-WIDTH {
     height: 65px;
-    background: repeating-linear-gradient(45deg, #e2dbdb, #f3f4ea 100px);
     box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127),
       0px -3px 1px rgba(99, 11, 6, 0.244);
 
-    background: #e2dbdb;
+    background: #fafaf8;
   }
 
   &.open {
@@ -185,17 +183,18 @@
       transform: translateY(0);
       align-items: flex-end;
       justify-content: space-around;
-      border: 4px solid #f3e2d2;
+      border: 4px solid #f2f3eb;
       flex-direction: column-reverse;
       align-items: center;
       padding: 36px;
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: linear-gradient(to right, #f3f5e2, #fffffffa 100px);
+      background: #fafbf5;
       @include SMALL-LANDSCAPE {
         flex-direction: row;
         padding-top: 63px;
+        background: #fafbf5;
       }
       @include MEDIUM-DEVICE-WIDTH {
         display: flex;
