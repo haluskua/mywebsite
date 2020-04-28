@@ -140,15 +140,11 @@
   z-index: 4;
   width: 100vw;
   height: 48px;
-  // background: repeating-linear-gradient(45deg, #e2dbdb, #f3f4ea 100px);
-  // box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127),
-  //   0px -3px 1px rgba(99, 11, 6, 0.244);
   background: #fafaf8;
+  box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127),
+  0px -3px 1px rgba(99, 11, 6, 0.244);
   @include MEDIUM-DEVICE-WIDTH {
     height: 65px;
-    box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127),
-      0px -3px 1px rgba(99, 11, 6, 0.244);
-
     background: #fafaf8;
   }
 

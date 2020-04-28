@@ -375,12 +375,12 @@ a {
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background: #fafaf8; }
+  background: #fafaf8;
+  -webkit-box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127), 0px -3px 1px rgba(99, 11, 6, 0.244);
+          box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127), 0px -3px 1px rgba(99, 11, 6, 0.244); }
   @media only screen and (min-width: 481px) and (orientation: portrait) {
     .nav {
       height: 65px;
-      -webkit-box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127), 0px -3px 1px rgba(99, 11, 6, 0.244);
-              box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127), 0px -3px 1px rgba(99, 11, 6, 0.244);
       background: #fafaf8; } }
   .nav.open {
     visibility: visible;
@@ -1222,7 +1222,6 @@ a {
     width: 100%; }
 
 .contact {
-  height: 100vh;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
