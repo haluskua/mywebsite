@@ -52,20 +52,16 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: repeating-linear-gradient(45deg, #f5e3c96b, #ffd8a25e 100px), url(../img/polygon.png) center bottom;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   overflow: auto;
   padding-bottom: 0; }
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .home {
       padding: 0 8%;
-      background: linear-gradient(to right, #f3f5e2, #fffffffa 100px); } }
+      background: #fafbf5; } }
   @media only screen and (min-width: 481px) and (orientation: portrait) {
     .home {
       padding: 0 9%;
-      background: linear-gradient(to right, #f3f5e2, #fffffffa 100px); } }
+      background: #fafbf5; } }
   .home__box-one {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -82,7 +78,7 @@ a {
             align-items: flex-start;
     padding-top: 7.5rem;
     width: 100%;
-    background: repeating-linear-gradient(45deg, #f5e3c900, #ffd8a200 100px), url(../img/heart_dynamic.png) center bottom;
+    background: repeating-linear-gradient(45deg, #fafbf573, #f6f4f4ba 100px), url(../img/heart_dynamic.png) center bottom;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
@@ -128,6 +124,7 @@ a {
       line-height: 1.24em;
       text-align: left;
       padding: 0.6rem;
+      font-weight: normal;
       color: #caa45f;
       font-family: "Roboto", "Montserrat", cursive;
       text-transform: uppercase; }
@@ -137,20 +134,18 @@ a {
       font-size: 0.9rem;
       text-transform: lowercase;
       font-family: "Cinzel Decorative", cursive; }
-  .home__box-three {
-    background: #1c2031; }
-    @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .home__box-three {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        background: none;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center; } }
-    @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .home__box-three img {
-        width: 60%; } }
+  @media only screen and (min-width: 1025px) and (orientation: landscape) {
+    .home__box-three {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      background: none;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  @media only screen and (min-width: 1025px) and (orientation: landscape) {
+    .home__box-three img {
+      width: 60%; } }
   .home__box-four, .home__box-five {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -341,15 +336,14 @@ a {
 @media only screen and (device-width: 1em), screen and (orientation: landscape) {
   .menu-index {
     width: 25%;
-    margin-top: -1rem; } }
+    margin-top: -3rem; } }
 
 .menu-index #project-index {
   height: auto;
   width: 31%;
   z-index: 99999699999;
   position: fixed;
-  left: 8rem;
-  margin-top: -3.5rem; }
+  left: 8rem; }
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .menu-index #project-index {
       margin-top: -3rem;
@@ -369,7 +363,7 @@ a {
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .menu-index #ps,
     .menu-index #pt {
-      font-size: 40px; } }
+      font-size: 32px; } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .menu-index #ps,
     .menu-index #pt {
@@ -381,14 +375,13 @@ a {
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background: #ffffff; }
+  background: #fafaf8; }
   @media only screen and (min-width: 481px) and (orientation: portrait) {
     .nav {
       height: 65px;
-      background: repeating-linear-gradient(45deg, #e2dbdb, #f3f4ea 100px);
       -webkit-box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127), 0px -3px 1px rgba(99, 11, 6, 0.244);
               box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127), 0px -3px 1px rgba(99, 11, 6, 0.244);
-      background: #e2dbdb; } }
+      background: #fafaf8; } }
   .nav.open {
     visibility: visible;
     padding: 0px; }
@@ -435,7 +428,7 @@ a {
               align-items: flex-end;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-      border: 4px solid #f3e2d2;
+      border: 4px solid #f2f3eb;
       -webkit-box-orient: vertical;
       -webkit-box-direction: reverse;
           -ms-flex-direction: column-reverse;
@@ -447,14 +440,15 @@ a {
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: linear-gradient(to right, #f3f5e2, #fffffffa 100px); }
+      background: #fafbf5; }
       @media only screen and (device-width: 1em), screen and (orientation: landscape) {
         .nav .menu-nav.open {
           -webkit-box-orient: horizontal;
           -webkit-box-direction: normal;
               -ms-flex-direction: row;
                   flex-direction: row;
-          padding-top: 63px; } }
+          padding-top: 63px;
+          background: #fafbf5; } }
       @media only screen and (min-width: 481px) and (orientation: portrait) {
         .nav .menu-nav.open {
           display: -webkit-box;
@@ -721,18 +715,16 @@ a {
 .about {
   padding-bottom: 0rem;
   padding-top: 2.2rem;
-  background: repeating-linear-gradient(45deg, #e2dbdb00, #8bc6ca59 100px), url(../img/polygon.png) center center;
-  background-size: cover;
-  background-position: left; }
+  background: #f2f3eb; }
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .about {
       padding: 0 20%;
       background-size: contain;
       background-repeat: repeat;
-      background: linear-gradient(to right, #f3f5e2, #fffffffa 100px); } }
+      background: linear-gradient(to right, #fdfdfd, #fffffffa 100px); } }
   @media only screen and (min-width: 481px) and (orientation: portrait) {
     .about {
-      background: linear-gradient(to right, #f3f5e2, #fffffffa 100px); } }
+      background: linear-gradient(to right, #fdfdfd, #fffffffa 100px); } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .about {
       background: linear-gradient(to right, #f3f5e2, #fffffffa 100px); } }
@@ -762,11 +754,7 @@ a {
             align-items: center;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-shadow: #b3b5a333 6px 6px 8px, #c6c7b208 -1px -1px 2px;
-            box-shadow: #b3b5a333 6px 6px 8px, #c6c7b208 -1px -1px 2px;
-    background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px), url(../img/project-1.jpg) center bottom;
-    background-size: cover; }
+            justify-content: flex-end; }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .about__bio-image {
         margin-top: 3rem;
@@ -845,16 +833,12 @@ a {
     width: 100%;
     padding: 3%;
     text-align: center;
-    background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffffff)), url(../img/rooster-b-w.jpg) center center;
-    background: linear-gradient(to right, #ffffff, #ffffff), url(../img/rooster-b-w.jpg) center center;
-    background-size: cover; }
+    background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffffff));
+    background: linear-gradient(to right, #ffffff, #ffffff); }
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .about__bio {
         font-size: 1.5rem;
         width: 100%; } }
-    @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .about__bio {
-        width: 60%; } }
     .about__bio .main-title {
       color: #3e0d18;
       display: none; }
@@ -940,10 +924,7 @@ a {
       .about .jobs {
         width: 100%; } }
     .about .jobs__bio-image {
-      background: repeating-linear-gradient(45deg, #988c6d, #75747512 100px), url(../img/pan_portrait-min.png) center bottom;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
+      background: #f2f3eb;
       height: 100%;
       width: auto; }
       .about .jobs__bio-image img {
@@ -1144,9 +1125,9 @@ a {
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    background: #ffffff;
-    -webkit-box-shadow: #3b3c3033 6px 6px 8px, #3f403408 -1px -1px 2px;
-            box-shadow: #3b3c3033 6px 6px 8px, #3f403408 -1px -1px 2px;
+    background: #f2f3eb;
+    -webkit-box-shadow: #999a8e33 6px 6px 8px, #3f403408 -1px -1px 2px;
+            box-shadow: #999a8e33 6px 6px 8px, #3f403408 -1px -1px 2px;
     z-index: 3; }
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .projects__item1, .projects__item2, .projects__item3, .projects__item4 {
@@ -1257,11 +1238,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  margin-top: 3rem;
-  background: repeating-linear-gradient(45deg, #000000d1, #27251ef5 100px), url(../img/hillside.jpg) center bottom;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background: #f2f3eb; }
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .contact {
       display: -webkit-box;
@@ -1315,41 +1292,6 @@ a {
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .contact .grid-container {
         padding: 0; } }
-  .contact .social-icons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    @media only screen and (device-width: 1em), screen and (orientation: landscape) {
-      .contact .social-icons {
-        width: 100%;
-        background: none;
-        position: fixed;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end;
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
-        color: transparent;
-        margin-left: 1rem; } }
-    @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .contact .social-icons {
-        width: 100%;
-        background: none;
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end;
-        height: 8%;
-        z-index: 0; } }
-    .contact .social-icons i {
-      color: #c5cac6;
-      font-size: 1.4rem; }
   .contact__list {
     display: grid;
     grid-template-columns: 1fr;
@@ -1366,7 +1308,7 @@ a {
   .contact .contact__cv {
     font-size: 1.13rem;
     font-family: "Roboto", "Montserrat", cursive;
-    color: #ffffff;
+    color: #9c802c;
     width: 100vw;
     text-align: left;
     letter-spacing: 0.04em;
@@ -1390,15 +1332,14 @@ a {
     .contact .contact__phone .fa-download,
     .contact .contact__address .fa-download,
     .contact .contact__cv .fa-download {
-      color: #eaa458 !important; }
+      color: #9c802c !important; }
   .contact .download {
     cursor: pointer;
-    color: #8fdcd5;
+    color: #000000;
     z-index: 999;
     font-family: "Roboto", "Montserrat", cursive; }
   .contact .text-secondary {
-    color: #2c7384;
-    color: #cfff82;
+    color: #000000;
     margin: 3px 0;
     font-size: 0.9rem;
     margin-top: 8px; }
@@ -1417,21 +1358,20 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: repeating-linear-gradient(45deg, #e2dbdb, #f3f4ea 100px);
-  background: linear-gradient(to right, #f3f5e2, #fffffffa 100px);
-  background: #95bdad; }
+  background: #f5f5f3; }
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .main-container {
       -webkit-box-shadow: none;
               box-shadow: none;
       padding: 1rem 12% 0 12%;
       border: none;
-      background: linear-gradient(to right, #f3f5e2, #fffffffa 100px); } }
+      background: linear-gradient(to right, #f3f5e2, #fffffffa 100px);
+      background: #f5f5f3; } }
   @media only screen and (min-width: 481px) and (orientation: portrait) {
     .main-container {
       height: auto;
       margin-top: 8%;
-      padding: 0 5%; } }
+      padding: 4%; } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .main-container {
       margin: 0 auto;
@@ -1465,10 +1405,8 @@ a {
   max-width: 760px;
   margin: auto;
   overflow: scroll;
-  border: 4px solid #e6e0e0;
-  -webkit-box-shadow: 0px 10px 5px #aab7bd, 0px -10px 5px #b5c6ce;
-          box-shadow: 0px 10px 5px #aab7bd, 0px -10px 5px #b5c6ce;
-  background: #f0ecec; }
+  -webkit-box-shadow: 8px 10px 14px #c1c1c18f, 2px -10px 18px #ececec;
+          box-shadow: 8px 10px 14px #c1c1c18f, 2px -10px 18px #ececec; }
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .container {
       border: none;
@@ -1560,7 +1498,6 @@ a {
 /*----------- Light & Dark Theme -----------*/
 /*----------- @Mixins -----------*/
 body {
-  background: #1b2429;
   color: #ffffff;
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -1655,7 +1592,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #f5f5f5;
+  background: #f2f3eb;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1713,7 +1650,8 @@ footer {
   position: relative;
   width: 100%;
   z-index: 0;
-  background: #f9f3f300; }
+  background: #f9f3f300;
+  background: #f2f3eb; }
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .social-icons {
       position: fixed;
@@ -1741,8 +1679,7 @@ footer {
     .social-icons {
       z-index: 0;
       height: 50%;
-      bottom: 13rem;
-      background: #f9f3f300; } }
+      bottom: 13rem; } }
 
 .main-title {
   font-size: 2rem;
