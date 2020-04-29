@@ -6,6 +6,21 @@ $secondary-color: #e97442;
   margin: 0;
   padding: 0;
 }
+
+// hiding-scroll bar on overfow
+// ......
+* {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+/* Hide scrollbar for IE and Edge */
+* {
+  -ms-overflow-style: none;
+}
+
+// ......................
 a {
   text-decoration: none;
   list-style: none;
@@ -35,10 +50,8 @@ a {
   }
 }
 
-// @mixin phone-landscape
-//   @media only (device-width: 1em), screen and (orientation: landscape)
-//     @content
-
+// MEDIA QUERIES
+// ...................
 @mixin SMALL-LANDSCAPE {
   @media only screen and (device-width: 1em),
     screen and (orientation: landscape) {
@@ -50,12 +63,7 @@ a {
     @content;
   }
 }
-// @mixin MEDIUM-LANDSCAPE {
-//   @media only screen and (min-width: 667px),
-//     screen and (orientation: landscape) {
-//     @content;
-//   }
-// }
+
 @mixin LARGE-DEVICE-WIDTH {
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     @content;
