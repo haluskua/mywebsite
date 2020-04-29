@@ -115,10 +115,11 @@ header {
 
 // ........
 main {
-  height: auto;
+  height: 100vh;
   width: 100%;
+  overflow: auto;
+  background: #f2f3eb;
   @include MEDIUM-DEVICE-WIDTH {
-    height: auto;
   }
   a {
     @include transition-ease;
@@ -131,6 +132,27 @@ main {
     }
   }
 }
+
+.content-wrapper {
+  height: 100%;
+  padding-top: 10rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  @include SMALL-LANDSCAPE {
+    padding-top: 1rem;
+  
+  }
+  @include MEDIUM-DEVICE-WIDTH {
+    padding-top: 2rem;
+  }
+  @include LARGE-DEVICE-WIDTH {
+    padding: 0 12%;
+    height: auto;
+  }
+}
+
+// ..................
 p {
   color: #4d4d4d;
   padding: 1%;
@@ -172,7 +194,7 @@ footer {
     padding: 0.6rem;
     @include SMALL-LANDSCAPE {
       text-align: left;
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
     @include MEDIUM-DEVICE-WIDTH {
       text-align: left;
@@ -202,28 +224,31 @@ footer {
   position: relative;
   width: 100%;
   z-index: 0;
-  background: #f9f3f300;
   background:#f2f3eb;
-
   @include SMALL-LANDSCAPE {
     position: fixed;
+    left: 0;
     flex-direction: column;
-    bottom: 5rem;
-    left: 1rem;
     width: auto;
-    background: #f9f3f300;
+    bottom: 13%;
   }
   @include MEDIUM-DEVICE-WIDTH {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 1em 0.5em;
-    background: #f9f3f300;
+    position: fixed;
+    left: 0;
+    flex-direction: column;
+    width: auto;
+    bottom: 13%;
   }
   @include LARGE-DEVICE-WIDTH {
-    z-index: 0;
-    height: 50%;
-    bottom: 13rem;
+    left: 1rem;
+    bottom: 10%;
+    background: none;
+  }
+  .fa-2x {
+    font-size: 1.25em;
+    @include SMALL-LANDSCAPE {
+      font-size: 1.15rem;
+    }
   }
 }
 
@@ -242,6 +267,9 @@ footer {
 .fa-2x {
   font-size: 1.23rem;
   padding: 0.2rem 0;
+  @include SMALL-LANDSCAPE {
+    font-size: 1em;
+  }
   @include LARGE-DEVICE-WIDTH {
     font-size: 1.2rem;
   }

@@ -1,276 +1,289 @@
-.about {
-  padding-bottom: 0rem;
-  padding-top: 2.2rem;
-  background: #f2f3eb;
-  @include SMALL-LANDSCAPE {
-    padding: 0 20%;
-    background-size: contain;
-    background-repeat: repeat;
-    background: linear-gradient(to right, #fdfdfd, #fffffffa 100px);
-  }
-  @include MEDIUM-DEVICE-WIDTH {
-    background: linear-gradient(to right, #fdfdfd, #fffffffa 100px);
-  }
-  @include LARGE-DEVICE-WIDTH {
-    background: linear-gradient(to right, #f3f5e2, #fffffffa 100px);
-  }
+.content-wrapper {
+  //styles for .content-wrapper is in the main.scss
 
-  .breadCrumbs {
-    position: absolute;
-    top: 3%;
-    left: 3%;
-    @include MEDIUM-DEVICE-WIDTH {
-      top: 9%;
-    }
-    @include LARGE-DEVICE-WIDTH {
-      top: 15%;
-    }
-  }
-
-  &__bio-image {
-    width: 100%;
-    border-radius: 0.3rem;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+  .about {
+    padding-bottom: 0rem;
+    padding-top: 2rem;
+    background: #f2f3eb;
     @include SMALL-LANDSCAPE {
-      margin-top: 3rem;
-      background: none;
-    }
-    @include MEDIUM-DEVICE-WIDTH {
       height: 100%;
-      background-size: cover;
-      padding: 4% 6%;
-      background: none;
+      overflow: scroll;
+      padding: 28px 20%;
+      background-size: contain;
+      background-repeat: repeat;
+      background: linear-gradient(to right, #fdfdfd, #fffffffa 100px);
+    }
+    @include MEDIUM-DEVICE-WIDTH {
+      padding-top: 10rem;
+      background: linear-gradient(to right, #fdfdfd, #fffffffa 100px);
     }
     @include LARGE-DEVICE-WIDTH {
-      height: auto;
-      flex-flow: row;
-      flex-wrap: wrap;
-      background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px),
-        url(../img/project-1.jpg) center bottom;
-      background-size: cover;
+      background: linear-gradient(to right, #f3f5e2, #fffffffa 100px);
     }
 
-    .text-secondary {
-      display: flex;
-      justify-content: center;
-      font-family: "Montserrat", "cursive";
-      width: 100%;
-      display: flex;
-      color: $secondary-color;
-      text-transform: uppercase;
-      text-align: justify;
-      font-size: 0.81rem;
-      margin: 0;
-
+    .breadCrumbs {
+      position: absolute;
+      top: 3%;
+      left: 3%;
       @include MEDIUM-DEVICE-WIDTH {
-        background: none;
-        margin-bottom: 0rem;
-        font-size: 1rem;
-        text-align: right;
+        top: 9%;
       }
       @include LARGE-DEVICE-WIDTH {
-        font-size: 0.7rem;
-        padding: 0 6%;
-        justify-content: flex-end;
-      }
-    }
-  }
-
-  // ......
-
-  .img-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    border-radius: 6px;
-    height: auto;
-    // box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16),
-    // 6px 6px 11px rgba(52, 170, 160, 0.16),;
-
-    @include MEDIUM-DEVICE-WIDTH {
-      width: 100%;
-    }
-    @include LARGE-DEVICE-WIDTH {
-      border: none;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .jobs__bio-image {
-      width: 100%;
-    }
-  }
-
-  // ...............
-
-  &__bio {
-    width: 100%;
-    padding: 3%;
-    text-align: center;
-    background: linear-gradient(to right, #ffffff, #ffffff);
-    @include MEDIUM-DEVICE-WIDTH {
-      font-size: 1.5rem;
-      width: 100%;
-    }
-
-    .main-title {
-      color: #3e0d18;
-      display: none;
-    }
-    p {
-      padding: 1%;
-      padding-bottom: 1.4rem;
-      width: 100%;
-      margin: 0;
-      border-radius: 0.176rem;
-      font-size: 0.92em;
-      line-height: 1.43em;
-      text-align: left;
-
-      @include MEDIUM-DEVICE-WIDTH {
-        border-radius: 0.05rem;
-        line-height: 1.7rem;
-        letter-spacing: 0.031rem;
-        font-size: 1.03rem;
-      }
-      @include LARGE-DEVICE-WIDTH {
-        box-shadow: none;
-        display: flex;
-        justify-content: center;
-        padding: 2.5% 6% 2.5% 0;
-        letter-spacing: 0;
-        flex-direction: column;
-      }
-      #more {
-        display: none;
-      }
-      #myBtn {
-        padding: 0.35em;
-        border-radius: 5.4px;
-        margin-top: 5px;
-        font-size: 1rem;
-        background: none;
-        color: #d09667;
-        font-style: italic;
-        border: none;
-        @include MEDIUM-DEVICE-WIDTH {
-          display: flex;
-          justify-content: flex-start;
-        }
-        @include LARGE-DEVICE-WIDTH {
-          text-align: left;
-        }
+        top: 15%;
       }
     }
 
-    h3 {
-      color: #bd7e40;
-      font-size: 1.5em;
-      padding-top: 15px;
-      text-align: left;
-      font-weight: bold;
-      line-height: 1.052em;
-      font-family: "Roboto", "Monserrat", cursive;
-    }
-    h5 {
-      color: #716f51;
-      font-size: 1em;
-      padding: 3%;
-      font-weight: normal;
-      text-align: left;
-    }
-  }
-
-  // ..........
-
-  .jobs {
-    width: 100%;
-    background-color: #ffffff;
-    display: flex;
-    padding: 1%;
-    margin: 0.2rem auto 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 0.5rem;
-    @include MEDIUM-DEVICE-WIDTH {
-      width: 100%;
-    }
     &__bio-image {
-      background:#f2f3eb;
-      height: 100%;
-      width: auto;
-
-      img {
-        width: 100%;
-        padding: 0.5rem;
-        @include LARGE-DEVICE-WIDTH {
-        }
-      }
-    }
-
-    &__job {
+      width: 100%;
+      border-radius: 0.3rem;
+      background-repeat: no-repeat;
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 11px 14px;
-      border-bottom: 0.5px solid #d8ccad;
-      box-shadow: 1px 11px 7px rgba(218, 215, 206, 0),
-        -25px 10px 9px rgba(224, 224, 213, 0.14);
-      background: linear-gradient(to right, #ffffff, #ffffff);
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: flex-end;
+      @include SMALL-LANDSCAPE {
+        margin-top: 3rem;
+        background: none;
+      }
       @include MEDIUM-DEVICE-WIDTH {
-        padding: 20px;
+        height: 100%;
+        background-size: cover;
+        padding: 4% 6%;
+        background: none;
+        justify-content: space-around;
       }
       @include LARGE-DEVICE-WIDTH {
-        padding: 20px 30px;
+        height: auto;
+        background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px),
+          url(../img/project-1.jpg) center bottom;
+        background-size: cover;
+        flex-direction: column-reverse;
       }
 
       .text-secondary {
-        justify-content: flex-end;
-        color: #5f6157;
-        font-size: 1.03em;
-        font-family: "Roboto", "Juslius Sans", "cursive";
-        @include LARGE-DEVICE-WIDTH {
-          font-size: 1rem;
-        }
-      }
+        display: flex;
+        justify-content: center;
+        font-family: "Montserrat", "cursive";
+        width: 100%;
+        display: flex;
+        color: $secondary-color;
+        text-transform: uppercase;
+        text-align: justify;
+        font-size: 0.81rem;
+        margin: 0;
 
-      h2,
-      h3 {
-        color: #3e4036;
-        font-size: 1.16em;
-        line-height: 1.3em;
-        padding-top: 5px;
-        font-weight: normal;
         @include MEDIUM-DEVICE-WIDTH {
+          background: none;
+          margin-bottom: 0rem;
+          font-size: 1rem;
+          text-align: right;
         }
         @include LARGE-DEVICE-WIDTH {
-          font-size: 1.2rem;
-          font-weight: normal;
+          font-size: 0.7rem;
+          padding: 0 6%;
+          justify-content: flex-end;
+        }
+      }
+    }
+
+    // ......
+
+    .img-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      border-radius: 6px;
+      height: auto;
+      // box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16),
+      // 6px 6px 11px rgba(52, 170, 160, 0.16),;
+
+      @include MEDIUM-DEVICE-WIDTH {
+        width: 100%;
+      }
+      @include LARGE-DEVICE-WIDTH {
+        border: none;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .jobs__bio-image {
+        width: 100%;
+      }
+    }
+
+    // ...............
+
+    &__bio {
+      width: 100%;
+      padding: 3%;
+      text-align: center;
+      background: linear-gradient(to right, #ffffff, #ffffff);
+      @include MEDIUM-DEVICE-WIDTH {
+        font-size: 1.5rem;
+        width: 100%;
+      }
+
+      .main-title {
+        color: #3e0d18;
+        display: none;
+      }
+      p {
+        padding: 1%;
+        padding-bottom: 1.4rem;
+        padding-top: 2rem;
+        width: 100%;
+        margin: 0;
+        border-radius: 0.176rem;
+        font-size: 0.92em;
+        line-height: 1.43em;
+        text-align: left;
+
+        @include MEDIUM-DEVICE-WIDTH {
+          border-radius: 0.05rem;
+          line-height: 1.7rem;
+          letter-spacing: 0.031rem;
+          font-size: 1.03rem;
+        }
+        @include LARGE-DEVICE-WIDTH {
+          box-shadow: none;
+          display: flex;
+          justify-content: center;
+          padding: 2.5% 6% 2.5% 0;
+          letter-spacing: 0;
+          flex-direction: column;
+        }
+        #more {
+          display: none;
+        }
+        #myBtn {
+          padding: 0.35em;
+          border-radius: 5.4px;
+          margin-top: 5px;
+          font-size: 0.77rem;
+          background: none;
+          color: #d09667;
+          font-style: italic;
+          border: none;
+          @include MEDIUM-DEVICE-WIDTH {
+            display: flex;
+            justify-content: flex-start;
+          }
+          @include LARGE-DEVICE-WIDTH {
+            text-align: left;
+          }
         }
       }
 
+      h3 {
+        color: #bd7e40;
+        font-size: 1.5em;
+        padding-top: 15px;
+        text-align: left;
+        font-weight: bold;
+        line-height: 1.052em;
+        font-family: "Roboto", "Monserrat", cursive;
+      }
       h5 {
-        font-size: 1rem;
-        color: #09868c;
-        font-style: normal;
-        padding: 0;
-        line-height: 1.24em;
-        font-family: "Roboto", cursive;
-
-        @include LARGE-DEVICE-WIDTH {
-          font-size: 0.88rem;
-        }
-      }
-      P {
+        color: #716f51;
+        font-size: 1em;
+        padding: 3%;
+        font-weight: normal;
         text-align: left;
       }
     }
-  }
 
-  // footer {
-  //   transform: rotate(90deg) translate(-3rem, -5rem);
-  // }
+    // ..........
+
+    .jobs {
+      width: 100%;
+      background-color: #ffffff;
+      display: flex;
+      padding: 1%;
+      margin: 0.2rem auto 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 0.5rem;
+      @include MEDIUM-DEVICE-WIDTH {
+        width: 100%;
+      }
+      &__bio-image {
+        background: #f2f3eb;
+        height: 100%;
+        width: auto;
+
+        img {
+          width: 100%;
+          padding: 0.5rem;
+          @include LARGE-DEVICE-WIDTH {
+          }
+        }
+      }
+
+      &__job {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 11px 14px;
+        border-bottom: 0.5px solid #d8ccad;
+        box-shadow: 1px 11px 7px rgba(218, 215, 206, 0),
+          -25px 10px 9px rgba(224, 224, 213, 0.14);
+        background: linear-gradient(to right, #ffffff, #ffffff);
+        @include MEDIUM-DEVICE-WIDTH {
+          padding: 20px;
+        }
+        @include LARGE-DEVICE-WIDTH {
+          padding: 20px 30px;
+        }
+
+        .text-secondary {
+          justify-content: flex-end;
+          color: #5f6157;
+          font-size: 1.03em;
+          font-family: "Roboto", "Juslius Sans", "cursive";
+          @include LARGE-DEVICE-WIDTH {
+            font-size: 1rem;
+          }
+        }
+
+        h2,
+        h3 {
+          font-family: "Roboto", cursive;
+          color: #3c360e;
+          letter-spacing: 0.02rem;
+          font-size: 1.35em;
+          line-height: 1.3em;
+          padding-top: 5px;
+          font-weight: bold;
+          @include MEDIUM-DEVICE-WIDTH {
+          }
+          @include LARGE-DEVICE-WIDTH {
+            font-size: 1.2rem;
+            font-weight: normal;
+          }
+        }
+
+        h5 {
+          font-size: 0.85rem;
+          color: #09868c;
+          font-style: normal;
+          padding: 0;
+          line-height: 1.24em;
+          font-family: "Roboto", cursive;
+
+          @include LARGE-DEVICE-WIDTH {
+            font-size: 0.88rem;
+          }
+        }
+        P {
+          text-align: left;
+          span {
+            font-style: italic;
+            font-size: 0.79rem;
+            a {
+              color: #09868c;
+            }
+          }
+        }
+      }
+    }
+  }
 }
