@@ -856,60 +856,28 @@ a {
       .content-wrapper .about__bio .main-title {
         color: #3e0d18;
         display: none; }
-      .content-wrapper .about__bio p {
-        padding: 1%;
-        padding-bottom: 1.4rem;
-        padding-top: 2rem;
-        width: 100%;
-        margin: 0;
-        border-radius: 0.176rem;
-        font-size: 0.92em;
-        line-height: 1.43em;
-        text-align: left; }
+      .content-wrapper .about__bio p #more {
+        display: none; }
+      .content-wrapper .about__bio p #myBtn {
+        padding: 0.35em;
+        border-radius: 5.4px;
+        margin-top: 5px;
+        font-size: 0.77rem;
+        background: none;
+        color: #d09667;
+        font-style: italic;
+        border: none; }
         @media only screen and (min-width: 481px) and (orientation: portrait) {
-          .content-wrapper .about__bio p {
-            border-radius: 0.05rem;
-            line-height: 1.7rem;
-            letter-spacing: 0.031rem;
-            font-size: 1.03rem; } }
-        @media only screen and (min-width: 1025px) and (orientation: landscape) {
-          .content-wrapper .about__bio p {
-            -webkit-box-shadow: none;
-                    box-shadow: none;
+          .content-wrapper .about__bio p #myBtn {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
-            padding: 2.5% 6% 2.5% 0;
-            letter-spacing: 0;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column; } }
-        .content-wrapper .about__bio p #more {
-          display: none; }
-        .content-wrapper .about__bio p #myBtn {
-          padding: 0.35em;
-          border-radius: 5.4px;
-          margin-top: 5px;
-          font-size: 0.77rem;
-          background: none;
-          color: #d09667;
-          font-style: italic;
-          border: none; }
-          @media only screen and (min-width: 481px) and (orientation: portrait) {
-            .content-wrapper .about__bio p #myBtn {
-              display: -webkit-box;
-              display: -ms-flexbox;
-              display: flex;
-              -webkit-box-pack: start;
-                  -ms-flex-pack: start;
-                      justify-content: flex-start; } }
-          @media only screen and (min-width: 1025px) and (orientation: landscape) {
-            .content-wrapper .about__bio p #myBtn {
-              text-align: left; } }
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start; } }
+        @media only screen and (min-width: 1025px) and (orientation: landscape) {
+          .content-wrapper .about__bio p #myBtn {
+            text-align: left; } }
       .content-wrapper .about__bio h3 {
         color: #bd7e40;
         font-size: 1.5em;
@@ -1002,16 +970,14 @@ a {
           @media only screen and (min-width: 1025px) and (orientation: landscape) {
             .content-wrapper .about .jobs__job h5 {
               font-size: 0.88rem; } }
-        .content-wrapper .about .jobs__job P {
-          text-align: left; }
-          .content-wrapper .about .jobs__job P span {
-            font-style: italic;
-            font-size: 0.79rem; }
-            .content-wrapper .about .jobs__job P span a {
-              color: #09868c;
-              cursor: pointer; }
-            .content-wrapper .about .jobs__job P span a:hover {
-              color: gold; }
+        .content-wrapper .about .jobs__job P span {
+          font-style: italic;
+          font-size: 0.79rem; }
+          .content-wrapper .about .jobs__job P span a {
+            color: #09868c;
+            cursor: pointer; }
+          .content-wrapper .about .jobs__job P span a:hover {
+            color: gold; }
 
 .content-wrapper .projects {
   display: -webkit-box;
@@ -1113,8 +1079,6 @@ a {
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .content-wrapper .projects__bio-image h5 {
           padding: 0.5rem 0; } }
-    .content-wrapper .projects__bio-image p {
-      text-align: left; }
     .content-wrapper .projects__bio-image .main-title {
       color: #3e0d18; }
       @media only screen and (min-width: 481px) and (orientation: portrait) {
@@ -1593,7 +1557,7 @@ a:focus {
 
 a:active {
   font-family: "Cormorant Unicase", serif;
-  background-color: red; }
+  background-color: #9e8968; }
 
 header {
   display: -webkit-box;
@@ -1656,13 +1620,35 @@ p {
   color: #4d4d4d;
   padding: 1%;
   padding-bottom: 1.4rem;
+  padding-top: 2rem;
   width: 100%;
-  margin-top: 1.1rem;
+  margin: 0;
   border-radius: 0.176rem;
-  line-height: 1.33rem;
-  text-align: left;
-  font-size: 0.89rem;
-  text-align: center; }
+  font-size: 0.92em;
+  line-height: 1.43em;
+  text-align: left; }
+  @media only screen and (min-width: 481px) and (orientation: portrait) {
+    p {
+      border-radius: 0.05rem;
+      line-height: 1.7rem;
+      letter-spacing: 0.031rem;
+      font-size: 1.03rem; } }
+  @media only screen and (min-width: 1025px) and (orientation: landscape) {
+    p {
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 2.5% 6% 2.5% 0;
+      letter-spacing: 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 footer {
   -webkit-box-orient: vertical;
@@ -1713,16 +1699,7 @@ footer {
         font-size: 1.3rem;
         padding: 0.5rem; } }
   footer p {
-    color: #362d11;
-    font-size: 1rem;
-    margin: 0.04rem;
-    padding: 0.28rem !important; }
-    @media only screen and (device-width: 1em), screen and (orientation: landscape) {
-      footer p {
-        text-align: center; } }
-    @media only screen and (min-width: 481px) and (orientation: portrait) {
-      footer p {
-        text-align: center; } }
+    text-align: center; }
 
 .social-icons {
   position: relative;
