@@ -499,33 +499,6 @@ a {
       .nav .menu-nav__item.open {
         -webkit-transform: translate(0);
                 transform: translate(0); }
-      .nav .menu-nav__item.active > a {
-        color: #5f5050;
-        border-bottom: 2px solid #fcd603;
-        font-family: "Roboto", "sans-serif", "Montserrat", "Cursive";
-        font-family: "Cormorant Unicase", serif;
-        border: none;
-        background: none;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        font-size: 1.42rem; }
-        @media only screen and (min-width: 481px) and (orientation: portrait) {
-          .nav .menu-nav__item.active > a {
-            font-size: 1em; } }
-      .nav .menu-nav__item a {
-        width: 100%;
-        font-family: "Cormorant Unicase", serif;
-        padding: 10px;
-        margin: 0.5rem 0;
-        padding: 1.2rem;
-        letter-spacing: 0.2rem; }
-        @media only screen and (min-width: 481px) and (orientation: portrait) {
-          .nav .menu-nav__item a {
-            width: auto;
-            padding: 8px;
-            margin: 0 auto; } }
-      .nav .menu-nav__item.active > a:hover:active {
-        font-family: "Cormorant Unicase", serif; }
       .nav .menu-nav__item #topLink:hover:active {
         background-color: red; }
     .nav .menu-nav__link {
@@ -638,8 +611,6 @@ a {
     width: 100%; }
     .nav .title_txt_container .title_text {
       font-size: 1.3rem;
-      font-family: "Poiret One", cursive;
-      font-family: "Audiowide", cursive;
       font-family: "Cormorant Unicase", serif;
       text-shadow: 3.28px 3.36px #e7ffc7;
       text-shadow: none;
@@ -1151,26 +1122,6 @@ a {
         .content-wrapper .projects__item1 h3, .content-wrapper .projects__item2 h3, .content-wrapper .projects__item3 h3, .content-wrapper .projects__item4 h3 {
           font-size: 1rem;
           padding-bottom: 1rem; } }
-    .content-wrapper .projects__item1 .project__title, .content-wrapper .projects__item2 .project__title, .content-wrapper .projects__item3 .project__title, .content-wrapper .projects__item4 .project__title {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      padding: 0.34rem;
-      text-align: center;
-      font-weight: bold;
-      font-size: 1.65rem;
-      letter-spacing: 0.1rem;
-      color: #4f575a;
-      width: 55%;
-      text-transform: uppercase;
-      font-family: "Montserrat", sans-serif;
-      font-family: "Turret Road", "cursive"; }
-      @media only screen and (min-width: 1025px) and (orientation: landscape) {
-        .content-wrapper .projects__item1 .project__title, .content-wrapper .projects__item2 .project__title, .content-wrapper .projects__item3 .project__title, .content-wrapper .projects__item4 .project__title {
-          font-size: 1.3rem; } }
     .content-wrapper .projects__item1 img, .content-wrapper .projects__item2 img, .content-wrapper .projects__item3 img, .content-wrapper .projects__item4 img {
       width: 100%; }
     .content-wrapper .projects__item1::after, .content-wrapper .projects__item2::after, .content-wrapper .projects__item3::after, .content-wrapper .projects__item4::after {
@@ -1536,8 +1487,6 @@ h5 {
   padding: 2%;
   font-weight: normal;
   text-align: left;
-  font-family: "Linden Hill", serif;
-  font-family: "Markazi Text", serif;
   width: 100%; }
 
 .bottom-padding {
@@ -1740,7 +1689,7 @@ footer {
   font-size: 2rem;
   letter-spacing: 0.02em;
   font-weight: bold;
-  font-family: "Bebas Neue", "Julius Sans", cursive;
+  font-family: "Roboto", sans-serif;
   width: 100%;
   top: 30%;
   position: relative;

@@ -224,37 +224,6 @@
         transform: translate(0);
       }
 
-      &.active > a {
-        color: rgb(95, 80, 80);
-        border-bottom: 2px solid #fcd603;
-        font-family: "Roboto", "sans-serif", "Montserrat", "Cursive";
-        font-family: "Cormorant Unicase", serif;
-        border: none;
-        background: none;
-        box-shadow: none;
-        font-size: 1.42rem;
-        @include MEDIUM-DEVICE-WIDTH {
-          font-size: 1em;
-        }
-      }
-      a {
-        width: 100%;
-        font-family: "Cormorant Unicase", serif;
-        padding: 10px;
-        margin: 0.5rem 0;
-        padding: 1.2rem;
-        letter-spacing: 0.2rem;
-        @include MEDIUM-DEVICE-WIDTH {
-          width: auto;
-          padding: 8px;
-          margin: 0 auto;
-        }
-      }
-      &.active > a:hover {
-        &:active {
-          font-family: "Cormorant Unicase", serif;
-        }
-      }
       #topLink:hover {
         &:active {
           background-color: red;
@@ -378,8 +347,6 @@
 
     .title_text {
       font-size: 1.3rem;
-      font-family: "Poiret One", cursive;
-      font-family: "Audiowide", cursive;
       font-family: "Cormorant Unicase", serif;
       text-shadow: 3.28px 3.36px #e7ffc7;
       text-shadow: none;
