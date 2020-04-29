@@ -6,6 +6,15 @@
   margin: 0;
   padding: 0; }
 
+* {
+  /* Hide scrollbar for Chrome, Safari and Opera */ }
+  * ::-webkit-scrollbar {
+    display: none; }
+
+/* Hide scrollbar for IE and Edge */
+* {
+  -ms-overflow-style: none; }
+
 a {
   text-decoration: none;
   list-style: none; }
@@ -710,297 +719,299 @@ a {
     -webkit-transition-delay: 0.455s;
             transition-delay: 0.455s; }
 
-.content-wrapper .about {
-  padding-bottom: 0rem;
-  padding-top: 2rem;
-  background: #f2f3eb; }
-  @media only screen and (device-width: 1em), screen and (orientation: landscape) {
-    .content-wrapper .about {
-      height: 100%;
-      overflow: auto;
-      padding: 28px 20%; } }
-  .content-wrapper .about .breadCrumbs {
-    position: absolute;
-    top: 3%;
-    left: 3%; }
-    @media only screen and (min-width: 481px) and (orientation: portrait) {
-      .content-wrapper .about .breadCrumbs {
-        top: 9%; } }
-    @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .content-wrapper .about .breadCrumbs {
-        top: 15%; } }
-  .content-wrapper .about__bio-image {
-    width: 100%;
-    border-radius: 0.3rem;
-    background-repeat: no-repeat;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; }
+.content-wrapper {
+  /* Hide scrollbar for Chrome, Safari and Opera */ }
+  .content-wrapper .about {
+    padding-bottom: 0rem;
+    padding-top: 2rem;
+    background: #f2f3eb; }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
-      .content-wrapper .about__bio-image {
-        margin-top: 3rem;
-        background: none;
-        -webkit-box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec;
-                box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec; } }
-    @media only screen and (min-width: 481px) and (orientation: portrait) {
-      .content-wrapper .about__bio-image {
+      .content-wrapper .about {
         height: 100%;
-        background-size: cover;
-        padding: 4% 6%;
-        background: none;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        -webkit-box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec;
-                box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec; } }
-    @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .content-wrapper .about__bio-image {
-        height: auto;
-        background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px), url(../img/project-1.jpg) center bottom;
-        background-size: cover;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: reverse;
-            -ms-flex-direction: column-reverse;
-                flex-direction: column-reverse; } }
-    .content-wrapper .about__bio-image .text-secondary {
+        overflow: auto;
+        padding: 28px 20%; } }
+    .content-wrapper .about .breadCrumbs {
+      position: absolute;
+      top: 3%;
+      left: 3%; }
+      @media only screen and (min-width: 481px) and (orientation: portrait) {
+        .content-wrapper .about .breadCrumbs {
+          top: 9%; } }
+      @media only screen and (min-width: 1025px) and (orientation: landscape) {
+        .content-wrapper .about .breadCrumbs {
+          top: 15%; } }
+    .content-wrapper .about__bio-image {
+      width: 100%;
+      border-radius: 0.3rem;
+      background-repeat: no-repeat;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+        .content-wrapper .about__bio-image {
+          margin-top: 3rem;
+          background: none;
+          -webkit-box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec;
+                  box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec; } }
+      @media only screen and (min-width: 481px) and (orientation: portrait) {
+        .content-wrapper .about__bio-image {
+          height: 100%;
+          background-size: cover;
+          padding: 4% 6%;
+          background: none;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+          -webkit-box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec;
+                  box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec; } }
+      @media only screen and (min-width: 1025px) and (orientation: landscape) {
+        .content-wrapper .about__bio-image {
+          height: auto;
+          background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px), url(../img/project-1.jpg) center bottom;
+          background-size: cover;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: reverse;
+              -ms-flex-direction: column-reverse;
+                  flex-direction: column-reverse; } }
+      .content-wrapper .about__bio-image .text-secondary {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        font-family: "Montserrat", "cursive";
+        width: 100%;
+        display: flex;
+        color: #93a7a9;
+        text-transform: uppercase;
+        text-align: justify;
+        font-size: 0.81rem;
+        margin: 0; }
+        @media only screen and (min-width: 481px) and (orientation: portrait) {
+          .content-wrapper .about__bio-image .text-secondary {
+            background: none;
+            margin-bottom: 0rem;
+            font-size: 1rem;
+            text-align: right; } }
+        @media only screen and (min-width: 1025px) and (orientation: landscape) {
+          .content-wrapper .about__bio-image .text-secondary {
+            font-size: 0.7rem;
+            padding: 0 6%;
+            -webkit-box-pack: end;
+                -ms-flex-pack: end;
+                    justify-content: flex-end; } }
+    .content-wrapper .about .img-container {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      font-family: "Montserrat", "cursive";
       width: 100%;
-      display: flex;
-      color: #93a7a9;
-      text-transform: uppercase;
-      text-align: justify;
-      font-size: 0.81rem;
-      margin: 0; }
+      border-radius: 6px;
+      height: auto;
+      -webkit-box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(52, 170, 160, 0.16);
+              box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(52, 170, 160, 0.16); }
+      @media only screen and (device-width: 1em), screen and (orientation: landscape) {
+        .content-wrapper .about .img-container {
+          -webkit-box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(52, 170, 160, 0.16);
+                  box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(52, 170, 160, 0.16); } }
       @media only screen and (min-width: 481px) and (orientation: portrait) {
-        .content-wrapper .about__bio-image .text-secondary {
-          background: none;
-          margin-bottom: 0rem;
-          font-size: 1rem;
-          text-align: right; } }
+        .content-wrapper .about .img-container {
+          width: 100%;
+          -webkit-box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(52, 170, 160, 0.16);
+                  box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(52, 170, 160, 0.16); } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
-        .content-wrapper .about__bio-image .text-secondary {
-          font-size: 0.7rem;
-          padding: 0 6%;
-          -webkit-box-pack: end;
-              -ms-flex-pack: end;
-                  justify-content: flex-end; } }
-  .content-wrapper .about .img-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-    border-radius: 6px;
-    height: auto;
-    -webkit-box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(52, 170, 160, 0.16);
-            box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(52, 170, 160, 0.16); }
-    @media only screen and (device-width: 1em), screen and (orientation: landscape) {
-      .content-wrapper .about .img-container {
-        -webkit-box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(52, 170, 160, 0.16);
-                box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(52, 170, 160, 0.16); } }
-    @media only screen and (min-width: 481px) and (orientation: portrait) {
-      .content-wrapper .about .img-container {
+        .content-wrapper .about .img-container {
+          border: none;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start; } }
+      .content-wrapper .about .img-container .jobs__bio-image {
+        width: 100%; }
+    .content-wrapper .about__bio {
+      width: 100%;
+      padding: 3%;
+      text-align: center;
+      background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffffff));
+      background: linear-gradient(to right, #ffffff, #ffffff); }
+      @media only screen and (min-width: 481px) and (orientation: portrait) {
+        .content-wrapper .about__bio {
+          font-size: 1.5rem;
+          width: 100%; } }
+      .content-wrapper .about__bio .main-title {
+        color: #3e0d18;
+        display: none; }
+      .content-wrapper .about__bio p {
+        padding: 1%;
+        padding-bottom: 1.4rem;
+        padding-top: 2rem;
         width: 100%;
-        -webkit-box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(52, 170, 160, 0.16);
-                box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(52, 170, 160, 0.16); } }
-    @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .content-wrapper .about .img-container {
-        border: none;
+        margin: 0;
+        border-radius: 0.176rem;
+        font-size: 0.92em;
+        line-height: 1.43em;
+        text-align: left; }
+        @media only screen and (min-width: 481px) and (orientation: portrait) {
+          .content-wrapper .about__bio p {
+            border-radius: 0.05rem;
+            line-height: 1.7rem;
+            letter-spacing: 0.031rem;
+            font-size: 1.03rem; } }
+        @media only screen and (min-width: 1025px) and (orientation: landscape) {
+          .content-wrapper .about__bio p {
+            -webkit-box-shadow: none;
+                    box-shadow: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            padding: 2.5% 6% 2.5% 0;
+            letter-spacing: 0;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column; } }
+        .content-wrapper .about__bio p #more {
+          display: none; }
+        .content-wrapper .about__bio p #myBtn {
+          padding: 0.35em;
+          border-radius: 5.4px;
+          margin-top: 5px;
+          font-size: 0.77rem;
+          background: none;
+          color: #d09667;
+          font-style: italic;
+          border: none; }
+          @media only screen and (min-width: 481px) and (orientation: portrait) {
+            .content-wrapper .about__bio p #myBtn {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: start;
+                  -ms-flex-pack: start;
+                      justify-content: flex-start; } }
+          @media only screen and (min-width: 1025px) and (orientation: landscape) {
+            .content-wrapper .about__bio p #myBtn {
+              text-align: left; } }
+      .content-wrapper .about__bio h3 {
+        color: #bd7e40;
+        font-size: 1.5em;
+        padding-top: 15px;
+        text-align: left;
+        font-weight: bold;
+        line-height: 1.052em;
+        font-family: "Roboto", "Monserrat", cursive; }
+      .content-wrapper .about__bio h5 {
+        color: #716f51;
+        font-size: 1em;
+        padding: 3%;
+        font-weight: normal;
+        text-align: left; }
+    .content-wrapper .about .jobs {
+      width: 100%;
+      background-color: #ffffff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 1%;
+      margin: 0.2rem auto 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 0.5rem; }
+      @media only screen and (min-width: 481px) and (orientation: portrait) {
+        .content-wrapper .about .jobs {
+          width: 100%; } }
+      .content-wrapper .about .jobs__bio-image {
+        background: #f2f3eb;
+        height: 100%;
+        width: auto; }
+        .content-wrapper .about .jobs__bio-image img {
+          width: 100%;
+          padding: 0.5rem; }
+      .content-wrapper .about .jobs__job {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
         -webkit-box-align: start;
             -ms-flex-align: start;
-                align-items: flex-start; } }
-    .content-wrapper .about .img-container .jobs__bio-image {
-      width: 100%; }
-  .content-wrapper .about__bio {
-    width: 100%;
-    padding: 3%;
-    text-align: center;
-    background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffffff));
-    background: linear-gradient(to right, #ffffff, #ffffff); }
-    @media only screen and (min-width: 481px) and (orientation: portrait) {
-      .content-wrapper .about__bio {
-        font-size: 1.5rem;
-        width: 100%; } }
-    .content-wrapper .about__bio .main-title {
-      color: #3e0d18;
-      display: none; }
-    .content-wrapper .about__bio p {
-      padding: 1%;
-      padding-bottom: 1.4rem;
-      padding-top: 2rem;
-      width: 100%;
-      margin: 0;
-      border-radius: 0.176rem;
-      font-size: 0.92em;
-      line-height: 1.43em;
-      text-align: left; }
-      @media only screen and (min-width: 481px) and (orientation: portrait) {
-        .content-wrapper .about__bio p {
-          border-radius: 0.05rem;
-          line-height: 1.7rem;
-          letter-spacing: 0.031rem;
-          font-size: 1.03rem; } }
-      @media only screen and (min-width: 1025px) and (orientation: landscape) {
-        .content-wrapper .about__bio p {
-          -webkit-box-shadow: none;
-                  box-shadow: none;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          padding: 2.5% 6% 2.5% 0;
-          letter-spacing: 0;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column; } }
-      .content-wrapper .about__bio p #more {
-        display: none; }
-      .content-wrapper .about__bio p #myBtn {
-        padding: 0.35em;
-        border-radius: 5.4px;
-        margin-top: 5px;
-        font-size: 0.77rem;
-        background: none;
-        color: #d09667;
-        font-style: italic;
-        border: none; }
+                align-items: flex-start;
+        padding: 11px 14px;
+        border-bottom: 0.5px solid #d8ccad;
+        -webkit-box-shadow: 1px 11px 7px rgba(218, 215, 206, 0), -25px 10px 9px rgba(224, 224, 213, 0.14);
+                box-shadow: 1px 11px 7px rgba(218, 215, 206, 0), -25px 10px 9px rgba(224, 224, 213, 0.14);
+        background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffffff));
+        background: linear-gradient(to right, #ffffff, #ffffff); }
         @media only screen and (min-width: 481px) and (orientation: portrait) {
-          .content-wrapper .about__bio p #myBtn {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: start;
-                -ms-flex-pack: start;
-                    justify-content: flex-start; } }
+          .content-wrapper .about .jobs__job {
+            padding: 20px; } }
         @media only screen and (min-width: 1025px) and (orientation: landscape) {
-          .content-wrapper .about__bio p #myBtn {
-            text-align: left; } }
-    .content-wrapper .about__bio h3 {
-      color: #bd7e40;
-      font-size: 1.5em;
-      padding-top: 15px;
-      text-align: left;
-      font-weight: bold;
-      line-height: 1.052em;
-      font-family: "Roboto", "Monserrat", cursive; }
-    .content-wrapper .about__bio h5 {
-      color: #716f51;
-      font-size: 1em;
-      padding: 3%;
-      font-weight: normal;
-      text-align: left; }
-  .content-wrapper .about .jobs {
-    width: 100%;
-    background-color: #ffffff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 1%;
-    margin: 0.2rem auto 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 0.5rem; }
-    @media only screen and (min-width: 481px) and (orientation: portrait) {
-      .content-wrapper .about .jobs {
-        width: 100%; } }
-    .content-wrapper .about .jobs__bio-image {
-      background: #f2f3eb;
-      height: 100%;
-      width: auto; }
-      .content-wrapper .about .jobs__bio-image img {
-        width: 100%;
-        padding: 0.5rem; }
-    .content-wrapper .about .jobs__job {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
-      padding: 11px 14px;
-      border-bottom: 0.5px solid #d8ccad;
-      -webkit-box-shadow: 1px 11px 7px rgba(218, 215, 206, 0), -25px 10px 9px rgba(224, 224, 213, 0.14);
-              box-shadow: 1px 11px 7px rgba(218, 215, 206, 0), -25px 10px 9px rgba(224, 224, 213, 0.14);
-      background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffffff));
-      background: linear-gradient(to right, #ffffff, #ffffff); }
-      @media only screen and (min-width: 481px) and (orientation: portrait) {
-        .content-wrapper .about .jobs__job {
-          padding: 20px; } }
-      @media only screen and (min-width: 1025px) and (orientation: landscape) {
-        .content-wrapper .about .jobs__job {
-          padding: 20px 30px; } }
-      .content-wrapper .about .jobs__job .text-secondary {
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end;
-        color: #5f6157;
-        font-size: 1.03em;
-        font-family: "Roboto", "Juslius Sans", "cursive"; }
-        @media only screen and (min-width: 1025px) and (orientation: landscape) {
-          .content-wrapper .about .jobs__job .text-secondary {
-            font-size: 1rem; } }
-      .content-wrapper .about .jobs__job h2,
-      .content-wrapper .about .jobs__job h3 {
-        font-family: "Roboto", cursive;
-        color: #3c360e;
-        letter-spacing: 0.02rem;
-        font-size: 1.35em;
-        line-height: 1.3em;
-        padding-top: 5px;
-        font-weight: bold; }
-        @media only screen and (min-width: 1025px) and (orientation: landscape) {
-          .content-wrapper .about .jobs__job h2,
-          .content-wrapper .about .jobs__job h3 {
-            font-size: 1.2rem;
-            font-weight: normal; } }
-      .content-wrapper .about .jobs__job h5 {
-        font-size: 0.85rem;
-        color: #09868c;
-        font-style: normal;
-        padding: 0;
-        line-height: 1.24em;
-        font-family: "Roboto", cursive; }
-        @media only screen and (min-width: 1025px) and (orientation: landscape) {
-          .content-wrapper .about .jobs__job h5 {
-            font-size: 0.88rem; } }
-      .content-wrapper .about .jobs__job P {
-        text-align: left; }
-        .content-wrapper .about .jobs__job P span {
-          font-style: italic;
-          font-size: 0.79rem; }
-          .content-wrapper .about .jobs__job P span a {
-            color: #09868c;
-            cursor: pointer; }
-          .content-wrapper .about .jobs__job P span a:hover {
-            color: gold; }
+          .content-wrapper .about .jobs__job {
+            padding: 20px 30px; } }
+        .content-wrapper .about .jobs__job .text-secondary {
+          -webkit-box-pack: end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end;
+          color: #5f6157;
+          font-size: 1.03em;
+          font-family: "Roboto", "Juslius Sans", "cursive"; }
+          @media only screen and (min-width: 1025px) and (orientation: landscape) {
+            .content-wrapper .about .jobs__job .text-secondary {
+              font-size: 1rem; } }
+        .content-wrapper .about .jobs__job h2,
+        .content-wrapper .about .jobs__job h3 {
+          font-family: "Roboto", cursive;
+          color: #3c360e;
+          letter-spacing: 0.02rem;
+          font-size: 1.35em;
+          line-height: 1.3em;
+          padding-top: 5px;
+          font-weight: bold; }
+          @media only screen and (min-width: 1025px) and (orientation: landscape) {
+            .content-wrapper .about .jobs__job h2,
+            .content-wrapper .about .jobs__job h3 {
+              font-size: 1.2rem;
+              font-weight: normal; } }
+        .content-wrapper .about .jobs__job h5 {
+          font-size: 0.85rem;
+          color: #09868c;
+          font-style: normal;
+          padding: 0;
+          line-height: 1.24em;
+          font-family: "Roboto", cursive; }
+          @media only screen and (min-width: 1025px) and (orientation: landscape) {
+            .content-wrapper .about .jobs__job h5 {
+              font-size: 0.88rem; } }
+        .content-wrapper .about .jobs__job P {
+          text-align: left; }
+          .content-wrapper .about .jobs__job P span {
+            font-style: italic;
+            font-size: 0.79rem; }
+            .content-wrapper .about .jobs__job P span a {
+              color: #09868c;
+              cursor: pointer; }
+            .content-wrapper .about .jobs__job P span a:hover {
+              color: gold; }
 
 .content-wrapper .projects {
   display: -webkit-box;
