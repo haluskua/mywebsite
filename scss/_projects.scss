@@ -1,7 +1,6 @@
 // ........
 .content-wrapper {
   //styles for .content-wrapper is in the main.scss
-  padding-top: 0!important;
   .projects {
     display: flex;
     flex-direction: column;
@@ -17,17 +16,24 @@
       background-repeat: repeat;
     }
     @include MEDIUM-DEVICE-WIDTH {
-      padding-bottom: 0;
+      box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec;
       justify-content: center;
-      padding: 4% 6%;
-      padding-top: 6rem;
+      margin: 2rem;
+      margin-top: 6rem;
     }
     @include LARGE-DEVICE-WIDTH {
+      box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec;
       padding: 2rem;
+      margin: 2rem;
+      margin-top: 5rem;
+
     }
     .block {
       padding: 0.5rem;
       padding-top: 13px;
+      @include LARGE-DEVICE-WIDTH {
+        padding: 0;
+      }
     }
 
     &__bio-image {
@@ -46,6 +52,7 @@
       }
       @include LARGE-DEVICE-WIDTH {
         margin: 0 auto;
+        padding-top: 1rem;
       }
       .text-secondary {
         font-family: "Roboto", "Monserrat", cursive;
@@ -69,6 +76,9 @@
       }
       h3 {
         font-family: "Roboto", sans-serif;
+        @include LARGE-DEVICE-WIDTH  {
+          font-size: 1.4rem;
+        }
       }
       h5 {
         font-size: 1em;
@@ -134,7 +144,7 @@
         align-items: center;
       }
       @include LARGE-DEVICE-WIDTH {
-        width: 92%;
+        width: 100%;
       }
 
       h3 {
@@ -146,6 +156,7 @@
         }
         @include LARGE-DEVICE-WIDTH {
           font-size: 1rem;
+          padding-bottom: 1rem;
         }
       }
 
