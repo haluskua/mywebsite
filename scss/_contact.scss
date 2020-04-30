@@ -39,6 +39,9 @@
       @include SMALL-LANDSCAPE {
         width: 33%;
       }
+      @include MEDIUM-LANDSCAPE {
+        width: 35%;
+      }
       @include LARGE-DEVICE-WIDTH {
         width: 50%;
       }

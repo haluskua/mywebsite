@@ -88,16 +88,18 @@
       border-radius: 6px;
       height: auto;
       box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16),
-        6px 6px 11px rgba(52, 170, 160, 0.16);
+        6px 6px 11px rgba(255, 193, 7, 0.125);
       @include SMALL-LANDSCAPE {
         box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16),
-          6px 6px 11px rgba(52, 170, 160, 0.16);
+          6px 6px 11px rgba(255, 193, 7, 0.125);
       }
 
       @include MEDIUM-DEVICE-WIDTH {
         width: 100%;
+      }
+      @include MEDIUM-LANDSCAPE {
         box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16),
-          6px 6px 11px rgba(52, 170, 160, 0.16);
+          6px 6px 11px rgba(255, 193, 7, 0.125);
       }
       @include LARGE-DEVICE-WIDTH {
         border: none;
@@ -126,7 +128,7 @@
         display: none;
       }
       p {
-      // styinling for 'P' is referenced main.css  
+        // styinling for 'P' is referenced main.css
         #more {
           display: none;
         }
@@ -139,12 +141,19 @@
           color: ($GOLD);
           font-style: italic;
           border: none;
+          cursor: pointer;
+          width: auto;
+          padding: 0.5rem;
+          width: 40%;
+
           @include MEDIUM-DEVICE-WIDTH {
             display: flex;
             justify-content: flex-start;
+
           }
           @include LARGE-DEVICE-WIDTH {
             text-align: left;
+
           }
         }
       }
@@ -250,7 +259,7 @@
           }
         }
         P {
-          // styinling for 'P' is referenced main.css  
+          // styinling for 'P' is referenced main.css
           span {
             font-style: italic;
             font-size: 0.79rem;

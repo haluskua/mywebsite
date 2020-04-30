@@ -75,9 +75,6 @@ h5 {
 }
 
 // ........
-.bottom-padding {
-  padding: 1rem;
-}
 
 a {
   text-decoration: none;
@@ -136,15 +133,17 @@ main {
   flex-direction: column;
   padding: 3% 0;
   @include SMALL-LANDSCAPE {
-    height: 100%;
+    height: auto;
     padding: 0;
   }
   @include SMALL-LANDSCAPE {
     padding-top: 1rem;
-  
   }
   @include MEDIUM-DEVICE-WIDTH {
     padding-top: 2rem;
+  }
+  @include MEDIUM-LANDSCAPE {
+    height: 100%;
   }
   @include LARGE-DEVICE-WIDTH {
     padding: 0 12%;
@@ -193,8 +192,24 @@ footer {
     flex-direction: row;
     // padding: 1rem 10rem;
   }
+  @include MEDIUM-LANDSCAPE {
+    width: row;
+  }
   @include LARGE-DEVICE-WIDTH {
     padding: 1rem 10rem;
+  }
+  h3 {
+    font-weight: normal;
+    @include SMALL-LANDSCAPE {
+      width: 100%;
+      font-weight: normal;
+      text-align: center;
+    }
+    @include MEDIUM-DEVICE-WIDTH {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   h2 {
@@ -203,7 +218,7 @@ footer {
     font-size: 1.15rem;
     text-align: center;
     font-weight: normal;
-    color: ($BROWN);
+    color: ($GOLD);
     padding: 0.6rem;
     @include SMALL-LANDSCAPE {
       text-align: left;
@@ -219,6 +234,7 @@ footer {
   }
   p {
     text-align: center;
+    padding: 0.3rem;
   }
 }
 
@@ -228,7 +244,7 @@ footer {
   position: relative;
   width: 100%;
   z-index: 0;
-  background:#f2f3eb;
+  background: #f2f3eb;
   padding: 1rem 0;
   @include SMALL-LANDSCAPE {
     position: fixed;

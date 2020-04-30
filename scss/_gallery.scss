@@ -8,7 +8,6 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    background: ($WHITE-005);
     padding: 0.5rem;
     @include SMALL-LANDSCAPE {
       box-shadow: none;
