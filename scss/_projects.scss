@@ -8,7 +8,7 @@
     align-items: flex-end;
     height: 100%;
     overflow: auto;
-    background: snow;
+    background: ($BABY-PINK);
 
     @include SMALL-LANDSCAPE {
       padding: 33px 9%;
@@ -26,7 +26,6 @@
       padding: 2rem;
       margin: 2rem;
       margin-top: 5rem;
-
     }
     .block {
       padding: 0.5rem;
@@ -59,7 +58,7 @@
         text-transform: uppercase;
         font-size: 1.43rem;
         margin-bottom: 0.862rem;
-        color: #4a4d50;
+        color: ($BLACK-002);
         font-weight: bold;
         width: 100%;
         top: 30%;
@@ -76,7 +75,7 @@
       }
       h3 {
         font-family: "Roboto", sans-serif;
-        @include LARGE-DEVICE-WIDTH  {
+        @include LARGE-DEVICE-WIDTH {
           font-size: 1.4rem;
         }
       }
@@ -86,13 +85,6 @@
         font-family: "roboto";
         @include LARGE-DEVICE-WIDTH {
           padding: 0.5rem 0;
-        }
-      }
-
-      .main-title {
-        color: #3e0d18;
-        @include MEDIUM-DEVICE-WIDTH {
-          top: 1rem;
         }
       }
     }
@@ -132,7 +124,7 @@
       position: relative;
       overflow: hidden;
       cursor: pointer;
-      background: #f2f3eb;
+      background: ($WHITE-005);
       box-shadow: #999a8e33 6px 6px 8px, #3f403408 -1px -1px 2px;
       z-index: 3;
       @include MEDIUM-DEVICE-WIDTH {

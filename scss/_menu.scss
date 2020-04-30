@@ -140,12 +140,12 @@
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background: #fafaf8;
+  background: ($GRAY-01);
   box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127),
-  0px -3px 1px rgba(99, 11, 6, 0.244);
+    0px -3px 1px rgba(99, 11, 6, 0.244);
   @include MEDIUM-DEVICE-WIDTH {
     height: 65px;
-    background: #fafaf8;
+    background: ($GRAY-01);
   }
 
   &.open {
@@ -164,7 +164,7 @@
     transform: translateY(-100%);
     background-color: #3e0d18;
     @include transition-ease;
-    background: white;
+    background: ($WHITE);
 
     &__item:nth-child(3) {
       transition-delay: 0.315s;
@@ -179,18 +179,19 @@
       transform: translateY(0);
       align-items: flex-end;
       justify-content: space-around;
-      border: 4px solid #f2f3eb;
+      border: 4px solid ($BABY-PINK-01);
       flex-direction: column-reverse;
       align-items: center;
       padding: 36px;
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: #fafbf5;
+      background: ($BABY-PINK);
+
       @include SMALL-LANDSCAPE {
         flex-direction: row;
         padding-top: 63px;
-        background: #fafbf5;
+        background: ($WHITE-005);
       }
       @include MEDIUM-DEVICE-WIDTH {
         display: flex;
@@ -223,63 +224,6 @@
       &.open {
         transform: translate(0);
       }
-
-      #topLink:hover {
-        &:active {
-          background-color: red;
-        }
-      }
-    }
-
-    &__link {
-      width: 100%;
-      display: inline-block;
-      font-size: 1.25rem;
-      font-weight: bold;
-      text-shadow: none;
-      text-transform: uppercase;
-      text-align: center;
-      padding: 0.47em 0.5em;
-      padding-left: 0;
-      margin: 3px 0;
-      border-radius: 0.28rem;
-      letter-spacing: 0.084em;
-      color: #637d8b;
-      border: 1px solid #a9bdc0;
-      width: 100%;
-      background-color: #f3f0d8;
-      font-family: "Cormorant Unicase", serif;
-
-      &:active {
-        font-family: "Cormorant Unicase", serif;
-        border: none;
-        background-color: none;
-        box-shadow: none;
-      }
-      &:focus {
-        box-shadow: 0 0 1px 1px rgb(63, 53, 48);
-        background-color: #bfb083;
-      }
-
-      @include transition-ease;
-      @include MEDIUM-DEVICE-WIDTH {
-        padding: 0.8rem 0;
-        font-size: 1.24rem;
-        width: 121px;
-        margin: auto;
-      }
-      @include LARGE-DEVICE-WIDTH {
-        font-size: 1.032rem;
-        letter-spacing: 0.1rem;
-        width: 140px;
-      }
-
-      &:hover {
-        cursor: pointer;
-        color: #414c57;
-        font-weight: bold;
-        box-shadow: 0px 2px 2px #fcd603, 0px -2px 2px #f4f7f9;
-      }
     }
   }
 
@@ -288,19 +232,19 @@
     font-size: 1.9em;
     font-weight: normal;
     line-height: 1em;
-    color: #ccb085;
+    color: ($GOLD);
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
     padding: 0;
     @include SMALL-LANDSCAPE {
       font-size: 1.35rem;
-      color: #907544;
+      color: ($GOLD);
       font-weight: bold;
     }
     @include MEDIUM-DEVICE-WIDTH {
       font-size: 3.2em;
-      color: #907544;
+      color: ($GOLD);
     }
     @include LARGE-DEVICE-WIDTH {
       font-size: 2.15em;
@@ -339,7 +283,7 @@
       }
     }
   }
-
+  // ........
   .title_txt_container {
     display: flex;
     justify-content: flex-end;
@@ -348,24 +292,20 @@
     .title_text {
       font-size: 1.3rem;
       font-family: "Cormorant Unicase", serif;
-      text-shadow: 3.28px 3.36px #e7ffc7;
-      text-shadow: none;
       padding: 0;
-      color: #ccb085;
+      color: ($GOLD);
       @include SMALL-LANDSCAPE {
         font-size: 1.31em;
-        color: #907544;
+        color: ($GOLD);
         font-weight: bold;
       }
       @include MEDIUM-DEVICE-WIDTH {
         font-size: 2.2rem;
-        color: #907544;
         margin: 0;
         font-weight: normal;
       }
       @include LARGE-DEVICE-WIDTH {
         font-size: 1.6em;
-        color: #907544;
         font-weight: normal;
       }
     }

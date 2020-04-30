@@ -74,7 +74,7 @@
     .contact__cv {
       font-size: 1.13rem;
       font-family: "Roboto", "Montserrat", cursive;
-      color: #9c802c;
+      color: ($GOLD);
       width: 100vw;
       text-align: left;
       letter-spacing: 0.04em;
@@ -89,7 +89,7 @@
         text-align: center;
       }
       .fa-download {
-        color: #9c802c !important;
+        color: ($GOLD) !important;
       }
     }
     // .....

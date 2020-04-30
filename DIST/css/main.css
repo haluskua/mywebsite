@@ -127,7 +127,7 @@ a {
     padding: 8px;
     padding-left: 1rem;
     width: 100%;
-    background: white; }
+    background: #ffffff; }
     .home__box-two h3 {
       font-size: 1rem;
       line-height: 1.24em;
@@ -213,7 +213,7 @@ a {
           margin-top: 1rem; } }
     a:hover .home__box-four:active, a:hover .home__box-five:active {
       background: yellowgreen;
-      color: white;
+      color: #ffffff;
       border: none; }
 
 .social-icons {
@@ -414,7 +414,7 @@ a {
     background-color: #3e0d18;
     -webkit-transition: all 0.42s ease-in-out;
     transition: all 0.42s ease-in-out;
-    background: white; }
+    background: #ffffff; }
     .nav .menu-nav__item:nth-child(3) {
       -webkit-transition-delay: 0.315s;
               transition-delay: 0.315s;
@@ -435,7 +435,7 @@ a {
               align-items: flex-end;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-      border: 4px solid #f2f3eb;
+      border: 4px solid #fff2f2;
       -webkit-box-orient: vertical;
       -webkit-box-direction: reverse;
           -ms-flex-direction: column-reverse;
@@ -447,7 +447,7 @@ a {
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: #fafbf5; }
+      background: #f9f3f3; }
       @media only screen and (device-width: 1em), screen and (orientation: landscape) {
         .nav .menu-nav.open {
           -webkit-box-orient: horizontal;
@@ -499,61 +499,12 @@ a {
       .nav .menu-nav__item.open {
         -webkit-transform: translate(0);
                 transform: translate(0); }
-      .nav .menu-nav__item #topLink:hover:active {
-        background-color: red; }
-    .nav .menu-nav__link {
-      width: 100%;
-      display: inline-block;
-      font-size: 1.25rem;
-      font-weight: bold;
-      text-shadow: none;
-      text-transform: uppercase;
-      text-align: center;
-      padding: 0.47em 0.5em;
-      padding-left: 0;
-      margin: 3px 0;
-      border-radius: 0.28rem;
-      letter-spacing: 0.084em;
-      color: #637d8b;
-      border: 1px solid #a9bdc0;
-      width: 100%;
-      background-color: #f3f0d8;
-      font-family: "Cormorant Unicase", serif;
-      -webkit-transition: all 0.42s ease-in-out;
-      transition: all 0.42s ease-in-out; }
-      .nav .menu-nav__link:active {
-        font-family: "Cormorant Unicase", serif;
-        border: none;
-        background-color: none;
-        -webkit-box-shadow: none;
-                box-shadow: none; }
-      .nav .menu-nav__link:focus {
-        -webkit-box-shadow: 0 0 1px 1px #3f3530;
-                box-shadow: 0 0 1px 1px #3f3530;
-        background-color: #bfb083; }
-      @media only screen and (min-width: 481px) and (orientation: portrait) {
-        .nav .menu-nav__link {
-          padding: 0.8rem 0;
-          font-size: 1.24rem;
-          width: 121px;
-          margin: auto; } }
-      @media only screen and (min-width: 1025px) and (orientation: landscape) {
-        .nav .menu-nav__link {
-          font-size: 1.032rem;
-          letter-spacing: 0.1rem;
-          width: 140px; } }
-      .nav .menu-nav__link:hover {
-        cursor: pointer;
-        color: #414c57;
-        font-weight: bold;
-        -webkit-box-shadow: 0px 2px 2px #fcd603, 0px -2px 2px #f4f7f9;
-                box-shadow: 0px 2px 2px #fcd603, 0px -2px 2px #f4f7f9; }
   .nav .my_name {
     font-family: "Cinzel Decorative", cursive;
     font-size: 1.9em;
     font-weight: normal;
     line-height: 1em;
-    color: #ccb085;
+    color: #caa45f;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
@@ -561,12 +512,12 @@ a {
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .nav .my_name {
         font-size: 1.35rem;
-        color: #907544;
+        color: #caa45f;
         font-weight: bold; } }
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .nav .my_name {
         font-size: 3.2em;
-        color: #907544; } }
+        color: #caa45f; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .nav .my_name {
         font-size: 2.15em;
@@ -612,25 +563,21 @@ a {
     .nav .title_txt_container .title_text {
       font-size: 1.3rem;
       font-family: "Cormorant Unicase", serif;
-      text-shadow: 3.28px 3.36px #e7ffc7;
-      text-shadow: none;
       padding: 0;
-      color: #ccb085; }
+      color: #caa45f; }
       @media only screen and (device-width: 1em), screen and (orientation: landscape) {
         .nav .title_txt_container .title_text {
           font-size: 1.31em;
-          color: #907544;
+          color: #caa45f;
           font-weight: bold; } }
       @media only screen and (min-width: 481px) and (orientation: portrait) {
         .nav .title_txt_container .title_text {
           font-size: 2.2rem;
-          color: #907544;
           margin: 0;
           font-weight: normal; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .nav .title_txt_container .title_text {
           font-size: 1.6em;
-          color: #907544;
           font-weight: normal; } }
   .nav #leters {
     animation: yellow_ring 4.5s infinite linear alternate-reverse;
@@ -695,7 +642,7 @@ a {
   .content-wrapper .about {
     padding-bottom: 0rem;
     padding-top: 2rem;
-    background: #f2f3eb; }
+    background: #f9f3f3; }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .content-wrapper .about {
         height: 100%;
@@ -835,7 +782,7 @@ a {
         margin-top: 5px;
         font-size: 0.77rem;
         background: none;
-        color: #d09667;
+        color: #caa45f;
         font-style: italic;
         border: none; }
         @media only screen and (min-width: 481px) and (orientation: portrait) {
@@ -850,7 +797,7 @@ a {
           .content-wrapper .about__bio p #myBtn {
             text-align: left; } }
       .content-wrapper .about__bio h3 {
-        color: #bd7e40;
+        color: #caa45f;
         font-size: 1.5em;
         padding-top: 15px;
         text-align: left;
@@ -865,7 +812,7 @@ a {
         text-align: left; }
     .content-wrapper .about .jobs {
       width: 100%;
-      background-color: #ffffff;
+      background-color: #f9f3f3;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -878,7 +825,7 @@ a {
         .content-wrapper .about .jobs {
           width: 100%; } }
       .content-wrapper .about .jobs__bio-image {
-        background: #f2f3eb;
+        background: #fafbf5;
         height: 100%;
         width: auto; }
         .content-wrapper .about .jobs__bio-image img {
@@ -896,7 +843,7 @@ a {
             -ms-flex-align: start;
                 align-items: flex-start;
         padding: 11px 14px;
-        border-bottom: 0.5px solid #d8ccad;
+        border-bottom: 0.5px solid #caa45f;
         -webkit-box-shadow: 1px 11px 7px rgba(218, 215, 206, 0), -25px 10px 9px rgba(224, 224, 213, 0.14);
                 box-shadow: 1px 11px 7px rgba(218, 215, 206, 0), -25px 10px 9px rgba(224, 224, 213, 0.14);
         background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffffff));
@@ -948,7 +895,7 @@ a {
             color: #09868c;
             cursor: pointer; }
           .content-wrapper .about .jobs__job P span a:hover {
-            color: gold; }
+            color: #caa45f; }
 
 .content-wrapper .projects {
   display: -webkit-box;
@@ -966,7 +913,7 @@ a {
           align-items: flex-end;
   height: 100%;
   overflow: auto;
-  background: snow; }
+  background: #f9f3f3; }
   @media only screen and (device-width: 1em), screen and (orientation: landscape) {
     .content-wrapper .projects {
       padding: 33px 9%;
@@ -1025,7 +972,7 @@ a {
       text-transform: uppercase;
       font-size: 1.43rem;
       margin-bottom: 0.862rem;
-      color: #4a4d50;
+      color: #292b20;
       font-weight: bold;
       width: 100%;
       top: 30%;
@@ -1050,11 +997,6 @@ a {
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .content-wrapper .projects__bio-image h5 {
           padding: 0.5rem 0; } }
-    .content-wrapper .projects__bio-image .main-title {
-      color: #3e0d18; }
-      @media only screen and (min-width: 481px) and (orientation: portrait) {
-        .content-wrapper .projects__bio-image .main-title {
-          top: 1rem; } }
   .content-wrapper .projects__items {
     padding: 1rem;
     display: grid;
@@ -1093,7 +1035,7 @@ a {
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    background: #f2f3eb;
+    background: #fafbf5;
     -webkit-box-shadow: #999a8e33 6px 6px 8px, #3f403408 -1px -1px 2px;
             box-shadow: #999a8e33 6px 6px 8px, #3f403408 -1px -1px 2px;
     z-index: 3; }
@@ -1256,7 +1198,7 @@ a {
   .content-wrapper .contact .contact__cv {
     font-size: 1.13rem;
     font-family: "Roboto", "Montserrat", cursive;
-    color: #9c802c;
+    color: #caa45f;
     width: 100vw;
     text-align: left;
     letter-spacing: 0.04em;
@@ -1280,7 +1222,7 @@ a {
     .content-wrapper .contact .contact__phone .fa-download,
     .content-wrapper .contact .contact__address .fa-download,
     .content-wrapper .contact .contact__cv .fa-download {
-      color: #9c802c !important; }
+      color: #caa45f !important; }
   .content-wrapper .contact .download {
     cursor: pointer;
     color: #000000;
@@ -1326,14 +1268,14 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: #f5f5f3;
+    background: #fafbf5;
     padding: 0.5rem; }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
       .content-wrapper .main-container {
         -webkit-box-shadow: none;
                 box-shadow: none;
         padding: 16px 15%;
-        background: #f5f5f3; } }
+        background: #fafbf5; } }
     @media only screen and (min-width: 481px) and (orientation: portrait) {
       .content-wrapper .main-container {
         height: auto;
@@ -1371,7 +1313,7 @@ a {
     max-width: 760px;
     margin: auto;
     overflow: scroll;
-    background: white;
+    background: #ffffff;
     -webkit-box-shadow: 8px 10px 14px #c1c1c18f, 2px -10px 18px #ececec;
             box-shadow: 8px 10px 14px #c1c1c18f, 2px -10px 18px #ececec; }
     @media only screen and (device-width: 1em), screen and (orientation: landscape) {
@@ -1381,7 +1323,7 @@ a {
                 box-shadow: none;
         padding: 1rem;
         padding: 1rem;
-        background: white;
+        background: #ffffff;
         -webkit-box-shadow: 8px 10px 14px #c1c1c18f, 2px -10px 18px #ececec;
                 box-shadow: 8px 10px 14px #c1c1c18f, 2px -10px 18px #ececec; } }
     @media only screen and (min-width: 481px) and (orientation: portrait) {
@@ -1464,7 +1406,6 @@ a {
 /*----------- Light & Dark Theme -----------*/
 /*----------- @Mixins -----------*/
 body {
-  color: #ffffff;
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1; }
@@ -1493,7 +1434,6 @@ h5 {
   padding: 1rem; }
 
 a {
-  color: #ffffff;
   text-decoration: none; }
 
 a:link {
