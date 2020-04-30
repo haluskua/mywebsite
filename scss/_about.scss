@@ -12,16 +12,11 @@
       overflow: auto;
       padding: 28px 20%;
     }
-    .breadCrumbs {
-      position: absolute;
-      top: 3%;
-      left: 3%;
-      @include MEDIUM-DEVICE-WIDTH {
-        top: 9%;
-      }
-      @include LARGE-DEVICE-WIDTH {
-        top: 15%;
-      }
+    @include MEDIUM-LANDSCAPE {
+      padding: 6%;
+    }
+    @include LARGE-DEVICE-WIDTH {
+      padding: 0;
     }
 
     &__bio-image {
@@ -45,12 +40,20 @@
         justify-content: space-around;
         box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec;
       }
-      @include LARGE-DEVICE-WIDTH {
-        height: auto;
+      @include MEDIUM-LANDSCAPE {
+        flex-direction: row;
+        height: 100%;
+        align-items: flex-start;
         background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px),
-          url(../img/project-1.jpg) center bottom;
+          url(../img/polygon.png) center bottom;
         background-size: cover;
-        flex-direction: column-reverse;
+      }
+      @include LARGE-DEVICE-WIDTH {
+        width: 100%;
+        height: 90%;
+        padding: 0;
+        justify-content: space-between;
+        width: 97%;
       }
 
       .text-secondary {
@@ -77,6 +80,19 @@
           justify-content: flex-end;
         }
       }
+
+      // ......
+      .breadCrumbs {
+        position: absolute;
+        top: 3%;
+        left: 3%;
+        @include MEDIUM-DEVICE-WIDTH {
+          top: 9%;
+        }
+        @include LARGE-DEVICE-WIDTH {
+          top: 15%;
+        }
+      }
     }
 
     // ......
@@ -92,6 +108,7 @@
       @include SMALL-LANDSCAPE {
         box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16),
           6px 6px 11px rgba(255, 193, 7, 0.125);
+        width: 50%;
       }
 
       @include MEDIUM-DEVICE-WIDTH {
@@ -100,14 +117,19 @@
       @include MEDIUM-LANDSCAPE {
         box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16),
           6px 6px 11px rgba(255, 193, 7, 0.125);
+        width: 100%;
       }
       @include LARGE-DEVICE-WIDTH {
         border: none;
         flex-direction: column;
         align-items: flex-start;
+        width: 50%;
       }
       .jobs__bio-image {
         width: 100%;
+        @include MEDIUM-LANDSCAPE {
+          width: 100%;
+        }
       }
     }
 
@@ -121,6 +143,12 @@
       @include MEDIUM-DEVICE-WIDTH {
         font-size: 1.5rem;
         width: 100%;
+      }
+      @include LARGE-DEVICE-WIDTH {
+        width: 50%;
+      }
+      @include XXLARGE-DEVICE-WIDTH {
+        width: 50%;
       }
 
       .main-title {
@@ -149,11 +177,9 @@
           @include MEDIUM-DEVICE-WIDTH {
             display: flex;
             justify-content: flex-start;
-
           }
           @include LARGE-DEVICE-WIDTH {
             text-align: left;
-
           }
         }
       }
@@ -189,6 +215,9 @@
       grid-gap: 0.5rem;
       @include MEDIUM-DEVICE-WIDTH {
         width: 100%;
+      }
+      @include LARGE-DEVICE-WIDTH {
+        width: 45%;
       }
       &__bio-image {
         background: ($WHITE-005);

@@ -54,7 +54,6 @@
       width: 70%;
       font-family: "Cinzel Decorative", cursive;
       font-weight: bold;
-      text-transform: lowercase;
       @include MEDIUM-DEVICE-WIDTH {
         font-weight: 2.6rem;
       }
@@ -132,7 +131,7 @@
       padding: 1rem;
       color: ($GOLD);
       text-shadow: none;
-      font-family: "Roboto", sans-serif;
+      font-family: "Cinzel Decorative", sans-serif;
       font-weight: bold;
       text-align: left;
       text-transform: uppercase;
