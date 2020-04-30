@@ -105,8 +105,7 @@ a {
       text-align: left;
       width: 70%;
       font-family: "Cinzel Decorative", cursive;
-      font-weight: bold;
-      text-transform: lowercase; }
+      font-weight: bold; }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .home__box-one h1 {
           font-weight: 2.6rem; } }
@@ -190,7 +189,7 @@ a {
       padding: 1rem;
       color: #caa45f;
       text-shadow: none;
-      font-family: "Roboto", sans-serif;
+      font-family: "Cinzel Decorative", sans-serif;
       font-weight: bold;
       text-align: left;
       text-transform: uppercase; }
@@ -662,16 +661,12 @@ a {
         height: 100%;
         overflow: auto;
         padding: 28px 20%; } }
-    .content-wrapper .about .breadCrumbs {
-      position: absolute;
-      top: 3%;
-      left: 3%; }
-      @media only screen and (min-width: 640px) and (orientation: portrait) {
-        .content-wrapper .about .breadCrumbs {
-          top: 9%; } }
-      @media only screen and (min-width: 1025px) and (orientation: landscape) {
-        .content-wrapper .about .breadCrumbs {
-          top: 15%; } }
+    @media only screen and (min-width: 1024px) and (orientation: landscape) {
+      .content-wrapper .about {
+        padding: 6%; } }
+    @media only screen and (min-width: 1025px) and (orientation: landscape) {
+      .content-wrapper .about {
+        padding: 0; } }
     .content-wrapper .about__bio-image {
       width: 100%;
       border-radius: 0.3rem;
@@ -705,15 +700,27 @@ a {
               justify-content: space-around;
           -webkit-box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec;
                   box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec; } }
+      @media only screen and (min-width: 1024px) and (orientation: landscape) {
+        .content-wrapper .about__bio-image {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          height: 100%;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+          background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px), url(../img/polygon.png) center bottom;
+          background-size: cover; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .content-wrapper .about__bio-image {
-          height: auto;
-          background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px), url(../img/project-1.jpg) center bottom;
-          background-size: cover;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: reverse;
-              -ms-flex-direction: column-reverse;
-                  flex-direction: column-reverse; } }
+          width: 100%;
+          height: 90%;
+          padding: 0;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          width: 97%; } }
       .content-wrapper .about__bio-image .text-secondary {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -742,6 +749,16 @@ a {
             -webkit-box-pack: end;
                 -ms-flex-pack: end;
                     justify-content: flex-end; } }
+      .content-wrapper .about__bio-image .breadCrumbs {
+        position: absolute;
+        top: 3%;
+        left: 3%; }
+        @media only screen and (min-width: 640px) and (orientation: portrait) {
+          .content-wrapper .about__bio-image .breadCrumbs {
+            top: 9%; } }
+        @media only screen and (min-width: 1025px) and (orientation: landscape) {
+          .content-wrapper .about__bio-image .breadCrumbs {
+            top: 15%; } }
     .content-wrapper .about .img-container {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -757,14 +774,16 @@ a {
       @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
         .content-wrapper .about .img-container {
           -webkit-box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(255, 193, 7, 0.125);
-                  box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(255, 193, 7, 0.125); } }
+                  box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(255, 193, 7, 0.125);
+          width: 50%; } }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .content-wrapper .about .img-container {
           width: 100%; } }
       @media only screen and (min-width: 1024px) and (orientation: landscape) {
         .content-wrapper .about .img-container {
           -webkit-box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(255, 193, 7, 0.125);
-                  box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(255, 193, 7, 0.125); } }
+                  box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(255, 193, 7, 0.125);
+          width: 100%; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .content-wrapper .about .img-container {
           border: none;
@@ -774,9 +793,13 @@ a {
                   flex-direction: column;
           -webkit-box-align: start;
               -ms-flex-align: start;
-                  align-items: flex-start; } }
+                  align-items: flex-start;
+          width: 50%; } }
       .content-wrapper .about .img-container .jobs__bio-image {
         width: 100%; }
+        @media only screen and (min-width: 1024px) and (orientation: landscape) {
+          .content-wrapper .about .img-container .jobs__bio-image {
+            width: 100%; } }
     .content-wrapper .about__bio {
       width: 100%;
       padding: 3%;
@@ -787,6 +810,12 @@ a {
         .content-wrapper .about__bio {
           font-size: 1.5rem;
           width: 100%; } }
+      @media only screen and (min-width: 1025px) and (orientation: landscape) {
+        .content-wrapper .about__bio {
+          width: 50%; } }
+      @media only screen and (min-width: 2200px) and (orientation: landscape) {
+        .content-wrapper .about__bio {
+          width: 50%; } }
       .content-wrapper .about__bio .main-title {
         color: #3e0d18;
         display: none; }
@@ -844,6 +873,9 @@ a {
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .content-wrapper .about .jobs {
           width: 100%; } }
+      @media only screen and (min-width: 1025px) and (orientation: landscape) {
+        .content-wrapper .about .jobs {
+          width: 45%; } }
       .content-wrapper .about .jobs__bio-image {
         background: #fafbf5;
         height: 100%;
