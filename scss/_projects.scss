@@ -11,20 +11,21 @@
     background: ($BABY-PINK);
 
     @include SMALL-LANDSCAPE {
-      padding: 33px 9%;
+      padding: 0;
       background-size: contain;
       background-repeat: repeat;
     }
     @include MEDIUM-DEVICE-WIDTH {
-      box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec;
+      @include box-shadow-one;
       justify-content: center;
       margin-top: 3.4rem;
     }
     @include LARGE-DEVICE-WIDTH {
-      box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec;
+      @include box-shadow-one;
       padding: 2rem;
       margin: 2rem;
       margin-top: 5rem;
+      padding: 0 11%;
     }
     .block {
       padding: 0.5rem;
@@ -126,10 +127,10 @@
       border-radius: 0.2rem;
       position: relative;
       overflow: hidden;
+      z-index: 3;
       cursor: pointer;
       background: ($WHITE-005);
-      box-shadow: #999a8e33 6px 6px 8px, #3f403408 -1px -1px 2px;
-      z-index: 3;
+      @include box-shadow-one;
       @include MEDIUM-DEVICE-WIDTH {
         display: flex;
         justify-content: center;
@@ -141,8 +142,9 @@
 
       h3 {
         font-family: "Roboto";
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: normal;
+        text-transform: uppercase;
         @include SMALL-LANDSCAPE {
           font-size: 0.85rem;
         }

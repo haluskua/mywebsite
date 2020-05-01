@@ -24,8 +24,8 @@
   top: 17px;
   width: 14%;
   height: 0px;
-  background: #ffffff;
-  transition: all 0.42s ease-in-out;
+  background: ($WHITE);
+  @include transition-ease;
   z-index: 999;
   display: flex;
   justify-content: space-around;
@@ -48,7 +48,7 @@
     top: 0.5rem;
     width: 28px;
     height: 3px;
-    background: #776f6f;
+    background: ($BLACK-002);
     @include transition-ease;
 
     &::before {
@@ -57,7 +57,7 @@
       top: -8px;
       width: 28px;
       height: 3px;
-      background: #776f6f;
+      background: ($BLACK-002);
       @include transition-ease;
     }
 
@@ -92,9 +92,8 @@
     left: 3%;
     font-size: 1.35em;
     font-weight: bold;
-    font-family: "Cinzel Decorative", cursive;
     font-family: "Charmonman", serif;
-    background: linear-gradient(to right, #ffffff, #ffff94);
+    background: ($WHITE);
   }
 }
 
@@ -109,7 +108,7 @@
     z-index: 99999699999;
     position: fixed;
     left: 7rem;
-    margin-top: -1.5rem;
+    margin-top: -1.15rem;
     @include SMALL-LANDSCAPE {
       margin-top: -2.5rem;
       width: 30%;
@@ -150,8 +149,7 @@
   width: 100vw;
   height: 48px;
   background: ($GRAY-01);
-  box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127),
-    0px -3px 1px rgba(99, 11, 6, 0.244);
+  @include box-shadow-one;
   @include MEDIUM-DEVICE-WIDTH {
     height: 65px;
     background: ($GRAY-01);
@@ -207,7 +205,7 @@
         width: 83%;
         flex-wrap: nowrap;
         justify-content: center;
-        box-shadow: 26rem 0 70px #25365885;
+        @include box-shadow-one;
         padding: 0;
         margin: 0;
         height: 100vh;
@@ -271,8 +269,6 @@
     display: flex;
     margin-top: -1rem;
     justify-content: space-around;
-    transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear,
-      -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
     @include SMALL-LANDSCAPE {
       width: 40%;
     }

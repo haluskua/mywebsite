@@ -100,9 +100,11 @@ header {
   width: 100%;
   .O {
     color: red;
+    font-family: "Cinzel Decorative", sans-serif;
   }
   .H {
     color: #f37a58;
+    font-family: "Cinzel Decorative", sans-serif;
   }
 }
 
@@ -111,7 +113,7 @@ main {
   height: 100vh;
   width: 100%;
   overflow: auto;
-  background: #f2f3eb;
+  background: ($GRAY-02);
   @include MEDIUM-DEVICE-WIDTH {
   }
   a {
@@ -142,13 +144,6 @@ main {
   @include MEDIUM-DEVICE-WIDTH {
     padding-top: 2rem;
   }
-  @include MEDIUM-LANDSCAPE {
-    height: 100%;
-  }
-  @include LARGE-DEVICE-WIDTH {
-    padding: 0 12%;
-    height: 100%;
-  }
 }
 
 // ..................
@@ -161,11 +156,17 @@ p {
   font-size: 0.92em;
   line-height: 1.43em;
   text-align: left;
+  @include SMALL-LANDSCAPE {
+    font-size: 0.86em;
+  }
   @include MEDIUM-DEVICE-WIDTH {
     border-radius: 0.05rem;
     line-height: 1.7rem;
     letter-spacing: 0.031rem;
     font-size: 1.03rem;
+  }
+  @include MEDIUM-LANDSCAPE {
+    font-size: 0.93rem;
   }
   @include LARGE-DEVICE-WIDTH {
     box-shadow: none;
@@ -180,20 +181,21 @@ p {
 // ........
 footer {
   flex-direction: column;
-  background: #f2f3eb;
+  background: ($GRAY-02);
   padding: 0.3rem;
   display: flex;
   align-items: center;
   @include SMALL-LANDSCAPE {
     flex-direction: row;
     padding: 1.1rem;
+    width: 100%;
   }
   @include MEDIUM-DEVICE-WIDTH {
     flex-direction: row;
     // padding: 1rem 10rem;
   }
   @include MEDIUM-LANDSCAPE {
-    width: row;
+    width: 100%;
   }
   @include LARGE-DEVICE-WIDTH {
     padding: 1rem 10rem;
@@ -241,29 +243,24 @@ footer {
 // ........
 //social icons links
 .social-icons {
+  display: flex;
   position: relative;
   width: 100%;
   z-index: 0;
-  background: #f2f3eb;
+  background: ($GRAY-02);
   padding: 1rem 0;
+  justify-content: center;
   @include SMALL-LANDSCAPE {
-    position: fixed;
-    left: 0;
-    flex-direction: column;
-    width: auto;
-    bottom: 13%;
-  }
-  @include MEDIUM-DEVICE-WIDTH {
-    position: fixed;
-    left: 0;
-    flex-direction: column;
-    width: auto;
-    bottom: 13%;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
   }
   @include LARGE-DEVICE-WIDTH {
     left: 1rem;
     bottom: 10%;
     background: none;
+    position: fixed;
+    flex-direction: column;
   }
   .fa-2x {
     font-size: 1.25em;

@@ -162,20 +162,20 @@
     }
   }
 }
-.social-icons {
-  display: flex;
-  position: relative;
-  bottom: 0;
-  justify-content: center;
-  width: 100%;
-  background: #283546;
+// .social-icons {
+//   display: flex;
+//   position: relative;
+//   bottom: 0;
+//   justify-content: center;
+//   width: 100%;
+//   background: #283546;
 
-  @include LARGE-DEVICE-WIDTH {
-    flex-direction: row;
-    width: auto;
-    left: 0;
-    height: 100%;
-    padding: 1rem 0.5rem;
-    height: 100%;
-  }
-}
+//   @include LARGE-DEVICE-WIDTH {
+//     flex-direction: row;
+//     width: auto;
+//     left: 0;
+//     height: 100%;
+//     padding: 1rem 0.5rem;
+//     height: 100%;
+//   }
+// }

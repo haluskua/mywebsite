@@ -2,18 +2,14 @@
   //styles for .content-wrapper is in the main.scss
   
   .contact {
-    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+    @include Flex-Col-Cent-End;
+    overflow: hidden;
     width: 100%;
     height: 100%;
     padding-top: 2rem;
     @include SMALL-LANDSCAPE {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
+      @include Flex-flow-row-wrap;
       margin-top: 1.5rem;
       padding: 0;
     }
@@ -33,9 +29,7 @@
     .img-box {
       display: flex;
       justify-content: center;
-      background: url('/DIST/img/polygon.png') center center;
-      background-size: cover;
-      background-repeat: no-repeat;
+      @include bcg-rep-grd;
       @include SMALL-LANDSCAPE {
         width: 33%;
       }
@@ -104,7 +98,7 @@
     }
 
     .text-secondary {
-      color: #000000;
+      color: ($BLACK-002);
       margin: 3px 0;
       font-size: 0.9rem;
       margin-top: 8px;

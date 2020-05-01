@@ -1,10 +1,9 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
+// .................................................................
 // hiding-scroll bar on overfow
 // ......
 * {
@@ -17,33 +16,26 @@
 * {
   -ms-overflow-style: none;
 }
-
+// .................................................................
 // ......................
 a {
   text-decoration: none;
   list-style: none;
 }
 
-@mixin transition-ease {
-  transition: all 0.42s ease-in-out;
-}
 
-.showIcons {
-  display: flex;
-  position: fixed;
-  flex-direction: column;
-  bottom: 2rem;
-  font-size: 0.7rem;
-  right: 0.41rem;
-  padding: 0.09rem;
-}
+// .showIcons {
+//   display: flex;
+//   position: fixed;
+//   flex-direction: column;
+//   bottom: 2rem;
+//   font-size: 0.7rem;
+//   right: 0.41rem;
+//   padding: 0.09rem;
+// }
 
-
-
-
-
+// .................................................................
 // function
-
 @function set-text-color($color) {
   @if (lightness($color) > 40%) {
     @return #000;
@@ -52,6 +44,43 @@ a {
   }
 }
 
+// .................................................................
+//dynamic-transision MIXINS
+// ..........
+@mixin transition-ease {
+  transition: all 0.42s ease-in-out;
+}
+// .................................................................
+//BOX-SHADOWS MIXINS
+// ..........
+@mixin box-shadow-one {
+  box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
+}
+
+// .................................................................
+//BACKGROUND-IMAGE SCSS MIXINS
+// ...........
+@mixin bcg-rep-grd {
+  background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px),
+    url(../img/polygon.png) center bottom;
+  background-size: cover;
+}
+
+// .................................................................
+//DISPLAY FLEX - MIXINS
+// ...........
+@mixin Flex-Col-Cent-End {
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+// ...........
+@mixin Flex-flow-row-wrap {
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+// .................................................................
 // MEDIA QUERIES
 // ...................
 @mixin SMALL-LANDSCAPE {
@@ -60,31 +89,33 @@ a {
     @content;
   }
 }
+// .................................................................
 @mixin MEDIUM-DEVICE-WIDTH {
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     @content;
   }
 }
-@mixin MEDIUM-LANDSCAPE{
+// .................................................................
+@mixin MEDIUM-LANDSCAPE {
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
     @content;
   }
 }
-
+// .................................................................
 @mixin LARGE-DEVICE-WIDTH {
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     @content;
   }
 }
+// .................................................................
 @mixin XLARGE-DEVICE-WIDTH {
   @media only screen and (min-width: 1280px) and (orientation: landscape) {
     @content;
   }
 }
+// .................................................................
 @mixin XXLARGE-DEVICE-WIDTH {
   @media only screen and (min-width: 2200px) and (orientation: landscape) {
     @content;
   }
 }
-
-
