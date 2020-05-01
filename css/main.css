@@ -19,20 +19,6 @@ a {
   text-decoration: none;
   list-style: none; }
 
-.showIcons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  bottom: 2rem;
-  font-size: 0.7rem;
-  right: 0.41rem;
-  padding: 0.09rem; }
-
 .menu-nav__item:nth-child(1) {
   -webkit-transition-delay: 0.175s;
           transition-delay: 0.175s; }
@@ -215,29 +201,6 @@ a {
       color: #ffffff;
       border: none; }
 
-.social-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  bottom: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  background: #283546; }
-  @media only screen and (min-width: 1025px) and (orientation: landscape) {
-    .social-icons {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      width: auto;
-      left: 0;
-      height: 100%;
-      padding: 1rem 0.5rem;
-      height: 100%; } }
-
 #project-index {
   -webkit-animation: breadCrumb 8s infinite linear alternate;
           animation: breadCrumb 8s infinite linear alternate;
@@ -294,7 +257,7 @@ a {
     top: 0.5rem;
     width: 28px;
     height: 3px;
-    background: #776f6f;
+    background: #292b20;
     -webkit-transition: all 0.42s ease-in-out;
     transition: all 0.42s ease-in-out; }
     .menu-btn__burger::before {
@@ -303,7 +266,7 @@ a {
       top: -8px;
       width: 28px;
       height: 3px;
-      background: #776f6f;
+      background: #292b20;
       -webkit-transition: all 0.42s ease-in-out;
       transition: all 0.42s ease-in-out; }
     .menu-btn__burger::after {
@@ -334,10 +297,8 @@ a {
     left: 3%;
     font-size: 1.35em;
     font-weight: bold;
-    font-family: "Cinzel Decorative", cursive;
     font-family: "Charmonman", serif;
-    background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffff94));
-    background: linear-gradient(to right, #ffffff, #ffff94); }
+    background: #ffffff; }
 
 .menu-index {
   padding: 0; }
@@ -350,7 +311,7 @@ a {
     z-index: 99999699999;
     position: fixed;
     left: 7rem;
-    margin-top: -1.5rem; }
+    margin-top: -1.15rem; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .menu-index #project-index {
         margin-top: -2.5rem;
@@ -390,8 +351,8 @@ a {
   width: 100vw;
   height: 48px;
   background: #fafaf8;
-  -webkit-box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127), 0px -3px 1px rgba(99, 11, 6, 0.244);
-          box-shadow: 0px 2px 1px rgba(157, 32, 26, 0.127), 0px -3px 1px rgba(99, 11, 6, 0.244); }
+  -webkit-box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
+          box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec; }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .nav {
       height: 65px;
@@ -474,8 +435,8 @@ a {
           -webkit-box-pack: center;
               -ms-flex-pack: center;
                   justify-content: center;
-          -webkit-box-shadow: 26rem 0 70px #25365885;
-                  box-shadow: 26rem 0 70px #25365885;
+          -webkit-box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
+                  box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
           padding: 0;
           margin: 0;
           height: 100vh;
@@ -541,9 +502,7 @@ a {
     display: flex;
     margin-top: -1rem;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear, -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
-            transform: 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear, -webkit-transform 1.2s cubic-bezier(0.7, 0, 0.3, 1); }
+        justify-content: space-around; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .nav .svg-container {
         width: 40%; } }
@@ -660,7 +619,8 @@ a {
       .content-wrapper .about {
         height: 100%;
         overflow: auto;
-        padding: 28px 20%; } }
+        padding: 28px 5%;
+        padding-bottom: 0; } }
     @media only screen and (min-width: 1024px) and (orientation: landscape) {
       .content-wrapper .about {
         padding: 6%; } }
@@ -688,8 +648,8 @@ a {
         .content-wrapper .about__bio-image {
           margin-top: 3rem;
           background: none;
-          -webkit-box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec;
-                  box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec; } }
+          -webkit-box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
+                  box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec; } }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .content-wrapper .about__bio-image {
           height: 100%;
@@ -697,9 +657,7 @@ a {
           padding: 4% 6%;
           background: none;
           -ms-flex-pack: distribute;
-              justify-content: space-around;
-          -webkit-box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec;
-                  box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec; } }
+              justify-content: space-around; } }
       @media only screen and (min-width: 1024px) and (orientation: landscape) {
         .content-wrapper .about__bio-image {
           -webkit-box-orient: horizontal;
@@ -707,9 +665,9 @@ a {
               -ms-flex-direction: row;
                   flex-direction: row;
           height: 100%;
-          -webkit-box-align: start;
-              -ms-flex-align: start;
-                  align-items: flex-start;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
           background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px), url(../img/polygon.png) center bottom;
           background-size: cover; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
@@ -768,22 +726,7 @@ a {
               justify-content: center;
       width: 100%;
       border-radius: 6px;
-      height: auto;
-      -webkit-box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(255, 193, 7, 0.125);
-              box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(255, 193, 7, 0.125); }
-      @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-        .content-wrapper .about .img-container {
-          -webkit-box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(255, 193, 7, 0.125);
-                  box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(255, 193, 7, 0.125);
-          width: 50%; } }
-      @media only screen and (min-width: 640px) and (orientation: portrait) {
-        .content-wrapper .about .img-container {
-          width: 100%; } }
-      @media only screen and (min-width: 1024px) and (orientation: landscape) {
-        .content-wrapper .about .img-container {
-          -webkit-box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(255, 193, 7, 0.125);
-                  box-shadow: -6px -6px 11px rgba(184, 226, 194, 0.16), 6px 6px 11px rgba(255, 193, 7, 0.125);
-          width: 100%; } }
+      height: auto; }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .content-wrapper .about .img-container {
           border: none;
@@ -804,8 +747,7 @@ a {
       width: 100%;
       padding: 3%;
       text-align: center;
-      background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffffff));
-      background: linear-gradient(to right, #ffffff, #ffffff); }
+      background: #ffffff; }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .content-wrapper .about__bio {
           font-size: 1.5rem;
@@ -865,7 +807,6 @@ a {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      padding: 1%;
       margin: 0.2rem auto 0 auto;
       display: grid;
       grid-template-columns: 1fr;
@@ -895,11 +836,7 @@ a {
             -ms-flex-align: start;
                 align-items: flex-start;
         padding: 11px 14px;
-        border-bottom: 0.5px solid #caa45f;
-        -webkit-box-shadow: 1px 11px 7px rgba(218, 215, 206, 0), -25px 10px 9px rgba(224, 224, 213, 0.14);
-                box-shadow: 1px 11px 7px rgba(218, 215, 206, 0), -25px 10px 9px rgba(224, 224, 213, 0.14);
-        background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffffff));
-        background: linear-gradient(to right, #ffffff, #ffffff); }
+        background: #ffffff; }
         @media only screen and (min-width: 640px) and (orientation: portrait) {
           .content-wrapper .about .jobs__job {
             padding: 20px; } }
@@ -919,7 +856,7 @@ a {
         .content-wrapper .about .jobs__job h2,
         .content-wrapper .about .jobs__job h3 {
           font-family: "Roboto", cursive;
-          color: #3c360e;
+          color: #4a4d50;
           letter-spacing: 0.02rem;
           font-size: 1.35em;
           line-height: 1.3em;
@@ -968,24 +905,25 @@ a {
   background: #f9f3f3; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .projects {
-      padding: 33px 9%;
+      padding: 0;
       background-size: contain;
       background-repeat: repeat; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .content-wrapper .projects {
-      -webkit-box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec;
-              box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec;
+      -webkit-box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
+              box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
       margin-top: 3.4rem; } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .content-wrapper .projects {
-      -webkit-box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec;
-              box-shadow: 10px 13px 12px #c1c1c18f, 32px -10px 128px #ececec;
+      -webkit-box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
+              box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
       padding: 2rem;
       margin: 2rem;
-      margin-top: 5rem; } }
+      margin-top: 5rem;
+      padding: 0 11%; } }
   .content-wrapper .projects .block {
     padding: 0.5rem;
     padding-top: 13px; }
@@ -1089,11 +1027,11 @@ a {
     border-radius: 0.2rem;
     position: relative;
     overflow: hidden;
+    z-index: 3;
     cursor: pointer;
     background: #fafbf5;
-    -webkit-box-shadow: #999a8e33 6px 6px 8px, #3f403408 -1px -1px 2px;
-            box-shadow: #999a8e33 6px 6px 8px, #3f403408 -1px -1px 2px;
-    z-index: 3; }
+    -webkit-box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
+            box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .projects__item1, .content-wrapper .projects__item2, .content-wrapper .projects__item3, .content-wrapper .projects__item4 {
         display: -webkit-box;
@@ -1110,8 +1048,9 @@ a {
         width: 100%; } }
     .content-wrapper .projects__item1 h3, .content-wrapper .projects__item2 h3, .content-wrapper .projects__item3 h3, .content-wrapper .projects__item4 h3 {
       font-family: "Roboto";
-      font-size: 1.4rem;
-      font-weight: normal; }
+      font-size: 1.2rem;
+      font-weight: normal;
+      text-transform: uppercase; }
       @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
         .content-wrapper .projects__item1 h3, .content-wrapper .projects__item2 h3, .content-wrapper .projects__item3 h3, .content-wrapper .projects__item4 h3 {
           font-size: 0.85rem; } }
@@ -1171,7 +1110,6 @@ a {
     width: 100%; }
 
 .content-wrapper .contact {
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1185,20 +1123,18 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
   width: 100%;
   height: 100%;
   padding-top: 2rem; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .contact {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
+          -ms-flex-flow: row;
+              flex-flow: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
       margin-top: 1.5rem;
       padding: 0; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -1220,9 +1156,8 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background: url("/DIST/img/polygon.png") center center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px), url(../img/polygon.png) center bottom;
+    background-size: cover; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .contact .img-box {
         width: 33%; } }
@@ -1287,7 +1222,7 @@ a {
     z-index: 999;
     font-family: "Roboto", "Montserrat", cursive; }
   .content-wrapper .contact .text-secondary {
-    color: #000000;
+    color: #292b20;
     margin: 3px 0;
     font-size: 0.9rem;
     margin-top: 8px; }
@@ -1326,7 +1261,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0.5rem; }
+    padding: 0.25rem; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .main-container {
         -webkit-box-shadow: none;
@@ -1336,7 +1271,10 @@ a {
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .main-container {
         height: auto;
-        padding: 6%; } }
+        padding-top: 5%; } }
+    @media only screen and (min-width: 1024px) and (orientation: landscape) {
+      .content-wrapper .main-container {
+        padding: 0; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .main-container {
         margin: 0 auto;
@@ -1356,7 +1294,7 @@ a {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        height: 100vh; } }
+        height: auto; } }
   .content-wrapper .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1367,12 +1305,11 @@ a {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    max-width: 760px;
     margin: auto;
     overflow: scroll;
     background: #ffffff;
-    -webkit-box-shadow: 8px 10px 14px #c1c1c18f, 2px -10px 18px #ececec;
-            box-shadow: 8px 10px 14px #c1c1c18f, 2px -10px 18px #ececec; }
+    -webkit-box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
+            box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .container {
         border: none;
@@ -1381,11 +1318,14 @@ a {
         padding: 1rem;
         padding: 1rem;
         background: #ffffff;
-        -webkit-box-shadow: 8px 10px 14px #c1c1c18f, 2px -10px 18px #ececec;
-                box-shadow: 8px 10px 14px #c1c1c18f, 2px -10px 18px #ececec; } }
+        -webkit-box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
+                box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec; } }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .container {
         height: 100%; } }
+    @media only screen and (min-width: 1024px) and (orientation: landscape) {
+      .content-wrapper .container {
+        max-width: 90%; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .container {
         -webkit-box-orient: horizontal;
@@ -1399,7 +1339,6 @@ a {
             -ms-flex-align: center;
                 align-items: center;
         width: 100%;
-        max-width: 100%;
         height: auto;
         margin: 0;
         padding-top: 2%;
@@ -1441,8 +1380,7 @@ a {
     padding: 6% 1%; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .imgs {
-        width: 33%;
-        margin: 5%; } }
+        width: 33%; } }
   .content-wrapper .imgs img {
     cursor: pointer; }
 
@@ -1514,9 +1452,11 @@ header {
   z-index: 1;
   width: 100%; }
   header .O {
-    color: red; }
+    color: red;
+    font-family: "Cinzel Decorative", sans-serif; }
   header .H {
-    color: #f37a58; }
+    color: #f37a58;
+    font-family: "Cinzel Decorative", sans-serif; }
 
 main {
   height: 100vh;
@@ -1554,13 +1494,6 @@ main {
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .content-wrapper {
       padding-top: 2rem; } }
-  @media only screen and (min-width: 1024px) and (orientation: landscape) {
-    .content-wrapper {
-      height: 100%; } }
-  @media only screen and (min-width: 1025px) and (orientation: landscape) {
-    .content-wrapper {
-      padding: 0 12%;
-      height: 100%; } }
 
 p {
   color: #4d4d4d;
@@ -1571,12 +1504,18 @@ p {
   font-size: 0.92em;
   line-height: 1.43em;
   text-align: left; }
+  @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
+    p {
+      font-size: 0.86em; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     p {
       border-radius: 0.05rem;
       line-height: 1.7rem;
       letter-spacing: 0.031rem;
       font-size: 1.03rem; } }
+  @media only screen and (min-width: 1024px) and (orientation: landscape) {
+    p {
+      font-size: 0.93rem; } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     p {
       -webkit-box-shadow: none;
@@ -1613,7 +1552,8 @@ footer {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-      padding: 1.1rem; } }
+      padding: 1.1rem;
+      width: 100%; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     footer {
       -webkit-box-orient: horizontal;
@@ -1622,7 +1562,7 @@ footer {
               flex-direction: row; } }
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
     footer {
-      width: row; } }
+      width: 100%; } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     footer {
       padding: 1rem 10rem; } }
@@ -1668,36 +1608,37 @@ footer {
     padding: 0.3rem; }
 
 .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   width: 100%;
   z-index: 0;
   background: #f2f3eb;
-  padding: 1rem 0; }
+  padding: 1rem 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .social-icons {
-      position: fixed;
-      left: 0;
-      -webkit-box-orient: vertical;
+      -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      width: auto;
-      bottom: 13%; } }
-  @media only screen and (min-width: 640px) and (orientation: portrait) {
-    .social-icons {
-      position: fixed;
-      left: 0;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      width: auto;
-      bottom: 13%; } }
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 0; } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .social-icons {
       left: 1rem;
       bottom: 10%;
-      background: none; } }
+      background: none;
+      position: fixed;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .social-icons .fa-2x {
     font-size: 1.25em; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
@@ -1723,4 +1664,5 @@ footer {
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .fa-2x {
       font-size: 1.2rem; } }
+
 /*# sourceMappingURL=main.css.map */
