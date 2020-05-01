@@ -1638,7 +1638,8 @@ footer {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; } }
+              flex-direction: column;
+      width: auto; } }
   .social-icons .fa-2x {
     font-size: 1.25em; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
