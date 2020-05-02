@@ -323,9 +323,9 @@ a {
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background: #fafaf8;
-  -webkit-box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
-          box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec; }
+  background: #e3efef;
+  -webkit-box-shadow: 14px 11px 3px #168e9a21, 17px 1px 5px #c9d8dc;
+          box-shadow: 14px 11px 3px #168e9a21, 17px 1px 5px #c9d8dc; }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .nav {
       height: 65px;
@@ -415,8 +415,8 @@ a {
           -webkit-box-pack: center;
               -ms-flex-pack: center;
                   justify-content: center;
-          -webkit-box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
-                  box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
+          -webkit-box-shadow: 14px 11px 3px #168e9a21, 17px 1px 5px #c9d8dc;
+                  box-shadow: 14px 11px 3px #168e9a21, 17px 1px 5px #c9d8dc;
           padding: 0;
           margin: 0;
           height: 100vh;
@@ -621,10 +621,10 @@ a {
       border-radius: 0.3rem; }
       @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
         .content-wrapper .about__bio-image {
-          margin-top: 3rem;
+          margin-top: 1rem;
           background: none;
-          -webkit-box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
-                  box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec; } }
+          -webkit-box-shadow: 1px 15px 33px #168e9a21, 17px 1px 5px #c7d3d63d;
+                  box-shadow: 1px 15px 33px #168e9a21, 17px 1px 5px #c7d3d63d; } }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .content-wrapper .about__bio-image {
           height: 100%;
@@ -854,16 +854,16 @@ a {
       padding-bottom: 0; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .content-wrapper .projects {
-      -webkit-box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
-              box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
+      -webkit-box-shadow: 14px 11px 3px #168e9a21, 17px 1px 5px #c9d8dc;
+              box-shadow: 14px 11px 3px #168e9a21, 17px 1px 5px #c9d8dc;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
       margin-top: 3.4rem; } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .content-wrapper .projects {
-      -webkit-box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
-              box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
+      -webkit-box-shadow: 14px 11px 3px #168e9a21, 17px 1px 5px #c9d8dc;
+              box-shadow: 14px 11px 3px #168e9a21, 17px 1px 5px #c9d8dc;
       height: 100vh;
       padding: 0;
       margin: 4rem 8rem; } }
@@ -875,7 +875,7 @@ a {
         padding: 0; } }
   .content-wrapper .projects__bio-image {
     width: 100%;
-    padding-top: 3rem;
+    padding-top: 4rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -950,8 +950,8 @@ a {
     border-radius: 0.2rem;
     cursor: pointer;
     background: #fafbf5;
-    -webkit-box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
-            box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec; }
+    -webkit-box-shadow: 1px 15px 33px #168e9a21, 17px 1px 5px #c7d3d63d;
+            box-shadow: 1px 15px 33px #168e9a21, 17px 1px 5px #c7d3d63d; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .projects__item1, .content-wrapper .projects__item2, .content-wrapper .projects__item3, .content-wrapper .projects__item4 {
         display: -webkit-box;
@@ -1188,6 +1188,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0.25rem;
+    padding-bottom: 0;
     overflow: auto; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .main-container {
@@ -1231,8 +1232,8 @@ a {
     margin: auto;
     overflow: scroll;
     background: #ffffff;
-    -webkit-box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
-            box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec; }
+    -webkit-box-shadow: 14px 11px 3px #168e9a21, 17px 1px 5px #c9d8dc;
+            box-shadow: 14px 11px 3px #168e9a21, 17px 1px 5px #c9d8dc; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .container {
         border: none;
@@ -1241,8 +1242,8 @@ a {
         padding: 1rem;
         padding: 1rem;
         background: #ffffff;
-        -webkit-box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
-                box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec; } }
+        -webkit-box-shadow: 14px 11px 3px #168e9a21, 17px 1px 5px #c9d8dc;
+                box-shadow: 14px 11px 3px #168e9a21, 17px 1px 5px #c9d8dc; } }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .container {
         height: 100%; } }
@@ -1412,7 +1413,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 3% 0; }
+  padding: 1% 0 0 0; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper {
       height: auto;
@@ -1467,7 +1468,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #f2f3eb;
+  background: #e3efef;
   padding: 0.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1543,8 +1544,8 @@ footer {
   position: relative;
   width: 100%;
   z-index: 0;
-  background: #f2f3eb;
-  padding: 1rem 0;
+  background: #f4fdfd;
+  padding: 0.5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
