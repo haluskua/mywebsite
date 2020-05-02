@@ -3,17 +3,12 @@
   //styles for .content-wrapper is in the main.scss
   .projects {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
+    @include Flex-Col-ween-end;
     height: 100%;
     overflow: auto;
     background: ($BABY-PINK);
-
     @include SMALL-LANDSCAPE {
-      padding: 0;
-      background-size: contain;
-      background-repeat: repeat;
+      @include landscape-orientation-layout;
     }
     @include MEDIUM-DEVICE-WIDTH {
       @include box-shadow-one;
@@ -22,32 +17,27 @@
     }
     @include LARGE-DEVICE-WIDTH {
       @include box-shadow-one;
-      padding: 2rem;
-      margin: 2rem;
-      margin-top: 5rem;
-      padding: 0 11%;
+      height: 100vh;
+      padding: 0;
+      margin: 4rem 8rem;
     }
     .block {
-      padding: 0.5rem;
+      padding: 0;
       padding-top: 13px;
       @include SMALL-LANDSCAPE {
-        padding: 0;
-      }
-      @include LARGE-DEVICE-WIDTH {
         padding: 0;
       }
     }
 
     &__bio-image {
       width: 100%;
-      padding-top: 10vh;
-      padding-bottom: 1rem;
-      display: flex;
+      padding-top: 3rem;
       flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-end;
       padding-left: 1rem;
-
+      background: ($WHITE-005);
+      @include SMALL-LANDSCAPE {
+        padding-top: 1rem;
+      }
       @include MEDIUM-DEVICE-WIDTH {
         padding: 3rem;
         margin-top: 1rem;
@@ -86,6 +76,7 @@
         font-size: 1em;
         line-height: 1.43em;
         font-family: "roboto";
+        padding: 0;
         @include LARGE-DEVICE-WIDTH {
           padding: 0.5rem 0;
         }
@@ -118,16 +109,12 @@
     &__item3,
     &__item4 {
       display: flex;
-      justify-content: center;
-      align-items: center;
       flex-direction: column;
-      width: 100%;
-      padding: 0;
-      padding-top: 1rem;
-      border-radius: 0.2rem;
       position: relative;
       overflow: hidden;
       z-index: 3;
+      padding: 1rem 0 0 0;
+      border-radius: 0.2rem;
       cursor: pointer;
       background: ($WHITE-005);
       @include box-shadow-one;
@@ -142,11 +129,13 @@
 
       h3 {
         font-family: "Roboto";
-        font-size: 1.2rem;
         font-weight: normal;
         text-transform: uppercase;
+        padding-left: 1rem;
+        font-size: 0.95rem;
         @include SMALL-LANDSCAPE {
-          font-size: 0.85rem;
+          font-size: 0.8rem;
+          padding-bottom: 1rem;
         }
         @include LARGE-DEVICE-WIDTH {
           font-size: 1rem;
@@ -165,8 +154,7 @@
         left: 0;
         height: 100%;
         width: 100%;
-        background: $secondary-color;
-        background: rgba(24, 29, 42, 0.8);
+        background: ($ORANGE-SHADOW-01);
         opacity: 1;
         @include transition-ease;
       }
@@ -202,19 +190,19 @@
 
     &__btn {
       opacity: 0;
-      color: set-text-color(white);
+      color: set-text-color($BLACK-002);
 
       @include transition-ease;
-
+ 
       &:hover {
-        color: set-text-color(set-text-color(#d2dde6));
+        color: set-text-color(set-text-color($WHITE-005));
         font-size: 1.3rem;
       }
       .fas {
-        color: #e6f6f9;
+        color: ($BLACK-002);
       }
       .fab {
-        color: whitesmoke;
+        color: ($BLACK-002);
       }
     }
 

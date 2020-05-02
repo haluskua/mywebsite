@@ -2,6 +2,12 @@
   /* Set fade in duration */
   --fade-time: 0.5s;
 }
+
+main {
+  @include MEDIUM-DEVICE-WIDTH{
+    height: auto !important;
+  }
+}
 .content-wrapper {
   .main-container {
     padding-top: 10rem;
@@ -9,17 +15,16 @@
     display: flex;
     flex-direction: column;
     padding: 0.25rem;
+    overflow: auto;
     @include SMALL-LANDSCAPE {
       box-shadow: none;
-      padding: 16px 15%;
+      padding: 16px 10% 0 16%;
       background: ($WHITE-005);
     }
     @include MEDIUM-DEVICE-WIDTH {
-      height: auto;
-      padding-top: 5%;
     }
     @include MEDIUM-LANDSCAPE {
-      padding: 0;
+      padding: 2%;
     }
     @include LARGE-DEVICE-WIDTH {
       margin: 0 auto;

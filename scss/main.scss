@@ -110,19 +110,22 @@ header {
 
 // ........
 main {
-  height: 100vh;
+  display: flex;
+  height: auto;
   width: 100%;
   overflow: auto;
   background: ($GRAY-02);
   @include MEDIUM-DEVICE-WIDTH {
+    height: 100vh;
   }
+
   a {
     @include transition-ease;
     padding: 0.4rem;
     color: ($BLACK-002);
 
     &:hover {
-      color: white;
+      color: ($WHITE);
       cursor: pointer;
     }
   }
@@ -136,13 +139,13 @@ main {
   padding: 3% 0;
   @include SMALL-LANDSCAPE {
     height: auto;
-    padding: 0;
-  }
-  @include SMALL-LANDSCAPE {
     padding-top: 1rem;
   }
   @include MEDIUM-DEVICE-WIDTH {
     padding-top: 2rem;
+  }
+  @include MEDIUM-LANDSCAPE {
+    height: auto;
   }
 }
 
@@ -254,6 +257,15 @@ footer {
     flex-direction: row;
     justify-content: center;
     padding: 0;
+    overflow: auto;
+  }
+  @include MEDIUM-LANDSCAPE {
+    position: fixed;
+    flex-direction: column;
+    top: 16%;
+    left: 0;
+    width: auto;
+    padding: 0.3rem;
   }
   @include LARGE-DEVICE-WIDTH {
     left: 1rem;

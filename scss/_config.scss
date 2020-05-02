@@ -23,17 +23,6 @@ a {
   list-style: none;
 }
 
-
-// .showIcons {
-//   display: flex;
-//   position: fixed;
-//   flex-direction: column;
-//   bottom: 2rem;
-//   font-size: 0.7rem;
-//   right: 0.41rem;
-//   padding: 0.09rem;
-// }
-
 // .................................................................
 // function
 @function set-text-color($color) {
@@ -65,7 +54,24 @@ a {
     url(../img/polygon.png) center bottom;
   background-size: cover;
 }
+// ...........
+@mixin Front-page-bcg {
+  background: repeating-linear-gradient(45deg, #fafbf573, #f6f4f4ba 100px),
+    url(../img/heart_dynamic.png) center bottom;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
+// .................................................................
+//LANDSCAPE PADDING & HEIGHT MIXINS
+// ...........
+@mixin landscape-orientation-layout {
+  height: 100%;
+  overflow: auto;
+  padding: 28px 5%;
+  padding-bottom: 0;
+}
 // .................................................................
 //DISPLAY FLEX - MIXINS
 // ...........
@@ -74,12 +80,22 @@ a {
   justify-content: flex-end;
   align-items: center;
 }
+@mixin Flex-Col-Cent-tween {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 // ...........
 @mixin Flex-flow-row-wrap {
   flex-flow: row;
   flex-wrap: wrap;
 }
-
+// ...........
+@mixin Flex-Col-ween-end {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 // .................................................................
 // MEDIA QUERIES
 // ...................
