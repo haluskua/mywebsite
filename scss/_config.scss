@@ -43,7 +43,11 @@ a {
 //BOX-SHADOWS MIXINS
 // ..........
 @mixin box-shadow-one {
-  box-shadow: 10px 13px 12px #c1c1c121, 32px -10px 128px #ececec;
+  box-shadow: 14px 11px 3px #168e9a21, 17px 1px 5px #c9d8dc;
+}
+// ..........
+@mixin box-shadow-two {
+  box-shadow: 1px 15px 33px #168e9a21, 17px 1px 5px #c7d3d63d;
 }
 
 // .................................................................

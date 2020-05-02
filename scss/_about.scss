@@ -25,9 +25,9 @@
       flex-direction: column;
       border-radius: 0.3rem;
       @include SMALL-LANDSCAPE {
-        margin-top: 3rem;
+        margin-top: 1rem;
         background: none;
-        @include box-shadow-one;
+        @include box-shadow-two;
       }
       @include MEDIUM-DEVICE-WIDTH {
         height: 100%;

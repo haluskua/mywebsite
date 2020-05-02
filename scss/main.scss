@@ -136,7 +136,7 @@ main {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  padding: 3% 0;
+  padding: 1% 0 0 0;
   @include SMALL-LANDSCAPE {
     height: auto;
     padding-top: 1rem;
@@ -184,7 +184,7 @@ p {
 // ........
 footer {
   flex-direction: column;
-  background: ($GRAY-02);
+  background: ($BABY-BLUE-01);
   padding: 0.3rem;
   display: flex;
   align-items: center;
@@ -250,8 +250,8 @@ footer {
   position: relative;
   width: 100%;
   z-index: 0;
-  background: ($GRAY-02);
-  padding: 1rem 0;
+  background: ($BABY-BLUE-02);
+  padding: 0.5rem;
   justify-content: center;
   @include SMALL-LANDSCAPE {
     flex-direction: row;
