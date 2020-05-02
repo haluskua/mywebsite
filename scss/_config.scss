@@ -56,8 +56,15 @@ a {
 }
 // ...........
 @mixin Front-page-bcg {
-  background: repeating-linear-gradient(45deg, #fafbf573, #f6f4f4ba 100px),
-    url(../img/heart_dynamic.png) center bottom;
+  background: repeating-linear-gradient(45deg, #fdfdf887, #cee6e357 100px),
+    url(../img/heart_dynamic.png) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+// ...........
+@mixin Menu-slider-bcg {
+  background: repeating-linear-gradient(45deg, #c4e1e46e, #dde8e75e 100px),
+    url(../img/storm.jpg) center bottom;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
