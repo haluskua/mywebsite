@@ -46,14 +46,14 @@ main {
     margin: auto;
     overflow: scroll;
     background: ($WHITE);
-    @include box-shadow-one;
+    @include box-shadow-blocks;
     @include SMALL-LANDSCAPE {
       border: none;
       box-shadow: none;
       padding: 1rem;
       padding: 1rem;
       background: ($WHITE);
-      @include box-shadow-one
+      @include box-shadow-blocks;
     }
     @include MEDIUM-DEVICE-WIDTH {
       height: 100%;

@@ -12,12 +12,12 @@
       background: ($BABY-GREEN-01);
     }
     @include MEDIUM-DEVICE-WIDTH {
-      @include box-shadow-one;
+      @include box-shadow-blocks;
       justify-content: center;
       margin-top: 3.4rem;
     }
     @include LARGE-DEVICE-WIDTH {
-      @include box-shadow-one;
+      @include box-shadow-blocks;
       height: 100vh;
       padding: 0;
       margin: 4rem 8rem;
@@ -40,7 +40,6 @@
       }
       @include MEDIUM-DEVICE-WIDTH {
         padding: 3rem;
-        margin-top: 1rem;
       }
       @include LARGE-DEVICE-WIDTH {
         margin: 0 auto;
@@ -114,14 +113,15 @@
       padding: 1rem 0 0 0;
       border-radius: 0.2rem;
       cursor: pointer;
-      background: ($WHITE-005);
       padding: 0.5rem;
-      background: #fbfdef;
+      background: ($BBY-YELLOW);
+
       @include box-shadow-blocks;
       @include MEDIUM-DEVICE-WIDTH {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
       }
       @include LARGE-DEVICE-WIDTH {
         width: 100%;
@@ -211,3 +211,4 @@
     }
   }
 }
+ 

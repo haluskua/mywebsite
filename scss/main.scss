@@ -13,6 +13,17 @@
 
 
 
+
+
+// default auto fallback styles for elements
+//..............................
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -74,7 +85,27 @@ header {
   }
 }
 
-// ........
+//////////////////////////////////////////////
+// .................................................................
+// ......
+* {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+/* Hide scrollbar for IE and Edge */
+* {
+  -ms-overflow-style: none;
+}
+// .................................................................
+// ......................
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+// .....................
 main {
   display: flex;
   height: auto;
@@ -97,6 +128,7 @@ main {
   }
 }
 
+//........................
 .content-wrapper {
   height: auto;
   display: flex;
@@ -142,7 +174,7 @@ p {
   }
 }
 
-// ........
+// ....................
 footer {
   flex-direction: column;
   background: ($BABY-GREEN-01);
@@ -204,7 +236,7 @@ footer {
   }
 }
 
-// ........
+// ...................................
 //social icons links
 .social-icons {
   display: flex;
@@ -237,6 +269,7 @@ footer {
     width: auto;
 
   }
+
   .fa-2x {
     font-size: 1.25em;
     @include SMALL-LANDSCAPE {
@@ -245,7 +278,7 @@ footer {
   }
 }
 
-// ........
+// ..................
 .main-title {
   font-size: 2rem;
   letter-spacing: 0.02em;

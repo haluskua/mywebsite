@@ -49,7 +49,14 @@
         font-family: "Cinzel Decorative", cursive;
         font-weight: bold;
         @include MEDIUM-DEVICE-WIDTH {
-          font-weight: 2.82rem;
+          font-size: 2.1rem;
+        }
+        @include MEDIUM-LANDSCAPE {
+          font-size: 2.1rem;
+        }
+        @include LARGE-DEVICE-WIDTH {
+          text-align: left;
+          padding: 0;
         }
       }
     }
@@ -88,6 +95,7 @@
       }
       img {
         @include LARGE-DEVICE-WIDTH {
+          width: 74%;
         }
       }
     }

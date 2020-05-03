@@ -221,6 +221,7 @@
         flex-direction: row-reverse;
         justify-content: space-evenly;
         background-position: top;
+        @include bcg-rep-grd;
       }
     }
 
