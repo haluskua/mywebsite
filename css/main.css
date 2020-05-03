@@ -1,24 +1,5 @@
 /*--------------Google fonts impors--------------*/
 /*----------- partials imports -----------*/
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
-* {
-  /* Hide scrollbar for Chrome, Safari and Opera */ }
-  * ::-webkit-scrollbar {
-    display: none; }
-
-/* Hide scrollbar for IE and Edge */
-* {
-  -ms-overflow-style: none; }
-
-a {
-  text-decoration: none;
-  list-style: none; }
-
 /*-----X------ partials imports ------X-----*/
 /*----------- @Mixins -----------*/
 /*----------- Light & Dark Theme -----------*/
@@ -81,7 +62,14 @@ a {
       font-weight: bold; }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .content-wrapper .home__box-one h1 {
-          font-weight: 2.82rem; } }
+          font-size: 2.1rem; } }
+      @media only screen and (min-width: 1024px) and (orientation: landscape) {
+        .content-wrapper .home__box-one h1 {
+          font-size: 2.1rem; } }
+      @media only screen and (min-width: 1025px) and (orientation: landscape) {
+        .content-wrapper .home__box-one h1 {
+          text-align: left;
+          padding: 0; } }
   .content-wrapper .home__box-two {
     padding: 8px;
     padding-left: 1rem;
@@ -115,6 +103,9 @@ a {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; } }
+    @media only screen and (min-width: 1025px) and (orientation: landscape) {
+      .content-wrapper .home__box-three img {
+        width: 74%; } }
   .content-wrapper .home__box-four, .content-wrapper .home__box-five {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -395,7 +386,7 @@ a {
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: repeating-linear-gradient(52deg, #b3e2d236, #ebf7f24f 89px), url(../img/storm1.jpg) center bottom;
+      background: repeating-linear-gradient(52deg, #dbd5ec36, #f1f0f870 89px), url(../img/storm1.jpg) center bottom;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat; }
@@ -406,7 +397,7 @@ a {
               -ms-flex-direction: row;
                   flex-direction: row;
           padding-top: 63px;
-          background: repeating-linear-gradient(52deg, #b3e2d236, #ebf7f24f 89px), url(../img/storm1.jpg) center bottom;
+          background: repeating-linear-gradient(52deg, #dbd5ec36, #f1f0f870 89px), url(../img/storm1.jpg) center bottom;
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
@@ -441,7 +432,9 @@ a {
           -webkit-box-pack: space-evenly;
               -ms-flex-pack: space-evenly;
                   justify-content: space-evenly;
-          background-position: top; } }
+          background-position: top;
+          background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px), url(../img/light_grafix_portrait2.jpg) center bottom;
+          background-size: cover; } }
     .nav .menu-nav__item {
       -webkit-transform: translateX(100vw);
               transform: translateX(100vw);
@@ -647,7 +640,7 @@ a {
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center;
-          background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px), url(../img/polygon.png) center bottom;
+          background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px), url(../img/light_grafix_portrait2.jpg) center bottom;
           background-size: cover; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .content-wrapper .about__bio-image {
@@ -665,7 +658,7 @@ a {
         font-family: "Montserrat", "cursive";
         width: 100%;
         display: flex;
-        color: #93a7a9;
+        color: #838481;
         text-transform: uppercase;
         text-align: justify;
         font-size: 0.81rem;
@@ -806,7 +799,7 @@ a {
         .content-wrapper .about .jobs__job h2,
         .content-wrapper .about .jobs__job h3 {
           font-family: "Roboto", cursive;
-          color: #4a4d50;
+          color: #292b20;
           letter-spacing: 0.02rem;
           font-size: 1.35em;
           line-height: 1.3em;
@@ -862,16 +855,16 @@ a {
       background: #f1f0f8; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .content-wrapper .projects {
-      -webkit-box-shadow: 0px 7px 3px #168e9a21, 7px 1px 1px #c9d8dc;
-              box-shadow: 0px 7px 3px #168e9a21, 7px 1px 1px #c9d8dc;
+      -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
+              box-shadow: 2px 4px 14px #d2dcd7a1;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
       margin-top: 3.4rem; } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .content-wrapper .projects {
-      -webkit-box-shadow: 0px 7px 3px #168e9a21, 7px 1px 1px #c9d8dc;
-              box-shadow: 0px 7px 3px #168e9a21, 7px 1px 1px #c9d8dc;
+      -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
+              box-shadow: 2px 4px 14px #d2dcd7a1;
       height: 100vh;
       padding: 0;
       margin: 4rem 8rem; } }
@@ -894,8 +887,7 @@ a {
         padding-top: 1rem; } }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .projects__bio-image {
-        padding: 3rem;
-        margin-top: 1rem; } }
+        padding: 3rem; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .projects__bio-image {
         margin: 0 auto;
@@ -956,9 +948,8 @@ a {
     padding: 1rem 0 0 0;
     border-radius: 0.2rem;
     cursor: pointer;
-    background: #fafbf5;
     padding: 0.5rem;
-    background: #fbfdef;
+    background: #eff4e5;
     -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
             box-shadow: 2px 4px 14px #d2dcd7a1; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -971,7 +962,11 @@ a {
                 justify-content: center;
         -webkit-box-align: center;
             -ms-flex-align: center;
-                align-items: center; } }
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .projects__item1, .content-wrapper .projects__item2, .content-wrapper .projects__item3, .content-wrapper .projects__item4 {
         width: 100%; } }
@@ -1026,11 +1021,11 @@ a {
     z-index: 1; }
   .content-wrapper .projects__btn {
     opacity: 0;
-    color: #ffffff;
+    color: set-text-color(#292b20);
     -webkit-transition: all 0.42s ease-in-out;
     transition: all 0.42s ease-in-out; }
     .content-wrapper .projects__btn:hover {
-      color: #ffffff;
+      color: set-text-color(set-text-color(#fafbf5));
       font-size: 1.3rem; }
     .content-wrapper .projects__btn .fas {
       color: #292b20; }
@@ -1046,7 +1041,7 @@ a {
   width: 100vw;
   height: 100vh;
   overflow: auto;
-  height: 100vh;
+  margin-top: 3rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1070,13 +1065,12 @@ a {
               flex-flow: row;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      height: 100vh;
-      margin-top: 1.5rem;
-      background: #fafbf5;
-      background: repeating-linear-gradient(52deg, #e0ead08f, #dfe8bb42 89px), url(../img/heart_dynamic.png) center bottom;
-      background-position: center;
+      background: repeating-linear-gradient(45deg, #fdfdf84d, #cee6e300 100px), url(../img/tie.jpg) center center;
       background-size: cover;
       background-repeat: no-repeat;
+      height: 100vh;
+      margin-top: 1.5rem;
+      margin-top: 2rem;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; } }
@@ -1087,7 +1081,7 @@ a {
       margin: 0; } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .content-wrapper .contact {
-      padding: 5rem 22% 0rem 22%;
+      padding: 5rem 24% 0rem 14%;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
@@ -1172,7 +1166,7 @@ a {
     z-index: 999;
     font-family: "Roboto", "Montserrat", cursive; }
   .content-wrapper .contact .text-secondary {
-    color: #292b20;
+    color: #2a2b24;
     margin: 3px 0;
     font-size: 0.9rem;
     margin-top: 8px; }
@@ -1260,8 +1254,8 @@ a {
     margin: auto;
     overflow: scroll;
     background: #ffffff;
-    -webkit-box-shadow: 0px 7px 3px #168e9a21, 7px 1px 1px #c9d8dc;
-            box-shadow: 0px 7px 3px #168e9a21, 7px 1px 1px #c9d8dc; }
+    -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
+            box-shadow: 2px 4px 14px #d2dcd7a1; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .container {
         border: none;
@@ -1270,8 +1264,8 @@ a {
         padding: 1rem;
         padding: 1rem;
         background: #ffffff;
-        -webkit-box-shadow: 0px 7px 3px #168e9a21, 7px 1px 1px #c9d8dc;
-                box-shadow: 0px 7px 3px #168e9a21, 7px 1px 1px #c9d8dc; } }
+        -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
+                box-shadow: 2px 4px 14px #d2dcd7a1; } }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .container {
         height: 100%; } }
@@ -1350,6 +1344,12 @@ a {
     -webkit-animation: fadeIn var(--fade-time) ease-in 1 forwards;
             animation: fadeIn var(--fade-time) ease-in 1 forwards; }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
 body {
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -1407,6 +1407,19 @@ header {
   header .H {
     color: #f37a58;
     font-family: "Cinzel Decorative", sans-serif; }
+
+* {
+  /* Hide scrollbar for Chrome, Safari and Opera */ }
+  * ::-webkit-scrollbar {
+    display: none; }
+
+/* Hide scrollbar for IE and Edge */
+* {
+  -ms-overflow-style: none; }
+
+a {
+  text-decoration: none;
+  list-style: none; }
 
 main {
   display: -webkit-box;
