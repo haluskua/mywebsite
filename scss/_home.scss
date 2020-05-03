@@ -18,37 +18,38 @@
     padding-bottom: 0;
     @include SMALL-LANDSCAPE {
       padding: 0 8%;
-      background: ($WHITE-005);
-      padding: 28px 5%;
+      background: ($BABY-BLUE-01);
+      padding: 28px 5.5%;
       padding-bottom: 0;
     }
     @include MEDIUM-DEVICE-WIDTH {
-      padding: 0 5%;
-      background: ($WHITE-005);
+      background: ($BABY-BLUE-01);
+    }
+    @include MEDIUM-LANDSCAPE {
+      padding: 0 10%;
+
     }
 
     &__box-one {
-      padding-top: 7.5rem;
       width: 100%;
-      @include Front-page-bcg;
       @include MEDIUM-DEVICE-WIDTH {
-        padding-top: 11rem;
+        padding-top: 1.2rem;
       }
 
       h1 {
-        color: ($GOLD);
-        font-size: 2rem;
+        color: ($WHITE);
+        font-size: 1.35rem;
         line-height: 2rem;
-        padding-bottom: 0;
         text-transform: capitalize;
         padding: 0 0 0 1.5rem;
+        margin-top: -6.2rem;
         letter-spacing: 0.07rem;
         text-align: left;
         width: 70%;
         font-family: "Cinzel Decorative", cursive;
         font-weight: bold;
         @include MEDIUM-DEVICE-WIDTH {
-          font-weight: 2.6rem;
+          font-weight: 2.82rem;
         }
       }
     }
@@ -97,17 +98,24 @@
       flex-wrap: wrap;
       align-items: center;
       padding: 2rem 1rem;
-      background: ($BABY-PINK);
+      background: ($BABY-GREEN-01);
       @include LARGE-DEVICE-WIDTH {
         justify-content: center;
       }
       .box-link {
         padding: 0.6rem;
         box-shadow: 2px 4px 14px ($ORANGE-SHADOW-01);
-        background: ($GRAY-SHADOW-01);
+        background: ($BBY-YELLOW);
         border: 1px solid ($WHITE);
         border-radius: 3px;
         width: 100%;
+        @include MEDIUM-DEVICE-WIDTH {
+          padding: 1rem;
+        }
+        @include MEDIUM-LANDSCAPE {
+          padding: 1rem;
+        }
+ 
         @include LARGE-DEVICE-WIDTH {
           width: 70%;
         }

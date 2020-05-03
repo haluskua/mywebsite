@@ -11,41 +11,7 @@
 @import "./contact";
 @import "./gallery";
 
-/*-----X------ partials imports ------X-----*/
 
-/*----------- @Mixins -----------*/
-
-@mixin flexCenter($direction) {
-  display: flex;
-  justify-content: content;
-  align-items: center;
-  flex-direction: $direction;
-}
-
-@mixin theme($light-theme: true) {
-  @if $light-theme {
-    background: lighten($primary-bcg-color, 100%);
-    color: darken($primary-txt-color, 100%);
-  }
-}
-
-@mixin mobile {
-  @media (max-width: $mobile) {
-    @content;
-  }
-}
-
-/*----------- Light & Dark Theme -----------*/
-
-.light {
-  @include theme($light-theme: false);
-}
-
-/*----------- @Mixins -----------*/
-
-@function weight($weight-name) {
-  @return map-get($font-weights, $weight-name);
-}
 
 body {
   height: 100vh;
@@ -250,8 +216,8 @@ footer {
   position: relative;
   width: 100%;
   z-index: 0;
-  background: ($BABY-BLUE-02);
-  padding: 0.5rem;
+  background: ($BABY-BLUE-01);
+  padding: 1rem;
   justify-content: center;
   @include SMALL-LANDSCAPE {
     flex-direction: row;

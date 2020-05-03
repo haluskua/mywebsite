@@ -5,7 +5,7 @@
   .about {
     padding-bottom: 0rem;
     padding-top: 3rem;
-    background: ($BABY-PINK);
+    background: ($BABY-BLUE-01);
 
     @include SMALL-LANDSCAPE {
       @include landscape-orientation-layout;

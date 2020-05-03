@@ -6,9 +6,10 @@
     @include Flex-Col-ween-end;
     height: 100%;
     overflow: auto;
-    background: ($BABY-PINK);
+    background: ($BABY-BLUE-01);
     @include SMALL-LANDSCAPE {
       @include landscape-orientation-layout;
+      background: ($BABY-BLUE-01);
     }
     @include MEDIUM-DEVICE-WIDTH {
       @include box-shadow-one;
@@ -31,9 +32,8 @@
 
     &__bio-image {
       width: 100%;
-      padding-top: 4rem;
       flex-direction: column;
-      padding-left: 1rem;
+      padding: 4rem 3rem 2rem 1rem;
       background: ($WHITE-005);
       @include SMALL-LANDSCAPE {
         padding-top: 1rem;
@@ -115,6 +115,8 @@
       border-radius: 0.2rem;
       cursor: pointer;
       background: ($WHITE-005);
+      padding: 0.5rem;
+      background: #fbfdef;
       @include box-shadow-two;
       @include MEDIUM-DEVICE-WIDTH {
         display: flex;
@@ -191,7 +193,7 @@
       color: set-text-color($BLACK-002);
 
       @include transition-ease;
- 
+
       &:hover {
         color: set-text-color(set-text-color($WHITE-005));
         font-size: 1.3rem;
