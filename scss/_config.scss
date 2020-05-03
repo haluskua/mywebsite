@@ -76,7 +76,7 @@ a {
 }
 // ...........
 @mixin Menu-slider-bcg {
-  background: repeating-linear-gradient(52deg, #5ca75d36, #73af964f 89px),
+  background: repeating-linear-gradient(52deg, #b3e2d236, #ebf7f24f 89px),
     url(../img/storm1.jpg) center bottom;
   background-position: center;
   background-size: cover;
@@ -92,7 +92,7 @@ a {
 
 //MOBILE-BACKGROUNDS
 @mixin mini-img-bcg {
-  background: repeating-linear-gradient(52deg, #e0ead08f, #dfe8bb42 89px),
+  background: repeating-linear-gradient(52deg, #ebefdb42, #fefff842 89px),
     url(../img/small_tie.jpg) center bottom;
   background-position: center;
   background-size: cover;

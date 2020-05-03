@@ -16,6 +16,7 @@
     height: 100%;
     overflow: auto;
     padding-bottom: 0;
+    padding-top: 2rem;
     @include SMALL-LANDSCAPE {
       padding: 0 8%;
       background: ($BABY-GREEN-01);
@@ -27,7 +28,6 @@
     }
     @include MEDIUM-LANDSCAPE {
       padding: 0 10%;
-
     }
 
     &__box-one {
@@ -37,15 +37,15 @@
       }
 
       h1 {
-        color: ($BBY-YELLOW);
-        font-size: 1.05rem;
+        color: ($BLACK-002);
+        font-size: 1.1rem;
         line-height: 2rem;
         text-transform: capitalize;
-        padding: 0 0 0 1.5rem;
-        margin-top: -5.2rem;
+        padding: 0 0 0 6rem;
+        margin-top: -4.8rem;
         letter-spacing: 0.07rem;
-        text-align: left;
-        width: 60%;
+        text-align: center;
+        width: 100%;
         font-family: "Cinzel Decorative", cursive;
         font-weight: bold;
         @include MEDIUM-DEVICE-WIDTH {
@@ -57,7 +57,7 @@
       padding: 8px;
       padding-left: 1rem;
       width: 100%;
-      background: ($BBY-YELLOW);
+      background: ($WHITE);
       @include box-shadow-blocks;
 
       h3 {
@@ -88,7 +88,6 @@
       }
       img {
         @include LARGE-DEVICE-WIDTH {
-          width: 60%;
         }
       }
     }
@@ -116,7 +115,7 @@
         @include MEDIUM-LANDSCAPE {
           padding: 1rem;
         }
- 
+
         @include LARGE-DEVICE-WIDTH {
           width: 70%;
         }
