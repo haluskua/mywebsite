@@ -1038,7 +1038,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
   height: 100vh;
   overflow: auto;
   margin-top: 3rem;
@@ -1052,7 +1051,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: repeating-linear-gradient(52deg, #ebefdb42, #fefff842 89px), url(../img/small_tie.jpg) center bottom;
+  background: repeating-linear-gradient(52deg, #f1f0f878, #f1f0f859 89px), url(../img/ohk_grafix.jpg) center bottom;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1065,15 +1064,16 @@
               flex-flow: row;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      background: repeating-linear-gradient(45deg, #fdfdf84d, #cee6e300 100px), url(../img/tie.jpg) center center;
-      background-size: cover;
-      background-repeat: no-repeat;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
       height: 100vh;
       margin-top: 1.5rem;
       margin-top: 2rem;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
-              justify-content: space-between; } }
+              justify-content: space-between;
+      padding: 2rem; } }
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
     .content-wrapper .contact {
       -ms-flex-pack: distribute;
@@ -1085,7 +1085,11 @@
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      border: 1px solid #d2dcd7a1; } }
+      border: 1px solid #d2dcd7a1;
+      background: repeating-linear-gradient(52deg, #f1f0f878, #f1f0f859 89px), url(../img/ohk_grafix.jpg) center bottom;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; } }
   .content-wrapper .contact .img-box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1104,89 +1108,86 @@
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .contact .img-box {
         width: 50%; } }
-  .content-wrapper .contact .grid-container {
-    padding-left: 2rem; }
-    @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-      .content-wrapper .contact .grid-container {
-        width: 66%;
-        padding: 0; } }
-    @media only screen and (min-width: 640px) and (orientation: portrait) {
-      .content-wrapper .contact .grid-container {
-        padding: 0; } }
-    @media only screen and (min-width: 1024px) and (orientation: landscape) {
-      .content-wrapper .contact .grid-container {
-        width: 54%; } }
-    @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .content-wrapper .contact .grid-container {
-        width: 46%; } }
+  @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
+    .content-wrapper .contact .grid-container {
+      width: 66%;
+      background: #f1f0f8b8; } }
+  @media only screen and (min-width: 640px) and (orientation: portrait) {
+    .content-wrapper .contact .grid-container {
+      padding: 0; } }
+  @media only screen and (min-width: 1024px) and (orientation: landscape) {
+    .content-wrapper .contact .grid-container {
+      width: 54%; } }
+  @media only screen and (min-width: 1025px) and (orientation: landscape) {
+    .content-wrapper .contact .grid-container {
+      width: 46%; } }
   .content-wrapper .contact__list {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1.26rem;
     font-size: 1.35rem;
-    padding: 2rem; }
+    padding: 0; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .contact__list {
-        grid-template-columns: repeat(1, 1fr);
-        padding: 2rem; } }
-  .content-wrapper .contact .contact__email,
-  .content-wrapper .contact .contact__phone,
-  .content-wrapper .contact .contact__address,
-  .content-wrapper .contact .contact__cv {
-    font-size: 1.13rem;
-    font-family: "Roboto", "Montserrat", cursive;
-    color: #848267;
-    width: 100vw;
-    text-align: left;
-    letter-spacing: 0.04em;
-    padding: 7px;
-    padding-left: 1rem; }
-    @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-      .content-wrapper .contact .contact__email,
-      .content-wrapper .contact .contact__phone,
-      .content-wrapper .contact .contact__address,
-      .content-wrapper .contact .contact__cv {
-        width: auto;
-        font-size: 0.88rem;
-        padding: 3px; } }
-    @media only screen and (min-width: 640px) and (orientation: portrait) {
-      .content-wrapper .contact .contact__email,
-      .content-wrapper .contact .contact__phone,
-      .content-wrapper .contact .contact__address,
-      .content-wrapper .contact .contact__cv {
-        text-align: center; } }
-    .content-wrapper .contact .contact__email .fa-download,
-    .content-wrapper .contact .contact__phone .fa-download,
-    .content-wrapper .contact .contact__address .fa-download,
-    .content-wrapper .contact .contact__cv .fa-download {
-      color: #848267 !important; }
-  .content-wrapper .contact .download {
-    cursor: pointer;
-    color: #000000;
-    z-index: 999;
-    font-family: "Roboto", "Montserrat", cursive; }
-  .content-wrapper .contact .text-secondary {
-    color: #2a2b24;
-    margin: 3px 0;
-    font-size: 0.9rem;
-    margin-top: 8px; }
-    @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-      .content-wrapper .contact .text-secondary {
-        font-size: 0.85rem; } }
-  .content-wrapper .contact .nav .menu-nav__item:nth-child(4) {
-    width: 100%; }
-  @media only screen and (min-width: 1025px) and (orientation: landscape) {
-    .content-wrapper .contact .social-icons {
-      bottom: 0 !important; } }
+        grid-template-columns: repeat(1, 1fr); } }
+    .content-wrapper .contact__list .contact__email,
+    .content-wrapper .contact__list .contact__phone,
+    .content-wrapper .contact__list .contact__address,
+    .content-wrapper .contact__list .contact__cv {
+      font-size: 1.13rem;
+      font-family: "Roboto", "Montserrat", cursive;
+      color: #848267;
+      width: 100vw;
+      text-align: left;
+      letter-spacing: 0.04em;
+      padding: 7px;
+      padding-left: 1rem; }
+      @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
+        .content-wrapper .contact__list .contact__email,
+        .content-wrapper .contact__list .contact__phone,
+        .content-wrapper .contact__list .contact__address,
+        .content-wrapper .contact__list .contact__cv {
+          width: auto;
+          font-size: 0.88rem;
+          padding: 3px; } }
+      @media only screen and (min-width: 640px) and (orientation: portrait) {
+        .content-wrapper .contact__list .contact__email,
+        .content-wrapper .contact__list .contact__phone,
+        .content-wrapper .contact__list .contact__address,
+        .content-wrapper .contact__list .contact__cv {
+          text-align: center; } }
+      .content-wrapper .contact__list .contact__email .fa-download,
+      .content-wrapper .contact__list .contact__phone .fa-download,
+      .content-wrapper .contact__list .contact__address .fa-download,
+      .content-wrapper .contact__list .contact__cv .fa-download {
+        color: #848267 !important; }
+    .content-wrapper .contact__list .download {
+      cursor: pointer;
+      color: #000000;
+      z-index: 999;
+      font-family: "Roboto", "Montserrat", cursive; }
+    .content-wrapper .contact__list .text-secondary {
+      color: #2a2b24;
+      margin: 3px 0;
+      font-size: 0.9rem;
+      margin-top: 8px; }
+      @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
+        .content-wrapper .contact__list .text-secondary {
+          font-size: 0.85rem; } }
+    .content-wrapper .contact__list .nav .menu-nav__item:nth-child(4) {
+      width: 100%; }
+    @media only screen and (min-width: 1025px) and (orientation: landscape) {
+      .content-wrapper .contact__list .social-icons {
+        bottom: 0 !important; } }
 
 @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-  footer,
-  h2 {
+  .content-wrapper footer,
+  .content-wrapper h2 {
     text-align: center !important; } }
 
 @media only screen and (min-width: 640px) and (orientation: portrait) {
-  footer,
-  h2 {
+  .content-wrapper footer,
+  .content-wrapper h2 {
     text-align: center !important; } }
 
 :root {
