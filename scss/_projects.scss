@@ -6,10 +6,10 @@
     @include Flex-Col-ween-end;
     height: 100%;
     overflow: auto;
-    background: ($BABY-BLUE-01);
+    background: ($BABY-GREEN-01);
     @include SMALL-LANDSCAPE {
       @include landscape-orientation-layout;
-      background: ($BABY-BLUE-01);
+      background: ($BABY-GREEN-01);
     }
     @include MEDIUM-DEVICE-WIDTH {
       @include box-shadow-one;
@@ -117,7 +117,7 @@
       background: ($WHITE-005);
       padding: 0.5rem;
       background: #fbfdef;
-      @include box-shadow-two;
+      @include box-shadow-blocks;
       @include MEDIUM-DEVICE-WIDTH {
         display: flex;
         justify-content: center;
@@ -154,7 +154,7 @@
         left: 0;
         height: 100%;
         width: 100%;
-        background: ($ORANGE-SHADOW-01);
+        background: ($box-shadow-01);
         opacity: 1;
         @include transition-ease;
       }

@@ -67,15 +67,15 @@ a {
       .content-wrapper .home__box-one {
         padding-top: 1.2rem; } }
     .content-wrapper .home__box-one h1 {
-      color: #ffffff;
+      color: #faffec;
       font-size: 1.05rem;
       line-height: 2rem;
       text-transform: capitalize;
       padding: 0 0 0 1.5rem;
-      margin-top: -3.2rem;
+      margin-top: -5.2rem;
       letter-spacing: 0.07rem;
       text-align: left;
-      width: 70%;
+      width: 60%;
       font-family: "Cinzel Decorative", cursive;
       font-weight: bold; }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -85,7 +85,9 @@ a {
     padding: 8px;
     padding-left: 1rem;
     width: 100%;
-    background: #faffec; }
+    background: #faffec;
+    -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
+            box-shadow: 2px 4px 14px #d2dcd7a1; }
     .content-wrapper .home__box-two h3 {
       font-size: 1rem;
       line-height: 1.24em;
@@ -133,8 +135,8 @@ a {
                 justify-content: center; } }
     .content-wrapper .home__box-four .box-link, .content-wrapper .home__box-five .box-link {
       padding: 0.6rem;
-      -webkit-box-shadow: 2px 4px 14px #e8d1bda1;
-              box-shadow: 2px 4px 14px #e8d1bda1;
+      -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
+              box-shadow: 2px 4px 14px #d2dcd7a1;
       background: #faffec;
       border: 1px solid #ffffff;
       border-radius: 3px;
@@ -149,7 +151,7 @@ a {
         .content-wrapper .home__box-four .box-link, .content-wrapper .home__box-five .box-link {
           width: 70%; } }
     .content-wrapper .home__box-four h2, .content-wrapper .home__box-five h2 {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       width: 50%;
       padding: 1rem;
       color: #848267;
@@ -959,8 +961,8 @@ a {
     background: #fafbf5;
     padding: 0.5rem;
     background: #fbfdef;
-    -webkit-box-shadow: 1px 9px 28px #168e9a0f, 8px 1px 22px #c7d3d630;
-            box-shadow: 1px 9px 28px #168e9a0f, 8px 1px 22px #c7d3d630; }
+    -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
+            box-shadow: 2px 4px 14px #d2dcd7a1; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .projects__item1, .content-wrapper .projects__item2, .content-wrapper .projects__item3, .content-wrapper .projects__item4 {
         display: -webkit-box;
@@ -998,7 +1000,7 @@ a {
       left: 0;
       height: 100%;
       width: 100%;
-      background: #e8d1bda1;
+      background: #d2dcd7a1;
       opacity: 1;
       -webkit-transition: all 0.42s ease-in-out;
       transition: all 0.42s ease-in-out; }
@@ -1043,6 +1045,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1053,11 +1059,11 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
-  width: 100vw;
-  background: #fafbf5;
-  padding: 28px 0 0 0;
-  height: 100vh; }
+  background: repeating-linear-gradient(52deg, #e0ead08f, #dfe8bb42 89px), url(../img/small_tie.jpg) center bottom;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .contact {
       -webkit-box-orient: horizontal;
@@ -1066,10 +1072,16 @@ a {
               flex-flow: row;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+      height: 100vh;
       margin-top: 1.5rem;
       background: #fafbf5;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; } }
+      background: repeating-linear-gradient(52deg, #e0ead08f, #dfe8bb42 89px), url(../img/heart_dynamic.png) center bottom;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
     .content-wrapper .contact {
       -ms-flex-pack: distribute;
@@ -1078,7 +1090,10 @@ a {
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .content-wrapper .contact {
       padding: 5rem 22% 0rem 22%;
-      border: 1px solid #e8d1bda1; } }
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      border: 1px solid #d2dcd7a1; } }
   .content-wrapper .contact .img-box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1086,8 +1101,8 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px), url(../img/polygon.png) center bottom;
-    background-size: cover; }
+    padding-top: 3rem;
+    padding: 0; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .contact .img-box {
         width: 33%; } }
@@ -1101,20 +1116,23 @@ a {
     padding-left: 2rem; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .contact .grid-container {
-        width: 50%;
+        width: 66%;
         padding: 0; } }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .contact .grid-container {
         padding: 0; } }
+    @media only screen and (min-width: 1024px) and (orientation: landscape) {
+      .content-wrapper .contact .grid-container {
+        width: 54%; } }
+    @media only screen and (min-width: 1025px) and (orientation: landscape) {
+      .content-wrapper .contact .grid-container {
+        width: 46%; } }
   .content-wrapper .contact__list {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1.26rem;
     font-size: 1.35rem;
-    padding: 2rem;
-    background: repeating-linear-gradient(45deg, #fdfdf84d, #cee6e300 100px), url(../img/tie.jpg) center center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    padding: 2rem; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .contact__list {
         grid-template-columns: repeat(1, 1fr);
@@ -1289,7 +1307,9 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-top: 44px; }
+    padding-top: 44px;
+    -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
+            box-shadow: 2px 4px 14px #d2dcd7a1; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .main-img {
         padding: 0; } }
@@ -1426,12 +1446,6 @@ main {
     .content-wrapper {
       height: auto;
       padding-top: 1rem; } }
-  @media only screen and (min-width: 640px) and (orientation: portrait) {
-    .content-wrapper {
-      padding-top: 2rem; } }
-  @media only screen and (min-width: 1024px) and (orientation: landscape) {
-    .content-wrapper {
-      height: auto; } }
 
 p {
   color: #4d4d4d;

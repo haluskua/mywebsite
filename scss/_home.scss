@@ -18,12 +18,12 @@
     padding-bottom: 0;
     @include SMALL-LANDSCAPE {
       padding: 0 8%;
-      background: ($BABY-BLUE-01);
+      background: ($BABY-GREEN-01);
       padding: 28px 5.5%;
       padding-bottom: 0;
     }
     @include MEDIUM-DEVICE-WIDTH {
-      background: ($BABY-BLUE-01);
+      background: ($BABY-GREEN-01);
     }
     @include MEDIUM-LANDSCAPE {
       padding: 0 10%;
@@ -37,15 +37,15 @@
       }
 
       h1 {
-        color: ($WHITE);
+        color: ($BBY-YELLOW);
         font-size: 1.05rem;
         line-height: 2rem;
         text-transform: capitalize;
         padding: 0 0 0 1.5rem;
-        margin-top: -3.2rem;
+        margin-top: -5.2rem;
         letter-spacing: 0.07rem;
         text-align: left;
-        width: 70%;
+        width: 60%;
         font-family: "Cinzel Decorative", cursive;
         font-weight: bold;
         @include MEDIUM-DEVICE-WIDTH {
@@ -58,6 +58,7 @@
       padding-left: 1rem;
       width: 100%;
       background: ($BBY-YELLOW);
+      @include box-shadow-blocks;
 
       h3 {
         font-size: 1rem;
@@ -104,7 +105,7 @@
       }
       .box-link {
         padding: 0.6rem;
-        box-shadow: 2px 4px 14px ($ORANGE-SHADOW-01);
+        box-shadow: 2px 4px 14px ($box-shadow-01);
         background: ($BBY-YELLOW);
         border: 1px solid ($WHITE);
         border-radius: 3px;
@@ -122,7 +123,7 @@
       }
 
       h2 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         width: 50%;
         padding: 1rem;
         color: ($GOLD);

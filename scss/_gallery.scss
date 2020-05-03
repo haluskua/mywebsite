@@ -78,6 +78,7 @@ main {
     display: flex;
     justify-content: center;
     padding-top: 44px;
+    @include box-shadow-blocks;
     @include MEDIUM-DEVICE-WIDTH {
       padding: 0;
     }

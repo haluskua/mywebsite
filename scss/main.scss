@@ -107,12 +107,6 @@ main {
     height: auto;
     padding-top: 1rem;
   }
-  @include MEDIUM-DEVICE-WIDTH {
-    padding-top: 2rem;
-  }
-  @include MEDIUM-LANDSCAPE {
-    height: auto;
-  }
 }
 
 // ..................
@@ -151,7 +145,7 @@ p {
 // ........
 footer {
   flex-direction: column;
-  background: ($BABY-BLUE-01);
+  background: ($BABY-GREEN-01);
   padding: 0.3rem;
   display: flex;
   align-items: center;
@@ -217,7 +211,7 @@ footer {
   position: relative;
   width: 100%;
   z-index: 0;
-  background: ($BABY-BLUE-01);
+  background: ($BABY-GREEN-01);
   padding: 1rem;
   justify-content: center;
   @include SMALL-LANDSCAPE {
