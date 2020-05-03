@@ -48,16 +48,17 @@ a {
           flex-direction: column;
   height: 100%;
   overflow: auto;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  padding-top: 2rem; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .home {
       padding: 0 8%;
-      background: #e9f3e4;
+      background: #f7fef6;
       padding: 28px 5.5%;
       padding-bottom: 0; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .content-wrapper .home {
-      background: #e9f3e4; } }
+      background: #f7fef6; } }
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
     .content-wrapper .home {
       padding: 0 10%; } }
@@ -67,15 +68,15 @@ a {
       .content-wrapper .home__box-one {
         padding-top: 1.2rem; } }
     .content-wrapper .home__box-one h1 {
-      color: #faffec;
-      font-size: 1.05rem;
+      color: #292b20;
+      font-size: 1.1rem;
       line-height: 2rem;
       text-transform: capitalize;
-      padding: 0 0 0 1.5rem;
-      margin-top: -5.2rem;
+      padding: 0 0 0 6rem;
+      margin-top: -4.8rem;
       letter-spacing: 0.07rem;
-      text-align: left;
-      width: 60%;
+      text-align: center;
+      width: 100%;
       font-family: "Cinzel Decorative", cursive;
       font-weight: bold; }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -85,7 +86,7 @@ a {
     padding: 8px;
     padding-left: 1rem;
     width: 100%;
-    background: #faffec;
+    background: #ffffff;
     -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
             box-shadow: 2px 4px 14px #d2dcd7a1; }
     .content-wrapper .home__box-two h3 {
@@ -114,9 +115,6 @@ a {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; } }
-    @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .content-wrapper .home__box-three img {
-        width: 60%; } }
   .content-wrapper .home__box-four, .content-wrapper .home__box-five {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -127,7 +125,7 @@ a {
         -ms-flex-align: center;
             align-items: center;
     padding: 1rem;
-    background: #e9f3e4; }
+    background: #f7fef6; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .home__box-four, .content-wrapper .home__box-five {
         -webkit-box-pack: center;
@@ -137,7 +135,7 @@ a {
       padding: 0.6rem;
       -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
               box-shadow: 2px 4px 14px #d2dcd7a1;
-      background: #faffec;
+      background: #eff4e5;
       border: 1px solid #ffffff;
       border-radius: 3px;
       width: 100%; }
@@ -332,7 +330,7 @@ a {
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background: #faffec;
+  background: #eff4e5;
   -webkit-box-shadow: 0px 1px 4px #168e9a21, 7px 1px 1px #c9d8dc;
           box-shadow: 0px 1px 4px #168e9a21, 7px 1px 1px #c9d8dc; }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -397,7 +395,7 @@ a {
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: repeating-linear-gradient(52deg, #5ca75d36, #73af964f 89px), url(../img/storm1.jpg) center bottom;
+      background: repeating-linear-gradient(52deg, #b3e2d236, #ebf7f24f 89px), url(../img/storm1.jpg) center bottom;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat; }
@@ -408,7 +406,7 @@ a {
               -ms-flex-direction: row;
                   flex-direction: row;
           padding-top: 63px;
-          background: repeating-linear-gradient(52deg, #5ca75d36, #73af964f 89px), url(../img/storm1.jpg) center bottom;
+          background: repeating-linear-gradient(52deg, #b3e2d236, #ebf7f24f 89px), url(../img/storm1.jpg) center bottom;
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
@@ -604,7 +602,7 @@ a {
   .content-wrapper .about {
     padding-bottom: 0rem;
     padding-top: 3rem;
-    background: #e9f3e4; }
+    background: #f7fef6; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .about {
         height: 100%;
@@ -854,14 +852,14 @@ a {
           align-items: flex-end;
   height: 100%;
   overflow: auto;
-  background: #e9f3e4; }
+  background: #f7fef6; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .projects {
       height: 100%;
       overflow: auto;
       padding: 28px 5%;
       padding-bottom: 0;
-      background: #e9f3e4; } }
+      background: #f7fef6; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .content-wrapper .projects {
       -webkit-box-shadow: 0px 7px 3px #168e9a21, 7px 1px 1px #c9d8dc;
@@ -1059,7 +1057,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: repeating-linear-gradient(52deg, #e0ead08f, #dfe8bb42 89px), url(../img/small_tie.jpg) center bottom;
+  background: repeating-linear-gradient(52deg, #ebefdb42, #fefff842 89px), url(../img/small_tie.jpg) center bottom;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1491,7 +1489,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #e9f3e4;
+  background: #f7fef6;
   padding: 0.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1567,7 +1565,7 @@ footer {
   position: relative;
   width: 100%;
   z-index: 0;
-  background: #e9f3e4;
+  background: #f7fef6;
   padding: 1rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
