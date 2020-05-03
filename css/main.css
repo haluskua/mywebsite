@@ -68,11 +68,11 @@ a {
         padding-top: 1.2rem; } }
     .content-wrapper .home__box-one h1 {
       color: #ffffff;
-      font-size: 1.35rem;
+      font-size: 1.05rem;
       line-height: 2rem;
       text-transform: capitalize;
       padding: 0 0 0 1.5rem;
-      margin-top: -6.2rem;
+      margin-top: -3.2rem;
       letter-spacing: 0.07rem;
       text-align: left;
       width: 70%;
@@ -85,14 +85,14 @@ a {
     padding: 8px;
     padding-left: 1rem;
     width: 100%;
-    background: #ffffff; }
+    background: #faffec; }
     .content-wrapper .home__box-two h3 {
       font-size: 1rem;
       line-height: 1.24em;
       text-align: left;
       padding: 0.6rem;
       font-weight: normal;
-      color: #caa45f;
+      color: #848267;
       font-family: "Roboto", "Montserrat", cursive;
       text-transform: uppercase; }
     .content-wrapper .home__box-two span {
@@ -124,7 +124,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 2rem 1rem;
+    padding: 1rem;
     background: #e9f3e4; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .home__box-four, .content-wrapper .home__box-five {
@@ -152,7 +152,7 @@ a {
       font-size: 1.5rem;
       width: 50%;
       padding: 1rem;
-      color: #caa45f;
+      color: #848267;
       text-shadow: none;
       font-family: "Cinzel Decorative", sans-serif;
       font-weight: bold;
@@ -330,7 +330,7 @@ a {
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background: #ffffff;
+  background: #faffec;
   -webkit-box-shadow: 0px 1px 4px #168e9a21, 7px 1px 1px #c9d8dc;
           box-shadow: 0px 1px 4px #168e9a21, 7px 1px 1px #c9d8dc; }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -460,7 +460,7 @@ a {
     font-size: 1.9em;
     font-weight: normal;
     line-height: 1em;
-    color: #caa45f;
+    color: #848267;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
@@ -468,12 +468,12 @@ a {
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .nav .my_name {
         font-size: 1.35rem;
-        color: #caa45f;
+        color: #848267;
         font-weight: bold; } }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .nav .my_name {
         font-size: 3.2em;
-        color: #caa45f; } }
+        color: #848267; } }
     @media only screen and (min-width: 1024px) and (orientation: landscape) {
       .nav .my_name {
         font-size: 2.3rem; } }
@@ -524,11 +524,11 @@ a {
       font-size: 1.3rem;
       font-family: "Cormorant Unicase", serif;
       padding: 0;
-      color: #caa45f; }
+      color: #848267; }
       @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
         .nav .title_txt_container .title_text {
           font-size: 1.15em;
-          color: #caa45f;
+          color: #848267;
           font-weight: bold; } }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .nav .title_txt_container .title_text {
@@ -729,7 +729,7 @@ a {
         margin-top: 5px;
         font-size: 0.77rem;
         background: none;
-        color: #caa45f;
+        color: #848267;
         font-style: italic;
         border: none;
         cursor: pointer;
@@ -748,7 +748,7 @@ a {
           .content-wrapper .about__bio p #myBtn {
             text-align: left; } }
       .content-wrapper .about__bio h3 {
-        color: #caa45f;
+        color: #848267;
         font-size: 1.5em;
         padding-top: 15px;
         text-align: left;
@@ -834,7 +834,7 @@ a {
             color: #45b393;
             cursor: pointer; }
           .content-wrapper .about .jobs__job P span a:hover {
-            color: #caa45f; }
+            color: #848267; }
 
 .content-wrapper .projects {
   display: -webkit-box;
@@ -1111,7 +1111,10 @@ a {
     grid-template-columns: 1fr;
     grid-gap: 1.26rem;
     font-size: 1.35rem;
-    padding: 2rem; }
+    padding: 2rem;
+    background: repeating-linear-gradient(45deg, #fdfdf84d, #cee6e300 100px), url(../img/tie.jpg) center center;
+    background-size: cover;
+    background-repeat: no-repeat; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .contact__list {
         grid-template-columns: repeat(1, 1fr);
@@ -1122,7 +1125,7 @@ a {
   .content-wrapper .contact .contact__cv {
     font-size: 1.13rem;
     font-family: "Roboto", "Montserrat", cursive;
-    color: #caa45f;
+    color: #848267;
     width: 100vw;
     text-align: left;
     letter-spacing: 0.04em;
@@ -1146,7 +1149,7 @@ a {
     .content-wrapper .contact .contact__phone .fa-download,
     .content-wrapper .contact .contact__address .fa-download,
     .content-wrapper .contact .contact__cv .fa-download {
-      color: #caa45f !important; }
+      color: #848267 !important; }
   .content-wrapper .contact .download {
     cursor: pointer;
     color: #000000;
@@ -1433,6 +1436,7 @@ main {
 p {
   color: #4d4d4d;
   padding: 1.2%;
+  padding-bottom: 1.7rem;
   width: 100%;
   margin: 0;
   border-radius: 0.176rem;
@@ -1525,7 +1529,7 @@ footer {
     font-size: 1.15rem;
     text-align: center;
     font-weight: normal;
-    color: #caa45f;
+    color: #848267;
     padding: 0.6rem; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       footer h2 {
