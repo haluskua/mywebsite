@@ -19,6 +19,9 @@ a {
   text-decoration: none;
   list-style: none; }
 
+/*-----X------ partials imports ------X-----*/
+/*----------- @Mixins -----------*/
+/*----------- Light & Dark Theme -----------*/
 .menu-nav__item:nth-child(1) {
   -webkit-transition-delay: 0.175s;
           transition-delay: 0.175s; }
@@ -49,29 +52,27 @@ a {
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .home {
       padding: 0 8%;
-      background: #fafbf5;
-      padding: 28px 5%;
+      background: #e9f3e4;
+      padding: 28px 5.5%;
       padding-bottom: 0; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .content-wrapper .home {
-      padding: 0 5%;
-      background: #fafbf5; } }
+      background: #e9f3e4; } }
+  @media only screen and (min-width: 1024px) and (orientation: landscape) {
+    .content-wrapper .home {
+      padding: 0 10%; } }
   .content-wrapper .home__box-one {
-    padding-top: 7.5rem;
-    width: 100%;
-    background: repeating-linear-gradient(45deg, #fdfdf887, #cee6e338 100px), url(../img/heart_dynamic.png) center center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    width: 100%; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .home__box-one {
-        padding-top: 11rem; } }
+        padding-top: 1.2rem; } }
     .content-wrapper .home__box-one h1 {
-      color: #caa45f;
-      font-size: 2rem;
+      color: #ffffff;
+      font-size: 1.35rem;
       line-height: 2rem;
-      padding-bottom: 0;
       text-transform: capitalize;
       padding: 0 0 0 1.5rem;
+      margin-top: -6.2rem;
       letter-spacing: 0.07rem;
       text-align: left;
       width: 70%;
@@ -79,7 +80,7 @@ a {
       font-weight: bold; }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .content-wrapper .home__box-one h1 {
-          font-weight: 2.6rem; } }
+          font-weight: 2.82rem; } }
   .content-wrapper .home__box-two {
     padding: 8px;
     padding-left: 1rem;
@@ -124,7 +125,7 @@ a {
         -ms-flex-align: center;
             align-items: center;
     padding: 2rem 1rem;
-    background: #f9f3f3; }
+    background: #e9f3e4; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .home__box-four, .content-wrapper .home__box-five {
         -webkit-box-pack: center;
@@ -134,10 +135,16 @@ a {
       padding: 0.6rem;
       -webkit-box-shadow: 2px 4px 14px #e8d1bda1;
               box-shadow: 2px 4px 14px #e8d1bda1;
-      background: #f5f5f5b0;
+      background: #faffec;
       border: 1px solid #ffffff;
       border-radius: 3px;
       width: 100%; }
+      @media only screen and (min-width: 640px) and (orientation: portrait) {
+        .content-wrapper .home__box-four .box-link, .content-wrapper .home__box-five .box-link {
+          padding: 1rem; } }
+      @media only screen and (min-width: 1024px) and (orientation: landscape) {
+        .content-wrapper .home__box-four .box-link, .content-wrapper .home__box-five .box-link {
+          padding: 1rem; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .content-wrapper .home__box-four .box-link, .content-wrapper .home__box-five .box-link {
           width: 70%; } }
@@ -323,7 +330,7 @@ a {
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background: #ecebd5;
+  background: #ffffff;
   -webkit-box-shadow: 0px 1px 4px #168e9a21, 7px 1px 1px #c9d8dc;
           box-shadow: 0px 1px 4px #168e9a21, 7px 1px 1px #c9d8dc; }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -388,7 +395,7 @@ a {
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: repeating-linear-gradient(52deg, #4e8e4f21, #7aaf7338 89px), url(../img/storm1.jpg) center bottom;
+      background: repeating-linear-gradient(52deg, #5ca75d36, #73af964f 89px), url(../img/storm1.jpg) center bottom;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat; }
@@ -399,7 +406,7 @@ a {
               -ms-flex-direction: row;
                   flex-direction: row;
           padding-top: 63px;
-          background: repeating-linear-gradient(52deg, #4e8e4f21, #7aaf7338 89px), url(../img/storm1.jpg) center bottom;
+          background: repeating-linear-gradient(52deg, #5ca75d36, #73af964f 89px), url(../img/storm1.jpg) center bottom;
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
@@ -595,7 +602,7 @@ a {
   .content-wrapper .about {
     padding-bottom: 0rem;
     padding-top: 3rem;
-    background: #f9f3f3; }
+    background: #e9f3e4; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .about {
         height: 100%;
@@ -812,7 +819,7 @@ a {
               font-weight: normal; } }
         .content-wrapper .about .jobs__job h5 {
           font-size: 0.85rem;
-          color: #09868c;
+          color: #45b393;
           font-style: normal;
           padding: 0;
           line-height: 1.24em;
@@ -824,7 +831,7 @@ a {
           font-style: italic;
           font-size: 0.79rem; }
           .content-wrapper .about .jobs__job P span a {
-            color: #09868c;
+            color: #45b393;
             cursor: pointer; }
           .content-wrapper .about .jobs__job P span a:hover {
             color: #caa45f; }
@@ -845,13 +852,14 @@ a {
           align-items: flex-end;
   height: 100%;
   overflow: auto;
-  background: #f9f3f3; }
+  background: #e9f3e4; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .projects {
       height: 100%;
       overflow: auto;
       padding: 28px 5%;
-      padding-bottom: 0; } }
+      padding-bottom: 0;
+      background: #e9f3e4; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .content-wrapper .projects {
       -webkit-box-shadow: 0px 7px 3px #168e9a21, 7px 1px 1px #c9d8dc;
@@ -875,12 +883,11 @@ a {
         padding: 0; } }
   .content-wrapper .projects__bio-image {
     width: 100%;
-    padding-top: 4rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-left: 1rem;
+    padding: 4rem 3rem 2rem 1rem;
     background: #fafbf5; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .projects__bio-image {
@@ -950,6 +957,8 @@ a {
     border-radius: 0.2rem;
     cursor: pointer;
     background: #fafbf5;
+    padding: 0.5rem;
+    background: #fbfdef;
     -webkit-box-shadow: 1px 9px 28px #168e9a0f, 8px 1px 22px #c7d3d630;
             box-shadow: 1px 9px 28px #168e9a0f, 8px 1px 22px #c7d3d630; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -1320,10 +1329,6 @@ a {
     -webkit-animation: fadeIn var(--fade-time) ease-in 1 forwards;
             animation: fadeIn var(--fade-time) ease-in 1 forwards; }
 
-/*-----X------ partials imports ------X-----*/
-/*----------- @Mixins -----------*/
-/*----------- Light & Dark Theme -----------*/
-/*----------- @Mixins -----------*/
 body {
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -1468,7 +1473,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #e3efef;
+  background: #e9f3e4;
   padding: 0.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1544,8 +1549,8 @@ footer {
   position: relative;
   width: 100%;
   z-index: 0;
-  background: #f4fdfd;
-  padding: 0.5rem;
+  background: #e9f3e4;
+  padding: 1rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
