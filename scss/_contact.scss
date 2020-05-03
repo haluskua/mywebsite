@@ -3,21 +3,20 @@
 
   .contact {
     display: flex;
-    width: 100vw;
     height: 100vh;
     overflow: auto;
     margin-top: 3rem;
     @include Flex-Col-Cent-tween;
     @include mini-img-bcg;
     background-position: center;
-
     @include SMALL-LANDSCAPE {
       @include Flex-flow-row-wrap;
-      @include Front-page-bcg;
+      align-items: flex-end;
       height: 100vh;
       margin-top: 1.5rem;
       margin-top: 2rem;
       justify-content: space-between;
+      padding: 2rem;
     }
     @include MEDIUM-LANDSCAPE {
       justify-content: space-around;
@@ -27,6 +26,7 @@
       padding: 5rem 24% 0rem 14%;
       justify-content: space-between;
       border: 1px solid ($box-shadow-01);
+      @include mini-img-bcg;
     }
 
     // ........
@@ -48,10 +48,9 @@
 
     // .......
     .grid-container {
-      padding-left: 2rem;
       @include SMALL-LANDSCAPE {
         width: 66%;
-        padding: 0;
+        background: #f1f0f8b8;
       }
       @include MEDIUM-DEVICE-WIDTH {
         padding: 0;
@@ -71,70 +70,69 @@
       grid-template-columns: 1fr;
       grid-gap: 1.26rem;
       font-size: 1.35rem;
-      padding: 2rem;
+      padding: 0;
       @include MEDIUM-DEVICE-WIDTH {
         grid-template-columns: repeat(1, 1fr);
-        padding: 2rem;
       }
-    }
-    .contact__email,
-    .contact__phone,
-    .contact__address,
-    .contact__cv {
-      font-size: 1.13rem;
-      font-family: "Roboto", "Montserrat", cursive;
-      color: ($GOLD);
-      width: 100vw;
-      text-align: left;
-      letter-spacing: 0.04em;
-      padding: 7px;
-      padding-left: 1rem;
-      @include SMALL-LANDSCAPE {
-        width: auto;
-        font-size: 0.88rem;
-        padding: 3px;
+      .contact__email,
+      .contact__phone,
+      .contact__address,
+      .contact__cv {
+        font-size: 1.13rem;
+        font-family: "Roboto", "Montserrat", cursive;
+        color: ($GOLD);
+        width: 100vw;
+        text-align: left;
+        letter-spacing: 0.04em;
+        padding: 7px;
+        padding-left: 1rem;
+        @include SMALL-LANDSCAPE {
+          width: auto;
+          font-size: 0.88rem;
+          padding: 3px;
+        }
+        @include MEDIUM-DEVICE-WIDTH {
+          text-align: center;
+        }
+        .fa-download {
+          color: ($GOLD) !important;
+        }
       }
-      @include MEDIUM-DEVICE-WIDTH {
-        text-align: center;
+      // .....
+      .download {
+        cursor: pointer;
+        color: #000000;
+        z-index: 999;
+        font-family: "Roboto", "Montserrat", cursive;
       }
-      .fa-download {
-        color: ($GOLD) !important;
-      }
-    }
-    // .....
-    .download {
-      cursor: pointer;
-      color: #000000;
-      z-index: 999;
-      font-family: "Roboto", "Montserrat", cursive;
-    }
 
-    .text-secondary {
-      color: ($BLACK-003);
-      margin: 3px 0;
-      font-size: 0.9rem;
-      margin-top: 8px;
-      @include SMALL-LANDSCAPE {
-        font-size: 0.85rem;
+      .text-secondary {
+        color: ($BLACK-003);
+        margin: 3px 0;
+        font-size: 0.9rem;
+        margin-top: 8px;
+        @include SMALL-LANDSCAPE {
+          font-size: 0.85rem;
+        }
       }
-    }
-    .nav .menu-nav__item:nth-child(4) {
-      width: 100%;
-    }
-    .social-icons {
-      @include LARGE-DEVICE-WIDTH {
-        bottom: 0 !important;
+      .nav .menu-nav__item:nth-child(4) {
+        width: 100%;
+      }
+      .social-icons {
+        @include LARGE-DEVICE-WIDTH {
+          bottom: 0 !important;
+        }
       }
     }
   }
-}
 
-footer,
-h2 {
-  @include SMALL-LANDSCAPE {
-    text-align: center !important;
-  }
-  @include MEDIUM-DEVICE-WIDTH {
-    text-align: center !important;
+  footer,
+  h2 {
+    @include SMALL-LANDSCAPE {
+      text-align: center !important;
+    }
+    @include MEDIUM-DEVICE-WIDTH {
+      text-align: center !important;
+    }
   }
 }
