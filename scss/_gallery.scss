@@ -46,8 +46,6 @@ main {
     margin: auto;
     overflow: scroll;
     background: ($trans-white);
-    height: 100vh;
-    margin-top: 3rem;
     @include box-shadow-blocks;
     @include SMALL-LANDSCAPE {
       border: none;
