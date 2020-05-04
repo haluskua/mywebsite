@@ -941,7 +941,7 @@
       .content-wrapper .projects__items {
         grid-template-columns: repeat(3, 1fr);
         height: auto; } }
-  .content-wrapper .projects__item1, .content-wrapper .projects__item2, .content-wrapper .projects__item3, .content-wrapper .projects__item4 {
+  .content-wrapper .projects__item1, .content-wrapper .projects__item2, .content-wrapper .projects__item3, .content-wrapper .projects__item4, .content-wrapper .projects__item5 {
     position: relative;
     overflow: hidden;
     z-index: 3;
@@ -953,7 +953,7 @@
     -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
             box-shadow: 2px 4px 14px #d2dcd7a1; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
-      .content-wrapper .projects__item1, .content-wrapper .projects__item2, .content-wrapper .projects__item3, .content-wrapper .projects__item4 {
+      .content-wrapper .projects__item1, .content-wrapper .projects__item2, .content-wrapper .projects__item3, .content-wrapper .projects__item4, .content-wrapper .projects__item5 {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -968,25 +968,25 @@
             -ms-flex-direction: column;
                 flex-direction: column; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .content-wrapper .projects__item1, .content-wrapper .projects__item2, .content-wrapper .projects__item3, .content-wrapper .projects__item4 {
+      .content-wrapper .projects__item1, .content-wrapper .projects__item2, .content-wrapper .projects__item3, .content-wrapper .projects__item4, .content-wrapper .projects__item5 {
         width: 100%; } }
-    .content-wrapper .projects__item1 h3, .content-wrapper .projects__item2 h3, .content-wrapper .projects__item3 h3, .content-wrapper .projects__item4 h3 {
+    .content-wrapper .projects__item1 h3, .content-wrapper .projects__item2 h3, .content-wrapper .projects__item3 h3, .content-wrapper .projects__item4 h3, .content-wrapper .projects__item5 h3 {
       font-family: "Roboto";
       font-weight: normal;
       text-transform: uppercase;
       padding-left: 1rem;
       font-size: 0.95rem; }
       @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-        .content-wrapper .projects__item1 h3, .content-wrapper .projects__item2 h3, .content-wrapper .projects__item3 h3, .content-wrapper .projects__item4 h3 {
+        .content-wrapper .projects__item1 h3, .content-wrapper .projects__item2 h3, .content-wrapper .projects__item3 h3, .content-wrapper .projects__item4 h3, .content-wrapper .projects__item5 h3 {
           font-size: 0.8rem;
           padding-bottom: 1rem; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
-        .content-wrapper .projects__item1 h3, .content-wrapper .projects__item2 h3, .content-wrapper .projects__item3 h3, .content-wrapper .projects__item4 h3 {
+        .content-wrapper .projects__item1 h3, .content-wrapper .projects__item2 h3, .content-wrapper .projects__item3 h3, .content-wrapper .projects__item4 h3, .content-wrapper .projects__item5 h3 {
           font-size: 1rem;
           padding-bottom: 1rem; } }
-    .content-wrapper .projects__item1 img, .content-wrapper .projects__item2 img, .content-wrapper .projects__item3 img, .content-wrapper .projects__item4 img {
+    .content-wrapper .projects__item1 img, .content-wrapper .projects__item2 img, .content-wrapper .projects__item3 img, .content-wrapper .projects__item4 img, .content-wrapper .projects__item5 img {
       width: 100%; }
-    .content-wrapper .projects__item1::after, .content-wrapper .projects__item2::after, .content-wrapper .projects__item3::after, .content-wrapper .projects__item4::after {
+    .content-wrapper .projects__item1::after, .content-wrapper .projects__item2::after, .content-wrapper .projects__item3::after, .content-wrapper .projects__item4::after, .content-wrapper .projects__item5::after {
       content: "";
       position: absolute;
       top: 100%;
@@ -997,10 +997,10 @@
       opacity: 1;
       -webkit-transition: all 0.42s ease-in-out;
       transition: all 0.42s ease-in-out; }
-    .content-wrapper .projects__item1:hover::after, .content-wrapper .projects__item2:hover::after, .content-wrapper .projects__item3:hover::after, .content-wrapper .projects__item4:hover::after {
+    .content-wrapper .projects__item1:hover::after, .content-wrapper .projects__item2:hover::after, .content-wrapper .projects__item3:hover::after, .content-wrapper .projects__item4:hover::after, .content-wrapper .projects__item5:hover::after {
       top: 0;
       opacity: 0.9; }
-    .content-wrapper .projects__item1:hover .projects__btn, .content-wrapper .projects__item2:hover .projects__btn, .content-wrapper .projects__item3:hover .projects__btn, .content-wrapper .projects__item4:hover .projects__btn {
+    .content-wrapper .projects__item1:hover .projects__btn, .content-wrapper .projects__item2:hover .projects__btn, .content-wrapper .projects__item3:hover .projects__btn, .content-wrapper .projects__item4:hover .projects__btn, .content-wrapper .projects__item5:hover .projects__btn {
       opacity: 1; }
   .content-wrapper .projects__btns {
     position: absolute;
@@ -1542,13 +1542,7 @@ footer {
       footer h3 {
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
-        display: inline-flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center; } }
+        display: inline-flex; } }
   footer h2 {
     font-family: "Cinzel Decorative", cursive;
     width: 100%;
