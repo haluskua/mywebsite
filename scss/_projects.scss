@@ -34,7 +34,7 @@
       width: 100%;
       flex-direction: column;
       padding: 4rem 3rem 2rem 1rem;
-      background: ($WHITE-005);
+      background: ($WHITE);
       @include SMALL-LANDSCAPE {
         padding-top: 1rem;
       }
@@ -115,7 +115,7 @@
       border-radius: 0.2rem;
       cursor: pointer;
       padding: 0.5rem;
-      background: ($BBY-YELLOW);
+      background: ($BABY-GREEN-01);
 
       @include box-shadow-blocks;
       @include MEDIUM-DEVICE-WIDTH {
