@@ -191,12 +191,17 @@
             transform: rotateZ(4deg); } }
 
 .menu-btn {
-  position: fixed;
-  right: 2%;
-  top: 17px;
-  width: 14%;
-  height: 0px;
-  background: #ffffff;
+  position: relative;
+  width: 120px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  margin-top: -7px;
+  padding: 12px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background: #e6e4cd00;
   -webkit-transition: all 0.42s ease-in-out;
   transition: all 0.42s ease-in-out;
   z-index: 999;
@@ -208,20 +213,22 @@
   cursor: pointer; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .menu-btn {
-      width: 22%; } }
+      width: 14%; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .menu-btn {
       z-index: 9999;
       cursor: pointer;
-      width: 24%; } }
+      width: 18%; } }
+  @media only screen and (min-width: 1024px) and (orientation: landscape) {
+    .menu-btn {
+      width: 12%; } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .menu-btn {
-      width: 11%; } }
+      width: 135px; } }
   .menu-btn__burger {
-    position: absolute;
-    left: 1em;
-    top: 0.5rem;
-    width: 28px;
+    position: relative;
+    top: 0.9rem;
+    width: 31px;
     height: 3px;
     background: #292b20;
     -webkit-transition: all 0.42s ease-in-out;
@@ -230,7 +237,7 @@
       content: "";
       position: absolute;
       top: -8px;
-      width: 28px;
+      width: 31px;
       height: 3px;
       background: #292b20;
       -webkit-transition: all 0.42s ease-in-out;
@@ -239,9 +246,9 @@
       content: "";
       position: absolute;
       top: 8px;
-      width: 20px;
+      width: 31px;
       height: 3px;
-      background: #776f6f;
+      background: #292b20;
       -webkit-transition: all 0.42s ease-in-out;
       transition: all 0.42s ease-in-out; }
     .menu-btn__burger.open {
@@ -258,10 +265,10 @@
                 transform: rotate(-45deg) translate(3px, -7px); }
   .menu-btn__logo {
     color: #ffb443;
-    margin-top: 3px;
-    position: fixed;
-    left: 3%;
-    font-size: 1.35em;
+    margin-top: 4px;
+    position: relative;
+    left: -1%;
+    font-size: 1.27em;
     font-weight: bold;
     font-family: "Charmonman", serif; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -279,18 +286,17 @@
   .menu-index #project-index {
     height: auto;
     width: 38%;
-    z-index: 99999699999;
+    z-index: 999;
     position: fixed;
-    left: 7rem;
+    right: 0;
     margin-top: -1.15rem; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .menu-index #project-index {
-        margin-top: -2rem;
+        margin-top: -3rem;
         width: 30%;
         font-size: 0.88rem; } }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .menu-index #project-index {
-        left: 12rem;
         top: -1.5rem;
         width: 30%; } }
     @media only screen and (min-width: 1024px) and (orientation: landscape) {
@@ -300,9 +306,9 @@
         width: 33%; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .menu-index #project-index {
-        top: 1.62rem;
+        top: 1.262rem;
         width: 18%;
-        left: 34rem;
+        right: 0;
         margin-top: -4.5rem; } }
   .menu-index #ps,
   .menu-index #pt {
@@ -317,6 +323,9 @@
         font-size: 1.4rem; } }
 
 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
   top: 0;
   z-index: 4;
@@ -333,6 +342,8 @@
     visibility: visible;
     padding: 0px; }
   .nav .menu-nav {
+    position: fixed;
+    width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -608,9 +619,6 @@
         padding: 6%;
         padding-bottom: 10px;
         height: 100vh; } }
-    @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .content-wrapper .about {
-        padding: 0; } }
     .content-wrapper .about__bio-image {
       display: -webkit-box;
       display: -ms-flexbox;
