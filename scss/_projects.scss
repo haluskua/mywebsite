@@ -181,12 +181,19 @@
       grid-template-columns: repeat(2, 1fr);
       align-items: center;
       text-align: center;
+      @include SMALL-LANDSCAPE {
+        grid-gap: 0;
+        width: 95%;
+      }
     }
     a:link {
       border: none;
       padding: 9px;
       border-radius: 3px;
       z-index: 1;
+      @include SMALL-LANDSCAPE {
+        padding: 0;
+      }
     }
 
     &__btn {
@@ -199,11 +206,14 @@
         color: set-text-color(set-text-color($WHITE-005));
         font-size: 1.3rem;
       }
-      .fas {
-        color: ($BLACK-002);
-      }
+      .fas,
       .fab {
-        color: ($BLACK-002);
+        color: ($FLURO);
+        font-size: 0.88rem;
+        background: ($WHITE);
+        @include box-shadow-two;
+        padding: 4px;
+        width: 100%;
       }
     }
 
@@ -212,4 +222,3 @@
     }
   }
 }
- 
