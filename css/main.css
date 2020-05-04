@@ -1273,8 +1273,6 @@
     margin: auto;
     overflow: scroll;
     background: #ffffff57;
-    height: 100vh;
-    margin-top: 3rem;
     -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
             box-shadow: 2px 4px 14px #d2dcd7a1; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
