@@ -47,13 +47,24 @@ h5 {
   width: 100%;
 }
 
+
 // ........
+// Remove blue border in chrom
+button {
+  outline: 0;
+  :focus {
+    outline: 0;
+  }
+}
+
+// .............
 
 a {
   text-decoration: none;
 }
 a:link {
   width: auto;
+  
 }
 a:focus {
   box-shadow: 0 0 1px 1px rgb(63, 53, 48);
