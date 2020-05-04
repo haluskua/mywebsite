@@ -11,10 +11,6 @@
 @import "./contact";
 @import "./gallery";
 
-
-
-
-
 // default auto fallback styles for elements
 //..............................
 
@@ -188,7 +184,6 @@ footer {
   }
   @include MEDIUM-DEVICE-WIDTH {
     flex-direction: row;
-    // padding: 1rem 10rem;
   }
   @include MEDIUM-LANDSCAPE {
     width: 100%;
@@ -205,8 +200,6 @@ footer {
     }
     @include MEDIUM-DEVICE-WIDTH {
       display: inline-flex;
-      align-items: center;
-      justify-content: center;
     }
   }
 
@@ -267,7 +260,6 @@ footer {
     position: fixed;
     flex-direction: column;
     width: auto;
-
   }
 
   .fa-2x {
