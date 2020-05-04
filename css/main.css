@@ -126,7 +126,7 @@
       padding: 0.6rem;
       -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
               box-shadow: 2px 4px 14px #d2dcd7a1;
-      background: #fafdf0;
+      background: #f1f0f8;
       border: 1px solid #ffffff;
       border-radius: 3px;
       width: 100%; }
@@ -331,7 +331,7 @@
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background: #fafdf0;
+  background: #f1f0f8;
   -webkit-box-shadow: 0px 1px 4px #168e9a21, 7px 1px 1px #c9d8dc;
           box-shadow: 0px 1px 4px #168e9a21, 7px 1px 1px #c9d8dc; }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -890,7 +890,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 4rem 3rem 2rem 1rem;
-    background: #fafbf5; }
+    background: #ffffff; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .projects__bio-image {
         padding-top: 1rem; } }
@@ -958,7 +958,7 @@
     border-radius: 0.2rem;
     cursor: pointer;
     padding: 0.5rem;
-    background: #fafdf0;
+    background: #f1f0f8;
     -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
             box-shadow: 2px 4px 14px #d2dcd7a1; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -1529,7 +1529,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #fafdf0;
+  background: #f1f0f8;
   padding: 0.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
