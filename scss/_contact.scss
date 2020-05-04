@@ -6,12 +6,11 @@
     height: 100vh;
     overflow: auto;
     margin-top: 3rem;
+    background: ($trans-white);
     @include Flex-Col-Cent-tween;
-    @include mini-img-bcg;
-    background-position: center;
+    background-position: top;
     @include SMALL-LANDSCAPE {
       @include Flex-flow-row-wrap;
-      align-items: flex-end;
       height: 100vh;
       margin-top: 1.5rem;
       margin-top: 2rem;
@@ -19,6 +18,7 @@
       padding: 2rem;
     }
     @include MEDIUM-LANDSCAPE {
+      @include mini-img-bcg;
       justify-content: space-around;
       margin: 0;
     }
@@ -36,7 +36,7 @@
       padding-top: 3rem;
       padding: 0;
       @include SMALL-LANDSCAPE {
-        width: 33%;
+        width: 40%;
       }
       @include MEDIUM-LANDSCAPE {
         width: 35%;
@@ -49,8 +49,7 @@
     // .......
     .grid-container {
       @include SMALL-LANDSCAPE {
-        width: 66%;
-        background: #f1f0f8b8;
+        width: 53%;
       }
       @include MEDIUM-DEVICE-WIDTH {
         padding: 0;

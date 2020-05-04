@@ -106,7 +106,7 @@
       flex-wrap: wrap;
       align-items: center;
       padding: 1rem;
-      background: ($WHITE);
+      background: ($trans-white);
       @include LARGE-DEVICE-WIDTH {
         justify-content: center;
       }

@@ -6,10 +6,10 @@
     @include Flex-Col-ween-end;
     height: 100%;
     overflow: auto;
-    background: ($WHITE);
+    background: ($trans-white);
     @include SMALL-LANDSCAPE {
       @include landscape-orientation-layout;
-      background: ($WHITE);
+      background: ($trans-white);
     }
     @include MEDIUM-DEVICE-WIDTH {
       @include box-shadow-blocks;
@@ -34,7 +34,7 @@
       width: 100%;
       flex-direction: column;
       padding: 4rem 3rem 2rem 1rem;
-      background: ($WHITE);
+      background: ($trans-white);
       @include SMALL-LANDSCAPE {
         padding-top: 1rem;
       }

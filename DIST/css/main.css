@@ -116,7 +116,7 @@
         -ms-flex-align: center;
             align-items: center;
     padding: 1rem;
-    background: #ffffff; }
+    background: #ffffff57; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .home__box-four, .content-wrapper .home__box-five {
         -webkit-box-pack: center;
@@ -331,7 +331,7 @@
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background: #f1f0f8;
+  background: #ffffff;
   -webkit-box-shadow: 0px 1px 4px #168e9a21, 7px 1px 1px #c9d8dc;
           box-shadow: 0px 1px 4px #168e9a21, 7px 1px 1px #c9d8dc; }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -386,7 +386,7 @@
               align-items: flex-end;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-      border: 2px solid #7cb0aa;
+      border: 2px solid #f2f3eb;
       -webkit-box-orient: vertical;
       -webkit-box-direction: reverse;
           -ms-flex-direction: column-reverse;
@@ -398,7 +398,7 @@
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: repeating-linear-gradient(52deg, #dbd5ec36, #f1f0f870 89px), url(../img/storm1.jpg) center bottom;
+      background: repeating-linear-gradient(52deg, #eaecd51a, #f0f8f700 89px), url(../img/storm1.jpg) center bottom;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat; }
@@ -409,7 +409,7 @@
               -ms-flex-direction: row;
                   flex-direction: row;
           padding-top: 63px;
-          background: repeating-linear-gradient(52deg, #dbd5ec36, #f1f0f870 89px), url(../img/storm1.jpg) center bottom;
+          background: repeating-linear-gradient(52deg, #eaecd51a, #f0f8f700 89px), url(../img/storm1.jpg) center bottom;
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
@@ -854,14 +854,14 @@
           align-items: flex-end;
   height: 100%;
   overflow: auto;
-  background: #ffffff; }
+  background: #ffffff57; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .projects {
       height: 100%;
       overflow: auto;
       padding: 28px 5%;
       padding-bottom: 0;
-      background: #ffffff; } }
+      background: #ffffff57; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .content-wrapper .projects {
       -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
@@ -890,7 +890,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 4rem 3rem 2rem 1rem;
-    background: #ffffff; }
+    background: #ffffff57; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .projects__bio-image {
         padding-top: 1rem; } }
@@ -1062,6 +1062,7 @@
   height: 100vh;
   overflow: auto;
   margin-top: 3rem;
+  background: #ffffff57;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1072,11 +1073,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: repeating-linear-gradient(52deg, #f1f0f878, #f1f0f859 89px), url(../img/ohk_grafix.jpg) center bottom;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; }
+  background-position: top; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .contact {
       -webkit-box-orient: horizontal;
@@ -1085,9 +1082,6 @@
               flex-flow: row;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      -webkit-box-align: end;
-          -ms-flex-align: end;
-              align-items: flex-end;
       height: 100vh;
       margin-top: 1.5rem;
       margin-top: 2rem;
@@ -1097,6 +1091,10 @@
       padding: 2rem; } }
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
     .content-wrapper .contact {
+      background: repeating-linear-gradient(52deg, #f1f0f878, #f1f0f859 89px), url(../img/ohk_grafix.jpg) center bottom;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
       -ms-flex-pack: distribute;
           justify-content: space-around;
       margin: 0; } }
@@ -1122,7 +1120,7 @@
     padding: 0; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .contact .img-box {
-        width: 33%; } }
+        width: 40%; } }
     @media only screen and (min-width: 1024px) and (orientation: landscape) {
       .content-wrapper .contact .img-box {
         width: 35%; } }
@@ -1131,8 +1129,7 @@
         width: 50%; } }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .contact .grid-container {
-      width: 66%;
-      background: #f1f0f8b8; } }
+      width: 53%; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .content-wrapper .contact .grid-container {
       padding: 0; } }
@@ -1239,7 +1236,7 @@
         -webkit-box-shadow: none;
                 box-shadow: none;
         padding: 16px 10% 0 16%;
-        background: #fafbf5; } }
+        background: #ffffff57; } }
     @media only screen and (min-width: 1024px) and (orientation: landscape) {
       .content-wrapper .main-container {
         padding: 2%; } }
@@ -1275,7 +1272,9 @@
         justify-content: space-around;
     margin: auto;
     overflow: scroll;
-    background: #ffffff;
+    background: #ffffff57;
+    height: 100vh;
+    margin-top: 3rem;
     -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
             box-shadow: 2px 4px 14px #d2dcd7a1; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
@@ -1285,7 +1284,7 @@
                 box-shadow: none;
         padding: 1rem;
         padding: 1rem;
-        background: #ffffff;
+        background: #ffffff57;
         -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
                 box-shadow: 2px 4px 14px #d2dcd7a1; } }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -1600,7 +1599,7 @@ footer {
   width: 100%;
   z-index: 0;
   background: #ffffff;
-  padding: 1rem;
+  padding: 0.25rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
