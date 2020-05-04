@@ -126,7 +126,7 @@
       padding: 0.6rem;
       -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
               box-shadow: 2px 4px 14px #d2dcd7a1;
-      background: #eff4e5;
+      background: #fafdf0;
       border: 1px solid #ffffff;
       border-radius: 3px;
       width: 100%; }
@@ -302,7 +302,8 @@
       .menu-index #project-index {
         top: 1.62rem;
         width: 18%;
-        left: 40rem; } }
+        left: 34rem;
+        margin-top: -4.5rem; } }
   .menu-index #ps,
   .menu-index #pt {
     font-size: 45px; }
@@ -321,7 +322,7 @@
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background: #eff4e5;
+  background: #fafdf0;
   -webkit-box-shadow: 0px 1px 4px #168e9a21, 7px 1px 1px #c9d8dc;
           box-shadow: 0px 1px 4px #168e9a21, 7px 1px 1px #c9d8dc; }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -949,7 +950,7 @@
     border-radius: 0.2rem;
     cursor: pointer;
     padding: 0.5rem;
-    background: #eff4e5;
+    background: #fafdf0;
     -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
             box-shadow: 2px 4px 14px #d2dcd7a1; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -1388,6 +1389,11 @@ h5 {
   text-align: left;
   width: 100%; }
 
+button {
+  outline: 0; }
+  button :focus {
+    outline: 0; }
+
 a {
   text-decoration: none; }
 
@@ -1648,4 +1654,5 @@ footer {
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .fa-2x {
       font-size: 1.2rem; } }
+
 /*# sourceMappingURL=main.css.map */
