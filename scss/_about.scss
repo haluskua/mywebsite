@@ -16,9 +16,6 @@
       padding-bottom: 10px;
       height: 100vh;
     }
-    @include LARGE-DEVICE-WIDTH {
-      padding: 0;
-    }
 
     &__bio-image {
       display: flex;

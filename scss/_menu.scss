@@ -19,34 +19,38 @@
 
 // ........
 .menu-btn {
-  position: fixed;
-  right: 2%;
-  top: 17px;
-  width: 14%;
-  height: 0px;
-  background: ($WHITE);
+  position: relative;
+  width: 120px;
+  justify-content: space-between;
+  height: 100%;
+  margin-top: -7px;
+  padding: 12px;
+  align-self: center;
+  background: #e6e4cd00;
   @include transition-ease;
   z-index: 999;
   display: flex;
   justify-content: space-around;
   cursor: pointer;
   @include SMALL-LANDSCAPE {
-    width: 22%;
+    width: 14%;
   }
   @include MEDIUM-DEVICE-WIDTH {
     z-index: 9999;
     cursor: pointer;
-    width: 24%;
+    width: 18%;
+  }
+  @include MEDIUM-LANDSCAPE {
+    width: 12%;
   }
   @include LARGE-DEVICE-WIDTH {
-    width: 11%;
+    width: 135px;
   }
 
   &__burger {
-    position: absolute;
-    left: 1em;
-    top: 0.5rem;
-    width: 28px;
+    position: relative;
+    top: 0.9rem;
+    width: 31px;
     height: 3px;
     background: ($BLACK-002);
     @include transition-ease;
@@ -55,7 +59,7 @@
       content: "";
       position: absolute;
       top: -8px;
-      width: 28px;
+      width: 31px;
       height: 3px;
       background: ($BLACK-002);
       @include transition-ease;
@@ -65,9 +69,9 @@
       content: "";
       position: absolute;
       top: 8px;
-      width: 20px;
+      width: 31px;
       height: 3px;
-      background: #776f6f;
+      background: ($BLACK-002);
       @include transition-ease;
     }
     &.open {
@@ -87,10 +91,10 @@
   }
   &__logo {
     color: #ffb443;
-    margin-top: 3px;
-    position: fixed;
-    left: 3%;
-    font-size: 1.35em;
+    margin-top: 4px;
+    position: relative;
+    left: -1%;
+    font-size: 1.27em;
     font-weight: bold;
     font-family: "Charmonman", serif;
     @include MEDIUM-DEVICE-WIDTH {
@@ -110,17 +114,16 @@
   #project-index {
     height: auto;
     width: 38%;
-    z-index: 99999699999;
+    z-index: 999;
     position: fixed;
-    left: 7rem;
+    right: 0;
     margin-top: -1.15rem;
     @include SMALL-LANDSCAPE {
-      margin-top: -2rem;
+      margin-top: -3rem;
       width: 30%;
       font-size: 0.88rem;
     }
     @include MEDIUM-DEVICE-WIDTH {
-      left: 12rem;
       top: -1.5rem;
       width: 30%;
     }
@@ -130,9 +133,9 @@
       width: 33%;
     }
     @include LARGE-DEVICE-WIDTH {
-      top: 1.62rem;
+      top: 1.262rem;
       width: 18%;
-      left: 34rem;
+      right: 0;
       margin-top: -4.5rem;
     }
   }
@@ -149,6 +152,7 @@
 }
 
 .nav {
+  display: flex;
   position: fixed;
   top: 0;
   z-index: 4;
@@ -167,6 +171,8 @@
   }
 
   .menu-nav {
+    position: fixed;
+    width: 100vw;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
