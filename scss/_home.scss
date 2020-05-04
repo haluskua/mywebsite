@@ -19,12 +19,12 @@
     padding-top: 2rem;
     @include SMALL-LANDSCAPE {
       padding: 0 8%;
-      background: ($BABY-GREEN-01);
+      background: ($WHITE);
       padding: 28px 5.5%;
       padding-bottom: 0;
     }
     @include MEDIUM-DEVICE-WIDTH {
-      background: ($BABY-GREEN-01);
+      background: ($WHITE);
     }
     @include MEDIUM-LANDSCAPE {
       padding: 0 10%;
@@ -106,7 +106,7 @@
       flex-wrap: wrap;
       align-items: center;
       padding: 1rem;
-      background: ($BABY-GREEN-01);
+      background: ($WHITE);
       @include LARGE-DEVICE-WIDTH {
         justify-content: center;
       }

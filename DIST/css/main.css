@@ -34,12 +34,12 @@
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .home {
       padding: 0 8%;
-      background: #f1f0f8;
+      background: #ffffff;
       padding: 28px 5.5%;
       padding-bottom: 0; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .content-wrapper .home {
-      background: #f1f0f8; } }
+      background: #ffffff; } }
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
     .content-wrapper .home {
       padding: 0 10%; } }
@@ -116,7 +116,7 @@
         -ms-flex-align: center;
             align-items: center;
     padding: 1rem;
-    background: #f1f0f8; }
+    background: #ffffff; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .home__box-four, .content-wrapper .home__box-five {
         -webkit-box-pack: center;
@@ -607,7 +607,7 @@
   .content-wrapper .about {
     padding-bottom: 0rem;
     padding-top: 3rem;
-    background: #f1f0f8; }
+    background: #ffffff; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .about {
         height: 100%;
@@ -854,14 +854,14 @@
           align-items: flex-end;
   height: 100%;
   overflow: auto;
-  background: #f1f0f8; }
+  background: #ffffff; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .projects {
       height: 100%;
       overflow: auto;
       padding: 28px 5%;
       padding-bottom: 0;
-      background: #f1f0f8; } }
+      background: #ffffff; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .content-wrapper .projects {
       -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
@@ -1529,7 +1529,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #f1f0f8;
+  background: #fafdf0;
   padding: 0.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1599,7 +1599,7 @@ footer {
   position: relative;
   width: 100%;
   z-index: 0;
-  background: #f1f0f8;
+  background: #ffffff;
   padding: 1rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

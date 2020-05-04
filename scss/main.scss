@@ -184,7 +184,7 @@ p {
 // ....................
 footer {
   flex-direction: column;
-  background: ($BABY-GREEN-01);
+  background: ($BBY-YELLOW);
   padding: 0.3rem;
   display: flex;
   align-items: center;
@@ -247,7 +247,7 @@ footer {
   position: relative;
   width: 100%;
   z-index: 0;
-  background: ($BABY-GREEN-01);
+  background: ($WHITE);
   padding: 1rem;
   justify-content: center;
   @include SMALL-LANDSCAPE {
