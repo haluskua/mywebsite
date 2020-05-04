@@ -1014,11 +1014,18 @@
         -ms-flex-align: center;
             align-items: center;
     text-align: center; }
+    @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
+      .content-wrapper .projects__btns {
+        grid-gap: 0;
+        width: 95%; } }
   .content-wrapper .projects a:link {
     border: none;
     padding: 9px;
     border-radius: 3px;
     z-index: 1; }
+    @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
+      .content-wrapper .projects a:link {
+        padding: 0; } }
   .content-wrapper .projects__btn {
     opacity: 0;
     color: set-text-color(#292b20);
@@ -1027,10 +1034,15 @@
     .content-wrapper .projects__btn:hover {
       color: set-text-color(set-text-color(#fafbf5));
       font-size: 1.3rem; }
-    .content-wrapper .projects__btn .fas {
-      color: #292b20; }
+    .content-wrapper .projects__btn .fas,
     .content-wrapper .projects__btn .fab {
-      color: #292b20; }
+      color: #45b393;
+      font-size: 0.88rem;
+      background: #ffffff;
+      -webkit-box-shadow: 1px 9px 28px #168e9a0f, 8px 1px 22px #c7d3d630;
+              box-shadow: 1px 9px 28px #168e9a0f, 8px 1px 22px #c7d3d630;
+      padding: 4px;
+      width: 100%; }
   .content-wrapper .projects .block {
     width: 100%; }
 
