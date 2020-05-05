@@ -158,11 +158,10 @@
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background: ($WHITE);
+  background: ($GRAY-01);
   @include box-shadow-nav;
   @include MEDIUM-DEVICE-WIDTH {
     height: 65px;
-    background: ($GRAY-01);
   }
 
   &.open {
@@ -228,7 +227,6 @@
         flex-direction: row-reverse;
         justify-content: space-evenly;
         background-position: top;
-        @include bcg-rep-grd;
       }
     }
 
@@ -249,17 +247,16 @@
 
   .my_name {
     font-family: "Cinzel Decorative", cursive;
-    font-size: 1.9em;
+    font-size: 1.59em;
     font-weight: normal;
     line-height: 1em;
-    color: ($GOLD);
+    color: ($BLACK-003);
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
     padding: 0;
     @include SMALL-LANDSCAPE {
       font-size: 1.35rem;
-      color: ($GOLD);
       font-weight: bold;
     }
     @include MEDIUM-DEVICE-WIDTH {
@@ -316,10 +313,9 @@
       font-size: 1.3rem;
       font-family: "Cormorant Unicase", serif;
       padding: 0;
-      color: ($GOLD);
+      color: ($BLACK-003);
       @include SMALL-LANDSCAPE {
         font-size: 1.15em;
-        color: ($GOLD);
         font-weight: bold;
       }
       @include MEDIUM-DEVICE-WIDTH {

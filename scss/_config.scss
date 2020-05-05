@@ -42,7 +42,7 @@
 // ...........
 @mixin Menu-slider-bcg {
   background: repeating-linear-gradient(52deg, #eaecd51a, #f0f8f700 89px),
-    url(../img/storm1.jpg) center bottom;
+    url(../img/green-poly.jpg) center bottom;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -54,9 +54,16 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-@mixin big-img-bcg {
-  background: repeating-linear-gradient(52deg, #e0ead08f, #dfe8bb42 89px),
-    url(../img/heart_dynamic.png) center bottom;
+// ...........
+@mixin menu-bcg {
+  background: repeating-linear-gradient(52deg, #f4f7daad, #feffe9a6 89px),
+    url(../img/cloth.jpg) center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@mixin container-bcg {
+  background: repeating-linear-gradient(52deg, #d8dac8cf, #d8dac8cf 89px),
+    url(../img/brown_pattern.png) center bottom;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

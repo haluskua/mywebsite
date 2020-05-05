@@ -6,7 +6,7 @@
     padding-bottom: 0rem;
     padding-top: 3rem;
     background: ($WHITE);
-
+    @include Menu-slider-bcg;
     @include SMALL-LANDSCAPE {
       @include landscape-orientation-layout;
 

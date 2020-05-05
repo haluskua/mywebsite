@@ -17,17 +17,21 @@
     overflow: auto;
     padding-bottom: 0;
     padding-top: 2rem;
+    @include container-bcg;
+    background-size: contain;
+    background-repeat: repeat;
     @include SMALL-LANDSCAPE {
       padding: 0 8%;
-      background: ($WHITE);
       padding: 28px 5.5%;
       padding-bottom: 0;
+      @include container-bcg;
+      background-size: contain;
+      background-repeat: repeat;
     }
     @include MEDIUM-DEVICE-WIDTH {
-      background: ($WHITE);
     }
     @include MEDIUM-LANDSCAPE {
-      padding: 0 10%;
+      padding: 0 12%;
     }
 
     &__box-one {
@@ -47,11 +51,7 @@
         align-self: center;
         width: 45%;
         margin: 0 auto;
-        padding: .3rem 0;
-      }
-      @include SMALL-LANDSCAPE {
-      }
-      @include MEDIUM-DEVICE-WIDTH {
+        padding: 0.3rem 0;
       }
       @include LARGE-DEVICE-WIDTH {
         height: 71%;
@@ -64,7 +64,7 @@
 
       h1 {
         color: ($BLACK-002);
-        font-size: 1.7rem;
+        font-size: 1.27rem;
         line-height: 2rem;
         text-transform: capitalize;
         letter-spacing: 0.07rem;
@@ -74,7 +74,7 @@
         font-family: "Cinzel Decorative", cursive;
         font-weight: bold;
         @include MEDIUM-DEVICE-WIDTH {
-          font-size: 2.1rem;
+          font-size: 2rem;
           margin-top: -4rem;
         }
         @include MEDIUM-LANDSCAPE {
@@ -83,8 +83,11 @@
         @include LARGE-DEVICE-WIDTH {
           background: ($WHITE);
           padding: 1rem;
+          padding-left: 6px;
           padding-bottom: 0;
           text-align: left;
+          margin: 0;
+          font-size: 1.8rem;
         }
       }
 
@@ -94,7 +97,7 @@
         text-align: left;
         padding: 0.6rem;
         font-weight: normal;
-        color: ($GOLD);
+        color: ($MINT);
         font-family: "Roboto", "Montserrat", cursive;
         text-transform: uppercase;
       }
@@ -127,10 +130,14 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      padding: 1rem;
+      margin: 0.85rem;
       background: ($trans-white);
+      @include MEDIUM-DEVICE-WIDTH {
+        margin: 2.85rem;
+      }
       @include LARGE-DEVICE-WIDTH {
         justify-content: center;
+        margin: 1rem 8rem;
       }
       .box-link {
         padding: 0.6rem;
@@ -144,10 +151,6 @@
         }
         @include MEDIUM-LANDSCAPE {
           padding: 1rem;
-        }
-
-        @include LARGE-DEVICE-WIDTH {
-          width: 70%;
         }
       }
 

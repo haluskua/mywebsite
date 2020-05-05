@@ -30,19 +30,27 @@
   height: 100%;
   overflow: auto;
   padding-bottom: 0;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  background: repeating-linear-gradient(52deg, #d8dac8cf, #d8dac8cf 89px), url(../img/brown_pattern.png) center bottom;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: repeat; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .home {
       padding: 0 8%;
-      background: #ffffff;
       padding: 28px 5.5%;
-      padding-bottom: 0; } }
-  @media only screen and (min-width: 640px) and (orientation: portrait) {
-    .content-wrapper .home {
-      background: #ffffff; } }
+      padding-bottom: 0;
+      background: repeating-linear-gradient(52deg, #d8dac8cf, #d8dac8cf 89px), url(../img/brown_pattern.png) center bottom;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-repeat: repeat; } }
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
     .content-wrapper .home {
-      padding: 0 10%; } }
+      padding: 0 12%; } }
   .content-wrapper .home__box-one {
     width: 100%;
     background: repeating-linear-gradient(52deg, #f4f7daad, #feffe9a6 89px), url(../img/pattern.jpg) center bottom;
@@ -65,7 +73,7 @@
           align-self: center;
       width: 45%;
       margin: 0 auto;
-      padding: .3rem 0; }
+      padding: 0.3rem 0; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .home__box-one {
         height: 71%; } }
@@ -75,7 +83,7 @@
     background: #ffffff; }
     .content-wrapper .home__box-two h1 {
       color: #292b20;
-      font-size: 1.7rem;
+      font-size: 1.27rem;
       line-height: 2rem;
       text-transform: capitalize;
       letter-spacing: 0.07rem;
@@ -86,7 +94,7 @@
       font-weight: bold; }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .content-wrapper .home__box-two h1 {
-          font-size: 2.1rem;
+          font-size: 2rem;
           margin-top: -4rem; } }
       @media only screen and (min-width: 1024px) and (orientation: landscape) {
         .content-wrapper .home__box-two h1 {
@@ -95,15 +103,18 @@
         .content-wrapper .home__box-two h1 {
           background: #ffffff;
           padding: 1rem;
+          padding-left: 6px;
           padding-bottom: 0;
-          text-align: left; } }
+          text-align: left;
+          margin: 0;
+          font-size: 1.8rem; } }
     .content-wrapper .home__box-two h3 {
       font-size: 1rem;
       line-height: 1.24em;
       text-align: left;
       padding: 0.6rem;
       font-weight: normal;
-      color: #848267;
+      color: #63afa5;
       font-family: "Roboto", "Montserrat", cursive;
       text-transform: uppercase; }
     .content-wrapper .home__box-two span {
@@ -136,13 +147,17 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 1rem;
-    background: #ffffff57; }
+    margin: 0.85rem;
+    background: #ffffff7d; }
+    @media only screen and (min-width: 640px) and (orientation: portrait) {
+      .content-wrapper .home__box-four, .content-wrapper .home__box-five {
+        margin: 2.85rem; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .home__box-four, .content-wrapper .home__box-five {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
-                justify-content: center; } }
+                justify-content: center;
+        margin: 1rem 8rem; } }
     .content-wrapper .home__box-four .box-link, .content-wrapper .home__box-five .box-link {
       padding: 0.6rem;
       -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
@@ -157,9 +172,6 @@
       @media only screen and (min-width: 1024px) and (orientation: landscape) {
         .content-wrapper .home__box-four .box-link, .content-wrapper .home__box-five .box-link {
           padding: 1rem; } }
-      @media only screen and (min-width: 1025px) and (orientation: landscape) {
-        .content-wrapper .home__box-four .box-link, .content-wrapper .home__box-five .box-link {
-          width: 70%; } }
     .content-wrapper .home__box-four h2, .content-wrapper .home__box-five h2 {
       font-size: 1.25rem;
       width: 50%;
@@ -352,13 +364,12 @@
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background: #ffffff;
+  background: #fafaf8;
   -webkit-box-shadow: 0px 1px 4px #168e9a21, 7px 1px 1px #c9d8dc;
           box-shadow: 0px 1px 4px #168e9a21, 7px 1px 1px #c9d8dc; }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .nav {
-      height: 65px;
-      background: #fafaf8; } }
+      height: 65px; } }
   .nav.open {
     visibility: visible;
     padding: 0px; }
@@ -419,7 +430,7 @@
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: repeating-linear-gradient(52deg, #eaecd51a, #f0f8f700 89px), url(../img/storm1.jpg) center bottom;
+      background: repeating-linear-gradient(52deg, #eaecd51a, #f0f8f700 89px), url(../img/green-poly.jpg) center bottom;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat; }
@@ -430,7 +441,7 @@
               -ms-flex-direction: row;
                   flex-direction: row;
           padding-top: 63px;
-          background: repeating-linear-gradient(52deg, #eaecd51a, #f0f8f700 89px), url(../img/storm1.jpg) center bottom;
+          background: repeating-linear-gradient(52deg, #eaecd51a, #f0f8f700 89px), url(../img/green-poly.jpg) center bottom;
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
@@ -465,9 +476,7 @@
           -webkit-box-pack: space-evenly;
               -ms-flex-pack: space-evenly;
                   justify-content: space-evenly;
-          background-position: top;
-          background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px), url(../img/light_grafix_portrait2.jpg) center bottom;
-          background-size: cover; } }
+          background-position: top; } }
     .nav .menu-nav__item {
       -webkit-transform: translateX(100vw);
               transform: translateX(100vw);
@@ -483,10 +492,10 @@
                 transform: translate(0); }
   .nav .my_name {
     font-family: "Cinzel Decorative", cursive;
-    font-size: 1.9em;
+    font-size: 1.59em;
     font-weight: normal;
     line-height: 1em;
-    color: #848267;
+    color: #2a2b24;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
@@ -494,7 +503,6 @@
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .nav .my_name {
         font-size: 1.35rem;
-        color: #848267;
         font-weight: bold; } }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .nav .my_name {
@@ -550,11 +558,10 @@
       font-size: 1.3rem;
       font-family: "Cormorant Unicase", serif;
       padding: 0;
-      color: #848267; }
+      color: #2a2b24; }
       @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
         .nav .title_txt_container .title_text {
           font-size: 1.15em;
-          color: #848267;
           font-weight: bold; } }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .nav .title_txt_container .title_text {
@@ -628,7 +635,11 @@
   .content-wrapper .about {
     padding-bottom: 0rem;
     padding-top: 3rem;
-    background: #ffffff; }
+    background: #ffffff;
+    background: repeating-linear-gradient(52deg, #eaecd51a, #f0f8f700 89px), url(../img/green-poly.jpg) center bottom;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .about {
         height: 100%;
@@ -875,14 +886,18 @@
           align-items: flex-end;
   height: 100%;
   overflow: auto;
-  background: #ffffff57; }
+  background: #ffffff7d;
+  background: repeating-linear-gradient(52deg, #d8dac8cf, #d8dac8cf 89px), url(../img/brown_pattern.png) center bottom;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .projects {
       height: 100%;
       overflow: auto;
       padding: 28px 5%;
       padding-bottom: 0;
-      background: #ffffff57; } }
+      background: #ffffff7d; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .content-wrapper .projects {
       -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
@@ -911,7 +926,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 4rem 3rem 2rem 1rem;
-    background: #ffffff57; }
+    background: #ffffff7d; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .projects__bio-image {
         padding-top: 1rem; } }
@@ -1086,7 +1101,6 @@
   height: 100vh;
   overflow: auto;
   margin-top: 3rem;
-  background: #ffffff57;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1260,7 +1274,7 @@
         -webkit-box-shadow: none;
                 box-shadow: none;
         padding: 16px 10% 0 16%;
-        background: #ffffff57; } }
+        background: #ffffff7d; } }
     @media only screen and (min-width: 1024px) and (orientation: landscape) {
       .content-wrapper .main-container {
         padding: 2%; } }
@@ -1296,7 +1310,7 @@
         justify-content: space-around;
     margin: auto;
     overflow: scroll;
-    background: #ffffff57;
+    background: #ffffff7d;
     -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
             box-shadow: 2px 4px 14px #d2dcd7a1; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
@@ -1306,7 +1320,7 @@
                 box-shadow: none;
         padding: 1rem;
         padding: 1rem;
-        background: #ffffff57;
+        background: #ffffff7d;
         -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
                 box-shadow: 2px 4px 14px #d2dcd7a1; } }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -1514,7 +1528,7 @@ p {
   margin: 0;
   border-radius: 0.176rem;
   font-size: 0.92em;
-  line-height: 1.43em;
+  line-height: 1.5em;
   text-align: left; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     p {
