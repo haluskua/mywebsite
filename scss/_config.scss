@@ -47,6 +47,13 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+// ...........
+@mixin header-bottom-bcg {
+  background: repeating-linear-gradient(52deg, #f4f7daad, #feffe9a6 89px),
+    url(../img/pattern.jpg) center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 @mixin big-img-bcg {
   background: repeating-linear-gradient(52deg, #e0ead08f, #dfe8bb42 89px),
     url(../img/heart_dynamic.png) center bottom;

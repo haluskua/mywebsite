@@ -194,6 +194,9 @@
       @include SMALL-LANDSCAPE {
         padding: 0;
       }
+      @include LARGE-DEVICE-WIDTH {
+        width: 90%;
+      }
     }
 
     &__btn {
