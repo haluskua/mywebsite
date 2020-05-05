@@ -430,7 +430,7 @@
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: repeating-linear-gradient(52deg, #eaecd51a, #f0f8f700 89px), url(../img/green-poly.jpg) center bottom;
+      background: repeating-linear-gradient(52deg, #f1f0f878, #f1f0f859 89px), url(../img/mini-menu.jpg) center bottom;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat; }
@@ -441,10 +441,6 @@
               -ms-flex-direction: row;
                   flex-direction: row;
           padding-top: 63px;
-          background: repeating-linear-gradient(52deg, #eaecd51a, #f0f8f700 89px), url(../img/green-poly.jpg) center bottom;
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
           background-position: bottom; } }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .nav .menu-nav.open {
@@ -469,6 +465,10 @@
                   flex-direction: column; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .nav .menu-nav.open {
+          background: repeating-linear-gradient(52deg, #eaecd51a, #f0f8f700 89px), url(../img/green-poly.jpg) center bottom;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
           -webkit-box-orient: horizontal;
           -webkit-box-direction: reverse;
               -ms-flex-direction: row-reverse;
@@ -926,7 +926,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 4rem 3rem 2rem 1rem;
-    background: #ffffff7d; }
+    background: #ffffff; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .projects__bio-image {
         padding-top: 1rem; } }
@@ -1129,7 +1129,7 @@
       padding: 2rem; } }
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
     .content-wrapper .contact {
-      background: repeating-linear-gradient(52deg, #f1f0f878, #f1f0f859 89px), url(../img/ohk_grafix.jpg) center bottom;
+      background: repeating-linear-gradient(52deg, #f1f0f878, #f1f0f859 89px), url(../img/mini-menu.jpg) center bottom;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -1143,7 +1143,7 @@
           -ms-flex-pack: justify;
               justify-content: space-between;
       border: 1px solid #d2dcd7a1;
-      background: repeating-linear-gradient(52deg, #f1f0f878, #f1f0f859 89px), url(../img/ohk_grafix.jpg) center bottom;
+      background: repeating-linear-gradient(52deg, #f1f0f878, #f1f0f859 89px), url(../img/mini-menu.jpg) center bottom;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat; } }
