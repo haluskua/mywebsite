@@ -33,8 +33,6 @@
   padding-top: 2rem;
   background: repeating-linear-gradient(52deg, #d8dac8cf, #d8dac8cf 89px), url(../img/brown_pattern.png) center bottom;
   background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   background-size: contain;
   background-repeat: repeat; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
@@ -44,8 +42,8 @@
       padding-bottom: 0;
       background: repeating-linear-gradient(52deg, #d8dac8cf, #d8dac8cf 89px), url(../img/brown_pattern.png) center bottom;
       background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
+      background-size: contain;
+      background-repeat: repeat;
       background-size: contain;
       background-repeat: repeat; } }
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
@@ -184,20 +182,32 @@
       text-transform: uppercase; }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .content-wrapper .home__box-four h2, .content-wrapper .home__box-five h2 {
-          font-size: 2.2rem; } }
+          font-size: 1.6rem;
+          padding: 1.5rem; } }
+      @media only screen and (min-width: 1024px) and (orientation: landscape) {
+        .content-wrapper .home__box-four h2, .content-wrapper .home__box-five h2 {
+          font-size: 1.8rem;
+          padding: 2rem; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .content-wrapper .home__box-four h2, .content-wrapper .home__box-five h2 {
-          font-size: 2rem;
+          font-size: 1.7rem;
           width: 38%;
           margin-top: 1rem; } }
     .content-wrapper .home__box-four .external-link, .content-wrapper .home__box-five .external-link {
       width: 50%;
       font-size: 1.5rem;
       font-family: "Seaweed Script", cursive; }
+      @media only screen and (min-width: 640px) and (orientation: portrait) {
+        .content-wrapper .home__box-four .external-link, .content-wrapper .home__box-five .external-link {
+          font-size: 1.85rem; } }
+      @media only screen and (min-width: 1024px) and (orientation: landscape) {
+        .content-wrapper .home__box-four .external-link, .content-wrapper .home__box-five .external-link {
+          font-size: 2rem;
+          padding: 2rem; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .content-wrapper .home__box-four .external-link, .content-wrapper .home__box-five .external-link {
           width: 32%;
-          font-size: 2rem;
+          font-size: 1.8rem;
           margin-top: 1rem; } }
 
 #project-index {
@@ -801,7 +811,6 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      margin: 0.2rem auto 0 auto;
       display: grid;
       grid-template-columns: 1fr;
       grid-gap: 0.5rem; }
@@ -816,8 +825,7 @@
         height: 100%;
         width: auto; }
         .content-wrapper .about .jobs__bio-image img {
-          width: 100%;
-          padding: 0.5rem; }
+          width: 100%; }
       .content-wrapper .about .jobs__job {
         padding: 11px 14px;
         background: #ffffff; }
@@ -889,8 +897,8 @@
   background: #ffffff7d;
   background: repeating-linear-gradient(52deg, #d8dac8cf, #d8dac8cf 89px), url(../img/brown_pattern.png) center bottom;
   background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-size: contain;
+  background-repeat: repeat; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .projects {
       height: 100%;
@@ -906,11 +914,15 @@
           -ms-flex-pack: center;
               justify-content: center;
       margin-top: 3.4rem; } }
+  @media only screen and (min-width: 1024px) and (orientation: landscape) {
+    .content-wrapper .projects {
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      height: 100vh; } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .content-wrapper .projects {
       -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
               box-shadow: 2px 4px 14px #d2dcd7a1;
-      height: 100vh;
       padding: 0;
       margin: 4rem 8rem; } }
   .content-wrapper .projects .block {
@@ -1111,6 +1123,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: repeating-linear-gradient(52deg, #f1f0f878, #f1f0f859 89px), url(../img/mini-menu.jpg) center bottom;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: top; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .contact {
@@ -1129,10 +1145,6 @@
       padding: 2rem; } }
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
     .content-wrapper .contact {
-      background: repeating-linear-gradient(52deg, #f1f0f878, #f1f0f859 89px), url(../img/mini-menu.jpg) center bottom;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
       -ms-flex-pack: distribute;
           justify-content: space-around;
       margin: 0; } }
@@ -1142,11 +1154,7 @@
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      border: 1px solid #d2dcd7a1;
-      background: repeating-linear-gradient(52deg, #f1f0f878, #f1f0f859 89px), url(../img/mini-menu.jpg) center bottom;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat; } }
+      border: 1px solid #d2dcd7a1; } }
   .content-wrapper .contact .img-box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1173,7 +1181,7 @@
       padding: 0; } }
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
     .content-wrapper .contact .grid-container {
-      width: 54%; } }
+      width: 19%; } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .content-wrapper .contact .grid-container {
       width: 46%; } }
@@ -1237,14 +1245,12 @@
         bottom: 0 !important; } }
 
 @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-  .content-wrapper footer,
-  .content-wrapper h2 {
+  .content-wrapper footer h2 {
     text-align: center !important; } }
 
 @media only screen and (min-width: 640px) and (orientation: portrait) {
-  .content-wrapper footer,
-  .content-wrapper h2 {
-    text-align: center !important; } }
+  .content-wrapper footer h2 {
+    text-align: center !important !important; } }
 
 :root {
   /* Set fade in duration */
@@ -1268,13 +1274,16 @@
             flex-direction: column;
     padding: 0.25rem;
     padding-bottom: 0;
-    overflow: auto; }
+    overflow: auto;
+    background: repeating-linear-gradient(52deg, #d8dac8cf, #d8dac8cf 89px), url(../img/brown_pattern.png) center bottom;
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .main-container {
         -webkit-box-shadow: none;
                 box-shadow: none;
-        padding: 16px 10% 0 16%;
-        background: #ffffff7d; } }
+        padding: 16px 10% 0 16%; } }
     @media only screen and (min-width: 1024px) and (orientation: landscape) {
       .content-wrapper .main-container {
         padding: 2%; } }
@@ -1310,7 +1319,7 @@
         justify-content: space-around;
     margin: auto;
     overflow: scroll;
-    background: #ffffff7d;
+    background: #ffffff;
     -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
             box-shadow: 2px 4px 14px #d2dcd7a1; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
@@ -1320,7 +1329,7 @@
                 box-shadow: none;
         padding: 1rem;
         padding: 1rem;
-        background: #ffffff7d;
+        background: #ffffff;
         -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
                 box-shadow: 2px 4px 14px #d2dcd7a1; } }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
