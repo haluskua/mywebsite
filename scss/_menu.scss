@@ -204,11 +204,10 @@
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      @include Menu-slider-bcg;
+      @include mini-img-bcg;
       @include SMALL-LANDSCAPE {
         flex-direction: row;
         padding-top: 63px;
-        @include Menu-slider-bcg;
         background-position: bottom;
       }
       @include MEDIUM-DEVICE-WIDTH {
@@ -224,6 +223,7 @@
         flex-direction: column;
       }
       @include LARGE-DEVICE-WIDTH {
+        @include Menu-slider-bcg;
         flex-direction: row-reverse;
         justify-content: space-evenly;
         background-position: top;
