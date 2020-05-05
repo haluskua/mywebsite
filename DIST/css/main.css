@@ -72,9 +72,7 @@
   .content-wrapper .home__box-two {
     padding: 8px;
     width: 100%;
-    background: #ffffff;
-    -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
-            box-shadow: 2px 4px 14px #d2dcd7a1; }
+    background: #ffffff; }
     .content-wrapper .home__box-two h1 {
       color: #292b20;
       font-size: 1.7rem;
@@ -125,7 +123,7 @@
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        margin-bottom: 2rem; } }
+        padding-bottom: 2rem; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .home__box-three img {
         width: 74%; } }
