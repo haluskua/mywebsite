@@ -17,9 +17,12 @@
       justify-content: center;
       margin-top: 3.4rem;
     }
+    @include MEDIUM-LANDSCAPE {
+      justify-content: space-around;
+      height: 100vh;
+    }
     @include LARGE-DEVICE-WIDTH {
       @include box-shadow-blocks;
-      height: 100vh;
       padding: 0;
       margin: 4rem 8rem;
     }

@@ -17,10 +17,10 @@ main {
     padding: 0.25rem;
     padding-bottom: 0;
     overflow: auto;
+    @include container-bcg;
     @include SMALL-LANDSCAPE {
       box-shadow: none;
       padding: 16px 10% 0 16%;
-      background: ($trans-white);
     }
     @include MEDIUM-DEVICE-WIDTH {
     }
@@ -45,14 +45,14 @@ main {
     justify-content: space-around;
     margin: auto;
     overflow: scroll;
-    background: ($trans-white);
+    background: ($WHITE);
     @include box-shadow-blocks;
     @include SMALL-LANDSCAPE {
       border: none;
       box-shadow: none;
       padding: 1rem;
       padding: 1rem;
-      background: ($trans-white);
+      background: ($WHITE);
       @include box-shadow-blocks;
     }
     @include MEDIUM-DEVICE-WIDTH {

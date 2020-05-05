@@ -65,18 +65,11 @@
   background: repeating-linear-gradient(52deg, #d8dac8cf, #d8dac8cf 89px),
     url(../img/brown_pattern.png) center bottom;
   background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: repeat;
 }
 
 //MOBILE-BACKGROUNDS
-@mixin mini-menu-bcg {
-  background: repeating-linear-gradient(52deg, #f1f0f878, #f1f0f859 89px),
-    url(../img/ohk_grafix.jpg) center bottom;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 @mixin mini-img-bcg {
   background: repeating-linear-gradient(52deg, #f1f0f878, #f1f0f859 89px),
     url(../img/mini-menu.jpg) center bottom;
