@@ -62,11 +62,11 @@
   background-repeat: no-repeat;
 }
 @mixin container-bcg {
-  background: repeating-linear-gradient(52deg, #d8dac8cf, #d8dac8cf 89px),
-    url(../img/brown_pattern.png) center bottom;
-  background-position: center;
-  background-size: contain;
-  background-repeat: repeat;
+  background: repeating-linear-gradient(52deg, #f5f7e6cf, #f7f9e7cf 89px),
+    url(../img/green-poly.jpg) center bottom;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 //MOBILE-BACKGROUNDS
