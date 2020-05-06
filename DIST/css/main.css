@@ -134,6 +134,8 @@
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .home__box-three img {
         width: 74%; } }
+  .content-wrapper .home .projects__item5 {
+    z-index: 0; }
 
 #project-index {
   -webkit-animation: breadCrumb 8s infinite linear alternate;
@@ -1622,4 +1624,5 @@ footer {
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .fa-2x {
       font-size: 1.2rem; } }
+
 /*# sourceMappingURL=main.css.map */
