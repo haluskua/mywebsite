@@ -29,8 +29,17 @@
     @include MEDIUM-DEVICE-WIDTH {
     }
     @include MEDIUM-LANDSCAPE {
-      padding: 0 12%;
+      padding: 0 16%;
     }
+    h2 {
+      padding: 1.2rem;
+    }
+    p {
+      @include LARGE-DEVICE-WIDTH {
+        padding: 1.2rem;
+      }
+    }
+    
 
     &__box-one {
       width: 100%;
@@ -43,6 +52,7 @@
       }
       @include MEDIUM-DEVICE-WIDTH {
       }
+  
 
       .spear {
         width: 100%;
@@ -50,9 +60,6 @@
         width: 45%;
         margin: 0 auto;
         padding: 0.3rem 0;
-      }
-      @include LARGE-DEVICE-WIDTH {
-        height: 71%;
       }
     }
     &__box-two {
@@ -73,10 +80,8 @@
         font-weight: bold;
         @include MEDIUM-DEVICE-WIDTH {
           font-size: 2rem;
-          margin-top: -4rem;
         }
         @include MEDIUM-LANDSCAPE {
-          margin-top: -4.3rem;
         }
         @include LARGE-DEVICE-WIDTH {
           background: ($WHITE);
@@ -87,6 +92,7 @@
           margin: 0;
           font-size: 1.8rem;
         }
+
       }
 
       h3 {
@@ -193,6 +199,9 @@
           margin-top: 1rem;
         }
       }
+    }
+    .projects__item5 {
+      z-index: 0;
     }
   }
 }

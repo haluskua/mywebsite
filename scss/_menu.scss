@@ -112,7 +112,7 @@
     width: 25%;
   }
   #project-index {
-    height: auto;
+    height: auto; 
     width: 38%;
     z-index: 999;
     position: fixed;
@@ -126,6 +126,7 @@
     @include MEDIUM-DEVICE-WIDTH {
       top: -1.5rem;
       width: 30%;
+      right: 7rem;
     }
     @include MEDIUM-LANDSCAPE {
       padding-top: 0;
@@ -260,7 +261,7 @@
       font-weight: bold;
     }
     @include MEDIUM-DEVICE-WIDTH {
-      font-size: 3.2em;
+      font-size: 2.2em;
       color: ($GOLD);
     }
     @include MEDIUM-LANDSCAPE {
@@ -319,7 +320,7 @@
         font-weight: bold;
       }
       @include MEDIUM-DEVICE-WIDTH {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         margin: 0;
         font-weight: normal;
       }

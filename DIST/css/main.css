@@ -48,7 +48,12 @@
       background-repeat: repeat; } }
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
     .content-wrapper .home {
-      padding: 0 12%; } }
+      padding: 0 16%; } }
+  .content-wrapper .home h2 {
+    padding: 1.2rem; }
+  @media only screen and (min-width: 1025px) and (orientation: landscape) {
+    .content-wrapper .home p {
+      padding: 1.2rem; } }
   .content-wrapper .home__box-one {
     width: 100%;
     background: repeating-linear-gradient(52deg, #f4f7daad, #feffe9a6 89px), url(../img/pattern.jpg) center bottom;
@@ -72,9 +77,6 @@
       width: 45%;
       margin: 0 auto;
       padding: 0.3rem 0; }
-    @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .content-wrapper .home__box-one {
-        height: 71%; } }
   .content-wrapper .home__box-two {
     padding: 8px;
     width: 100%;
@@ -92,11 +94,7 @@
       font-weight: bold; }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .content-wrapper .home__box-two h1 {
-          font-size: 2rem;
-          margin-top: -4rem; } }
-      @media only screen and (min-width: 1024px) and (orientation: landscape) {
-        .content-wrapper .home__box-two h1 {
-          margin-top: -4.3rem; } }
+          font-size: 2rem; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .content-wrapper .home__box-two h1 {
           background: #ffffff;
@@ -209,6 +207,8 @@
           width: 32%;
           font-size: 1.8rem;
           margin-top: 1rem; } }
+  .content-wrapper .home .projects__item5 {
+    z-index: 0; }
 
 #project-index {
   -webkit-animation: breadCrumb 8s infinite linear alternate;
@@ -341,7 +341,8 @@
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .menu-index #project-index {
         top: -1.5rem;
-        width: 30%; } }
+        width: 30%;
+        right: 7rem; } }
     @media only screen and (min-width: 1024px) and (orientation: landscape) {
       .menu-index #project-index {
         padding-top: 0;
@@ -516,7 +517,7 @@
         font-weight: bold; } }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .nav .my_name {
-        font-size: 3.2em;
+        font-size: 2.2em;
         color: #848267; } }
     @media only screen and (min-width: 1024px) and (orientation: landscape) {
       .nav .my_name {
@@ -575,7 +576,7 @@
           font-weight: bold; } }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .nav .title_txt_container .title_text {
-          font-size: 2.2rem;
+          font-size: 1.8rem;
           margin: 0;
           font-weight: normal; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
@@ -998,7 +999,7 @@
       .content-wrapper .projects__items {
         grid-template-columns: repeat(3, 1fr);
         height: auto; } }
-  .content-wrapper .projects__item1, .content-wrapper .projects__item2, .content-wrapper .projects__item3, .content-wrapper .projects__item4, .content-wrapper .projects__item5 {
+  .content-wrapper .projects__item1, .content-wrapper .projects__item2, .content-wrapper .projects__item3, .content-wrapper .projects__item4, .content-wrapper .projects__item5, .content-wrapper .projects__item6 {
     position: relative;
     overflow: hidden;
     z-index: 3;
@@ -1010,7 +1011,7 @@
     -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
             box-shadow: 2px 4px 14px #d2dcd7a1; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
-      .content-wrapper .projects__item1, .content-wrapper .projects__item2, .content-wrapper .projects__item3, .content-wrapper .projects__item4, .content-wrapper .projects__item5 {
+      .content-wrapper .projects__item1, .content-wrapper .projects__item2, .content-wrapper .projects__item3, .content-wrapper .projects__item4, .content-wrapper .projects__item5, .content-wrapper .projects__item6 {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1025,25 +1026,25 @@
             -ms-flex-direction: column;
                 flex-direction: column; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .content-wrapper .projects__item1, .content-wrapper .projects__item2, .content-wrapper .projects__item3, .content-wrapper .projects__item4, .content-wrapper .projects__item5 {
+      .content-wrapper .projects__item1, .content-wrapper .projects__item2, .content-wrapper .projects__item3, .content-wrapper .projects__item4, .content-wrapper .projects__item5, .content-wrapper .projects__item6 {
         width: 100%; } }
-    .content-wrapper .projects__item1 h3, .content-wrapper .projects__item2 h3, .content-wrapper .projects__item3 h3, .content-wrapper .projects__item4 h3, .content-wrapper .projects__item5 h3 {
+    .content-wrapper .projects__item1 h3, .content-wrapper .projects__item2 h3, .content-wrapper .projects__item3 h3, .content-wrapper .projects__item4 h3, .content-wrapper .projects__item5 h3, .content-wrapper .projects__item6 h3 {
       font-family: "Roboto";
       font-weight: normal;
       text-transform: uppercase;
       padding-left: 1rem;
       font-size: 0.95rem; }
       @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-        .content-wrapper .projects__item1 h3, .content-wrapper .projects__item2 h3, .content-wrapper .projects__item3 h3, .content-wrapper .projects__item4 h3, .content-wrapper .projects__item5 h3 {
+        .content-wrapper .projects__item1 h3, .content-wrapper .projects__item2 h3, .content-wrapper .projects__item3 h3, .content-wrapper .projects__item4 h3, .content-wrapper .projects__item5 h3, .content-wrapper .projects__item6 h3 {
           font-size: 0.8rem;
           padding-bottom: 1rem; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
-        .content-wrapper .projects__item1 h3, .content-wrapper .projects__item2 h3, .content-wrapper .projects__item3 h3, .content-wrapper .projects__item4 h3, .content-wrapper .projects__item5 h3 {
+        .content-wrapper .projects__item1 h3, .content-wrapper .projects__item2 h3, .content-wrapper .projects__item3 h3, .content-wrapper .projects__item4 h3, .content-wrapper .projects__item5 h3, .content-wrapper .projects__item6 h3 {
           font-size: 1rem;
           padding-bottom: 1rem; } }
-    .content-wrapper .projects__item1 img, .content-wrapper .projects__item2 img, .content-wrapper .projects__item3 img, .content-wrapper .projects__item4 img, .content-wrapper .projects__item5 img {
+    .content-wrapper .projects__item1 img, .content-wrapper .projects__item2 img, .content-wrapper .projects__item3 img, .content-wrapper .projects__item4 img, .content-wrapper .projects__item5 img, .content-wrapper .projects__item6 img {
       width: 100%; }
-    .content-wrapper .projects__item1::after, .content-wrapper .projects__item2::after, .content-wrapper .projects__item3::after, .content-wrapper .projects__item4::after, .content-wrapper .projects__item5::after {
+    .content-wrapper .projects__item1::after, .content-wrapper .projects__item2::after, .content-wrapper .projects__item3::after, .content-wrapper .projects__item4::after, .content-wrapper .projects__item5::after, .content-wrapper .projects__item6::after {
       content: "";
       position: absolute;
       top: 100%;
@@ -1054,10 +1055,10 @@
       opacity: 1;
       -webkit-transition: all 0.42s ease-in-out;
       transition: all 0.42s ease-in-out; }
-    .content-wrapper .projects__item1:hover::after, .content-wrapper .projects__item2:hover::after, .content-wrapper .projects__item3:hover::after, .content-wrapper .projects__item4:hover::after, .content-wrapper .projects__item5:hover::after {
+    .content-wrapper .projects__item1:hover::after, .content-wrapper .projects__item2:hover::after, .content-wrapper .projects__item3:hover::after, .content-wrapper .projects__item4:hover::after, .content-wrapper .projects__item5:hover::after, .content-wrapper .projects__item6:hover::after {
       top: 0;
       opacity: 0.9; }
-    .content-wrapper .projects__item1:hover .projects__btn, .content-wrapper .projects__item2:hover .projects__btn, .content-wrapper .projects__item3:hover .projects__btn, .content-wrapper .projects__item4:hover .projects__btn, .content-wrapper .projects__item5:hover .projects__btn {
+    .content-wrapper .projects__item1:hover .projects__btn, .content-wrapper .projects__item2:hover .projects__btn, .content-wrapper .projects__item3:hover .projects__btn, .content-wrapper .projects__item4:hover .projects__btn, .content-wrapper .projects__item5:hover .projects__btn, .content-wrapper .projects__item6:hover .projects__btn {
       opacity: 1; }
   .content-wrapper .projects__btns {
     position: absolute;
@@ -1538,7 +1539,9 @@ p {
   border-radius: 0.176rem;
   font-size: 0.92em;
   line-height: 1.5em;
-  text-align: left; }
+  text-align: left;
+  padding: 1rem;
+  background: #ffffff; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     p {
       font-size: 0.86em; } }
@@ -1601,18 +1604,6 @@ footer {
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     footer {
       padding: 1rem 10rem; } }
-  footer h3 {
-    font-weight: normal; }
-    @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-      footer h3 {
-        width: 100%;
-        font-weight: normal;
-        text-align: center; } }
-    @media only screen and (min-width: 640px) and (orientation: portrait) {
-      footer h3 {
-        display: -webkit-inline-box;
-        display: -ms-inline-flexbox;
-        display: inline-flex; } }
   footer h2 {
     font-family: "Cinzel Decorative", cursive;
     width: 100%;
