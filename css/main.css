@@ -31,19 +31,19 @@
   overflow: auto;
   padding-bottom: 0;
   padding-top: 2rem;
-  background: repeating-linear-gradient(52deg, #d8dac8cf, #d8dac8cf 89px), url(../img/brown_pattern.png) center bottom;
-  background-position: center;
-  background-size: contain;
-  background-repeat: repeat; }
+  background: repeating-linear-gradient(52deg, #f5f7e6cf, #f7f9e7cf 89px), url(../img/green-poly.jpg) center bottom;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .home {
       padding: 0 8%;
       padding: 28px 5.5%;
       padding-bottom: 0;
-      background: repeating-linear-gradient(52deg, #d8dac8cf, #d8dac8cf 89px), url(../img/brown_pattern.png) center bottom;
-      background-position: center;
-      background-size: contain;
-      background-repeat: repeat;
+      background: repeating-linear-gradient(52deg, #f5f7e6cf, #f7f9e7cf 89px), url(../img/green-poly.jpg) center bottom;
+      background-position: top;
+      background-size: cover;
+      background-repeat: no-repeat;
       background-size: contain;
       background-repeat: repeat; } }
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
@@ -823,10 +823,10 @@
   height: 100%;
   overflow: auto;
   background: #ffffff7d;
-  background: repeating-linear-gradient(52deg, #d8dac8cf, #d8dac8cf 89px), url(../img/brown_pattern.png) center bottom;
-  background-position: center;
-  background-size: contain;
-  background-repeat: repeat; }
+  background: repeating-linear-gradient(52deg, #f5f7e6cf, #f7f9e7cf 89px), url(../img/green-poly.jpg) center bottom;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .projects {
       height: 100%;
@@ -1203,10 +1203,10 @@
     padding: 0.25rem;
     padding-bottom: 0;
     overflow: auto;
-    background: repeating-linear-gradient(52deg, #d8dac8cf, #d8dac8cf 89px), url(../img/brown_pattern.png) center bottom;
-    background-position: center;
-    background-size: contain;
-    background-repeat: repeat; }
+    background: repeating-linear-gradient(52deg, #f5f7e6cf, #f7f9e7cf 89px), url(../img/green-poly.jpg) center bottom;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .main-container {
         -webkit-box-shadow: none;
