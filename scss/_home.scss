@@ -59,21 +59,19 @@
     }
     &__box-two {
       padding: 8px;
-      padding-top: 2.3rem;
+      padding-top: 1rem;
       width: 100%;
       background: ($WHITE);
 
       h1 {
         color: ($BLACK-002);
-        font-size: 1.27rem;
+        font-size: 1.75rem;
         line-height: 2rem;
         text-transform: capitalize;
-        letter-spacing: 0.07rem;
         text-align: left;
         padding-left: 8px;
         width: 100%;
-        font-family: "Cinzel Decorative", cursive;
-        font-weight: bold;
+        font-family: 'DM Serif Display', serif;
         @include MEDIUM-DEVICE-WIDTH {
           font-size: 2rem;
           padding: 38px 0 2px 12px;
@@ -97,9 +95,7 @@
         text-align: left;
         padding: 0.6rem;
         font-weight: normal;
-        color: ($MINT);
-        font-family: "Roboto", "Montserrat", cursive;
-        text-transform: uppercase;
+        font-family: "Roboto Condensed", sans-serif;
         
         @include MEDIUM-DEVICE-WIDTH {
           line-height: 0;
@@ -109,11 +105,11 @@
         }
       }
       span {
-        color: #362d11;
+        color: #5f6d70;
         font-weight: bold;
         font-size: 0.9rem;
         text-transform: lowercase;
-        font-family: "Cinzel Decorative", cursive;
+        font-family: "Roboto", cursive;
       }
     }
     // ........
