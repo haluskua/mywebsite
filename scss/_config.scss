@@ -8,7 +8,7 @@
 //BOX-SHADOWS MIXINS
 // ..........
 @mixin box-shadow-nav {
-  box-shadow: 0px 1px 4px #168e9a21, 7px 1px 1px #c9d8dc;
+  box-shadow: 0px 1px 4px #c3c3c1, 7px 1px 5px #ced0c5;
 }
 // ..........
 @mixin box-shadow-blocks {
@@ -34,10 +34,10 @@
 }
 // ...........
 @mixin Front-page-bcg {
-  background: repeating-linear-gradient(45deg, #fdfdf84d, #cee6e300 100px),
-    url(../img/tie.jpg) center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: repeating-linear-gradient(45deg, #f4f5eee0, #f2f3ebe0 100px),
+    url(../img/pattern.jpg) center center;
+  background-size: contain;
+  background-repeat: repeat;
 }
 // ...........
 @mixin Menu-slider-bcg {
@@ -49,8 +49,8 @@
 }
 // ...........
 @mixin header-bottom-bcg {
-  background: repeating-linear-gradient(52deg, #f4f7daad, #feffe9a6 89px),
-    url(../img/pattern.jpg) center bottom;
+  background: repeating-linear-gradient(45deg, #ffffff, #f1f2ec 100px),
+    url(../img/pattern.jpg) center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -62,7 +62,7 @@
   background-repeat: no-repeat;
 }
 @mixin container-bcg {
-  background: repeating-linear-gradient(52deg, #f5f7e600, #f7f9e700 89px),
+  background: linear-gradient(52deg, #eff0e1, #e9ebd8 89px),
     url(../img/mountains.jpg) center bottom;
   background-position: top;
   background-size: cover;
@@ -71,11 +71,11 @@
 
 //MOBILE-BACKGROUNDS
 @mixin mini-img-bcg {
-  background: linear-gradient(52deg, #f1f0f800, #f1f0f800 89px),
-    url(../img/mini-menu.jpg) center bottom;
+  background: repeating-linear-gradient(45deg, #f4f5eee0, #f2f3ebe0 100px),
+    url(../img/pattern.jpg) center center;
   background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: repeat;
 }
 
 // .................................................................

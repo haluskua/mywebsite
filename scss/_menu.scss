@@ -159,7 +159,7 @@
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background: ($GRAY-01);
+  @include Front-page-bcg;
   @include box-shadow-nav;
   @include MEDIUM-DEVICE-WIDTH {
     height: 65px;
@@ -224,7 +224,6 @@
         flex-direction: column;
       }
       @include LARGE-DEVICE-WIDTH {
-        @include Menu-slider-bcg;
         flex-direction: row-reverse;
         justify-content: space-evenly;
         background-position: top;

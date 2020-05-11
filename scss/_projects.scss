@@ -19,7 +19,6 @@
     }
     @include MEDIUM-LANDSCAPE {
       justify-content: space-around;
-      height: 100vh;
     }
     @include LARGE-DEVICE-WIDTH {
       @include box-shadow-blocks;
@@ -40,14 +39,14 @@
       padding: 4rem 3rem 2rem 1rem;
       background: ($WHITE);
       @include SMALL-LANDSCAPE {
-        padding-top: 1rem;
+        padding-top: 3rem;
       }
       @include MEDIUM-DEVICE-WIDTH {
-        padding: 3rem;
+        padding-top: 3rem;
       }
       @include LARGE-DEVICE-WIDTH {
         margin: 0 auto;
-        padding-top: 1rem;
+        padding-top: 4rem;
       }
       .text-secondary {
         font-family: "Roboto", "Monserrat", cursive;

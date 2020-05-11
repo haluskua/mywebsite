@@ -17,16 +17,12 @@
     overflow: auto;
     padding-bottom: 0;
     padding-top: 2rem;
-    @include container-bcg;
+    @include Front-page-bcg;
     @include SMALL-LANDSCAPE {
       padding: 0 8%;
       padding: 28px 5.5%;
       padding-bottom: 0;
-      @include container-bcg;
-      background-size: contain;
-      background-repeat: repeat;
-    }
-    @include MEDIUM-DEVICE-WIDTH {
+      @include Front-page-bcg;
     }
     @include MEDIUM-LANDSCAPE {
       padding: 0 16%;
@@ -63,6 +59,7 @@
     }
     &__box-two {
       padding: 8px;
+      padding-top: 2.3rem;
       width: 100%;
       background: ($WHITE);
 
@@ -122,13 +119,11 @@
     // ........
     &__box-three {
       background: ($BABY-PINK);
-      @include container-bcg;
       @include LARGE-DEVICE-WIDTH {
         display: flex;
         background: none;
         justify-content: center;
         padding-bottom: 2rem;
-        @include menu-bcg;
       }
       img {
         @include LARGE-DEVICE-WIDTH {

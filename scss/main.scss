@@ -190,6 +190,7 @@ footer {
   padding: 0.3rem;
   display: flex;
   align-items: center;
+  @include header-bottom-bcg;
   @include SMALL-LANDSCAPE {
     flex-direction: row;
     padding: 1.1rem;
