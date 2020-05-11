@@ -9,7 +9,6 @@
     @include Menu-slider-bcg;
     @include SMALL-LANDSCAPE {
       @include landscape-orientation-layout;
-
     }
     @include MEDIUM-LANDSCAPE {
       padding: 6%;
@@ -215,13 +214,13 @@
 
         h2,
         h3 {
-          font-family: "Roboto", cursive;
+          font-family: "DM Serif Display", serif;
           color: ($BLACK-002);
           letter-spacing: 0.02rem;
           font-size: 1.35em;
           line-height: 1.3em;
           padding-top: 5px;
-          font-weight: bold;
+          font-weight: 200;
           @include LARGE-DEVICE-WIDTH {
             font-size: 1.2rem;
             font-weight: normal;
@@ -229,16 +228,12 @@
         }
 
         h5 {
-          font-size: 0.85rem;
-          color: ($FLURO);
+          font-size: 0.67rem;
           font-style: normal;
           padding: 0;
           line-height: 1.24em;
-          font-family: "Roboto", cursive;
-
-          @include LARGE-DEVICE-WIDTH {
-            font-size: 0.88rem;
-          }
+          font-family: "Cinzel Decorative", cursive;
+          text-transform: lowercase;
         }
         P {
           // styinling for 'P' is referenced main.css

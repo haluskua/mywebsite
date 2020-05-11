@@ -60,8 +60,12 @@
     &__box-two {
       padding: 8px;
       padding-top: 1rem;
+      padding: 1rem 0 0 1rem;
       width: 100%;
       background: ($WHITE);
+      @include MEDIUM-DEVICE-WIDTH {
+        padding: 1rem 0 0 2rem;
+      }
 
       h1 {
         color: ($BLACK-002);
@@ -74,15 +78,12 @@
         font-family: 'DM Serif Display', serif;
         @include MEDIUM-DEVICE-WIDTH {
           font-size: 2rem;
-          padding: 38px 0 2px 12px;
         }
         @include MEDIUM-LANDSCAPE {
         }
         @include LARGE-DEVICE-WIDTH {
           background: ($WHITE);
-          padding: 1rem;
-          padding-left: 6px;
-          padding-bottom: 0;
+          padding: 1rem 1rem 0 0;
           text-align: left;
           margin: 0;
           font-size: 1.8rem;
@@ -90,10 +91,10 @@
       }
 
       h3 {
-        font-size: 1rem;
+        font-size: 0.76rem;
         line-height: 1.24em;
         text-align: left;
-        padding: 0.6rem;
+        padding: 0.4rem;
         font-weight: normal;
         font-family: "Roboto Condensed", sans-serif;
         
@@ -106,10 +107,8 @@
       }
       span {
         color: #5f6d70;
-        font-weight: bold;
-        font-size: 0.9rem;
+        font-size: 0.69rem;
         text-transform: lowercase;
-        font-family: "Roboto", cursive;
       }
     }
     // ........
