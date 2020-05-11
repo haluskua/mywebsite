@@ -31,19 +31,15 @@
   overflow: auto;
   padding-bottom: 0;
   padding-top: 2rem;
-  background: repeating-linear-gradient(52deg, #f5f7e600, #f7f9e700 89px), url(../img/mountains.jpg) center bottom;
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background: repeating-linear-gradient(45deg, #f4f5eee0, #f2f3ebe0 100px), url(../img/pattern.jpg) center center;
+  background-size: contain;
+  background-repeat: repeat; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .home {
       padding: 0 8%;
       padding: 28px 5.5%;
       padding-bottom: 0;
-      background: repeating-linear-gradient(52deg, #f5f7e600, #f7f9e700 89px), url(../img/mountains.jpg) center bottom;
-      background-position: top;
-      background-size: cover;
-      background-repeat: no-repeat;
+      background: repeating-linear-gradient(45deg, #f4f5eee0, #f2f3ebe0 100px), url(../img/pattern.jpg) center center;
       background-size: contain;
       background-repeat: repeat; } }
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
@@ -57,7 +53,7 @@
       padding-bottom: 4rem; } }
   .content-wrapper .home__box-one {
     width: 100%;
-    background: repeating-linear-gradient(52deg, #f4f7daad, #feffe9a6 89px), url(../img/pattern.jpg) center bottom;
+    background: repeating-linear-gradient(45deg, #ffffff, #f1f2ec 100px), url(../img/pattern.jpg) center center;
     background-size: cover;
     background-repeat: no-repeat;
     display: -webkit-box;
@@ -80,6 +76,7 @@
       padding: 0.3rem 0; }
   .content-wrapper .home__box-two {
     padding: 8px;
+    padding-top: 2.3rem;
     width: 100%;
     background: #ffffff; }
     .content-wrapper .home__box-two h1 {
@@ -128,11 +125,7 @@
       text-transform: lowercase;
       font-family: "Cinzel Decorative", cursive; }
   .content-wrapper .home__box-three {
-    background: #f9f3f3;
-    background: repeating-linear-gradient(52deg, #f5f7e600, #f7f9e700 89px), url(../img/mountains.jpg) center bottom;
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background: #f9f3f3; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .home__box-three {
         display: -webkit-box;
@@ -142,10 +135,7 @@
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        padding-bottom: 2rem;
-        background: repeating-linear-gradient(52deg, #f4f5e6a6, #f5f6e7 89px), url(../img/cloth.jpg) center bottom;
-        background-size: cover;
-        background-repeat: no-repeat; } }
+        padding-bottom: 2rem; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .home__box-three img {
         width: 74%; } }
@@ -317,9 +307,11 @@
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background: #fafaf8;
-  -webkit-box-shadow: 0px 1px 4px #168e9a21, 7px 1px 1px #c9d8dc;
-          box-shadow: 0px 1px 4px #168e9a21, 7px 1px 1px #c9d8dc; }
+  background: repeating-linear-gradient(45deg, #f4f5eee0, #f2f3ebe0 100px), url(../img/pattern.jpg) center center;
+  background-size: contain;
+  background-repeat: repeat;
+  -webkit-box-shadow: 0px 1px 4px #c3c3c1, 7px 1px 5px #ced0c5;
+          box-shadow: 0px 1px 4px #c3c3c1, 7px 1px 5px #ced0c5; }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .nav {
       height: 65px; } }
@@ -383,10 +375,10 @@
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: linear-gradient(52deg, #f1f0f800, #f1f0f800 89px), url(../img/mini-menu.jpg) center bottom;
+      background: repeating-linear-gradient(45deg, #f4f5eee0, #f2f3ebe0 100px), url(../img/pattern.jpg) center center;
       background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat; }
+      background-size: contain;
+      background-repeat: repeat; }
       @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
         .nav .menu-nav.open {
           -webkit-box-orient: horizontal;
@@ -418,10 +410,6 @@
                   flex-direction: column; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .nav .menu-nav.open {
-          background: repeating-linear-gradient(52deg, #eaecd51a, #f0f8f700 89px), url(../img/green-poly.jpg) center bottom;
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
           -webkit-box-orient: horizontal;
           -webkit-box-direction: reverse;
               -ms-flex-direction: row-reverse;
@@ -838,7 +826,7 @@
   height: 100%;
   overflow: auto;
   background: #ffffff7d;
-  background: repeating-linear-gradient(52deg, #f5f7e600, #f7f9e700 89px), url(../img/mountains.jpg) center bottom;
+  background: linear-gradient(52deg, #eff0e1, #e9ebd8 89px), url(../img/mountains.jpg) center bottom;
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -860,8 +848,7 @@
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
     .content-wrapper .projects {
       -ms-flex-pack: distribute;
-          justify-content: space-around;
-      height: 100vh; } }
+          justify-content: space-around; } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .content-wrapper .projects {
       -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
@@ -884,14 +871,14 @@
     background: #ffffff; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .projects__bio-image {
-        padding-top: 1rem; } }
+        padding-top: 3rem; } }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .projects__bio-image {
-        padding: 3rem; } }
+        padding-top: 3rem; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .projects__bio-image {
         margin: 0 auto;
-        padding-top: 1rem; } }
+        padding-top: 4rem; } }
     .content-wrapper .projects__bio-image .text-secondary {
       font-family: "Roboto", "Monserrat", cursive;
       text-transform: uppercase;
@@ -1066,10 +1053,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: linear-gradient(52deg, #f1f0f800, #f1f0f800 89px), url(../img/mini-menu.jpg) center bottom;
+  background: repeating-linear-gradient(45deg, #f4f5eee0, #f2f3ebe0 100px), url(../img/pattern.jpg) center center;
   background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: repeat;
   background-position: top; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .contact {
@@ -1218,7 +1205,7 @@
     padding: 0.25rem;
     padding-bottom: 0;
     overflow: auto;
-    background: repeating-linear-gradient(52deg, #f5f7e600, #f7f9e700 89px), url(../img/mountains.jpg) center bottom;
+    background: linear-gradient(52deg, #eff0e1, #e9ebd8 89px), url(../img/mountains.jpg) center bottom;
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat; }
@@ -1525,7 +1512,10 @@ footer {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background: repeating-linear-gradient(45deg, #ffffff, #f1f2ec 100px), url(../img/pattern.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     footer {
       -webkit-box-orient: horizontal;
