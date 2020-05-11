@@ -77,8 +77,12 @@
   .content-wrapper .home__box-two {
     padding: 8px;
     padding-top: 1rem;
+    padding: 1rem 0 0 1rem;
     width: 100%;
     background: #ffffff; }
+    @media only screen and (min-width: 640px) and (orientation: portrait) {
+      .content-wrapper .home__box-two {
+        padding: 1rem 0 0 2rem; } }
     .content-wrapper .home__box-two h1 {
       color: #292b20;
       font-size: 1.75rem;
@@ -90,22 +94,19 @@
       font-family: 'DM Serif Display', serif; }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .content-wrapper .home__box-two h1 {
-          font-size: 2rem;
-          padding: 38px 0 2px 12px; } }
+          font-size: 2rem; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .content-wrapper .home__box-two h1 {
           background: #ffffff;
-          padding: 1rem;
-          padding-left: 6px;
-          padding-bottom: 0;
+          padding: 1rem 1rem 0 0;
           text-align: left;
           margin: 0;
           font-size: 1.8rem; } }
     .content-wrapper .home__box-two h3 {
-      font-size: 1rem;
+      font-size: 0.76rem;
       line-height: 1.24em;
       text-align: left;
-      padding: 0.6rem;
+      padding: 0.4rem;
       font-weight: normal;
       font-family: "Roboto Condensed", sans-serif; }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -116,10 +117,8 @@
           line-height: 0; } }
     .content-wrapper .home__box-two span {
       color: #5f6d70;
-      font-weight: bold;
-      font-size: 0.9rem;
-      text-transform: lowercase;
-      font-family: "Roboto", cursive; }
+      font-size: 0.69rem;
+      text-transform: lowercase; }
   .content-wrapper .home__box-three {
     background: #f9f3f3; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
@@ -774,28 +773,25 @@
               font-size: 1rem; } }
         .content-wrapper .about .jobs__job h2,
         .content-wrapper .about .jobs__job h3 {
-          font-family: "Roboto", cursive;
+          font-family: "DM Serif Display", serif;
           color: #292b20;
           letter-spacing: 0.02rem;
           font-size: 1.35em;
           line-height: 1.3em;
           padding-top: 5px;
-          font-weight: bold; }
+          font-weight: 200; }
           @media only screen and (min-width: 1025px) and (orientation: landscape) {
             .content-wrapper .about .jobs__job h2,
             .content-wrapper .about .jobs__job h3 {
               font-size: 1.2rem;
               font-weight: normal; } }
         .content-wrapper .about .jobs__job h5 {
-          font-size: 0.85rem;
-          color: #45b393;
+          font-size: 0.67rem;
           font-style: normal;
           padding: 0;
           line-height: 1.24em;
-          font-family: "Roboto", cursive; }
-          @media only screen and (min-width: 1025px) and (orientation: landscape) {
-            .content-wrapper .about .jobs__job h5 {
-              font-size: 0.88rem; } }
+          font-family: "Cinzel Decorative", cursive;
+          text-transform: lowercase; }
         .content-wrapper .about .jobs__job P span {
           font-style: italic;
           font-size: 0.79rem; }
