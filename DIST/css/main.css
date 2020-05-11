@@ -826,21 +826,22 @@
   height: 100%;
   overflow: auto;
   background: #ffffff7d;
-  background: linear-gradient(52deg, #eff0e1, #e9ebd8 89px), url(../img/mountains.jpg) center bottom;
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background: repeating-linear-gradient(45deg, #f4f5eee0, #f2f3ebe0 100px), url(../img/pattern.jpg) center center;
+  background-size: contain;
+  background-repeat: repeat; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .projects {
       height: 100%;
       overflow: auto;
       padding: 28px 5%;
       padding-bottom: 0;
-      background: #ffffff7d; } }
+      background: repeating-linear-gradient(45deg, #f4f5eee0, #f2f3ebe0 100px), url(../img/pattern.jpg) center center;
+      background-size: contain;
+      background-repeat: repeat; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .content-wrapper .projects {
-      -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
-              box-shadow: 2px 4px 14px #d2dcd7a1;
+      -webkit-box-shadow: 2px 4px 17px #d5d6ce;
+              box-shadow: 2px 4px 17px #d5d6ce;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -851,8 +852,9 @@
           justify-content: space-around; } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .content-wrapper .projects {
-      -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
-              box-shadow: 2px 4px 14px #d2dcd7a1;
+      -webkit-box-shadow: 2px 4px 17px #d5d6ce;
+              box-shadow: 2px 4px 17px #d5d6ce;
+      background: #ffffff7d;
       padding: 0;
       margin: 4rem 8rem; } }
   .content-wrapper .projects .block {
@@ -937,8 +939,8 @@
     cursor: pointer;
     padding: 0.5rem;
     background: #f1f0f8;
-    -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
-            box-shadow: 2px 4px 14px #d2dcd7a1; }
+    -webkit-box-shadow: 2px 4px 17px #d5d6ce;
+            box-shadow: 2px 4px 17px #d5d6ce; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .projects__item1, .content-wrapper .projects__item2, .content-wrapper .projects__item3, .content-wrapper .projects__item4, .content-wrapper .projects__item5 {
         display: -webkit-box;
@@ -1204,11 +1206,7 @@
             flex-direction: column;
     padding: 0.25rem;
     padding-bottom: 0;
-    overflow: auto;
-    background: linear-gradient(52deg, #eff0e1, #e9ebd8 89px), url(../img/mountains.jpg) center bottom;
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    overflow: auto; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .main-container {
         -webkit-box-shadow: none;
@@ -1250,8 +1248,8 @@
     margin: auto;
     overflow: scroll;
     background: #ffffff;
-    -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
-            box-shadow: 2px 4px 14px #d2dcd7a1; }
+    -webkit-box-shadow: 2px 4px 17px #d5d6ce;
+            box-shadow: 2px 4px 17px #d5d6ce; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .container {
         border: none;
@@ -1260,8 +1258,8 @@
         padding: 1rem;
         padding: 1rem;
         background: #ffffff;
-        -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
-                box-shadow: 2px 4px 14px #d2dcd7a1; } }
+        -webkit-box-shadow: 2px 4px 17px #d5d6ce;
+                box-shadow: 2px 4px 17px #d5d6ce; } }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .container {
         height: 100%; } }
@@ -1296,8 +1294,8 @@
         -ms-flex-pack: center;
             justify-content: center;
     padding-top: 44px;
-    -webkit-box-shadow: 2px 4px 14px #d2dcd7a1;
-            box-shadow: 2px 4px 14px #d2dcd7a1; }
+    -webkit-box-shadow: 2px 4px 17px #d5d6ce;
+            box-shadow: 2px 4px 17px #d5d6ce; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .main-img {
         padding: 0; } }
@@ -1457,7 +1455,10 @@ main {
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper {
       height: auto;
-      padding-top: 1rem; } }
+      padding-top: 1rem;
+      background: repeating-linear-gradient(45deg, #f4f5eee0, #f2f3ebe0 100px), url(../img/pattern.jpg) center center;
+      background-size: contain;
+      background-repeat: repeat; } }
 
 p {
   color: #4d4d4d;

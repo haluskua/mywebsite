@@ -7,10 +7,10 @@
     height: 100%;
     overflow: auto;
     background: ($trans-white);
-    @include container-bcg;
+    @include Front-page-bcg;
     @include SMALL-LANDSCAPE {
       @include landscape-orientation-layout;
-      background: ($trans-white);
+      @include Front-page-bcg;
     }
     @include MEDIUM-DEVICE-WIDTH {
       @include box-shadow-blocks;
@@ -22,6 +22,7 @@
     }
     @include LARGE-DEVICE-WIDTH {
       @include box-shadow-blocks;
+      background: ($trans-white);
       padding: 0;
       margin: 4rem 8rem;
     }

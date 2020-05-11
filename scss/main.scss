@@ -145,6 +145,7 @@ main {
   @include SMALL-LANDSCAPE {
     height: auto;
     padding-top: 1rem;
+    @include Front-page-bcg;
   }
 }
 
