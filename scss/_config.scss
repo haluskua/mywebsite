@@ -56,14 +56,14 @@
 }
 // ...........
 @mixin menu-bcg {
-  background: repeating-linear-gradient(52deg, #f4f7daad, #feffe9a6 89px),
+  background: repeating-linear-gradient(52deg, #f4f5e6a6, #f5f6e7 89px),
     url(../img/cloth.jpg) center bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
 @mixin container-bcg {
-  background: repeating-linear-gradient(52deg, #f5f7e6cf, #f7f9e7cf 89px),
-    url(../img/green-poly.jpg) center bottom;
+  background: repeating-linear-gradient(52deg, #f5f7e600, #f7f9e700 89px),
+    url(../img/mountains.jpg) center bottom;
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -71,7 +71,7 @@
 
 //MOBILE-BACKGROUNDS
 @mixin mini-img-bcg {
-  background: repeating-linear-gradient(52deg, #f1f0f878, #f1f0f859 89px),
+  background: linear-gradient(52deg, #f1f0f800, #f1f0f800 89px),
     url(../img/mini-menu.jpg) center bottom;
   background-position: center;
   background-size: cover;
