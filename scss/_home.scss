@@ -35,6 +35,9 @@
         padding: 1.82rem;
         padding-bottom: 4rem;
       }
+      @include LARGE-DEVICE-WIDTH {
+        padding: 4rem 11rem;
+      }
     }
 
     &__box-one {
@@ -129,13 +132,14 @@
       span {
         color: #5f6d70;
         font-size: 0.69rem;
+        font-weight: bold;
         text-transform: lowercase;
         @include MEDIUM-DEVICE-WIDTH {
           font-size: 0.87rem;
           line-height: 1.2rem;
         }
         @include LARGE-DEVICE-WIDTH {
-          font-size: 1.1rem;
+          font-size: 0.89rem;
         }
       }
     }
