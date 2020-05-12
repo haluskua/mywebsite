@@ -201,6 +201,8 @@ footer {
   }
   @include MEDIUM-DEVICE-WIDTH {
     flex-direction: row;
+    position: fixed;
+    width: 100%;
   }
   @include MEDIUM-LANDSCAPE {
     width: 100%;

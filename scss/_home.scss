@@ -43,14 +43,12 @@
       display: flex;
       flex-direction: column;
       justify-self: center;
-      margin-top: -2rem;
       @include SMALL-LANDSCAPE {
         padding: 0 5.5rem;
       }
       @include MEDIUM-DEVICE-WIDTH {
       }
       @include LARGE-DEVICE-WIDTH {
-        margin-top: -5.5rem;
       }
 
       .spear {
@@ -66,8 +64,20 @@
       padding-top: 1rem;
       width: 100%;
       background: ($WHITE);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      @include SMALL-LANDSCAPE {
+        padding: 1rem 10rem;
+        padding-left: 1rem;
+      }
       @include MEDIUM-DEVICE-WIDTH {
-        padding: 1rem 0 0 2rem;
+        padding: 1.2rem 9rem;
+        align-items: center;
+      }
+      @include MEDIUM-LANDSCAPE {
+        padding: 1rem 9rem;
       }
       @include LARGE-DEVICE-WIDTH {
         padding: 2.3rem 0;
@@ -78,9 +88,9 @@
         font-size: 1.75rem;
         line-height: 2rem;
         text-transform: capitalize;
-        text-align: center;
+        text-align: left;
         width: 100%;
-        font-family: 'DM Serif Display', serif;
+        font-family: "DM Serif Display", serif;
         @include MEDIUM-DEVICE-WIDTH {
           font-size: 2rem;
         }
@@ -97,23 +107,24 @@
       h3 {
         font-size: 0.88rem;
         line-height: 1.24em;
-        text-align: center;
+        text-align: left;
         font-weight: normal;
-        font-family: "Roboto Condensed", sans-serif;
+        text-transform: lowercase;
+        font-family: "Cinzel Decorative", sans-serif;
         @include SMALL-LANDSCAPE {
-          font-size: 0.88rem;;
+          font-size: 0.88rem;
           line-height: 1rem;
         }
-        
+
         @include MEDIUM-DEVICE-WIDTH {
           font-size: 1rem;
+          margin-top: 1rem;
         }
         @include LARGE-DEVICE-WIDTH {
           font-size: 1.2rem;
           line-height: 1.43rem;
           margin-top: 1rem;
         }
-
       }
       span {
         color: #5f6d70;
