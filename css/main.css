@@ -53,9 +53,6 @@
       padding-bottom: 4rem; } }
   .content-wrapper .home__box-one {
     width: 100%;
-    background: repeating-linear-gradient(45deg, #ffffff, #f1f2ec 100px), url(../img/pattern.jpg) center center;
-    background-size: cover;
-    background-repeat: no-repeat;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -63,10 +60,14 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    justify-self: center; }
+    justify-self: center;
+    margin-top: -2rem; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .home__box-one {
         padding: 0 5.5rem; } }
+    @media only screen and (min-width: 1025px) and (orientation: landscape) {
+      .content-wrapper .home__box-one {
+        margin-top: -5.5rem; } }
     .content-wrapper .home__box-one .spear {
       width: 100%;
       -ms-flex-item-align: center;
@@ -77,19 +78,20 @@
   .content-wrapper .home__box-two {
     padding: 8px;
     padding-top: 1rem;
-    padding: 1rem 0 0 1rem;
     width: 100%;
     background: #ffffff; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .home__box-two {
         padding: 1rem 0 0 2rem; } }
+    @media only screen and (min-width: 1025px) and (orientation: landscape) {
+      .content-wrapper .home__box-two {
+        padding: 2.3rem 0; } }
     .content-wrapper .home__box-two h1 {
       color: #292b20;
       font-size: 1.75rem;
       line-height: 2rem;
       text-transform: capitalize;
-      text-align: left;
-      padding-left: 8px;
+      text-align: center;
       width: 100%;
       font-family: 'DM Serif Display', serif; }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -97,28 +99,39 @@
           font-size: 2rem; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .content-wrapper .home__box-two h1 {
-          background: #ffffff;
-          padding: 1rem 1rem 0 0;
-          text-align: left;
+          text-align: center;
           margin: 0;
-          font-size: 1.8rem; } }
+          font-size: 2.5rem;
+          line-height: 2.2rem; } }
     .content-wrapper .home__box-two h3 {
-      font-size: 0.76rem;
+      font-size: 0.88rem;
       line-height: 1.24em;
-      text-align: left;
-      padding: 0.4rem;
+      text-align: center;
       font-weight: normal;
       font-family: "Roboto Condensed", sans-serif; }
+      @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
+        .content-wrapper .home__box-two h3 {
+          font-size: 0.88rem;
+          line-height: 1rem; } }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .content-wrapper .home__box-two h3 {
-          line-height: 0; } }
-      @media only screen and (min-width: 1024px) and (orientation: landscape) {
+          font-size: 1rem; } }
+      @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .content-wrapper .home__box-two h3 {
-          line-height: 0; } }
+          font-size: 1.2rem;
+          line-height: 1.43rem;
+          margin-top: 1rem; } }
     .content-wrapper .home__box-two span {
       color: #5f6d70;
       font-size: 0.69rem;
       text-transform: lowercase; }
+      @media only screen and (min-width: 640px) and (orientation: portrait) {
+        .content-wrapper .home__box-two span {
+          font-size: 0.87rem;
+          line-height: 1.2rem; } }
+      @media only screen and (min-width: 1025px) and (orientation: landscape) {
+        .content-wrapper .home__box-two span {
+          font-size: 1.1rem; } }
   .content-wrapper .home__box-three {
     background: #f9f3f3; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
@@ -183,7 +196,7 @@
   cursor: pointer; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .menu-btn {
-      width: 14%; } }
+      width: 19%; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .menu-btn {
       z-index: 9999;
@@ -1029,6 +1042,27 @@
   .content-wrapper .projects .block {
     width: 100%; }
 
+@media only screen and (device-width: 1rem), screen and (orientation: landscape) {
+  .content-wrapper .socieal-icons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    border-radius: 4px;
+    padding: 7px 14rem; } }
+  @media only screen and (device-width: 1rem) and (min-width: 1024px) and (orientation: landscape), only screen and (orientation: landscape) and (min-width: 1024px) and (orientation: landscape) {
+    .content-wrapper .socieal-icons {
+      height: 78%;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
+
 .content-wrapper .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1471,10 +1505,12 @@ p {
       border-radius: 0.05rem;
       line-height: 1.7rem;
       letter-spacing: 0.031rem;
-      font-size: 1.03rem; } }
+      font-size: 1.03rem;
+      padding: 1rem 3rem; } }
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
     p {
-      font-size: 0.93rem; } }
+      font-size: 0.93rem;
+      padding: 1rem 2rem; } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     p {
       -webkit-box-shadow: none;
@@ -1572,8 +1608,11 @@ footer {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      padding: 0;
-      overflow: auto; } }
+      overflow: auto;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      border-radius: 4px;
+      padding: 7px 14rem; } }
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
     .social-icons {
       position: fixed;
