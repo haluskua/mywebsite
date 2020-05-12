@@ -21,10 +21,10 @@
       justify-content: space-around;
     }
     @include LARGE-DEVICE-WIDTH {
-      @include box-shadow-blocks;
-      background: ($trans-white);
       padding: 0;
       margin: 4rem 8rem;
+      background: none;
+      box-shadow: none;
     }
     .block {
       padding: 0;
@@ -118,7 +118,7 @@
       border-radius: 0.2rem;
       cursor: pointer;
       padding: 0.5rem;
-      background: ($BABY-GREEN-01);
+      background: ($WHITE);
 
       @include box-shadow-blocks;
       @include MEDIUM-DEVICE-WIDTH {
@@ -132,9 +132,9 @@
       }
 
       h3 {
-        font-family: "Roboto";
+        font-family: "Cinzel Decorative", serif;
         font-weight: normal;
-        text-transform: uppercase;
+        text-transform: lowercase;
         padding-left: 1rem;
         font-size: 0.95rem;
         @include SMALL-LANDSCAPE {

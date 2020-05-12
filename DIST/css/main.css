@@ -880,11 +880,11 @@
           justify-content: space-around; } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .content-wrapper .projects {
-      -webkit-box-shadow: 2px 4px 17px #d5d6ce;
-              box-shadow: 2px 4px 17px #d5d6ce;
-      background: #ffffff7d;
       padding: 0;
-      margin: 4rem 8rem; } }
+      margin: 4rem 8rem;
+      background: none;
+      -webkit-box-shadow: none;
+              box-shadow: none; } }
   .content-wrapper .projects .block {
     padding: 0;
     padding-top: 13px; }
@@ -965,7 +965,7 @@
     border-radius: 0.2rem;
     cursor: pointer;
     padding: 0.5rem;
-    background: #f7f5e9;
+    background: #ffffff;
     -webkit-box-shadow: 2px 4px 17px #d5d6ce;
             box-shadow: 2px 4px 17px #d5d6ce; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -987,9 +987,9 @@
       .content-wrapper .projects__item1, .content-wrapper .projects__item2, .content-wrapper .projects__item3, .content-wrapper .projects__item4, .content-wrapper .projects__item5 {
         width: 100%; } }
     .content-wrapper .projects__item1 h3, .content-wrapper .projects__item2 h3, .content-wrapper .projects__item3 h3, .content-wrapper .projects__item4 h3, .content-wrapper .projects__item5 h3 {
-      font-family: "Roboto";
+      font-family: "Cinzel Decorative", serif;
       font-weight: normal;
-      text-transform: uppercase;
+      text-transform: lowercase;
       padding-left: 1rem;
       font-size: 0.95rem; }
       @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
