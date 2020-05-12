@@ -39,14 +39,18 @@
 
     &__box-one {
       width: 100%;
-      @include header-bottom-bcg;
+      // @include header-bottom-bcg
       display: flex;
       flex-direction: column;
       justify-self: center;
+      margin-top: -2rem;
       @include SMALL-LANDSCAPE {
         padding: 0 5.5rem;
       }
       @include MEDIUM-DEVICE-WIDTH {
+      }
+      @include LARGE-DEVICE-WIDTH {
+        margin-top: -5.5rem;
       }
 
       .spear {
@@ -60,11 +64,13 @@
     &__box-two {
       padding: 8px;
       padding-top: 1rem;
-      padding: 1rem 0 0 1rem;
       width: 100%;
       background: ($WHITE);
       @include MEDIUM-DEVICE-WIDTH {
         padding: 1rem 0 0 2rem;
+      }
+      @include LARGE-DEVICE-WIDTH {
+        padding: 2.3rem 0;
       }
 
       h1 {
@@ -72,8 +78,7 @@
         font-size: 1.75rem;
         line-height: 2rem;
         text-transform: capitalize;
-        text-align: left;
-        padding-left: 8px;
+        text-align: center;
         width: 100%;
         font-family: 'DM Serif Display', serif;
         @include MEDIUM-DEVICE-WIDTH {
@@ -82,33 +87,45 @@
         @include MEDIUM-LANDSCAPE {
         }
         @include LARGE-DEVICE-WIDTH {
-          background: ($WHITE);
-          padding: 1rem 1rem 0 0;
-          text-align: left;
+          text-align: center;
           margin: 0;
-          font-size: 1.8rem;
+          font-size: 2.5rem;
+          line-height: 2.2rem;
         }
       }
 
       h3 {
-        font-size: 0.76rem;
+        font-size: 0.88rem;
         line-height: 1.24em;
-        text-align: left;
-        padding: 0.4rem;
+        text-align: center;
         font-weight: normal;
         font-family: "Roboto Condensed", sans-serif;
+        @include SMALL-LANDSCAPE {
+          font-size: 0.88rem;;
+          line-height: 1rem;
+        }
         
         @include MEDIUM-DEVICE-WIDTH {
-          line-height: 0;
+          font-size: 1rem;
         }
-        @include MEDIUM-LANDSCAPE {
-          line-height: 0;
+        @include LARGE-DEVICE-WIDTH {
+          font-size: 1.2rem;
+          line-height: 1.43rem;
+          margin-top: 1rem;
         }
+
       }
       span {
         color: #5f6d70;
         font-size: 0.69rem;
         text-transform: lowercase;
+        @include MEDIUM-DEVICE-WIDTH {
+          font-size: 0.87rem;
+          line-height: 1.2rem;
+        }
+        @include LARGE-DEVICE-WIDTH {
+          font-size: 1.1rem;
+        }
       }
     }
     // ........

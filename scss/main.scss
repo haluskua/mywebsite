@@ -170,9 +170,11 @@ p {
     line-height: 1.7rem;
     letter-spacing: 0.031rem;
     font-size: 1.03rem;
+    padding: 1rem 3rem;
   }
   @include MEDIUM-LANDSCAPE {
     font-size: 0.93rem;
+    padding: 1rem 2rem;
   }
   @include LARGE-DEVICE-WIDTH {
     box-shadow: none;
@@ -246,8 +248,10 @@ footer {
   @include SMALL-LANDSCAPE {
     flex-direction: row;
     justify-content: center;
-    padding: 0;
     overflow: auto;
+    justify-content: space-around;
+    border-radius: 4px;
+    padding: 7px 14rem;
   }
   @include MEDIUM-LANDSCAPE {
     position: fixed;
