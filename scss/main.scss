@@ -263,7 +263,9 @@ footer {
     background: none;
     position: fixed;
     flex-direction: column;
+    justify-content: space-around;
     width: auto;
+    height: 22%;
   }
 
   .fa-2x {

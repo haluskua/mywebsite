@@ -861,8 +861,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 4rem 3rem 2rem 1rem;
-    background: #ffffff; }
+    padding: 4rem 3rem 2rem 1rem; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .projects__bio-image {
         padding-top: 3rem; } }
@@ -930,7 +929,7 @@
     border-radius: 0.2rem;
     cursor: pointer;
     padding: 0.5rem;
-    background: #f1f0f8;
+    background: #f7f5e9;
     -webkit-box-shadow: 2px 4px 17px #d5d6ce;
             box-shadow: 2px 4px 17px #d5d6ce; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -1498,7 +1497,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #f1f0f8;
+  background: #f7f5e9;
   padding: 0.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1596,7 +1595,10 @@ footer {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      width: auto; } }
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      width: auto;
+      height: 22%; } }
   .social-icons .fa-2x {
     font-size: 1.25em; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
