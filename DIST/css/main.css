@@ -38,13 +38,16 @@
       padding: 0 16%; } }
   .content-wrapper .home h2 {
     padding: 1.2rem; }
-  @media only screen and (min-width: 1025px) and (orientation: landscape) {
-    .content-wrapper .home p {
-      padding: 1.82rem;
-      padding-bottom: 4rem; } }
-  @media only screen and (min-width: 1025px) and (orientation: landscape) {
-    .content-wrapper .home p {
-      padding: 4rem 11rem; } }
+  .content-wrapper .home p {
+    font-size: 0.98rem; }
+    @media only screen and (min-width: 1025px) and (orientation: landscape) {
+      .content-wrapper .home p {
+        padding: 1.82rem;
+        padding-bottom: 4rem; } }
+    @media only screen and (min-width: 1025px) and (orientation: landscape) {
+      .content-wrapper .home p {
+        padding: 4rem 9rem;
+        font-size: 1.13rem; } }
   .content-wrapper .home__box-one {
     width: 100%;
     display: flex;
@@ -61,64 +64,78 @@
       padding: 0.3rem 0; }
   .content-wrapper .home__box-two {
     padding: 8px;
-    padding-top: 1rem;
+    padding-top: 2rem;
     width: 100%;
-    background: #ffffff;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .home__box-two {
-        padding: 1rem 10rem;
-        padding-left: 1rem; } }
+        padding: 4rem 0 0 0; } }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .home__box-two {
         padding: 1.2rem 9rem;
         align-items: center; } }
     @media only screen and (min-width: 1024px) and (orientation: landscape) {
       .content-wrapper .home__box-two {
-        padding: 1rem 9rem; } }
+        padding: 1rem 9rem;
+        margin-top: 2rem; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .home__box-two {
         padding: 2.3rem 0; } }
-    .content-wrapper .home__box-two h1 {
-      color: #292b20;
-      font-size: 1.75rem;
-      line-height: 2rem;
-      text-transform: capitalize;
-      text-align: left;
-      width: 100%;
-      font-family: "DM Serif Display", serif; }
-      @media only screen and (min-width: 640px) and (orientation: portrait) {
-        .content-wrapper .home__box-two h1 {
-          font-size: 2rem; } }
-      @media only screen and (min-width: 1025px) and (orientation: landscape) {
-        .content-wrapper .home__box-two h1 {
-          text-align: center;
-          margin: 0;
-          font-size: 2.5rem;
-          line-height: 2.2rem; } }
     .content-wrapper .home__box-two h3 {
-      font-size: 0.88rem;
-      line-height: 1.24em;
-      text-align: left;
+      font-size: 3.2rem;
+      line-height: 0.8em;
+      text-align: center;
       font-weight: normal;
       text-transform: lowercase;
       font-family: "Cinzel Decorative", sans-serif; }
       @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
         .content-wrapper .home__box-two h3 {
-          font-size: 0.88rem;
-          line-height: 1rem; } }
+          line-height: 2rem;
+          font-size: 3rem; } }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .content-wrapper .home__box-two h3 {
-          font-size: 1rem;
+          font-size: 5rem;
           margin-top: 1rem; } }
+      @media only screen and (min-width: 1024px) and (orientation: landscape) {
+        .content-wrapper .home__box-two h3 {
+          font-size: 5rem;
+          line-height: 3.5rem; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .content-wrapper .home__box-two h3 {
-          font-size: 1.2rem;
-          line-height: 1.43rem;
-          margin-top: 1rem; } }
+          line-height: 2.63rem;
+          margin-top: 1rem;
+          font-size: 3rem; } }
+      .content-wrapper .home__box-two h3 span {
+        font-size: 2.1rem;
+        width: 100%;
+        text-align: right; }
+    .content-wrapper .home__box-two h3::before {
+      content: "Freelance";
+      font-size: 1.4rem;
+      text-align: left;
+      display: flex; }
+      @media only screen and (min-width: 640px) and (orientation: portrait) {
+        .content-wrapper .home__box-two h3::before {
+          font-size: 2.18rem; } }
+      @media only screen and (min-width: 1024px) and (orientation: landscape) {
+        .content-wrapper .home__box-two h3::before {
+          font-size: 2rem; } }
+    .content-wrapper .home__box-two h3::after {
+      content: "Omphalus Harkie Kua";
+      font-size: 1.35rem;
+      text-align: center; }
+      @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
+        .content-wrapper .home__box-two h3::after {
+          font-size: 1.04rem; } }
+      @media only screen and (min-width: 640px) and (orientation: portrait) {
+        .content-wrapper .home__box-two h3::after {
+          font-size: 1.8rem; } }
+      @media only screen and (min-width: 1024px) and (orientation: landscape) {
+        .content-wrapper .home__box-two h3::after {
+          font-size: 2rem; } }
     .content-wrapper .home__box-two span {
       color: #5f6d70;
       font-size: 0.69rem;
@@ -132,18 +149,68 @@
         .content-wrapper .home__box-two span {
           font-size: 0.89rem; } }
   .content-wrapper .home__box-three {
-    background: #f9f3f3; }
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .home__box-three {
         display: flex;
         background: none;
         justify-content: center;
         padding-bottom: 2rem; } }
-    @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .content-wrapper .home__box-three img {
-        width: 74%; } }
-  .content-wrapper .home .projects__item5 {
-    z-index: 0; }
+    .content-wrapper .home__box-three .svg-container {
+      display: flex;
+      justify-content: center; }
+      .content-wrapper .home__box-three .svg-container svg {
+        width: 74%;
+        height: auto; }
+        @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
+          .content-wrapper .home__box-three .svg-container svg {
+            width: 43%; } }
+        @media only screen and (min-width: 640px) and (orientation: portrait) {
+          .content-wrapper .home__box-three .svg-container svg {
+            width: 38%; } }
+        @media only screen and (min-width: 1025px) and (orientation: landscape) {
+          .content-wrapper .home__box-three .svg-container svg {
+            width: 35%; } }
+    .content-wrapper .home__box-three .occ-title {
+      color: #292b20;
+      font-size: 1.75rem;
+      line-height: 2rem;
+      text-transform: capitalize;
+      text-align: center;
+      width: 100%;
+      padding: 0 2.2rem;
+      font-family: "DM Serif Display", serif;
+      font-family: serif; }
+      @media only screen and (min-width: 640px) and (orientation: portrait) {
+        .content-wrapper .home__box-three .occ-title {
+          font-size: 2rem; } }
+      @media only screen and (min-width: 1025px) and (orientation: landscape) {
+        .content-wrapper .home__box-three .occ-title {
+          text-align: center;
+          margin: 0;
+          font-size: 2.5rem;
+          line-height: 2.2rem; } }
+    .content-wrapper .home__box-three .occ-title::before {
+      content: "Web and Grapfix";
+      color: black;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-family: "Roboto", sans-serif;
+      border-top: 1px solid #e2e1cf;
+      width: 100%;
+      display: flex;
+      align-self: flex-start; }
+    .content-wrapper .home__box-three .occ-title::after {
+      content: "Front-end Developer";
+      color: black;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      font-size: 1.2rem;
+      font-family: "Roboto", sans-serif;
+      border-top: 1px solid brown; }
 
 #project-index {
   animation: breadCrumb 8s infinite linear alternate;

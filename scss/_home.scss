@@ -31,12 +31,15 @@
       padding: 1.2rem;
     }
     p {
+      font-size: 0.98rem;
+ 
       @include LARGE-DEVICE-WIDTH {
         padding: 1.82rem;
         padding-bottom: 4rem;
       }
       @include LARGE-DEVICE-WIDTH {
-        padding: 4rem 11rem;
+        padding: 4rem 9rem;
+        font-size: 1.13rem;
       }
     }
 
@@ -64,16 +67,14 @@
     }
     &__box-two {
       padding: 8px;
-      padding-top: 1rem;
+      padding-top: 2rem;
       width: 100%;
-      background: ($WHITE);
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       @include SMALL-LANDSCAPE {
-        padding: 1rem 10rem;
-        padding-left: 1rem;
+        padding: 4rem 0 0 0;
       }
       @include MEDIUM-DEVICE-WIDTH {
         padding: 1.2rem 9rem;
@@ -81,54 +82,71 @@
       }
       @include MEDIUM-LANDSCAPE {
         padding: 1rem 9rem;
+        margin-top: 2rem;
       }
       @include LARGE-DEVICE-WIDTH {
         padding: 2.3rem 0;
       }
 
-      h1 {
-        color: ($BLACK-002);
-        font-size: 1.75rem;
-        line-height: 2rem;
-        text-transform: capitalize;
-        text-align: left;
-        width: 100%;
-        font-family: "DM Serif Display", serif;
-        @include MEDIUM-DEVICE-WIDTH {
-          font-size: 2rem;
-        }
-        @include MEDIUM-LANDSCAPE {
-        }
-        @include LARGE-DEVICE-WIDTH {
-          text-align: center;
-          margin: 0;
-          font-size: 2.5rem;
-          line-height: 2.2rem;
-        }
-      }
-
       h3 {
-        font-size: 0.88rem;
-        line-height: 1.24em;
-        text-align: left;
+        font-size: 3.2rem;
+        line-height: 0.8em;
+        text-align: center;
         font-weight: normal;
         text-transform: lowercase;
         font-family: "Cinzel Decorative", sans-serif;
         @include SMALL-LANDSCAPE {
-          font-size: 0.88rem;
-          line-height: 1rem;
+          line-height: 2rem;
+          font-size: 3rem;
         }
 
         @include MEDIUM-DEVICE-WIDTH {
-          font-size: 1rem;
+          font-size: 5rem;
           margin-top: 1rem;
+        }
+        @include MEDIUM-LANDSCAPE {
+          font-size: 5rem;
+          line-height: 3.5rem;
         }
         @include LARGE-DEVICE-WIDTH {
-          font-size: 1.2rem;
-          line-height: 1.43rem;
+          line-height: 2.63rem;
           margin-top: 1rem;
+          font-size: 3rem;
+        }
+        span {
+          font-size: 2.1rem;
+          width: 100%;
+          text-align: right;
         }
       }
+      h3::before {
+        content: "Freelance";
+        font-size: 1.4rem;
+        text-align: left;
+        display: flex;
+        @include MEDIUM-DEVICE-WIDTH {
+          font-size: 2.18rem;
+        }
+        @include MEDIUM-LANDSCAPE {
+          font-size: 2rem;
+        }
+      }
+      h3::after {
+        content: "Omphalus Harkie Kua";
+        font-size: 1.35rem;
+        text-align: center;
+        @include SMALL-LANDSCAPE {
+          font-size: 1.04rem;
+        }
+        @include MEDIUM-DEVICE-WIDTH {
+          font-size: 1.8rem;
+        }
+        @include MEDIUM-LANDSCAPE {
+          font-size: 2rem;
+        }
+
+      }
+
       span {
         color: #5f6d70;
         font-size: 0.69rem;
@@ -145,21 +163,76 @@
     }
     // ........
     &__box-three {
-      background: ($BABY-PINK);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
       @include LARGE-DEVICE-WIDTH {
         display: flex;
         background: none;
         justify-content: center;
         padding-bottom: 2rem;
       }
-      img {
-        @include LARGE-DEVICE-WIDTH {
+
+      .svg-container {
+        display: flex;
+        justify-content: center;
+        svg {
           width: 74%;
+          height: auto;
+          @include SMALL-LANDSCAPE {
+            width: 43%;
+          }
+          @include MEDIUM-DEVICE-WIDTH {
+            width: 38%;
+          }
+          @include LARGE-DEVICE-WIDTH {
+            width: 35%;
+          }
         }
       }
-    }
-    .projects__item5 {
-      z-index: 0;
+      .occ-title {
+        color: ($BLACK-002);
+        font-size: 1.75rem;
+        line-height: 2rem;
+        text-transform: capitalize;
+        text-align: center;
+        width: 100%;
+        padding: 0 2.2rem;
+        font-family: "DM Serif Display", serif;
+        font-family: serif;
+        @include MEDIUM-DEVICE-WIDTH {
+          font-size: 2rem;
+        }
+        @include MEDIUM-LANDSCAPE {
+        }
+        @include LARGE-DEVICE-WIDTH {
+          text-align: center;
+          margin: 0;
+          font-size: 2.5rem;
+          line-height: 2.2rem;
+        }
+      }
+      .occ-title::before {
+        content: "Web and Grapfix";
+        color: black;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-family: "Roboto", sans-serif;
+        border-top: 1px solid #e2e1cf;
+        width: 100%;
+        display: flex;
+        align-self: flex-start;
+      }
+      .occ-title::after {
+        content: "Front-end Developer";
+        color: black;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.2rem;
+        font-family: "Roboto", sans-serif;
+        border-top: 1px solid brown;
+      }
     }
   }
 }
