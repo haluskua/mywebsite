@@ -1,13 +1,5 @@
 // ...........
 
-//Button click transition delay
-
-@for $i from 1 through 4 {
-  .menu-nav__item:nth-child(#{$i}) {
-    transition-delay: ($i * 0.07s) + 0.105s;
-  }
-}
-
 ///////////////
 .content-wrapper {
   .home {
@@ -27,12 +19,9 @@
     @include MEDIUM-LANDSCAPE {
       padding: 0 16%;
     }
-    h2 {
-      padding: 1.2rem;
-    }
     p {
       font-size: 0.98rem;
- 
+
       @include LARGE-DEVICE-WIDTH {
         padding: 1.82rem;
         padding-bottom: 4rem;
@@ -73,6 +62,8 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
+      @include trans-bcg;
+
       @include SMALL-LANDSCAPE {
         padding: 4rem 0 0 0;
       }
@@ -89,8 +80,8 @@
       }
 
       h3 {
-        font-size: 3.2rem;
-        line-height: 0.8em;
+        font-size: 3rem;
+        line-height: 0.7em;
         text-align: center;
         font-weight: normal;
         text-transform: lowercase;
@@ -124,6 +115,8 @@
         font-size: 1.4rem;
         text-align: left;
         display: flex;
+
+        padding-bottom: 0.5rem;
         @include MEDIUM-DEVICE-WIDTH {
           font-size: 2.18rem;
         }
@@ -144,7 +137,6 @@
         @include MEDIUM-LANDSCAPE {
           font-size: 2rem;
         }
-
       }
 
       span {
@@ -176,8 +168,9 @@
       .svg-container {
         display: flex;
         justify-content: center;
+        @include shield-bcg;
         svg {
-          width: 74%;
+          width: 66%;
           height: auto;
           @include SMALL-LANDSCAPE {
             width: 43%;
@@ -234,5 +227,13 @@
         border-top: 1px solid brown;
       }
     }
+  }
+}
+
+//Button click transition delay
+
+@for $i from 1 through 4 {
+  .menu-nav__item:nth-child(#{$i}) {
+    transition-delay: ($i * 0.07s) + 0.105s;
   }
 }

@@ -32,6 +32,14 @@
     url(../img/light_grafix_portrait2.jpg) center bottom;
   background-size: cover;
 }
+@mixin trans-bcg {
+  background: url(../img/background-man.png) center center;
+  background-size: cover;
+}
+@mixin shield-bcg {
+  background: url(../img/background-man1.png) center center;
+  background-size: cover;
+}
 // ...........
 @mixin Front-page-bcg {
   background: repeating-linear-gradient(45deg, #f4f5eee0, #f2f3ebe0 100px),
