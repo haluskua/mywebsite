@@ -36,6 +36,10 @@
   background: url(../img/background-man.png) center center;
   background-size: cover;
 }
+@mixin trans-project-bcg {
+  background: url(../img/background-man.png) left center;
+  background-size: cover;
+}
 @mixin shield-bcg {
   background: url(../img/background-man1.png) center center;
   background-size: cover;

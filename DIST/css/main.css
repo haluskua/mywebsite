@@ -1057,6 +1057,8 @@
     cursor: pointer;
     padding: 0.5rem;
     background: #ffffff;
+    background: url(../img/background-man.png) left center;
+    background-size: cover;
     -webkit-box-shadow: 2px 4px 17px #d5d6ce;
             box-shadow: 2px 4px 17px #d5d6ce; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {

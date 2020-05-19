@@ -119,7 +119,7 @@
       cursor: pointer;
       padding: 0.5rem;
       background: ($WHITE);
-
+      @include trans-project-bcg;
       @include box-shadow-blocks;
       @include MEDIUM-DEVICE-WIDTH {
         display: flex;
