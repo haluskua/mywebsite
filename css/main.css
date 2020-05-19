@@ -3,22 +3,6 @@
 /*-----X------ partials imports ------X-----*/
 /*----------- @Mixins -----------*/
 /*----------- Light & Dark Theme -----------*/
-.menu-nav__item:nth-child(1) {
-  -webkit-transition-delay: 0.175s;
-          transition-delay: 0.175s; }
-
-.menu-nav__item:nth-child(2) {
-  -webkit-transition-delay: 0.245s;
-          transition-delay: 0.245s; }
-
-.menu-nav__item:nth-child(3) {
-  -webkit-transition-delay: 0.315s;
-          transition-delay: 0.315s; }
-
-.menu-nav__item:nth-child(4) {
-  -webkit-transition-delay: 0.385s;
-          transition-delay: 0.385s; }
-
 .content-wrapper .home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,8 +29,6 @@
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
     .content-wrapper .home {
       padding: 0 16%; } }
-  .content-wrapper .home h2 {
-    padding: 1.2rem; }
   .content-wrapper .home p {
     font-size: 0.98rem; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
@@ -91,7 +73,9 @@
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    background: url(../img/background-man.png) center center;
+    background-size: cover; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .home__box-two {
         padding: 4rem 0 0 0; } }
@@ -109,8 +93,8 @@
       .content-wrapper .home__box-two {
         padding: 2.3rem 0; } }
     .content-wrapper .home__box-two h3 {
-      font-size: 3.2rem;
-      line-height: 0.8em;
+      font-size: 3rem;
+      line-height: 0.7em;
       text-align: center;
       font-weight: normal;
       text-transform: lowercase;
@@ -142,7 +126,8 @@
       text-align: left;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      padding-bottom: 0.5rem; }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .content-wrapper .home__box-two h3::before {
           font-size: 2.18rem; } }
@@ -201,9 +186,11 @@
       display: flex;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; }
+              justify-content: center;
+      background: url(../img/background-man1.png) center center;
+      background-size: cover; }
       .content-wrapper .home__box-three .svg-container svg {
-        width: 74%;
+        width: 66%;
         height: auto; }
         @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
           .content-wrapper .home__box-three .svg-container svg {
@@ -259,6 +246,22 @@
       font-size: 1.2rem;
       font-family: "Roboto", sans-serif;
       border-top: 1px solid brown; }
+
+.menu-nav__item:nth-child(1) {
+  -webkit-transition-delay: 0.175s;
+          transition-delay: 0.175s; }
+
+.menu-nav__item:nth-child(2) {
+  -webkit-transition-delay: 0.245s;
+          transition-delay: 0.245s; }
+
+.menu-nav__item:nth-child(3) {
+  -webkit-transition-delay: 0.315s;
+          transition-delay: 0.315s; }
+
+.menu-nav__item:nth-child(4) {
+  -webkit-transition-delay: 0.385s;
+          transition-delay: 0.385s; }
 
 #project-index {
   -webkit-animation: breadCrumb 8s infinite linear alternate;
