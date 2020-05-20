@@ -1,4 +1,7 @@
 
+
+
+
 const menuBtn = document.querySelector(".menu-btn");
 const hamburger = document.querySelector(".menu-btn__burger");
 const nav = document.querySelector(".nav");
@@ -153,3 +156,29 @@ $(document).ready(function () {
     }
   });
 });
+
+
+
+/////////////////////////////////////////
+
+
+window.onload = function() {
+  lax.setup() // init
+
+  const updateLax = () => {
+    lax.update(window.scrollY)
+    window.requestAnimationFrame(updateLax)
+  }
+
+  window.requestAnimationFrame(updateLax)
+}
+
+window.addEventListener("resize", function() {
+	lax.updateElements()
+});
+
+
+
+////////////////
+
+

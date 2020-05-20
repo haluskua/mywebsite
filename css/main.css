@@ -1,4 +1,3 @@
-/*--------------Google fonts impors--------------*/
 /*----------- partials imports -----------*/
 /*-----X------ partials imports ------X-----*/
 /*----------- @Mixins -----------*/
@@ -247,6 +246,9 @@
       font-size: 1rem;
       font-family: "Roboto", sans-serif;
       border-top: 1px solid brown; }
+  .content-wrapper .home .projects__item5 h3 {
+    margin: 1rem 0;
+    font-size: 1.2rem; }
 
 .menu-nav__item:nth-child(1) {
   -webkit-transition-delay: 0.175s;
