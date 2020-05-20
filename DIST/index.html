@@ -476,15 +476,15 @@
     <main>
       <section class="content-wrapper">
         <section class="home">
-          <div class="home__box-two">
-            <h3>
+          <div class="home__box-two lax" data-lax-translate-y="0 0, 200 130">
+            <h3 class="lax" data-lax-translate-y="0 0, 130 -90">
               Portfolio
              </h3>
 
           </div>
           <div class="home__box-three">
-            <div class="svg-container">
-              <svg
+            <div class="svg-container lax" data-lax-translate-y="0 0, 120 -100" >
+              <svg class="lax" data-lax-translate-y="0 0, 100 90"
                 width="499"
                 height="709"
                 viewBox="0 0 499 709"
@@ -833,14 +833,13 @@
                 </defs>
               </svg>
             </div>
+                      <!-- <h2>Hi Welcome</h2> -->
+          <div class="home__box-one">
+            <img class="spear lax" data-lax-translate-y="0 0, 40 -25" src="./img/simbu_spear.png" alt="arrow" />
+          </div>
             <h1 class="occ-title"></h1>
 
           </div>
-          <!-- <h2>Hi Welcome</h2> -->
-          <div class="home__box-one">
-            <img class="spear" src="./img/simbu_spear.png" alt="arrow" />
-          </div>
-
 
           <p>
             I am Omphalus or Ompa for short.
@@ -851,8 +850,9 @@
               and experience.
             </span>
           </p>
-          <!-- 
+          
           <div class="projects__item5">
+            <h3>Portfolio-project-history</h3>
             <img
               class="block"
               src="./img/my_project_portfolio.jpg"
@@ -868,20 +868,34 @@
                 <i class="fab fa-github">&nbsp;code on Github</i>
               </a>
             </div>
-          </div> -->
+          </div>
         </section>
       </section>
     </main>
+
     <script
       src="https://kit.fontawesome.com/e8959bd711.js"
       crossorigin="anonymous"
     ></script>
     <script src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    
+  <script>        window.onload = function() {
+    lax.setup() // init
+
+    const updateLax = () => {
+      lax.update(window.scrollY)
+      window.requestAnimationFrame(updateLax)
+    }
+
+    window.requestAnimationFrame(updateLax)
+  }</script>
     <footer>
       <h2>Feel free to get in touch</h2>
       <p><i class="fas fa-envelope"></i> haluskua.one@gmail.com</p>
       <p><i class="fas fa-mobile-alt"></i> (+64) 225 73 2261</p>
     </footer>
+    
   </body>
 </html>
