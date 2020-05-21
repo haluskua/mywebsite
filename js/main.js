@@ -160,22 +160,17 @@ $(document).ready(function () {
 
 
 /////////////////////////////////////////
-
-
-window.onload = function() {
-  lax.setup() // init
-
-  const updateLax = () => {
-    lax.update(window.scrollY)
-    window.requestAnimationFrame(updateLax)
-  }
-
-  window.requestAnimationFrame(updateLax)
-}
+/// from lux library,, updating code on resize of window-size
 
 window.addEventListener("resize", function() {
 	lax.updateElements()
 });
+
+///// from lax library, break-points
+
+lax.setup({
+  breakpoints: { small: 0, large: 992 }
+})
 
 
 
