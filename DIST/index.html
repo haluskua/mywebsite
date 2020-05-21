@@ -476,15 +476,15 @@
     <main>
       <section class="content-wrapper">
         <section class="home">
-          <div class="home__box-two lax" data-lax-translate-y="0 0, 200 130">
-            <h3 class="lax" data-lax-translate-y="0 0, 130 -90">
+          <div class="home__box-two">
+            <h3 class="lax" data-lax-translate-y="0 0, 230 -100">
               Portfolio
              </h3>
 
           </div>
           <div class="home__box-three">
-            <div class="svg-container lax" data-lax-translate-y="0 0, 120 -100" >
-              <svg class="lax" data-lax-translate-y="0 0, 100 90"
+            <div class="svg-container lax" data-lax-translate-y="0 0, 210 -200" >
+              <svg class="lax" data-lax-translate-y="0 0, 307 161"
                 width="499"
                 height="709"
                 viewBox="0 0 499 709"
@@ -835,13 +835,13 @@
             </div>
                       <!-- <h2>Hi Welcome</h2> -->
           <div class="home__box-one">
-            <img class="spear lax" data-lax-translate-y="0 0, 40 -25" src="./img/simbu_spear.png" alt="arrow" />
+            <img class="spear lax" data-lax-translate-y="0 0, 208 -1" src="./img/simbu_spear.png" alt="arrow" />
           </div>
-            <h1 class="occ-title"></h1>
+            <h1 class="occ-title lax" data-lax-translate-y="0 0, 200 -90"></h1>
 
           </div>
 
-          <p>
+          <p class="lax" data-lax-translate-y="0 0, 200 -50">
             I am Omphalus or Ompa for short.
               I am a web designer and developer with a 'can-do' attitude. Recently, my
               focus has been on responsive web and mobile designs and
@@ -881,16 +881,19 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
     
-  <script>        window.onload = function() {
-    lax.setup() // init
+    <script>    window.onload = function () {
+      lax.setup(); // init
 
-    const updateLax = () => {
-      lax.update(window.scrollY)
-      window.requestAnimationFrame(updateLax)
-    }
+      const updateLax = () => {
+        lax.update(window.scrollY);
+        window.requestAnimationFrame(updateLax);
+      };
 
-    window.requestAnimationFrame(updateLax)
-  }</script>
+      window.requestAnimationFrame(updateLax);
+    };
+    lax.setup({
+breakpoints: { small: 0, large: 992 }
+})</script>
     <footer>
       <h2>Feel free to get in touch</h2>
       <p><i class="fas fa-envelope"></i> haluskua.one@gmail.com</p>

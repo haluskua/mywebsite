@@ -384,7 +384,7 @@
         <div class="menu-btn">
           <span class="menu-btn__burger"></span>
           <span class="menu-btn__logo"
-          >O<span class="O"><spa class="H K">H</spa>K</span></span
+            >O<span class="O"><spa class="H K">H</spa>K</span></span
           >
         </div>
       </nav>
@@ -482,7 +482,9 @@
           </div>
           <div class="projects__items design">
             <div class="projects__item1">
-              <h3>Word Press</h3>
+              <h3 >
+                Word Press
+              </h3>
 
               <img class="block" src="./img/pecxer_res.png" alt="screens" />
               <div class="projects__btns">
@@ -496,7 +498,9 @@
               </div>
             </div>
             <div class="projects__item2">
-              <h3>Web + Photography</h3>
+              <h3 >
+                Web + Photography
+              </h3>
               <img class="block" src="./img/gaving_rachel.png" alt="screens" />
               <div class="projects__btns">
                 <a
@@ -506,39 +510,54 @@
                 >
                   <i class="fas fa-eye">&nbsp;view site</i>
                 </a>
-                <a href="https://github.com/haluskua/Big2" target="blank" class="projects__btn">
+                <a
+                  href="https://github.com/haluskua/Big2"
+                  target="blank"
+                  class="projects__btn"
+                >
                   <i class="fab fa-github">&nbsp;code on Github</i>
                 </a>
               </div>
             </div>
             <div class="projects__item3">
-              <h3>Charity</h3>
-              <img
-                class="block"
-                src="./img/charity.png"
-                alt="My projects"
-              />
+              <h3 >
+                Charity
+              </h3>
+              <img class="block" src="./img/charity.png" alt="My projects" />
               <div class="projects__btns">
-                <a href="https://pnpngct.com/" target="blank" class="projects__btn">
+                <a
+                  href="https://pnpngct.com/"
+                  target="blank"
+                  class="projects__btn"
+                >
                   <i class="fas fa-eye">&nbsp;view site</i>
                 </a>
               </div>
             </div>
             <div class="projects__item5">
-              <h3>Portfolio</h3>
+              <h3 >
+                Portfolio
+              </h3>
               <img
                 class="block"
                 src="./img/my_project_portfolio1.png"
                 alt="My projects"
               />
               <div class="projects__btns">
-                <a href="https://github.com/haluskua/mywebsite" target="blank" class="projects__btn">
+                <a
+                  href="https://github.com/haluskua/mywebsite"
+                  target="blank"
+                  class="projects__btn"
+                >
                   <i class="fab fa-github">&nbsp;code on Github</i>
                 </a>
               </div>
             </div>
             <div class="projects__item4">
-              <h3>Oil Painting</h3>
+              <h3 class="lax" data-lax-opacity="0 1, (document.body.scrollHeight*0.5) 0">
+                Oil Painting
+              </h3>
+              </h3>
               <img
                 class="block"
                 src="./img/okura-paintin.jpg"
@@ -574,6 +593,24 @@
     ></script>
     <script src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+
+    <script>    window.onload = function () {
+      lax.setup(); // init
+
+        const updateLax = () => {
+          lax.update(window.scrollY);
+          window.requestAnimationFrame(updateLax);
+        };
+
+          window.requestAnimationFrame(updateLax);
+        };
+        lax.setup({
+          breakpoints: { small: 0, large: 992 }
+      })
+
+</script>
+
     <footer>
       <h2>Feel free to get in touch</h2>
       <p><i class="fas fa-envelope"></i> haluskua.one@gmail.com</p>

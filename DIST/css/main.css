@@ -29,6 +29,9 @@
     .content-wrapper .home {
       padding: 0 16%; } }
   .content-wrapper .home p {
+    background: repeating-linear-gradient(52deg, #f4f5e6a6, #f5f6e7 89px), url(../img/cloth.jpg) center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
     font-size: 0.98rem; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .home p {
@@ -246,9 +249,11 @@
       font-size: 1rem;
       font-family: "Roboto", sans-serif;
       border-top: 1px solid brown; }
-  .content-wrapper .home .projects__item5 h3 {
-    margin: 1rem 0;
-    font-size: 1.2rem; }
+  .content-wrapper .home .projects__item5 {
+    z-index: 0; }
+    .content-wrapper .home .projects__item5 h3 {
+      margin: 1rem 0;
+      font-size: 1.2rem; }
 
 .menu-nav__item:nth-child(1) {
   -webkit-transition-delay: 0.175s;
