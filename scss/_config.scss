@@ -46,7 +46,7 @@
 }
 // ...........
 @mixin Front-page-bcg {
-  background: repeating-linear-gradient(45deg, #f4f5eee0, #f2f3ebe0 100px),
+  background: repeating-linear-gradient(45deg, #f4f5ee, #f2f3ebfa 100px),
     url(../img/pattern.jpg) center center;
   background-size: contain;
   background-repeat: repeat;
@@ -83,7 +83,7 @@
 
 //MOBILE-BACKGROUNDS
 @mixin mini-img-bcg {
-  background: repeating-linear-gradient(45deg, #f4f5eee0, #f2f3ebe0 100px),
+  background: repeating-linear-gradient(45deg, #f4f5eef7, #f2f3ebfa 100px),
     url(../img/pattern.jpg) center center;
   background-position: center;
   background-size: contain;
