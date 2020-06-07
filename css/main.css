@@ -14,7 +14,7 @@
   overflow: auto;
   padding-bottom: 0;
   padding-top: 2rem;
-  background: repeating-linear-gradient(45deg, #f4f5eee0, #f2f3ebe0 100px), url(../img/pattern.jpg) center center;
+  background: repeating-linear-gradient(45deg, #f4f5ee, #f2f3ebfa 100px), url(../img/pattern.jpg) center center;
   background-size: contain;
   background-repeat: repeat; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
@@ -22,7 +22,7 @@
       padding: 0 8%;
       padding: 28px 5.5%;
       padding-bottom: 0;
-      background: repeating-linear-gradient(45deg, #f4f5eee0, #f2f3ebe0 100px), url(../img/pattern.jpg) center center;
+      background: repeating-linear-gradient(45deg, #f4f5ee, #f2f3ebfa 100px), url(../img/pattern.jpg) center center;
       background-size: contain;
       background-repeat: repeat; } }
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
@@ -436,7 +436,7 @@
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background: repeating-linear-gradient(45deg, #f4f5eee0, #f2f3ebe0 100px), url(../img/pattern.jpg) center center;
+  background: repeating-linear-gradient(45deg, #f4f5ee, #f2f3ebfa 100px), url(../img/pattern.jpg) center center;
   background-size: contain;
   background-repeat: repeat;
   -webkit-box-shadow: 0px 1px 4px #c3c3c1, 7px 1px 5px #ced0c5;
@@ -504,7 +504,7 @@
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: repeating-linear-gradient(45deg, #f4f5eee0, #f2f3ebe0 100px), url(../img/pattern.jpg) center center;
+      background: repeating-linear-gradient(45deg, #f4f5eef7, #f2f3ebfa 100px), url(../img/pattern.jpg) center center;
       background-position: center;
       background-size: contain;
       background-repeat: repeat; }
@@ -952,7 +952,7 @@
   height: 100%;
   overflow: auto;
   background: #ffffff7d;
-  background: repeating-linear-gradient(45deg, #f4f5eee0, #f2f3ebe0 100px), url(../img/pattern.jpg) center center;
+  background: repeating-linear-gradient(45deg, #f4f5ee, #f2f3ebfa 100px), url(../img/pattern.jpg) center center;
   background-size: contain;
   background-repeat: repeat; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
@@ -961,7 +961,7 @@
       overflow: auto;
       padding: 28px 5%;
       padding-bottom: 0;
-      background: repeating-linear-gradient(45deg, #f4f5eee0, #f2f3ebe0 100px), url(../img/pattern.jpg) center center;
+      background: repeating-linear-gradient(45deg, #f4f5ee, #f2f3ebfa 100px), url(../img/pattern.jpg) center center;
       background-size: contain;
       background-repeat: repeat; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -1203,7 +1203,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: repeating-linear-gradient(45deg, #f4f5eee0, #f2f3ebe0 100px), url(../img/pattern.jpg) center center;
+  background: repeating-linear-gradient(45deg, #f4f5eef7, #f2f3ebfa 100px), url(../img/pattern.jpg) center center;
   background-position: center;
   background-size: contain;
   background-repeat: repeat;
@@ -1604,7 +1604,7 @@ main {
     .content-wrapper {
       height: auto;
       padding-top: 1rem;
-      background: repeating-linear-gradient(45deg, #f4f5eee0, #f2f3ebe0 100px), url(../img/pattern.jpg) center center;
+      background: repeating-linear-gradient(45deg, #f4f5ee, #f2f3ebfa 100px), url(../img/pattern.jpg) center center;
       background-size: contain;
       background-repeat: repeat; } }
 
@@ -1788,4 +1788,5 @@ footer {
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .fa-2x {
       font-size: 1.2rem; } }
+
 /*# sourceMappingURL=main.css.map */
