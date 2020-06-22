@@ -2,6 +2,14 @@
 /*-----X------ partials imports ------X-----*/
 /*----------- @Mixins -----------*/
 /*----------- Light & Dark Theme -----------*/
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
+  .content-wrapper {
+    height: 93vh; } }
+
+@media only screen and (min-width: 640px) and (orientation: portrait) {
+  .content-wrapper {
+    height: 93vh; } }
+
 .content-wrapper .home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,7 +56,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    justify-self: center; }
+    justify-self: center;
+    padding-bottom: 1rem; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .home__box-one {
         padding: 0 5.5rem; } }
@@ -73,15 +82,12 @@
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    background: url(../img/background-man.png) center center;
-    background-size: cover; }
+            justify-content: center; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .home__box-two {
-        padding: 4rem 0 0 0; } }
+        padding: 2.2rem 0 0 0; } }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .home__box-two {
-        padding: 1.2rem 9rem;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; } }
@@ -91,7 +97,7 @@
         margin-top: 2rem; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .home__box-two {
-        padding: 2.3rem 0; } }
+        padding: 1.1rem 0; } }
     .content-wrapper .home__box-two h3 {
       font-size: 1.4rem;
       line-height: 1.1em;
@@ -105,17 +111,17 @@
           font-size: 1.8rem; } }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .content-wrapper .home__box-two h3 {
-          font-size: 5rem;
+          font-size: 2.1em;
           margin-top: 1rem; } }
       @media only screen and (min-width: 1024px) and (orientation: landscape) {
         .content-wrapper .home__box-two h3 {
-          font-size: 5rem;
-          line-height: 3.5rem; } }
+          font-size: 2rem;
+          line-height: 1.85rem; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .content-wrapper .home__box-two h3 {
-          line-height: 2.63rem;
+          line-height: 2.1rem;
           margin-top: 1rem;
-          font-size: 3rem; } }
+          font-size: 2rem; } }
       .content-wrapper .home__box-two h3 span {
         font-size: 2.1rem;
         width: 100%;
@@ -135,10 +141,10 @@
               justify-content: center; }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .content-wrapper .home__box-two h3::before {
-          font-size: 2.18rem; } }
+          font-size: 1.4rem; } }
       @media only screen and (min-width: 1024px) and (orientation: landscape) {
         .content-wrapper .home__box-two h3::before {
-          font-size: 2rem; } }
+          font-size: 1.42rem; } }
     .content-wrapper .home__box-two h3::after {
       content: "";
       font-size: 1.35rem;
@@ -195,7 +201,7 @@
       background: url(../img/background-man1.png) center center;
       background-size: cover; }
       .content-wrapper .home__box-three .svg-container svg {
-        width: 66%;
+        width: 63%;
         height: auto; }
         @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
           .content-wrapper .home__box-three .svg-container svg {
@@ -205,7 +211,7 @@
             width: 38%; } }
         @media only screen and (min-width: 1025px) and (orientation: landscape) {
           .content-wrapper .home__box-three .svg-container svg {
-            width: 35%; } }
+            width: 30%; } }
     .content-wrapper .home__box-three .occ-title {
       color: #292b20;
       font-size: 1.75rem;
@@ -215,8 +221,7 @@
       width: 100%;
       padding: 0 2.2rem;
       font-family: "DM Serif Display", serif;
-      font-family: serif;
-      background-color: #f3f7d5; }
+      font-family: serif; }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .content-wrapper .home__box-three .occ-title {
           font-size: 2rem; } }
@@ -509,8 +514,7 @@
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: repeating-linear-gradient(45deg, #f4f5eef7, #f2f3ebfa 100px), url(../img/pattern.jpg) center center;
-      background-position: center;
+      background: repeating-linear-gradient(80deg, #ffffff, #edf3befa 4px), url(../img/pattern.jpg) center center;
       background-size: contain;
       background-repeat: repeat; }
       @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
@@ -1069,8 +1073,6 @@
     cursor: pointer;
     padding: 0.5rem;
     background: #ffffff;
-    background: url(../img/background-man.png) left center;
-    background-size: cover;
     -webkit-box-shadow: 2px 4px 17px #d5d6ce;
             box-shadow: 2px 4px 17px #d5d6ce; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -1095,8 +1097,8 @@
       font-family: "Cinzel Decorative", serif;
       font-weight: normal;
       text-transform: lowercase;
-      padding-left: 1rem;
-      font-size: 0.95rem; }
+      font-size: 1.2rem;
+      text-align: center; }
       @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
         .content-wrapper .projects__item1 h3, .content-wrapper .projects__item2 h3, .content-wrapper .projects__item3 h3, .content-wrapper .projects__item4 h3, .content-wrapper .projects__item5 h3 {
           font-size: 0.8rem;
@@ -1595,7 +1597,6 @@ main {
       cursor: pointer; }
 
 .content-wrapper {
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1608,7 +1609,6 @@ main {
   padding: 1% 0 0 0; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper {
-      height: auto;
       padding-top: 1rem;
       background: repeating-linear-gradient(80deg, #ffffff, #edf3befa 4px), url(../img/pattern.jpg) center center;
       background-size: contain;
