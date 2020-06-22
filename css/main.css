@@ -29,7 +29,8 @@
     .content-wrapper .home {
       padding: 0 16%; } }
   .content-wrapper .home p {
-    font-size: 0.98rem; }
+    font-size: 0.98rem;
+    background: none; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .home p {
         padding: 1.82rem;
@@ -1793,4 +1794,5 @@ footer {
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .fa-2x {
       font-size: 1.2rem; } }
+
 /*# sourceMappingURL=main.css.map */
