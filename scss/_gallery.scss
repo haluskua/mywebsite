@@ -112,6 +112,7 @@ main {
     padding-bottom: 12px;
     padding-top: 16px;
     padding: 6% 1%;
+    @include bcg-rep-grd;
     @include LARGE-DEVICE-WIDTH {
       width: 33%;
     }

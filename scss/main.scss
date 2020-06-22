@@ -119,7 +119,7 @@ main {
   height: auto;
   width: 100%;
   overflow: auto;
-  background: ($GRAY-02);
+  @include Front-page-bcg;
   @include MEDIUM-DEVICE-WIDTH {
     height: 100vh;
   }
@@ -149,7 +149,7 @@ main {
     height: auto;
   }
   @include MEDIUM-DEVICE-WIDTH {
-    margin-top: 4rem;
+    margin-top: 1rem;
     height: auto;
 
   }

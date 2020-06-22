@@ -7,7 +7,6 @@
     overflow: auto;
     margin-top: 3rem;
     @include Flex-Col-Cent-tween;
-    @include mini-img-bcg;
     background-position: top;
     @include SMALL-LANDSCAPE {
       @include Flex-flow-row-wrap;
@@ -38,7 +37,7 @@
         width: 40%;
       }
       @include MEDIUM-LANDSCAPE {
-        width: 35%;
+        width: 41%;
       }
       @include LARGE-DEVICE-WIDTH {
         width: 50%;
@@ -54,7 +53,7 @@
         padding: 0;
       }
       @include MEDIUM-LANDSCAPE {
-        width: 19%;
+        width: 26%;
       }
       @include LARGE-DEVICE-WIDTH {
         width: 46%;

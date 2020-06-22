@@ -715,7 +715,7 @@
     padding-bottom: 0rem;
     padding-top: 3rem;
     background: #ffffff;
-    background: repeating-linear-gradient(52deg, #eaecd51a, #f0f8f700 89px), url(../img/green-poly.jpg) center bottom;
+    background: repeating-linear-gradient(52deg, #eaecd51a, #f0f8f700 6px), url(../img/green-poly.jpg) center bottom;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
@@ -760,7 +760,7 @@
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center;
-          background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px), url(../img/light_grafix_portrait2.jpg) center bottom;
+          background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 5px), url(../img/light_grafix_portrait2.jpg) center bottom;
           background-size: cover; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .content-wrapper .about__bio-image {
@@ -1211,10 +1211,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: repeating-linear-gradient(45deg, #f4f5eef7, #f2f3ebfa 100px), url(../img/pattern.jpg) center center;
-  background-position: center;
-  background-size: contain;
-  background-repeat: repeat;
   background-position: top; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .contact {
@@ -1257,7 +1253,7 @@
         width: 40%; } }
     @media only screen and (min-width: 1024px) and (orientation: landscape) {
       .content-wrapper .contact .img-box {
-        width: 35%; } }
+        width: 41%; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .contact .img-box {
         width: 50%; } }
@@ -1269,7 +1265,7 @@
       padding: 0; } }
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
     .content-wrapper .contact .grid-container {
-      width: 19%; } }
+      width: 26%; } }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .content-wrapper .contact .grid-container {
       width: 46%; } }
@@ -1475,7 +1471,9 @@
     grid-gap: 5px;
     padding-bottom: 12px;
     padding-top: 16px;
-    padding: 6% 1%; }
+    padding: 6% 1%;
+    background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 5px), url(../img/light_grafix_portrait2.jpg) center bottom;
+    background-size: cover; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .imgs {
         width: 33%; } }
@@ -1583,7 +1581,9 @@ main {
   height: auto;
   width: 100%;
   overflow: auto;
-  background: #f2f3eb; }
+  background: repeating-linear-gradient(80deg, #ffffff, #edf3befa 4px), url(../img/pattern.jpg) center center;
+  background-size: contain;
+  background-repeat: repeat; }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     main {
       height: 100vh; } }
@@ -1617,7 +1617,7 @@ main {
       height: auto; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .content-wrapper {
-      margin-top: 4rem;
+      margin-top: 1rem;
       height: auto; } }
 
 p {

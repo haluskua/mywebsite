@@ -28,7 +28,7 @@
 //BACKGROUND-IMAGE SCSS MIXINS
 // ...........
 @mixin bcg-rep-grd {
-  background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 100px),
+  background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 5px),
     url(../img/light_grafix_portrait2.jpg) center bottom;
   background-size: cover;
 }
@@ -53,7 +53,7 @@
 }
 // ...........
 @mixin Menu-slider-bcg {
-  background: repeating-linear-gradient(52deg, #eaecd51a, #f0f8f700 89px),
+  background: repeating-linear-gradient(52deg, #eaecd51a, #f0f8f700 6px),
     url(../img/green-poly.jpg) center bottom;
   background-position: center;
   background-size: cover;
