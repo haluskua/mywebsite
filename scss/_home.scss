@@ -20,6 +20,7 @@
     }
     p {
       font-size: 0.98rem;
+      background: none;
 
       @include LARGE-DEVICE-WIDTH {
         padding: 1.82rem;
