@@ -29,9 +29,6 @@
     .content-wrapper .home {
       padding: 0 16%; } }
   .content-wrapper .home p {
-    background: repeating-linear-gradient(52deg, #f4f5e6a6, #f5f6e7 89px), url(../img/cloth.jpg) center bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
     font-size: 0.98rem; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .home p {
@@ -95,10 +92,10 @@
       .content-wrapper .home__box-two {
         padding: 2.3rem 0; } }
     .content-wrapper .home__box-two h3 {
-      font-size: 3rem;
-      line-height: 0.7em;
+      font-size: 2.1rem;
+      line-height: 1.1em;
       text-align: center;
-      font-weight: normal;
+      font-weight: bold;
       text-transform: lowercase;
       font-family: "Cinzel Decorative", sans-serif; }
       @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
@@ -123,7 +120,7 @@
         width: 100%;
         text-align: right; }
     .content-wrapper .home__box-two h3::before {
-      content: "Freelance";
+      content: "Freelance Portfolio";
       font-size: 1.4rem;
       text-align: left;
       display: -webkit-box;
@@ -140,7 +137,7 @@
         .content-wrapper .home__box-two h3::before {
           font-size: 2rem; } }
     .content-wrapper .home__box-two h3::after {
-      content: "Omphalus Harkie Kua";
+      content: "";
       font-size: 1.35rem;
       text-align: center; }
       @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
@@ -253,7 +250,7 @@
       text-transform: uppercase;
       font-size: 1rem;
       font-family: "Roboto", sans-serif;
-      border-top: 1px solid brown; }
+      border-top: 1px solid #adab99; }
   .content-wrapper .home .projects__item5 {
     z-index: 0; }
     .content-wrapper .home .projects__item5 h3 {
