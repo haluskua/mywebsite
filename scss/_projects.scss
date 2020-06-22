@@ -15,7 +15,7 @@
     @include MEDIUM-DEVICE-WIDTH {
       @include box-shadow-blocks;
       justify-content: center;
-      margin-top: 3.4rem;
+      padding-top: 8.4rem;
     }
     @include MEDIUM-LANDSCAPE {
       justify-content: space-around;

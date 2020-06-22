@@ -142,9 +142,16 @@ main {
   justify-content: space-around;
   flex-direction: column;
   padding: 1% 0 0 0;
+  overflow: hidden;
   @include SMALL-LANDSCAPE {
     padding-top: 1rem;
     @include Front-page-bcg;
+    height: auto;
+  }
+  @include MEDIUM-DEVICE-WIDTH {
+    margin-top: 4rem;
+    height: auto;
+
   }
 }
 
