@@ -1,6 +1,12 @@
 // ...........
 ///////////////
 .content-wrapper {
+  @include MEDIUM-LANDSCAPE {
+    height: 93vh;
+  }
+  @include MEDIUM-DEVICE-WIDTH {
+    height: 93vh;
+  }
   .home {
     display: flex;
     flex-direction: column;
@@ -38,6 +44,7 @@
       display: flex;
       flex-direction: column;
       justify-self: center;
+      padding-bottom: 1rem;
       @include SMALL-LANDSCAPE {
         padding: 0 5.5rem;
       }
@@ -62,12 +69,11 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      @include trans-bcg;
       @include SMALL-LANDSCAPE {
-        padding: 4rem 0 0 0;
+        padding: 2.2rem 0 0 0;
       }
       @include MEDIUM-DEVICE-WIDTH {
-        padding: 1.2rem 9rem;
+        // padding: 1.2rem 9rem;
         align-items: center;
       }
       @include MEDIUM-LANDSCAPE {
@@ -75,7 +81,7 @@
         margin-top: 2rem;
       }
       @include LARGE-DEVICE-WIDTH {
-        padding: 2.3rem 0;
+        padding: 1.1rem 0;
       }
 
       h3 {
@@ -91,17 +97,17 @@
         }
 
         @include MEDIUM-DEVICE-WIDTH {
-          font-size: 5rem;
+          font-size: 2.1em;
           margin-top: 1rem;
         }
         @include MEDIUM-LANDSCAPE {
-          font-size: 5rem;
-          line-height: 3.5rem;
+          font-size: 2rem;
+          line-height: 1.85rem;
         }
         @include LARGE-DEVICE-WIDTH {
-          line-height: 2.63rem;
+          line-height: 2.1rem;
           margin-top: 1rem;
-          font-size: 3rem;
+          font-size: 2rem;
         }
         span {
           font-size: 2.1rem;
@@ -119,10 +125,10 @@
         font-weight: normal;
         justify-content: center;
         @include MEDIUM-DEVICE-WIDTH {
-          font-size: 2.18rem;
+          font-size: 1.4rem;
         }
         @include MEDIUM-LANDSCAPE {
-          font-size: 2rem;
+          font-size: 1.42rem;
         }
       }
       h3::after {
@@ -171,7 +177,7 @@
         justify-content: center;
         @include shield-bcg;
         svg {
-          width: 66%;
+          width: 63%;
           height: auto;
           @include SMALL-LANDSCAPE {
             width: 43%;
@@ -180,7 +186,7 @@
             width: 38%;
           }
           @include LARGE-DEVICE-WIDTH {
-            width: 35%;
+            width: 30%;
           }
         }
       }
@@ -194,7 +200,6 @@
         padding: 0 2.2rem;
         font-family: "DM Serif Display", serif;
         font-family: serif;
-        background-color: #f3f7d5;
         @include MEDIUM-DEVICE-WIDTH {
           font-size: 2rem;
         }

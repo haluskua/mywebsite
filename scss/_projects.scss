@@ -119,7 +119,7 @@
       cursor: pointer;
       padding: 0.5rem;
       background: ($WHITE);
-      @include trans-project-bcg;
+      // @include trans-project-bcg;
       @include box-shadow-blocks;
       @include MEDIUM-DEVICE-WIDTH {
         display: flex;
@@ -135,8 +135,8 @@
         font-family: "Cinzel Decorative", serif;
         font-weight: normal;
         text-transform: lowercase;
-        padding-left: 1rem;
-        font-size: 0.95rem;
+        font-size: 1.2rem;
+        text-align: center;
         @include SMALL-LANDSCAPE {
           font-size: 0.8rem;
           padding-bottom: 1rem;
