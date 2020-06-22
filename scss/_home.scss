@@ -78,7 +78,7 @@
       }
 
       h3 {
-        font-size: 2.1rem;
+        font-size: 1.4rem;
         line-height: 1.1em;
         text-align: center;
         font-weight: bold;
@@ -86,7 +86,7 @@
         font-family: "Cinzel Decorative", sans-serif;
         @include SMALL-LANDSCAPE {
           line-height: 2rem;
-          font-size: 3rem;
+          font-size: 1.8rem;
         }
 
         @include MEDIUM-DEVICE-WIDTH {
@@ -110,10 +110,12 @@
       }
       h3::before {
         content: "Freelance Portfolio";
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         text-align: left;
+        color: #ce4848;
         display: flex;
         padding-bottom: 0.5rem;
+        font-weight: normal;
         justify-content: center;
         @include MEDIUM-DEVICE-WIDTH {
           font-size: 2.18rem;
