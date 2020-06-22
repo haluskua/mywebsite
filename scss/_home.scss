@@ -1,6 +1,4 @@
 // ...........
-
-
 ///////////////
 .content-wrapper {
   .home {
@@ -117,6 +115,7 @@
         text-align: left;
         display: flex;
         padding-bottom: 0.5rem;
+        justify-content: center;
         @include MEDIUM-DEVICE-WIDTH {
           font-size: 2.18rem;
         }
@@ -193,6 +192,7 @@
         padding: 0 2.2rem;
         font-family: "DM Serif Display", serif;
         font-family: serif;
+        background-color: #f3f7d5;
         @include MEDIUM-DEVICE-WIDTH {
           font-size: 2rem;
         }
@@ -205,6 +205,7 @@
           line-height: 2.2rem;
         }
       }
+
       .occ-title::before {
         content: "Web and Grafix";
         color: black;
@@ -214,14 +215,14 @@
         border-top: 1px solid #e2e1cf;
         width: 100%;
         display: flex;
-        align-self: flex-start;
+        justify-content: center;
       }
       .occ-title::after {
         content: "Front-end Developer";
         color: black;
         width: 100%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         text-transform: uppercase;
         font-size: 1rem;
         font-family: "Roboto", sans-serif;
@@ -239,7 +240,6 @@
 }
 
 //Button click transition delay
-
 @for $i from 1 through 4 {
   .menu-nav__item:nth-child(#{$i}) {
     transition-delay: ($i * 0.07s) + 0.105s;
