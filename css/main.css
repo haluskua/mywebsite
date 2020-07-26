@@ -22,7 +22,7 @@
   overflow: auto;
   padding-bottom: 0;
   padding-top: 2rem;
-  background: repeating-linear-gradient(80deg, #ffffff, #edf3befa 4px), url(../img/pattern.jpg) center center;
+  background: repeating-linear-gradient(80deg, #ffffff, #e7e8d9fa 4px), url(../img/pattern.jpg) center center;
   background-size: contain;
   background-repeat: repeat; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
@@ -30,7 +30,7 @@
       padding: 0 8%;
       padding: 28px 5.5%;
       padding-bottom: 0;
-      background: repeating-linear-gradient(80deg, #ffffff, #edf3befa 4px), url(../img/pattern.jpg) center center;
+      background: repeating-linear-gradient(80deg, #ffffff, #e7e8d9fa 4px), url(../img/pattern.jpg) center center;
       background-size: contain;
       background-repeat: repeat; } }
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
@@ -130,7 +130,7 @@
       content: "Freelance Portfolio";
       font-size: 1.2rem;
       text-align: left;
-      color: #ce4848;
+      color: #daa520;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -215,7 +215,7 @@
     .content-wrapper .home__box-three .occ-title {
       color: #292b20;
       font-size: 1.75rem;
-      line-height: 2rem;
+      line-height: 1.5rem;
       text-transform: capitalize;
       text-align: center;
       width: 100%;
@@ -230,14 +230,13 @@
           text-align: center;
           margin: 0;
           font-size: 2.5rem;
-          line-height: 2.2rem; } }
+          line-height: 1.5rem; } }
     .content-wrapper .home__box-three .occ-title::before {
       content: "Web and Grafix";
       color: black;
       font-size: 1rem;
       text-transform: uppercase;
       font-family: "Roboto", sans-serif;
-      border-top: 1px solid #e2e1cf;
       width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -257,8 +256,7 @@
               justify-content: center;
       text-transform: uppercase;
       font-size: 1rem;
-      font-family: "Roboto", sans-serif;
-      border-top: 1px solid #adab99; }
+      font-family: "Roboto", sans-serif; }
   .content-wrapper .home .projects__item5 {
     z-index: 0; }
     .content-wrapper .home .projects__item5 h3 {
@@ -446,7 +444,7 @@
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background: repeating-linear-gradient(80deg, #ffffff, #edf3befa 4px), url(../img/pattern.jpg) center center;
+  background: repeating-linear-gradient(80deg, #ffffff, #e7e8d9fa 4px), url(../img/pattern.jpg) center center;
   background-size: contain;
   background-repeat: repeat;
   -webkit-box-shadow: 0px 1px 4px #c3c3c1, 7px 1px 5px #ced0c5;
@@ -514,7 +512,7 @@
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: repeating-linear-gradient(80deg, #ffffff, #edf3befa 4px), url(../img/pattern.jpg) center center;
+      background: repeating-linear-gradient(80deg, #ffffff, #e7e8d9fa 4px), url(../img/pattern.jpg) center center;
       background-size: contain;
       background-repeat: repeat; }
       @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
@@ -961,7 +959,7 @@
   height: 100%;
   overflow: auto;
   background: #ffffff7d;
-  background: repeating-linear-gradient(80deg, #ffffff, #edf3befa 4px), url(../img/pattern.jpg) center center;
+  background: repeating-linear-gradient(80deg, #ffffff, #e7e8d9fa 4px), url(../img/pattern.jpg) center center;
   background-size: contain;
   background-repeat: repeat; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
@@ -970,7 +968,7 @@
       overflow: auto;
       padding: 28px 5%;
       padding-bottom: 0;
-      background: repeating-linear-gradient(80deg, #ffffff, #edf3befa 4px), url(../img/pattern.jpg) center center;
+      background: repeating-linear-gradient(80deg, #ffffff, #e7e8d9fa 4px), url(../img/pattern.jpg) center center;
       background-size: contain;
       background-repeat: repeat; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -1581,7 +1579,7 @@ main {
   height: auto;
   width: 100%;
   overflow: auto;
-  background: repeating-linear-gradient(80deg, #ffffff, #edf3befa 4px), url(../img/pattern.jpg) center center;
+  background: repeating-linear-gradient(80deg, #ffffff, #e7e8d9fa 4px), url(../img/pattern.jpg) center center;
   background-size: contain;
   background-repeat: repeat; }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -1611,7 +1609,7 @@ main {
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper {
       padding-top: 1rem;
-      background: repeating-linear-gradient(80deg, #ffffff, #edf3befa 4px), url(../img/pattern.jpg) center center;
+      background: repeating-linear-gradient(80deg, #ffffff, #e7e8d9fa 4px), url(../img/pattern.jpg) center center;
       background-size: contain;
       background-repeat: repeat;
       height: auto; } }
@@ -1800,4 +1798,5 @@ footer {
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .fa-2x {
       font-size: 1.2rem; } }
+
 /*# sourceMappingURL=main.css.map */
