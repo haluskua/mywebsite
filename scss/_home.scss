@@ -119,7 +119,7 @@
         content: "Freelance Portfolio";
         font-size: 1.2rem;
         text-align: left;
-        color: #ce4848;
+        color: #daa520;
         display: flex;
         padding-bottom: 0.5rem;
         font-weight: normal;
@@ -193,7 +193,7 @@
       .occ-title {
         color: ($BLACK-002);
         font-size: 1.75rem;
-        line-height: 2rem;
+        line-height: 1.5rem;
         text-transform: capitalize;
         text-align: center;
         width: 100%;
@@ -209,7 +209,7 @@
           text-align: center;
           margin: 0;
           font-size: 2.5rem;
-          line-height: 2.2rem;
+          line-height: 1.5rem;
         }
       }
 
@@ -219,7 +219,6 @@
         font-size: 1rem;
         text-transform: uppercase;
         font-family: "Roboto", sans-serif;
-        border-top: 1px solid #e2e1cf;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -233,7 +232,6 @@
         text-transform: uppercase;
         font-size: 1rem;
         font-family: "Roboto", sans-serif;
-        border-top: 1px solid #adab99;
       }
     }
     .projects__item5 {
