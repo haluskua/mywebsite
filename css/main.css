@@ -22,7 +22,7 @@
   overflow: auto;
   padding-bottom: 0;
   padding-top: 2rem;
-  background: repeating-linear-gradient(80deg, #ffffff, #e7e8d9fa 4px), url(../img/pattern.jpg) center center;
+  background: repeating-linear-gradient(80deg, #ffffff, #f6f7e9de 4px), url(../img/pattern.jpg) center center;
   background-size: contain;
   background-repeat: repeat; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
@@ -30,7 +30,7 @@
       padding: 0 8%;
       padding: 28px 5.5%;
       padding-bottom: 0;
-      background: repeating-linear-gradient(80deg, #ffffff, #e7e8d9fa 4px), url(../img/pattern.jpg) center center;
+      background: repeating-linear-gradient(80deg, #ffffff, #f6f7e9de 4px), url(../img/pattern.jpg) center center;
       background-size: contain;
       background-repeat: repeat; } }
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
@@ -201,7 +201,7 @@
       background: url(../img/background-man1.png) center center;
       background-size: cover; }
       .content-wrapper .home__box-three .svg-container svg {
-        width: 63%;
+        width: 68%;
         height: auto; }
         @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
           .content-wrapper .home__box-three .svg-container svg {
@@ -422,7 +422,7 @@
         top: 1.262rem;
         width: 18%;
         right: 0;
-        margin-top: -4.5rem; } }
+        margin-top: -6.5rem; } }
   .menu-index #ps,
   .menu-index #pt {
     font-size: 45px; }
@@ -444,7 +444,7 @@
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background: repeating-linear-gradient(80deg, #ffffff, #e7e8d9fa 4px), url(../img/pattern.jpg) center center;
+  background: repeating-linear-gradient(80deg, #ffffff, #f6f7e9de 4px), url(../img/pattern.jpg) center center;
   background-size: contain;
   background-repeat: repeat;
   -webkit-box-shadow: 0px 1px 4px #c3c3c1, 7px 1px 5px #ced0c5;
@@ -512,7 +512,7 @@
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: repeating-linear-gradient(80deg, #ffffff, #e7e8d9fa 4px), url(../img/pattern.jpg) center center;
+      background: repeating-linear-gradient(80deg, #ffffff, #f6f7e9de 4px), url(../img/pattern.jpg) center center;
       background-size: contain;
       background-repeat: repeat; }
       @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
@@ -959,7 +959,7 @@
   height: 100%;
   overflow: auto;
   background: #ffffff7d;
-  background: repeating-linear-gradient(80deg, #ffffff, #e7e8d9fa 4px), url(../img/pattern.jpg) center center;
+  background: repeating-linear-gradient(80deg, #ffffff, #f6f7e9de 4px), url(../img/pattern.jpg) center center;
   background-size: contain;
   background-repeat: repeat; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
@@ -968,7 +968,7 @@
       overflow: auto;
       padding: 28px 5%;
       padding-bottom: 0;
-      background: repeating-linear-gradient(80deg, #ffffff, #e7e8d9fa 4px), url(../img/pattern.jpg) center center;
+      background: repeating-linear-gradient(80deg, #ffffff, #f6f7e9de 4px), url(../img/pattern.jpg) center center;
       background-size: contain;
       background-repeat: repeat; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -1397,7 +1397,7 @@
         justify-content: space-around;
     margin: auto;
     overflow: scroll;
-    background: #ffffff;
+    background-color: #fffef9b3;
     -webkit-box-shadow: 2px 4px 17px #d5d6ce;
             box-shadow: 2px 4px 17px #d5d6ce; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
@@ -1444,8 +1444,14 @@
         -ms-flex-pack: center;
             justify-content: center;
     padding-top: 44px;
+    cursor: progress;
+    -webkit-transition: all 1s;
+    transition: all 1s;
     -webkit-box-shadow: 2px 4px 17px #d5d6ce;
             box-shadow: 2px 4px 17px #d5d6ce; }
+    .content-wrapper .main-img :hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .main-img {
         padding: 0; } }
@@ -1456,13 +1462,25 @@
   .content-wrapper .main-img img,
   .content-wrapper .imgs img {
     width: 100%; }
-  @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-    .content-wrapper .main-img img {
-      width: 79%; } }
-  @media only screen and (min-width: 1025px) and (orientation: landscape) {
-    .content-wrapper .main-img img {
-      padding: 2%;
-      width: 100%; } }
+  .content-wrapper .main-img img {
+    -webkit-box-shadow: 4px 4px 4px #dfd9d9;
+            box-shadow: 4px 4px 4px #dfd9d9;
+    -webkit-transition: all 1s;
+    transition: all 1s; }
+    .content-wrapper .main-img img :hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+      cursor: pointer;
+      width: 109%; }
+    @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
+      .content-wrapper .main-img img {
+        width: 79%; } }
+    @media only screen and (min-width: 1025px) and (orientation: landscape) {
+      .content-wrapper .main-img img {
+        -webkit-transition: all 1s;
+        transition: all 1s;
+        padding: 2%;
+        width: 100%; } }
   .content-wrapper .imgs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1470,13 +1488,32 @@
     padding-bottom: 12px;
     padding-top: 16px;
     padding: 6% 1%;
+    -webkit-box-shadow: 4px 4px 4px #dfd9d9;
+            box-shadow: 4px 4px 4px #dfd9d9;
+    -webkit-transition: all 1s;
+    transition: all 1s;
     background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 5px), url(../img/light_grafix_portrait2.jpg) center bottom;
     background-size: cover; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .imgs {
         width: 33%; } }
+    .content-wrapper .imgs :hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+      cursor: pointer; }
   .content-wrapper .imgs img {
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-box-shadow: 4px 4px 4px #bebaba;
+            box-shadow: 4px 4px 4px #bebaba;
+    z-index: 999;
+    -webkit-transition: all 1s;
+    transition: all 1s; }
+    @media only screen and (min-width: 1025px) and (orientation: landscape) {
+      .content-wrapper .imgs img :hover {
+        width: 100%;
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+        cursor: pointer; } }
 
 @-webkit-keyframes fadeIn {
   to {
@@ -1579,7 +1616,7 @@ main {
   height: auto;
   width: 100%;
   overflow: auto;
-  background: repeating-linear-gradient(80deg, #ffffff, #e7e8d9fa 4px), url(../img/pattern.jpg) center center;
+  background: repeating-linear-gradient(80deg, #ffffff, #f6f7e9de 4px), url(../img/pattern.jpg) center center;
   background-size: contain;
   background-repeat: repeat; }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
@@ -1609,7 +1646,7 @@ main {
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper {
       padding-top: 1rem;
-      background: repeating-linear-gradient(80deg, #ffffff, #e7e8d9fa 4px), url(../img/pattern.jpg) center center;
+      background: repeating-linear-gradient(80deg, #ffffff, #f6f7e9de 4px), url(../img/pattern.jpg) center center;
       background-size: contain;
       background-repeat: repeat;
       height: auto; } }
