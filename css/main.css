@@ -1344,6 +1344,55 @@
 
 .content-wrapper {
   /* Fade in animation */ }
+  .content-wrapper .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: auto;
+    overflow: scroll;
+    background-color: #fbfbefa6;
+    -webkit-box-shadow: 2px 4px 17px #d5d6ce;
+            box-shadow: 2px 4px 17px #d5d6ce; }
+    @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
+      .content-wrapper .container {
+        border: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        padding: 1rem;
+        padding: 1rem;
+        -webkit-box-shadow: 2px 4px 17px #d5d6ce;
+                box-shadow: 2px 4px 17px #d5d6ce; } }
+    @media only screen and (min-width: 640px) and (orientation: portrait) {
+      .content-wrapper .container {
+        height: 100%; } }
+    @media only screen and (min-width: 1024px) and (orientation: landscape) {
+      .content-wrapper .container {
+        max-width: 90%; } }
+    @media only screen and (min-width: 1025px) and (orientation: landscape) {
+      .content-wrapper .container {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding-top: 2%;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        overflow: scroll; } }
   .content-wrapper .main-container {
     padding-top: 10rem;
     height: auto;
@@ -1356,7 +1405,7 @@
             flex-direction: column;
     padding: 0.25rem;
     padding-bottom: 0;
-    overflow: auto; }
+    overflow: scroll; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .main-container {
         -webkit-box-shadow: none;
@@ -1385,56 +1434,6 @@
             -ms-flex-align: center;
                 align-items: center;
         height: auto; } }
-  .content-wrapper .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin: auto;
-    overflow: scroll;
-    background-color: #fffef9b3;
-    -webkit-box-shadow: 2px 4px 17px #d5d6ce;
-            box-shadow: 2px 4px 17px #d5d6ce; }
-    @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-      .content-wrapper .container {
-        border: none;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        padding: 1rem;
-        padding: 1rem;
-        background: #ffffff;
-        -webkit-box-shadow: 2px 4px 17px #d5d6ce;
-                box-shadow: 2px 4px 17px #d5d6ce; } }
-    @media only screen and (min-width: 640px) and (orientation: portrait) {
-      .content-wrapper .container {
-        height: 100%; } }
-    @media only screen and (min-width: 1024px) and (orientation: landscape) {
-      .content-wrapper .container {
-        max-width: 90%; } }
-    @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .content-wrapper .container {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding-top: 2%;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        overflow: hidden; } }
   .content-wrapper .main-img {
     width: auto;
     display: -webkit-box;
@@ -1444,34 +1443,49 @@
         -ms-flex-pack: center;
             justify-content: center;
     padding-top: 44px;
-    cursor: progress;
     -webkit-transition: all 1s;
     transition: all 1s;
-    -webkit-box-shadow: 2px 4px 17px #d5d6ce;
-            box-shadow: 2px 4px 17px #d5d6ce; }
+    overflow: scroll;
+    background: none; }
     .content-wrapper .main-img :hover {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1); }
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 0;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding-top: 18px; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .main-img {
-        padding: 0; } }
+        padding: 0;
+        padding-top: 55px; }
+        .content-wrapper .main-img :hover {
+          padding-top: 88px; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .main-img {
-        width: 55%;
-        padding-top: 0; } }
+        width: 62%;
+        padding-top: 0; }
+        .content-wrapper .main-img :hover {
+          width: 70%; } }
   .content-wrapper .main-img img,
   .content-wrapper .imgs img {
     width: 100%; }
   .content-wrapper .main-img img {
+    width: 100%;
     -webkit-box-shadow: 4px 4px 4px #dfd9d9;
             box-shadow: 4px 4px 4px #dfd9d9;
     -webkit-transition: all 1s;
     transition: all 1s; }
     .content-wrapper .main-img img :hover {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1);
+      -webkit-transform: scale(3.1);
+              transform: scale(3.1);
       cursor: pointer;
-      width: 109%; }
+      width: 144%; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .main-img img {
         width: 79%; } }
@@ -1479,8 +1493,7 @@
       .content-wrapper .main-img img {
         -webkit-transition: all 1s;
         transition: all 1s;
-        padding: 2%;
-        width: 100%; } }
+        padding: 2%; } }
   .content-wrapper .imgs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1491,9 +1504,7 @@
     -webkit-box-shadow: 4px 4px 4px #dfd9d9;
             box-shadow: 4px 4px 4px #dfd9d9;
     -webkit-transition: all 1s;
-    transition: all 1s;
-    background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 5px), url(../img/light_grafix_portrait2.jpg) center bottom;
-    background-size: cover; }
+    transition: all 1s; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .imgs {
         width: 33%; } }
@@ -1505,7 +1516,6 @@
     cursor: pointer;
     -webkit-box-shadow: 4px 4px 4px #bebaba;
             box-shadow: 4px 4px 4px #bebaba;
-    z-index: 999;
     -webkit-transition: all 1s;
     transition: all 1s; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
@@ -1513,7 +1523,9 @@
         width: 100%;
         -webkit-transform: scale(1.1);
                 transform: scale(1.1);
-        cursor: pointer; } }
+        cursor: pointer;
+        -webkit-box-shadow: none;
+                box-shadow: none; } }
 
 @-webkit-keyframes fadeIn {
   to {
@@ -1630,30 +1642,6 @@ main {
     main a:hover {
       color: #ffffff;
       cursor: pointer; }
-
-.content-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 1% 0 0 0;
-  overflow: hidden; }
-  @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-    .content-wrapper {
-      padding-top: 1rem;
-      background: repeating-linear-gradient(80deg, #ffffff, #f6f7e9de 4px), url(../img/pattern.jpg) center center;
-      background-size: contain;
-      background-repeat: repeat;
-      height: auto; } }
-  @media only screen and (min-width: 640px) and (orientation: portrait) {
-    .content-wrapper {
-      margin-top: 1rem;
-      height: auto; } }
 
 p {
   color: #4d4d4d;
