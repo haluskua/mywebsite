@@ -44,7 +44,7 @@ main {
     justify-content: space-around;
     margin: auto;
     overflow: scroll;
-    background: ($WHITE);
+    background-color: #fffef9b3;
     @include box-shadow-blocks;
     @include SMALL-LANDSCAPE {
       border: none;
@@ -77,6 +77,12 @@ main {
     display: flex;
     justify-content: center;
     padding-top: 44px;
+    cursor: progress;
+    transition: all 1s;
+    :hover {
+      transform: scale(1.1);
+    }
+    
     @include box-shadow-blocks;
     @include MEDIUM-DEVICE-WIDTH {
       padding: 0;
@@ -97,10 +103,18 @@ main {
     }
   }
   .main-img img {
+    box-shadow: 4px 4px 4px rgb(223, 217, 217);
+    transition: all 1s;
+    :hover {
+      transform: scale(1.1);
+      cursor: pointer;
+      width: 109%;
+    }
     @include SMALL-LANDSCAPE {
       width: 79%;
     }
     @include LARGE-DEVICE-WIDTH {
+      transition: all 1s;
       padding: 2%;
       width: 100%;
     }
@@ -112,14 +126,32 @@ main {
     padding-bottom: 12px;
     padding-top: 16px;
     padding: 6% 1%;
+    box-shadow: 4px 4px 4px rgb(223, 217, 217);
+    transition: all 1s;
+
     @include bcg-rep-grd;
     @include LARGE-DEVICE-WIDTH {
       width: 33%;
+    }
+    :hover{
+      transform: scale(1.1);
+      cursor: pointer;
     }
   }
 
   .imgs img {
     cursor: pointer;
+    box-shadow: 4px 4px 4px rgb(190, 186, 186);
+    z-index: 999;
+    transition: all 1s;
+    @include LARGE-DEVICE-WIDTH {
+      :hover {
+        width: 100%;
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    }
+    
   }
 
   /* Fade in animation */
