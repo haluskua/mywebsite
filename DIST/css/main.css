@@ -1099,6 +1099,38 @@
 
 .content-wrapper {
   /* Fade in animation */ }
+  .content-wrapper .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    overflow: scroll;
+    background-color: #fbfbefa6;
+    box-shadow: 2px 4px 17px #d5d6ce; }
+    @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
+      .content-wrapper .container {
+        border: none;
+        box-shadow: none;
+        padding: 1rem;
+        padding: 1rem;
+        box-shadow: 2px 4px 17px #d5d6ce; } }
+    @media only screen and (min-width: 640px) and (orientation: portrait) {
+      .content-wrapper .container {
+        height: 100%; } }
+    @media only screen and (min-width: 1024px) and (orientation: landscape) {
+      .content-wrapper .container {
+        max-width: 90%; } }
+    @media only screen and (min-width: 1025px) and (orientation: landscape) {
+      .content-wrapper .container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding-top: 2%;
+        flex-wrap: wrap;
+        overflow: scroll; } }
   .content-wrapper .main-container {
     padding-top: 10rem;
     height: auto;
@@ -1106,7 +1138,7 @@
     flex-direction: column;
     padding: 0.25rem;
     padding-bottom: 0;
-    overflow: auto; }
+    overflow: scroll; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .main-container {
         box-shadow: none;
@@ -1125,74 +1157,51 @@
         justify-content: center;
         align-items: center;
         height: auto; } }
-  .content-wrapper .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: auto;
-    overflow: scroll;
-    background-color: #fffef9b3;
-    box-shadow: 2px 4px 17px #d5d6ce; }
-    @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-      .content-wrapper .container {
-        border: none;
-        box-shadow: none;
-        padding: 1rem;
-        padding: 1rem;
-        background: #ffffff;
-        box-shadow: 2px 4px 17px #d5d6ce; } }
-    @media only screen and (min-width: 640px) and (orientation: portrait) {
-      .content-wrapper .container {
-        height: 100%; } }
-    @media only screen and (min-width: 1024px) and (orientation: landscape) {
-      .content-wrapper .container {
-        max-width: 90%; } }
-    @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .content-wrapper .container {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding-top: 2%;
-        flex-wrap: wrap;
-        overflow: hidden; } }
   .content-wrapper .main-img {
     width: auto;
     display: flex;
     justify-content: center;
     padding-top: 44px;
-    cursor: progress;
     transition: all 1s;
-    box-shadow: 2px 4px 17px #d5d6ce; }
+    overflow: scroll;
+    background: none; }
     .content-wrapper .main-img :hover {
-      transform: scale(1.1); }
+      transform: scale(1.5);
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      box-sizing: border-box;
+      padding-top: 18px; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .main-img {
-        padding: 0; } }
+        padding: 0;
+        padding-top: 55px; }
+        .content-wrapper .main-img :hover {
+          padding-top: 88px; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .main-img {
-        width: 55%;
-        padding-top: 0; } }
+        width: 62%;
+        padding-top: 0; }
+        .content-wrapper .main-img :hover {
+          width: 70%; } }
   .content-wrapper .main-img img,
   .content-wrapper .imgs img {
     width: 100%; }
   .content-wrapper .main-img img {
+    width: 100%;
     box-shadow: 4px 4px 4px #dfd9d9;
     transition: all 1s; }
     .content-wrapper .main-img img :hover {
-      transform: scale(1.1);
+      transform: scale(3.1);
       cursor: pointer;
-      width: 109%; }
+      width: 144%; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .main-img img {
         width: 79%; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .main-img img {
         transition: all 1s;
-        padding: 2%;
-        width: 100%; } }
+        padding: 2%; } }
   .content-wrapper .imgs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1201,9 +1210,7 @@
     padding-top: 16px;
     padding: 6% 1%;
     box-shadow: 4px 4px 4px #dfd9d9;
-    transition: all 1s;
-    background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 5px), url(../img/light_grafix_portrait2.jpg) center bottom;
-    background-size: cover; }
+    transition: all 1s; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .imgs {
         width: 33%; } }
@@ -1213,13 +1220,13 @@
   .content-wrapper .imgs img {
     cursor: pointer;
     box-shadow: 4px 4px 4px #bebaba;
-    z-index: 999;
     transition: all 1s; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .imgs img :hover {
         width: 100%;
         transform: scale(1.1);
-        cursor: pointer; } }
+        cursor: pointer;
+        box-shadow: none; } }
 
 @keyframes fadeIn {
   to {
@@ -1321,24 +1328,6 @@ main {
     main a:hover {
       color: #ffffff;
       cursor: pointer; }
-
-.content-wrapper {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  padding: 1% 0 0 0;
-  overflow: hidden; }
-  @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-    .content-wrapper {
-      padding-top: 1rem;
-      background: repeating-linear-gradient(80deg, #ffffff, #f6f7e9de 4px), url(../img/pattern.jpg) center center;
-      background-size: contain;
-      background-repeat: repeat;
-      height: auto; } }
-  @media only screen and (min-width: 640px) and (orientation: portrait) {
-    .content-wrapper {
-      margin-top: 1rem;
-      height: auto; } }
 
 p {
   color: #4d4d4d;

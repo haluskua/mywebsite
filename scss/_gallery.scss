@@ -9,6 +9,39 @@ main {
   }
 }
 .content-wrapper {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    overflow: scroll;
+    background-color: #fbfbefa6;
+    @include box-shadow-blocks;
+    @include SMALL-LANDSCAPE {
+      border: none;
+      box-shadow: none;
+      padding: 1rem;
+      padding: 1rem;
+      @include box-shadow-blocks;
+    }
+    @include MEDIUM-DEVICE-WIDTH {
+      height: 100%;
+    }
+    @include MEDIUM-LANDSCAPE {
+      max-width: 90%;
+    }
+    @include LARGE-DEVICE-WIDTH {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding-top: 2%;
+      flex-wrap: wrap;
+      overflow: scroll;
+    }
+  }
   .main-container {
     padding-top: 10rem;
     height: auto;
@@ -16,7 +49,7 @@ main {
     flex-direction: column;
     padding: 0.25rem;
     padding-bottom: 0;
-    overflow: auto;
+    overflow: scroll;
     @include SMALL-LANDSCAPE {
       box-shadow: none;
       padding: 16px 10% 0 16%;
@@ -38,58 +71,41 @@ main {
       height: auto;
     }
   }
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: auto;
-    overflow: scroll;
-    background-color: #fffef9b3;
-    @include box-shadow-blocks;
-    @include SMALL-LANDSCAPE {
-      border: none;
-      box-shadow: none;
-      padding: 1rem;
-      padding: 1rem;
-      background: ($WHITE);
-      @include box-shadow-blocks;
-    }
-    @include MEDIUM-DEVICE-WIDTH {
-      height: 100%;
-    }
-    @include MEDIUM-LANDSCAPE {
-      max-width: 90%;
-    }
-    @include LARGE-DEVICE-WIDTH {
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: auto;
-      margin: 0;
-      padding-top: 2%;
-      flex-wrap: wrap;
-      overflow: hidden;
-    }
-  }
+  
   .main-img {
     width: auto;
     display: flex;
     justify-content: center;
     padding-top: 44px;
-    cursor: progress;
     transition: all 1s;
+    overflow: scroll;
+    background: none;
+
     :hover {
-      transform: scale(1.1);
+      transform: scale(1.5);
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      box-sizing: border-box;
+      padding-top: 18px;
     }
     
-    @include box-shadow-blocks;
+    
+    // @include box-shadow-blocks;
     @include MEDIUM-DEVICE-WIDTH {
       padding: 0;
+      padding-top: 55px;
+
+      :hover {
+        padding-top: 88px;
+      }
     }
     @include LARGE-DEVICE-WIDTH {
-      width: 55%;
+      width: 62%;
       padding-top: 0;
+      :hover {
+        width: 70%;
+      }      
     }
   }
   .main-img img,
@@ -97,18 +113,14 @@ main {
     width: 100%;
   }
 
-  .max-height {
-    @include LARGE-DEVICE-WIDTH {
-      // max-height: 66vh;
-    }
-  }
   .main-img img {
+    width: 100%;
     box-shadow: 4px 4px 4px rgb(223, 217, 217);
     transition: all 1s;
     :hover {
-      transform: scale(1.1);
+      transform: scale(3.1);
       cursor: pointer;
-      width: 109%;
+      width: 144%;
     }
     @include SMALL-LANDSCAPE {
       width: 79%;
@@ -116,7 +128,6 @@ main {
     @include LARGE-DEVICE-WIDTH {
       transition: all 1s;
       padding: 2%;
-      width: 100%;
     }
   }
   .imgs {
@@ -129,7 +140,6 @@ main {
     box-shadow: 4px 4px 4px rgb(223, 217, 217);
     transition: all 1s;
 
-    @include bcg-rep-grd;
     @include LARGE-DEVICE-WIDTH {
       width: 33%;
     }
@@ -142,13 +152,13 @@ main {
   .imgs img {
     cursor: pointer;
     box-shadow: 4px 4px 4px rgb(190, 186, 186);
-    z-index: 999;
     transition: all 1s;
     @include LARGE-DEVICE-WIDTH {
       :hover {
         width: 100%;
         transform: scale(1.1);
         cursor: pointer;
+        box-shadow: none;
       }
     }
     
