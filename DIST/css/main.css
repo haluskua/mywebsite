@@ -1049,7 +1049,9 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2rem;
-    z-index: 0; }
+    z-index: 0;
+    -webkit-transition: all 3s;
+    transition: all 3s; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .content-wrapper .projects__items {
         grid-template-columns: repeat(3, 1fr);
@@ -1068,11 +1070,9 @@
     z-index: 3;
     padding: 1rem 0 0 0;
     border-radius: 0.2rem;
-    cursor: pointer;
     padding: 0.5rem;
-    background: #ffffff;
-    -webkit-box-shadow: 2px 4px 17px #d5d6ce;
-            box-shadow: 2px 4px 17px #d5d6ce; }
+    -webkit-transition: all 2s;
+    transition: all 2s; }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
       .content-wrapper .projects__item1, .content-wrapper .projects__item2, .content-wrapper .projects__item3, .content-wrapper .projects__item4, .content-wrapper .projects__item5 {
         display: -webkit-box;
@@ -1091,10 +1091,12 @@
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .projects__item1, .content-wrapper .projects__item2, .content-wrapper .projects__item3, .content-wrapper .projects__item4, .content-wrapper .projects__item5 {
         width: 100%; } }
+    .content-wrapper .projects__item1 :hover, .content-wrapper .projects__item2 :hover, .content-wrapper .projects__item3 :hover, .content-wrapper .projects__item4 :hover, .content-wrapper .projects__item5 :hover {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
     .content-wrapper .projects__item1 h3, .content-wrapper .projects__item2 h3, .content-wrapper .projects__item3 h3, .content-wrapper .projects__item4 h3, .content-wrapper .projects__item5 h3 {
-      font-family: "Cinzel Decorative", serif;
-      font-weight: normal;
-      text-transform: lowercase;
+      font-weight: bold;
+      text-transform: uppercase;
       font-size: 1.2rem;
       text-align: center; }
       @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
@@ -1160,16 +1162,22 @@
       font-size: 1.3rem; }
     .content-wrapper .projects__btn .fas,
     .content-wrapper .projects__btn .fab {
-      color: #45b393;
+      color: #ffffff;
       font-size: 0.88rem;
-      background: #ffffff;
+      background: rgba(0, 0, 0, 0.5);
       padding: 13px;
       -webkit-box-shadow: 1px 9px 28px #168e9a0f, 8px 1px 22px #c7d3d630;
               box-shadow: 1px 9px 28px #168e9a0f, 8px 1px 22px #c7d3d630;
-      padding: 4px;
-      width: 100%; }
+      padding: 6px;
+      width: 100%;
+      border-radius: 4px; }
   .content-wrapper .projects .block {
-    width: 100%; }
+    width: 100%;
+    -webkit-transition: all 2s;
+    transition: all 2s; }
+    .content-wrapper .projects .block :hover {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
 
 @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
   .content-wrapper .socieal-icons {
@@ -1192,147 +1200,158 @@
           -ms-flex-pack: justify;
               justify-content: space-between; } }
 
-.content-wrapper .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100vh;
-  overflow: auto;
-  margin-top: 3rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-position: top; }
-  @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-    .content-wrapper .contact {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row;
-              flex-flow: row;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      height: 100vh;
-      margin-top: 1.5rem;
-      margin-top: 2rem;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      padding: 2rem; } }
-  @media only screen and (min-width: 1024px) and (orientation: landscape) {
-    .content-wrapper .contact {
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-      margin: 0; } }
+.content-wrapper {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: auto;
+  width: auto;
+  background: linear-gradient(52deg, #eff0e123, #e9ebd821 89px), url(../img/small_tie.jpg) center bottom;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat; }
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
-    .content-wrapper .contact {
-      padding: 5rem 24% 0rem 14%;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      border: 1px solid #d2dcd7a1; } }
-  .content-wrapper .contact .img-box {
+    .content-wrapper {
+      background-position: bottom; } }
+  .content-wrapper .contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-top: 3rem;
-    padding: 0; }
+    height: 100vh;
+    overflow: auto;
+    margin-top: 3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-position: top; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-      .content-wrapper .contact .img-box {
-        width: 40%; } }
+      .content-wrapper .contact {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row;
+                flex-flow: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        height: 100vh;
+        margin-top: 1.5rem;
+        margin-top: 2rem;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 2rem; } }
     @media only screen and (min-width: 1024px) and (orientation: landscape) {
-      .content-wrapper .contact .img-box {
-        width: 41%; } }
+      .content-wrapper .contact {
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        margin: 0; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .content-wrapper .contact .img-box {
-        width: 50%; } }
-  @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-    .content-wrapper .contact .grid-container {
-      width: 53%; } }
-  @media only screen and (min-width: 640px) and (orientation: portrait) {
-    .content-wrapper .contact .grid-container {
-      padding: 0; } }
-  @media only screen and (min-width: 1024px) and (orientation: landscape) {
-    .content-wrapper .contact .grid-container {
-      width: 26%; } }
-  @media only screen and (min-width: 1025px) and (orientation: landscape) {
-    .content-wrapper .contact .grid-container {
-      width: 46%; } }
-  .content-wrapper .contact__list {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1.26rem;
-    font-size: 1.35rem;
-    padding: 0; }
+      .content-wrapper .contact {
+        padding: 5rem 24% 0rem 14%;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        border: 1px solid #d2dcd7a1; } }
+    .content-wrapper .contact .img-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding-top: 3rem;
+      padding: 0; }
+      @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
+        .content-wrapper .contact .img-box {
+          width: 40%; } }
+      @media only screen and (min-width: 1024px) and (orientation: landscape) {
+        .content-wrapper .contact .img-box {
+          width: 41%; } }
+      @media only screen and (min-width: 1025px) and (orientation: landscape) {
+        .content-wrapper .contact .img-box {
+          width: 50%; } }
+    @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
+      .content-wrapper .contact .grid-container {
+        width: 53%; } }
     @media only screen and (min-width: 640px) and (orientation: portrait) {
-      .content-wrapper .contact__list {
-        grid-template-columns: repeat(1, 1fr); } }
-    .content-wrapper .contact__list .contact__email,
-    .content-wrapper .contact__list .contact__phone,
-    .content-wrapper .contact__list .contact__address,
-    .content-wrapper .contact__list .contact__cv {
-      font-size: 1.13rem;
-      font-family: "Roboto", "Montserrat", cursive;
-      color: #848267;
-      width: 100vw;
-      text-align: left;
-      letter-spacing: 0.04em;
-      padding: 7px;
-      padding-left: 1rem; }
-      @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-        .content-wrapper .contact__list .contact__email,
-        .content-wrapper .contact__list .contact__phone,
-        .content-wrapper .contact__list .contact__address,
-        .content-wrapper .contact__list .contact__cv {
-          width: auto;
-          font-size: 0.88rem;
-          padding: 3px; } }
-      @media only screen and (min-width: 640px) and (orientation: portrait) {
-        .content-wrapper .contact__list .contact__email,
-        .content-wrapper .contact__list .contact__phone,
-        .content-wrapper .contact__list .contact__address,
-        .content-wrapper .contact__list .contact__cv {
-          text-align: center; } }
-      .content-wrapper .contact__list .contact__email .fa-download,
-      .content-wrapper .contact__list .contact__phone .fa-download,
-      .content-wrapper .contact__list .contact__address .fa-download,
-      .content-wrapper .contact__list .contact__cv .fa-download {
-        color: #848267 !important; }
-    .content-wrapper .contact__list .download {
-      cursor: pointer;
-      color: #000000;
-      z-index: 999;
-      font-family: "Roboto", "Montserrat", cursive; }
-    .content-wrapper .contact__list .text-secondary {
-      color: #2a2b24;
-      margin: 3px 0;
-      font-size: 0.9rem;
-      margin-top: 8px; }
-      @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-        .content-wrapper .contact__list .text-secondary {
-          font-size: 0.85rem; } }
-    .content-wrapper .contact__list .nav .menu-nav__item:nth-child(4) {
-      width: 100%; }
+      .content-wrapper .contact .grid-container {
+        padding: 0; } }
+    @media only screen and (min-width: 1024px) and (orientation: landscape) {
+      .content-wrapper .contact .grid-container {
+        width: 26%; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .content-wrapper .contact__list .social-icons {
-        bottom: 0 !important; } }
-
-@media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-  .content-wrapper footer h2 {
-    text-align: center !important; } }
-
-@media only screen and (min-width: 640px) and (orientation: portrait) {
-  .content-wrapper footer h2 {
-    text-align: center !important !important; } }
+      .content-wrapper .contact .grid-container {
+        width: 46%; } }
+    .content-wrapper .contact__list {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 1.26rem;
+      font-size: 1.35rem;
+      padding: 0; }
+      @media only screen and (min-width: 640px) and (orientation: portrait) {
+        .content-wrapper .contact__list {
+          grid-template-columns: repeat(1, 1fr); } }
+      .content-wrapper .contact__list .contact__email,
+      .content-wrapper .contact__list .contact__phone,
+      .content-wrapper .contact__list .contact__address,
+      .content-wrapper .contact__list .contact__cv {
+        font-size: 1.13rem;
+        font-family: "Roboto", "Montserrat", cursive;
+        color: #848267;
+        width: 100vw;
+        text-align: left;
+        letter-spacing: 0.04em;
+        padding: 7px;
+        padding-left: 1rem; }
+        @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
+          .content-wrapper .contact__list .contact__email,
+          .content-wrapper .contact__list .contact__phone,
+          .content-wrapper .contact__list .contact__address,
+          .content-wrapper .contact__list .contact__cv {
+            width: auto;
+            font-size: 0.88rem;
+            padding: 3px; } }
+        @media only screen and (min-width: 640px) and (orientation: portrait) {
+          .content-wrapper .contact__list .contact__email,
+          .content-wrapper .contact__list .contact__phone,
+          .content-wrapper .contact__list .contact__address,
+          .content-wrapper .contact__list .contact__cv {
+            text-align: center; } }
+        .content-wrapper .contact__list .contact__email .fa-download,
+        .content-wrapper .contact__list .contact__phone .fa-download,
+        .content-wrapper .contact__list .contact__address .fa-download,
+        .content-wrapper .contact__list .contact__cv .fa-download {
+          color: #848267 !important; }
+      .content-wrapper .contact__list .download {
+        cursor: pointer;
+        color: #000000;
+        z-index: 999;
+        font-family: "Roboto", "Montserrat", cursive; }
+      .content-wrapper .contact__list .text-secondary {
+        color: #2a2b24;
+        margin: 3px 0;
+        font-size: 0.9rem;
+        margin-top: 8px; }
+        @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
+          .content-wrapper .contact__list .text-secondary {
+            font-size: 0.85rem; } }
+      .content-wrapper .contact__list .nav .menu-nav__item:nth-child(4) {
+        width: 100%; }
+      @media only screen and (min-width: 1025px) and (orientation: landscape) {
+        .content-wrapper .contact__list .social-icons {
+          bottom: 0 !important; } }
+  @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
+    .content-wrapper footer h2 {
+      text-align: center !important; } }
+  @media only screen and (min-width: 640px) and (orientation: portrait) {
+    .content-wrapper footer h2 {
+      text-align: center !important; } }
 
 :root {
   /* Set fade in duration */
@@ -1725,11 +1744,12 @@ footer {
     footer {
       padding: 1rem 10rem; } }
   footer h2 {
-    font-family: "Cinzel Decorative", cursive;
+    font-family: "roboto" cursive;
     width: 100%;
-    font-size: 1.15rem;
+    font-size: 1.16rem;
     text-align: center;
     font-weight: normal;
+    text-transform: capitalize;
     color: #848267;
     padding: 0.6rem; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
@@ -1742,7 +1762,14 @@ footer {
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       footer h2 {
         font-size: 1.3rem;
-        padding: 0.5rem; } }
+        padding: 0.5rem;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
   footer p {
     text-align: center;
     padding: 0.3rem; }

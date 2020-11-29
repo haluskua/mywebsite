@@ -79,6 +79,16 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+@mixin contact-bcg {
+  background: linear-gradient(52deg, #eff0e123, #e9ebd821 89px),
+    url(../img/small_tie.jpg) center bottom;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
 
 //MOBILE-BACKGROUNDS
 @mixin mini-img-bcg {

@@ -91,6 +91,7 @@
       grid-template-columns: 1fr;
       grid-gap: 2rem;
       z-index: 0;
+      transition: all 3s;
 
       @include SMALL-LANDSCAPE {
         grid-template-columns: repeat(3, 1fr);
@@ -116,11 +117,12 @@
       z-index: 3;
       padding: 1rem 0 0 0;
       border-radius: 0.2rem;
-      cursor: pointer;
       padding: 0.5rem;
-      background: ($WHITE);
+      // background: ($WHITE);
+      transition: all 2s;
+      
       // @include trans-project-bcg;
-      @include box-shadow-blocks;
+      // @include box-shadow-blocks;
       @include MEDIUM-DEVICE-WIDTH {
         display: flex;
         justify-content: center;
@@ -130,11 +132,13 @@
       @include LARGE-DEVICE-WIDTH {
         width: 100%;
       }
+      :hover {
+        transform: scale(1.2);
+      }
 
       h3 {
-        font-family: "Cinzel Decorative", serif;
-        font-weight: normal;
-        text-transform: lowercase;
+        font-weight: bold;
+        text-transform: uppercase;
         font-size: 1.2rem;
         text-align: center;
         @include SMALL-LANDSCAPE {
@@ -214,18 +218,23 @@
       }
       .fas,
       .fab {
-        color: ($FLURO);
+        color: ($WHITE);
         font-size: 0.88rem;
-        background: ($WHITE);
+        background: rgba(0, 0, 0, 0.5);
         padding: 13px;
         @include box-shadow-two;
-        padding: 4px;
+        padding: 6px;
         width: 100%;
+        border-radius: 4px;
       }
     }
 
     .block {
       width: 100%;
+      transition: all 2s;
+      :hover {
+        transform: scale(1.2);
+      }
     }
   }
   .socieal-icons{

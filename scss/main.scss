@@ -218,11 +218,12 @@ footer {
   }
 
   h2 {
-    font-family: "Cinzel Decorative", cursive;
+    font-family: "roboto" cursive;
     width: 100%;
-    font-size: 1.15rem;
+    font-size: 1.16rem;
     text-align: center;
     font-weight: normal;
+    text-transform: capitalize;
     color: ($GOLD);
     padding: 0.6rem;
     @include SMALL-LANDSCAPE {
@@ -235,6 +236,10 @@ footer {
     @include LARGE-DEVICE-WIDTH {
       font-size: 1.3rem;
       padding: 0.5rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      
     }
   }
   p {
