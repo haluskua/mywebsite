@@ -41,7 +41,7 @@
     background: none; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .home p {
-        padding: 1.82rem;
+        padding: 1.52rem;
         padding-bottom: 4rem; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .home p {
@@ -225,7 +225,9 @@
       font-family: serif; }
       @media only screen and (min-width: 640px) and (orientation: portrait) {
         .content-wrapper .home__box-three .occ-title {
-          font-size: 2rem; } }
+          font-size: 2rem;
+          font-weight: bold;
+          font-size: 1.9rem; } }
       @media only screen and (min-width: 1025px) and (orientation: landscape) {
         .content-wrapper .home__box-three .occ-title {
           text-align: center;
@@ -244,7 +246,12 @@
       display: flex;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; }
+              justify-content: center;
+      font-weight: bold; }
+      @media only screen and (min-width: 640px) and (orientation: portrait) {
+        .content-wrapper .home__box-three .occ-title::before {
+          font-size: 2.1rem;
+          font-weight: bold; } }
     .content-wrapper .home__box-three .occ-title::after {
       content: "Front-end Developer";
       color: black;
@@ -258,6 +265,10 @@
       text-transform: uppercase;
       font-size: 1rem;
       font-family: "Roboto", sans-serif; }
+      @media only screen and (min-width: 640px) and (orientation: portrait) {
+        .content-wrapper .home__box-three .occ-title::after {
+          font-size: 2rem;
+          padding-top: 1.2rem; } }
   .content-wrapper .home .projects__item5 {
     z-index: 0; }
     .content-wrapper .home .projects__item5 h3 {
@@ -714,7 +725,7 @@
     padding-bottom: 0rem;
     padding-top: 3rem;
     background: #ffffff;
-    background: repeating-linear-gradient(52deg, #eaecd51a, #f0f8f700 6px), url(../img/green-poly.jpg) center bottom;
+    background: repeating-linear-gradient(52deg, #eaecd51a, #f0f8f700 6px), url(../img/polygon.png) center bottom;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
@@ -944,7 +955,7 @@
             color: #848267; }
 
 .content-wrapper {
-  background: repeating-linear-gradient(52deg, #eaecd51a, #f0f8f700 6px), url(../img/green-poly.jpg) center bottom;
+  background: repeating-linear-gradient(52deg, #eaecd51a, #f0f8f700 6px), url(../img/polygon.png) center bottom;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
