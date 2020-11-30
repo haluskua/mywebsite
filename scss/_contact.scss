@@ -1,12 +1,5 @@
 .content-wrapper {
-  border: none;
-  box-shadow: none;
-  height: auto;
-  width: auto;
-  @include contact-bcg;
-  @include LARGE-DEVICE-WIDTH {
-    background-position: bottom;
-  }
+
   //styles for .content-wrapper is in the main.scss
 
   .contact {

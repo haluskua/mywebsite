@@ -1,17 +1,15 @@
 // ........
 .content-wrapper {
+  @include Menu-slider-bcg;
   //styles for .content-wrapper is in the main.scss
   .projects {
     display: flex;
     @include Flex-Col-ween-end;
     height: 100%;
     overflow: auto;
-    background: ($trans-white);
-    @include Front-page-bcg;
-    @include SMALL-LANDSCAPE {
-      @include landscape-orientation-layout;
-      @include Front-page-bcg;
-    }
+    // background: ($trans-white);
+    // @include Front-page-bcg;
+    
     @include MEDIUM-DEVICE-WIDTH {
       @include box-shadow-blocks;
       justify-content: center;
