@@ -29,7 +29,7 @@
       background: none;
 
       @include LARGE-DEVICE-WIDTH {
-        padding: 1.82rem;
+        padding: 1.52rem;
         padding-bottom: 4rem;
       }
       @include LARGE-DEVICE-WIDTH {
@@ -203,6 +203,9 @@
         font-family: serif;
         @include MEDIUM-DEVICE-WIDTH {
           font-size: 2rem;
+          font-weight: bold;
+          font-size: 1.9rem;
+
         }
         @include MEDIUM-LANDSCAPE {
         }
@@ -223,6 +226,11 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        font-weight: bold;
+        @include MEDIUM-DEVICE-WIDTH {
+          font-size: 2.1rem;
+          font-weight: bold;
+        }
       }
       .occ-title::after {
         content: "Front-end Developer";
@@ -233,6 +241,10 @@
         text-transform: uppercase;
         font-size: 1rem;
         font-family: "Roboto", sans-serif;
+        @include MEDIUM-DEVICE-WIDTH {
+          font-size: 2rem;
+          padding-top: 1.2rem;
+        }
       }
     }
     .projects__item5 {
