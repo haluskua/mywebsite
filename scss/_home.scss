@@ -14,17 +14,18 @@
     overflow: auto;
     padding-bottom: 0;
     padding-top: 2rem;
-    @include Front-page-bcg;
+    // @include Front-page-bcg;
     @include SMALL-LANDSCAPE {
       padding: 0 8%;
       padding: 28px 5.5%;
       padding-bottom: 0;
-      @include Front-page-bcg;
+      // @include Front-page-bcg;
     }
     @include MEDIUM-LANDSCAPE {
       padding: 0 16%;
     }
     p {
+      padding: 1.5rem;
       font-size: 0.85rem;
       background: none;
 
@@ -175,7 +176,6 @@
       .svg-container {
         display: flex;
         justify-content: center;
-        @include shield-bcg;
         svg {
           width: 68%;
           height: auto;
@@ -194,7 +194,7 @@
         color: ($BLACK-002);
         font-weight: bold;
         font-size: 1.75rem;
-        line-height: 1.5rem;
+        line-height: 1.2rem;
         text-transform: capitalize;
         text-align: center;
         width: 100%;
@@ -220,13 +220,15 @@
       .occ-title::before {
         content: "Web and Grafix";
         color: black;
-        font-size: 1rem;
+        font-size: 1.25rem;
         text-transform: uppercase;
         font-family: "Roboto", sans-serif;
         width: 100%;
         display: flex;
         justify-content: center;
         font-weight: bold;
+        padding: 3.7px 0;
+        letter-spacing: 0.03px;
         @include MEDIUM-DEVICE-WIDTH {
           font-size: 2.1rem;
           font-weight: bold;
@@ -237,8 +239,10 @@
         color: black;
         width: 100%;
         display: flex;
+        font-weight: normal;
         justify-content: center;
-        text-transform: uppercase;
+        text-transform: normal;
+        letter-spacing: 0;
         font-size: 1rem;
         font-family: "Roboto", sans-serif;
         @include MEDIUM-DEVICE-WIDTH {

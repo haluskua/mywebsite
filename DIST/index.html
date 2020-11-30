@@ -834,9 +834,10 @@
               </svg>
             </div>
                       <!-- <h2>Hi Welcome</h2> -->
-          <div class="home__box-one">
+          <!-- <div class="home__box-one">
             <img class="spear lax" data-lax-translate-y="0 0, 208 23" src="./img/simbu_spear.png" alt="arrow" />
-          </div>            <h1 class="occ-title lax" data-lax-translate-y="0 0, 200 -90"></h1>
+          </div>             -->
+          <h1 class="occ-title lax" data-lax-translate-y="0 0, 200 -90"></h1>
 
           </div>
 
@@ -879,8 +880,10 @@
     <script src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script src="path-to-lax.min.js"></script>
     
-    <script>    window.onload = function () {
+    <script>    
+    window.onload = function () {
       lax.setup(); // init
 
       const updateLax = () => {
@@ -891,8 +894,30 @@
       window.requestAnimationFrame(updateLax);
     };
     lax.setup({
-breakpoints: { small: 0, large: 992 }
-})</script>
+      breakpoints: { small: 0, large: 992 }
+      })
+  </script>
+  <!-- JS -->
+<!-- <script>
+  window.onload = function () {
+    lax.init()
+
+    // Add a driver that we use to control our animations
+    lax.addDriver('scrollY', function () {
+      return window.scrollY
+    })
+
+    // Add animation bindings to elements
+    lax.addElements('.selector', {
+      scrollY: {
+        translateX: [
+          ["elInY", "elCenterY", "elOutY"],
+          [0, 'screenWidth/2', 'screenWidth'],
+        ]
+      }
+    })
+  }
+</script> -->
     <footer>
       <h2>Feel free to get in touch</h2>
       <p><a href="mailto:haluskua.one@gmail.com"><i class="fas fa-envelope"></i> haluskua.one@gmail.com</a></p>

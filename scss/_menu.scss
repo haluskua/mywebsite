@@ -205,7 +205,6 @@
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      @include Front-page-bcg;
       @include SMALL-LANDSCAPE {
         flex-direction: row;
         padding-top: 63px;

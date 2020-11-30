@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       showMenu = false;
     }
+    
   }
 });
 

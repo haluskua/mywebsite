@@ -1,6 +1,5 @@
 // ........
 .content-wrapper {
-  @include Menu-slider-bcg;
   //styles for .content-wrapper is in the main.scss
   .projects {
     display: flex;
@@ -224,6 +223,8 @@
         padding: 6px;
         width: 100%;
         border-radius: 4px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
       }
     }
 
