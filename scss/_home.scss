@@ -64,7 +64,7 @@
     }
     &__box-two {
       padding: 8px;
-      padding-top: 2rem;
+      padding-top: 4rem;
       width: 100%;
       display: flex;
       flex-wrap: wrap;
@@ -86,12 +86,14 @@
       }
 
       h3 {
-        font-size: 1.4rem;
-        text-align: center;
+        font-size: 1.5rem;
+        text-transform: uppercase;
         font-weight: bold;
-        text-transform: lowercase;
-
-        font-family: "Cinzel Decorative", sans-serif;
+        text-align: center;
+        font-family: "Arial";
+        letter-spacing: 0.6rem;
+        text-shadow: 1px 2px 2px #ece9c1;
+        color: #716e56 !important;
         @include SMALL-LANDSCAPE {
           line-height: 2rem;
           font-size: 1.8rem;
@@ -117,13 +119,16 @@
         }
       }
       h3::before {
-        content: "Freelance Portfolio";
-        font-size: 1.2rem;
+        content: "Ompalus Kua";
+        font-size: 1.45rem;
         text-align: left;
+        letter-spacing: 0.31rem;
         color: #daa520;
         display: flex;
         padding-bottom: 0.5rem;
+        text-transform: uppercase;
         font-weight: normal;
+        font-family: serif;
         justify-content: center;
         @include MEDIUM-DEVICE-WIDTH {
           font-size: 1.4rem;
@@ -134,7 +139,6 @@
       }
       h3::after {
         content: "";
-        font-size: 1.35rem;
         text-align: center;
         @include SMALL-LANDSCAPE {
           font-size: 1.04rem;
@@ -218,32 +222,32 @@
       }
 
       .occ-title::before {
-        content: "Web and Grafix";
-        color: black;
-        font-size: 1.25rem;
+        content: "Designer & Developer";
+        color: #636146;
+        font-size: 1.02rem;
         text-transform: uppercase;
-        font-family: "Roboto", sans-serif;
+        font-family: "Arial", sans-serif;
         width: 100%;
         display: flex;
         justify-content: center;
         font-weight: bold;
         padding: 3.7px 0;
-        letter-spacing: 1.03px;
+        letter-spacing: 1.51px;
         @include MEDIUM-DEVICE-WIDTH {
           font-size: 2.1rem;
           font-weight: bold;
         }
       }
       .occ-title::after {
-        content: "Front-end Developer";
-        color: black;
+        content: "Front-end/Back-end/Wordpress/React";
+        color: #ceab53;
         width: 100%;
         display: flex;
         font-weight: normal;
         justify-content: center;
         text-transform: normal;
         letter-spacing: 0;
-        font-size: 1rem;
+        font-size: 0.83rem;
         font-family: "Roboto", sans-serif;
         @include MEDIUM-DEVICE-WIDTH {
           font-size: 2rem;

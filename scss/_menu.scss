@@ -159,8 +159,8 @@
   z-index: 4;
   width: 100vw;
   height: 48px;
-  @include Front-page-bcg;
-  @include box-shadow-nav;
+  background: #fffffb;
+  @include box-shadow-two;
   @include MEDIUM-DEVICE-WIDTH {
     height: 65px;
   }

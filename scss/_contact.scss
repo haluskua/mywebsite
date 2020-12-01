@@ -8,24 +8,28 @@
     overflow: auto;
     margin-top: 3rem;
     @include Flex-Col-Cent-tween;
-    background-position: top;
     @include SMALL-LANDSCAPE {
       @include Flex-flow-row-wrap;
-      height: 100vh;
+      height: 76vh;
       margin-top: 1.5rem;
       margin-top: 2rem;
       justify-content: space-between;
       padding: 2rem;
     }
+    @include MEDIUM-DEVICE-WIDTH {
+      height: 73vh;
+      margin-top: 10rem;
+    }
     @include MEDIUM-LANDSCAPE {
       justify-content: space-around;
       margin: 0;
+
     }
     @include LARGE-DEVICE-WIDTH {
       padding: 5rem 24% 0rem 14%;
       justify-content: space-between;
       border: 1px solid ($box-shadow-01);
-      // @include Menu-slider-bcg;
+
     }
 
     // ........
@@ -37,8 +41,12 @@
       @include SMALL-LANDSCAPE {
         width: 40%;
       }
+      @include MEDIUM-DEVICE-WIDTH {
+        width: 60%;
+      }
       @include MEDIUM-LANDSCAPE {
-        width: 41%;
+        width: 71%;
+        background-color: orange;
       }
       @include LARGE-DEVICE-WIDTH {
          width: 50%;
@@ -123,14 +131,5 @@
       }
     }
   }
-  footer {
-    h2 {
-      @include SMALL-LANDSCAPE {
-        text-align: center !important;
-      }
-      @include MEDIUM-DEVICE-WIDTH {
-        text-align: center !important;
-      }
-    }
-  }
+
 }
