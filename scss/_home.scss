@@ -87,10 +87,10 @@
 
       h3 {
         font-size: 1.4rem;
-        line-height: 1.1em;
         text-align: center;
         font-weight: bold;
         text-transform: lowercase;
+
         font-family: "Cinzel Decorative", sans-serif;
         @include SMALL-LANDSCAPE {
           line-height: 2rem;
@@ -228,7 +228,7 @@
         justify-content: center;
         font-weight: bold;
         padding: 3.7px 0;
-        letter-spacing: 0.03px;
+        letter-spacing: 1.03px;
         @include MEDIUM-DEVICE-WIDTH {
           font-size: 2.1rem;
           font-weight: bold;

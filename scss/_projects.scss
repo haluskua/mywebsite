@@ -25,7 +25,7 @@
     }
     .block {
       padding: 0;
-      padding-top: 13px;
+      border-radius: 24px;
       @include SMALL-LANDSCAPE {
         padding: 0;
       }
@@ -113,11 +113,12 @@
       overflow: hidden;
       z-index: 3;
       padding: 1rem 0 0 0;
-      border-radius: 0.2rem;
+      border-radius: 8px;
       padding: 0.5rem;
       // background: ($WHITE);
       transition: all 2s;
-      
+      @include box-shadow-two;
+
       // @include trans-project-bcg;
       // @include box-shadow-blocks;
       @include MEDIUM-DEVICE-WIDTH {
@@ -135,9 +136,9 @@
 
       h3 {
         font-weight: bold;
-        text-transform: uppercase;
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: center;
+        font-family: "Roboto";
         @include SMALL-LANDSCAPE {
           font-size: 0.8rem;
           padding-bottom: 1rem;
@@ -215,9 +216,9 @@
       }
       .fas,
       .fab {
-        color: ($WHITE);
+        color: #9ea0a2;
         font-size: 0.88rem;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgb(255, 255, 255);
         padding: 13px;
         @include box-shadow-two;
         padding: 6px;
