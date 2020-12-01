@@ -52,7 +52,7 @@
     top: 0.9rem;
     width: 31px;
     height: 3px;
-    background: ($BLACK-002);
+    background: #d07f7f ;
     @include transition-ease;
 
     &::before {
@@ -61,7 +61,7 @@
       top: -8px;
       width: 31px;
       height: 3px;
-      background: ($BLACK-002);
+      background: #bec796;
       @include transition-ease;
     }
 
@@ -71,7 +71,7 @@
       top: 8px;
       width: 31px;
       height: 3px;
-      background: ($BLACK-002);
+      background: #d8d3b1;
       @include transition-ease;
     }
     &.open {
@@ -90,13 +90,13 @@
     }
   }
   &__logo {
-    color: #ffb443;
+    color: #948560;
     margin-top: 4px;
     position: relative;
     left: -1%;
     font-size: 1.27em;
-    font-weight: bold;
-    font-family: "Charmonman", serif;
+    font-weight: normal;
+    font-family: "Arial", sans-serif;
     @include MEDIUM-DEVICE-WIDTH {
       font-size: 1.45rem;
     }
@@ -160,7 +160,7 @@
   width: 100vw;
   height: 48px;
   background: #fffffb;
-  @include box-shadow-two;
+  @include box-shadow-nav;
   @include MEDIUM-DEVICE-WIDTH {
     height: 65px;
   }
